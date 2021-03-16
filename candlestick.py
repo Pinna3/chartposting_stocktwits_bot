@@ -3,29 +3,45 @@ import plotly.graph_objs as go
 import finnhub
 import time
 
-#Setup client
-finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
+#Database Object with candlestick data and moving average data (for now)
+class DailyCandleDataRT:
+    def __init__(self, ticker, num_days):
+        self.ticker = ticker
+        self.num_days = num_days
+        self.start_time = int((time.time() - num_days * (31540000 / 365)))
+        self.current_time = int(time.time())
 
-#Daily candle pandas dataframe
-def daily_candle_df_rt(ticker, num_days):
-    current_time = int(time.time())
-    start_time = int((time.time() - num_days * (31540000 / 365)))
+        #Setup client
+        finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
+        #dataframe data
+        data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
+        df = pd.DataFrame(data)
+        sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
+        sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
+        sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
+        sma200 = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
+        df['sma9'] = sma9
+        df['sma20'] = sma20
+        df['sma50'] = sma50
+        df['sma200'] = sma200
+        self.df = df
 
-    data = finnhub_client.stock_candles(ticker, 'D', start_time, current_time)
-    df = pd.core.frame.DataFrame(data)
-    sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
-    sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
-    sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
-    sma200 = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
-    df['sma9'] = sma9
-    df['sma20'] = sma20
-    df['sma50'] = sma50
-    df['sma200'] = sma200
-    return df
-print(daily_candle_df_rt('TSLA', 365))
+    def __str__(self):
+        c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = self.df.iloc[-1]
+        return f'DailyCandleDataRT({self.ticker}-{self.num_days}d: Close/Current:{c}, ' +\
+               f'9SMA:{sma9}, 20SMA:{sma20}, 50SMA:{sma50}, 200SMA:{sma200})'
+
+
+#This is how I will screen for trending stocks in realtime throughout the day
+# c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = DailyCandleDataRT('GOOGL', 365).df.iloc[-1]
+# print(c > sma20 > sma50 > sma200)
 
 
 
+
+
+
+##########################Set this up as a method of the database object
 # #bar trace
 # trace_bar = {
 #     'x': df_aapl.t,
