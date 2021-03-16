@@ -36,19 +36,26 @@ class DailyCandleDataRT:
 # c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = DailyCandleDataRT('GOOGL', 365).df.iloc[-1]
 # print(c > sma20 > sma50 > sma200)
 
-    def chart(self):
-        trace_bar = {'x': self.df.t, 'open': self.df.o, 'close': self.df.c, 'high': self.df.h,
-            'low': self.df.l, 'type': 'candlestick', 'name': self.ticker, 'showlegend': True}
-
-        trace_9sma = {'x': self.df.t, 'y': self.df.sma9, 'type': 'scatter', 'mode': 'lines',
+    def chart(self, days):
+        trace_bar = {'x': self.df['t'][-days:], 'open': self.df['o'][-days:], 'close': self.df['c'][-days:], 'high': self.df['h'][-days:],
+            'low': self.df['l'][-days:], 'type': 'candlestick', 'name': self.ticker, 'showlegend': True}
+        trace_9sma = {'x': self.df['t'][-days:], 'y': self.df['sma9'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'blue'}, 'name': '9 SMA'}
+        trace_20sma = {'x': self.df['t'][-days:], 'y': self.df['sma20'][-days:], 'type': 'scatter', 'mode': 'lines',
+            'line': {'width': 1, 'color': 'blue'}, 'name': '20 SMA'}
+        trace_50sma = {'x': self.df['t'][-days:], 'y': self.df['sma50'][-days:], 'type': 'scatter', 'mode': 'lines',
+            'line': {'width': 1, 'color': 'blue'}, 'name': '50 SMA'}
+        trace_200sma = {'x': self.df['t'][-days:], 'y': self.df['sma200'][-days:], 'type': 'scatter', 'mode': 'lines',
+            'line': {'width': 1, 'color': 'blue'}, 'name': '200 SMA'}
 
-        data = [trace_bar, trace_9sma]
+        data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma]
+
         layout = go.Layout({'title': {'text': f'{self.ticker} Moving Averages',
                 'font': {'size': 15}}})
 
         fig = go.Figure(data=data, layout=layout)
         # fig.write_html("Microsoft(MSFT) Moving Averages.html")
+
         return fig.show()
 
-print(DailyCandleDataRT('GOOGL', 365).chart())
+DailyCandleDataRT('GOOGL', 365).chart(365)
