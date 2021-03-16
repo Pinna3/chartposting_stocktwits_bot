@@ -1,3 +1,3 @@
 from candlestick import DailyCandleDataRT
 
-# print(DailyCandleDataRT('AAPL', 365).chart(90))
+print(DailyCandleDataRT('GXC', 365).chart(365))
