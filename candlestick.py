@@ -59,4 +59,4 @@ class DailyCandleDataRT:
 
         return fig.show()
 
-DailyCandleDataRT('AAPL', 365).chart(90)
+# DailyCandleDataRT('AAPL', 365).chart(90)
