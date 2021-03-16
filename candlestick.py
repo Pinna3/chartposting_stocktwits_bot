@@ -8,7 +8,7 @@ class DailyCandleDataRT:
     def __init__(self, ticker, num_days):
         self.ticker = ticker
         self.num_days = num_days
-        self.start_time = int((time.time() - num_days * (31540000 / 365)))
+        self.start_time = int((time.time() - (num_days * (31540000 / 365))))
         self.current_time = int(time.time())
 
         #Setup client
@@ -33,8 +33,8 @@ class DailyCandleDataRT:
 
 
 #This is how I will screen for trending stocks in realtime throughout the day
-# c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = DailyCandleDataRT('GOOGL', 365).df.iloc[-1]
-# print(c > sma20 > sma50 > sma200)
+c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = DailyCandleDataRT('GOOGL', 365).df.iloc[-1]
+print(c > sma20 > sma50 > sma200)
 
 
 
