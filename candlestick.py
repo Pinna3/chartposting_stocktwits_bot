@@ -13,6 +13,7 @@ class DailyCandleDataRT:
 
         #Setup client
         finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
+
         #dataframe data
         data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
         df = pd.DataFrame(data)
@@ -31,72 +32,23 @@ class DailyCandleDataRT:
         return f'DailyCandleDataRT({self.ticker}-{self.num_days}d: Close/Current:{c}, ' +\
                f'9SMA:{sma9}, 20SMA:{sma20}, 50SMA:{sma50}, 200SMA:{sma200})'
 
+# #This is how I will screen for trending stocks in realtime throughout the day
+# c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = DailyCandleDataRT('GOOGL', 365).df.iloc[-1]
+# print(c > sma20 > sma50 > sma200)
 
-#This is how I will screen for trending stocks in realtime throughout the day
-c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = DailyCandleDataRT('GOOGL', 365).df.iloc[-1]
-print(c > sma20 > sma50 > sma200)
+    def chart(self):
+        trace_bar = {'x': self.df.t, 'open': self.df.o, 'close': self.df.c, 'high': self.df.h,
+            'low': self.df.l, 'type': 'candlestick', 'name': self.ticker, 'showlegend': True}
 
+        trace_9sma = {'x': self.df.t, 'y': self.df.sma9, 'type': 'scatter', 'mode': 'lines',
+            'line': {'width': 1, 'color': 'blue'}, 'name': '9 SMA'}
 
+        data = [trace_bar, trace_9sma]
+        layout = go.Layout({'title': {'text': f'{self.ticker} Moving Averages',
+                'font': {'size': 15}}})
 
+        fig = go.Figure(data=data, layout=layout)
+        # fig.write_html("Microsoft(MSFT) Moving Averages.html")
+        return fig.show()
 
-
-
-##########################Set this up as a method of the database object
-# #bar trace
-# trace_bar = {
-#     'x': df_aapl.t,
-#     'open': df_aapl.o,
-#     'close': df_aapl.c,
-#     'high': df_aapl.h,
-#     'low': df_aapl.l,
-#     'type': 'candlestick',
-#     'name': 'AAPL',
-#     'showlegend': True
-# }
-#
-# data = [trace_bar]
-# layout = go.Layout({
-#     'title': {
-#         'text': 'Apple (AAPL) Moving Averages',
-#         'font': {
-#             'size': 15
-#         }
-#     }
-# })
-#
-# fig = go.Figure(data=data, layout=layout)
-# # fig.write_html("Microsoft(MSFT) Moving Averages.html")
-# fig.show()
-
-# #9sma data (9 simple moving average)
-# sma9 = df_aapl.c.rolling(window=9, min_periods=1).mean()
-# # print(sma9)
-#
-# #9sma trace (9 simple moving average)
-# trace_9sma = {
-#     'x': df_aapl.index,
-#     'y': sma9,
-#     'type': 'scatter',
-#     'mode': 'lines',
-#     'line': {
-#         'width': 1,
-#         'color': 'blue'
-#             },
-#     'name': '9 Simple Moving Average'
-# }
-#
-# #20sma data (20 simple moving average)
-# sma20 = df_aapl.c.rolling(window=20, min_periods=1).mean()
-# # print(sma20)
-#
-# #50sma data (50 simple moving average)
-# sma50 = df_aapl.c.rolling(window=50, min_periods=1).mean()
-# # print(sma50)
-#
-# #100sma data (100 simple moving average)
-# sma100 = df_aapl.c.rolling(window=100, min_periods=1).mean()
-# # print(sma100)
-#
-# #200sma data (200 simple moving average)
-# sma200 = df_aapl.c.rolling(window=200, min_periods=1).mean()
-# # print(sma200)
+print(DailyCandleDataRT('GOOGL', 365).chart())
