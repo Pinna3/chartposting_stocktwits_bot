@@ -37,15 +37,16 @@ class DailyCandleDataRT:
 # print(c > sma20 > sma50 > sma200)
 
     def chart(self, days):
-        trace_bar = {'x': self.df['t'][-days:], 'open': self.df['o'][-days:], 'close': self.df['c'][-days:], 'high': self.df['h'][-days:],
+        #Using index for x-axis until I can figure out how to use date without empties
+        trace_bar = {'x': self.df.index, 'open': self.df['o'][-days:], 'close': self.df['c'][-days:], 'high': self.df['h'][-days:],
             'low': self.df['l'][-days:], 'type': 'candlestick', 'name': self.ticker, 'showlegend': True}
-        trace_9sma = {'x': self.df['t'][-days:], 'y': self.df['sma9'][-days:], 'type': 'scatter', 'mode': 'lines',
+        trace_9sma = {'x': self.df.index, 'y': self.df['sma9'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'blue'}, 'name': '9 SMA'}
-        trace_20sma = {'x': self.df['t'][-days:], 'y': self.df['sma20'][-days:], 'type': 'scatter', 'mode': 'lines',
+        trace_20sma = {'x': self.df.index, 'y': self.df['sma20'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'blue'}, 'name': '20 SMA'}
-        trace_50sma = {'x': self.df['t'][-days:], 'y': self.df['sma50'][-days:], 'type': 'scatter', 'mode': 'lines',
+        trace_50sma = {'x': self.df.index, 'y': self.df['sma50'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'blue'}, 'name': '50 SMA'}
-        trace_200sma = {'x': self.df['t'][-days:], 'y': self.df['sma200'][-days:], 'type': 'scatter', 'mode': 'lines',
+        trace_200sma = {'x': self.df.index, 'y': self.df['sma200'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'blue'}, 'name': '200 SMA'}
 
         data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma]
@@ -58,4 +59,4 @@ class DailyCandleDataRT:
 
         return fig.show()
 
-DailyCandleDataRT('GOOGL', 365).chart(365)
+DailyCandleDataRT('AAPL', 365).chart(90)
