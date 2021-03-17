@@ -127,5 +127,8 @@ class FilteredOptionable(OptionableSecurities):
         self.securities = securities
 
 
-# list = FilteredOptionable('optionablestocks.csv', 0, 0)
-# list.uptrend_strong()
+list = OptionableSecurities('optionablestocks.csv')
+list.uptrend_strong()
+
+# bby = DailyCandleDataRT('BBY', 365)
+# print(bby)
