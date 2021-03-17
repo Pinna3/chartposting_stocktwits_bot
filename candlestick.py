@@ -26,13 +26,13 @@ class DailyCandleDataRT:
         df['sma50'] = sma50
         df['sma200'] = sma200
 
-        #### EXPERIMENTAL
-        bollinger_reference_lower = df.l.rolling(window=5, min_periods=1).mean()
-        bollinger_reference_upper = df.h.rolling(window=5, min_periods=1).mean()
-        sigma_lower = df.l.rolling(window=5, min_periods=1).std()
-        sigma_upper = df.h.rolling(window=5, min_periods=1).std()
-        df['lower'] = bollinger_reference_lower - sigma_lower
-        df['upper'] = bollinger_reference_upper - sigma_upper
+        #### EXPERIMENTAL (ADJUST WINDOW AND MULTIPLE) (NEEDS TWEAKING)
+        bollinger_reference_lower = df.l.rolling(window=10, min_periods=1).mean()
+        bollinger_reference_upper = df.h.rolling(window=10, min_periods=1).mean()
+        sigma_lower = df.l.rolling(window=10, min_periods=1).std()
+        sigma_upper = df.h.rolling(window=10, min_periods=1).std()
+        df['lower'] = bollinger_reference_lower - 1.1 * sigma_lower
+        df['upper'] = bollinger_reference_upper + 1.1 * sigma_upper
 
         self.df = df
 
@@ -60,9 +60,9 @@ class DailyCandleDataRT:
 
         ###EXPERIMENTAL
         trace_lower = {'x': self.df.index, 'y': self.df['lower'][-days:], 'type': 'scatter', 'mode': 'lines',
-            'line': {'width': 1, 'color': 'red'}, 'name': '50 SMA'}
+            'line': {'width': 1, 'color': 'red'}, 'name': 'LowerBB'}
         trace_upper = {'x': self.df.index, 'y': self.df['upper'][-days:], 'type': 'scatter', 'mode': 'lines',
-            'line': {'width': 1, 'color': 'red'}, 'name': '200 SMA'}
+            'line': {'width': 1, 'color': 'red'}, 'name': 'UpperBB'}
 
         data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper]
 
@@ -76,4 +76,4 @@ class DailyCandleDataRT:
 
 
 ### ['AAL', 'AB', 'ABB', 'ABR']
-DailyCandleDataRT('ABR', 365).chart(365)
+# DailyCandleDataRT('AB', 365).chart(365)
