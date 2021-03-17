@@ -1,4 +1,4 @@
-# import finnhub
+import finnhub
 # import pandas as pd
 import csv
 from time import sleep
@@ -48,7 +48,7 @@ class OptionableSecurities:
             with open(f'weak-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
                 outfile.write(str(trending))
 
-        segment = len(self.securities) / 5
+        segment = int(round(len(self.securities) / 5, 0))
         scan_start_finish(0, segment)
         scan_start_finish(segment, 2 * segment)
         scan_start_finish(2 * segment, 3 * segment)
@@ -77,7 +77,7 @@ class OptionableSecurities:
             with open(f'medium-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
                 outfile.write(str(trending))
 
-        segment = len(self.securities) / 5
+        segment = int(round(len(self.securities) / 5, 0))
         scan_start_finish(0, segment)
         scan_start_finish(segment, 2 * segment)
         scan_start_finish(2 * segment, 3 * segment)
@@ -107,13 +107,15 @@ class OptionableSecurities:
             with open(f'strong-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
                 outfile.write(str(trending))
 
-        segment = len(self.securities) / 5
+        segment = int(round(len(self.securities) / 5, 0))
         scan_start_finish(0, segment)
         scan_start_finish(segment, 2 * segment)
         scan_start_finish(2 * segment, 3 * segment)
         scan_start_finish(3 * segment, 4 * segment)
         scan_start_finish(4 * segment, 5 * segment)
 
+# list = OptionableSecurities('optionablestocks.csv')
+# list.uptrend_strong()
 
 # Filter full list for volume and market cap
 class FilteredOptionable(OptionableSecurities):
