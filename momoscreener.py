@@ -7,16 +7,17 @@ from candlestick import DailyCandleDataRT
 # # Symbol lookup
 # print(finnhub_client.symbol_lookup('apple'))
 
+
 class OptionableSecurities:
     def __init__(self, csv_source):
         securities = []
-        #CSV Database- comprehensive list of optionable stocks obtain from barchart
+        # CSV Database- comprehensive list of optionable stocks obtain from barchart
         with open(csv_source, 'r') as infile:
-        	reader = csv.reader(infile)
-        	next(reader) #skip the header line
-        	for row in reader:
-        		ticker = str(row[0])
-        		securities.append(ticker)
+            reader = csv.reader(infile)
+            next(reader)  # skip the header line
+            for row in reader:
+                ticker = str(row[0])
+                securities.append(ticker)
         securities.pop()
         self.securities = securities
 
@@ -26,13 +27,13 @@ class OptionableSecurities:
 # print(list.securities[:25])
 # print(len(list.securities))
 
-    #9SMA > 20SMA > 50SMA > 200SMA (Right now) (add up or down trend functionality)
+    # 9SMA > 20SMA > 50SMA > 200SMA (Right now) (add up or down trend functionality)
     def uptrend_weak(self):
-        #scan for weak uptrend_weak
-        #Setup client
+        # scan for weak uptrend_weak
+        # Setup client
         finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
 
-        #Break up scans into segments
+        # Break up scans into segments
         def scan_start_finish(start, finish):
             trending = []
             for index, ticker in enumerate(self.securities[start:finish+1]):
@@ -45,7 +46,7 @@ class OptionableSecurities:
                 else:
                     print(index)
             with open(f'weak-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
-            	outfile.write(str(trending))
+                outfile.write(str(trending))
 
         segment = len(self.securities) / 5
         scan_start_finish(0, segment)
@@ -54,13 +55,13 @@ class OptionableSecurities:
         scan_start_finish(3 * segment, 4 * segment)
         scan_start_finish(4 * segment, 5 * segment)
 
-    #9SMA > 20SMA > 50SMA > 200SMA (Right now and 1 month ago)
+    # 9SMA > 20SMA > 50SMA > 200SMA (Right now and 1 month ago)
     def uptrend_medium(self):
-        #scan for weak uptrend_weak
-        #Setup client
+        # scan for weak uptrend_weak
+        # Setup client
         finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
 
-        #Break up scans into segments
+        # Break up scans into segments
         def scan_start_finish(start, finish):
             trending = []
             for index, ticker in enumerate(self.securities[start:finish+1]):
@@ -74,7 +75,7 @@ class OptionableSecurities:
                 else:
                     print(index)
             with open(f'medium-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
-            	outfile.write(str(trending))
+                outfile.write(str(trending))
 
         segment = len(self.securities) / 5
         scan_start_finish(0, segment)
@@ -83,13 +84,13 @@ class OptionableSecurities:
         scan_start_finish(3 * segment, 4 * segment)
         scan_start_finish(4 * segment, 5 * segment)
 
-    #9SMA > 20SMA > 50SMA > 200SMA (Right now and 1 month ago and 2 months ago)
+    # 9SMA > 20SMA > 50SMA > 200SMA (Right now and 1 month ago and 2 months ago)
     def uptrend_strong(self):
-        #scan for weak uptrend_weak
-        #Setup client
+        # scan for weak uptrend_weak
+        # Setup client
         finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
 
-        #Break up scans into segments
+        # Break up scans into segments
         def scan_start_finish(start, finish):
             trending = []
             for index, ticker in enumerate(self.securities[start:finish+1]):
@@ -104,7 +105,7 @@ class OptionableSecurities:
                 else:
                     print(index)
             with open(f'strong-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
-            	outfile.write(str(trending))
+                outfile.write(str(trending))
 
         segment = len(self.securities) / 5
         scan_start_finish(0, segment)
@@ -113,21 +114,25 @@ class OptionableSecurities:
         scan_start_finish(3 * segment, 4 * segment)
         scan_start_finish(4 * segment, 5 * segment)
 
-#Filter full list for volume and market cap
+
+# Filter full list for volume and market cap
 class FilteredOptionable(OptionableSecurities):
-    def __init__(self, min_mktcap, min_volume):
+    def __init__(self, csv_source, min_mktcap, min_volume):
         securities = []
-        #CSV Database- comprehensive list of optionable stocks obtain from barchart
+        # CSV Database- comprehensive list of optionable stocks obtain from barchart
         with open(csv_source, 'r') as infile:
-        	reader = csv.reader(infile)
-        	next(reader) #skip the header line
-        	for row in reader:
-        		ticker = str(row[0])
-                mkt_cap = int(row[2])
-                volume = int(row[3])
+            reader = csv.reader(infile)
+            next(reader)  # skip the header line
+            for row in reader:
+                ticker = str(row[0])
+                if row[2] != 'N/A' and row[2] != '':
+                    mkt_cap = float(row[2])
+                if row[3] != 'N/A' and row[3] != '':
+                    volume = float(row[3])
                 if mkt_cap > min_mktcap and volume > min_volume:
-        		    securities.append(ticker)
+                    securities.append(ticker)
         self.securities = securities
 
-test = FilteredOptionable(1000000000, 1000000)
-print(len(test))
+
+test = FilteredOptionable('optionablestocks.csv', 500, 500)
+print(len(test.securities))
