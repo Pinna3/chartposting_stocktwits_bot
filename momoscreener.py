@@ -1,11 +1,7 @@
 import finnhub
-# import pandas as pd
 import csv
 from time import sleep
 from candlestick import DailyCandleDataRT
-
-# # Symbol lookup
-# print(finnhub_client.symbol_lookup('apple'))
 
 
 class OptionableSecurities:
@@ -23,9 +19,6 @@ class OptionableSecurities:
 
     def __str__(self):
         return f'OptionableSecurities(Length: {len(self.securities)})'
-# list = OptionableSecurities('optionablestocks.csv')
-# print(list.securities[:25])
-# print(len(list.securities))
 
     # 9SMA > 20SMA > 50SMA > 200SMA (Right now) (add up or down trend functionality)
     def uptrend_weak(self):
@@ -114,8 +107,6 @@ class OptionableSecurities:
         scan_start_finish(3 * segment, 4 * segment)
         scan_start_finish(4 * segment, 5 * segment)
 
-# list = OptionableSecurities('optionablestocks.csv')
-# list.uptrend_strong()
 
 # Filter full list for volume and market cap
 class FilteredOptionable(OptionableSecurities):
@@ -136,5 +127,5 @@ class FilteredOptionable(OptionableSecurities):
         self.securities = securities
 
 
-test = FilteredOptionable('optionablestocks.csv', 500, 500)
-print(len(test.securities))
+# list = FilteredOptionable('optionablestocks.csv', 0, 0)
+# list.uptrend_strong()
