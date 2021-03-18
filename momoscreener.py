@@ -98,17 +98,22 @@ class OptionableSecurities:
                         print(f'{ticker}:{len(trending)}')
                     else:
                         print(index)
-                except (IndexError, ValueError, KeyError, ReadTimeoutError, ReadTimeout, FinnhubAPIException, ):
+                except (IndexError, ValueError, KeyError, ReadTimeoutError, ReadTimeout, FinnhubAPIException):
                     continue
             with open(f'strong-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
                 outfile.write(str(trending))
 
-        segment = int(round(len(self.securities) / 5, 0))
-        # scan_start_finish(0, segment)
-        # scan_start_finish(segment, 2 * segment)
+        segment = int(round(len(self.securities) / 10, 0))
+        scan_start_finish(0, segment)
+        scan_start_finish(segment, 2 * segment)
         scan_start_finish(2 * segment, 3 * segment)
         scan_start_finish(3 * segment, 4 * segment)
         scan_start_finish(4 * segment, 5 * segment)
+        scan_start_finish(5 * segment, 6 * segment)
+        scan_start_finish(6 * segment, 7 * segment)
+        scan_start_finish(7 * segment, 8 * segment)
+        scan_start_finish(8 * segment, 9 * segment)
+        scan_start_finish(9 * segment, 10 * segment)
 
 
 # Filter full list for volume and market cap
