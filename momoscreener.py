@@ -98,7 +98,7 @@ class OptionableSecurities:
                         print(f'{ticker}:{len(trending)}')
                     else:
                         print(index)
-                except (IndexError, ValueError, KeyError):
+                except (IndexError, ValueError, KeyError, ReadTimeoutError, ReadTimeout, FinnhubAPIException, ):
                     continue
             with open(f'strong-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
                 outfile.write(str(trending))

@@ -22,3 +22,15 @@ Solution>>> Short term rolling stdev for entry... figure out period and std.
 
 Next Step) Determine how many entry signals each year for each stock on average depending on desired
 option duration and optimize bollinger parameters for the desired signal frequency
+
+
+Now that I have an entry counter, for inputed conditions I should be able to
+algorithmically  tweak my parameters for the frequency of signals I'd like
+generated. Next steps in order priority:
+0) Enable continuous successful scan for trending stocks, excepts for all errors,
+discovered so far.
+1) Determine parameters for desired frequency, learn about the nitty gritty of
+bollinger band variables, research theory.
+2) Scan that list throughout the day for entries
+3) Print and save chart in folder
+4) Publish chart to stocktwits and twitter with related tickers and description
