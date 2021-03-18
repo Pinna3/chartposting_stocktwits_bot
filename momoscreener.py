@@ -2,6 +2,7 @@ import finnhub
 import csv
 from time import sleep
 from candlestick import DailyCandleDataRT
+import json
 
 
 class OptionableSecurities:
@@ -98,10 +99,10 @@ class OptionableSecurities:
                         print(f'{ticker}:{len(trending)}')
                     else:
                         print(index)
-                except (IndexError, ValueError, KeyError, ReadTimeoutError, ReadTimeout, FinnhubAPIException):
+                except: #(IndexError, ValueError, KeyError, exceptions.ReadTimeoutError, exceptions.ReadTimeout, finnhub.exceptions.FinnhubAPIException):
                     continue
-            with open(f'strong-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
-                outfile.write(str(trending))
+            with open(f'strong-uptrend[{start}:{finish+1}].json', 'w') as outfile:
+                json.dump(trending, outfile, indent=2)
 
         segment = int(round(len(self.securities) / 10, 0))
         scan_start_finish(0, segment)

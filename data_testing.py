@@ -1,5 +1,6 @@
 from candlestick import DailyCandleDataRT
 from time import sleep
+import json
 
 up_stocks = [
     "AAL",
@@ -168,7 +169,6 @@ up_stocks = [
 #indicated and structure of technical indicators, specifically bollinger bands, can
 #be expanded.
 def entry_counter(ticker):
-    sleep(1)
     dataframe = DailyCandleDataRT(ticker, 365)
     entries = []
     for index, row in dataframe.df.iterrows():
@@ -188,5 +188,9 @@ def entry_counter(ticker):
     print(entries)
     return(len(entries))
 
-for stock in up_stocks:
-    print(entry_counter(stock))
+###add to entry_counter ability to average repeats... how long on average does
+###the stock sit below or above the bollinger band. (under remove entries)
+
+with open('testfile.json', 'r') as infile:
+    content = json.load(infile)
+print(len(content))
