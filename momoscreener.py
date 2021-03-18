@@ -32,7 +32,7 @@ class OptionableSecurities:
             for index, ticker in enumerate(self.securities[start:finish+1]):
                 sleep(1)
                 dataframe = DailyCandleDataRT(ticker, 365)
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = dataframe.df.iloc[-1]
+                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 if sma9 > sma20 > sma50 > sma200:
                     trending.append(ticker)
                     print(f'{ticker}:{len(trending)}')
@@ -60,8 +60,8 @@ class OptionableSecurities:
             for index, ticker in enumerate(self.securities[start:finish+1]):
                 sleep(1)
                 dataframe = DailyCandleDataRT(ticker, 365)
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = dataframe.df.iloc[-1]
-                c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m = dataframe.df.iloc[-30]
+                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
+                c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
                 if sma9 > sma20 > sma50 > sma200 and sma91m > sma201m > sma501m > sma2001m:
                     trending.append(ticker)
                     print(f'{ticker}:{len(trending)}')
@@ -88,21 +88,24 @@ class OptionableSecurities:
             trending = []
             for index, ticker in enumerate(self.securities[start:finish+1]):
                 sleep(1)
-                dataframe = DailyCandleDataRT(ticker, 365)
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = dataframe.df.iloc[-1]
-                c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m = dataframe.df.iloc[-30]
-                c2m, h2m, l2m, o2m, s2m, t2m, v2m, sma92m, sma202m, sma502m, sma2002m = dataframe.df.iloc[-60]
-                if sma9 > sma20 > sma50 > sma200 and sma91m > sma201m > sma501m > sma2001m and sma92m > sma202m > sma502m > sma2002m:
-                    trending.append(ticker)
-                    print(f'{ticker}:{len(trending)}')
-                else:
-                    print(index)
+                try:
+                    dataframe = DailyCandleDataRT(ticker, 365)
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
+                    c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
+                    c2m, h2m, l2m, o2m, s2m, t2m, v2m, sma92m, sma202m, sma502m, sma2002m, lower, upper = dataframe.df.iloc[-60]
+                    if sma9 > sma20 > sma50 > sma200 and sma91m > sma201m > sma501m > sma2001m and sma92m > sma202m > sma502m > sma2002m:
+                        trending.append(ticker)
+                        print(f'{ticker}:{len(trending)}')
+                    else:
+                        print(index)
+                except (IndexError, ValueError, KeyError):
+                    continue
             with open(f'strong-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
                 outfile.write(str(trending))
 
         segment = int(round(len(self.securities) / 5, 0))
-        scan_start_finish(0, segment)
-        scan_start_finish(segment, 2 * segment)
+        # scan_start_finish(0, segment)
+        # scan_start_finish(segment, 2 * segment)
         scan_start_finish(2 * segment, 3 * segment)
         scan_start_finish(3 * segment, 4 * segment)
         scan_start_finish(4 * segment, 5 * segment)
@@ -126,7 +129,8 @@ class FilteredOptionable(OptionableSecurities):
                     securities.append(ticker)
         self.securities = securities
 
-
+# dataframe = DailyCandleDataRT('TSLA', 365)
+# print(dataframe.df.iloc[-1])
 list = OptionableSecurities('optionablestocks.csv')
 list.uptrend_strong()
 ### ['AAL', 'AB', 'ABB', 'ABR']
