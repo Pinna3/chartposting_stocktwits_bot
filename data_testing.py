@@ -165,12 +165,15 @@ up_stocks = [
 # print(test.df)
 # print(test.chart(365))
 
-#takes stock dataframe as input and returns number of entries generates by conditions
+#takes stock dataframe as input and returns 1) number of entries generates by conditions
 #indicated and structure of technical indicators, specifically bollinger bands, can
-#be expanded.
+#be expanded for more technical indicators and 2) avergage number of days in buying/selling
+#range
 def entry_counter(ticker):
     dataframe = DailyCandleDataRT(ticker, 365)
     entries = []
+    repeats = []
+    groupings = set()
     for index, row in dataframe.df.iterrows():
         if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
             entries.append(index)
@@ -180,17 +183,33 @@ def entry_counter(ticker):
         try:
             if entries[i] - entries[i + 1] == -1:
                 entries.remove(entries[i])
+                repeats.append(i)
+                groupings.add(i)
                 i -= 1
             else:
                 i += 1
         except IndexError:
             break
     print(entries)
-    return(len(entries))
+    print(repeats)
+    print(groupings)
+    sum = 0
+    for grouping in groupings:
+        sum += (repeats.count(grouping) + 1)
+    try:
+        average = sum / len(groupings)
+    except ZeroDivisionError:
+        average = 1
+    print(average)
+    real_average =
+    return len(entries), average
 
 ###add to entry_counter ability to average repeats... how long on average does
 ###the stock sit below or above the bollinger band. (under remove entries)
+for ticker in up_stocks[:30]:
+    print(entry_counter(ticker))
 
-with open('testfile.json', 'r') as infile:
-    content = json.load(infile)
-print(len(content))
+
+# with open('testfile.json', 'r') as infile:
+#     content = json.load(infile)
+# print(len(content))
