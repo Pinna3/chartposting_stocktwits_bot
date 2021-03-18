@@ -129,6 +129,7 @@ class FilteredOptionable(OptionableSecurities):
 
 list = OptionableSecurities('optionablestocks.csv')
 list.uptrend_strong()
+### ['AAL', 'AB', 'ABB', 'ABR']
 
 # bby = DailyCandleDataRT('BBY', 365)
 # print(bby)

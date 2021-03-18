@@ -19,3 +19,6 @@ automatically and wont require periodic scans.
 Solution>>> Short term rolling stdev for entry... figure out period and std.
 
 (Keep Marketwide selloff days in back of mind)
+
+Next Step) Determine how many entry signals each year for each stock on average depending on desired
+option duration and optimize bollinger parameters for the desired signal frequency

@@ -14,7 +14,7 @@ class DailyCandleDataRT:
         #Setup client
         finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
 
-        #dataframe data
+        #candlestick data
         data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
         df = pd.DataFrame(data)
         sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
@@ -26,7 +26,7 @@ class DailyCandleDataRT:
         df['sma50'] = sma50
         df['sma200'] = sma200
 
-        #### EXPERIMENTAL (ADJUST WINDOW AND MULTIPLE) (NEEDS TWEAKING)
+        #### bollinger data (needs tweaking)
         bollinger_reference_lower = df.l.rolling(window=10, min_periods=1).mean()
         bollinger_reference_upper = df.h.rolling(window=10, min_periods=1).mean()
         sigma_lower = df.l.rolling(window=10, min_periods=1).std()
@@ -46,7 +46,7 @@ class DailyCandleDataRT:
 # print(c > sma20 > sma50 > sma200)
 
     def chart(self, days):
-        #Using index for x-axis until I can figure out how to use date without empties
+        ###CANDLESTICK DATA AND MOVING AVERAGE DATA
         trace_bar = {'x': self.df.index, 'open': self.df['o'][-days:], 'close': self.df['c'][-days:], 'high': self.df['h'][-days:],
             'low': self.df['l'][-days:], 'type': 'candlestick', 'name': self.ticker, 'showlegend': True}
         trace_9sma = {'x': self.df.index, 'y': self.df['sma9'][-days:], 'type': 'scatter', 'mode': 'lines',
@@ -58,7 +58,7 @@ class DailyCandleDataRT:
         trace_200sma = {'x': self.df.index, 'y': self.df['sma200'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'blue'}, 'name': '200 SMA'}
 
-        ###EXPERIMENTAL
+        ###BOLLINGERS (NEEDS TWEAKING)
         trace_lower = {'x': self.df.index, 'y': self.df['lower'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'red'}, 'name': 'LowerBB'}
         trace_upper = {'x': self.df.index, 'y': self.df['upper'][-days:], 'type': 'scatter', 'mode': 'lines',
@@ -75,5 +75,17 @@ class DailyCandleDataRT:
         return fig.show()
 
 
-### ['AAL', 'AB', 'ABB', 'ABR']
-# DailyCandleDataRT('AB', 365).chart(365)
+# ### ['AAL', 'AB', 'ABB', 'ABR']
+# # print(DailyCandleDataRT('AB', 365).df)
+# # ab_dataframe = DailyCandleDataRT('AB', 365).df
+# aal_dataframe = DailyCandleDataRT('AAL', 365).df
+#
+# print(aal_dataframe.l.iloc[-1])
+# print(aal_dataframe.lower.iloc[-1])
+#
+# instances = 0
+# for line in aal_dataframe:
+#     if line['l'] < line['lower'] and line['lower'] != 'Nan':
+#         instances += 1
+#
+# print(instances)
