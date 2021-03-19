@@ -201,15 +201,15 @@ def entry_counter(ticker):
     except ZeroDivisionError:
         average = 1
     print(average)
-    real_average = ##################################
+    # real_average = ##################################
     return len(entries), average
 
-###add to entry_counter ability to average repeats... how long on average does
-###the stock sit below or above the bollinger band. (under remove entries)
-for ticker in up_stocks[:30]:
-    print(entry_counter(ticker))
+entry_counter('AAPL')
 
+# ###add to entry_counter ability to average repeats... how long on average does
+# ###the stock sit below or above the bollinger band. (under remove entries)
+# for ticker in up_stocks[:30]:
+#     print(entry_counter(ticker))
 
-# with open('testfile.json', 'r') as infile:
-#     content = json.load(infile)
-# print(len(content))
+# with open('strong_uptrend_3-19.json', 'w') as outfile:
+#     json.dump(list(strong_uptrend), outfile, indent=2)

@@ -5,7 +5,7 @@ import time
 
 #Database Object with candlestick data and moving average data (for now)
 class DailyCandleDataRT:
-    def __init__(self, ticker, num_days):
+    def __init__(self, ticker, num_days, bollinger_rolling_window, bollinger_std):
         self.ticker = ticker
         self.num_days = num_days
         self.start_time = int((time.time() - (num_days * (31540000 / 365))))
@@ -27,12 +27,12 @@ class DailyCandleDataRT:
         df['sma200'] = sma200
 
         #### bollinger data (needs tweaking)
-        bollinger_reference_lower = df.l.rolling(window=10, min_periods=1).mean()
-        bollinger_reference_upper = df.h.rolling(window=10, min_periods=1).mean()
-        sigma_lower = df.l.rolling(window=10, min_periods=1).std()
-        sigma_upper = df.h.rolling(window=10, min_periods=1).std()
-        df['lower'] = bollinger_reference_lower - 1.1 * sigma_lower
-        df['upper'] = bollinger_reference_upper + 1.1 * sigma_upper
+        bollinger_reference_lower = df.l.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).mean()
+        bollinger_reference_upper = df.h.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).mean()
+        sigma_lower = df.l.rolling(window=10, min_periods=10).std()
+        sigma_upper = df.h.rolling(window=10, min_periods=10).std()
+        df['lower'] = bollinger_reference_lower - bollinger_std * sigma_lower
+        df['upper'] = bollinger_reference_upper + bollinger_std * sigma_upper
 
         self.df = df
 
@@ -75,17 +75,59 @@ class DailyCandleDataRT:
         return fig.show()
 
 
-# ### ['AAL', 'AB', 'ABB', 'ABR']
-# # print(DailyCandleDataRT('AB', 365).df)
-# # ab_dataframe = DailyCandleDataRT('AB', 365).df
-# aal_dataframe = DailyCandleDataRT('AAL', 365).df
+    def entry_counter(self):
+        dataframe = self.df
+        entries = []
+        repeats = []
+        groupings = set()
+        for index, row in dataframe.iterrows():
+            if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
+                entries.append(index)
+        print(f'Total: {entries}')
+        total = len(entries)
+        i = 0
+        while i < len(entries):
+            try:
+                if entries[i] - entries[i + 1] == -1:
+                    entries.remove(entries[i])
+                    repeats.append(i)
+                    groupings.add(i)
+                    i -= 1
+                else:
+                    i += 1
+            except IndexError:
+                break
+        sum = 0
+        for grouping in groupings:
+            sum += repeats.count(grouping)
+        sum += len(entries) - len(repeats)
+        print(f'Sum: {sum}')
+        try:
+            average = total / sum
+        except ZeroDivisionError:
+            print(f'Average Entry Length: {0}')
+            return [0, 0]
+        print(f'Average Entry Length: {average}')
+        return [len(entries), average]
+
+
+
+# test = DailyCandleDataRT('AAPL', 365, 5, 1)
+# test.chart(52)
+# print(test.df)
+# print(test.entry_counter())
+
+
 #
-# print(aal_dataframe.l.iloc[-1])
-# print(aal_dataframe.lower.iloc[-1])
 #
-# instances = 0
-# for line in aal_dataframe:
-#     if line['l'] < line['lower'] and line['lower'] != 'Nan':
-#         instances += 1
-#
-# print(instances)
+# for rolling_window in range(50):
+#     print(rolling_window)
+#     if DailyCandleDataRT('AAPL', 365, rolling_window, 1).entry_counter() == 100:
+#         print(f'SUCCESS: {rolling_window}')
+#         DailyCandleDataRT('AAPL', 365, rolling_window, 1).chart()
+
+# for std in [.2, .4, .6, .8, 1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0]:
+#     print(std)
+#     if DailyCandleDataRT('AAPL', 365, 5, std).entry_counter() == 100:
+#         print(f'SUCCESS: {rolling_window}')
+#         DailyCandleDataRT('AAPL', 365, 5, std).chart()
