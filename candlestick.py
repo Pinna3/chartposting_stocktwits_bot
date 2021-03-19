@@ -12,7 +12,7 @@ class DailyCandleDataRT:
         self.current_time = int(time.time())
 
         #Setup client
-        finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
+        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
 
         #candlestick data
         data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
@@ -75,41 +75,40 @@ class DailyCandleDataRT:
         return fig.show()
 
 
-    # def entry_counter(self):
-    #     dataframe = self.df
-    #     entries = []
-    #     repeats = []
-    #     groupings = set()
-    #     for index, row in dataframe.iterrows():
-    #         if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
-    #             entries.append(index)
-    #     print(f'Total: {entries}')
-    #     total = len(entries)
-    #     i = 0
-    #     while i < len(entries):
-    #         try:
-    #             if entries[i] - entries[i + 1] == -1:
-    #                 entries.remove(entries[i])
-    #                 repeats.append(i)
-    #                 groupings.add(i)
-    #                 i -= 1
-    #             else:
-    #                 i += 1
-    #         except IndexError:
-    #             break
-    #     sum = 0
-    #     for grouping in groupings:
-    #         sum += repeats.count(grouping)
-    #     sum += len(entries) - len(repeats)
-    #     print(f'Sum: {sum}')
-    #     try:
-    #         average = total / sum
-    #     except ZeroDivisionError:
-    #         print(f'Average Entry Length: {0}')
-    #         return [0, 0]
-    #     print(f'Average Entry Length: {average}')
-    #     return [len(entries), average]
-
+    def entry_counter(self):
+        dataframe = self.df
+        entries = []
+        repeats = []
+        groupings = set()
+        for index, row in dataframe.iterrows():
+            if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
+                entries.append(index)
+        print(f'Total: {entries}')
+        total = len(entries)
+        i = 0
+        while i < len(entries):
+            try:
+                if entries[i] - entries[i + 1] == -1:
+                    entries.remove(entries[i])
+                    repeats.append(i)
+                    groupings.add(i)
+                    i -= 1
+                else:
+                    i += 1
+            except IndexError:
+                break
+        sum = 0
+        for grouping in groupings:
+            sum += repeats.count(grouping)
+        sum += len(entries) - len(repeats)
+        print(f'Sum: {sum}')
+        try:
+            average = total / sum
+        except ZeroDivisionError:
+            print(f'Average Entry Length: {0}')
+            return [0, 0]
+        print(f'Average Entry Length: {average}')
+        return [len(entries), average]
 
 
 # test = DailyCandleDataRT('AAPL', 365, 5, 1)

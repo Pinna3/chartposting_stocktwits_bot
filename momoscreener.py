@@ -27,13 +27,13 @@ class OptionableSecurities:
     def uptrend_weak(self):
         # scan for weak uptrend_weak
         # Setup client
-        finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
+        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
 
         trending = []
         for index, ticker in enumerate(self.securities):
             sleep(1)
             try:
-                dataframe = DailyCandleDataRT(ticker, 365)
+                dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 if sma9 > sma20 > sma50 > sma200:
                     trending.append(ticker)
@@ -50,13 +50,13 @@ class OptionableSecurities:
     def uptrend_medium(self):
         # scan for weak uptrend_weak
         # Setup client
-        finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
+        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
 
         trending = []
         for index, ticker in enumerate(self.securities):
             sleep(1)
             try:
-                dataframe = DailyCandleDataRT(ticker, 365)
+                dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
                 if sma9 > sma20 > sma50 > sma200 and sma91m > sma201m > sma501m > sma2001m:
@@ -74,13 +74,13 @@ class OptionableSecurities:
     def uptrend_strong(self):
         # scan for weak uptrend_weak
         # Setup client
-        finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
+        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
 
         trending = []
         for index, ticker in enumerate(self.securities):
             sleep(1)
             try:
-                dataframe = DailyCandleDataRT(ticker, 365)
+                dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
                 c2m, h2m, l2m, o2m, s2m, t2m, v2m, sma92m, sma202m, sma502m, sma2002m, lower, upper = dataframe.df.iloc[-60]
