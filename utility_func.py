@@ -165,8 +165,8 @@ up_stocks = [
 #indicated and structure of technical indicators, specifically bollinger bands, can
 #be expanded for more technical indicators and 2) avergage number of days in buying/selling
 #range
-def entry_counter(ticker):
-    dataframe = DailyCandleDataRT(ticker, 365)
+def entry_counter(ticker, num_days, bollinger_rolling_window, bollinger_std):
+    dataframe = DailyCandleDataRT(ticker, num_days, bollinger_rolling_window, bollinger_std)
     entries = []
     repeats = []
     groupings = set()
