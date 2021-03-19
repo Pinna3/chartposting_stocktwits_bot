@@ -201,7 +201,7 @@ def entry_counter(ticker):
     except ZeroDivisionError:
         average = 1
     print(average)
-    real_average =
+    real_average = ##################################
     return len(entries), average
 
 ###add to entry_counter ability to average repeats... how long on average does
