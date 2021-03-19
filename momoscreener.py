@@ -3,6 +3,8 @@ import csv
 from time import sleep
 from candlestick import DailyCandleDataRT
 import json
+from datetime import datetime, date
+today_date = date.today().strftime('%m-%d-%y')
 
 
 class OptionableSecurities:
@@ -27,11 +29,10 @@ class OptionableSecurities:
         # Setup client
         finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
 
-        # Break up scans into segments
-        def scan_start_finish(start, finish):
-            trending = []
-            for index, ticker in enumerate(self.securities[start:finish+1]):
-                sleep(1)
+        trending = []
+        for index, ticker in enumerate(self.securities):
+            sleep(1)
+            try:
                 dataframe = DailyCandleDataRT(ticker, 365)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 if sma9 > sma20 > sma50 > sma200:
@@ -39,15 +40,11 @@ class OptionableSecurities:
                     print(f'{ticker}:{len(trending)}')
                 else:
                     print(index)
-            with open(f'weak-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
-                outfile.write(str(trending))
+            except:
+                continue
+        with open(f'weak-uptrend{today_date}.json', 'w') as outfile:
+            json.dump(trending, outfile, indent=2)
 
-        segment = int(round(len(self.securities) / 5, 0))
-        scan_start_finish(0, segment)
-        scan_start_finish(segment, 2 * segment)
-        scan_start_finish(2 * segment, 3 * segment)
-        scan_start_finish(3 * segment, 4 * segment)
-        scan_start_finish(4 * segment, 5 * segment)
 
     # 9SMA > 20SMA > 50SMA > 200SMA (Right now and 1 month ago)
     def uptrend_medium(self):
@@ -55,11 +52,10 @@ class OptionableSecurities:
         # Setup client
         finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
 
-        # Break up scans into segments
-        def scan_start_finish(start, finish):
-            trending = []
-            for index, ticker in enumerate(self.securities[start:finish+1]):
-                sleep(1)
+        trending = []
+        for index, ticker in enumerate(self.securities):
+            sleep(1)
+            try:
                 dataframe = DailyCandleDataRT(ticker, 365)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
@@ -68,15 +64,11 @@ class OptionableSecurities:
                     print(f'{ticker}:{len(trending)}')
                 else:
                     print(index)
-            with open(f'medium-uptrend[{start}:{finish+1}].txt', 'w') as outfile:
-                outfile.write(str(trending))
+            except:
+                continue
+        with open(f'medium-uptrend{today_date}.json', 'w') as outfile:
+            json.dump(trending, outfile, indent=2)
 
-        segment = int(round(len(self.securities) / 5, 0))
-        scan_start_finish(0, segment)
-        scan_start_finish(segment, 2 * segment)
-        scan_start_finish(2 * segment, 3 * segment)
-        scan_start_finish(3 * segment, 4 * segment)
-        scan_start_finish(4 * segment, 5 * segment)
 
     # 9SMA > 20SMA > 50SMA > 200SMA (Right now and 1 month ago and 2 months ago)
     def uptrend_strong(self):
@@ -84,37 +76,23 @@ class OptionableSecurities:
         # Setup client
         finnhub_client = finnhub.Client(api_key='c17qcvf48v6sj55b3t9g')
 
-        # Break up scans into segments
-        def scan_start_finish(start, finish):
-            trending = []
-            for index, ticker in enumerate(self.securities[start:finish+1]):
-                sleep(1)
-                try:
-                    dataframe = DailyCandleDataRT(ticker, 365)
-                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
-                    c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
-                    c2m, h2m, l2m, o2m, s2m, t2m, v2m, sma92m, sma202m, sma502m, sma2002m, lower, upper = dataframe.df.iloc[-60]
-                    if sma9 > sma20 > sma50 > sma200 and sma91m > sma201m > sma501m > sma2001m and sma92m > sma202m > sma502m > sma2002m:
-                        trending.append(ticker)
-                        print(f'{ticker}:{len(trending)}')
-                    else:
-                        print(index)
-                except: #(IndexError, ValueError, KeyError, exceptions.ReadTimeoutError, exceptions.ReadTimeout, finnhub.exceptions.FinnhubAPIException):
-                    continue
-            with open(f'strong-uptrend[{start}:{finish+1}].json', 'w') as outfile:
-                json.dump(trending, outfile, indent=2)
-
-        segment = int(round(len(self.securities) / 10, 0))
-        scan_start_finish(0, segment)
-        scan_start_finish(segment, 2 * segment)
-        scan_start_finish(2 * segment, 3 * segment)
-        scan_start_finish(3 * segment, 4 * segment)
-        scan_start_finish(4 * segment, 5 * segment)
-        scan_start_finish(5 * segment, 6 * segment)
-        scan_start_finish(6 * segment, 7 * segment)
-        scan_start_finish(7 * segment, 8 * segment)
-        scan_start_finish(8 * segment, 9 * segment)
-        scan_start_finish(9 * segment, 10 * segment)
+        trending = []
+        for index, ticker in enumerate(self.securities):
+            sleep(1)
+            try:
+                dataframe = DailyCandleDataRT(ticker, 365)
+                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
+                c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
+                c2m, h2m, l2m, o2m, s2m, t2m, v2m, sma92m, sma202m, sma502m, sma2002m, lower, upper = dataframe.df.iloc[-60]
+                if sma9 > sma20 > sma50 > sma200 and sma91m > sma201m > sma501m > sma2001m and sma92m > sma202m > sma502m > sma2002m:
+                    trending.append(ticker)
+                    print(f'{ticker}:{len(trending)}')
+                else:
+                    print(index)
+            except:
+                continue
+        with open(f'strong-uptrend{today_date}.json', 'w') as outfile:
+            json.dump(trending, outfile, indent=2)
 
 
 # Filter full list for volume and market cap
@@ -135,11 +113,5 @@ class FilteredOptionable(OptionableSecurities):
                     securities.append(ticker)
         self.securities = securities
 
-# dataframe = DailyCandleDataRT('TSLA', 365)
-# print(dataframe.df.iloc[-1])
 list = OptionableSecurities('optionablestocks.csv')
 list.uptrend_strong()
-### ['AAL', 'AB', 'ABB', 'ABR']
-
-# bby = DailyCandleDataRT('BBY', 365)
-# print(bby)
