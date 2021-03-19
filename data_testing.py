@@ -161,10 +161,6 @@ up_stocks = [
     "GWB",
 ]
 
-# test = DailyCandleDataRT(up_stocks[2], 365)
-# print(test.df)
-# print(test.chart(365))
-
 #takes stock dataframe as input and returns 1) number of entries generates by conditions
 #indicated and structure of technical indicators, specifically bollinger bands, can
 #be expanded for more technical indicators and 2) avergage number of days in buying/selling
@@ -178,6 +174,7 @@ def entry_counter(ticker):
         if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
             entries.append(index)
     print(entries)
+    total = len(entries)
     i = 0
     while i < len(entries):
         try:
@@ -190,26 +187,11 @@ def entry_counter(ticker):
                 i += 1
         except IndexError:
             break
-    print(entries)
-    print(repeats)
-    print(groupings)
     sum = 0
     for grouping in groupings:
-        sum += (repeats.count(grouping) + 1)
-    try:
-        average = sum / len(groupings)
-    except ZeroDivisionError:
-        average = 1
-    print(average)
-    # real_average = ##################################
+        sum += repeats.count(grouping)
+    sum += len(entries) - len(repeats)
+    average = total / sum
     return len(entries), average
 
-entry_counter('AAPL')
-
-# ###add to entry_counter ability to average repeats... how long on average does
-# ###the stock sit below or above the bollinger band. (under remove entries)
-# for ticker in up_stocks[:30]:
-#     print(entry_counter(ticker))
-
-# with open('strong_uptrend_3-19.json', 'w') as outfile:
-#     json.dump(list(strong_uptrend), outfile, indent=2)
+# print(entry_counter(up_stocks[96]))
