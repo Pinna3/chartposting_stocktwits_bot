@@ -75,41 +75,59 @@ class DailyCandleDataRT:
         return fig.show()
 
 
-    def entry_counter(self):
-        dataframe = self.df
-        entries = []
-        repeats = []
-        groupings = set()
-        for index, row in dataframe.iterrows():
-            if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
-                entries.append(index)
-        print(entries)
-        total = len(entries)
-        i = 0
-        while i < len(entries):
-            try:
-                if entries[i] - entries[i + 1] == -1:
-                    entries.remove(entries[i])
-                    repeats.append(i)
-                    groupings.add(i)
-                    i -= 1
-                else:
-                    i += 1
-            except IndexError:
-                break
-        sum = 0
-        for grouping in groupings:
-            sum += repeats.count(grouping)
-        sum += len(entries) - len(repeats)
-        try:
-            average = total / sum
-        except ZeroDivisionError:
-            return 0, 0
-        return len(entries), average
+    # def entry_counter(self):
+    #     dataframe = self.df
+    #     entries = []
+    #     repeats = []
+    #     groupings = set()
+    #     for index, row in dataframe.iterrows():
+    #         if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
+    #             entries.append(index)
+    #     print(f'Total: {entries}')
+    #     total = len(entries)
+    #     i = 0
+    #     while i < len(entries):
+    #         try:
+    #             if entries[i] - entries[i + 1] == -1:
+    #                 entries.remove(entries[i])
+    #                 repeats.append(i)
+    #                 groupings.add(i)
+    #                 i -= 1
+    #             else:
+    #                 i += 1
+    #         except IndexError:
+    #             break
+    #     sum = 0
+    #     for grouping in groupings:
+    #         sum += repeats.count(grouping)
+    #     sum += len(entries) - len(repeats)
+    #     print(f'Sum: {sum}')
+    #     try:
+    #         average = total / sum
+    #     except ZeroDivisionError:
+    #         print(f'Average Entry Length: {0}')
+    #         return [0, 0]
+    #     print(f'Average Entry Length: {average}')
+    #     return [len(entries), average]
 
 
 
-test = DailyCandleDataRT('COUP', 365, 5, 1)
-print(test.df)
-test.chart(365)
-print(test.entry_counter())
+# test = DailyCandleDataRT('AAPL', 365, 5, 1)
+# test.chart(52)
+# print(test.df)
+# print(test.entry_counter())
+
+
+#
+#
+# for rolling_window in range(50):
+#     print(rolling_window)
+#     if DailyCandleDataRT('AAPL', 365, rolling_window, 1).entry_counter() == 100:
+#         print(f'SUCCESS: {rolling_window}')
+#         DailyCandleDataRT('AAPL', 365, rolling_window, 1).chart()
+
+# for std in [.2, .4, .6, .8, 1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0]:
+#     print(std)
+#     if DailyCandleDataRT('AAPL', 365, 5, std).entry_counter() == 100:
+#         print(f'SUCCESS: {rolling_window}')
+#         DailyCandleDataRT('AAPL', 365, 5, std).chart()
