@@ -74,7 +74,7 @@ class DailyCandleDataRT:
 
         return fig.show()
 
-
+####add downtrend functionality
     def entry_counter(self):
         dataframe = self.df
         entries = []
@@ -111,10 +111,10 @@ class DailyCandleDataRT:
         return [len(entries), average]
 
 
-# test = DailyCandleDataRT('AAPL', 365, 5, 1)
-# test.chart(52)
-# print(test.df)
-# print(test.entry_counter())
+# test = DailyCandleDataRT('AFYA', 365, 20, 2)
+# test.chart(50)
+# # print(test.df)
+# # print(test.entry_counter())
 
 
 #

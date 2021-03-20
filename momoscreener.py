@@ -5,6 +5,7 @@ from candlestick import DailyCandleDataRT
 import json
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
+import operator
 
 
 class OptionableSecurities:
@@ -24,10 +25,13 @@ class OptionableSecurities:
         return f'OptionableSecurities(Length: {len(self.securities)})'
 
     # 9SMA > 20SMA > 50SMA > 200SMA (Right now) (add up or down trend functionality)
-    def uptrend_weak(self):
+    def trend_weak(self, op_str):
         # scan for weak uptrend_weak
         # Setup client
         finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+
+        ops = {"<": operator.lt, ">": operator.gt}
+        op_func = ops[op_str]
 
         trending = []
         for index, ticker in enumerate(self.securities):
@@ -35,22 +39,30 @@ class OptionableSecurities:
             try:
                 dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
-                if sma9 > sma20 > sma50 > sma200:
+                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
                     trending.append(ticker)
                     print(f'{ticker}:{len(trending)}')
                 else:
                     print(index)
             except:
                 continue
-        with open(f'weak-uptrend{today_date}.json', 'w') as outfile:
+
+        if op_str == '>':
+            trend = 'up'
+        if op_str == '<':
+            trend = 'down'
+        with open(f'weak-{trend}trend{today_date}.json', 'w') as outfile:
             json.dump(trending, outfile, indent=2)
 
 
     # 9SMA > 20SMA > 50SMA > 200SMA (Right now and 1 month ago)
-    def uptrend_medium(self):
+    def trend_medium(self, op_str):
         # scan for weak uptrend_weak
         # Setup client
         finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+
+        ops = {"<": operator.lt, ">": operator.gt}
+        op_func = ops[op_str]
 
         trending = []
         for index, ticker in enumerate(self.securities):
@@ -59,14 +71,20 @@ class OptionableSecurities:
                 dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
-                if sma9 > sma20 > sma50 > sma200 and sma91m > sma201m > sma501m > sma2001m:
+                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
+                    op_func(sma91m, sma201m) and op_func(sma201m, sma501m) and op_func(sma501m, sma2001m):
                     trending.append(ticker)
                     print(f'{ticker}:{len(trending)}')
                 else:
                     print(index)
             except:
                 continue
-        with open(f'medium-uptrend{today_date}.json', 'w') as outfile:
+
+        if op_str == '>':
+            trend = 'up'
+        if op_str == '<':
+            trend = 'down'
+        with open(f'medium-{trend}trend{today_date}.json', 'w') as outfile:
             json.dump(trending, outfile, indent=2)
 
 
@@ -145,4 +163,4 @@ class FilteredOptionable(OptionableSecurities):
         self.securities = securities
 
 list = OptionableSecurities('optionablestocks.csv')
-list.uptrend_strong()
+list.trend_medium('<')
