@@ -89,10 +89,13 @@ class OptionableSecurities:
 
 
     # 9SMA > 20SMA > 50SMA > 200SMA (Right now and 1 month ago and 2 months ago)
-    def uptrend_strong(self):
+    def trend_strong(self, op_str):
         # scan for weak uptrend_weak
         # Setup client
         finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+
+        ops = {"<": operator.lt, ">": operator.gt}
+        op_func = ops[op_str]
 
         trending = []
         for index, ticker in enumerate(self.securities):
@@ -102,22 +105,32 @@ class OptionableSecurities:
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 c1m, h1m, l1m, o1m, s1m, t1m, v1m, sma91m, sma201m, sma501m, sma2001m, lower, upper = dataframe.df.iloc[-30]
                 c2m, h2m, l2m, o2m, s2m, t2m, v2m, sma92m, sma202m, sma502m, sma2002m, lower, upper = dataframe.df.iloc[-60]
-                if sma9 > sma20 > sma50 > sma200 and sma91m > sma201m > sma501m > sma2001m and sma92m > sma202m > sma502m > sma2002m:
+                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and op_func(sma91m, sma201m) and \
+                    op_func(sma201m, sma501m) and op_func(sma501m, sma2001m) and op_func(sma92m, sma202m) and op_func(sma202m, sma502m) \
+                    and op_func(sma502m, sma2002m):
                     trending.append(ticker)
                     print(f'{ticker}:{len(trending)}')
                 else:
                     print(index)
             except:
                 continue
-        with open(f'strong-uptrend{today_date}.json', 'w') as outfile:
+
+        if op_str == '>':
+            trend = 'up'
+        if op_str == '<':
+            trend = 'down'
+        with open(f'strong-{trend}trend{today_date}.json', 'w') as outfile:
             json.dump(trending, outfile, indent=2)
 
 
     # 9SMA > 20SMA > 50SMA > 200SMA (Right now and .5, 1, 1.5, 2, 2.5, 3 months ago)
-    def uptrend_superstrong(self):
+    def uptrend_superstrong(self, op_str):
         # scan for weak uptrend_weak
         # Setup client
         finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+
+        ops = {"<": operator.lt, ">": operator.gt}
+        op_func = ops[op_str]
 
         trending = []
         for index, ticker in enumerate(self.securities):
@@ -131,16 +144,24 @@ class OptionableSecurities:
                 c8w, h8w, l8w, o8w, s8w, t8w, v8w, sma98w, sma208w, sma508w, sma2008w, lower, upper = dataframe.df.iloc[-60]
                 c10w, h10w, l10w, o10w, s10w, t10w, v10w, sma910w, sma2010w, sma5010w, sma20010w, lower, upper = dataframe.df.iloc[-75]
                 c12w, h12w, l12w, o12w, s12w, t12w, v12w, sma912w, sma2012w, sma5012w, sma20012w, lower, upper = dataframe.df.iloc[-90]
-                if sma9 > sma20 > sma50 > sma200 and sma92w > sma202w > sma502w > sma2002w and sma94w > sma204w > sma504w > sma2004w and \
-                    sma96w > sma206w > sma506w > sma2006w and sma98w > sma208w > sma508w > sma2008w and sma910w > sma2010w > sma5010w > sma20010w \
-                    and sma912w > sma2012w > sma5012w > sma20012w:
+                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and op_func(sma92w, sma202w) and \
+                    op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and op_func(sma94w, sma204w) and op_func(sma204w, sma504w) \
+                    and op_func(sma504w, sma2004w) and op_func(sma96w, sma206w) and op_func(sma206w, sma506w) and op_func(sma506w, sma2006w) \
+                    and op_func(sma98w, sma208w) and op_func(sma208w, sma508w) and op_func(sma508w, sma2008w) and op_func(sma910w, sma2010w) \
+                    and op_func(sma2010w, sma5010w) and op_func(sma5010w, sma20010w) and op_func(sma912w, sma2012w) and op_func(sma2012w, sma5012w) and \
+                    op_func(sma5012w, sma20012w):
                     trending.append(ticker)
                     print(f'{ticker}:{len(trending)}')
                 else:
                     print(index)
             except:
                 continue
-        with open(f'superstrong-uptrend{today_date}.json', 'w') as outfile:
+
+        if op_str == '>':
+            trend = 'up'
+        if op_str == '<':
+            trend = 'down'
+        with open(f'superstrong-{trend}trend{today_date}.json', 'w') as outfile:
             json.dump(trending, outfile, indent=2)
 
 
