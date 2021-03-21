@@ -3,14 +3,7 @@ from time import sleep
 import finnhub
 import json
 
-# finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
-#
-# # Company Peers
-# print(finnhub_client.company_peers('RUTH'))
 
-# # # Company Profile 2
-# # print(finnhub_client.company_profile2(symbol='AAPL')['finnhubIndustry'])
-#
 with open('superstrong-uptrend03-20-21.json') as infile:
     finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
 

@@ -99,7 +99,7 @@ class DailyCandleDataRT:
             if op_reversed_func(row[h_or_l], row[bollinger]) and op_func(row['sma9'], row['sma20']) \
                 and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
                 entries.append(index)
-        print(f'Total: {entries}')
+        # print(f'Total: {entries}')
         total = len(entries)
         i = 0
         while i < len(entries):
@@ -117,27 +117,60 @@ class DailyCandleDataRT:
         for grouping in groupings:
             sum += repeats.count(grouping)
         sum += len(entries) - len(repeats)
-        print(f'Sum: {sum}')
+        # print(f'Sum: {sum}')
         try:
             average = total / sum
         except ZeroDivisionError:
-            print(f'Average Entry Length: {0}')
+            # print(f'Average Entry Length: {0}')
             return [0, 0]
-        print(f'Average Entry Length: {average}')
-        return [len(entries), average]
+        # print(f'Average Entry Length: {average}')
+        # print([sum, average])
+        return [sum, average]
 
 
-test = DailyCandleDataRT('HTGC', 365, 5, 1.2)
-test.chart(120)
-print(test.df)
-print(test.entry_counter('>'))
-#
-#
-# for rolling_window in range(50):
-#     time.sleep(1)
-#     print(rolling_window)
-#     DailyCandleDataRT('HTGC', 365, rolling_window, 1).entry_counter('>')
+# test = DailyCandleDataRT('KSS', 365, 5, .8)
+# test.chart(120)
+# print(test.df)
+# print(test.entry_counter('>'))
 
-# for std in [.2, .4, .6, .8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0]:
-#     print(std)
-#     print(DailyCandleDataRT('CLNY', 365, 5, std).entry_counter('>'))
+
+rolling_window_and_counter = []
+for rolling_window in range(12):
+    try:
+        time.sleep(1)
+        rolling_window_and_counter.append([rolling_window, \
+            DailyCandleDataRT('KSS', 365, rolling_window, 1).entry_counter('>')])
+        print(rolling_window_and_counter[rolling_window])
+    except:
+        continue
+
+print('')
+for counter in rolling_window_and_counter:
+    if counter[1][0] == 12:
+        print(counter[0], counter[1])
+        break
+    elif counter[1][0] == 11:
+        print(counter[0], counter[1])
+        break
+    elif counter[1][0] == 10:
+        print(counter[0], counter[1])
+        break
+    elif counter[1][0] == 9:
+        print(counter[0], counter[1])
+        break
+    elif counter[1][0] == 8:
+        print(counter[0], counter[1])
+        break
+    else:
+        print('No match.')
+
+
+###### COPY ALGO FROM ABOVE
+std_and_counter = []
+for std in [.2, .4, .6, .8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4]:
+    try:
+        time.sleep(1)
+        std_and_counter.append([std, DailyCandleDataRT('KSS', 365, rolling_window, 1).entry_counter('>')])
+        print(rolling_window_and_counter[rolling_window])
+    except:
+        continue

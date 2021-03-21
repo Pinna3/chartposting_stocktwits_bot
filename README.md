@@ -18,3 +18,6 @@ bollinger band variables, research theory.
 Next steps:
 1) Build in auto entry scanner... calbrate for 12 signals a year if possible
 2) Append sector to super strong uptrend list.
+
+
+ADD CACHE (MEMOIZE) TO AVOID QUERYING MORE THAN NECESSARY, CUT TIME DOWN SIGNIFICANTLY.
