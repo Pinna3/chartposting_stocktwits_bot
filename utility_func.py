@@ -1,197 +1,44 @@
 from candlestick import DailyCandleDataRT
 from time import sleep
+import finnhub
 import json
 
-up_stocks = [
-    "AAL",
-    "AB",
-    "ABB",
-    "ABR",
-    "ACHC",
-    "ACLS",
-    "ADTN",
-    "AEO",
-    "AGRO",
-    "AINV",
-    "AMG",
-    "AMN",
-    "AMNB",
-    "AMSWA",
-    "ANGI",
-    "ANGO",
-    "APEN",
-    "APG",
-    "APOG",
-    "AR",
-    "ARCB",
-    "ARI",
-    "ARR",
-    "ASIX",
-    "ASO",
-    "ASRV",
-    "ASYS",
-    "ATEC",
-    "ATLC",
-    "AVID",
-    "AVYA",
-    "AWAY",
-    "AWH",
-    "BALY",
-    "BANC",
-    "BBW",
-    "BC",
-    "BCI",
-    "BCOR",
-    "BCRX",
-    "BCSF",
-    "BEN",
-    "BETZ",
-    "BHC",
-    "BHR",
-    "BIP",
-    "BKE",
-    "BLMN",
-    "BNED",
-    "BNO",
-    "BOOM",
-    "BPFH",
-    "BRKS",
-    "BSET",
-    "BW",
-    "BX",
-    "BZH",
-    "CALX",
-    "CAMP",
-    "CAPL",
-    "CAR",
-    "CARS",
-    "CASH",
-    "CBRE",
-    "CCLP",
-    "CCS",
-    "CDEV",
-    "CDR",
-    "CDW",
-    "CEQP",
-    "CHEF",
-    "CHUY",
-    "CLB",
-    "CLIR",
-    "CLNE",
-    "CLR",
-    "CMCO",
-    "CMPR",
-    "CNDT",
-    "CNR",
-    "CNX",
-    "COHR",
-    "COMM",
-    "COWZ",
-    "CPG",
-    "CSLT",
-    "CSU",
-    "CSV",
-    "CTRE",
-    "CTRN",
-    "CUBI",
-    "CVA",
-    "CVGW",
-    "CVLT",
-    "CX",
-    "DBC",
-    "DBD",
-    "DBE",
-    "DBO",
-    "DBV",
-    "DCI",
-    "DCOM",
-    "DDS",
-    "DENN",
-    "DIN",
-    "DISCA",
-    "DJP",
-    "DKNG",
-    "DLX",
-    "DOX",
-    "DRN",
-    "DS",
-    "DSX",
-    "DT",
-    "DTN",
-    "DXJ",
-    "EARS",
-    "EAT",
-    "EB",
-    "EFC",
-    "ELY",
-    "ESGU",
-    "ETH",
-    "EVC",
-    "EVH",
-    "EWBC",
-    "EWD",
-    "EXP",
-    "EZA",
-    "FAF",
-    "FBC",
-    "FBK",
-    "FC",
-    "FCOM",
-    "FFG",
-    "FIX",
-    "FNKO",
-    "FOXF",
-    "FPI",
-    "FRGI",
-    "FTGC",
-    "FV",
-    "FXD",
-    "FXG",
-    "GAMR",
-    "GATX",
-    "GBX",
-    "GLAD",
-    "GLP",
-    "GPRO",
-    "GPX",
-    "GSG",
-    "GSLC",
-    "GTES",
-    "GTIM",
-    "GWB",
-]
+# finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+#
+# # Company Peers
+# print(finnhub_client.company_peers('RUTH'))
 
-#takes stock dataframe as input and returns 1) number of entries generates by conditions
-#indicated and structure of technical indicators, specifically bollinger bands, can
-#be expanded for more technical indicators and 2) avergage number of days in buying/selling
-#range
-def entry_counter(ticker, num_days, bollinger_rolling_window, bollinger_std):
-    dataframe = DailyCandleDataRT(ticker, num_days, bollinger_rolling_window, bollinger_std)
-    entries = []
-    repeats = []
-    groupings = set()
-    for index, row in dataframe.df.iterrows():
-        if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
-            entries.append(index)
-    print(entries)
-    total = len(entries)
-    i = 0
-    while i < len(entries):
+# # # Company Profile 2
+# # print(finnhub_client.company_profile2(symbol='AAPL')['finnhubIndustry'])
+#
+with open('superstrong-uptrend03-20-21.json') as infile:
+    finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+
+    stocks = json.load(infile)
+
+    stock_list_expanded = []
+    for index, stock in enumerate(stocks):
         try:
-            if entries[i] - entries[i + 1] == -1:
-                entries.remove(entries[i])
-                repeats.append(i)
-                groupings.add(i)
-                i -= 1
-            else:
-                i += 1
-        except IndexError:
-            break
-    sum = 0
-    for grouping in groupings:
-        sum += repeats.count(grouping)
-    sum += len(entries) - len(repeats)
-    average = total / sum
-    return len(entries), average
+            industry = finnhub_client.company_profile2(symbol=stock)['finnhubIndustry']
+            peers = finnhub_client.company_peers(stock)
 
-# print(entry_counter(up_stocks[96]))
+            hashable_peers = []
+            for peer in peers:
+                hashable_peer = '$' + peer
+                hashable_peers.append(hashable_peer)
+
+            stock_dict = {}
+            stock_dict['ticker'] = stock
+            stock_dict['industry'] = industry
+            stock_dict['peers'] = hashable_peers[:3]
+            stock_dict['peers'].append('$SPY')
+            stock_list_expanded.append(stock_dict)
+
+            print(index)
+            print(stock_dict)
+            sleep(1)
+        except KeyError:
+            continue
+
+    with open('dict-superstrong-uptrend03-20-21.json', 'w') as outfile:
+        json.dump(stock_list_expanded, outfile, indent=2)

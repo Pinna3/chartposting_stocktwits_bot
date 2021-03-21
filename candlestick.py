@@ -127,10 +127,10 @@ class DailyCandleDataRT:
         return [len(entries), average]
 
 
-test = DailyCandleDataRT('CLNY', 365, 3, 1)
-test.chart(120)
-print(test.df)
-print(test.entry_counter('>'))
+# test = DailyCandleDataRT('CLNY', 365, 3, 1)
+# test.chart(120)
+# print(test.df)
+# print(test.entry_counter('>'))
 
 
 
