@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.graph_objs as go
 import finnhub
 import time
+import operator
 
 #Database Object with candlestick data and moving average data (for now)
 class DailyCandleDataRT:
@@ -29,10 +30,10 @@ class DailyCandleDataRT:
         #### bollinger data (needs tweaking)
         bollinger_reference_lower = df.l.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).mean()
         bollinger_reference_upper = df.h.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).mean()
-        sigma_lower = df.l.rolling(window=10, min_periods=10).std()
-        sigma_upper = df.h.rolling(window=10, min_periods=10).std()
-        df['lower'] = bollinger_reference_lower - bollinger_std * sigma_lower
-        df['upper'] = bollinger_reference_upper + bollinger_std * sigma_upper
+        sigma_lower = df.l.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).std()
+        sigma_upper = df.h.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).std()
+        df['lower'] = bollinger_reference_lower - (bollinger_std * sigma_lower)
+        df['upper'] = bollinger_reference_upper + (bollinger_std * sigma_upper)
 
         self.df = df
 
@@ -74,14 +75,29 @@ class DailyCandleDataRT:
 
         return fig.show()
 
-####add downtrend functionality
-    def entry_counter(self):
+####use op_str '>' for uptrend and op_str '<' for downtrend
+    def entry_counter(self, op_str):
         dataframe = self.df
         entries = []
         repeats = []
         groupings = set()
+
+        ops = {"<": operator.lt, ">": operator.gt}
+        op_func = ops[op_str]
+        ops_reversed = {">": operator.lt, "<": operator.gt}
+        op_reversed_func = ops_reversed[op_str]
+        if op_str == '>':
+            h_or_l = 'l'
+        if op_str == '<':
+            h_or_l = 'h'
+        if op_str == '>':
+            bollinger = 'lower'
+        if op_str == '<':
+            bollinger = 'upper'
+
         for index, row in dataframe.iterrows():
-            if row['l'] < row['lower'] and row['sma9'] > row['sma20'] > row['sma50'] > row['sma200']:
+            if op_reversed_func(row[h_or_l], row[bollinger]) and op_func(row['sma9'], row['sma20']) \
+                and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
                 entries.append(index)
         print(f'Total: {entries}')
         total = len(entries)
@@ -111,22 +127,18 @@ class DailyCandleDataRT:
         return [len(entries), average]
 
 
-# test = DailyCandleDataRT('AFYA', 365, 20, 2)
-# test.chart(50)
-# # print(test.df)
-# # print(test.entry_counter())
+# test = DailyCandleDataRT('QURE', 365, 20, 2)
+# test.chart(120)
+# print(test.df)
+# print(test.entry_counter('<'))
 
 
-#
-#
+
+
 # for rolling_window in range(50):
 #     print(rolling_window)
-#     if DailyCandleDataRT('AAPL', 365, rolling_window, 1).entry_counter() == 100:
-#         print(f'SUCCESS: {rolling_window}')
-#         DailyCandleDataRT('AAPL', 365, rolling_window, 1).chart()
+#     DailyCandleDataRT('QURE', 365, rolling_window, 1).entry_counter('<')
 
-# for std in [.2, .4, .6, .8, 1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0]:
+# for std in [.2, .4, .6, .8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0]:
 #     print(std)
-#     if DailyCandleDataRT('AAPL', 365, 5, std).entry_counter() == 100:
-#         print(f'SUCCESS: {rolling_window}')
-#         DailyCandleDataRT('AAPL', 365, 5, std).chart()
+#     print(DailyCandleDataRT('QURE', 365, 5, std).entry_counter('<'))
