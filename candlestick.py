@@ -148,18 +148,23 @@ print('')
 for counter in rolling_window_and_counter:
     if counter[1][0] == 12:
         print(counter[0], counter[1])
+        rolling_window = counter[1][0]
         break
     elif counter[1][0] == 11:
         print(counter[0], counter[1])
+        rolling_window = counter[1][0]
         break
     elif counter[1][0] == 10:
         print(counter[0], counter[1])
+        rolling_window = counter[1][0]
         break
     elif counter[1][0] == 9:
         print(counter[0], counter[1])
+        rolling_window = counter[1][0]
         break
     elif counter[1][0] == 8:
         print(counter[0], counter[1])
+        rolling_window = counter[1][0]
         break
     else:
         print('No match.')
@@ -170,7 +175,7 @@ std_and_counter = []
 for std in [.2, .4, .6, .8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4]:
     try:
         time.sleep(1)
-        std_and_counter.append([std, DailyCandleDataRT('KSS', 365, rolling_window, 1).entry_counter('>')])
+        std_and_counter.append([std, DailyCandleDataRT('KSS', 365, rolling_window, std).entry_counter('>')])
         print(rolling_window_and_counter[rolling_window])
     except:
         continue
