@@ -127,18 +127,19 @@ class DailyCandleDataRT:
         return [len(entries), average]
 
 
-# test = DailyCandleDataRT('QURE', 365, 20, 2)
-# test.chart(120)
-# print(test.df)
-# print(test.entry_counter('<'))
+test = DailyCandleDataRT('CLNY', 365, 3, 1)
+test.chart(120)
+print(test.df)
+print(test.entry_counter('>'))
 
 
 
 
 # for rolling_window in range(50):
+#     time.sleep(1)
 #     print(rolling_window)
-#     DailyCandleDataRT('QURE', 365, rolling_window, 1).entry_counter('<')
+#     DailyCandleDataRT('CLNY', 365, rolling_window, 1).entry_counter('>')
 
 # for std in [.2, .4, .6, .8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0]:
 #     print(std)
-#     print(DailyCandleDataRT('QURE', 365, 5, std).entry_counter('<'))
+#     print(DailyCandleDataRT('CLNY', 365, 3, std).entry_counter('>'))

@@ -14,3 +14,8 @@ bollinger band variables, research theory.
 2) Scan that list throughout the day for entries
 3) Print and save chart in folder
 4) Publish chart to stocktwits and twitter with related tickers and description
+
+
+Next steps:
+1) Build in auto entry scanner... calbrate for 12 signals a year if possible
+2) Append sector to super strong uptrend list.

@@ -184,4 +184,4 @@ class FilteredOptionable(OptionableSecurities):
         self.securities = securities
 
 list = OptionableSecurities('optionablestocks.csv')
-list.trend_medium('<')
+list.uptrend_superstrong('>')
