@@ -3,7 +3,6 @@ The main program will automatically post trade setups with charts throughout the
 
 1) Optimize bollinger band smoothing length for desired hit frequency (add data to ticker list)
 2) Determine average number of days below or above bollinger band
-3) Add downtrending functionality
 
 
 Now that I have an entry counter, for inputed conditions I should be able to
