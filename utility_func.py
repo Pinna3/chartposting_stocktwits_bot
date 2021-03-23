@@ -141,13 +141,13 @@ superstrong_stock_optimal_bollinger_params = {}
 for ticker in super_stocks:
     try:
         bb_window, bb_std = optimal_bb_window_and_stddev(ticker)
-        print(f'\n\n Rolling Window: {bb_window}, STD: {bb_std}')
+        print(f'Rolling Window: {bb_window}, STD: {bb_std}\n\n')
         superstrong_stock_optimal_bollinger_params[ticker] = [bb_window, bb_std]
     except:
         continue
 
 with open('superstrong_bb_params.json', 'w') as outfile:
-    json.load(superstrong_stock_optimal_bollinger_params, outfile, indent=2)
+    json.dump(superstrong_stock_optimal_bollinger_params, outfile, indent=2)
 #
 # test = DailyCandleDataRT('BBW', 365, 20, 2)
 # test.chart(120)
