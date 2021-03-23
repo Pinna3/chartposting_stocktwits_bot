@@ -3,7 +3,7 @@ from time import sleep
 import finnhub
 import json
 
-def expand_data(json_in, json_out):
+def make_tickers_consumable(json_in, json_out):
     #'superstrong-uptrend03-20-21.json'
     with open(json_in) as infile:
         finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
@@ -11,10 +11,15 @@ def expand_data(json_in, json_out):
         stocks = json.load(infile)
 
         stock_list_expanded = []
-        for index, stock in enumerate(stocks):
+        for stock in stocks:
             try:
+                print(stock)
                 industry = finnhub_client.company_profile2(symbol=stock)['finnhubIndustry']
+                sleep(1)
                 peers = finnhub_client.company_peers(stock)
+                sleep(1)
+                bb_window, bb_std = optimal_bb_window_and_stddev(stock)
+                print(f'Rolling Window: {bb_window}, STD: {bb_std}\n\n')
 
                 hashable_peers = []
                 for peer in peers:
@@ -24,17 +29,17 @@ def expand_data(json_in, json_out):
                 stock_dict = {}
                 stock_dict['ticker'] = stock
                 stock_dict['industry'] = industry
+                stock_dict['bb_window'] = bb_window
+                stock_dict['bb_std'] = bb_std
                 stock_dict['peers'] = hashable_peers[:3]
                 stock_dict['peers'].append('$SPY')
                 stock_list_expanded.append(stock_dict)
 
-                print(index)
                 print(stock_dict)
-                sleep(1)
-            except KeyError:
+            except:
                 continue
         #'dict-superstrong-uptrend03-20-21.json'
-        with open(json_out) as outfile:
+        with open(json_out, 'w') as outfile:
             json.dump(stock_list_expanded, outfile, indent=2)
 # expand_data('superstrong-uptrend03-20-21.json', 'dict-superstrong-uptrend03-20-21.json')
 
@@ -134,27 +139,4 @@ def optimal_bb_window_and_stddev(ticker):
     bb_std = optimal_bb_std(ticker, bb_window)
     return bb_window, bb_std
 
-with open('superstrong-uptrend03-20-21.json') as infile:
-    super_stocks = json.load(infile)
-
-superstrong_stock_optimal_bollinger_params = {}
-for ticker in super_stocks:
-    try:
-        bb_window, bb_std = optimal_bb_window_and_stddev(ticker)
-        print(f'Rolling Window: {bb_window}, STD: {bb_std}\n\n')
-        superstrong_stock_optimal_bollinger_params[ticker] = [bb_window, bb_std]
-    except:
-        continue
-
-with open('superstrong_bb_params.json', 'w') as outfile:
-    json.dump(superstrong_stock_optimal_bollinger_params, outfile, indent=2)
-#
-# test = DailyCandleDataRT('BBW', 365, 20, 2)
-# test.chart(120)
-# # print(test.df)
-# # print(test.entry_counter('>'))
-# bb_window, bb_std = optimal_bb_window_and_stddev('BBW')
-# print(bb_window, bb_std)
-#
-# test2 = DailyCandleDataRT('BBW', 365, bb_window, bb_std)
-# test2.chart(120)
+make_tickers_consumable('test_tickers.json', 'ticker_dict.json')

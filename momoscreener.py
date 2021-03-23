@@ -375,29 +375,56 @@ class FilteredOptionable(OptionableSecurities):
                     securities.append(ticker)
         self.securities = securities
 
-# list = OptionableSecurities('csvsample.csv')
-# list.trend_0w('>')
-# list.trend_2w('>')
-# list.trend_4w('>')
-# list.trend_6w('>')
-# list.trend_8w('>')
-# list.trend_10w('>')
-# list.trend_12w('>')
-# list.trend_14w('>')
-# list.trend_16w('>')
-
-#generates graph for trending hits over different time periods
-import plotly.graph_objs as go
-hits = []
-for period in [0, 2, 4, 6, 8, 10, 12, 14, 16]:
-    with open(f'{period}w-uptrend03-23-21.json') as infile:
-        list = json.load(infile)
-        hits.append(len(list))
-        print(period, len(list))
-trace = {'x': [0, 2, 4, 6, 8, 10, 12, 14, 16], 'y': hits, 'type': 'scatter', 'mode': 'lines',
-    'line': {'width': 1, 'color': 'blue'}, 'name': 'Hits'}
-data = [trace]
-layout = go.Layout({'title': {'text': f'Hits',
-        'font': {'size': 15}}})
-fig = go.Figure(data=data, layout=layout)
-fig.show()
+# list = OptionableSecurities('optionablestocks.csv')
+# list.trend_0w('<')
+# list.trend_2w('<')
+# list.trend_4w('<')
+# list.trend_6w('<')
+# list.trend_8w('<')
+# list.trend_10w('<')
+# list.trend_12w('<')
+# list.trend_14w('<')
+# list.trend_16w('<')
+#
+# list2 = OptionableSecurities('optionablestocks.csv')
+# list2.trend_0w('>')
+# list2.trend_2w('>')
+# list2.trend_4w('>')
+# list2.trend_6w('>')
+# list2.trend_8w('>')
+# list2.trend_10w('>')
+# list2.trend_12w('>')
+# list2.trend_14w('>')
+# list2.trend_16w('>')
+#
+# # #generates graph for trending hits over different time periods
+# # import plotly.graph_objs as go
+# # hits = []
+# # for period in [0, 2, 4, 6, 8, 10, 12, 14, 16]:
+# #     with open(f'{period}w-uptrend03-23-21.json') as infile:
+# #         list = json.load(infile)
+# #         hits.append(len(list))
+# #         print(period, len(list))
+# # trace = {'x': [0, 2, 4, 6, 8, 10, 12, 14, 16], 'y': hits, 'type': 'scatter', 'mode': 'lines',
+# #     'line': {'width': 1, 'color': 'blue'}, 'name': 'Hits'}
+# # data = [trace]
+# # layout = go.Layout({'title': {'text': f'Uptrend Hits',
+# #         'font': {'size': 15}}})
+# # fig = go.Figure(data=data, layout=layout)
+# # fig.show()
+# #
+# # #generates graph for trending hits over different time periods
+# # import plotly.graph_objs as go
+# # hits = []
+# # for period in [0, 2, 4, 6, 8, 10, 12, 14, 16]:
+# #     with open(f'{period}w-downtrend03-23-21.json') as infile:
+# #         list = json.load(infile)
+# #         hits.append(len(list))
+# #         print(period, len(list))
+# # trace = {'x': [0, 2, 4, 6, 8, 10, 12, 14, 16], 'y': hits, 'type': 'scatter', 'mode': 'lines',
+# #     'line': {'width': 1, 'color': 'blue'}, 'name': 'Hits'}
+# # data = [trace]
+# # layout = go.Layout({'title': {'text': f'Downtrend Hits',
+# #         'font': {'size': 15}}})
+# # fig = go.Figure(data=data, layout=layout)
+# # fig.show()
