@@ -3,9 +3,11 @@ import plotly.graph_objs as go
 import finnhub
 import time
 import operator
+# from utility_func import memoize
 
 #Database Object with candlestick data and moving average data (for now)
 class DailyCandleDataRT:
+    # @memoize
     def __init__(self, ticker, num_days, bollinger_rolling_window, bollinger_std):
         self.ticker = ticker
         self.num_days = num_days

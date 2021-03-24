@@ -2,6 +2,7 @@ from candlestick import *
 from time import sleep
 import finnhub
 import json
+import functools
 
 def make_tickers_consumable(json_in, json_out):
     #'superstrong-uptrend03-20-21.json'
@@ -139,4 +140,14 @@ def optimal_bb_window_and_stddev(ticker):
     bb_std = optimal_bb_std(ticker, bb_window)
     return bb_window, bb_std
 
-make_tickers_consumable('test_tickers.json', 'ticker_dict.json')
+def memoize(function):
+    function._cache = {}
+    @functools.wraps(function)
+    def wrapper(*args, **kwargs):
+        key = (args, tuple(kwargs.items()))
+        if key not in function._cache:
+            function._cache[key] = function(*args, **kwargs)
+        return function._cache[key]
+    return wrapper
+
+# make_tickers_consumable('test_tickers.json', 'ticker_dict.json')
