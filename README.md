@@ -24,3 +24,7 @@ So now after after a couple nights of running scans, soon to be 1 night, I will
 have 1 list of stock dictionaries with all the necessary info required to scan throughout
 the day for entries (adjust scans to make quicker, narrow parameters and utilize memoize  
   i.e. caching). So that is the next step... set up the main program to do that.
+
+  Allow for crypto functionality as well... shouldn't be hard with cryptocandles.
+
+  Also, clean up this read me.
