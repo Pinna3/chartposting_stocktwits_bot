@@ -19,28 +19,37 @@ class OptionableSecurities:
                 ticker = str(row[0])
                 securities.append(ticker)
         securities.pop()
-        self.securities = securities
+        # Setup finnhub client connection
+        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+        candles = []
+        for security in securities:
+            try:
+                sleep(1)
+                candles.append(DailyCandleDataRT(security, 365, 20, 2))
+            except:
+                continue
+        self.candles = candles
 
     def __str__(self):
         return f'OptionableSecurities(Length: {len(self.securities)})'
 
     # 9SMA >/< 20SMA >/< 50SMA >/< 200SMA (current) [op_str = '>' for uptrend]
     def trend_0w(self, op_str):
-        # Setup finnhub client connection
-        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+        # # Setup finnhub client connection
+        # finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
         #up/down trendtrend toggle
         ops = {"<": operator.lt, ">": operator.gt}
         op_func = ops[op_str]
         #loop through securities and filter for up/down trends
         trending = []
-        for index, ticker in enumerate(self.securities):
-            sleep(1)
+        for index, object in enumerate(self.candles):
+            # sleep(1)
             try:
-                dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
+                # dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
+                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
-                    trending.append(ticker)
-                    print(f'{ticker}:{len(trending)}')
+                    trending.append(object.ticker)
+                    print(f'{object.ticker}:{len(trending)}')
                 else:
                     print(index)
             except:
@@ -55,23 +64,23 @@ class OptionableSecurities:
 
     # 9SMA >/< 20SMA >/< 50SMA >/< 200SMA (2w ago - current) [op_str = '>' for uptrend]
     def trend_2w(self, op_str):
-        # Setup finnhub client connection
-        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+        # # Setup finnhub client connection
+        # finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
         #up/down trendtrend toggle
         ops = {"<": operator.lt, ">": operator.gt}
         op_func = ops[op_str]
         #loop through securities and filter for up/down trends
         trending = []
-        for index, ticker in enumerate(self.securities):
-            sleep(1)
+        for index, object in enumerate(self.candles):
+            # sleep(1)
             try:
-                dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
+                # dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = dataframe.df.iloc[-15]
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w):
-                    trending.append(ticker)
-                    print(f'{ticker}:{len(trending)}')
+                    trending.append(object.ticker)
+                    print(f'{object.ticker}:{len(trending)}')
                 else:
                     print(index)
             except:
@@ -86,25 +95,25 @@ class OptionableSecurities:
 
     # 9SMA >/< 20SMA >/< 50SMA >/< 200SMA (4w ago - current) [op_str = '>' for uptrend]
     def trend_4w(self, op_str):
-        # Setup finnhub client connection
-        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+        # # Setup finnhub client connection
+        # finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
         #up/down trendtrend toggle
         ops = {"<": operator.lt, ">": operator.gt}
         op_func = ops[op_str]
         #loop through securities and filter for up/down trends
         trending = []
-        for index, ticker in enumerate(self.securities):
-            sleep(1)
+        for index, object in enumerate(self.candles):
+            # sleep(1)
             try:
-                dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
+                # dataframe = DailyCandleDataRT(ticker, 365, 20, 2)
                 c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = dataframe.df.iloc[-1]
                 c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = dataframe.df.iloc[-15]
                 c4w, h4w, l4w, o4w, s4w, t4w, v4w, sma94w, sma204w, sma504w, sma2004w, lower, upper = dataframe.df.iloc[-30]
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and \
                     op_func(sma94w, sma204w) and op_func(sma204w, sma504w) and op_func(sma504w, sma2004w):
-                    trending.append(ticker)
-                    print(f'{ticker}:{len(trending)}')
+                    trending.append(object.ticker)
+                    print(f'{object.ticker}:{len(trending)}')
                 else:
                     print(index)
             except:
@@ -375,27 +384,28 @@ class FilteredOptionable(OptionableSecurities):
                     securities.append(ticker)
         self.securities = securities
 
-# list = OptionableSecurities('optionablestocks.csv')
-# list.trend_0w('<')
-# list.trend_2w('<')
-# list.trend_4w('<')
-# list.trend_6w('<')
-# list.trend_8w('<')
-# list.trend_10w('<')
-# list.trend_12w('<')
-# list.trend_14w('<')
-# list.trend_16w('<')
-#
-# list2 = OptionableSecurities('optionablestocks.csv')
-# list2.trend_0w('>')
-# list2.trend_2w('>')
-# list2.trend_4w('>')
-# list2.trend_6w('>')
-# list2.trend_8w('>')
-# list2.trend_10w('>')
-# list2.trend_12w('>')
-# list2.trend_14w('>')
-# list2.trend_16w('>')
+list2 = OptionableSecurities('optionablestocks.csv')
+list2.trend_0w('>')
+list2.trend_2w('>')
+list2.trend_4w('>')
+list2.trend_6w('>')
+list2.trend_8w('>')
+list2.trend_10w('>')
+list2.trend_12w('>')
+list2.trend_14w('>')
+list2.trend_16w('>')
+
+list = OptionableSecurities('optionablestocks.csv')
+list.trend_0w('<')
+list.trend_2w('<')
+list.trend_4w('<')
+list.trend_6w('<')
+list.trend_8w('<')
+list.trend_10w('<')
+list.trend_12w('<')
+list.trend_14w('<')
+list.trend_16w('<')
+
 #
 # # #generates graph for trending hits over different time periods
 # # import plotly.graph_objs as go
