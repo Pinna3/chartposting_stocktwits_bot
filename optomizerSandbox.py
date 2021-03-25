@@ -1,12 +1,13 @@
-from candlestick import SecurityTradeData
 
-def bb_param_optomizer(SecurityTradeDataObject, op_str):
-    candles = SecurityTradeDataObject
-    def optimal_bb_window(op_str):
+####FUTURE THOUGHT EXPERIMENT.... WORTH EXPLORING
+def bb_param_optomizer_reverse(ticker, op_str):
+    candles = SecurityTradeData(ticker, 365)
+    time.sleep(1)
+    def optimal_bb_window(ticker,  bb_std, op_str):
         rolling_window_and_counter = []
         for rolling_window in range(21):
             try:
-                candles.custom_bollingers(rolling_window, 1)
+                candles.custom_bollingers(rolling_window,  bb_std,)
                 rolling_window_and_counter.append([rolling_window, \
                     candles.entry_counter(op_str)])
                 print(rolling_window_and_counter[rolling_window])
@@ -51,13 +52,13 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str):
                 return rolling_window
         return None
 
-    def optimal_bb_std(rolling_window, op_str):
+    def optimal_bb_std(ticker, op_str):
         std_and_counter = []
         for index, std in enumerate([.1, .2, .3, .4, .5, .6, .7, .8, .9,
                                      1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7,
                                      1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5]):
             try:
-                candles.custom_bollingers(rolling_window, std)
+                candles.custom_bollingers(2, std)
                 std_and_counter.append([std, candles.entry_counter(op_str)])
                 print(std_and_counter[index])
             except:
@@ -103,6 +104,11 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str):
                 return std
         return None
 
-    bb_window = optimal_bb_window(op_str)
-    bb_std = optimal_bb_std(bb_window, op_str)
+    bb_std = optimal_bb_std(ticker, op_str)
+    bb_window = optimal_bb_window(ticker, bb_std, op_str)
     return bb_window, bb_std
+
+# print(bb_param_optomizer_reverse('JBLU', '>'))
+# kirk = SecurityTradeData('JBLU', 365)
+# kirk.custom_bollingers(8, .1)
+# kirk.chart(120)

@@ -1,4 +1,4 @@
-from candlestick import DailyCandleDataRT
+from candlestick import SecurityTradeData
 import finnhub
 import json
 import operator
@@ -20,17 +20,20 @@ def dailyscanner(json_watchlist, op_str):
     for index, security in enumerate(watchlist):
         sleep(1)
         try:
-            # print(security)
-            candle_object = DailyCandleDataRT(security['ticker'], 365, security['bb_window'], security['bb_std'])
+            print(security['ticker'])
+            candle_object = SecurityTradeData(security['ticker'], 365)
+            candle_object.custom_bollingers(security['bb_window'], security['bb_std'])
             c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-1]
             if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                 opposite_op_func(c, lower): ####make interchangeable for shorts
                 hits.append({'ticker': security['ticker'], 'industry': security['industry']})
+                print('Hit! Hit! Hit! Hit! Hit! Hit! Hit! Hit! Hit! Hit! Hit!')
+                # print(f'{security['ticker']} IN RANGE!!!!!! {index}/{len(watchlist)}')
                 # candle_object.chart(120)
                 # print(hits)
             else:
-                print(index)
-        except:
+                print(str(index) + '/' + str(len(watchlist)))
+        except ValueError:
             continue
 
     sectors = {}
@@ -42,4 +45,5 @@ def dailyscanner(json_watchlist, op_str):
     print(sectors)
 
 
-dailyscanner('ticker_dict.json', '>')
+dailyscanner('4w-UPwatchlist.json', '>')
+dailyscanner('8w-UPwatchlist.json', '>')
