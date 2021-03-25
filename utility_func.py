@@ -150,4 +150,8 @@ def memoize(function):
         return function._cache[key]
     return wrapper
 
-# make_tickers_consumable('test_tickers.json', 'ticker_dict.json')
+make_tickers_consumable('4w-uptrend03-24-21.json', '4w-UPwatchlist.json')
+make_tickers_consumable('8w-uptrend03-24-21.json', '8w-UPwatchlist.json')
+make_tickers_consumable('4w-downtrend03-24-21.json', '4w-DOWNwatchlist.json')
+make_tickers_consumable('10w-downtrend03-24-21.json', '10w-DOWNwatchlist.json')
+make_tickers_consumable('12w-downtrend03-24-21.json', '12w-DOWNwatchlist.json')
