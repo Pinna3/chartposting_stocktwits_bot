@@ -1,4 +1,6 @@
 from candlestick import SecurityTradeData
+import plotly.graph_objs as go
+import json
 
 def bb_param_optomizer(SecurityTradeDataObject, op_str):
     candles = SecurityTradeDataObject
@@ -106,3 +108,39 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str):
     bb_window = optimal_bb_window(op_str)
     bb_std = optimal_bb_std(bb_window, op_str)
     return bb_window, bb_std
+
+def graph_degrees_of_trend(down_or_up_str, date_str):
+    hits = []
+    for period in [0, 2, 4, 6, 8, 10, 12, 14, 16]:
+        with open(f'{period}w-{down_or_up_str}trend{date_str}.json') as infile:
+            list = json.load(infile)
+            hits.append(len(list))
+            print(period, len(list))
+    trace = {'x': [0, 2, 4, 6, 8, 10, 12, 14, 16], 'y': hits, 'type': 'scatter', 'mode': 'lines',
+        'line': {'width': 1, 'color': 'blue'}, 'name': 'Hits'}
+    data = [trace]
+    layout = go.Layout({'title': {'text': f'Uptrend Hits',
+            'font': {'size': 15}}})
+    fig = go.Figure(data=data, layout=layout)
+    fig.show()
+
+def calculate_and_file_dropoff_rates(down_or_up_str, date_str):
+    hits = []
+    for period in [0, 2, 4, 6, 8, 10, 12, 14, 16]:
+        with open(f'{period}w-{down_or_up_str}trend{date_str}.json') as infile:
+            list = json.load(infile)
+            hits.append(len(list))
+            # print(period, len(list))
+    dropoffs = []
+    for index, count in enumerate(hits):
+        if index != 0:
+            dropoff = round(1 - (count / hits[index-1]), 2)
+            dropoffs.append((index * 2, dropoff))
+    dropoffs_sorted = sorted(dropoffs, key = lambda x: x[1])
+    with open(f'WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
+        json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
+    return dropoffs, dropoffs_sorted
+
+
+# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('up', '03-25-21')
+# print(dropoffs_sorted)

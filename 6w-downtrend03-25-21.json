@@ -1,0 +1,422 @@
+[
+  {
+    "ticker": "AGG",
+    "industry": "ETF",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "BLV",
+    "industry": "ETF",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "BND",
+    "industry": "ETF",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "BSV",
+    "industry": "ETF",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "DOG",
+    "industry": "ETF",
+    "bb_window": 12,
+    "bb_std": 0.4,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "DXD",
+    "industry": "ETF",
+    "bb_window": 12,
+    "bb_std": 0.4,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "EDV",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.6,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "FAZ",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.2,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "GOVT",
+    "industry": "ETF",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "GVI",
+    "industry": "ETF",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "HIBS",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "IEF",
+    "industry": "ETF",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "IEI",
+    "industry": "ETF",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "MYY",
+    "industry": "ETF",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "MZZ",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.8,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SCHR",
+    "industry": "ETF",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SCHZ",
+    "industry": "ETF",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SDOW",
+    "industry": "ETF",
+    "bb_window": 12,
+    "bb_std": 0.7,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SEF",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SKF",
+    "industry": "ETF",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SPAB",
+    "industry": "ETF",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SPTI",
+    "industry": "ETF",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SPTL",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.8,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "SRPT",
+    "industry": "Biotechnology",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "TAIL",
+    "industry": "ETF",
+    "bb_window": 9,
+    "bb_std": 0.9,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "TLH",
+    "industry": "ETF",
+    "bb_window": 4,
+    "bb_std": 1.0,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "TLT",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "TMF",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.6,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "TYD",
+    "industry": "ETF",
+    "bb_window": 4,
+    "bb_std": 0.3,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "UBT",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.5,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "UST",
+    "industry": "ETF",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "UVXY",
+    "industry": "ETF",
+    "bb_window": 9,
+    "bb_std": 0.9,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "VGIT",
+    "industry": "ETF",
+    "bb_window": 5,
+    "bb_std": 0.5,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "VGLT",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "ZROZ",
+    "industry": "ETF",
+    "bb_window": 6,
+    "bb_std": 0.6,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  }
+]
