@@ -28,3 +28,8 @@ the day for entries (adjust scans to make quicker, narrow parameters and utilize
   Allow for crypto functionality as well... shouldn't be hard with cryptocandles.
 
   Also, clean up this read me.
+
+Extract stock lists from Barchart for 10M-100M, 100M-1B, 1B-50B, 50B-250B, 250B+
+      Perform trend scans on all.
+
+      

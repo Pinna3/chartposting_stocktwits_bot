@@ -1,6 +1,7 @@
 from candlestick import SecurityTradeData
 import plotly.graph_objs as go
 import json
+import csv
 
 def bb_param_optomizer(SecurityTradeDataObject, op_str):
     candles = SecurityTradeDataObject
@@ -141,6 +142,27 @@ def calculate_and_file_dropoff_rates(down_or_up_str, date_str):
         json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
     return dropoffs, dropoffs_sorted
 
+def count_stock_csv_list(csv_source):
+    securities = []
+    # CSV Database- comprehensive list of optionable stocks obtain from barchart
+    with open(csv_source, 'r') as infile:
+        reader = csv.reader(infile)
+        next(reader)  # skip the header line
+        for row in reader:
+            ticker = str(row[0])
+            securities.append(ticker)
+    return(len(securities))
+
+def return_list_of_tickers(csv_source):
+    securities = []
+    # CSV Database- comprehensive list of optionable stocks obtain from barchart
+    with open(csv_source, 'r') as infile:
+        reader = csv.reader(infile)
+        next(reader)  # skip the header line
+        for row in reader:
+            ticker = str(row[0])
+            securities.append(ticker)
+    return securities
 
 # dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('up', '03-25-21')
 # print(dropoffs_sorted)

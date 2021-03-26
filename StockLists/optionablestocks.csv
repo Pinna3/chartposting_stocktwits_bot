@@ -8,14 +8,14 @@ AAN,Aarons Holdings Company Inc,917720000,6144,Yes
 AAOI,Applied Optoelect,237630000,31466,Yes
 AAON,Aaon Inc,3814336000,9713,Yes
 AAP,Advance Auto Parts Inc,11736004000,32008,Yes
-AAPL,Apple Inc,2.10808E+12,1897635,Yes
+AAPL,Apple Inc,2.11E+12,1897635,Yes
 AAT,American Assets Trust,2073014000,9186,Yes
 AAU,Almaden Minerals,73090000,325574,Yes
 AAWW,Atlas Air Ww,1681515000,13994,Yes
 AAXJ,All Country Asia Ex Japan Ishares MSCI ETF,6394238000,21799,Yes
 AB,Alliancebernstein Holding LP,3854261000,11928,Yes
 ABB,Abb Ltd,67039196000,10746,Yes
-ABBV,Abbvie Inc,1.9573E+11,7936,Yes
+ABBV,Abbvie Inc,1.96E+11,7936,Yes
 ABC,Amerisourcebergen Corp,23103118000,36802,Yes
 ABCB,Ameris Bancorp,3888221000,17327,Yes
 ABEO,Abeona Therapeutics,228585000,122815,Yes
@@ -24,9 +24,9 @@ ABG,Asbury Automotive Group Inc,3679855000,2794,Yes
 ABIO,Arca Biopharma Inc,39243000,16152,Yes
 ABM,ABM Industries Inc,3449096000,8598,Yes
 ABMD,Abiomed Inc,13962355000,12880,Yes
-ABNB,Airbnb Inc Cl A,1.21693E+11,64290,Yes
+ABNB,Airbnb Inc Cl A,1.22E+11,64290,Yes
 ABR,Arbor Realty Trust,2054627000,16428,Yes
-ABT,Abbott Laboratories,2.0943E+11,244138,Yes
+ABT,Abbott Laboratories,2.09E+11,244138,Yes
 ABTX,Allegiance Banc CS,836728000,1213,Yes
 ABUS,Arbutus Biopharma Cp,364175000,27034,Yes
 ACA,Arcosa Inc,3132950000,4822,Yes
@@ -48,7 +48,7 @@ ACIW,Aci Worldwide Inc,4681034000,17070,Yes
 ACLS,Axcelis Tech Inc,1435296000,36528,Yes
 ACM,Aecom Technology Corp,9068040000,25895,Yes
 ACMR,Acm Research Inc,1580645000,7037,Yes
-ACN,Accenture Plc,1.73629E+11,74548,Yes
+ACN,Accenture Plc,1.74E+11,74548,Yes
 ACOR,Acorda Therapeutics,47172000,3439,Yes
 ACR,Acres Commercial Realty Corp,149070000,3095,Yes
 ACRE,Ares Commercial Real Estate Cor,483757000,123519,Yes
@@ -60,7 +60,7 @@ ACWI,ACWI Ishares MSCI ETF,15134993600,183123,Yes
 ACWV,Global Min Vol Ishares Edge MSCI ETF,5202480000,42882,Yes
 ACWX,ACWI Ex US Ishares MSCI ETF,3942400000,244516,Yes
 ADAP,Adaptimmune Ther Ads,828437000,33347,Yes
-ADBE,Adobe Systems Inc,2.16133E+11,5020,Yes
+ADBE,Adobe Systems Inc,2.16E+11,5020,Yes
 ADC,Agree Realty Corp,4385266000,11752,Yes
 ADCT,Adc Therapeutics Sa,2015091000,4774,Yes
 ADI,Analog Devices,56470296000,162121,Yes
@@ -181,17 +181,17 @@ ALVR,Allovir Inc,1867920000,721100,Yes
 ALXN,Alexion Pharm Inc,33718088000,356370,Yes
 ALXO,Alx Oncology Holdings Inc,2916318000,253100,Yes
 AM,Antero Midstream Corp,4182475000,182127,Yes
-AMAT,Applied Materials,1.08743E+11,21620,Yes
+AMAT,Applied Materials,1.09E+11,21620,Yes
 AMBA,Ambarella Inc,3865755000,49087,Yes
 AMBC,Ambac Financial Group,834928000,6894,Yes
 AMC,Amc Entertainment Holdings Inc,2813557000,1969975,Yes
 AMCR,Amcor Plc,17962748000,345376,Yes
 AMCX,Amc Networks Cl A,3163812000,32567,Yes
-AMD,Adv Micro Devices,1.00277E+11,502988,Yes
+AMD,Adv Micro Devices,1.00E+11,502988,Yes
 AME,Amtek Inc,27861352000,20772,Yes
 AMED,Amedisys Inc,8778893000,6009,Yes
 AMG,Affiliated Managers Group,6296975000,15671,Yes
-AMGN,Amgen Inc,1.38801E+11,3146,Yes
+AMGN,Amgen Inc,1.39E+11,3146,Yes
 AMH,American Homes 4 Rent,10300840000,35919,Yes
 AMJ,Alerian MLP Index ETN JP Morgan,2045610000,146980,Yes
 AMKR,Amkor Technology,5622417000,66725,Yes
@@ -217,7 +217,7 @@ AMWD,Amer Woodmark Cp,1731041000,5050,Yes
 AMWL,American Well Corp Cl A,5173731000,35410,Yes
 AMX,America Movil S.A.B. DE C.V.,45308384000,148263,Yes
 AMZA,Infracap MLP ETF,221265200,2464,Yes
-AMZN,Amazon.com Inc,1.55695E+12,29080,Yes
+AMZN,Amazon.com Inc,1.56E+12,29080,Yes
 AN,Autonation Inc,7381535000,31853,Yes
 ANAB,Anaptysbio Inc,566476000,32527,Yes
 ANAT,Amer Natl Insurance,2818295000,638,Yes
@@ -316,7 +316,7 @@ ASHR,Db-Xt Harvest CSI 300 China A ETF,2640667400,117695,Yes
 ASHS,Db-Xt Harvest CSI 500 China A ETF,36298500,3,Yes
 ASIX,Advansix Inc,778504000,5418,Yes
 ASMB,Assembly Biosciences,191230000,27670,Yes
-ASML,Asml Hld NY Reg,2.30636E+11,30256,Yes
+ASML,Asml Hld NY Reg,2.31E+11,30256,Yes
 ASND,Ascendis Pharma Ads,7852152000,7392,Yes
 ASO,Academy Sports and Outdoors Inc,2539872000,760,Yes
 ASPN,Aspen Aerogels Inc,591774000,9468,Yes
@@ -371,7 +371,7 @@ AVCT,American Virtual Cloud Tech Inc,49343000,12300,Yes
 AVD,American Vanguard Corp,649375000,1996,Yes
 AVDL,Avadel Pharmaceuticals Plc,576903000,29199,Yes
 AVEO,Aveo Pharmaceuticals,328711000,76892,Yes
-AVGO,Broadcom Ltd,1.95242E+11,6782,Yes
+AVGO,Broadcom Ltd,1.95E+11,6782,Yes
 AVID,Avid Tech Inc,962764000,33207,Yes
 AVIR,Atea Pharmaceuticals Inc,6378031000,215300,Yes
 AVLR,Avalara Inc,12299780000,26935,Yes
@@ -396,7 +396,7 @@ AXGN,Axogen Inc,851811000,11761,Yes
 AXL,American Axle & Manufacturing,1307436000,88711,Yes
 AXNX,Axonics Modulation Technologies Inc,2324457000,24890,Yes
 AXON,Axon Enterprise Inc,9378161000,11582,Yes
-AXP,American Express Company,1.15441E+11,8024,Yes
+AXP,American Express Company,1.15E+11,8024,Yes
 AXS,Axis Capital Holdings,4416174000,3231,Yes
 AXSM,Axsome Thera,2459378000,10394,Yes
 AXTA,Axalta Coating Systems Ltd,6801450000,106695,Yes
@@ -407,15 +407,15 @@ AYI,Acuity Brands Inc,5175999000,14170,Yes
 AYRO,Ayro Inc,235260000,224978,Yes
 AYX,Alteryx Inc,5637303000,20612,Yes
 AZEK,The Azek Company Inc Cl A,6907594000,379400,Yes
-AZN,Astrazeneca Plc,1.31361E+11,436274,Yes
+AZN,Astrazeneca Plc,1.31E+11,436274,Yes
 AZO,Autozone,29563942000,12454,Yes
 AZPN,Aspen Technology,10175399000,8326,Yes
 AZUL,Azul S.A. ADR,9015291000,70988,Yes
 AZZ,Azz Inc,1375744000,4033,Yes
 B,Barnes Group,2819123000,3180,Yes
-BA,Boeing Company,1.48787E+11,243103,Yes
-BABA,Alibaba Group Holding,6.1399E+11,384502,Yes
-BAC,Bank of America Corp,3.2473E+11,445446,Yes
+BA,Boeing Company,1.49E+11,243103,Yes
+BABA,Alibaba Group Holding,6.14E+11,384502,Yes
+BAC,Bank of America Corp,3.25E+11,445446,Yes
 BAH,Booz Allen Hamilton Holding Corp,10939365000,25810,Yes
 BAL,Ipatha.B Cotton Subindex TR ETN,10866900,N/A,Yes
 BALY,Bally's Corp,2144744000,289600,Yes
@@ -491,7 +491,7 @@ BHC,Bausch Health Companies Inc,11855208000,307286,Yes
 BHE,Benchmark Electronics,1143574000,12495,Yes
 BHF,Brighthouse Financial Inc,3815840000,19792,Yes
 BHLB,Berkshire Hills Bancorp,1208022000,4246,Yes
-BHP,Bhp Billiton Ltd,1.15391E+11,134414,Yes
+BHP,Bhp Billiton Ltd,1.15E+11,134414,Yes
 BHR,Braemar Hotels & Resorts Inc,278728000,27283,Yes
 BHVN,Biohaven Pharmaceutical Holding Company Ltd,4695317000,74592,Yes
 BIB,Ultra Nasdaq Biotech Proshares,233937000,3315,Yes
@@ -530,7 +530,7 @@ BLDP,Ballard Power Sys,7661745000,139272,Yes
 BLDR,Builders Firstsource,9454586000,116582,Yes
 BLFS,Biolife Solutions,1203375000,5716,Yes
 BLI,Berkeley Lights Inc,3518338000,5696,Yes
-BLK,Blackrock Inc,1.10365E+11,22273,Yes
+BLK,Blackrock Inc,1.10E+11,22273,Yes
 BLKB,Blackbaud Inc,3471821000,14244,Yes
 BLL,Ball Corp,27513076000,139937,Yes
 BLMN,Bloomin' Brands Inc,2460456000,80927,Yes
@@ -547,7 +547,7 @@ BMO,Bank of Montreal,57018928000,67560,Yes
 BMRA,Biomerica Inc,75628000,5030,Yes
 BMRN,Biomarin Pharmaceuticals,14039094000,62678,Yes
 BMTC,Bryn Mawr Bank Corp,923955000,10948,Yes
-BMY,Bristol-Myers Squibb Company,1.38685E+11,596366,Yes
+BMY,Bristol-Myers Squibb Company,1.39E+11,596366,Yes
 BND,Total Bond Market ETF Vanguard,70238790400,108830,Yes
 BNDX,Total Intl Bond ETF Vanguard,36442768000,106185,Yes
 BNED,Barnes & Noble Education Inc C,455732000,66124,Yes
@@ -581,7 +581,7 @@ BRC,Brady Corp,2865537000,5956,Yes
 BRF,Brazil Smallcap ETF Vaneck,45308000,395,Yes
 BRFS,Brf-Brasil Foods S.A.,3591131000,14606,Yes
 BRG,Bluerock Residential Growth Rei,263590000,10183,Yes
-BRK.B,Berkshire Hathaway Cl B,5.77753E+11,25934,Yes
+BRK.B,Berkshire Hathaway Cl B,5.78E+11,25934,Yes
 BRKL,Brookline Bancorp,1229194000,12823,Yes
 BRKR,Bruker Corp,9253043000,8965,Yes
 BRKS,Brooks Automation,6464562000,18954,Yes
@@ -612,7 +612,7 @@ BTN,Ballantyne Strong Inc,53076000,10506,Yes
 BTNB,Bridgetown 2 Holdings Limited Cl A,356525000,8274,Yes
 BTU,Peabody Energy Corp,383152000,92073,Yes
 BTWN,Bridgetown Holdings Limited Cl A,926700000,59148,Yes
-BUD,Anheuser-Busch Inbev S.A.,1.24714E+11,418590,Yes
+BUD,Anheuser-Busch Inbev S.A.,1.25E+11,418590,Yes
 BUG,Global X Cybersecurity ETF,254374000,852,Yes
 BUR,Burford Capital Limited,1870687000,271500,Yes
 BURL,Burlington Stores Inc,20438348000,16507,Yes
@@ -636,7 +636,7 @@ BYSI,Beyondspring Inc,483795000,16358,Yes
 BZH,Beazer Homes USA,645188000,10221,Yes
 BZQ,Ultrashort MSCI Brazil Proshares,15800500,44380,Yes
 BZUN,Baozun Inc Ads,2824292000,12255,Yes
-C,Citigroup Inc,1.53063E+11,116068,Yes
+C,Citigroup Inc,1.53E+11,116068,Yes
 CAAP,Corporacion America Airports Sa,769696000,3940,Yes
 CAAS,China Automotive Sys,185112000,5090,Yes
 CABA,Cabaletta Bio Inc,284811000,3199,Yes
@@ -671,7 +671,7 @@ CASA,Casa Systems Inc,794735000,15149,Yes
 CASH,Meta Financial Group,1462170000,3749,Yes
 CASS,Cass Information Sys,686881000,1193,Yes
 CASY,Casey's General Stor,7662436000,4017,Yes
-CAT,Caterpillar Inc,1.2349E+11,15844,Yes
+CAT,Caterpillar Inc,1.23E+11,15844,Yes
 CATB,Catabasis Pharma,83364000,9714,Yes
 CATM,Cardtronics Inc,1751951000,20654,Yes
 CATO,Cato Corp,301353000,7743,Yes
@@ -776,7 +776,7 @@ CHRS,Coherus Bio,1162520000,51385,Yes
 CHRW,C.H. Robinson Ww,12870328000,28005,Yes
 CHS,Chico's Fas,424953000,154098,Yes
 CHT,Chunghwa Telecom CO Ltd,30533128000,3155,Yes
-CHTR,Charter Communicatio,1.2392E+11,76061,Yes
+CHTR,Charter Communicatio,1.24E+11,76061,Yes
 CHUY,Chuy's Holdings Inc,843098000,7469,Yes
 CHWY,Chewy Inc,33956724000,30730,Yes
 CHX,Championx Corp,4919387000,1797300,Yes
@@ -832,7 +832,7 @@ CMA,Comerica Inc,9534126000,46732,Yes
 CMC,Commercial Metals Company,3400326000,73158,Yes
 CMCM,Cheetah Mobile Inc,367692000,14066,Yes
 CMCO,Columbus Mckinnon,1285618000,5066,Yes
-CMCSA,Comcast Corp A,2.65861E+11,1187374,Yes
+CMCSA,Comcast Corp A,2.66E+11,1187374,Yes
 CMD,Cantel Medical,3309506000,15239,Yes
 CME,CME Group Inc,74357528000,74208,Yes
 CMG,Chipotle Mexican Grill,41728808000,16860,Yes
@@ -893,7 +893,7 @@ CORE,Core Mark Holding,1779874000,6219,Yes
 CORN,Teucrium Corn,170676000,2309,Yes
 CORR,Corenergy Infrastructure Trust Inc,114532000,12517,Yes
 CORT,Corcept Therapeutics,2991456000,21806,Yes
-COST,Costco Wholesale,1.44819E+11,8602,Yes
+COST,Costco Wholesale,1.45E+11,8602,Yes
 COTY,Coty Inc,6916501000,24178,Yes
 COUP,Coupa Software Inc,19627542000,75493,Yes
 COW,Ipatha.B Livestock Subindex TR ETN,26703100,300,Yes
@@ -933,7 +933,7 @@ CRI,Carter's Inc,3967854000,17442,Yes
 CRIS,Curis Inc,620519000,58142,Yes
 CRK,Comstock Resources,1303826000,104129,Yes
 CRL,Charles River Laboratories Intl,14361870000,9611,Yes
-CRM,Salesforce.com Inc,1.96249E+11,21322,Yes
+CRM,Salesforce.com Inc,1.96E+11,21322,Yes
 CRMD,Cormedix Inc,297864000,856,Yes
 CRMT,America's Car-Mart,1067056000,1766,Yes
 CRNC,Cerence Inc,4123917000,414200,Yes
@@ -955,7 +955,7 @@ CRWS,Crown Crafts Inc,77356000,101,Yes
 CRY,Cryolife,915490000,5662,Yes
 CS,Credit Suisse Group,31575950000,182859,Yes
 CSAN,Cosan Sa Spon Ads WI [Csan/I],3873285000,6002,Yes
-CSCO,Cisco Systems Inc,2.09696E+11,25706,Yes
+CSCO,Cisco Systems Inc,2.10E+11,25706,Yes
 CSD,S&P Spin-Off Invesco ETF,76671700,1,Yes
 CSGP,Costar Group Inc,33052370000,4838,Yes
 CSGS,C S G Sys Intl,1578942000,6216,Yes
@@ -1015,7 +1015,7 @@ CVLT,Commvault Systems,3148866000,15264,Yes
 CVM,Cel-Sci Corp,808148000,25036,Yes
 CVNA,Carvana CO Cl A,48861832000,886,Yes
 CVS,CVS Corp,98443424000,27452,Yes
-CVX,Chevron Corp,2.07355E+11,40154,Yes
+CVX,Chevron Corp,2.07E+11,40154,Yes
 CVY,Zacks Multi-Asset Income Invesco ETF,136828200,23,Yes
 CW,Curtiss-Wright Corp,4959228000,6822,Yes
 CWB,Convertible Secs Barclays Capital SPDR,6746328800,105932,Yes
@@ -1078,7 +1078,7 @@ DDG,Oil & Gas Short Proshares,2296300,2800,Yes
 DDM,Ultra Dow 30 Proshares,430320000,50835,Yes
 DDOG,Datadog Inc Cl A,26471716000,14864,Yes
 DDS,Dillard's,2039874000,22952,Yes
-DE,Deere & Company,1.17076E+11,2990,Yes
+DE,Deere & Company,1.17E+11,2990,Yes
 DEA,Easterly Government Properties,1787127000,17350,Yes
 DECK,Deckers Outdoor Corp,9541179000,10394,Yes
 DEEP,Deep Value ETF,41724000,12700,Yes
@@ -1108,14 +1108,14 @@ DGS,Wisdomtree Emerging Market Smallcap Fund,1920996000,2064,Yes
 DGX,Quest Diagnostics Inc,16372260000,28524,Yes
 DHC,Diversified Healthcare Trust,1205636000,1237100,Yes
 DHI,D.R. Horton,30281830000,303690,Yes
-DHR,Danaher Corp,1.53765E+11,165171,Yes
+DHR,Danaher Corp,1.54E+11,165171,Yes
 DHT,Dht Holdings,934649000,2618,Yes
 DHX,Dice Holdings,164034000,6670,Yes
 DIA,Dow Industrials SPDR,27994102400,218984,Yes
 DIG,Ultra Oil & Gas Proshares,215573400,4423,Yes
 DIN,Dineequity Inc,1436796000,35669,Yes
 DIOD,Diodes Inc,3710030000,28065,Yes
-DIS,Walt Disney Company,3.52597E+11,69474,Yes
+DIS,Walt Disney Company,3.53E+11,69474,Yes
 DISCA,Discovery Comm A,36944792000,22074,Yes
 DISCK,Discovery Comm Inc,30390150000,3696,Yes
 DISH,Dish Network Corp,20378564000,223098,Yes
@@ -1270,7 +1270,7 @@ EIGR,Eiger Biopharma,336976000,4709,Yes
 EINC,Vaneck Vectors Energy Income ETF,26877100,3800,Yes
 EIX,Edison International,22593490000,49953,Yes
 EKSO,Ekso Bionics Holdings Inc,92862000,4906,Yes
-EL,Estee Lauder Companies,1.04808E+11,27688,Yes
+EL,Estee Lauder Companies,1.05E+11,27688,Yes
 ELAN,Elanco Animal Health Inc,15850748000,113808,Yes
 ELD,Wisdomtree EM Local Debt Fund,134480000,510,Yes
 ELF,E.L.F. Beauty Inc,1447558000,18224,Yes
@@ -1437,7 +1437,7 @@ FAS,Financial Bull 3X Direxion,2894146400,60088,Yes
 FAST,Fastenal Company,27407552000,692,Yes
 FATE,Fate Therapeutics,8415148000,99880,Yes
 FAZ,Financial Bear 3X Direxion,141054800,31054,Yes
-FB,Facebook Inc,7.95297E+11,346218,Yes
+FB,Facebook Inc,7.95E+11,346218,Yes
 FBC,Flagstar Bancorp,2576530000,16189,Yes
 FBHS,Fortune Brands Home & Security,12409220000,17934,Yes
 FBIZ,First Business Finan,232937000,1021,Yes
@@ -1670,7 +1670,7 @@ GDS,Gds Holdings Ltd,16615232000,47334,Yes
 GDX,Gold Miners Vaneck ETF,14953286400,77350,Yes
 GDXJ,Junior Gold Miners ETF Vaneck,5310144800,49946,Yes
 GDYN,Grid Dynamics Holdings Inc,843631000,83500,Yes
-GE,General Electric Company,1.15298E+11,587796,Yes
+GE,General Electric Company,1.15E+11,587796,Yes
 GEF,Greif Bros. Corp,2867330000,6326,Yes
 GEL,Genesis Energy LP,1173072000,29121,Yes
 GEM,GS Activebeta EM Equity ETF,1346592000,6456,Yes
@@ -1761,8 +1761,8 @@ GOL,Gol Linhas Aereas Inteligentes S.A.,1443020000,103627,Yes
 GOLD,Barrick Gold Corp,36827536000,123064,Yes
 GOLF,Acushnet Holdings Corp,3144907000,7028,Yes
 GOOD,Gladstone Comml,733619000,4531,Yes
-GOOG,Alphabet Cl C,1.41065E+12,3468,Yes
-GOOGL,Alphabet Cl A,1.40483E+12,6830,Yes
+GOOG,Alphabet Cl C,1.41E+12,3468,Yes
+GOOGL,Alphabet Cl A,1.40E+12,6830,Yes
 GOOS,Canada Goose Holdings Inc,4778739000,117700,Yes
 GORO,Gold Resource Corp,212151000,21036,Yes
 GOSS,Gossamer Bio Inc,776428000,7414,Yes
@@ -1792,7 +1792,7 @@ GRPN,Groupon Cl A,1631155000,47181,Yes
 GRTS,Gritstone Oncology Inc,537759000,11466,Yes
 GRUB,Grubhub Inc,6167951000,24279,Yes
 GRWG,Growgeneration Corp,1909388000,29210,Yes
-GS,Goldman Sachs Group,1.18161E+11,20562,Yes
+GS,Goldman Sachs Group,1.18E+11,20562,Yes
 GSAH,GS Acquisition Holdings Corp II Cl A,1061250000,83294,Yes
 GSAT,Globalstar,2718164000,396424,Yes
 GSBC,Great Southern Bncp,786901000,2411,Yes
@@ -1861,8 +1861,8 @@ HCHC,Hc2 Holdings Inc,169524000,17520,Yes
 HCI,Homeowners Choice,650932000,3121,Yes
 HCKT,Hackett Grp Inc,521406000,3388,Yes
 HCSG,Healthcare Svcs Gp,2167540000,461600,Yes
-HD,Home Depot,3.03688E+11,12078,Yes
-HDB,Hdfc Bank Ltd,1.5048E+11,107686,Yes
+HD,Home Depot,3.04E+11,12078,Yes
+HDB,Hdfc Bank Ltd,1.50E+11,107686,Yes
 HDGE,Active Bear ETF,54395900,184,Yes
 HDSN,Hudson Tech Inc,69357000,43940,Yes
 HDV,High Dividend Ishares Core ETF,6378578400,20013,Yes
@@ -1922,7 +1922,7 @@ HOLX,Hologic Inc,18538778000,59868,Yes
 HOMB,Home Bancshares Inc,4659262000,35899,Yes
 HOME,At Home Group Inc,1891068000,63931,Yes
 HOMZ,Hoya Capital Housing ETF,62862800,6000,Yes
-HON,Honeywell International Inc,1.47314E+11,1586,Yes
+HON,Honeywell International Inc,1.47E+11,1586,Yes
 HOOK,Hookipa Pharma Inc,269204000,7130,Yes
 HOPE,Hope Bancorp Inc,1962442000,59521,Yes
 HP,Helmerich & Payne,3385569000,96368,Yes
@@ -1941,7 +1941,7 @@ HROW,Harrow Health Inc,198250000,8019,Yes
 HRTG,Heritage Insurance Holdings,327191000,6054,Yes
 HRTX,Heron Therapeutics,1532728000,23280,Yes
 HRZN,Horizon Technology F,277583000,4322,Yes
-HSBC,HSBC Holdings Plc,1.19721E+11,159265,Yes
+HSBC,HSBC Holdings Plc,1.20E+11,159265,Yes
 HSC,Harsco Corp,1429773000,30815,Yes
 HSIC,Henry Schein Inc,9549362000,41241,Yes
 HSII,Heidrick & Struggl,724645000,4751,Yes
@@ -2002,7 +2002,7 @@ IBB,Nasdaq Biotechnology Ishares ETF,10523870400,280575,Yes
 IBCP,Independent Bk Cp,508966000,4477,Yes
 IBIO,Ibio Inc,380178000,78800,Yes
 IBKR,Interactive Brokers,31972292000,38201,Yes
-IBM,International Business Machines,1.14594E+11,8832,Yes
+IBM,International Business Machines,1.15E+11,8832,Yes
 IBN,Icici Bank Ltd,57767752000,8908,Yes
 IBOC,Intl Bancshares,3109880000,23512,Yes
 IBP,Installed Building Products,3382945000,6285,Yes
@@ -2113,10 +2113,10 @@ INSM,Insmed Inc,3661118000,66530,Yes
 INSP,Inspire Medical Systems Inc,5877225000,16570,Yes
 INSW,International Seaways Inc,600081000,6758,Yes
 INT,World Fuel Services Corp,2253563000,15857,Yes
-INTC,Intel Corp,2.63201E+11,121124,Yes
+INTC,Intel Corp,2.63E+11,121124,Yes
 INTEQ,Intelsat S.A.,68230000,515400,Yes
 INTF,Intl Multifactor Ishares Edge MSCI ETF,894660000,909,Yes
-INTU,Intuit Inc,1.08282E+11,84430,Yes
+INTU,Intuit Inc,1.08E+11,84430,Yes
 INVA,Innoviva Inc,1216704000,29697,Yes
 INVE,Identiv Inc,219312000,914,Yes
 INVH,Invitation Homes Inc,17657558000,244624,Yes
@@ -2178,7 +2178,7 @@ IVE,S&P 500 Value Ishares ETF,21358948800,57764,Yes
 IVLU,Intl Value Factor Ishares Edge MSCI ETF,817880000,243800,Yes
 IVOL,Quadratic Interest Rate Vol and Infl ETF,2406375000,21124,Yes
 IVR,Invesco Mortgage Capital Inc,914055000,82106,Yes
-IVV,S&P 500 Ishares Core ETF,2.60422E+11,9320,Yes
+IVV,S&P 500 Ishares Core ETF,2.60E+11,9320,Yes
 IVW,S&P 500 Growth Ishares ETF,31201977600,186253,Yes
 IVZ,Invesco Plc,11591568000,277505,Yes
 IWB,Russell 1000 Ishares ETF,27282825600,58555,Yes
@@ -2222,7 +2222,7 @@ JBSS,John B Sanfilippo,1047992000,950,Yes
 JBT,John Bean Technologies Corp,4421257000,5186,Yes
 JCI,Johnson Controls Intl,43584660000,305993,Yes
 JCOM,J2 Global Inc,5505893000,22312,Yes
-JD,Jd.com Inc Ads,1.14872E+11,243795,Yes
+JD,Jd.com Inc Ads,1.15E+11,243795,Yes
 JDST,Junior Gold Mine Bear 3X Direxion,68062100,32698,Yes
 JE,Just Energy Group Inc,80773000,96268,Yes
 JEF,Jefferies Financial Group Inc,8339600000,84147,Yes
@@ -2240,7 +2240,7 @@ JKS,Jinkosolar Holding Company Ltd,2021077000,34142,Yes
 JLL,Jones Lang Lasalle Inc,9010358000,3568,Yes
 JMIA,Jumia Technologies Ag ADR,4289539000,178844,Yes
 JNCE,Jounce Therapeutics Inc,510683000,45642,Yes
-JNJ,Johnson & Johnson,4.2484E+11,14508,Yes
+JNJ,Johnson & Johnson,4.25E+11,14508,Yes
 JNK,High Yield Bond ETF SPDR,9651625600,624199,Yes
 JNPR,Juniper Networks,8384795000,248978,Yes
 JNUG,Junior Gold Mine Bull 2X Direxion,677578600,7086,Yes
@@ -2251,7 +2251,7 @@ JOET,Virtus Terranova U.S. Quality Momentum ETF,85123000,27400,Yes
 JP,Jupai Holdings Ltd,85296000,746,Yes
 JPEM,JPM Dvsd Rtns EM ETF,251680000,2461,Yes
 JPIN,JPM Dvsd Rtns Intl Equity ETF,865035000,205,Yes
-JPM,JP Morgan Chase & Company,4.68437E+11,50262,Yes
+JPM,JP Morgan Chase & Company,4.68E+11,50262,Yes
 JPUS,JPM Dvsd Rtns US Equity ETF,642266000,198,Yes
 JRVR,James River Gp HD,1482306000,10318,Yes
 JUST,GS Just U.S. Large Cap Equity ETF,209416300,804,Yes
@@ -2314,7 +2314,7 @@ KNOP,Knot Offshore Partners LP,602804000,1972,Yes
 KNSA,Kiniksa Pharmaceuticals Ltd,1561831000,13798,Yes
 KNSL,Kinsale Capital Group Inc,3956809000,3109,Yes
 KNX,Knight-Swift Transporation Inc,7445923000,37835,Yes
-KO,Coca-Cola Company,2.20723E+11,41036,Yes
+KO,Coca-Cola Company,2.21E+11,41036,Yes
 KOD,Kodiak Sciences Inc,6603990000,22425,Yes
 KODK,Eastman Kodak,675176000,291128,Yes
 KOF,Coca Cola Femsa S.A.B. DE C.V.,10185325000,28074,Yes
@@ -2412,7 +2412,7 @@ LI,Li Auto Inc ADR,23193830000,595179,Yes
 LII,Lennox International,11428496000,5444,Yes
 LILA,Liberty Latin America Cl A,3249008000,6810,Yes
 LILAK,Liberty Latin America Cl C,3272215000,44188,Yes
-LIN,Linde Plc,1.41579E+11,102032,Yes
+LIN,Linde Plc,1.42E+11,102032,Yes
 LINC,Lincoln Educational,175429000,2478,Yes
 LIND,Lindblad Expd Hld,924259000,17193,Yes
 LIT,G-X Lithium ETF,2783488600,13766,Yes
@@ -2425,7 +2425,7 @@ LKNCY,Luckin Coffee Inc ADR,2195670000,13388600,Yes
 LKQ,LKQ Corp,13118245000,59000,Yes
 LL,Lumber Liquidators Holdings Inc,743820000,15031,Yes
 LLNW,Limelight Networks,430748000,61463,Yes
-LLY,Eli Lilly and Company,1.82964E+11,9270,Yes
+LLY,Eli Lilly and Company,1.83E+11,9270,Yes
 LMAT,Lemaitre Vascular,937879000,5707,Yes
 LMND,Lemonade Inc,6577398000,42462,Yes
 LMNR,Limoneira Company,297791000,1968,Yes
@@ -2450,7 +2450,7 @@ LOTZ,Carlotz Inc,960511000,107228,Yes
 LOUP,Innovator Loup Frontier Tech ETF,100677500,2027,Yes
 LOV,Spark Networks Plc,7544000,2070,Yes
 LOVE,The Lovesac Company,901095000,12598,Yes
-LOW,Lowe's Companies,1.28468E+11,223933,Yes
+LOW,Lowe's Companies,1.28E+11,223933,Yes
 LPCN,Lipocine Inc,135968000,16694,Yes
 LPG,Dorian Lpg Ltd,572866000,13563,Yes
 LPI,Laredo Petroleum Holdings Inc,471145000,746,Yes
@@ -2495,7 +2495,7 @@ LYTS,L S I Industries,242683000,4538,Yes
 LYV,Live Nation Entertainment,19190316000,60109,Yes
 LZB,La-Z-Boy Inc,2046790000,14885,Yes
 M,Macy's Inc,6249922000,129106,Yes
-MA,Mastercard Inc,3.79842E+11,170825,Yes
+MA,Mastercard Inc,3.80E+11,170825,Yes
 MAA,Mid-America Apartment Communities,16515484000,24965,Yes
 MAC,Macerich Company,2081630000,37586,Yes
 MACK,Merrimack Pharmaceuticals Inc,89512000,3213,Yes
@@ -2525,7 +2525,7 @@ MBUU,Malibu Boats Inc,1908766000,8221,Yes
 MBWM,Mercantile Bank Corp,527279000,1472,Yes
 MC,Moelis,3617203000,13329,Yes
 MCBC,Macatawa Bank Corp,347794000,1964,Yes
-MCD,McDonald's Corp,1.63921E+11,51788,Yes
+MCD,McDonald's Corp,1.64E+11,51788,Yes
 MCF,Contango Oil & Gas Company,856332000,37600,Yes
 MCFE,Mcafee Corp Cl A,10211061000,5356,Yes
 MCFT,Mcbc Holdings,579650000,4863,Yes
@@ -2547,7 +2547,7 @@ MDLA,Medallia Inc,4381075000,52168,Yes
 MDLZ,Mondelez Intl Inc,81592000000,10309700,Yes
 MDP,Meredith Corp,1583078000,9018,Yes
 MDRX,Allscripts Hlthcare,2152292000,223791,Yes
-MDT,Medtronic Inc,1.6034E+11,250481,Yes
+MDT,Medtronic Inc,1.60E+11,250481,Yes
 MDU,Mdu Res Group Inc,6330480000,18359,Yes
 MDXG,Mimedx Group Inc,1001349000,300,Yes
 MDY,S&P Midcap 400 SPDR,21265196800,72336,Yes
@@ -2618,7 +2618,7 @@ MLSS,Milestone Scientific,273880000,33801,Yes
 MMC,Marsh & Mclennan Companies,60362456000,53778,Yes
 MMI,Marcus & Millichap,1364097000,3290,Yes
 MMLP,Martin Midstrm LP,105400000,11177,Yes
-MMM,3M Company,1.08205E+11,6314,Yes
+MMM,3M Company,1.08E+11,6314,Yes
 MMP,Magellan Midstream Partners LP,10195102000,45711,Yes
 MMS,Maximus Inc,5358701000,8784,Yes
 MMSI,Merit Medical Sys,3378216000,10929,Yes
@@ -2657,7 +2657,7 @@ MRC,Mrc Global Inc,762700000,42589,Yes
 MRCC,Monroe Capital Corp,205158000,4620,Yes
 MRCY,Mercury Sys Inc,3879412000,11514,Yes
 MREO,Mereo Biopharma Group Plc ADR,98853000,27650,Yes
-MRK,Merck & Company,1.94354E+11,23464,Yes
+MRK,Merck & Company,1.94E+11,23464,Yes
 MRKR,Marker Therapeutics Inc,94360000,154292,Yes
 MRLN,Marlin Business Serv,178142000,1112,Yes
 MRNA,Moderna Inc,62489912000,135102,Yes
@@ -2668,12 +2668,12 @@ MRTN,Marten Transport L,1378279000,5176,Yes
 MRTX,Mirati Therapeutics,9595648000,10660,Yes
 MRVI,Maravai Lifesciences Holdings Inc Cl A,6324562000,1157700,Yes
 MRVL,Marvell Tech Group,32219528000,885046,Yes
-MS,Morgan Stanley,1.4955E+11,15082,Yes
+MS,Morgan Stanley,1.50E+11,15082,Yes
 MSA,Msa Safety Inc,6385189000,5765,Yes
 MSB,Mesabi Trust,388221000,2356,Yes
 MSCI,MSCI Inc,34399088000,7502,Yes
 MSEX,Middlesex Water Company,1363574000,3294,Yes
-MSFT,Microsoft Corp,1.79286E+12,183131,Yes
+MSFT,Microsoft Corp,1.79E+12,183131,Yes
 MSGE,Madison Square Garden Entertainment Corp,2533608000,156900,Yes
 MSGN,Msg Networks Inc,1159740000,41691,Yes
 MSGS,Madison Square Garden Sports Corp,4798560000,159300,Yes
@@ -2704,7 +2704,7 @@ MTUM,USA Momentum Factor Ishares Edge MSCI ETF,14417016000,291658,Yes
 MTW,Manitowoc Company,758707000,22584,Yes
 MTX,Minerals Technologies Inc,2648605000,2447,Yes
 MTZ,Mastec Inc,7045402000,14747,Yes
-MU,Micron Technology,1.0228E+11,245309,Yes
+MU,Micron Technology,1.02E+11,245309,Yes
 MUB,Natl Muni Bond Ishares ETF,21048555200,45904,Yes
 MUFG,Mitsubishi Ufj Financial Group Inc,72186960000,3151700,Yes
 MUNI,Interm Muni Bond Strgy ETF Pimco,614669400,3187,Yes
@@ -2750,7 +2750,7 @@ NCTY,The9 Ltd,174770000,81604,Yes
 NDAQ,Nasdaq Inc,23972876000,22089,Yes
 NDLS,Noodles & Company,529782000,11901,Yes
 NDSN,Nordson Corp,11974426000,7380,Yes
-NEE,Nextera Energy,1.47735E+11,12954,Yes
+NEE,Nextera Energy,1.48E+11,12954,Yes
 NEM,Newmont Mining Corp,49475164000,17770,Yes
 NEO,Neogenomics Inc,5870388000,6928,Yes
 NEOG,Neogen Cp,4473827000,6630,Yes
@@ -2770,7 +2770,7 @@ NEX,Nextier Oilfield Solutions Inc,925188000,118507,Yes
 NFBK,Northfield Bncrp Del,820961000,11206,Yes
 NFE,New Fortress Energy Llc,9427152000,7296,Yes
 NFG,National Fuel Gas Company,4518039000,32561,Yes
-NFLX,Netflix Inc,2.3209E+11,15146,Yes
+NFLX,Netflix Inc,2.32E+11,15146,Yes
 NG,Novagold Resources Inc,2988516000,90064,Yes
 NGA,Northern Genesis Acquisition Corp,769090000,40362,Yes
 NGAC,Nextgen Acquisition Corporation Cl A,483750000,8034,Yes
@@ -2792,7 +2792,7 @@ NINE,Nine Energy Service Inc,104763000,13454,Yes
 NIO,Nio Inc,56002656000,3633396,Yes
 NIU,Niu Technologies ADR,3066016000,22226,Yes
 NJR,Newjersey Resources Corp,4055975000,19030,Yes
-NKE,Nike Inc,2.28039E+11,25172,Yes
+NKE,Nike Inc,2.28E+11,25172,Yes
 NKLA,Nikola Corp,6212345000,216587,Yes
 NKTR,Nektar Therapeutics,4012203000,33533,Yes
 NKTX,Nkarta Inc,1559997000,370800,Yes
@@ -2868,13 +2868,13 @@ NUS,Nu Skin Enterprises,2689140000,21006,Yes
 NUVA,Nuvasive Inc,3422355000,32952,Yes
 NVAX,Novavax Inc,16413685000,47570,Yes
 NVCR,Novocure Ltd Ord Sh,14649012000,23994,Yes
-NVDA,Nvidia Corp,3.29623E+11,82944,Yes
+NVDA,Nvidia Corp,3.30E+11,82944,Yes
 NVEE,Nv5 Global,1264183000,5556,Yes
 NVGS,Navigator Holdings,579176000,2630,Yes
 NVMI,Nova Measuring Instr,2443834000,5424,Yes
-NVO,Novo Nordisk A/S,1.71076E+11,48440,Yes
+NVO,Novo Nordisk A/S,1.71E+11,48440,Yes
 NVRO,Nevro Corp,5278429000,11113,Yes
-NVS,Novartis Ag,1.96851E+11,42571,Yes
+NVS,Novartis Ag,1.97E+11,42571,Yes
 NVST,Envista Holdings Corp,6492926000,14339,Yes
 NVT,Nvent Electric Plc,4947915000,58964,Yes
 NVTA,Invitae Corp,8178881000,59050,Yes
@@ -2965,7 +2965,7 @@ ORAN,Orange ADR,33015702000,21001,Yes
 ORBC,Orbcomm Inc,625159000,6390,Yes
 ORC,Orchid Island Capital Inc,558380000,89153,Yes
 ORCC,Owl Rock Capital Corp,5561823000,53795,Yes
-ORCL,Oracle Corp,1.96809E+11,896003,Yes
+ORCL,Oracle Corp,1.97E+11,896003,Yes
 ORGO,Organogenesis Holdings Inc,1838829000,28343,Yes
 ORI,Old Republic International Corp,6728506000,91559,Yes
 ORIC,Oric Pharmaceuticals Inc,869323000,139100,Yes
@@ -3053,7 +3053,7 @@ PDAC,Peridot Acquisition Corp Cl A,412500000,8247,Yes
 PDBC,Optimum Yield Diversified Commodity Strategy,3617788800,110713,Yes
 PDCE,Pdc Energy Inc,3767730000,122516,Yes
 PDCO,Patterson Companies,3092320000,17082,Yes
-PDD,Pinduoduo Inc ADR,1.97304E+11,4408393,Yes
+PDD,Pinduoduo Inc ADR,1.97E+11,4408393,Yes
 PDFS,Pdf Solutions Inc,676039000,4879,Yes
 PDM,Piedmont Office Realty Trust,2272095000,38442,Yes
 PDP,DWA Momentum Invesco ETF,1817097200,6229,Yes
@@ -3068,7 +3068,7 @@ PEJ,Dynamic Leisure and Entertainment Invesco ETF,2018358600,29018,Yes
 PEN,Penumbra Inc,10372656000,5578,Yes
 PENN,Penn Natl Gaming Inc,19482506000,64400,Yes
 PEO,Adams Natural Resources Fund Inc,360448000,8095,Yes
-PEP,Pepsico Inc,1.84881E+11,601135,Yes
+PEP,Pepsico Inc,1.85E+11,601135,Yes
 PERI,Perion Network Ltd,633803000,14822,Yes
 PERS,Sandridge Permian Trust,25200000,87200,Yes
 PESI,Perma-Fix Envir,92978000,1241,Yes
@@ -3078,7 +3078,7 @@ PEY,High Yield Equity Dividend Achievers Invesco ETF,873274100,12126,Yes
 PEZ,DWA Consumer Cyclicals Momentum Invesco ETF,107815500,828,Yes
 PFBC,Preferred Bank LA,974488000,2340,Yes
 PFC,Premier Financial Corp,1251254000,160800,Yes
-PFE,Pfizer Inc,1.99846E+11,252702,Yes
+PFE,Pfizer Inc,2.00E+11,252702,Yes
 PFF,US Preferred Stock Ishares ETF,18118721600,5319200,Yes
 PFFA,Virtus Infracap U.S. Preferred Stock ETF,291152000,1114,Yes
 PFG,Principal Financial Group Inc,16280509000,54683,Yes
@@ -3091,7 +3091,7 @@ PFS,Provident Financial Services,1771256000,13846,Yes
 PFSI,Pennymac Financial Services IN,4504323000,14584,Yes
 PFSW,Pfsweb Inc,138496000,2528,Yes
 PFX,Phenixfin Corp Pr,92589000,N/A,Yes
-PG,Procter & Gamble Company,3.17512E+11,11176,Yes
+PG,Procter & Gamble Company,3.18E+11,11176,Yes
 PGC,Peapack Gladstone FI,575054000,3575,Yes
 PGEN,Precigen Inc,1828326000,204,Yes
 PGF,Financial Preferred Invesco ETF,1782272000,16272,Yes
@@ -3153,7 +3153,7 @@ PLUS,Eplus Inc,1414304000,3891,Yes
 PLX,Protalix Biotherapeutics,181333000,8750,Yes
 PLXS,Plexus Cp,2637803000,2457,Yes
 PLYA,Playa Hotels & Resorts N.V.,1290916000,65411,Yes
-PM,Philip Morris International Inc,1.37367E+11,122618,Yes
+PM,Philip Morris International Inc,1.37E+11,122618,Yes
 PMT,Pennymac Mortgage Investment Trust,1940437000,40940,Yes
 PNC,PNC Bank,74873448000,97867,Yes
 PNFP,Pinnacle Finl Ptnrs,6838519000,13833,Yes
@@ -3259,14 +3259,14 @@ PXH,FTSE RAFI Emrg Markets Invesco ETF,1321338000,11499,Yes
 PXI,DWA Energy Momentum Invesco ETF,30047700,2451,Yes
 PXJ,Dynamic Oil & Gas Services Invesco ETF,61100000,30808,Yes
 PXLW,Pixelworks Inc,203888000,89723,Yes
-PYPL,Paypal Holdings,2.91986E+11,91950,Yes
+PYPL,Paypal Holdings,2.92E+11,91950,Yes
 PZA,National Amt-Free Municipal Bond Invesco ETF,2255061400,19039,Yes
 PZN,Pzena Investment Management Inc,785005000,3547,Yes
 PZZA,Papa John's Intl,2899969000,18696,Yes
 QABA,Qtec First Trust ETF,118600000,1047,Yes
 QADA,Qad Inc,1399873000,823,Yes
 QCLN,Nasdaq Clean Edge Green Energy Index Fund FT,2846434200,7756,Yes
-QCOM,Qualcomm Inc,1.51826E+11,75574,Yes
+QCOM,Qualcomm Inc,1.52E+11,75574,Yes
 QCRH,Qcr Holdings Inc,737854000,2579,Yes
 QD,Qudian Inc ADR,804324000,159584,Yes
 QDEL,Quidel Cp,5878109000,40540,Yes
@@ -3282,7 +3282,7 @@ QLYS,Qualys Inc,4039208000,29658,Yes
 QMCO,Quantum Corp,477461000,361600,Yes
 QNST,Quinstreet Inc,1220501000,10576,Yes
 QQEW,Nasdaq-100 EW Index Fund FT,1240290500,4703,Yes
-QQQ,Nasdaq QQQ Invesco ETF,1.51618E+11,1952511,Yes
+QQQ,Nasdaq QQQ Invesco ETF,1.52E+11,1952511,Yes
 QQQE,Nasdaq 100 EW Index Direxion,363545000,2130,Yes
 QQQJ,Invesco Nasdaq Next Gen 100 ETF,860411200,5274,Yes
 QQQM,Invesco Nasdaq 100 ETF,445247400,144500,Yes
@@ -3332,8 +3332,8 @@ RDHL,Redhill Biophrma ADR,372088000,36775,Yes
 RDI,Reading Intl Cl A,150721000,171,Yes
 RDN,Radian Group Inc,4447185000,128431,Yes
 RDNT,Radnet Inc,1188144000,3984,Yes
-RDS.A,Royal Dutch Shell ADR Cl A,1.67079E+11,56474,Yes
-RDS.B,Royal Dutch Shell Cl B,1.58959E+11,71070,Yes
+RDS.A,Royal Dutch Shell ADR Cl A,1.67E+11,56474,Yes
+RDS.B,Royal Dutch Shell Cl B,1.59E+11,71070,Yes
 RDUS,Radius Health,1064963000,18071,Yes
 RDWR,Radware Ltd,1276013000,30446,Yes
 RDY,Dr. Reddy's Laboratories Ltd,10253133000,3824,Yes
@@ -3455,7 +3455,7 @@ RSX,Russia Vaneck ETF,1798898800,531410,Yes
 RTH,Retail ETF Vaneck,203581000,927,Yes
 RTLR,Rattler Midstream LP Common Units,1642203000,19115,Yes
 RTP,Reinvent Technology Partners Cl A,925462000,24750,Yes
-RTX,Raytheon Technologies Corp,1.18884E+11,425869,Yes
+RTX,Raytheon Technologies Corp,1.19E+11,425869,Yes
 RUBY,Rubius Therapeutics Inc,2598230000,180330,Yes
 RUN,Sunrun Inc,11500692000,17682,Yes
 RUSHA,Rush Entpr Cl A,2716850000,14818,Yes
@@ -3478,7 +3478,7 @@ RWX,DJ Intl Real Estate ETF SPDR,926292900,18160,Yes
 RXL,Ultra Health Care Proshares,117390000,116,Yes
 RXN,Rexnord Corp,5892517000,24795,Yes
 RXT,Rackspace Technology Inc,4692090000,4735400,Yes
-RY,Royal Bank of Canada,1.32793E+11,99297,Yes
+RY,Royal Bank of Canada,1.33E+11,99297,Yes
 RYAAY,Ryanair Hlds Plc,25897704000,15288,Yes
 RYAM,Rayonier Advanced Materials Inc,635501000,23030,Yes
 RYB,Ryb Education Inc Aps,136275000,2382,Yes
@@ -3503,7 +3503,7 @@ SAN,Banco Santander,60518836000,310654,Yes
 SAND,Sandstorm Gold Ltd,1371392000,3898,Yes
 SANM,Sanmina Corp,2686030000,20455,Yes
 SANW,S&W Seed Company,134703000,198,Yes
-SAP,SAP Ag,1.50086E+11,12485,Yes
+SAP,SAP Ag,1.50E+11,12485,Yes
 SASR,Sandy Spring Bancorp,2020889000,12264,Yes
 SATS,Echostar Corp,2493330000,24712,Yes
 SAVA,Cassava Sciences Inc,1334201000,52852,Yes
@@ -3521,7 +3521,7 @@ SBRA,Sabra REIT,3755030000,219417,Yes
 SBS,Cia DE Saneamento Basico Do Estado,4811911000,57723,Yes
 SBSI,Southside Bancshares,1288699000,4527,Yes
 SBSW,Sibanye Gold Ltd ADR,13940100000,146102,Yes
-SBUX,Starbucks Corp,1.31081E+11,17890,Yes
+SBUX,Starbucks Corp,1.31E+11,17890,Yes
 SC,Santander Consumer USA Holdings,8302002000,16758,Yes
 SCCO,Southern Peru Copper Corp,57052792000,64032,Yes
 SCHA,Schwab U.S. Small-Cap ETF,15821844800,8223,Yes
@@ -3538,7 +3538,7 @@ SCHN,Schnitzer Steel A,1142873000,8575,Yes
 SCHP,Schwab U.S. TIPS ETF,16187400000,73888,Yes
 SCHR,Schwab Int-Term U.S. Treasury ETF,3884043200,19006,Yes
 SCHV,Schwab U.S. Large-Cap Value ETF,9070712000,24229,Yes
-SCHW,The Charles Schwab Corp,1.18046E+11,371431,Yes
+SCHW,The Charles Schwab Corp,1.18E+11,371431,Yes
 SCHX,Schwab U.S. Large-Cap ETF,27633177600,18790,Yes
 SCHZ,Schwab US Aggregate Bond ETF,8545033600,14351,Yes
 SCI,Service Corp International,8371338000,30738,Yes
@@ -3603,7 +3603,7 @@ SHLS,Shoals Technologies Group Inc Cl A,6358893000,1898,Yes
 SHLX,Shell Midstream Partners LP,5340865000,28701,Yes
 SHO,Sunstone Hotel Investors,2850140000,134493,Yes
 SHOO,Steven Maddens Ltd,3162960000,30770,Yes
-SHOP,Shopify Inc,1.39366E+11,6658,Yes
+SHOP,Shopify Inc,1.39E+11,6658,Yes
 SHW,Sherwin-Williams Company,64249104000,9828,Yes
 SHY,1-3 Year Treasury Bond Ishares ETF,19692016000,10968,Yes
 SHYF,The Shyft Group Inc,1455772000,366800,Yes
@@ -3691,7 +3691,7 @@ SND,Smart Sand Inc,128062000,6521,Yes
 SNDL,Sundial Growers Inc,2506941000,17870781,Yes
 SNDR,Schneider National Inc,4432077000,12252,Yes
 SNDX,Syndax Pharma,1111840000,45317,Yes
-SNE,Sony Corp,1.3002E+11,31032,Yes
+SNE,Sony Corp,1.30E+11,31032,Yes
 SNEX,Stonex Group Inc,1244118000,61500,Yes
 SNLN,Pyxis/Iboxx Senior Loan ETF,50158000,300,Yes
 SNN,Smith & Nephew Snats,17226126000,9079,Yes
@@ -3702,7 +3702,7 @@ SNPS,Synopsys Inc,35662904000,2136,Yes
 SNR,New Senior Investment Group Inc,528627000,9664,Yes
 SNV,Synovus Financial Corp,7157209000,37544,Yes
 SNX,Synnex Corp,5450707000,7170,Yes
-SNY,Sanofi-Aventis S.A.,1.24386E+11,47123,Yes
+SNY,Sanofi-Aventis S.A.,1.24E+11,47123,Yes
 SO,Southern Company,64717360000,239624,Yes
 SOAC,Sustainable Opportunities Acquisition Cl A,378375000,1050,Yes
 SOCL,G-X Social Media ETF,377389000,3120,Yes
@@ -3768,11 +3768,11 @@ SPXL,S&P 500 Bull 3X Direxion,1888718400,158522,Yes
 SPXS,S&P 500 Bear 3X Direxion,407199800,132710,Yes
 SPXU,Ultrapro Short S&P 500 Proshares,527287000,188308,Yes
 SPXZ,Morgan Creek Exos Spac Originated ETF,36478000,21400,Yes
-SPY,S&P 500 SPDR,3.36635E+11,986934,Yes
+SPY,S&P 500 SPDR,3.37E+11,986934,Yes
 SPYD,SPDR S&P 500 High Dividend Portfolio ETF,3049624800,30684,Yes
 SPYG,SPDR S&P 500 Growth Portfolio ETF,9406064800,2878,Yes
 SPYV,SPDR S&P 500 Value Portfolio ETF,9768676000,272157,Yes
-SQ,Square,1.10635E+11,157036,Yes
+SQ,Square,1.11E+11,157036,Yes
 SQBG,Sequential Brands,45754000,463,Yes
 SQM,Sociedad Quimica Y Minera S.A.,14576018000,26003,Yes
 SQQQ,Ultrapro Short QQQ Proshares,1445494400,6506487,Yes
@@ -3886,7 +3886,7 @@ SYNL,Synalloy Cp,85579000,781,Yes
 SYRS,Syros Pharmaceuticals,569852000,69294,Yes
 SYX,Systemax Inc,1433628000,2714,Yes
 SYY,Sysco Corp,41062644000,118302,Yes
-T,AT&T Inc,2.13882E+11,90480,Yes
+T,AT&T Inc,2.14E+11,90480,Yes
 TA,Travelcenters of America Llc,404054000,6711,Yes
 TACO,Del Taco Rest,409840000,3893,Yes
 TACT,Transact Tech Inc,107078000,69,Yes
@@ -3918,7 +3918,7 @@ TCPC,TCP Capital Corp,830112000,18329,Yes
 TCRR,Tcr2 Therapeutics Inc,875322000,8449,Yes
 TCS,The Container Store Group Inc,878508000,75921,Yes
 TCX,Tucows Inc Cl A,852042000,2837,Yes
-TD,Toronto Dominion Bank,1.20055E+11,171952,Yes
+TD,Toronto Dominion Bank,1.20E+11,171952,Yes
 TDC,Teradata Corp,4796000000,28024,Yes
 TDG,Transdigm Group Inc,33184188000,6298,Yes
 TDIV,Nasdaq Technology Dividend Index Fund FT,1481751000,37,Yes
@@ -3986,16 +3986,16 @@ TLS,Telos Corp,2230176000,443300,Yes
 TLSA,Tiziana Life Sciences Plc ADR,208073000,4392,Yes
 TLT,20+ Year Treas Bond Ishares ETF,15280350400,285307,Yes
 TLYS,Tilly's Inc,372263000,11286,Yes
-TM,Toyota Motor Corp Ltd Ord,2.12633E+11,10406,Yes
+TM,Toyota Motor Corp Ltd Ord,2.13E+11,10406,Yes
 TMDX,Transmedics Group Inc,1171162000,29685,Yes
 TME,Tencent Music Entertainment Group ADR,44370752000,1070252,Yes
 TMF,20+ Year Trsy Bull 3X Direxion,180481000,28352,Yes
 TMHC,Taylor Morrison Home Corp,3851510000,40781,Yes
-TMO,Thermo Fisher Scientific Inc,1.75801E+11,111909,Yes
+TMO,Thermo Fisher Scientific Inc,1.76E+11,111909,Yes
 TMP,Tompkinstrustco,1322883000,1848,Yes
 TMQ,Trilogy Metals Inc,308558000,11487,Yes
 TMST,Timken Steel Corp,477048000,39245,Yes
-TMUS,T-Mobile US,1.58805E+11,298664,Yes
+TMUS,T-Mobile US,1.59E+11,298664,Yes
 TMV,20+ Year Trsy Bear 3X Direxion,227658800,16526,Yes
 TMX,Terminix Global Hldgs Inc,6504655000,658400,Yes
 TNA,Smallcap Bull 3X Direxion,1868905600,118334,Yes
@@ -4006,7 +4006,7 @@ TNK,Teekay Tankers Ltd,492036000,14048,Yes
 TNL,Travel + Leisure CO,5431698000,10152,Yes
 TNP,Tsakos Energy Navigation Ltd,184429000,4289,Yes
 TOL,Toll Brothers Inc,6908488000,76862,Yes
-TOT,Totalfinaelf S.A.,1.29048E+11,12224,Yes
+TOT,Totalfinaelf S.A.,1.29E+11,12224,Yes
 TOUR,Tuniu Corporatio Ads,482770000,28877,Yes
 TOWN,Towne Bank,2275135000,8475,Yes
 TPB,Turning Point Brands,973705000,9136,Yes
@@ -4056,9 +4056,9 @@ TS,Tenaris S.A.,13552552000,107736,Yes
 TSCO,Tractor Supply Company,19796928000,36306,Yes
 TSE,Trinseo S.A.,2750382000,15148,Yes
 TSEM,Tower Semiconductor,3219253000,25389,Yes
-TSLA,Tesla Inc,6.49706E+11,1400049,Yes
+TSLA,Tesla Inc,6.50E+11,1400049,Yes
 TSLX,Tpg Specialty Lending Inc,1545313000,13916,Yes
-TSM,Taiwan Semiconductor Manufacturing,6.18959E+11,215223,Yes
+TSM,Taiwan Semiconductor Manufacturing,6.19E+11,215223,Yes
 TSN,Tyson Foods,27834900000,148030,Yes
 TSQ,Townsquare Media Llc,198689000,3053,Yes
 TT,Trane Technologies Plc,39858176000,1131200,Yes
@@ -4098,7 +4098,7 @@ TWTR,Twitter Inc,55272096000,123928,Yes
 TX,Ternium S.A.,7233949000,21186,Yes
 TXG,10X Genomics Inc,18354242000,766100,Yes
 TXMD,Therapeuticsmd Inc,624400000,123800,Yes
-TXN,Texas Instruments,1.63011E+11,329918,Yes
+TXN,Texas Instruments,1.63E+11,329918,Yes
 TXRH,Texas Roadhouse Inc,6597793000,54773,Yes
 TXT,Textron Inc,12233528000,38742,Yes
 TYD,7-10 Year Treasury Bull 3X Direxion,15273000,64,Yes
@@ -4115,7 +4115,7 @@ UAMY,U S Antimony Corp,113844000,237930,Yes
 UAN,Cvr Partners LP,384164000,1372,Yes
 UAVS,Ageagle Aerial Systems Inc,439251000,128016,Yes
 UBA,Urstadt Biddle Properties Inc,718584000,5130,Yes
-UBER,Uber Technologies Inc,1.09373E+11,155198,Yes
+UBER,Uber Technologies Inc,1.09E+11,155198,Yes
 UBS,UBS Group Ag,56765516000,232837,Yes
 UBSI,United Bkshs Inc,5174477000,25500,Yes
 UBT,Ultra 20+ Year Treasury Proshares,25272500,51,Yes
@@ -4157,15 +4157,15 @@ UMPQ,Umpqua Holdings Corp,4027989000,108039,Yes
 UNF,Unifirst Corp,4393723000,5026,Yes
 UNFI,United Nat Foods,1964168000,67626,Yes
 UNG,US Natural Gas Fund,285994700,20636,Yes
-UNH,Unitedhealth Group Inc,3.3521E+11,6406,Yes
+UNH,Unitedhealth Group Inc,3.35E+11,6406,Yes
 UNIT,Uniti Group Inc,2736540000,127875,Yes
 UNL,US 12 Month Natural Gas,8221500,808,Yes
 UNM,Unumprovident Corp,5702431000,155310,Yes
-UNP,Union Pacific Corp,1.41803E+11,135938,Yes
+UNP,Union Pacific Corp,1.42E+11,135938,Yes
 UNVR,Univar Inc,3577475000,28429,Yes
 UPLD,Upland Software Inc,1452870000,5828,Yes
 UPRO,Ultrapro S&P 500 Proshares,1982646600,102942,Yes
-UPS,United Parcel Service,1.41171E+11,23746,Yes
+UPS,United Parcel Service,1.41E+11,23746,Yes
 UPST,Upstart Holdings Inc,4351283000,8974,Yes
 UPWK,Upwork Inc,6048161000,8574,Yes
 URA,G-X Uranium ETF,501878000,130437,Yes
@@ -4212,7 +4212,7 @@ UWMC,Uwm Hldg Corp,359550000,192492,Yes
 UXIN,Uxin Ltd Ads,349149000,66490,Yes
 UYG,Ultra Financials Proshares,769754300,2526,Yes
 UYM,Ultra Basic Materials Proshares,55874000,320,Yes
-V,Visa Inc,4.38685E+11,11890,Yes
+V,Visa Inc,4.39E+11,11890,Yes
 VAC,Marriot Vacations Worldwide Cor,7540285000,7358,Yes
 VALE,Vale S.A.,88155128000,28086,Yes
 VALPQ,Valaris Plc,18211000,959900,Yes
@@ -4308,7 +4308,7 @@ VOD,Vodafone Grp Plc Ads,50931516000,14938,Yes
 VOE,Midcap Value ETF Vanguard,13176079200,30879,Yes
 VOLT,Volt Information Services Inc,75645000,4179,Yes
 VONV,Russell 1000 Value Vanguard,3751398800,23423,Yes
-VOO,S&P 500 ETF Vanguard,2.03665E+11,40456,Yes
+VOO,S&P 500 ETF Vanguard,2.04E+11,40456,Yes
 VOOG,S&P 500 Growth ETF Vanguard,5158915600,6508,Yes
 VOT,Midcap Growth ETF Vanguard,11652834400,5338,Yes
 VOX,Telecom Services ETF Vanguard,3723862800,3295,Yes
@@ -4343,7 +4343,7 @@ VSTO,Vista Outdoor Inc,1894914000,20287,Yes
 VT,Total World Stock Index ETF Vanguard,19326585600,2499700,Yes
 VTC,Total Corporate Bond Vanguard ETF,672670200,41400,Yes
 VTEB,Tax-Exempt Bond Vanguard,11443272800,31913,Yes
-VTI,Total Stock Market ETF Vanguard,2.23548E+11,4599900,Yes
+VTI,Total Stock Market ETF Vanguard,2.24E+11,4599900,Yes
 VTNR,Vertex Energy,77328000,36518,Yes
 VTOL,Bristow Group Inc,801278000,240300,Yes
 VTR,Ventas Inc,20939692000,124759,Yes
@@ -4369,7 +4369,7 @@ VXZ,Ipath S&P 500 VIX Mid-Term Futures ETN,36713600,4637,Yes
 VYGR,Voyager Therapeut,210862000,45263,Yes
 VYM,High Dividend Yield Vanguard ETF,35017913600,8624,Yes
 VYNE,Vyne Therapeutics Inc,379321000,42630,Yes
-VZ,Verizon Communications Inc,2.30247E+11,77540,Yes
+VZ,Verizon Communications Inc,2.30E+11,77540,Yes
 W,Wayfair Inc,32542044000,950,Yes
 WAB,Wabtec Corp,14437321000,31240,Yes
 WABC,Westamerica Bancorp,1718596000,5262,Yes
@@ -4399,7 +4399,7 @@ WERN,Werner Enterprise,3143423000,23999,Yes
 WES,Western Midstream Partners LP,7848121000,54317,Yes
 WETF,Wisdomtree Invstmnts,900394000,72664,Yes
 WEX,Wex Inc,9780794000,2328,Yes
-WFC,Wells Fargo & Company,1.62677E+11,213886,Yes
+WFC,Wells Fargo & Company,1.63E+11,213886,Yes
 WFH,Work From Home ETF Direxion,139892000,11700,Yes
 WGO,Winnebago Industries,2851840000,13883,Yes
 WH,Wyndham Hotels & Resorts Inc,6560100000,34633,Yes
@@ -4426,7 +4426,7 @@ WMC,Western Asset Mortgage Capital,209805000,22363,Yes
 WMG,Warner Music Group Corp Cl A,17386958000,2794800,Yes
 WMK,Weis Markets,1560891000,3720,Yes
 WMS,Advanced Drainage Systems Inc,7385383000,24128,Yes
-WMT,Wal-Mart Stores,3.77398E+11,47786,Yes
+WMT,Wal-Mart Stores,3.77E+11,47786,Yes
 WNC,Wabash National Corp,1030728000,21695,Yes
 WNEB,Western New England Bancorp Inc,216396000,3335,Yes
 WNS,Wns Ltd,3789197000,5784,Yes
@@ -4505,7 +4505,7 @@ XME,S&P Metals & Mining SPDR,1835100400,3269300,Yes
 XMLV,S&P Midcap Low Vol Invesco ETF,1701103200,196900,Yes
 XNCR,Xencor Inc,2641712000,197000,Yes
 XNET,Xunlei Ltd ADR,490899000,5351400,Yes
-XOM,Exxon Mobil Corp,2.50241E+11,30624700,Yes
+XOM,Exxon Mobil Corp,2.50E+11,30624700,Yes
 XONE,The Exone Company,710783000,1662500,Yes
 XOP,S&P Oil & Gas Expl & Prod SPDR,3577344000,6316900,Yes
 XP,XP Inc Cl A,22452700000,586500,Yes
@@ -4578,4 +4578,3 @@ ZVO,Zovio Inc,182751000,289600,Yes
 ZYME,Zymeworks Inc,1561704000,231300,Yes
 ZYNE,Zynerba Pharma CS,150728000,4921601,Yes
 ZYXI,Zynex Inc,580870000,483200,Yes
-Downloaded from Barchart.com as of 03-17-2021 07:56am CDT,,,,

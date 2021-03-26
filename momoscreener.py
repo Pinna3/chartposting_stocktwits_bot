@@ -9,7 +9,7 @@ today_date = date.today().strftime('%m-%d-%y')
 import operator
 
 
-class OptionableSecurities:
+class Securities:
     def __init__(self, csv_source):
         securities = []
         # CSV Database- comprehensive list of optionable stocks obtain from barchart
@@ -19,13 +19,34 @@ class OptionableSecurities:
             for row in reader:
                 ticker = str(row[0])
                 securities.append(ticker)
-        securities.pop()
         # Setup finnhub client connection
         finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
         candles = []
         for security in securities:
             try:
                 candle_object = SecurityTradeData(security, 365)
+                #Setup client API connection
+                finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+                try:
+                    candle_object.industry = finnhub_client.company_profile2(symbol=security)['finnhubIndustry']
+                except KeyError:
+                    candle_object.industry = 'ETF'
+                sleep(1)
+
+                #peers data
+                peers = finnhub_client.company_peers(security)
+                sleep(1)
+                hashable_peers = []
+                for peer in peers:
+                    hashable_peer = '$' + peer
+                    hashable_peers.append(hashable_peer)
+                candle_object.peers = hashable_peers[:3]
+                candle_object.peers.append('$SPY')
+                #Solves ETF lack of peers issue for publishing purposes
+                if len(candle_object.peers) == 1:
+                    candle_object.peers.append('$DIA')
+                    candle_object.peers.append('$IWM')
+                    candle_object.peers.append('$QQQ')
                 candles.append(candle_object)
                 print(f'{candle_object.ticker}: {len(candles)}/4578')
             except:
@@ -33,7 +54,7 @@ class OptionableSecurities:
         self.candles = candles
 
     def __str__(self):
-        return f'OptionableSecurities(Length: {len(self.securities)})'
+        return f'Securities(Length: {len(self.securities)})'
 
     # 9SMA >/< 20SMA >/< 50SMA >/< 200SMA (current) [op_str = '>' for uptrend]
     def trend_0w(self, op_str):
@@ -360,7 +381,7 @@ class OptionableSecurities:
             json.dump(trending, outfile, indent=2)
 
 # Filter full list for volume and market cap
-class FilteredOptionable(OptionableSecurities):
+class FilteredOptionable(Securities):
     def __init__(self, csv_source, min_mktcap, min_volume):
         securities = []
         # CSV Database- comprehensive list of optionable stocks obtain from barchart
@@ -377,22 +398,22 @@ class FilteredOptionable(OptionableSecurities):
                     securities.append(ticker)
         self.securities = securities
 
-# list = OptionableSecurities('optionablestocks.csv')
-# list.trend_0w('>')
-# list.trend_2w('>')
-# list.trend_4w('>')
-# list.trend_6w('>')
-# list.trend_8w('>')
-# list.trend_10w('>')
-# list.trend_12w('>')
-# list.trend_14w('>')
-# list.trend_16w('>')
-# list.trend_0w('<')
-# list.trend_2w('<')
-# list.trend_4w('<')
-# list.trend_6w('<')
-# list.trend_8w('<')
-# list.trend_10w('<')
-# list.trend_12w('<')
-# list.trend_14w('<')
-# list.trend_16w('<')
+list = Securities('stocksample.csv')
+list.trend_0w('>')
+list.trend_2w('>')
+list.trend_4w('>')
+list.trend_6w('>')
+list.trend_8w('>')
+list.trend_10w('>')
+list.trend_12w('>')
+list.trend_14w('>')
+list.trend_16w('>')
+list.trend_0w('<')
+list.trend_2w('<')
+list.trend_4w('<')
+list.trend_6w('<')
+list.trend_8w('<')
+list.trend_10w('<')
+list.trend_12w('<')
+list.trend_14w('<')
+list.trend_16w('<')

@@ -18,27 +18,9 @@ class SecurityTradeData:
         #Setup client API connection
         finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
 
-        #industry data
-        try:
-            self.industry = finnhub_client.company_profile2(symbol=ticker)['finnhubIndustry']
-        except KeyError:
-            self.industry = 'ETF'
-        time.sleep(1)
-
-        #peers data
-        peers = finnhub_client.company_peers(ticker)
-        time.sleep(1)
-        hashable_peers = []
-        for peer in peers:
-            hashable_peer = '$' + peer
-            hashable_peers.append(hashable_peer)
-        self.peers = hashable_peers[:3]
-        self.peers.append('$SPY')
-        #Solves ETF lack of peers issue for publishing purposes
-        if len(self.peers) == 1:
-            self.peers.append('$DIA')
-            self.peers.append('$IWM')
-            self.peers.append('$QQQ')
+        #industry and peers data added while scanning
+        self.industry = None
+        peers = None
 
         #candlestick data
         data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
