@@ -138,4 +138,19 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # print(SecurityTradeData('AAPL', 15).df)
