@@ -1,0 +1,41 @@
+[
+  {
+    "ticker": "AEO",
+    "industry": "Retail",
+    "mktcap": "VeryLarge",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": [
+      "$TJX",
+      "$ROST",
+      "$BURL",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "AGCO",
+    "industry": "Machinery",
+    "mktcap": "VeryLarge",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": [
+      "$DE",
+      "$TTC",
+      "$AGCO",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ALLY",
+    "industry": "Financial Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": [
+      "$AXP",
+      "$COF",
+      "$DFS",
+      "$SPY"
+    ]
+  }
+]

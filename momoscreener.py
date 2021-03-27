@@ -49,7 +49,7 @@ class Securities:
                     candle_object.peers.append('$IWM')
                     candle_object.peers.append('$QQQ')
                 candles.append(candle_object)
-                print(f'{candle_object.ticker}: {len(candles)}/4578')
+                print(f'{candle_object.ticker}: {len(candles)}/{len(securities)}')
 
                 #marketcap
                 if int(security[1]) < 75000000:
@@ -80,8 +80,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in [1]:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -109,10 +116,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = object.df.iloc[-15]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                    op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in [1, 10]:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -140,12 +152,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = object.df.iloc[-15]
-                c4w, h4w, l4w, o4w, s4w, t4w, v4w, sma94w, sma204w, sma504w, sma2004w, lower, upper = object.df.iloc[-30]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                    op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and \
-                    op_func(sma94w, sma204w) and op_func(sma204w, sma504w) and op_func(sma504w, sma2004w):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in [1, 10, 20]:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -173,14 +188,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = object.df.iloc[-15]
-                c4w, h4w, l4w, o4w, s4w, t4w, v4w, sma94w, sma204w, sma504w, sma2004w, lower, upper = object.df.iloc[-30]
-                c6w, h6w, l6w, o6w, s6w, t6w, v6w, sma96w, sma206w, sma506w, sma2006w, lower, upper = object.df.iloc[-45]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                    op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and \
-                    op_func(sma94w, sma204w) and op_func(sma204w, sma504w) and op_func(sma504w, sma2004w) and \
-                    op_func(sma96w, sma206w) and op_func(sma206w, sma506w) and op_func(sma506w, sma2006w):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in [1, 10, 20, 30]:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -198,6 +214,8 @@ class Securities:
         with open(f'{mktcap_group}Stocks/6w-{trend}trend{today_date}.json', 'w') as outfile:
             json.dump(trending, outfile, indent=2)
 
+
+
     # 9SMA >/< 20SMA >/< 50SMA >/< 200SMA (8w ago - current) [op_str = '>' for uptrend]
     #mktcap_group = 'Micro', 'Small', 'Medium', 'Large', 'VeryLarge'
     def trend_8w(self, op_str, mktcap_group):
@@ -208,16 +226,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = object.df.iloc[-15]
-                c4w, h4w, l4w, o4w, s4w, t4w, v4w, sma94w, sma204w, sma504w, sma2004w, lower, upper = object.df.iloc[-30]
-                c6w, h6w, l6w, o6w, s6w, t6w, v6w, sma96w, sma206w, sma506w, sma2006w, lower, upper = object.df.iloc[-45]
-                c8w, h8w, l8w, o8w, s8w, t8w, v8w, sma98w, sma208w, sma508w, sma2008w, lower, upper = object.df.iloc[-60]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                    op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and \
-                    op_func(sma94w, sma204w) and op_func(sma204w, sma504w) and op_func(sma504w, sma2004w) and \
-                    op_func(sma96w, sma206w) and op_func(sma206w, sma506w) and op_func(sma506w, sma2006w) and \
-                    op_func(sma98w, sma208w) and op_func(sma208w, sma508w) and op_func(sma508w, sma2008w):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in [1, 10, 20, 30, 40]:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -245,18 +262,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = object.df.iloc[-15]
-                c4w, h4w, l4w, o4w, s4w, t4w, v4w, sma94w, sma204w, sma504w, sma2004w, lower, upper = object.df.iloc[-30]
-                c6w, h6w, l6w, o6w, s6w, t6w, v6w, sma96w, sma206w, sma506w, sma2006w, lower, upper = object.df.iloc[-45]
-                c8w, h8w, l8w, o8w, s8w, t8w, v8w, sma98w, sma208w, sma508w, sma2008w, lower, upper = object.df.iloc[-60]
-                c10w, h10w, l10w, o10w, s10w, t10w, v10w, sma910w, sma2010w, sma5010w, sma20010w, lower, upper = object.df.iloc[-75]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                    op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and \
-                    op_func(sma94w, sma204w) and op_func(sma204w, sma504w) and op_func(sma504w, sma2004w) and \
-                    op_func(sma96w, sma206w) and op_func(sma206w, sma506w) and op_func(sma506w, sma2006w) and \
-                    op_func(sma98w, sma208w) and op_func(sma208w, sma508w) and op_func(sma508w, sma2008w) and \
-                    op_func(sma910w, sma2010w) and op_func(sma2010w, sma5010w) and op_func(sma5010w, sma20010w):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in [1, 10, 20, 30, 40, 50]:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -284,20 +298,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = object.df.iloc[-15]
-                c4w, h4w, l4w, o4w, s4w, t4w, v4w, sma94w, sma204w, sma504w, sma2004w, lower, upper = object.df.iloc[-30]
-                c6w, h6w, l6w, o6w, s6w, t6w, v6w, sma96w, sma206w, sma506w, sma2006w, lower, upper = object.df.iloc[-45]
-                c8w, h8w, l8w, o8w, s8w, t8w, v8w, sma98w, sma208w, sma508w, sma2008w, lower, upper = object.df.iloc[-60]
-                c10w, h10w, l10w, o10w, s10w, t10w, v10w, sma910w, sma2010w, sma5010w, sma20010w, lower, upper = object.df.iloc[-75]
-                c12w, h12w, l12w, o12w, s12w, t12w, v12w, sma912w, sma2012w, sma5012w, sma20012w, lower, upper = object.df.iloc[-90]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                    op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and \
-                    op_func(sma94w, sma204w) and op_func(sma204w, sma504w) and op_func(sma504w, sma2004w) and \
-                    op_func(sma96w, sma206w) and op_func(sma206w, sma506w) and op_func(sma506w, sma2006w) and \
-                    op_func(sma98w, sma208w) and op_func(sma208w, sma508w) and op_func(sma508w, sma2008w) and \
-                    op_func(sma910w, sma2010w) and op_func(sma2010w, sma5010w) and op_func(sma5010w, sma20010w) and \
-                    op_func(sma912w, sma2012w) and op_func(sma2012w, sma5012w) and op_func(sma5012w, sma20012w):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in [1, 10, 20, 30, 40, 50, 60]:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -325,22 +334,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = object.df.iloc[-15]
-                c4w, h4w, l4w, o4w, s4w, t4w, v4w, sma94w, sma204w, sma504w, sma2004w, lower, upper = object.df.iloc[-30]
-                c6w, h6w, l6w, o6w, s6w, t6w, v6w, sma96w, sma206w, sma506w, sma2006w, lower, upper = object.df.iloc[-45]
-                c8w, h8w, l8w, o8w, s8w, t8w, v8w, sma98w, sma208w, sma508w, sma2008w, lower, upper = object.df.iloc[-60]
-                c10w, h10w, l10w, o10w, s10w, t10w, v10w, sma910w, sma2010w, sma5010w, sma20010w, lower, upper = object.df.iloc[-75]
-                c12w, h12w, l12w, o12w, s12w, t12w, v12w, sma912w, sma2012w, sma5012w, sma20012w, lower, upper = object.df.iloc[-90]
-                c14w, h14w, l14w, o14w, s14w, t14w, v14w, sma914w, sma2014w, sma5014w, sma20014w, lower, upper = object.df.iloc[-105]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                    op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and \
-                    op_func(sma94w, sma204w) and op_func(sma204w, sma504w) and op_func(sma504w, sma2004w) and \
-                    op_func(sma96w, sma206w) and op_func(sma206w, sma506w) and op_func(sma506w, sma2006w) and \
-                    op_func(sma98w, sma208w) and op_func(sma208w, sma508w) and op_func(sma508w, sma2008w) and \
-                    op_func(sma910w, sma2010w) and op_func(sma2010w, sma5010w) and op_func(sma5010w, sma20010w) and \
-                    op_func(sma912w, sma2012w) and op_func(sma2012w, sma5012w) and op_func(sma5012w, sma20012w) and \
-                    op_func(sma914w, sma2014w) and op_func(sma2014w, sma5014w) and op_func(sma5014w, sma20014w):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in [1, 10, 20, 30, 40, 50, 60, 70]:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -360,7 +362,7 @@ class Securities:
 
     # 9SMA >/< 20SMA >/< 50SMA >/< 200SMA (16w ago - current) [op_str = '>' for uptrend]
     #mktcap_group = 'Micro', 'Small', 'Medium', 'Large', 'VeryLarge'
-    def trend_16w(self, op_str, mktcap_group):
+    def trend_9SMA_20SMA_50SMA_200SMA(self, *time_markers, op_str='>', mktcap_group='VeryLarge'):
         #up/down trendtrend toggle
         ops = {"<": operator.lt, ">": operator.gt}
         op_func = ops[op_str]
@@ -368,24 +370,15 @@ class Securities:
         trending = []
         for index, object in enumerate(self.candles):
             try:
-                c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-1]
-                c2w, h2w, l2w, o2w, s2w, t2w, v2w, sma92w, sma202w, sma502w, sma2002w, lower, upper = object.df.iloc[-15]
-                c4w, h4w, l4w, o4w, s4w, t4w, v4w, sma94w, sma204w, sma504w, sma2004w, lower, upper = object.df.iloc[-30]
-                c6w, h6w, l6w, o6w, s6w, t6w, v6w, sma96w, sma206w, sma506w, sma2006w, lower, upper = object.df.iloc[-45]
-                c8w, h8w, l8w, o8w, s8w, t8w, v8w, sma98w, sma208w, sma508w, sma2008w, lower, upper = object.df.iloc[-60]
-                c10w, h10w, l10w, o10w, s10w, t10w, v10w, sma910w, sma2010w, sma5010w, sma20010w, lower, upper = object.df.iloc[-75]
-                c12w, h12w, l12w, o12w, s12w, t12w, v12w, sma912w, sma2012w, sma5012w, sma20012w, lower, upper = object.df.iloc[-90]
-                c14w, h14w, l14w, o14w, s14w, t14w, v14w, sma914w, sma2014w, sma5014w, sma20014w, lower, upper = object.df.iloc[-105]
-                c16w, h16w, l16w, o16w, s16w, t16w, v16w, sma916w, sma2016w, sma5016w, sma20016w, lower, upper = object.df.iloc[-120]
-                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                    op_func(sma92w, sma202w) and op_func(sma202w, sma502w) and op_func(sma502w, sma2002w) and \
-                    op_func(sma94w, sma204w) and op_func(sma204w, sma504w) and op_func(sma504w, sma2004w) and \
-                    op_func(sma96w, sma206w) and op_func(sma206w, sma506w) and op_func(sma506w, sma2006w) and \
-                    op_func(sma98w, sma208w) and op_func(sma208w, sma508w) and op_func(sma508w, sma2008w) and \
-                    op_func(sma910w, sma2010w) and op_func(sma2010w, sma5010w) and op_func(sma5010w, sma20010w) and \
-                    op_func(sma912w, sma2012w) and op_func(sma2012w, sma5012w) and op_func(sma5012w, sma20012w) and \
-                    op_func(sma914w, sma2014w) and op_func(sma2014w, sma5014w) and op_func(sma5014w, sma20014w) and \
-                    op_func(sma916w, sma2016w) and op_func(sma2016w, sma5016w) and op_func(sma5016w, sma20016w):
+                pass_or_fail = []
+                #every 10 multiple = 2 trading weeks
+                for timebar in time_markers:
+                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                        pass_or_fail.append(True)
+                    else:
+                        pass_or_fail.append(False)
+                if False not in pass_or_fail:
                     bb_window, bb_std = bb_param_optomizer(object, op_str)
                     trending.append({'ticker': object.ticker, 'industry': object.industry,
                                     'mktcap': object.mktcap, 'bb_window': bb_window,
@@ -400,7 +393,7 @@ class Securities:
             trend = 'up'
         if op_str == '<':
             trend = 'down'
-        with open(f'{mktcap_group}Stocks/16w-{trend}trend{today_date}.json', 'w') as outfile:
+        with open(f'{mktcap_group}Stocks/{time_markers}D-{trend}trend{today_date}.json', 'w') as outfile:
             json.dump(trending, outfile, indent=2)
 
 # # Filter full list for volume and market cap
@@ -418,103 +411,103 @@ class Securities:
 #                 if volume > min_volume:
 #                     securities.append(ticker)
 #         self.securities = securities
-
-list = Securities('StockLists/MicroStocks$1M-$75M.csv')
-list.trend_0w('>', 'Micro')
-list.trend_2w('>', 'Micro')
-list.trend_4w('>', 'Micro')
-list.trend_6w('>', 'Micro')
-list.trend_8w('>', 'Micro')
-list.trend_10w('>', 'Micro')
-list.trend_12w('>', 'Micro')
-list.trend_14w('>', 'Micro')
-list.trend_16w('>', 'Micro')
-list.trend_0w('<', 'Micro')
-list.trend_2w('<', 'Micro')
-list.trend_4w('<', 'Micro')
-list.trend_6w('<', 'Micro')
-list.trend_8w('<', 'Micro')
-list.trend_10w('<', 'Micro')
-list.trend_12w('<', 'Micro')
-list.trend_14w('<', 'Micro')
-list.trend_16w('<', 'Micro')
-
-list = Securities('StockLists/SmallStocks$75M-$300M.csv')
-list.trend_0w('>', 'Small')
-list.trend_2w('>', 'Small')
-list.trend_4w('>', 'Small')
-list.trend_6w('>', 'Small')
-list.trend_8w('>', 'Small')
-list.trend_10w('>', 'Small')
-list.trend_12w('>', 'Small')
-list.trend_14w('>', 'Small')
-list.trend_16w('>', 'Small')
-list.trend_0w('<', 'Small')
-list.trend_2w('<', 'Small')
-list.trend_4w('<', 'Small')
-list.trend_6w('<', 'Small')
-list.trend_8w('<', 'Small')
-list.trend_10w('<', 'Small')
-list.trend_12w('<', 'Small')
-list.trend_14w('<', 'Small')
-list.trend_16w('<', 'Small')
-
-list = Securities('StockLists/MediumStocks$300M-$1B.csv')
-list.trend_0w('>', 'Medium')
-list.trend_2w('>', 'Medium')
-list.trend_4w('>', 'Medium')
-list.trend_6w('>', 'Medium')
-list.trend_8w('>', 'Medium')
-list.trend_10w('>', 'Medium')
-list.trend_12w('>', 'Medium')
-list.trend_14w('>', 'Medium')
-list.trend_16w('>', 'Medium')
-list.trend_0w('<', 'Medium')
-list.trend_2w('<', 'Medium')
-list.trend_4w('<', 'Medium')
-list.trend_6w('<', 'Medium')
-list.trend_8w('<', 'Medium')
-list.trend_10w('<', 'Medium')
-list.trend_12w('<', 'Medium')
-list.trend_14w('<', 'Medium')
-list.trend_16w('<', 'Medium')
-
-list = Securities('StockLists/LargeStocks$1B-$4B.csv')
-list.trend_0w('>', 'Large')
-list.trend_2w('>', 'Large')
-list.trend_4w('>', 'Large')
-list.trend_6w('>', 'Large')
-list.trend_8w('>', 'Large')
-list.trend_10w('>', 'Large')
-list.trend_12w('>', 'Large')
-list.trend_14w('>', 'Large')
-list.trend_16w('>', 'Large')
-list.trend_0w('<', 'Large')
-list.trend_2w('<', 'Large')
-list.trend_4w('<', 'Large')
-list.trend_6w('<', 'Large')
-list.trend_8w('<', 'Large')
-list.trend_10w('<', 'Large')
-list.trend_12w('<', 'Large')
-list.trend_14w('<', 'Large')
-list.trend_16w('<', 'Large')
-
-list = Securities('StockLists/VeryLargeStocks$4B+.csv')
-list.trend_0w('>', 'VeryLarge')
-list.trend_2w('>', 'VeryLarge')
-list.trend_4w('>', 'VeryLarge')
-list.trend_6w('>', 'VeryLarge')
-list.trend_8w('>', 'VeryLarge')
-list.trend_10w('>', 'VeryLarge')
-list.trend_12w('>', 'VeryLarge')
-list.trend_14w('>', 'VeryLarge')
-list.trend_16w('>', 'VeryLarge')
-list.trend_0w('<', 'VeryLarge')
-list.trend_2w('<', 'VeryLarge')
-list.trend_4w('<', 'VeryLarge')
-list.trend_6w('<', 'VeryLarge')
-list.trend_8w('<', 'VeryLarge')
-list.trend_10w('<', 'VeryLarge')
-list.trend_12w('<', 'VeryLarge')
-list.trend_14w('<', 'VeryLarge')
-list.trend_16w('<', 'VeryLarge')
+#
+# list = Securities('StockLists/microsample.csv')
+# list.trend_0w('>', 'Micro')
+# list.trend_2w('>', 'Micro')
+# list.trend_4w('>', 'Micro')
+# list.trend_6w('>', 'Micro')
+# list.trend_8w('>', 'Micro')
+# list.trend_10w('>', 'Micro')
+# list.trend_12w('>', 'Micro')
+# list.trend_14w('>', 'Micro')
+# list.trend_16w('>', 'Micro')
+# list.trend_0w('<', 'Micro')
+# list.trend_2w('<', 'Micro')
+# list.trend_4w('<', 'Micro')
+# list.trend_6w('<', 'Micro')
+# list.trend_8w('<', 'Micro')
+# list.trend_10w('<', 'Micro')
+# list.trend_12w('<', 'Micro')
+# list.trend_14w('<', 'Micro')
+# list.trend_16w('<', 'Micro')
+#
+# list = Securities('StockLists/smallsample.csv')
+# list.trend_0w('>', 'Small')
+# list.trend_2w('>', 'Small')
+# list.trend_4w('>', 'Small')
+# list.trend_6w('>', 'Small')
+# list.trend_8w('>', 'Small')
+# list.trend_10w('>', 'Small')
+# list.trend_12w('>', 'Small')
+# list.trend_14w('>', 'Small')
+# list.trend_16w('>', 'Small')
+# list.trend_0w('<', 'Small')
+# list.trend_2w('<', 'Small')
+# list.trend_4w('<', 'Small')
+# list.trend_6w('<', 'Small')
+# list.trend_8w('<', 'Small')
+# list.trend_10w('<', 'Small')
+# list.trend_12w('<', 'Small')
+# list.trend_14w('<', 'Small')
+# list.trend_16w('<', 'Small')
+#
+# list = Securities('StockLists/mediumsample.csv')
+# list.trend_0w('>', 'Medium')
+# list.trend_2w('>', 'Medium')
+# list.trend_4w('>', 'Medium')
+# list.trend_6w('>', 'Medium')
+# list.trend_8w('>', 'Medium')
+# list.trend_10w('>', 'Medium')
+# list.trend_12w('>', 'Medium')
+# list.trend_14w('>', 'Medium')
+# list.trend_16w('>', 'Medium')
+# list.trend_0w('<', 'Medium')
+# list.trend_2w('<', 'Medium')
+# list.trend_4w('<', 'Medium')
+# list.trend_6w('<', 'Medium')
+# list.trend_8w('<', 'Medium')
+# list.trend_10w('<', 'Medium')
+# list.trend_12w('<', 'Medium')
+# list.trend_14w('<', 'Medium')
+# list.trend_16w('<', 'Medium')
+#
+# list = Securities('StockLists/largesample.csv')
+# list.trend_0w('>', 'Large')
+# list.trend_2w('>', 'Large')
+# list.trend_4w('>', 'Large')
+# list.trend_6w('>', 'Large')
+# list.trend_8w('>', 'Large')
+# list.trend_10w('>', 'Large')
+# list.trend_12w('>', 'Large')
+# list.trend_14w('>', 'Large')
+# list.trend_16w('>', 'Large')
+# list.trend_0w('<', 'Large')
+# list.trend_2w('<', 'Large')
+# list.trend_4w('<', 'Large')
+# list.trend_6w('<', 'Large')
+# list.trend_8w('<', 'Large')
+# list.trend_10w('<', 'Large')
+# list.trend_12w('<', 'Large')
+# list.trend_14w('<', 'Large')
+# list.trend_16w('<', 'Large')
+#
+list = Securities('StockLists/verylargesample.csv')
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 10, 20, 30, 40, 50, 60, op_str='>', mktcap_group='VeryLarge')
+# list.trend_2w('>', 'VeryLarge')
+# list.trend_4w('>', 'VeryLarge')
+# list.trend_6w('>', 'VeryLarge')
+# list.trend_8w('>', 'VeryLarge')
+# list.trend_10w('>', 'VeryLarge')
+# list.trend_12w('>', 'VeryLarge')
+# list.trend_14w('>', 'VeryLarge')
+# list.trend_16w('>', 'VeryLarge')
+# list.trend_0w('<', 'VeryLarge')
+# list.trend_2w('<', 'VeryLarge')
+# list.trend_4w('<', 'VeryLarge')
+# list.trend_6w('<', 'VeryLarge')
+# list.trend_8w('<', 'VeryLarge')
+# list.trend_10w('<', 'VeryLarge')
+# list.trend_12w('<', 'VeryLarge')
+# list.trend_14w('<', 'VeryLarge')
+# list.trend_16w('<', 'VeryLarge')
