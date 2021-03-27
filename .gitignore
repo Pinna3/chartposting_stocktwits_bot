@@ -104,6 +104,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+alpaca_environment_variables.py
 env/
 venv/
 ENV/
