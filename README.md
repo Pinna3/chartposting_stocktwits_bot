@@ -32,4 +32,4 @@ the day for entries (adjust scans to make quicker, narrow parameters and utilize
 Extract stock lists from Barchart for 10M-100M, 100M-1B, 1B-50B, 50B-250B, 250B+
       Perform trend scans on all.
 
-      
+Risk Parameters for Trading:
