@@ -20,7 +20,8 @@ class SecurityTradeData:
 
         #industry and peers data added while scanning
         self.industry = None
-        peers = None
+        self.peers = None
+        self.mktcap = None
 
         #candlestick data
         data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
