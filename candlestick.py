@@ -1,8 +1,8 @@
-import pandas as pd
+import pandas
 import plotly.graph_objs as go
-import finnhub
-import time
-import operator
+import finnhub, time, operator, alpaca
+import pandas as pd
+
 # from utility_func import memoize
 
 #Database Object with candlestick data and moving average data (for now)
@@ -24,9 +24,10 @@ class SecurityTradeData:
         self.mktcap = None
 
         #candlestick data
-        data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
+        # data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
+        data = alpaca.return_candles_json(ticker, period='day', num_bars=365)
         time.sleep(1)
-        df = pd.DataFrame(data)
+        df = pd.DataFrame(data[ticker])
         sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
         sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
         sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
@@ -138,19 +139,5 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# print(SecurityTradeData('AAPL', 15).df)
+SecurityTradeData('AAPL', 365).chart(365)
+# print(SecurityTradeData('GOOGL', 365).df)
