@@ -1,8 +1,11 @@
 from candlestick import SecurityTradeData
+from time import sleep
 import finnhub
+import tweet
 import json
 import operator
-from time import sleep
+
+
 
 def dailyscanner(json_watchlist, op_str):
     with open(json_watchlist) as infile:

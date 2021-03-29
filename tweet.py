@@ -1,13 +1,9 @@
 import tweepy
 import time
-
-CONSUMER_KEY = ''
-CONSUMER_SECRET = ''
-ACCESS_KEY = ''
-ACCESS_SECRET = ''
+from config import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
-apu = tweepy.API(auth, wait_on_rate_limit=True)
+twitter_api = tweepy.API(auth)
 
-print('Twitter')
+# api.update_status('Test')
