@@ -2,6 +2,7 @@ import pandas
 import plotly.graph_objs as go
 import finnhub, time, operator
 import pandas as pd
+import os
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 hours_minutes_now = datetime.now().strftime('%H:%M')
@@ -59,20 +60,20 @@ class SecurityTradeData:
         self.df['lower'] = bollinger_reference_lower - (bollinger_std * sigma_lower)
         self.df['upper'] = bollinger_reference_upper + (bollinger_std * sigma_upper)
 
-    #destination options: 'browser', filepath (Mkt cap group 'Micro', 'Small', 'Medium', 'Large', 'VeryLarge'
-    #must be provided for proper filepath management)
-    def chart(self, days, destination='browser', mktcap_group=None):
+
+    #destination options: 'browser', or filepaths 'Micro', 'Small', 'Medium', 'Large', 'VeryLarge'
+    def chart(self, days, destination='browser'):
         ###CANDLESTICK AND MOVING AVERAGE DATA
         trace_bar = {'x': self.df.index, 'open': self.df['o'][-days:], 'close': self.df['c'][-days:], 'high': self.df['h'][-days:],
             'low': self.df['l'][-days:], 'type': 'candlestick', 'name': self.ticker, 'showlegend': True}
         trace_9sma = {'x': self.df.index, 'y': self.df['sma9'][-days:], 'type': 'scatter', 'mode': 'lines',
-            'line': {'width': 1, 'color': 'blue'}, 'name': '9 SMA'}
+            'line': {'width': 1, 'color': 'blue'}, 'name': '9SMA'}
         trace_20sma = {'x': self.df.index, 'y': self.df['sma20'][-days:], 'type': 'scatter', 'mode': 'lines',
-            'line': {'width': 1, 'color': 'blue'}, 'name': '20 SMA'}
+            'line': {'width': 1, 'color': 'blue'}, 'name': '20SMA'}
         trace_50sma = {'x': self.df.index, 'y': self.df['sma50'][-days:], 'type': 'scatter', 'mode': 'lines',
-            'line': {'width': 1, 'color': 'blue'}, 'name': '50 SMA'}
+            'line': {'width': 1, 'color': 'blue'}, 'name': '50SMA'}
         trace_200sma = {'x': self.df.index, 'y': self.df['sma200'][-days:], 'type': 'scatter', 'mode': 'lines',
-            'line': {'width': 1, 'color': 'blue'}, 'name': '200 SMA'}
+            'line': {'width': 1, 'color': 'blue'}, 'name': '200SMA'}
 
         ###BOLLINGERS
         trace_lower = {'x': self.df.index, 'y': self.df['lower'][-days:], 'type': 'scatter', 'mode': 'lines',
@@ -84,8 +85,12 @@ class SecurityTradeData:
         data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper]
 
         #chart aesthetic
-        layout = go.Layout({'title': {'text': f'{self.ticker} Moving Averages',
-                'font': {'size': 15}}})
+        layout = go.Layout(#'title': {'text': f'{self.ticker} {days}D Daily Chart',
+                            {'font': {'size': 9},
+                            'xaxis': {'rangeslider': {'visible': False}},
+                            'legend': {'yanchor': 'top', 'y': 1.1, 'xanchor': 'left',
+                                       'x': 0, 'orientation': 'h', 'font':{'size': 9}},
+                            'yaxis': {'side': 'right'}})
 
         #chart init
         fig = go.Figure(data=data, layout=layout)
@@ -94,11 +99,9 @@ class SecurityTradeData:
             return fig.show()
 
         else:
-            if not os.path.exists(f'{mktcap_group}Stocks/Charts/{today_date}'):
-                os.mkdir(f'{mktcap_group}Stocks/Charts/{today_date}')
-            fig.write_image(f'{mktcap_group}Stocks/Charts/{today_date}/{self.ticker}={hours_minutes_now}')
-
-
+            if not os.path.exists(f'{destination}Stocks/Charts/{today_date}'):
+                os.mkdir(f'{destination}Stocks/Charts/{today_date}')
+            fig.write_image(f'{destination}Stocks/Charts/{today_date}/{self.ticker}-{hours_minutes_now}.png')
 
 
     #counts number of bollinger interceptions (i.e. entries for use in optimization)
@@ -149,10 +152,10 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-# bars = SecurityTradeData('AKER', 120)
-# bars.custom_bollingers(3, .1)
-# bars.chart(120)
-#
+# bars = SecurityTradeData('SHOP', 365)
+# # bars.custom_bollingers(3, .1)
+# bars.chart(120, destination='VeryLarge')
+
 # bars = SecurityTradeData('CARV', 120)
 # bars.custom_bollingers(5, .9)
 # bars.chart(365)

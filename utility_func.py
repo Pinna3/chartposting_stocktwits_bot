@@ -175,37 +175,37 @@ def return_list_of_tickers(csv_source):
 # calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 # print(dropoffs_sorted)
 
-dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-for instance in dropoffs_sorted:
-    index, drop_off_rate, count, total, count_total_fract = instance
-    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-        print('VeryLarge')
-        print(instance)
-print('')
-dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Large', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-for instance in dropoffs_sorted:
-    index, drop_off_rate, count, total, count_total_fract = instance
-    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-        print('Large')
-        print(instance)
-print('')
-dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Medium', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-for instance in dropoffs_sorted:
-    index, drop_off_rate, count, total, count_total_fract = instance
-    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-        print('Medium')
-        print(instance)
-print('')
-dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Small', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-for instance in dropoffs_sorted:
-    index, drop_off_rate, count, total, count_total_fract = instance
-    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-        print('Small')
-        print(instance)
-print('')
-dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Micro', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-for instance in dropoffs_sorted:
-    index, drop_off_rate, count, total, count_total_fract = instance
-    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-        print('Micro')
-        print(instance)
+# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# for instance in dropoffs_sorted:
+#     index, drop_off_rate, count, total, count_total_fract = instance
+#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+#         print('VeryLarge')
+#         print(instance)
+# print('')
+# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Large', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# for instance in dropoffs_sorted:
+#     index, drop_off_rate, count, total, count_total_fract = instance
+#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+#         print('Large')
+#         print(instance)
+# print('')
+# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Medium', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# for instance in dropoffs_sorted:
+#     index, drop_off_rate, count, total, count_total_fract = instance
+#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+#         print('Medium')
+#         print(instance)
+# print('')
+# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Small', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# for instance in dropoffs_sorted:
+#     index, drop_off_rate, count, total, count_total_fract = instance
+#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+#         print('Small')
+#         print(instance)
+# print('')
+# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Micro', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# for instance in dropoffs_sorted:
+#     index, drop_off_rate, count, total, count_total_fract = instance
+#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+#         print('Micro')
+#         print(instance)

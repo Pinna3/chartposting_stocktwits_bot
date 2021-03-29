@@ -1,9 +1,10 @@
 from candlestick import SecurityTradeData
 from time import sleep
 import finnhub
-import tweet
+from tweet import twitter_api
 import json
 import operator
+
 
 
 
@@ -21,7 +22,6 @@ def dailyscanner(json_watchlist, op_str):
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
         try:
-            # print(security['ticker'])
             candle_object = SecurityTradeData(security['ticker'], 365)
             candle_object.custom_bollingers(security['bb_window'], security['bb_std'])
             c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-1]
@@ -57,24 +57,33 @@ def dailyscanner(json_watchlist, op_str):
             sectors[security['industry']] += 1
     print(sectors)
 
-hits = []
-while True:
-    #longs 70%
-    dailyscanner('MicroStocks/(5,)D-uptrend03-28-21.json', '>')
-    dailyscanner('SmallStocks/(5,)D-uptrend03-28-21.json', '>')
-    dailyscanner('MediumStocks/(5,)D-uptrend03-28-21.json', '>')
-    dailyscanner('MediumStocks/(30,)D-uptrend03-28-21.json', '>')
-    dailyscanner('MediumStocks/(20,)D-uptrend03-28-21.json', '>')
-    dailyscanner('MediumStocks/(25,)D-uptrend03-28-21.json', '>')
-    dailyscanner('LargeStocks/(5,)D-uptrend03-28-21.json', '>')
-    dailyscanner('LargeStocks/(20,)D-uptrend03-28-21.json', '>')
-    dailyscanner('LargeStocks/(30,)D-uptrend03-28-21.json', '>')
-    dailyscanner('LargeStocks/(25,)D-uptrend03-28-21.json', '>')
-    dailyscanner('VeryLargeStocks/(5,)D-uptrend03-28-21.json', '>')
-    dailyscanner('VeryLargeStocks/(20,)D-uptrend03-28-21.json', '>')
-    dailyscanner('VeryLargeStocks/(30,)D-uptrend03-28-21.json', '>')
-    #shorts 30%
-    dailyscanner('MicroStocks/(5,)D-downtrend03-28-21.json', '<')
-    dailyscanner('MediumStocks/(10,)D-downtrend03-28-21.json', '<')
-    dailyscanner('LargeStocks/(10,)D-downtrend03-28-21.json', '<')
-    dailyscanner('VeryLargeStocks/(10,)D-downtrend03-28-21.json', '<')
+# hits = []
+# while True:
+#     #longs 70%
+#     dailyscanner('MicroStocks/(5,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('SmallStocks/(5,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('MediumStocks/(5,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('MediumStocks/(30,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('MediumStocks/(20,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('MediumStocks/(25,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('LargeStocks/(5,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('LargeStocks/(20,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('LargeStocks/(30,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('LargeStocks/(25,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('VeryLargeStocks/(5,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('VeryLargeStocks/(20,)D-uptrend03-28-21.json', '>')
+#     dailyscanner('VeryLargeStocks/(30,)D-uptrend03-28-21.json', '>')
+#     #shorts 30%
+#     dailyscanner('MicroStocks/(5,)D-downtrend03-28-21.json', '<')
+#     dailyscanner('MediumStocks/(10,)D-downtrend03-28-21.json', '<')
+#     dailyscanner('LargeStocks/(10,)D-downtrend03-28-21.json', '<')
+#     dailyscanner('VeryLargeStocks/(10,)D-downtrend03-28-21.json', '<')
+
+# shop = SecurityTradeData('SHOP', 365)
+# shop.chart(120, destination='VeryLarge')
+#
+
+media = twitter_api.media_upload('VeryLargeStocks/Charts/03-29-21/SHOP-16/36.png')
+tweet = '$SHOP Below 200SMA'
+
+twitter_api.update_status(tweet, media_ids=[media.media_id])
