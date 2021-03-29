@@ -1,0 +1,119 @@
+[
+  {
+    "ticker": "ANVS",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "HQI",
+    "industry": "Professional Services",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 1.0,
+    "peers": [
+      "$RHI",
+      "$MAN",
+      "$UPWK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "INTT",
+    "industry": "Semiconductors",
+    "mktcap": "Small",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": [
+      "$AMAT",
+      "$LRCX",
+      "$KLAC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "KRUS",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NMCI",
+    "industry": "Marine",
+    "mktcap": "Small",
+    "bb_window": 5,
+    "bb_std": 0.7,
+    "peers": [
+      "$CMRE",
+      "$NMM",
+      "$NMCI",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NMM",
+    "industry": "Marine",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 0.3,
+    "peers": [
+      "$CMRE",
+      "$NMM",
+      "$NMCI",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PMBC",
+    "industry": "Banking",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "STKS",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SVBI",
+    "industry": "Financial Services",
+    "mktcap": "Small",
+    "bb_window": 5,
+    "bb_std": 0.6,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "ticker": "CARV",
+    "industry": "Financial Services",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 0.9,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  }
+]

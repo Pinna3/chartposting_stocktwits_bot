@@ -33,3 +33,20 @@ Extract stock lists from Barchart for 10M-100M, 100M-1B, 1B-50B, 50B-250B, 250B+
       Perform trend scans on all.
 
 Risk Parameters for Trading:
+
+
+
+So Alpaca API leaves much to be desired, the fact that the historical data is not adjusted
+for splits makes it pretty useless to me. Sucks that I wasted so many hours trying to figure
+it out to discover that but whats done is done. I can use the trade features of Alpaca for now
+and the market data from finhubb... even though it is literally 200 times slower, it is reliable,
+i'll revisit alpaca when I'm less irritated. For now get main program working and machine  learning
+functionality working.
+
+
+100 holdings, 1 week turnover = 20 / day...
+100 holdings, 2 week turnover = 10 / day...
+
+Scanning through the same list multiple times? Think that through... create a priority scheme.
+
+Add average tine in entry zone functionality from entry counter function (currently not factoring that in)

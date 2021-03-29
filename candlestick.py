@@ -1,9 +1,10 @@
 import pandas
 import plotly.graph_objs as go
-import finnhub, time, operator, alpaca
+import finnhub, time, operator
 import pandas as pd
-
-# from utility_func import memoize
+from datetime import datetime, date
+today_date = date.today().strftime('%m-%d-%y')
+hours_minutes_now = datetime.now().strftime('%H:%M')
 
 #Database Object with candlestick data and moving average data (for now)
 class SecurityTradeData:
@@ -24,10 +25,10 @@ class SecurityTradeData:
         self.mktcap = None
 
         #candlestick data
-        # data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
-        data = alpaca.return_candles_json(ticker, period='day', num_bars=365)
+        data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
+        # data = alpaca.return_candles_json(ticker, period='day', num_bars=365)
         time.sleep(1)
-        df = pd.DataFrame(data[ticker])
+        df = pd.DataFrame(data)
         sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
         sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
         sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
@@ -58,7 +59,9 @@ class SecurityTradeData:
         self.df['lower'] = bollinger_reference_lower - (bollinger_std * sigma_lower)
         self.df['upper'] = bollinger_reference_upper + (bollinger_std * sigma_upper)
 
-    def chart(self, days):
+    #destination options: 'browser', filepath (Mkt cap group 'Micro', 'Small', 'Medium', 'Large', 'VeryLarge'
+    #must be provided for proper filepath management)
+    def chart(self, days, destination='browser', mktcap_group=None):
         ###CANDLESTICK AND MOVING AVERAGE DATA
         trace_bar = {'x': self.df.index, 'open': self.df['o'][-days:], 'close': self.df['c'][-days:], 'high': self.df['h'][-days:],
             'low': self.df['l'][-days:], 'type': 'candlestick', 'name': self.ticker, 'showlegend': True}
@@ -86,10 +89,17 @@ class SecurityTradeData:
 
         #chart init
         fig = go.Figure(data=data, layout=layout)
-        # fig.write_html("Microsoft(MSFT) Moving Averages.html")
 
-        #show chart
-        return fig.show()
+        if destination == 'browser':
+            return fig.show()
+
+        else:
+            if not os.path.exists(f'{mktcap_group}Stocks/Charts/{today_date}'):
+                os.mkdir(f'{mktcap_group}Stocks/Charts/{today_date}')
+            fig.write_image(f'{mktcap_group}Stocks/Charts/{today_date}/{self.ticker}={hours_minutes_now}')
+
+
+
 
     #counts number of bollinger interceptions (i.e. entries for use in optimization)
     #use op_str '>' for uptrend and op_str '<' for downtrend
@@ -139,5 +149,10 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-SecurityTradeData('AAPL', 365).chart(365)
-# print(SecurityTradeData('GOOGL', 365).df)
+# bars = SecurityTradeData('AKER', 120)
+# bars.custom_bollingers(3, .1)
+# bars.chart(120)
+#
+# bars = SecurityTradeData('CARV', 120)
+# bars.custom_bollingers(5, .9)
+# bars.chart(365)

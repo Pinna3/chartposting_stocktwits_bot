@@ -1,0 +1,67 @@
+[
+  {
+    "ticker": "ACBI",
+    "industry": "Banking",
+    "mktcap": "Medium",
+    "bb_window": 5,
+    "bb_std": 0.7,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ETH",
+    "industry": "Consumer products",
+    "mktcap": "Medium",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": [
+      "$MHK",
+      "$TPX",
+      "$LEG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "GDYN",
+    "industry": "Technology",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": [
+      "$IBM",
+      "$CTSH",
+      "$EPAM",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "HAFC",
+    "industry": "Banking",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "OPY",
+    "industry": "Financial Services",
+    "mktcap": "Medium",
+    "bb_window": 7,
+    "bb_std": 0.5,
+    "peers": [
+      "$MS",
+      "$SCHW",
+      "$GS",
+      "$SPY"
+    ]
+  }
+]

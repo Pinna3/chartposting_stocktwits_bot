@@ -1,0 +1,106 @@
+[
+  {
+    "ticker": "ALIM",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BKH",
+    "industry": "Utilities",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$D",
+      "$SRE",
+      "$PEG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BYFC",
+    "industry": "Financial Services",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CARV",
+    "industry": "Financial Services",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 0.9,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "EARS",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.6,
+    "peers": [
+      "$ROG.SW",
+      "$NOVN.SW",
+      "$VIFN.SW",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SALM",
+    "industry": "Media",
+    "mktcap": "Micro",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$VIAC",
+      "$FOXA",
+      "$DISCA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SQBG",
+    "industry": "Textiles, Apparel & Luxury Goods",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$VFC",
+      "$MAJJ",
+      "$TPR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "YVR",
+    "industry": "Media",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SCR.TO",
+      "$IMAX",
+      "$CGX.TO",
+      "$SPY"
+    ]
+  }
+]

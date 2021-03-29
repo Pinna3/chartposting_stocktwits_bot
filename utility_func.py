@@ -110,14 +110,14 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str):
     bb_std = optimal_bb_std(bb_window, op_str)
     return bb_window, bb_std
 
-def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str):
+def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
     hits = []
-    for period in [0, 2, 4, 6, 8, 10, 12, 14, 16]:
-        with open(f'{mktcap_dir}Stocks/{period}w-{down_or_up_str}trend{date_str}.json') as infile:
+    for period in time_markers:
+        with open(f'{mktcap_dir}Stocks/({period},)D-{down_or_up_str}trend{date_str}.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             print(period, len(list))
-    trace = {'x': [0, 2, 4, 6, 8, 10, 12, 14, 16], 'y': hits, 'type': 'scatter', 'mode': 'lines',
+    trace = {'x': time_markers, 'y': hits, 'type': 'scatter', 'mode': 'lines',
         'line': {'width': 1, 'color': 'blue'}, 'name': 'Hits'}
     data = [trace]
     layout = go.Layout({'title': {'text': f'{mktcap_dir} {down_or_up_str}trend Hits',
@@ -125,10 +125,10 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str):
     fig = go.Figure(data=data, layout=layout)
     fig.show()
 
-def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str):
+def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
     hits = []
-    for period in [0, 2, 4, 6, 8, 10, 12, 14, 16]:
-        with open(f'{mktcap_dir}Stocks/{period}w-{down_or_up_str}trend{date_str}.json') as infile:
+    for period in time_markers:
+        with open(f'{mktcap_dir}Stocks/({period},)D-{down_or_up_str}trend{date_str}.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             # print(period, len(list))
@@ -137,10 +137,10 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str):
         if index != 0:
             try:
                 dropoff = round(1 - (count / hits[index-1]), 2)
-                dropoffs.append((index * 2, dropoff))
+                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
             except ZeroDivisionError:
                 dropoff = 0
-                dropoffs.append((index * 2, dropoff))
+                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
     dropoffs_sorted = sorted(dropoffs, key = lambda x: x[1])
     with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
         json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
@@ -169,18 +169,43 @@ def return_list_of_tickers(csv_source):
     return securities
 
 
-# graph_degrees_of_trend('VeryLarge', 'up', '03-26-21')
-# graph_degrees_of_trend('Large', 'up', '03-26-21')
-# graph_degrees_of_trend('Medium', 'up', '03-26-21')
-# graph_degrees_of_trend('Small', 'up', '03-26-21')
-# graph_degrees_of_trend('Micro', 'up', '03-26-21')
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'up', '03-26-21')
+# graph_degrees_of_trend('VeryLarge', 'up', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# calculate_and_file_dropoff_rates('VeryLarge', 'up', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# graph_degrees_of_trend('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 # print(dropoffs_sorted)
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Large', 'up', '03-26-21')
-# print(dropoffs_sorted)
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Medium', 'up', '03-26-21')
-# print(dropoffs_sorted)
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Small', 'up', '03-26-21')
-# print(dropoffs_sorted)
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Micro', 'up', '03-26-21')
-# print(dropoffs_sorted)
+
+dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+for instance in dropoffs_sorted:
+    index, drop_off_rate, count, total, count_total_fract = instance
+    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+        print('VeryLarge')
+        print(instance)
+print('')
+dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Large', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+for instance in dropoffs_sorted:
+    index, drop_off_rate, count, total, count_total_fract = instance
+    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+        print('Large')
+        print(instance)
+print('')
+dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Medium', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+for instance in dropoffs_sorted:
+    index, drop_off_rate, count, total, count_total_fract = instance
+    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+        print('Medium')
+        print(instance)
+print('')
+dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Small', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+for instance in dropoffs_sorted:
+    index, drop_off_rate, count, total, count_total_fract = instance
+    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+        print('Small')
+        print(instance)
+print('')
+dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Micro', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+for instance in dropoffs_sorted:
+    index, drop_off_rate, count, total, count_total_fract = instance
+    if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
+        print('Micro')
+        print(instance)

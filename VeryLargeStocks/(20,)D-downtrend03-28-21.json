@@ -1,0 +1,132 @@
+[
+  {
+    "ticker": "ABCL",
+    "industry": "Life Sciences Tools & Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$ABCL",
+      "$IPA.V",
+      "$SONA.CN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "AYX",
+    "industry": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$ADBE",
+      "$CRM",
+      "$INTU",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BMRN",
+    "industry": "Biotechnology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "DNLI",
+    "industry": "Biotechnology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "FROG",
+    "industry": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$MSFT",
+      "$ORCL",
+      "$NOW",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "GLPG",
+    "industry": "Biotechnology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$GLPG.AS",
+      "$MDXH.BR",
+      "$OXUR.BR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "JOBS",
+    "industry": "Professional Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$300662.SZ",
+      "$JOBS",
+      "$6919.HK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SAP",
+    "industry": "Technology",
+    "mktcap": null,
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SAP.DE",
+      "$TMV.DE",
+      "$NEM.DE",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SPLK",
+    "industry": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$ADBE",
+      "$CRM",
+      "$INTU",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SRPT",
+    "industry": "Biotechnology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.4,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  }
+]

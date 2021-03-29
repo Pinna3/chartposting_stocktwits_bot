@@ -1,0 +1,15 @@
+[
+  {
+    "ticker": "SRPT",
+    "industry": "Biotechnology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.4,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  }
+]

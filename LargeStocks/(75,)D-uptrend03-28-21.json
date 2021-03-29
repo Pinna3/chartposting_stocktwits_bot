@@ -1,0 +1,145 @@
+[
+  {
+    "ticker": "BLMN",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CASH",
+    "industry": "Financial Services",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 0.8,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "DENN",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "GWB",
+    "industry": "Banking",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.4,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IHRT",
+    "industry": "Media",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.9,
+    "peers": [
+      "$VIAC",
+      "$FOXA",
+      "$DISCA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MBUU",
+    "industry": "Leisure Products",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 0.6,
+    "peers": [
+      "$PTON",
+      "$HAS",
+      "$PII",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PLAY",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PPBI",
+    "industry": "Banking",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.6,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "RVLV",
+    "industry": "Retail",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": [
+      "$AMZN",
+      "$BKNG",
+      "$DASH",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SGRY",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 0.9,
+    "peers": [
+      "$HCA",
+      "$UHS",
+      "$EHC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SHYF",
+    "industry": "Machinery",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": [
+      "$CAT",
+      "$CMI",
+      "$PCAR",
+      "$SPY"
+    ]
+  }
+]

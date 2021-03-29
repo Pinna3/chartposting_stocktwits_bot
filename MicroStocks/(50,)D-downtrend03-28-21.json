@@ -1,0 +1,15 @@
+[
+  {
+    "ticker": "NUZE",
+    "industry": "Food Products",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.8,
+    "peers": [
+      "$MDLZ",
+      "$KHC",
+      "$GIS",
+      "$SPY"
+    ]
+  }
+]

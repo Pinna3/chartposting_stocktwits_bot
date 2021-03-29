@@ -17,23 +17,32 @@ def dailyscanner(json_watchlist, op_str):
     opposite_op_func = opposite_ops[op_str]
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
-        sleep(1)
         try:
             # print(security['ticker'])
             candle_object = SecurityTradeData(security['ticker'], 365)
             candle_object.custom_bollingers(security['bb_window'], security['bb_std'])
             c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-1]
-            if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
-                opposite_op_func(c, lower): ####make interchangeable for shorts
-                if {'ticker': security['ticker'], 'industry': security['industry']} not in hits:
-                    candle_object.chart(120)
-                    hits.append({'ticker': security['ticker'], 'industry': security['industry']})
-                    print(hits)
-                # print(f'{security['ticker']} IN RANGE!!!!!! {index}/{len(watchlist)}')
-                # candle_object.chart(120)
-                # print(hits)
-            else:
-                print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
+            if op_str == '>':
+                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
+                    opposite_op_func(c, lower):
+                    hit = {'ticker': security['ticker'], 'industry': security['industry'], 'direction': 'long'}
+                    if hit not in hits:
+                        candle_object.chart(120)
+                        hits.append(hit)
+                        print(hits)
+                else:
+                    print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
+
+            elif op_str == '<':
+                if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
+                    opposite_op_func(c, upper):
+                    hit = {'ticker': security['ticker'], 'industry': security['industry'], 'direction': 'short'}
+                    if hit not in hits:
+                        candle_object.chart(120)
+                        hits.append(hit)
+                        print(hits)
+                else:
+                    print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
         except:
             continue
 
@@ -46,12 +55,23 @@ def dailyscanner(json_watchlist, op_str):
     print(sectors)
 
 hits = []
-dailyscanner('4w-uptrend03-25-21.json', '>')
-dailyscanner('8w-uptrend03-25-21.json', '>')
-dailyscanner('10w-uptrend03-25-21.json', '>')
-dailyscanner('12w-uptrend03-25-21.json', '>')
-
-#doent work for shorts yet
-dailyscanner('4w-downtrend03-25-21.json', '<')
-dailyscanner('6w-downtrend03-25-21.json', '<')
-dailyscanner('8w-downtrend03-25-21.json', '<')
+while True:
+    #longs 70%
+    dailyscanner('MicroStocks/(5,)D-uptrend03-28-21.json', '>')
+    dailyscanner('SmallStocks/(5,)D-uptrend03-28-21.json', '>')
+    dailyscanner('MediumStocks/(5,)D-uptrend03-28-21.json', '>')
+    dailyscanner('MediumStocks/(30,)D-uptrend03-28-21.json', '>')
+    dailyscanner('MediumStocks/(20,)D-uptrend03-28-21.json', '>')
+    dailyscanner('MediumStocks/(25,)D-uptrend03-28-21.json', '>')
+    dailyscanner('LargeStocks/(5,)D-uptrend03-28-21.json', '>')
+    dailyscanner('LargeStocks/(20,)D-uptrend03-28-21.json', '>')
+    dailyscanner('LargeStocks/(30,)D-uptrend03-28-21.json', '>')
+    dailyscanner('LargeStocks/(25,)D-uptrend03-28-21.json', '>')
+    dailyscanner('VeryLargeStocks/(5,)D-uptrend03-28-21.json', '>')
+    dailyscanner('VeryLargeStocks/(20,)D-uptrend03-28-21.json', '>')
+    dailyscanner('VeryLargeStocks/(30,)D-uptrend03-28-21.json', '>')
+    #shorts 30%
+    dailyscanner('MicroStocks/(5,)D-downtrend03-28-21.json', '<')
+    dailyscanner('MediumStocks/(10,)D-downtrend03-28-21.json', '<')
+    dailyscanner('LargeStocks/(10,)D-downtrend03-28-21.json', '<')
+    dailyscanner('VeryLargeStocks/(10,)D-downtrend03-28-21.json', '<')

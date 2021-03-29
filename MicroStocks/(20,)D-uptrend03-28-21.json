@@ -1,0 +1,28 @@
+[
+  {
+    "ticker": "CARV",
+    "industry": "Financial Services",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 0.9,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SALM",
+    "industry": "Media",
+    "mktcap": "Micro",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$VIAC",
+      "$FOXA",
+      "$DISCA",
+      "$SPY"
+    ]
+  }
+]
