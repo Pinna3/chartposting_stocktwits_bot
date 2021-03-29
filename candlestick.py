@@ -85,11 +85,12 @@ class SecurityTradeData:
         data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper]
 
         #chart aesthetic
-        layout = go.Layout(#'title': {'text': f'{self.ticker} {days}D Daily Chart',
-                            {'font': {'size': 9},
+        layout = go.Layout(#'title': {'text': f'{self.ticker} {days}D Daily Chart', 'yanchor': 1.0},
+                            {'font': {'size': 12}, 'width': 1200, 'height': 675,
+                            'margin': {'l': 0, 'r': 0, 'b': 0, 't': 0},
                             'xaxis': {'rangeslider': {'visible': False}},
-                            'legend': {'yanchor': 'top', 'y': 1.1, 'xanchor': 'left',
-                                       'x': 0, 'orientation': 'h', 'font':{'size': 9}},
+                            'legend': {'yanchor': 'top', 'y': 1.0, 'xanchor': 'left',
+                                       'x': 0, 'orientation': 'h', 'font':{'size': 12}},
                             'yaxis': {'side': 'right'}})
 
         #chart init
@@ -101,7 +102,7 @@ class SecurityTradeData:
         else:
             if not os.path.exists(f'{destination}Stocks/Charts/{today_date}'):
                 os.mkdir(f'{destination}Stocks/Charts/{today_date}')
-            fig.write_image(f'{destination}Stocks/Charts/{today_date}/{self.ticker}-{hours_minutes_now}.png')
+            fig.write_image(f'{destination}Stocks/Charts/{today_date}/{self.ticker}.png')
 
 
     #counts number of bollinger interceptions (i.e. entries for use in optimization)

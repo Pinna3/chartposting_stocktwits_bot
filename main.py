@@ -79,11 +79,10 @@ def dailyscanner(json_watchlist, op_str):
 #     dailyscanner('LargeStocks/(10,)D-downtrend03-28-21.json', '<')
 #     dailyscanner('VeryLargeStocks/(10,)D-downtrend03-28-21.json', '<')
 
-# shop = SecurityTradeData('SHOP', 365)
-# shop.chart(120, destination='VeryLarge')
-#
+shop = SecurityTradeData('SHOP', 365)
+shop.chart(120, destination='VeryLarge')
 
-media = twitter_api.media_upload('VeryLargeStocks/Charts/03-29-21/SHOP-16/36.png')
+media = twitter_api.media_upload('VeryLargeStocks/Charts/03-29-21/SHOP.png')
 tweet = '$SHOP Below 200SMA'
 
 twitter_api.update_status(tweet, media_ids=[media.media_id])
