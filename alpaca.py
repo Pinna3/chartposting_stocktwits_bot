@@ -1,5 +1,77 @@
-import config, requests, json#, time
-import pandas as pd
+import requests, json, time
+from config import APCA_API_KEY_ID_PAPER, APCA_API_SECRET_KEY_PAPER, HEADERS_PAPER
+
+APCA_API_BASE_URL =  'https://paper-api.alpaca.markets'
+ACCOUNT_URL = '{}/v2/account'.format(APCA_API_BASE_URL)
+POSITIONS_URL = '{}/v2/positions'.format(APCA_API_BASE_URL)
+ORDERS_URL = '{}/v2/orders'.format(APCA_API_BASE_URL)
+
+
+def get_account():
+    r = requests.get(ACCOUNT_URL, headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
+def get_positions():
+    r = requests.get(POSITIONS_URL, headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
+def buy_market(symbol, qty):
+    data = {
+        'symbol': symbol,
+        'qty': qty,
+        'side': 'buy',
+        'type': 'market',
+        'time_in_force': 'day'
+    }
+    r = requests.post(ORDERS_URL, json=data, headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
+
+
+def get_orders():
+    r = requests.get(ORDERS_URL, headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
+response = buy_market('AAPL', 1)
+time.sleep(1)
+print(get_positions())
+
+# 'id': '2dbce402-d724-4005-b3fc-66b7052406eb'
+# response = create_order('MSFT', 100, 'buy', 'market', 'day')
+# 'id': '172c6770-4740-429f-954e-47f1af20ebe5'
+# print(response)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #return candlestick bar data from num_bars to now
 # def return_candles_json(csv_stocklist, period='day', num_bars=365):
@@ -11,6 +83,7 @@ def return_candles_json(symbol, period='1Day', num_bars=365):
     # df = pd.DataFrame(data)
     return data
 
+###Candlesticks stuff, save for later
 # with open('StockLists/VeryLargeStocks$4B+.csv') as infile:
 #     stocks = infile.readlines()
 #
