@@ -1,0 +1,67 @@
+[
+  {
+    "ticker": "ANVS",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 11,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "HQI",
+    "industry": "Professional Services",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": [
+      "$RHI",
+      "$MAN",
+      "$UPWK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NMCI",
+    "industry": "Marine",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": [
+      "$CMRE",
+      "$NMCI",
+      "$NMM",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PMBC",
+    "industry": "Banking",
+    "mktcap": "Small",
+    "bb_window": 5,
+    "bb_std": 0.9,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SVBI",
+    "industry": "Financial Services",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  }
+]

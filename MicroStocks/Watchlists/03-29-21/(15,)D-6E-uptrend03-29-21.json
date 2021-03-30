@@ -1,0 +1,15 @@
+[
+  {
+    "ticker": "SQBG",
+    "industry": "Textiles, Apparel & Luxury Goods",
+    "mktcap": "Micro",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": [
+      "$VFC",
+      "$MAJJ",
+      "$TPR",
+      "$SPY"
+    ]
+  }
+]

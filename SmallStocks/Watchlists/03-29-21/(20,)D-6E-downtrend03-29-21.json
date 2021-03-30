@@ -1,0 +1,119 @@
+[
+  {
+    "ticker": "ASMB",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 12,
+    "bb_std": 0.7,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ASPU",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$CHGG",
+      "$BFAM",
+      "$LOPE",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CALA",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 9,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CHMA",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CNCE",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "EGAN",
+    "industry": "Technology",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$ADBE",
+      "$CRM",
+      "$INTU",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IMRA",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PSTI",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$BONS.TA",
+      "$KMDA.TA",
+      "$EVGN.TA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "VYGR",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.4,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  }
+]

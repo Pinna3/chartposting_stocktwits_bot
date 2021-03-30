@@ -1,0 +1,80 @@
+[
+  {
+    "ticker": "ALIM",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BKH",
+    "industry": "Utilities",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$D",
+      "$SRE",
+      "$PEG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BYFC",
+    "industry": "Financial Services",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.6,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "OPGN",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.2,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SQBG",
+    "industry": "Textiles, Apparel & Luxury Goods",
+    "mktcap": "Micro",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": [
+      "$VFC",
+      "$MAJJ",
+      "$TPR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "YVR",
+    "industry": "Media",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SCR.TO",
+      "$IMAX",
+      "$CGX.TO",
+      "$SPY"
+    ]
+  }
+]

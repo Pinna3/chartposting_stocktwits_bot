@@ -1,0 +1,145 @@
+[
+  {
+    "ticker": "AFIB",
+    "industry": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ARCE",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 13,
+    "bb_std": 0.9,
+    "peers": [
+      "$CSED3.SA",
+      "$YDUQ3.SA",
+      "$COGN3.SA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ATNX",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BDTX",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "EPZM",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IH",
+    "industry": "Media",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$NTES",
+      "$002602.SZ",
+      "$002555.SZ",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "KPTI",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "LSF",
+    "industry": "Food Products",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$MDLZ",
+      "$KHC",
+      "$GIS",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "QTNT",
+    "industry": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 10,
+    "bb_std": 0.1,
+    "peers": [
+      "$ALC.SW",
+      "$YPSN.SW",
+      "$MED.SW",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SVM",
+    "industry": "Metals & Mining",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$PAAS.TO",
+      "$FR.TO",
+      "$MAG.TO",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "VSTA",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$CSED3.SA",
+      "$YDUQ3.SA",
+      "$COGN3.SA",
+      "$SPY"
+    ]
+  }
+]

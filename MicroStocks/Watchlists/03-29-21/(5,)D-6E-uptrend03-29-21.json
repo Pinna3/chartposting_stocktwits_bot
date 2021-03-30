@@ -1,0 +1,327 @@
+[
+  {
+    "ticker": "AKER",
+    "industry": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ALIM",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "APOP",
+    "industry": "ETF",
+    "mktcap": "Micro",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "ATIF",
+    "industry": "Professional Services",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$300012.SZ",
+      "$002967.SZ",
+      "$603060.SS",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BHAT",
+    "industry": "Media",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": [
+      "$NTES",
+      "$002602.SZ",
+      "$002555.SZ",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BKH",
+    "industry": "Utilities",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$D",
+      "$SRE",
+      "$PEG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BPTH",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BYFC",
+    "industry": "Financial Services",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.6,
+    "peers": [
+      "$RKT",
+      "$PCSO",
+      "$UWMC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CANF",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": [
+      "$BONS.TA",
+      "$KMDA.TA",
+      "$EVGN.TA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CLNN",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CPHI",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Micro",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": [
+      "$600276.SS",
+      "$3692.HK",
+      "$000661.SZ",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CTIB",
+    "industry": "Consumer products",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": [
+      "$NWL",
+      "$TUP",
+      "$LCUT",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IMTE",
+    "industry": "Electrical Equipment",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$CDA.AX",
+      "$NVX.AX",
+      "$CAT.AX",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IPDN",
+    "industry": "Media",
+    "mktcap": "Micro",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$GOOGL",
+      "$FB",
+      "$SNAP",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "LLIT",
+    "industry": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 0.6,
+    "peers": [
+      "$300760.SZ",
+      "$853.HK",
+      "$300529.SZ",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MFH",
+    "industry": "Technology",
+    "mktcap": "Micro",
+    "bb_window": 12,
+    "bb_std": 0.9,
+    "peers": [
+      "$688111.SS",
+      "$600588.SS",
+      "$002230.SZ",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MKGI",
+    "industry": "Retail",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 0.9,
+    "peers": [
+      "$AMZN",
+      "$BKNG",
+      "$DASH",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MOXC",
+    "industry": "Retail",
+    "mktcap": "Micro",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": [
+      "$3690.HK",
+      "$9618.HK",
+      "$BABA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MYO",
+    "industry": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "OPGN",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.2,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SQBG",
+    "industry": "Textiles, Apparel & Luxury Goods",
+    "mktcap": "Micro",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": [
+      "$VFC",
+      "$MAJJ",
+      "$TPR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SSNT",
+    "industry": "Technology",
+    "mktcap": "Micro",
+    "bb_window": 12,
+    "bb_std": 0.8,
+    "peers": [
+      "$MSFT",
+      "$ORCL",
+      "$NOW",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SSY",
+    "industry": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 11,
+    "bb_std": 1.0,
+    "peers": [
+      "$HCA",
+      "$UHS",
+      "$EHC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "STRM",
+    "industry": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 14,
+    "bb_std": 0.9,
+    "peers": [
+      "$VEEV",
+      "$TDOC",
+      "$CERN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "YVR",
+    "industry": "Media",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SCR.TO",
+      "$IMAX",
+      "$CGX.TO",
+      "$SPY"
+    ]
+  }
+]

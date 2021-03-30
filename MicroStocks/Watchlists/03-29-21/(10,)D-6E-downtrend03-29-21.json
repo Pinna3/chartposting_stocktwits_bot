@@ -1,0 +1,158 @@
+[
+  {
+    "ticker": "ABIO",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CHFS",
+    "industry": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "EFOI",
+    "industry": "Electrical Equipment",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$EMR",
+      "$3665.TW",
+      "$ROK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "HPR",
+    "industry": "Energy ",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$COP",
+      "$EOG",
+      "$PXD",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NAVB",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NUZE",
+    "industry": "Food Products",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": [
+      "$MDLZ",
+      "$KHC",
+      "$GIS",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "QLGN",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 8,
+    "bb_std": 0.8,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "RKDA",
+    "industry": "Food Products",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": [
+      "$ADM",
+      "$DAR",
+      "$BG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "RMED",
+    "industry": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "TLGT",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Micro",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "VMAR",
+    "industry": "Leisure Products",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$DOO.TO",
+      "$TOY.TO",
+      "$VMAR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "WINT",
+    "industry": "Biotechnology",
+    "mktcap": "Micro",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  }
+]

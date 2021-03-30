@@ -110,10 +110,10 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     bb_std = optimal_bb_std(bb_window, op_str, entry_frequency)
     return bb_window, bb_std
 
-def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
+def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/({period},)D-{down_or_up_str}trend{date_str}.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/03-29-21/({period},)D-6E-{down_or_up_str}trend{date_str}.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             print(period, len(list))
@@ -128,7 +128,7 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers, 
 def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/({period},)D-{down_or_up_str}trend{date_str}.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/03-29-21/({period},)D-6E-{down_or_up_str}trend{date_str}.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             # print(period, len(list))
@@ -168,11 +168,39 @@ def return_list_of_tickers(csv_source):
             securities.append(ticker)
     return securities
 
+#experiment with prioritizing methods... right now leaning towards ranking_time_weighted_sorted
+#mktcap_group = 'VeryLarge', 'Large', 'Medium', 'Small', 'Micro'
+#trend = 'up', 'down'
+#date = 'MM-DD-YY'
+#*time_markers = 1, 5, 10, 15, 20, 25, ... etc
+#interval = time between time_markers
+def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
+    graph_degrees_of_trend(mktcap_group, trend, date, *time_markers)
+    dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates(mktcap_group, trend, date, *time_markers, interval)
+    ranking = []
+    ranking_time_weighted = []
+    print('')
+    print(dropoffs)
+    print('')
+    for tuple in dropoffs_sorted:
+        days, dropoff_rate, count, starting_total, percentage_of_total = tuple
+        try:
+            rating = round(percentage_of_total / dropoff_rate, 2)
+        except ZeroDivisionError:
+            rating = 0
+        ranking.append((days, rating))
+        weighted_ranking = round(days * rating, 2)
+        ranking_time_weighted.append((days, weighted_ranking))
+    ranking_sorted = sorted(ranking, key = lambda x: x[1], reverse=True)
+    ranking_time_weighted_sorted = sorted(ranking_time_weighted, key = lambda x: x[1], reverse=True)
+    print(ranking_sorted)
+    print('')
+    print(ranking_time_weighted_sorted)
+# rank_dropoffs('VeryLarge', 'up', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 
-# graph_degrees_of_trend('VeryLarge', 'up', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# calculate_and_file_dropoff_rates('VeryLarge', 'up', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# graph_degrees_of_trend('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+
+# graph_degrees_of_trend('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 # print(dropoffs_sorted)
 
 # dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)

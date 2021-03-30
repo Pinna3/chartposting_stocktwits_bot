@@ -1,0 +1,28 @@
+[
+  {
+    "ticker": "GLPG",
+    "industry": "Biotechnology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.7,
+    "peers": [
+      "$GLPG.AS",
+      "$MDXH.BR",
+      "$OXUR.BR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SRPT",
+    "industry": "Biotechnology",
+    "mktcap": "VeryLarge",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "ticker": "AFYA",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$CSED3.SA",
+      "$YDUQ3.SA",
+      "$COGN3.SA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MPLN",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": [
+      "$VEEV",
+      "$TDOC",
+      "$CERN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "QURE",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 13,
+    "bb_std": 0.8,
+    "peers": [
+      "$ARGX.BR",
+      "$QURE",
+      "$MRUS",
+      "$SPY"
+    ]
+  }
+]

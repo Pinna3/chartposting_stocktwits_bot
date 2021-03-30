@@ -1,0 +1,15 @@
+[
+  {
+    "ticker": "QURE",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 13,
+    "bb_std": 0.8,
+    "peers": [
+      "$ARGX.BR",
+      "$QURE",
+      "$MRUS",
+      "$SPY"
+    ]
+  }
+]

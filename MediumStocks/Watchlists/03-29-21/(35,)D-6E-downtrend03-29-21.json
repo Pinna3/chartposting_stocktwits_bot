@@ -1,0 +1,28 @@
+[
+  {
+    "ticker": "EPZM",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "QTNT",
+    "industry": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 10,
+    "bb_std": 0.1,
+    "peers": [
+      "$ALC.SW",
+      "$YPSN.SW",
+      "$MED.SW",
+      "$SPY"
+    ]
+  }
+]

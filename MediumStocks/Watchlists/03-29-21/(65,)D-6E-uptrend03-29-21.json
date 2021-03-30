@@ -1,0 +1,67 @@
+[
+  {
+    "ticker": "ACBI",
+    "industry": "Banking",
+    "mktcap": "Medium",
+    "bb_window": 8,
+    "bb_std": 0.9,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CTRN",
+    "industry": "Retail",
+    "mktcap": "Medium",
+    "bb_window": 13,
+    "bb_std": 0.9,
+    "peers": [
+      "$TJX",
+      "$ROST",
+      "$BURL",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "HAFC",
+    "industry": "Banking",
+    "mktcap": "Medium",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "HVT",
+    "industry": "Retail",
+    "mktcap": "Medium",
+    "bb_window": 15,
+    "bb_std": 0.9,
+    "peers": [
+      "$WSM",
+      "$RH",
+      "$SNBR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PLYM",
+    "industry": "Real Estate",
+    "mktcap": "Medium",
+    "bb_window": 9,
+    "bb_std": 0.8,
+    "peers": [
+      "$PLD",
+      "$DRE",
+      "$COLD",
+      "$SPY"
+    ]
+  }
+]

@@ -1,0 +1,312 @@
+[
+  {
+    "ticker": "AFYA",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$CSED3.SA",
+      "$YDUQ3.SA",
+      "$COGN3.SA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ARRY",
+    "industry": "Electrical Equipment",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": [
+      "$EMR",
+      "$3665.TW",
+      "$ROK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "AXSM",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.7,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BIGC",
+    "industry": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": [
+      "$SNOW",
+      "$TWLO",
+      "$OKTA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BLI",
+    "industry": "Life Sciences Tools & Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$TMO",
+      "$ILMN",
+      "$A",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CARG",
+    "industry": "Media",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$GOOGL",
+      "$FB",
+      "$SNAP",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CBD",
+    "industry": "Retail",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$PCAR3.SA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CERT",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$VEEV",
+      "$TDOC",
+      "$CERN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CHRS",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "DEA",
+    "industry": "Real Estate",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": [
+      "$ARE",
+      "$BXP",
+      "$VNO",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "FMTX",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "FOLD",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "GOCO",
+    "industry": "Insurance",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": [
+      "$MMC",
+      "$AJG",
+      "$BRO",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "HRMY",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "HYLN",
+    "industry": "Machinery",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": [
+      "$CAT",
+      "$CMI",
+      "$PCAR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IRTC",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MOR",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.7,
+    "peers": [
+      "$BNTX",
+      "$CVAC",
+      "$MOR.DE",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MPLN",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": [
+      "$VEEV",
+      "$TDOC",
+      "$CERN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MRSN",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PING",
+    "industry": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$MSFT",
+      "$ORCL",
+      "$NOW",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "QURE",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 13,
+    "bb_std": 0.8,
+    "peers": [
+      "$ARGX.BR",
+      "$QURE",
+      "$MRUS",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SILK",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": [
+      "$950130.KQ",
+      "$ALGN",
+      "$WST",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "TREE",
+    "industry": "Financial Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$AXP",
+      "$COF",
+      "$DFS",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "YQ",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  }
+]
