@@ -3,9 +3,9 @@ import plotly.graph_objs as go
 import json
 import csv
 
-def bb_param_optomizer(SecurityTradeDataObject, op_str):
+def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     candles = SecurityTradeDataObject
-    def optimal_bb_window(op_str):
+    def optimal_bb_window(op_str, entry_frequency):
         rolling_window_and_counter = []
         for rolling_window in range(21):
             try:
@@ -16,45 +16,45 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str):
             except:
                 continue
         for counter in rolling_window_and_counter:
-            if counter[1][0] == 12:
+            if counter[1][0] <= entry_frequency and counter[1][0] == 12:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 11:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 11:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 10:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 10:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 9:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 9:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 8:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 8:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 7:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 7:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 6:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 6:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 5:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 5:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 4:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 4:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 3:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 3:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 2:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 2:
                 rolling_window = counter[0]
                 return rolling_window
-            elif counter[1][0] == 1:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 1:
                 rolling_window = counter[0]
                 return rolling_window
         return None
 
-    def optimal_bb_std(rolling_window, op_str):
+    def optimal_bb_std(rolling_window, op_str, entry_frequency):
         std_and_counter = []
         for index, std in enumerate([.1, .2, .3, .4, .5, .6, .7, .8, .9,
                                      1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7,
@@ -68,46 +68,46 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str):
 
         print('')
         for counter in std_and_counter:
-            if counter[1][0] == 12:
+            if counter[1][0] <= entry_frequency and counter[1][0] == 12:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 11:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 11:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 10:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 10:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 9:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 9:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 8:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 8:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 7:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 7:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 6:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 6:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 5:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 5:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 4:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 4:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 3:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 3:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 2:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 2:
                 std = counter[0]
                 return std
-            elif counter[1][0] == 1:
+            elif counter[1][0] <= entry_frequency and counter[1][0] == 1:
                 std = counter[0]
                 return std
         return None
 
-    bb_window = optimal_bb_window(op_str)
-    bb_std = optimal_bb_std(bb_window, op_str)
+    bb_window = optimal_bb_window(op_str, entry_frequency)
+    bb_std = optimal_bb_std(bb_window, op_str, entry_frequency)
     return bb_window, bb_std
 
 def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
