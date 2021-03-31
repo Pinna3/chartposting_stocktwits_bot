@@ -76,13 +76,25 @@ def trailing_stop_short(symbol, percentage):
     return json.loads(r.content)
 
 
-
 def get_orders():
     r = requests.get(ORDERS_URL, headers=HEADERS_PAPER)
     return json.loads(r.content)
 
-
-
+# price = get_quote('ENB')#['last']['askprice']
+# print(price)
+# acct = get_account()
+# acct_equity = float(acct['equity'])
+#
+# if acct_equity > 25000:
+#     acct_multiplier = float(acct['multiplier']) / 2
+# else:
+#     acct_multiplier = float(acct['multiplier'])
+#
+# acct_value = acct_equity * acct_multiplier
+#
+# qty = (acct_value / 100) // float(price)
+#
+# print(qty)
 
 
 

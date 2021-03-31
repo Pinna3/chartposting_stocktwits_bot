@@ -228,9 +228,9 @@ def initialize_holdings():
         if industry not in holdings[side]['industry'].keys():
             holdings[side]['industry'][industry] = {}
             holdings[side]['industry'][industry]['market_value'] = None
-            holdings[side]['industry'][industry]['stocks'] = [[symbol,  float(market_value, 2)]]
+            holdings[side]['industry'][industry]['stocks'] = [[symbol, market_value]]
         else:
-            holdings[side]['industry'][industry]['stocks'].append([symbol,  float(market_value, 2)])
+            holdings[side]['industry'][industry]['stocks'].append([symbol, market_value])
 
     long_industry_keys = holdings['long']['industry'].keys()
     short_industry_keys = holdings['short']['industry'].keys()

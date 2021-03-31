@@ -79,7 +79,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
 
                             acct_value = acct_equity * acct_multiplier
                             try:
-                                qty = (acct_value / 100) // price
+                                qty = (acct_value / 100) // float(price)
                             except ZeroDivisionError:
                                 missed_order_error.append(security['ticker'])
                                 print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
@@ -129,7 +129,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
 
                             acct_value = acct_equity * acct_multiplier
                             try:
-                                qty = (acct_value / 100) // price
+                                qty = (acct_value / 100) // float(price)
                             except ZeroDivisionError:
                                 missed_order_error.append(security['ticker'])
                                 print(f'MISSED!!!!...{missed_order_error}')
