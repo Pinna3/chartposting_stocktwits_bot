@@ -23,12 +23,25 @@ def dailyscanner(json_watchlist, op_str, publish=False):
     opposite_ops = {">": operator.lt, "<": operator.gt}
     opposite_op_func = opposite_ops[op_str]
 
+    holdings = initialize_holdings()
+    missed_candle_object_error = []
+    missed_chart_error = []
+    missed_order_error = []
+
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
         # try:
-            candle_object = SecurityTradeData(security['ticker'], 365)
+            try:
+                candle_object = SecurityTradeData(security['ticker'], 365)
+            except ValueError:
+                    try:
+                        candle_object = SecurityTradeData(security['ticker'], 265)
+                    except ValueError:
+                        missed_candle_object_error.append(security['ticker'])
+                        print(f'MISSED CANDLE OBJECT ERROR!!!!...{missed_candle_object_error}')
+                        continue
             candle_object.custom_bollingers(security['bb_window'], security['bb_std'])
-            c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-1]
+            c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-1]
             if op_str == '>':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     opposite_op_func(c, lower):
@@ -44,6 +57,8 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             try:
                                 candle_object.chart(60, destination=security['mktcap'])
                             except ValueError:
+                                missed_chart_error.append(security['ticker'])
+                                print(f'MISSED CHART!!!!...{missed_chart_error}')
                                 continue
 
                         if publish:
@@ -63,11 +78,16 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                 acct_multiplier = float(acct['multiplier'])
 
                             acct_value = acct_equity * acct_multiplier
-                            qty = (acct_value / 100) // price
+                            try:
+                                qty = (acct_value / 100) // price
+                            except ZeroDivisionError:
+                                missed_order_error.append(security['ticker'])
+                                print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
+                                continue
                             buy_market(security['ticker'], qty)
                             sleep(3)
                             trailing_stop_long(security['ticker'], 2.0)
-                            initialize_holdings()
+                            holdings = initialize_holdings()
                             print(holdings)
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
@@ -87,6 +107,8 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             try:
                                 candle_object.chart(60, destination=security['mktcap'])
                             except ValueError:
+                                missed_candle_object_error.append(security['ticker'])
+                                print(f'MISSED!!!!...{missed_candle_object_error}')
                                 continue
 
                         if publish:
@@ -106,61 +128,46 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                 acct_multiplier = float(acct['multiplier'])
 
                             acct_value = acct_equity * acct_multiplier
-                            qty = (acct_value / 100) // price
+                            try:
+                                qty = (acct_value / 100) // price
+                            except ZeroDivisionError:
+                                missed_order_error.append(security['ticker'])
+                                print(f'MISSED!!!!...{missed_order_error}')
+                                continue
                             sell_market(security['ticker'], qty)
                             sleep(3)
                             trailing_stop_short(security['ticker'], 2.0)
-                            initialize_holdings()
+                            holdings = initialize_holdings()
                             print(holdings)
                     else:
                         print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
         # except:
+        #     missed_error.append(security['ticker'])
+        #     print(f'MISSED!!!!...{missed_error}')
         #     continue
 
 while True:
     # #longs 70%
-    holdings = initialize_holdings()
     dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('LargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('LargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('LargeStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('MediumStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('MediumStocks/Watchlists/03-29-21/(25,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('MediumStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('SmallStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('SmallStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('SmallStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('MicroStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    holdings = initialize_holdings()
 
     #shorts 30%
     dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('LargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('LargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('MediumStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('SmallStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    holdings = initialize_holdings()
     dailyscanner('MicroStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    holdings = initialize_holdings()

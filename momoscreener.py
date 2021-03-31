@@ -82,7 +82,7 @@ class Securities:
                 pass_or_fail = []
                 #every 10 multiple = 2 trading weeks
                 for timebar in time_markers:
-                    c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
+                    c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = object.df.iloc[-timebar]
                     if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
                         pass_or_fail.append(True)
                     else:
