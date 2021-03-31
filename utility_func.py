@@ -179,9 +179,9 @@ def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
     dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates(mktcap_group, trend, date, *time_markers, interval)
     ranking = []
     ranking_time_weighted = []
-    print('')
-    print(dropoffs)
-    print('')
+    # print('')
+    # print(dropoffs)
+    # print('')
     for tuple in dropoffs_sorted:
         days, dropoff_rate, count, starting_total, percentage_of_total = tuple
         try:
@@ -193,11 +193,14 @@ def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
         ranking_time_weighted.append((days, weighted_ranking))
     ranking_sorted = sorted(ranking, key = lambda x: x[1], reverse=True)
     ranking_time_weighted_sorted = sorted(ranking_time_weighted, key = lambda x: x[1], reverse=True)
-    print(ranking_sorted)
-    print('')
+    # print(ranking_sorted)
     print(ranking_time_weighted_sorted)
-# rank_dropoffs('VeryLarge', 'up', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-
+    print('')
+rank_dropoffs('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+rank_dropoffs('Large', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+rank_dropoffs('Medium', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+rank_dropoffs('Small', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+rank_dropoffs('Micro', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 
 # graph_degrees_of_trend('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 # dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)

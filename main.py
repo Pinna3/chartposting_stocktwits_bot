@@ -4,6 +4,7 @@ import finnhub
 from tweet import twitter_api
 import json
 import operator
+from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
@@ -44,6 +45,13 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
                             print(hits)
                         else:
+                            price = get_quote(security['ticker'])['last']['askprice']
+                            acct = get_account()
+                            acct_value = float(acct['equity']) * float(acct['multiplier'])
+                            qty = (acct_value / 100) // price
+                            buy_market(security['ticker'], qty)
+                            sleep(3)
+                            trailing_stop_long(security['ticker'], 2.0)
                             print(hits)
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
@@ -66,6 +74,13 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
                             print(hits)
                         else:
+                            price = get_quote(security['ticker'])['last']['askprice']
+                            acct = get_account()
+                            acct_value = float(acct['equity']) * float(acct['multiplier'])
+                            qty = (acct_value / 100) // price
+                            sell_market(security['ticker'], qty)
+                            sleep(3)
+                            trailing_stop_short(security['ticker'], 2.0)
                             print(hits)
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
@@ -84,25 +99,29 @@ def dailyscanner(json_watchlist, op_str, publish=False):
 hits = []
 # # while True:
 # #longs 70%
-dailyscanner('VeryLargeStocks/(30,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('VeryLargeStocks/(20,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('VeryLargeStocks/(5,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('LargeStocks/(30,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('LargeStocks/(25,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('LargeStocks/(20,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('LargeStocks/(5,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('MediumStocks/(30,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('MediumStocks/(25,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('MediumStocks/(20,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('MediumStocks/(5,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('SmallStocks/(5,)D-uptrend03-28-21.json', '>', publish=True)
-dailyscanner('MicroStocks/(5,)D-uptrend03-28-21.json', '>', publish=True)
+dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('LargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('LargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('LargeStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('MediumStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('MediumStocks/Watchlists/03-29-21/(25,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('MediumStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('SmallStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('SmallStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('SmallStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+dailyscanner('MicroStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
 
 #shorts 30%
-dailyscanner('VeryLargeStocks/(10,)D-downtrend03-28-21.json', '<', publish=True)
-dailyscanner('LargeStocks/(10,)D-downtrend03-28-21.json', '<', publish=True)
-dailyscanner('MediumStocks/(10,)D-downtrend03-28-21.json', '<', publish=True)
-dailyscanner('MicroStocks/(5,)D-downtrend03-28-21.json', '<', publish=True)
+dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
+dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-downtrend03-29-21.json', '<', publish=False)
+dailyscanner('LargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+dailyscanner('LargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
+dailyscanner('MediumStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+dailyscanner('SmallStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+dailyscanner('MicroStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
 
 # shop = SecurityTradeData('SHOP', 365)
 # shop.chart(120, destination='VeryLarge')

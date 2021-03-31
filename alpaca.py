@@ -6,14 +6,26 @@ ACCOUNT_URL = '{}/v2/account'.format(APCA_API_BASE_URL)
 POSITIONS_URL = '{}/v2/positions'.format(APCA_API_BASE_URL)
 ORDERS_URL = '{}/v2/orders'.format(APCA_API_BASE_URL)
 
+DATA_BASE_URL = 'https://data.alpaca.markets'
+QUOTE_URL = '{}/v1/last_quote/stocks'.format(DATA_BASE_URL)
+
 
 def get_account():
     r = requests.get(ACCOUNT_URL, headers=HEADERS_PAPER)
     return json.loads(r.content)
 
-def get_positions():
+def get_all_positions():
     r = requests.get(POSITIONS_URL, headers=HEADERS_PAPER)
     return json.loads(r.content)
+
+def get_position_by_symbol(symbol):
+    r = requests.get(POSITIONS_URL + f'/{symbol}', headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
+def get_quote(symbol):
+    r = requests.get(f'{QUOTE_URL}/{symbol}', headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
 
 def buy_market(symbol, qty):
     data = {
@@ -26,29 +38,90 @@ def buy_market(symbol, qty):
     r = requests.post(ORDERS_URL, json=data, headers=HEADERS_PAPER)
     return json.loads(r.content)
 
+def sell_market(symbol, qty):
+    data = {
+        'symbol': symbol,
+        'qty': qty,
+        'side': 'sell',
+        'type': 'market',
+        'time_in_force': 'gtc'
+    }
+    r = requests.post(ORDERS_URL, json=data, headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
+def trailing_stop_long(symbol, percentage):
+    qty = get_position_by_symbol(symbol)['qty']
+    data = {
+        'symbol': symbol,
+        'qty': qty,
+        'side': 'sell',
+        'type': 'trailing_stop',
+        'trail_percent': percentage,
+        'time_in_force': 'gtc'
+    }
+    r = requests.post(ORDERS_URL, json=data, headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
+def trailing_stop_short(symbol, percentage):
+    qty = -float(get_position_by_symbol(symbol)['qty'])
+    data = {
+        'symbol': symbol,
+        'qty': str(qty),
+        'side': 'buy',
+        'type': 'trailing_stop',
+        'trail_percent': percentage,
+        'time_in_force': 'gtc'
+    }
+    r = requests.post(ORDERS_URL, json=data, headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
 
 
 def get_orders():
     r = requests.get(ORDERS_URL, headers=HEADERS_PAPER)
     return json.loads(r.content)
 
-response = buy_market('AAPL', 1)
-time.sleep(1)
-print(get_positions())
-
-# 'id': '2dbce402-d724-4005-b3fc-66b7052406eb'
-# response = create_order('MSFT', 100, 'buy', 'market', 'day')
-# 'id': '172c6770-4740-429f-954e-47f1af20ebe5'
-# print(response)
 
 
+def initialize_holdings():
+    pass
 
 
+import finnhub
+from time import sleep
+
+positions = get_all_positions()
+holdings = {
+    "long": {
+        "market_value": None,
+        # "stocks": []
+    },
+    "short": {
+        "market_value": None,
+        # "stocks": []
+    },
+}
+for holding in positions:
+    symbol = holding['symbol']
+    market_value = holding['market_value']
+    side = holding['side']
+    finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+    try:
+        industry = finnhub_client.company_profile2(symbol=symbol)['finnhubIndustry']
+    except KeyError:
+        industry = 'ETF'
+    sleep(1)
+    # holdings[side]['stocks'].append({'symbol':symbol, "industry": industry, "market_value": market_value})
+    holdings[side][symbol] = {"industry": industry, "market_value": market_value}
 
 
+    # if holdings[side]['stock']['symbol'] == None:
+    #     holdings[side]['stock']['symbol'] = symbol
+    #     holdings[side]['stock']['market_value'] = market_value
+    #     holdings[side]['stock']['industry'] = industry
+    # else:
 
-
-
+print(holdings)
 
 
 
