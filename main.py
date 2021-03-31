@@ -31,9 +31,9 @@ def dailyscanner(json_watchlist, op_str, publish=False):
             if op_str == '>':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     opposite_op_func(c, lower):
-                    hit = {'ticker': security['ticker'], 'industry': security['industry'], 'direction': 'long'}
-                    if hit not in hits:
-                        hits.append(hit)
+                    holding = {'ticker': security['ticker'], 'industry': security['industry'], 'direction': 'long'}
+                    if holding not in holdings:
+                        holdings.append(holding)
                         try:
                             candle_object.chart(120, destination=security['mktcap'])
                         except FileNotFoundError:
@@ -43,7 +43,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Long, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
-                            print(hits)
+                            print(holdings)
                         else:
                             price = get_quote(security['ticker'])['last']['askprice']
                             acct = get_account()
@@ -52,16 +52,16 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             buy_market(security['ticker'], qty)
                             sleep(3)
                             trailing_stop_long(security['ticker'], 2.0)
-                            print(hits)
+                            print(holdings)
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
 
             elif op_str == '<':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     opposite_op_func(c, upper):
-                    hit = {'ticker': security['ticker'], 'industry': security['industry'], 'direction': 'short'}
-                    if hit not in hits:
-                        hits.append(hit)
+                    holding = {'ticker': security['ticker'], 'industry': security['industry'], 'direction': 'short'}
+                    if holding not in holdings:
+                        holdings.append(holding)
                         #Some market caps showing up null... keep an eye on
                         try:
                             candle_object.chart(120, destination=security['mktcap'])
@@ -72,7 +72,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Short, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
-                            print(hits)
+                            print(holdings)
                         else:
                             price = get_quote(security['ticker'])['last']['askprice']
                             acct = get_account()
@@ -81,14 +81,14 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             sell_market(security['ticker'], qty)
                             sleep(3)
                             trailing_stop_short(security['ticker'], 2.0)
-                            print(hits)
+                            print(holdings)
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
         except:
             continue
 
     sectors = {}
-    for security in hits:
+    for security in holdings:
         if security['industry'] not in sectors.keys():
             sectors[security['industry']] = 1
         else:
@@ -96,7 +96,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
     print(sectors)
 
 
-hits = []
+holdings = []
 # # while True:
 # #longs 70%
 dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-uptrend03-29-21.json', '>', publish=False)

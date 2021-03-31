@@ -1,0 +1,28 @@
+[
+  {
+    "ticker": "BKH",
+    "industry": "Utilities",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.5,
+    "peers": [
+      "$D",
+      "$SRE",
+      "$PEG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SQBG",
+    "industry": "Textiles, Apparel & Luxury Goods",
+    "mktcap": "Micro",
+    "bb_window": 12,
+    "bb_std": 0.9,
+    "peers": [
+      "$VFC",
+      "$MAJJ",
+      "$TPR",
+      "$SPY"
+    ]
+  }
+]

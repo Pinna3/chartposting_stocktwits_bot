@@ -1,0 +1,41 @@
+[
+  {
+    "ticker": "CTRN",
+    "industry": "Retail",
+    "mktcap": "Medium",
+    "bb_window": 15,
+    "bb_std": 1.0,
+    "peers": [
+      "$TJX",
+      "$ROST",
+      "$BURL",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ETH",
+    "industry": "Consumer products",
+    "mktcap": "Medium",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": [
+      "$MHK",
+      "$TPX",
+      "$LEG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PLYM",
+    "industry": "Real Estate",
+    "mktcap": "Medium",
+    "bb_window": 14,
+    "bb_std": 0.9,
+    "peers": [
+      "$PLD",
+      "$DRE",
+      "$COLD",
+      "$SPY"
+    ]
+  }
+]

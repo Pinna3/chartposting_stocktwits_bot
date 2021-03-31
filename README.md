@@ -9,6 +9,7 @@ Narrow down selection with bollingers, and think of other ways too.
 
 Add average time in entry zone functionality from entry counter function (currently not factoring that in) *****Important!
 
+Think of other ways to narrow selection other than bollingers, rate of increase would be good.
 
 Next Steps for Trading Functionality:
 

@@ -1,0 +1,493 @@
+[
+  {
+    "ticker": "AMEH",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": [
+      "$CVS",
+      "$CI",
+      "$LH",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ANF",
+    "industry": "Retail",
+    "mktcap": "Large",
+    "bb_window": 16,
+    "bb_std": 0.8,
+    "peers": [
+      "$TJX",
+      "$ROST",
+      "$BURL",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ARI",
+    "industry": "Real Estate",
+    "mktcap": "Large",
+    "bb_window": 9,
+    "bb_std": 0.9,
+    "peers": [
+      "$NLY",
+      "$AGNC",
+      "$STWD",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BALY",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 17,
+    "bb_std": 0.9,
+    "peers": [
+      "$LVS",
+      "$DKNG",
+      "$MGM",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BLMN",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 16,
+    "bb_std": 1.0,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CBRL",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 11,
+    "bb_std": 0.9,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CIM",
+    "industry": "Real Estate",
+    "mktcap": "Large",
+    "bb_window": 9,
+    "bb_std": 1.0,
+    "peers": [
+      "$NLY",
+      "$AGNC",
+      "$STWD",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CNX",
+    "industry": "Energy ",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": [
+      "$COP",
+      "$EOG",
+      "$PXD",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "DBI",
+    "industry": "Retail",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 1.0,
+    "peers": [
+      "$TJX",
+      "$ROST",
+      "$BURL",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "DIN",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "DLX",
+    "industry": "Commercial Services & Supplies",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": [
+      "$BEEN",
+      "$BRC",
+      "$DLX",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "EFSC",
+    "industry": "Banking",
+    "mktcap": "Large",
+    "bb_window": 13,
+    "bb_std": 1.0,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ERJ",
+    "industry": "Aerospace & Defense",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 0.8,
+    "peers": [
+      "$EMBR3.SA",
+      "$TASA4.SA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "FIX",
+    "industry": "Construction",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 0.9,
+    "peers": [
+      "$PWR",
+      "$ACM",
+      "$MTZ",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "FUL",
+    "industry": "Chemicals",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 0.9,
+    "peers": [
+      "$SHW",
+      "$ECL",
+      "$DD",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "GABC",
+    "industry": "Banking",
+    "mktcap": "Large",
+    "bb_window": 13,
+    "bb_std": 1.0,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "HOME",
+    "industry": "Retail",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": [
+      "$WSM",
+      "$RH",
+      "$SNBR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IHRT",
+    "industry": "Media",
+    "mktcap": "Large",
+    "bb_window": 16,
+    "bb_std": 1.0,
+    "peers": [
+      "$VIAC",
+      "$FOXA",
+      "$DISCA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IMKTA",
+    "industry": "Retail",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": [
+      "$KR",
+      "$ACI",
+      "$CASY",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MAIN",
+    "industry": "Financial Services",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": [
+      "$BLK",
+      "$BX",
+      "$BK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NAVI",
+    "industry": "Financial Services",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 0.9,
+    "peers": [
+      "$AXP",
+      "$COF",
+      "$DFS",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NSA",
+    "industry": "Real Estate",
+    "mktcap": "Large",
+    "bb_window": 20,
+    "bb_std": 1.0,
+    "peers": [
+      "$AMT",
+      "$CCI",
+      "$EQIX",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NSIT",
+    "industry": "Electrical Equipment",
+    "mktcap": "Large",
+    "bb_window": 15,
+    "bb_std": 1.0,
+    "peers": [
+      "$CDW",
+      "$ARW",
+      "$SNX",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NYMT",
+    "industry": "Real Estate",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 1.0,
+    "peers": [
+      "$NLY",
+      "$AGNC",
+      "$STWD",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PLAY",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 15,
+    "bb_std": 0.5,
+    "peers": [
+      "$MCD",
+      "$SBUX",
+      "$CMG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PLRX",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PRTA",
+    "industry": "Biotechnology",
+    "mktcap": "Large",
+    "bb_window": 13,
+    "bb_std": 1.0,
+    "peers": [
+      "$ALKS",
+      "$AMRN",
+      "$PRTA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "REVG",
+    "industry": "Machinery",
+    "mktcap": "Large",
+    "bb_window": 11,
+    "bb_std": 0.8,
+    "peers": [
+      "$CAT",
+      "$CMI",
+      "$PCAR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "RRR",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 17,
+    "bb_std": 1.0,
+    "peers": [
+      "$LVS",
+      "$DKNG",
+      "$MGM",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "RWT",
+    "industry": "Real Estate",
+    "mktcap": "Large",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": [
+      "$NLY",
+      "$AGNC",
+      "$STWD",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SAVE",
+    "industry": "Airlines",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 1.0,
+    "peers": [
+      "$LUV",
+      "$DAL",
+      "$UAL",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SEAS",
+    "industry": "Hotels, Restaurants & Leisure",
+    "mktcap": "Large",
+    "bb_window": 19,
+    "bb_std": 0.9,
+    "peers": [
+      "$MTN",
+      "$PLNT",
+      "$SIX",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SFBS",
+    "industry": "Banking",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SGRY",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 0.9,
+    "peers": [
+      "$HCA",
+      "$UHS",
+      "$EHC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SHYF",
+    "industry": "Machinery",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": [
+      "$CAT",
+      "$CMI",
+      "$PCAR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SIG",
+    "industry": "Retail",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 0.9,
+    "peers": [
+      "$SIG",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SNBR",
+    "industry": "Retail",
+    "mktcap": "Large",
+    "bb_window": 17,
+    "bb_std": 1.0,
+    "peers": [
+      "$WSM",
+      "$RH",
+      "$SNBR",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "TMDX",
+    "industry": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 0.9,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  }
+]

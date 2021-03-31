@@ -153,9 +153,9 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-# bars = SecurityTradeData('SHOP', 365)
-# # bars.custom_bollingers(3, .1)
-# bars.chart(120, destination='VeryLarge')
+bars = SecurityTradeData('BKH', 365)
+bars.custom_bollingers(3, .5)
+bars.chart(120, destination='browser')
 
 # bars = SecurityTradeData('CARV', 120)
 # bars.custom_bollingers(5, .9)

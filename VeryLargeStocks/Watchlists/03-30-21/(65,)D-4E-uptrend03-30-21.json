@@ -1,0 +1,106 @@
+[
+  {
+    "ticker": "DE",
+    "industry": "Machinery",
+    "mktcap": null,
+    "bb_window": 13,
+    "bb_std": 1.0,
+    "peers": [
+      "$DE",
+      "$TTC",
+      "$AGCO",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "DELL",
+    "industry": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 16,
+    "bb_std": 0.8,
+    "peers": [
+      "$AAPL",
+      "$DELL",
+      "$HPQ",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "DOX",
+    "industry": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 12,
+    "bb_std": 1.0,
+    "peers": [
+      "$IBM",
+      "$CTSH",
+      "$EPAM",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "MMS",
+    "industry": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 13,
+    "bb_std": 1.0,
+    "peers": [
+      "$V",
+      "$MA",
+      "$PYPL",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NVST",
+    "industry": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 17,
+    "bb_std": 0.9,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PNFP",
+    "industry": "Banking",
+    "mktcap": "VeryLarge",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": [
+      "$TFC",
+      "$PNC",
+      "$FRC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "STN",
+    "industry": "Professional Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": [
+      "$TRI.TO",
+      "$STN.TO",
+      "$IBG.TO",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SYNA",
+    "industry": "Semiconductors",
+    "mktcap": "VeryLarge",
+    "bb_window": 17,
+    "bb_std": 1.0,
+    "peers": [
+      "$NVDA",
+      "$INTC",
+      "$AVGO",
+      "$SPY"
+    ]
+  }
+]

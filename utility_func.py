@@ -2,6 +2,8 @@ from candlestick import SecurityTradeData
 import plotly.graph_objs as go
 import json
 import csv
+import finnhub
+from time import sleep
 
 def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     candles = SecurityTradeDataObject
@@ -113,7 +115,7 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
 def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/03-29-21/({period},)D-6E-{down_or_up_str}trend{date_str}.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/03-30-21/({period},)D-4E-{down_or_up_str}trend{date_str}.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             print(period, len(list))
@@ -128,7 +130,7 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
 def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/03-29-21/({period},)D-6E-{down_or_up_str}trend{date_str}.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/03-30-21/({period},)D-4E-{down_or_up_str}trend{date_str}.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             # print(period, len(list))
@@ -196,11 +198,72 @@ def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
     # print(ranking_sorted)
     print(ranking_time_weighted_sorted)
     print('')
-rank_dropoffs('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-rank_dropoffs('Large', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-rank_dropoffs('Medium', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-rank_dropoffs('Small', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-rank_dropoffs('Micro', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+
+
+def initialize_holdings():
+    positions = get_all_positions()
+    holdings = {
+        "long": {
+            "market_value": None,
+            "industry": {
+            }
+        },
+        "short": {
+            "market_value": None,
+            "industry": {
+            }
+        },
+    }
+    for holding in positions:
+        symbol = holding['symbol']
+        market_value = holding['market_value']
+        side = holding['side']
+        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+        try:
+            industry = finnhub_client.company_profile2(symbol=symbol)['finnhubIndustry']
+        except KeyError:
+            industry = 'ETF'
+        sleep(1)
+        if industry not in holdings[side]['industry'].keys():
+            holdings[side]['industry'][industry] = {}
+            holdings[side]['industry'][industry]['market_value'] = None
+            holdings[side]['industry'][industry]['stocks'] = [[symbol,  market_value]]
+        else:
+            holdings[side]['industry'][industry]['market_value'] = None
+            holdings[side]['industry'][industry]['stocks'] = [[symbol,  market_value]]
+
+    long_industry_keys = holdings['long']['industry'].keys()
+    short_industry_keys = holdings['short']['industry'].keys()
+    for industry in long_industry_keys:
+        market_value = 0.0
+        for stock in holdings['long']['industry'][industry]['stocks']:
+            market_value += float(stock[1])
+        holdings['long']['industry'][industry]['market_value'] = market_value
+    for industry in short_industry_keys:
+        market_value = 0.0
+        for stock in holdings['short']['industry'][industry]['stocks']:
+            market_value += float(stock[1])
+        holdings['short']['industry'][industry]['market_value'] = market_value
+
+    long_market_value = 0.0
+    for industry in long_industry_keys:
+        long_market_value += holdings['long']['industry'][industry]['market_value']
+    holdings['long']['market_value'] = round(long_market_value, 2)
+    short_market_value = 0.0
+    for industry in short_industry_keys:
+        short_market_value += holdings['short']['industry'][industry]['market_value']
+    holdings['short']['market_value'] = round(short_market_value, 2)
+
+    return holdings
+
+
+# graph_degrees_of_trend('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+# calculate_and_file_dropoff_rates('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+rank_dropoffs('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# rank_dropoffs('Large', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# rank_dropoffs('Medium', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# rank_dropoffs('Small', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+# rank_dropoffs('Micro', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 
 # graph_degrees_of_trend('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 # dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)

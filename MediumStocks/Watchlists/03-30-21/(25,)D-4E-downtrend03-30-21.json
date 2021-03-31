@@ -1,0 +1,80 @@
+[
+  {
+    "ticker": "AFIB",
+    "industry": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.8,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CCX",
+    "industry": "N/A",
+    "mktcap": "Medium",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "EPZM",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 11,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "GXGX",
+    "industry": "N/A",
+    "mktcap": "Medium",
+    "bb_window": 4,
+    "bb_std": 0.9,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "KPTI",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 4,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "QTNT",
+    "industry": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 16,
+    "bb_std": 0.1,
+    "peers": [
+      "$ALC.SW",
+      "$YPSN.SW",
+      "$MED.SW",
+      "$SPY"
+    ]
+  }
+]

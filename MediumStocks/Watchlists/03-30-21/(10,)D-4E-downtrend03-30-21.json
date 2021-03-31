@@ -1,0 +1,405 @@
+[
+  {
+    "ticker": "ADAP",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 5,
+    "bb_std": 0.8,
+    "peers": [
+      "$GNS.L",
+      "$ABC.L",
+      "$MYOV",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ADVM",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "AFIB",
+    "industry": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.8,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "AGEN",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ARCE",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 20,
+    "bb_std": 1.0,
+    "peers": [
+      "$CSED3.SA",
+      "$YDUQ3.SA",
+      "$COGN3.SA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ATAC",
+    "industry": "N/A",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "ATHA",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ATHX",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 11,
+    "bb_std": 0.9,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ATNX",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "AXDX",
+    "industry": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 6,
+    "bb_std": 0.9,
+    "peers": [
+      "$ABT",
+      "$DHR",
+      "$SYK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BDSI",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BDTX",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 9,
+    "bb_std": 0.8,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "BYSI",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CCX",
+    "industry": "N/A",
+    "mktcap": "Medium",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "CRSA",
+    "industry": "N/A",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "EPZM",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 11,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "FIII",
+    "industry": "N/A",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "FIXX",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 11,
+    "bb_std": 0.7,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "GXGX",
+    "industry": "N/A",
+    "mktcap": "Medium",
+    "bb_window": 4,
+    "bb_std": 0.9,
+    "peers": [
+      "$SPY",
+      "$DIA",
+      "$IWM",
+      "$QQQ"
+    ]
+  },
+  {
+    "ticker": "IH",
+    "industry": "Media",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": [
+      "$NTES",
+      "$002602.SZ",
+      "$002555.SZ",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "KPTI",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 4,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "LSF",
+    "industry": "Food Products",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$MDLZ",
+      "$KHC",
+      "$GIS",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "NBRV",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Medium",
+    "bb_window": 12,
+    "bb_std": 0.6,
+    "peers": [
+      "$HZNP",
+      "$JAZZ",
+      "$PRGO",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "ONE",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 11,
+    "bb_std": 0.9,
+    "peers": [
+      "$002607.SZ",
+      "$667.HK",
+      "$TAL",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "PDFS",
+    "industry": "Semiconductors",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$AMAT",
+      "$LRCX",
+      "$KLAC",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "QTNT",
+    "industry": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 16,
+    "bb_std": 0.1,
+    "peers": [
+      "$ALC.SW",
+      "$YPSN.SW",
+      "$MED.SW",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SGTX",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "SVM",
+    "industry": "Metals & Mining",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": [
+      "$PAAS.TO",
+      "$FR.TO",
+      "$MAG.TO",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "URGN",
+    "industry": "Biotechnology",
+    "mktcap": "Medium",
+    "bb_window": 15,
+    "bb_std": 0.9,
+    "peers": [
+      "$BONS.TA",
+      "$KMDA.TA",
+      "$EVGN.TA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "VSTA",
+    "industry": "Diversified Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": [
+      "$CSED3.SA",
+      "$YDUQ3.SA",
+      "$COGN3.SA",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "WTRH",
+    "industry": "Retail",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": [
+      "$AMZN",
+      "$BKNG",
+      "$DASH",
+      "$SPY"
+    ]
+  }
+]

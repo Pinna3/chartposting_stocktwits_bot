@@ -1,0 +1,54 @@
+[
+  {
+    "ticker": "ASMB",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 16,
+    "bb_std": 1.0,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "CHMA",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.1,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "IMRA",
+    "industry": "Pharmaceuticals",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 0.7,
+    "peers": [
+      "$JNJ",
+      "$PFE",
+      "$MRK",
+      "$SPY"
+    ]
+  },
+  {
+    "ticker": "VYGR",
+    "industry": "Biotechnology",
+    "mktcap": "Small",
+    "bb_window": 9,
+    "bb_std": 0.7,
+    "peers": [
+      "$950160.KQ",
+      "$ABBV",
+      "$AMGN",
+      "$SPY"
+    ]
+  }
+]

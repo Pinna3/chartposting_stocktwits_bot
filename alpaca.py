@@ -83,47 +83,6 @@ def get_orders():
 
 
 
-def initialize_holdings():
-    pass
-
-
-import finnhub
-from time import sleep
-
-positions = get_all_positions()
-holdings = {
-    "long": {
-        "market_value": None,
-        # "stocks": []
-    },
-    "short": {
-        "market_value": None,
-        # "stocks": []
-    },
-}
-for holding in positions:
-    symbol = holding['symbol']
-    market_value = holding['market_value']
-    side = holding['side']
-    finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
-    try:
-        industry = finnhub_client.company_profile2(symbol=symbol)['finnhubIndustry']
-    except KeyError:
-        industry = 'ETF'
-    sleep(1)
-    # holdings[side]['stocks'].append({'symbol':symbol, "industry": industry, "market_value": market_value})
-    holdings[side][symbol] = {"industry": industry, "market_value": market_value}
-
-
-    # if holdings[side]['stock']['symbol'] == None:
-    #     holdings[side]['stock']['symbol'] = symbol
-    #     holdings[side]['stock']['market_value'] = market_value
-    #     holdings[side]['stock']['industry'] = industry
-    # else:
-
-print(holdings)
-
-
 
 
 
