@@ -5,6 +5,7 @@ from tweet import twitter_api
 import json
 import operator
 from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short
+from utility_func import initialize_holdings
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
@@ -31,9 +32,9 @@ def dailyscanner(json_watchlist, op_str, publish=False):
             if op_str == '>':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     opposite_op_func(c, lower):
-                    holding = {'ticker': security['ticker'], 'industry': security['industry'], 'direction': 'long'}
-                    if holding not in holdings:
-                        holdings.append(holding)
+                    holding = security['ticker']
+                    if holding not in str(holdings):
+                    #Some market caps showing up null... keep an eye on
                         try:
                             candle_object.chart(120, destination=security['mktcap'])
                         except FileNotFoundError:
@@ -43,6 +44,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Long, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
+                            initialize_holdings()
                             print(holdings)
                         else:
                             price = get_quote(security['ticker'])['last']['askprice']
@@ -52,6 +54,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             buy_market(security['ticker'], qty)
                             sleep(3)
                             trailing_stop_long(security['ticker'], 2.0)
+                            initialize_holdings()
                             print(holdings)
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
@@ -59,9 +62,8 @@ def dailyscanner(json_watchlist, op_str, publish=False):
             elif op_str == '<':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     opposite_op_func(c, upper):
-                    holding = {'ticker': security['ticker'], 'industry': security['industry'], 'direction': 'short'}
+                    holding = security['ticker']
                     if holding not in holdings:
-                        holdings.append(holding)
                         #Some market caps showing up null... keep an eye on
                         try:
                             candle_object.chart(120, destination=security['mktcap'])
@@ -72,6 +74,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Short, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
+                            initialize_holdings()
                             print(holdings)
                         else:
                             price = get_quote(security['ticker'])['last']['askprice']
@@ -81,52 +84,57 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             sell_market(security['ticker'], qty)
                             sleep(3)
                             trailing_stop_short(security['ticker'], 2.0)
+                            initialize_holdings()
                             print(holdings)
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
         except:
             continue
 
-    sectors = {}
-    for security in holdings:
-        if security['industry'] not in sectors.keys():
-            sectors[security['industry']] = 1
-        else:
-            sectors[security['industry']] += 1
-    print(sectors)
+while True:
+    # #longs 70%
+    holdings = initialize_holdings()
+    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('LargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('LargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('LargeStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('MediumStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('MediumStocks/Watchlists/03-29-21/(25,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('MediumStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('SmallStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('SmallStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('SmallStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('MicroStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    holdings = initialize_holdings()
 
-
-holdings = []
-# # while True:
-# #longs 70%
-dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('LargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('LargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('LargeStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('MediumStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('MediumStocks/Watchlists/03-29-21/(25,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('MediumStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('SmallStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('SmallStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('SmallStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-dailyscanner('MicroStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-
-#shorts 30%
-dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
-dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-downtrend03-29-21.json', '<', publish=False)
-dailyscanner('LargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-dailyscanner('LargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
-dailyscanner('MediumStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-dailyscanner('SmallStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-dailyscanner('MicroStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-
-# shop = SecurityTradeData('SHOP', 365)
-# shop.chart(120, destination='VeryLarge')
-#
-# media = twitter_api.media_upload('VeryLargeStocks/Charts/03-29-21/SHOP.png')
-# tweet = '$SHOP Below 200SMA'
-#
-# twitter_api.update_status(tweet, media_ids=[media.media_id])
+    #shorts 30%
+    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('LargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('LargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('MediumStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('SmallStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    holdings = initialize_holdings()
+    dailyscanner('MicroStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    holdings = initialize_holdings()
