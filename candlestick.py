@@ -53,12 +53,20 @@ class SecurityTradeData:
                f'9SMA:{sma9}, 20SMA:{sma20}, 50SMA:{sma50}, 200SMA:{sma200})'
 
     def custom_bollingers(self, bollinger_rolling_window, bollinger_std):
-        bollinger_reference_lower = self.df.l.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).mean()
-        bollinger_reference_upper = self.df.h.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).mean()
-        sigma_lower = self.df.l.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).std()
-        sigma_upper = self.df.h.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).std()
-        self.df['lower'] = bollinger_reference_lower - (bollinger_std * sigma_lower)
-        self.df['upper'] = bollinger_reference_upper + (bollinger_std * sigma_upper)
+        try:
+            bollinger_reference_lower = self.df.l.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).mean()
+            bollinger_reference_upper = self.df.h.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).mean()
+            sigma_lower = self.df.l.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).std()
+            sigma_upper = self.df.h.rolling(window=bollinger_rolling_window, min_periods=bollinger_rolling_window).std()
+            self.df['lower'] = bollinger_reference_lower - (bollinger_std * sigma_lower)
+            self.df['upper'] = bollinger_reference_upper + (bollinger_std * sigma_upper)
+        except ValueError:
+            bollinger_reference_lower = self.df.l.rolling(window=20, min_periods=20).mean()
+            bollinger_reference_upper = self.df.h.rolling(window=20, min_periods=20).mean()
+            sigma_lower = self.df.l.rolling(window=20, min_periods=20).std()
+            sigma_upper = self.df.h.rolling(window=20, min_periods=20).std()
+            self.df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
+            self.df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
 
 
     #destination options: 'browser', or filepaths 'Micro', 'Small', 'Medium', 'Large', 'VeryLarge'
@@ -153,9 +161,9 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-bars = SecurityTradeData('BKH', 365)
-bars.custom_bollingers(3, .5)
-bars.chart(120, destination='browser')
+# bars = SecurityTradeData('BKH', 365)
+# bars.custom_bollingers(3, .5)
+# bars.chart(120, destination='browser')
 
 # bars = SecurityTradeData('CARV', 120)
 # bars.custom_bollingers(5, .9)

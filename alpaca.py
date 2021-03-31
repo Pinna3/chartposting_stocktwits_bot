@@ -104,7 +104,6 @@ def get_orders():
 
 
 
-
 #return candlestick bar data from num_bars to now
 # def return_candles_json(csv_stocklist, period='day', num_bars=365):
 def return_candles_json(symbol, period='1Day', num_bars=365):

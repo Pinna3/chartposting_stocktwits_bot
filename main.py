@@ -25,7 +25,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
 
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
-        try:
+        # try:
             candle_object = SecurityTradeData(security['ticker'], 365)
             candle_object.custom_bollingers(security['bb_window'], security['bb_std'])
             c, h, l, o, s, t, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-1]
@@ -40,6 +40,12 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                         except FileNotFoundError:
                             security['mktcap'] = 'VeryLarge'
                             candle_object.chart(120, destination=security['mktcap'])
+                        except ValueError:
+                            try:
+                                candle_object.chart(60, destination=security['mktcap'])
+                            except ValueError:
+                                continue
+
                         if publish:
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Long, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
@@ -49,7 +55,14 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                         else:
                             price = get_quote(security['ticker'])['last']['askprice']
                             acct = get_account()
-                            acct_value = float(acct['equity']) * float(acct['multiplier'])
+                            acct_equity = float(acct['equity'])
+
+                            if acct_equity > 25000:
+                                acct_multiplier = float(acct['multiplier']) / 2
+                            else:
+                                acct_multiplier = float(acct['multiplier'])
+
+                            acct_value = acct_equity * acct_multiplier
                             qty = (acct_value / 100) // price
                             buy_market(security['ticker'], qty)
                             sleep(3)
@@ -64,12 +77,18 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                     opposite_op_func(c, upper):
                     holding = security['ticker']
                     if holding not in holdings:
-                        #Some market caps showing up null... keep an eye on
+                    #Some market caps showing up null... keep an eye on
                         try:
                             candle_object.chart(120, destination=security['mktcap'])
                         except FileNotFoundError:
                             security['mktcap'] = 'VeryLarge'
                             candle_object.chart(120, destination=security['mktcap'])
+                        except ValueError:
+                            try:
+                                candle_object.chart(60, destination=security['mktcap'])
+                            except ValueError:
+                                continue
+
                         if publish:
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Short, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
@@ -79,17 +98,24 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                         else:
                             price = get_quote(security['ticker'])['last']['askprice']
                             acct = get_account()
-                            acct_value = float(acct['equity']) * float(acct['multiplier'])
+                            acct_equity = float(acct['equity'])
+
+                            if acct_equity > 25000:
+                                acct_multiplier = float(acct['multiplier']) / 2
+                            else:
+                                acct_multiplier = float(acct['multiplier'])
+
+                            acct_value = acct_equity * acct_multiplier
                             qty = (acct_value / 100) // price
                             sell_market(security['ticker'], qty)
                             sleep(3)
                             trailing_stop_short(security['ticker'], 2.0)
                             initialize_holdings()
                             print(holdings)
-                else:
-                    print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
-        except:
-            continue
+                    else:
+                        print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
+        # except:
+        #     continue
 
 while True:
     # #longs 70%
