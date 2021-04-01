@@ -6,6 +6,7 @@ import json
 import operator
 from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short
 from utility_func import initialize_holdings
+from risk_parameter import*
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
@@ -24,6 +25,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
     opposite_op_func = opposite_ops[op_str]
 
     holdings = initialize_holdings()
+    print(holdings)
     missed_candle_object_error = []
     missed_chart_error = []
     missed_order_error = []
@@ -65,30 +67,23 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Long, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
-                            initialize_holdings()
-                            print(holdings)
-                        else:
-                            price = get_quote(security['ticker'])['last']['askprice']
-                            acct = get_account()
-                            acct_equity = float(acct['equity'])
-
-                            if acct_equity > 25000:
-                                acct_multiplier = float(acct['multiplier']) / 2
-                            else:
-                                acct_multiplier = float(acct['multiplier'])
-
-                            acct_value = acct_equity * acct_multiplier
-                            try:
-                                qty = (acct_value / 100) // float(price)
-                            except ZeroDivisionError:
-                                missed_order_error.append(security['ticker'])
-                                print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
-                                continue
-                            buy_market(security['ticker'], qty)
-                            sleep(3)
-                            trailing_stop_long(security['ticker'], 2.0)
                             holdings = initialize_holdings()
                             print(holdings)
+                        else:
+                            if long_capacity(holdings['long']['acct_percentage']) and industry_capacity(holdings['long']['industry'][security['industry']]['acct_percentage']) is False:
+                                price = get_quote(security['ticker'])['last']['askprice']
+                                acct_value = get_account_value()
+                                try:
+                                    qty = (acct_value / 100) // float(price)
+                                except ZeroDivisionError:
+                                    missed_order_error.append(security['ticker'])
+                                    print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
+                                    continue
+                                buy_market(security['ticker'], qty)
+                                sleep(3)
+                                trailing_stop_long(security['ticker'], 2.0)
+                                holdings = initialize_holdings()
+                                print(holdings)
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
 
@@ -115,30 +110,23 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Short, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
-                            initialize_holdings()
-                            print(holdings)
-                        else:
-                            price = get_quote(security['ticker'])['last']['askprice']
-                            acct = get_account()
-                            acct_equity = float(acct['equity'])
-
-                            if acct_equity > 25000:
-                                acct_multiplier = float(acct['multiplier']) / 2
-                            else:
-                                acct_multiplier = float(acct['multiplier'])
-
-                            acct_value = acct_equity * acct_multiplier
-                            try:
-                                qty = (acct_value / 100) // float(price)
-                            except ZeroDivisionError:
-                                missed_order_error.append(security['ticker'])
-                                print(f'MISSED!!!!...{missed_order_error}')
-                                continue
-                            sell_market(security['ticker'], qty)
-                            sleep(3)
-                            trailing_stop_short(security['ticker'], 2.0)
                             holdings = initialize_holdings()
                             print(holdings)
+                        else:
+                            if short_capacity(holdings['short']['acct_percentage']) and industry_capacity(holdings['short']['industry'][security['industry']]['acct_percentage']) is False:
+                                price = get_quote(security['ticker'])['last']['askprice']
+                                acct_value = get_account_value()
+                                try:
+                                    qty = (acct_value / 100) // float(price)
+                                except ZeroDivisionError:
+                                    missed_order_error.append(security['ticker'])
+                                    print(f'MISSED!!!!...{missed_order_error}')
+                                    continue
+                                sell_market(security['ticker'], qty)
+                                sleep(3)
+                                trailing_stop_short(security['ticker'], 2.0)
+                                holdings = initialize_holdings()
+                                print(holdings)
                     else:
                         print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
         # except:

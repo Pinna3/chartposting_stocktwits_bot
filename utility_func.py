@@ -4,7 +4,7 @@ import json
 import csv
 import finnhub
 from time import sleep
-from alpaca import get_all_positions
+from alpaca import get_all_positions, get_account_value
 
 def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     candles = SecurityTradeDataObject
@@ -206,18 +206,20 @@ def initialize_holdings():
     holdings = {
         "long": {
             "market_value": None,
+            "acct_percentage": None,
             "industry": {
             }
         },
         "short": {
             "market_value": None,
+            "acct_percentage": None,
             "industry": {
             }
         },
     }
     for holding in positions:
         symbol = holding['symbol']
-        market_value = holding['market_value']
+        market_value = round(float(holding['market_value']), 2)
         side = holding['side']
         finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
         try:
@@ -228,33 +230,40 @@ def initialize_holdings():
         if industry not in holdings[side]['industry'].keys():
             holdings[side]['industry'][industry] = {}
             holdings[side]['industry'][industry]['market_value'] = None
+            holdings[side]['industry'][industry]['acct_percentage'] = None
             holdings[side]['industry'][industry]['stocks'] = [[symbol, market_value]]
         else:
             holdings[side]['industry'][industry]['stocks'].append([symbol, market_value])
 
+    acct_value = get_account_value()
     long_industry_keys = holdings['long']['industry'].keys()
     short_industry_keys = holdings['short']['industry'].keys()
     for industry in long_industry_keys:
         market_value = 0.0
         for stock in holdings['long']['industry'][industry]['stocks']:
-            market_value += float(stock[1])
+            market_value += round(float(stock[1]), 2)
         holdings['long']['industry'][industry]['market_value'] = market_value
+        holdings['long']['industry'][industry]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
     for industry in short_industry_keys:
         market_value = 0.0
         for stock in holdings['short']['industry'][industry]['stocks']:
-            market_value += float(stock[1])
+            market_value += round(float(stock[1]), 2)
         holdings['short']['industry'][industry]['market_value'] = market_value
+        holdings['short']['industry'][industry]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
 
     long_market_value = 0.0
     for industry in long_industry_keys:
-        long_market_value += holdings['long']['industry'][industry]['market_value']
+        long_market_value += round(holdings['long']['industry'][industry]['market_value'], 2)
     holdings['long']['market_value'] = round(long_market_value, 2)
+    holdings['long']['acct_percentage'] = round((long_market_value / acct_value) * 100, 2)
     short_market_value = 0.0
     for industry in short_industry_keys:
-        short_market_value += holdings['short']['industry'][industry]['market_value']
+        short_market_value += round(holdings['short']['industry'][industry]['market_value'], 2)
     holdings['short']['market_value'] = round(short_market_value, 2)
+    holdings['short']['acct_percentage'] = round((short_market_value / acct_value) * 100, 2)
 
     return holdings
+
 
 
 # graph_degrees_of_trend('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
