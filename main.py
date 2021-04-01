@@ -70,7 +70,9 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            if long_capacity(holdings['long']['acct_percentage']) and industry_capacity(holdings['long']['industry'][security['industry']]['acct_percentage']) is False:
+                            if long_capacity(holdings['long']['acct_percentage']) and \
+                            industry_capacity(holdings['long']['industry'][security['industry']]['acct_percentage']) and \
+                            check_daily_counter_capacity('long', security['mktcap']) is False:
                                 price = get_quote(security['ticker'])['last']['askprice']
                                 acct_value = get_account_value()
                                 try:
@@ -113,7 +115,9 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            if short_capacity(holdings['short']['acct_percentage']) and industry_capacity(holdings['short']['industry'][security['industry']]['acct_percentage']) is False:
+                            if short_capacity(holdings['short']['acct_percentage']) and \
+                            industry_capacity(holdings['short']['industry'][security['industry']]['acct_percentage']) and \
+                            check_daily_counter_capacity('short', security['mktcap']) is False:
                                 price = get_quote(security['ticker'])['last']['askprice']
                                 acct_value = get_account_value()
                                 try:
