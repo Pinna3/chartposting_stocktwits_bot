@@ -23,19 +23,26 @@ class SecurityTradeData:
         self.peers = None
         self.mktcap = None
 
-        #candlestick data
-        data = return_candles_json(ticker, period='day', num_bars=365)
 
-        #Setup client API connection
-        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
-        data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
-        del data['s']
-        del data['t']
+        #candlestick data (Alpaca API Primary, Finnhub backup)
+        smoothness_test = True
         data = return_candles_json(ticker, period='day', num_bars=365)
-        time.sleep(1)
-        # df = pd.DataFrame(data[ticker])
-        df = pd.DataFrame(data)
-        print(df)
+        for index, ohlc in enumerate(data[ticker][:-1]):
+            if abs(float(ohlc['c']) - float(data[ticker][index+1]['o'])) > (float(ohlc['c']) * .5):
+                smoothness_test = False
+        df = pd.DataFrame(data[ticker])
+        del df['t']
+        time.sleep(.3)
+
+        #finnhub backup for split gaps
+        if smoothness_test == False:
+            finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+            data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
+            del data['s']
+            del data['t']
+            df = pd.DataFrame(data)
+            time.sleep(1)
+
         sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
         sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
         sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
@@ -167,8 +174,9 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-test = SecurityTradeData('AAPL', 365)
-test.chart(365)
+# test = SecurityTradeData('MDLY', 365)
+# test.chart(365)
+# print(test.df)
 
 
 

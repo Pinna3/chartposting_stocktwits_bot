@@ -1,0 +1,857 @@
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume,Smooth Test
+TSLA,Tesla Inc. Common Stock,661.75,-6.18,-0.01,VeryLarge,United States,35204933.00,Capital Goods,23296864412.75,FALSE
+AMZN,Amazon.com Inc. Common Stock,3161.00,66.92,0.02,VeryLarge,United States,2935172.00,Consumer Services,9278078692.00,TRUE
+AAPL,Apple Inc. Common Stock,123.00,0.85,0.01,VeryLarge,United States,74951179.00,Technology,9218995017.00,FALSE
+MSFT,Microsoft Corporation Common Stock,242.35,6.58,0.03,VeryLarge,United States,30311846.00,Technology,7346075878.10,TRUE
+BABA,Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share,224.36,-2.37,-0.01,VeryLarge,China,23482815.00,Miscellaneous,5268604373.40,TRUE
+FB,Facebook Inc. Class A Common Stock,298.66,4.13,0.01,VeryLarge,United States,17589580.00,Technology,5253303962.80,TRUE
+NIO,NIO Inc. American depositary shares each  representing one Class A ordinary share,39.66,0.68,0.02,VeryLarge,,116120201.00,Capital Goods,4605327171.66,TRUE
+NVDA,NVIDIA Corporation Common Stock,552.47,18.54,0.03,VeryLarge,United States,7693754.00,Technology,4250568272.38,TRUE
+GOOGL,Alphabet Inc. Class A Common Stock,2129.78,67.26,0.03,VeryLarge,United States,1993122.00,Technology,4244911373.16,TRUE
+MU,Micron Technology Inc. Common Stock,92.41,4.20,0.05,VeryLarge,United States,39631774.00,Technology,3662372235.34,TRUE
+GOOG,Alphabet Inc. Class C Capital Stock,2137.75,69.12,0.03,VeryLarge,United States,1698389.00,Technology,3630731084.75,TRUE
+BIDU,Baidu Inc. ADS,219.70,2.15,0.01,VeryLarge,China,14916434.00,Technology,3277140549.80,TRUE
+AMD,Advanced Micro Devices Inc. Common Stock,81.09,2.59,0.03,VeryLarge,United States,40141168.00,Technology,3255047313.12,TRUE
+BA,Boeing Company (The) Common Stock,252.96,-1.76,-0.01,VeryLarge,United States,10913924.00,Capital Goods,2760786215.04,TRUE
+VIAC,ViacomCBS Inc. Class B Common Stock,44.64,-0.46,-0.01,VeryLarge,United States,59438467.00,Consumer Services,2653333166.88,TRUE
+BAC,Bank of America Corporation Common Stock,39.49,0.80,0.02,VeryLarge,United States,65569928.00,Finance,2589356456.72,TRUE
+JPM,JP Morgan Chase & Co. Common Stock,153.71,1.48,0.01,VeryLarge,United States,16556048.00,Finance,2544830138.08,TRUE
+AMAT,Applied Materials Inc. Common Stock,141.52,7.92,0.06,VeryLarge,United States,15897244.00,Technology,2249777970.88,TRUE
+TSM,Taiwan Semiconductor Manufacturing Company Ltd.,124.80,6.52,0.06,VeryLarge,Taiwan,17850628.00,Technology,2227758374.40,TRUE
+NFLX,Netflix Inc. Common Stock,539.42,17.76,0.03,VeryLarge,United States,3936131.00,Consumer Services,2123227784.02,TRUE
+SQ,Square Inc. Class A Common Stock,229.51,2.46,0.01,VeryLarge,United States,9244730.00,Technology,2121757982.30,TRUE
+INTC,Intel Corporation Common Stock,64.55,0.55,0.01,VeryLarge,United States,31404571.00,Technology,2027165058.05,TRUE
+QCOM,QUALCOMM Incorporated Common Stock,137.79,5.20,0.04,VeryLarge,United States,14062129.00,Technology,1937620754.91,TRUE
+GME,GameStop Corporation Common Stock,191.45,1.63,0.01,VeryLarge,United States,9302717.00,Consumer Services,1781005169.65,FALSE
+PYPL,PayPal Holdings Inc. Common Stock,247.54,4.70,0.02,VeryLarge,United States,6985972.00,Miscellaneous,1729307508.88,TRUE
+CRM,Salesforce.com Inc Common Stock,218.72,6.85,0.03,VeryLarge,United States,7759388.00,Technology,1697133343.36,TRUE
+PDD,Pinduoduo Inc. American Depositary Shares,143.93,10.05,0.08,VeryLarge,China,11306416.00,Miscellaneous,1627332454.88,TRUE
+FUTU,Futu Holdings Limited American Depositary Shares,153.60,-5.22,-0.03,VeryLarge,Hong Kong,10451157.00,Finance,1605297715.20,TRUE
+LRCX,Lam Research Corporation Common Stock,639.30,44.06,0.07,VeryLarge,United States,2461147.00,Technology,1573411277.10,TRUE
+DIS,Walt Disney Company (The) Common Stock,188.97,4.45,0.02,VeryLarge,United States,7735647.00,Consumer Services,1461805213.59,TRUE
+MA,Mastercard Incorporated Common Stock,363.30,7.25,0.02,VeryLarge,United States,3701353.00,Miscellaneous,1344701544.90,TRUE
+SHOP,Shopify Inc. Class A Subordinate Voting Shares,1155.41,48.91,0.04,VeryLarge,Canada,1156562.00,Technology,1336303300.42,TRUE
+V,Visa Inc.,216.86,5.13,0.02,VeryLarge,United States,6135682.00,Miscellaneous,1330583998.52,TRUE
+XOM,Exxon Mobil Corporation Common Stock,57.39,1.56,0.03,VeryLarge,United States,23184295.00,Energy,1330546690.05,TRUE
+TME,Tencent Music Entertainment Group American Depositary Shares each representing two Class A Ordinary Shares,20.11,-0.38,-0.02,VeryLarge,,64362432.00,Consumer Services,1294328507.52,TRUE
+ADBE,Adobe Inc. Common Stock,483.34,7.97,0.02,VeryLarge,United States,2664011.00,Technology,1287623076.74,TRUE
+QS,QuantumScape Corporation Class A Common Stock,49.30,4.55,0.10,VeryLarge,United States,24912058.00,Miscellaneous,1228164459.40,TRUE
+PG,Procter & Gamble Company (The) Common Stock,134.28,-1.15,-0.01,VeryLarge,United States,9116588.00,Basic Industries,1224175436.64,TRUE
+ASML,ASML Holding N.V. New York Registry Shares,637.10,19.74,0.03,VeryLarge,Netherlands,1907621.00,Technology,1215345339.10,TRUE
+HD,Home Depot Inc. (The) Common Stock,307.75,2.50,0.01,VeryLarge,United States,3922875.00,Consumer Services,1207264781.25,TRUE
+PLTR,Palantir Technologies Inc. Class A Common Stock,23.07,-0.22,-0.01,VeryLarge,,51629524.00,Technology,1191093118.68,TRUE
+JNJ,Johnson & Johnson Common Stock,162.83,-1.52,-0.01,VeryLarge,United States,7226608.00,Health Care,1176708580.64,TRUE
+ROKU,Roku Inc. Class A Common Stock,331.90,6.13,0.02,VeryLarge,United States,3505763.00,Consumer Services,1163562739.70,TRUE
+WMT,Walmart Inc. Common Stock,135.62,-0.21,0.00,VeryLarge,United States,8526409.00,Consumer Services,1156351588.58,TRUE
+SE,Sea Limited American Depositary Shares each representing one Class A Ordinary Share,236.45,13.22,0.06,VeryLarge,United States,4866408.00,Consumer Services,1150662171.60,TRUE
+AVGO,Broadcom Inc. Common Stock,475.95,12.29,0.03,VeryLarge,United States,2352822.00,Technology,1119825630.90,TRUE
+C,Citigroup Inc. Common Stock,73.14,0.39,0.01,VeryLarge,United States,15248116.00,Finance,1115247204.24,TRUE
+UNH,UnitedHealth Group Incorporated Common Stock (DE),367.07,-5.00,-0.01,VeryLarge,United States,2977671.00,Health Care,1093013693.97,TRUE
+UBER,Uber Technologies Inc. Common Stock,57.60,3.09,0.06,VeryLarge,,18694023.00,Miscellaneous,1076775724.80,TRUE
+COST,Costco Wholesale Corporation Common Stock,354.94,2.46,0.01,VeryLarge,United States,2937955.00,Consumer Services,1042797747.70,TRUE
+PLUG,Plug Power Inc. Common Stock,35.26,-0.58,-0.02,VeryLarge,United States,29491811.00,Energy,1039881255.86,TRUE
+MS,Morgan Stanley Common Stock,78.22,0.56,0.01,VeryLarge,United States,13190437.00,Finance,1031755982.14,TRUE
+GM,General Motors Company Common Stock,57.80,0.34,0.01,VeryLarge,United States,17771137.00,Capital Goods,1027171718.60,TRUE
+JD,JD.com Inc. American Depositary Shares,84.31,-0.02,0.00,VeryLarge,China,11896959.00,Consumer Services,1003032613.29,TRUE
+CHTR,Charter Communications Inc. Class A Common Stock New,608.58,-8.44,-0.01,VeryLarge,United States,1648072.00,Consumer Services,1002983657.76,TRUE
+T,AT&T Inc.,30.47,0.20,0.01,VeryLarge,United States,32459527.00,Public Utilities,989041787.69,TRUE
+TWTR,Twitter Inc. Common Stock,63.83,0.20,0.00,VeryLarge,,15249073.00,Technology,973348329.59,TRUE
+MRNA,Moderna Inc. Common Stock,132.55,1.60,0.01,VeryLarge,United States,7265297.00,Health Care,963015117.35,TRUE
+ORCL,Oracle Corporation Common Stock,71.81,1.64,0.02,VeryLarge,United States,13228214.00,Technology,949918047.34,TRUE
+ZM,Zoom Video Communications Inc. Class A Common Stock,326.23,4.94,0.02,VeryLarge,United States,2852833.00,Technology,930679709.59,TRUE
+CSCO,Cisco Systems Inc. Common Stock (DE),51.98,0.27,0.01,VeryLarge,United States,17891908.00,Technology,930021377.84,TRUE
+CMCSA,Comcast Corporation Class A Common Stock,54.75,0.64,0.01,VeryLarge,United States,16664803.00,Consumer Services,912397964.25,TRUE
+CVX,Chevron Corporation Common Stock,105.75,0.96,0.01,VeryLarge,United States,8514681.00,Energy,900427515.75,TRUE
+WFC,Wells Fargo & Company Common Stock,39.63,0.56,0.01,VeryLarge,United States,22699157.00,Finance,899567591.91,TRUE
+LULU,lululemon athletica inc. Common Stock,301.07,-5.64,-0.02,VeryLarge,Canada,2984449.00,Consumer Non-Durables,898528060.43,TRUE
+PINS,Pinterest Inc. Class A Common Stock,77.73,3.70,0.05,VeryLarge,,11500684.00,Technology,893948167.32,TRUE
+CAT,Caterpillar Inc. Common Stock,232.74,0.87,0.00,VeryLarge,United States,3782580.00,Capital Goods,880357669.20,TRUE
+TXN,Texas Instruments Incorporated Common Stock,192.06,3.07,0.02,VeryLarge,United States,4581311.00,Technology,879886590.66,TRUE
+SNAP,Snap Inc. Class A Common Stock,54.49,2.20,0.04,VeryLarge,United States,16126718.00,Technology,878744863.82,TRUE
+MELI,MercadoLibre Inc. Common Stock,1510.50,38.36,0.03,VeryLarge,Argentina,581376.00,Miscellaneous,878168448.00,TRUE
+GS,Goldman Sachs Group Inc. (The) Common Stock,327.64,0.64,0.00,VeryLarge,United States,2658447.00,Finance,871013575.08,TRUE
+KO,Coca-Cola Company (The) Common Stock,52.51,-0.20,0.00,VeryLarge,United States,15831581.00,Consumer Non-Durables,831316318.31,TRUE
+PTON,Peloton Interactive Inc. Class A Common Stock,112.09,-0.35,0.00,VeryLarge,United States,6981539.00,Energy,782560706.51,TRUE
+GE,General Electric Company Common Stock,13.28,0.15,0.01,VeryLarge,United States,58724924.00,Energy,779866990.72,TRUE
+PFE,Pfizer Inc. Common Stock,36.30,0.07,0.00,VeryLarge,United States,21293895.00,Health Care,772968388.50,TRUE
+NKE,Nike Inc. Common Stock,132.53,-0.36,0.00,VeryLarge,United States,5719809.00,Consumer Non-Durables,758046286.77,TRUE
+F,Ford Motor Company Common Stock,12.17,-0.08,-0.01,VeryLarge,United States,61770560.00,Capital Goods,751747715.20,TRUE
+VZ,Verizon Communications Inc. Common Stock,58.30,0.15,0.00,VeryLarge,United States,12880078.00,Public Utilities,750908547.40,TRUE
+OXY,Occidental Petroleum Corporation Common Stock,27.38,0.76,0.03,VeryLarge,United States,27291902.00,Energy,747252276.76,TRUE
+TEAM,Atlassian Corporation Plc Class A Ordinary Shares,223.06,12.30,0.06,VeryLarge,United Kingdom,3242487.00,Technology,723269150.22,TRUE
+MDT,Medtronic plc. Ordinary Shares,118.19,0.06,0.00,VeryLarge,United States,6020865.00,Health Care,711606034.35,TRUE
+DISCA,Discovery Inc. Series A Common Stock,43.31,-0.15,0.00,VeryLarge,United States,16343571.00,Consumer Services,707840060.01,TRUE
+W,Wayfair Inc. Class A Common Stock,338.00,23.25,0.07,VeryLarge,United States,2076150.00,Consumer Services,701738700.00,TRUE
+GILD,Gilead Sciences Inc. Common Stock,66.44,1.81,0.03,VeryLarge,United States,10511932.00,Health Care,698412762.08,TRUE
+SNOW,Snowflake Inc. Class A Common Stock,236.79,7.51,0.03,VeryLarge,United States,2900690.00,Technology,686854385.10,TRUE
+PEP,PepsiCo Inc. Common Stock,141.28,-0.17,0.00,VeryLarge,United States,4822929.00,Consumer Non-Durables,681383409.12,TRUE
+MRK,Merck & Company Inc. Common Stock (new),77.09,0.00,0.00,VeryLarge,United States,8699729.00,Health Care,670662108.61,TRUE
+KLAC,KLA Corporation Common Stock,347.29,16.89,0.05,VeryLarge,United States,1885715.00,Capital Goods,654889962.35,TRUE
+DKNG,DraftKings Inc. Class A Common Stock,62.88,1.55,0.03,VeryLarge,United States,10271007.00,Consumer Services,645840920.16,TRUE
+ACN,Accenture plc Class A Ordinary Shares (Ireland),278.34,2.09,0.01,VeryLarge,Ireland,2301935.00,Miscellaneous,640720587.90,TRUE
+SBUX,Starbucks Corporation Common Stock,109.38,0.11,0.00,VeryLarge,United States,5791534.00,Consumer Services,633477988.92,TRUE
+UAL,United Airlines Holdings Inc. Common Stock,57.82,0.28,0.00,VeryLarge,United States,10911543.00,Transportation,630905416.26,TRUE
+XPEV,XPeng Inc. American depositary shares each representing two Class A ordinary shares,36.95,0.44,0.01,VeryLarge,China,16985101.00,Capital Goods,627599481.95,TRUE
+CRWD,CrowdStrike Holdings Inc. Class A Common Stock,187.03,4.52,0.02,VeryLarge,United States,3341132.00,Technology,624891917.96,TRUE
+UPS,United Parcel Service Inc. Common Stock,171.28,1.29,0.01,VeryLarge,United States,3614976.00,Transportation,619173089.28,TRUE
+AAL,American Airlines Group Inc. Common Stock,23.86,-0.04,0.00,VeryLarge,United States,25898773.00,Transportation,617944723.78,TRUE
+BILI,Bilibili Inc. American Depositary Shares,111.98,4.92,0.05,VeryLarge,China,5491396.00,Technology,614926524.08,TRUE
+BMY,Bristol-Myers Squibb Company Common Stock,62.93,-0.20,0.00,VeryLarge,United States,9725600.00,Health Care,612032008.00,TRUE
+LOW,Lowe's Companies Inc. Common Stock,191.32,1.14,0.01,VeryLarge,United States,3191815.00,Consumer Services,610658045.80,TRUE
+TWLO,Twilio Inc. Class A Common Stock,352.04,11.28,0.03,VeryLarge,United States,1734083.00,Technology,610466579.32,TRUE
+BKNG,Booking Holdings Inc. Common Stock,2382.46,52.62,0.02,VeryLarge,United States,248182.00,Consumer Services,591283687.72,TRUE
+VIPS,Vipshop Holdings Limited American Depositary Shares each representing two ordinary shares,30.14,0.28,0.01,VeryLarge,China,19332821.00,Consumer Services,582691224.94,TRUE
+ATVI,Activision Blizzard Inc. Common Stock,95.54,2.54,0.03,VeryLarge,United States,6084941.00,Technology,581355263.14,TRUE
+DE,Deere & Company Common Stock,372.12,-2.02,-0.01,VeryLarge,United States,1561945.00,Capital Goods,581230973.40,TRUE
+KMX,CarMax Inc,123.31,-9.35,-0.07,VeryLarge,United States,4634494.00,Consumer Durables,571479455.14,TRUE
+INTU,Intuit Inc. Common Stock,395.23,12.17,0.03,VeryLarge,United States,1445073.00,Technology,571136201.79,TRUE
+UNP,Union Pacific Corporation Common Stock,220.21,-0.20,0.00,VeryLarge,United States,2550808.00,Transportation,561713429.68,TRUE
+FCX,Freeport-McMoRan Inc. Common Stock,33.76,0.83,0.03,VeryLarge,United States,16419494.00,Basic Industries,554322117.44,TRUE
+NXPI,NXP Semiconductors N.V. Common Stock,208.08,6.74,0.03,VeryLarge,Netherlands,2662281.00,Technology,553967430.48,TRUE
+ABBV,AbbVie Inc. Common Stock,108.52,0.30,0.00,VeryLarge,United States,5090744.00,Health Care,552447538.88,TRUE
+MRVL,Marvell Technology Group Ltd. Common Stock,49.66,0.68,0.01,VeryLarge,Bermuda,11080466.00,Technology,550255941.56,TRUE
+MCD,McDonald's Corporation Common Stock,225.21,1.07,0.00,VeryLarge,United States,2441239.00,Consumer Services,549791435.19,TRUE
+COP,ConocoPhillips Common Stock,54.02,1.05,0.02,VeryLarge,United States,10164515.00,Energy,549087100.30,TRUE
+TGT,Target Corporation Common Stock,200.72,2.65,0.01,VeryLarge,United States,2728737.00,Consumer Services,547712090.64,TRUE
+ABNB,Airbnb Inc. Class A Common Stock,188.24,0.30,0.00,VeryLarge,United States,2906068.00,Finance,547038240.32,TRUE
+TMUS,T-Mobile US Inc. Common Stock,127.65,2.36,0.02,VeryLarge,United States,4281571.00,Public Utilities,546542538.15,TRUE
+IBM,International Business Machines Corporation Common Stock,133.23,-0.03,0.00,VeryLarge,United States,4074017.00,Technology,542781284.91,TRUE
+AMGN,Amgen Inc. Common Stock,249.17,0.36,0.00,VeryLarge,United States,2176910.00,Health Care,542420664.70,TRUE
+NOW,ServiceNow Inc. Common Stock,507.01,6.90,0.01,VeryLarge,United States,1063695.00,Technology,539304001.95,TRUE
+ADI,Analog Devices Inc. Common Stock,160.38,5.30,0.03,VeryLarge,United States,3345344.00,Technology,536526270.72,TRUE
+CCL,Carnival Corporation Common Stock,26.86,0.32,0.01,VeryLarge,United States,19598358.00,Consumer Services,526411895.88,TRUE
+ILMN,Illumina Inc. Common Stock,385.04,0.98,0.00,VeryLarge,United States,1360959.00,Capital Goods,524023653.36,TRUE
+MDB,MongoDB Inc. Class A Common Stock,290.33,22.90,0.09,VeryLarge,United States,1796379.00,Technology,521542715.07,TRUE
+SWKS,Skyworks Solutions Inc. Common Stock,187.70,4.22,0.02,VeryLarge,United States,2757765.00,Technology,517632490.50,TRUE
+CVS,CVS Health Corporation Common Stock,74.30,-0.93,-0.01,VeryLarge,United States,6958949.00,Health Care,517049910.70,TRUE
+TDOC,Teladoc Health Inc. Common Stock,182.79,1.04,0.01,VeryLarge,United States,2818374.00,Health Care,515170583.46,TRUE
+CHWY,Chewy Inc. Class A Common Stock,82.71,-2.00,-0.02,VeryLarge,,6177971.00,Consumer Services,510979981.41,TRUE
+WDC,Western Digital Corporation Common Stock,71.37,4.62,0.07,VeryLarge,United States,7119506.00,Technology,508119143.22,TRUE
+FISV,Fiserv Inc. Common Stock,122.17,3.13,0.03,VeryLarge,United States,4114399.00,Technology,502656125.83,TRUE
+EXPE,Expedia Group Inc. Common Stock,175.93,3.81,0.02,VeryLarge,United States,2839615.00,Consumer Services,499573466.95,TRUE
+EQIX,Equinix Inc. Common Stock REIT,678.00,-1.59,0.00,VeryLarge,United States,735349.00,Consumer Services,498566622.00,TRUE
+NEE,NextEra Energy Inc. Common Stock,75.77,0.16,0.00,VeryLarge,United States,6547954.00,Public Utilities,496138474.58,FALSE
+FTCH,Farfetch Limited Class A Ordinary Shares,52.90,-0.12,0.00,VeryLarge,,9253924.00,Miscellaneous,489532579.60,TRUE
+ABT,Abbott Laboratories Common Stock,118.94,-0.90,-0.01,VeryLarge,United States,4015041.00,Health Care,477548976.54,TRUE
+RTX,Raytheon Technologies Corporation Common Stock,77.28,0.01,0.00,VeryLarge,United States,6166211.00,Capital Goods,476524786.08,TRUE
+WBA,Walgreens Boots Alliance Inc. Common Stock,54.75,-0.15,0.00,VeryLarge,United States,8646728.00,Health Care,473408358.00,TRUE
+LMT,Lockheed Martin Corporation Common Stock,371.02,1.52,0.00,VeryLarge,United States,1261577.00,Capital Goods,468070298.54,TRUE
+DAL,Delta Air Lines Inc. Common Stock,48.83,0.55,0.01,VeryLarge,United States,9564348.00,Transportation,467027112.84,TRUE
+DOCU,DocuSign Inc. Common Stock,206.29,3.84,0.02,VeryLarge,United States,2251565.00,Technology,464475343.85,TRUE
+HON,Honeywell International Inc. Common Stock,216.80,-0.27,0.00,VeryLarge,United States,2109627.00,Capital Goods,457367133.60,TRUE
+TMO,Thermo Fisher Scientific Inc Common Stock,456.30,-0.08,0.00,VeryLarge,United States,993233.00,Capital Goods,453212217.90,TRUE
+SPGI,S&P Global Inc. Common Stock,362.65,9.78,0.03,VeryLarge,United States,1242845.00,Finance,450717739.25,TRUE
+SIVB,SVB Financial Group Common Stock,483.33,-10.33,-0.02,VeryLarge,United States,926784.00,Finance,447942510.72,TRUE
+LIN,Linde plc Ordinary Share,280.84,0.70,0.00,VeryLarge,,1594893.00,Basic Industries,447909750.12,TRUE
+MDLZ,Mondelez International Inc. Class A Common Stock,58.44,-0.09,0.00,VeryLarge,United States,7649894.00,Consumer Non-Durables,447059805.36,TRUE
+ANTM,Anthem Inc. Common Stock,353.76,-5.19,-0.01,VeryLarge,United States,1262473.00,Health Care,446612448.48,TRUE
+KMB,Kimberly-Clark Corporation Common Stock,136.98,-2.07,-0.01,VeryLarge,United States,3235274.00,Consumer Durables,443167832.52,TRUE
+EOG,EOG Resources Inc. Common Stock,75.34,2.81,0.04,VeryLarge,United States,5863576.00,Energy,441761815.84,TRUE
+ENPH,Enphase Energy Inc. Common Stock,162.69,0.53,0.00,VeryLarge,United States,2715241.00,Technology,441742558.29,TRUE
+VRTX,Vertex Pharmaceuticals Incorporated Common Stock,213.04,-1.85,-0.01,VeryLarge,United States,2071316.00,Health Care,441273160.64,TRUE
+U,Unity Software Inc. Common Stock,101.08,0.77,0.01,VeryLarge,United States,4358304.00,Technology,440537368.32,TRUE
+GIS,General Mills Inc. Common Stock,60.92,-0.40,-0.01,VeryLarge,United States,7171164.00,Consumer Non-Durables,436867310.88,TRUE
+DDOG,Datadog Inc. Class A Common Stock,87.20,3.86,0.05,VeryLarge,United States,4980895.00,Technology,434334044.00,TRUE
+LLY,Eli Lilly and Company Common Stock,185.24,-1.58,-0.01,VeryLarge,United States,2338256.00,Health Care,433138541.44,TRUE
+KR,Kroger Company (The) Common Stock,35.95,-0.04,0.00,VeryLarge,United States,11932293.00,Consumer Services,428965933.35,TRUE
+ADSK,Autodesk Inc. Common Stock,283.90,6.75,0.02,VeryLarge,United States,1509438.00,Technology,428529448.20,TRUE
+DG,Dollar General Corporation Common Stock,202.40,-0.22,0.00,VeryLarge,United States,2105002.00,Consumer Services,426052404.80,TRUE
+MO,Altria Group Inc.,51.00,-0.16,0.00,VeryLarge,United States,8269853.00,Consumer Non-Durables,421762503.00,TRUE
+BLK,BlackRock Inc. Common Stock,766.83,12.87,0.02,VeryLarge,United States,549192.00,Finance,421136901.36,TRUE
+OKTA,Okta Inc. Class A Common Stock,229.70,9.27,0.04,VeryLarge,United States,1807558.00,Technology,415196072.60,TRUE
+AMT,American Tower Corporation (REIT) Common Stock,240.06,1.00,0.00,VeryLarge,United States,1726866.00,Consumer Services,414551451.96,TRUE
+PM,Philip Morris International Inc Common Stock,88.06,-0.68,-0.01,VeryLarge,United States,4647061.00,Consumer Non-Durables,409220191.66,TRUE
+FDX,FedEx Corporation Common Stock,283.54,-0.50,0.00,VeryLarge,United States,1442639.00,Transportation,409045862.06,TRUE
+FIS,Fidelity National Information Services Inc. Common Stock,144.05,3.44,0.02,VeryLarge,United States,2824106.00,Miscellaneous,406812469.30,TRUE
+IQ,iQIYI Inc. American Depositary Shares,16.64,0.02,0.00,VeryLarge,China,24205088.00,Consumer Services,402772664.32,TRUE
+NEM,Newmont Corporation,61.81,1.54,0.03,VeryLarge,United States,6513098.00,Basic Industries,402574587.38,TRUE
+DHR,Danaher Corporation Common Stock,225.08,0.00,0.00,VeryLarge,United States,1744413.00,Capital Goods,392632478.04,TRUE
+COUP,Coupa Software Incorporated Common Stock,262.28,7.80,0.03,VeryLarge,United States,1486316.00,Technology,389830960.48,TRUE
+SCHW,Charles Schwab Corporation (The) Common Stock,66.44,1.26,0.02,VeryLarge,United States,5796874.00,Finance,385144308.56,TRUE
+STNE,StoneCo Ltd. Class A Common Shares,64.22,3.00,0.05,VeryLarge,Brazil,5983024.00,Technology,384229801.28,TRUE
+TAL,TAL Education Group American Depositary Shares,56.31,2.46,0.05,VeryLarge,China,6818747.00,Consumer Services,383963643.57,TRUE
+QRVO,Qorvo Inc. Common Stock,192.90,10.20,0.06,VeryLarge,United States,1989407.00,Technology,383756610.30,TRUE
+CL,Colgate-Palmolive Company Common Stock,78.55,-0.28,0.00,VeryLarge,United States,4881319.00,Consumer Non-Durables,383427607.45,TRUE
+FANG,Diamondback Energy Inc. Commmon Stock,81.22,7.73,0.11,VeryLarge,United States,4709031.00,Energy,382467497.82,TRUE
+AXP,American Express Company Common Stock,144.57,3.13,0.02,VeryLarge,United States,2629168.00,Finance,380098817.76,TRUE
+HUBS,HubSpot Inc. Common Stock,485.85,31.64,0.07,VeryLarge,United States,768268.00,Technology,373263007.80,TRUE
+TTD,The Trade Desk Inc. Class A Common Stock,658.84,7.18,0.01,VeryLarge,United States,563635.00,Technology,371345283.40,TRUE
+WDAY,Workday Inc. Class A Common Stock,254.97,6.54,0.03,VeryLarge,United States,1450990.00,Technology,369958920.30,TRUE
+ETSY,Etsy Inc. Common Stock,208.20,6.53,0.03,VeryLarge,United States,1774108.00,Miscellaneous,369369285.60,TRUE
+ZS,Zscaler Inc. Common Stock,175.77,4.10,0.02,VeryLarge,United States,2097310.00,Technology,368644178.70,TRUE
+SHW,Sherwin-Williams Company (The) Common Stock,249.75,3.75,0.02,VeryLarge,United States,1472748.00,Consumer Services,367818813.00,FALSE
+NVAX,Novavax Inc. Common Stock,185.82,4.51,0.02,VeryLarge,United States,1977428.00,Health Care,367445670.96,FALSE
+MMM,3M Company Common Stock,192.70,0.02,0.00,VeryLarge,United States,1902074.00,Health Care,366529659.80,TRUE
+PXD,Pioneer Natural Resources Company Common Stock,164.60,5.78,0.04,VeryLarge,United States,2201288.00,Energy,362332004.80,TRUE
+REGN,Regeneron Pharmaceuticals Inc. Common Stock,474.93,1.79,0.00,VeryLarge,United States,761741.00,Health Care,361773653.13,TRUE
+BP,BP p.l.c. Common Stock,24.58,0.23,0.01,VeryLarge,United Kingdom,14536424.00,Energy,357305301.92,TRUE
+VALE,VALE S.A.  American Depositary Shares Each Representing one common share,17.12,-0.26,-0.02,VeryLarge,Brazil,20767993.00,Basic Industries,355548040.16,TRUE
+Z,Zillow Group Inc. Class C Capital Stock,133.41,3.77,0.03,VeryLarge,United States,2659563.00,Miscellaneous,354812299.83,TRUE
+XLNX,Xilinx Inc. Common Stock,129.85,5.95,0.05,VeryLarge,United States,2706684.00,Technology,351462917.40,TRUE
+MGM,MGM Resorts International Common Stock,39.70,1.71,0.05,VeryLarge,United States,8830915.00,Consumer Services,350587325.50,TRUE
+USB,U.S. Bancorp Common Stock,55.83,0.52,0.01,VeryLarge,United States,6219428.00,Finance,347230665.24,TRUE
+AON,Aon plc Class A Ordinary Shares (Ireland),231.80,1.69,0.01,VeryLarge,United States,1480163.00,Finance,343101783.40,TRUE
+PENN,Penn National Gaming Inc. Common Stock,107.52,2.68,0.03,VeryLarge,United States,3174770.00,Consumer Services,341351270.40,TRUE
+ISRG,Intuitive Surgical Inc. Common Stock,747.60,8.66,0.01,VeryLarge,United States,452555.00,Health Care,338330118.00,TRUE
+COF,Capital One Financial Corporation Common Stock,129.78,2.55,0.02,VeryLarge,United States,2588978.00,Finance,335997564.84,TRUE
+NUE,Nucor Corporation Common Stock,79.88,-0.39,0.00,VeryLarge,United States,4179974.00,Basic Industries,333896323.12,TRUE
+ALGN,Align Technology Inc. Common Stock,545.05,3.52,0.01,VeryLarge,United States,609989.00,Health Care,332474504.45,TRUE
+MTCH,Match Group Inc. Common Stock,142.66,5.28,0.04,VeryLarge,United States,2329831.00,Technology,332373690.46,TRUE
+LYFT,Lyft Inc. Class A Common Stock,64.64,1.46,0.02,VeryLarge,United States,5140736.00,Miscellaneous,332297175.04,TRUE
+TJX,TJX Companies Inc. (The) Common Stock,65.98,-0.17,0.00,VeryLarge,United States,5031973.00,Consumer Services,332009578.54,TRUE
+DVN,Devon Energy Corporation Common Stock,23.50,1.65,0.08,VeryLarge,United States,14126876.00,Energy,331981586.00,TRUE
+ETN,Eaton Corporation PLC Ordinary Shares,139.49,1.21,0.01,VeryLarge,Ireland,2379380.00,Technology,331899716.20,TRUE
+MCHP,Microchip Technology Incorporated Common Stock,160.17,4.95,0.03,VeryLarge,United States,2069072.00,Technology,331403262.24,TRUE
+SPG,Simon Property Group Inc. Common Stock,115.20,1.43,0.01,VeryLarge,United States,2857146.00,Consumer Services,329143219.20,TRUE
+EBAY,eBay Inc. Common Stock,63.11,1.87,0.03,VeryLarge,United States,5209905.00,Miscellaneous,328797104.55,TRUE
+PANW,Palo Alto Networks Inc. Common Stock,328.05,5.99,0.02,VeryLarge,United States,995478.00,Technology,326566557.90,TRUE
+SPOT,Spotify Technology S.A. Ordinary Shares,273.10,5.15,0.02,VeryLarge,Luxembourg,1183769.00,Consumer Services,323287313.90,TRUE
+CMI,Cummins Inc. Common Stock,257.72,-1.39,-0.01,VeryLarge,United States,1248011.00,Energy,321637394.92,TRUE
+HUM,Humana Inc. Common Stock,412.82,-6.43,-0.02,VeryLarge,United States,776437.00,Health Care,320528722.34,TRUE
+ALXN,Alexion Pharmaceuticals Inc. Common Stock,153.21,0.30,0.00,VeryLarge,United States,2074255.00,Health Care,317796608.55,TRUE
+RUN,Sunrun Inc. Common Stock,59.13,-1.35,-0.02,VeryLarge,United States,5372255.00,Capital Goods,317661438.15,TRUE
+PLD,Prologis Inc. Common Stock,108.50,2.50,0.02,VeryLarge,United States,2922374.00,Consumer Services,317077579.00,TRUE
+CB,Chubb Limited  Common Stock,158.99,1.02,0.01,VeryLarge,Switzerland,1993575.00,Finance,316958489.25,TRUE
+KSU,Kansas City Southern Common Stock,266.98,3.06,0.01,VeryLarge,United States,1185154.00,Transportation,316412414.92,TRUE
+CI,Cigna Corporation Common Stock,241.83,0.09,0.00,VeryLarge,United States,1298647.00,Health Care,314051804.01,TRUE
+MAR,Marriott International Class A Common Stock,148.27,0.16,0.00,VeryLarge,United States,2082435.00,Consumer Services,308762637.45,TRUE
+MPC,Marathon Petroleum Corporation Common Stock,55.80,2.31,0.04,VeryLarge,United States,5487709.00,Energy,306214162.20,TRUE
+LUV,Southwest Airlines Company Common Stock,61.30,0.24,0.00,VeryLarge,United States,4974658.00,Transportation,304946535.40,TRUE
+PH,Parker-Hannifin Corporation Common Stock,316.21,0.78,0.00,VeryLarge,United States,963441.00,Capital Goods,304649678.61,TRUE
+EMR,Emerson Electric Company Common Stock,90.41,0.19,0.00,VeryLarge,United States,3358521.00,Energy,303643883.61,TRUE
+AZN,AstraZeneca PLC American Depositary Shares,49.53,-0.19,0.00,VeryLarge,United Kingdom,5958492.00,Health Care,295124108.76,TRUE
+BPY,Brookfield Property Partners L.P. Limited Partnership Units,17.74,-0.05,0.00,VeryLarge,Bermuda,16628651.00,Finance,294992268.74,TRUE
+SLB,Schlumberger N.V. Common Stock,28.10,0.91,0.03,VeryLarge,France,10461297.00,Energy,293962445.70,TRUE
+DASH,DoorDash Inc. Class A Common Stock,133.14,2.01,0.02,VeryLarge,,2190526.00,Miscellaneous,291646631.64,TRUE
+CMG,Chipotle Mexican Grill Inc. Common Stock,1438.46,17.64,0.01,VeryLarge,United States,201968.00,Consumer Services,290522889.28,TRUE
+RNG,RingCentral Inc. Class A Common Stock,305.01,7.13,0.02,VeryLarge,,944616.00,Technology,288117326.16,TRUE
+BBY,Best Buy Co. Inc. Common Stock,115.76,0.95,0.01,VeryLarge,United States,2486399.00,Consumer Services,287825548.24,TRUE
+ON,ON Semiconductor Corporation Common Stock,42.89,1.28,0.03,VeryLarge,United States,6698060.00,Technology,287279793.40,TRUE
+VLO,Valero Energy Corporation Common Stock,75.30,3.70,0.05,VeryLarge,United States,3792604.00,Energy,285583081.20,TRUE
+CP,Canadian Pacific Railway Limited Common Stock,385.26,5.97,0.02,VeryLarge,Canada,741003.00,Transportation,285478815.78,TRUE
+WYNN,Wynn Resorts Limited Common stock,128.10,2.73,0.02,VeryLarge,United States,2212524.00,Consumer Services,283424324.40,TRUE
+EL,Estee Lauder Companies Inc. (The) Common Stock,292.33,1.48,0.01,VeryLarge,United States,965364.00,Consumer Non-Durables,282204858.12,TRUE
+GSK,GlaxoSmithKline PLC Common Stock,35.82,0.13,0.00,VeryLarge,United Kingdom,7871508.00,Health Care,281957416.56,TRUE
+ZEN,Zendesk Inc. Common Stock,139.80,7.18,0.05,VeryLarge,,2014248.00,Technology,281591870.40,TRUE
+NCLH,Norwegian Cruise Line Holdings Ltd. Ordinary Shares,27.72,0.13,0.00,VeryLarge,United States,10152123.00,Consumer Services,281416849.56,TRUE
+TER,Teradyne Inc. Common Stock,128.81,7.13,0.06,VeryLarge,United States,2179625.00,Capital Goods,280757496.25,TRUE
+CSGP,CoStar Group Inc. Common Stock,861.38,39.49,0.05,VeryLarge,United States,323509.00,Miscellaneous,278664182.42,TRUE
+BIIB,Biogen Inc. Common Stock,278.71,-1.04,0.00,VeryLarge,United States,996325.00,Health Care,277685740.75,TRUE
+DUK,Duke Energy Corporation (Holding Company) Common Stock,96.28,-0.25,0.00,VeryLarge,United States,2876052.00,Public Utilities,276906286.56,TRUE
+STZ,Constellation Brands Inc. Common Stock,229.62,1.62,0.01,VeryLarge,United States,1201075.00,Consumer Non-Durables,275790841.50,TRUE
+NOC,Northrop Grumman Corporation Common Stock,322.24,-1.40,0.00,VeryLarge,United States,855302.00,Capital Goods,275612516.48,TRUE
+TFC,Truist Financial Corporation Common Stock,59.05,0.73,0.01,VeryLarge,United States,4654414.00,Finance,274843146.70,TRUE
+RBLX,Roblox Corporation Class A Common Stock,67.34,2.51,0.04,VeryLarge,,4056197.00,Technology,273144305.98,TRUE
+UPST,Upstart Holdings Inc. Common stock,144.28,15.42,0.12,VeryLarge,United States,1869232.00,Finance,269692792.96,TRUE
+CDNS,Cadence Design Systems Inc. Common Stock,141.49,4.50,0.03,VeryLarge,United States,1887770.00,Technology,267100577.30,TRUE
+APTV,Aptiv PLC Ordinary Shares,140.74,2.84,0.02,VeryLarge,United Kingdom,1894705.00,Capital Goods,266660781.70,TRUE
+PNC,PNC Financial Services Group Inc. (The) Common Stock,177.41,2.00,0.01,VeryLarge,United States,1501824.00,Finance,266438595.84,TRUE
+ALL,Allstate Corporation (The) Common Stock,116.03,1.13,0.01,VeryLarge,United States,2292992.00,Finance,266055861.76,TRUE
+GOLD,Barrick Gold Corporation Common Stock (BC),20.37,0.57,0.03,VeryLarge,Canada,13026195.00,Basic Industries,265343592.15,TRUE
+LB,L Brands Inc.,61.80,-0.06,0.00,VeryLarge,United States,4289382.00,Consumer Services,265083807.60,TRUE
+APD,Air Products and Chemicals Inc. Common Stock,284.90,3.56,0.01,VeryLarge,United States,927722.00,Basic Industries,264307997.80,TRUE
+HCA,HCA Healthcare Inc. Common Stock,186.15,-2.19,-0.01,VeryLarge,United States,1402706.00,Health Care,261113721.90,TRUE
+CSX,CSX Corporation Common Stock,97.26,0.84,0.01,VeryLarge,United States,2679523.00,Transportation,260610406.98,TRUE
+CFG,Citizens Financial Group Inc. Common Stock,44.94,0.79,0.02,VeryLarge,United States,5785844.00,Finance,260015829.36,TRUE
+PBR,Petroleo Brasileiro S.A.- Petrobras Common Stock,8.27,-0.21,-0.02,VeryLarge,Brazil,31388624.00,Energy,259583920.48,TRUE
+SEDG,SolarEdge Technologies Inc. Common Stock,283.39,-4.05,-0.01,VeryLarge,Israel,912838.00,Technology,258689160.82,TRUE
+CME,CME Group Inc. Class A Common Stock,206.09,1.86,0.01,VeryLarge,United States,1242977.00,Finance,256165129.93,TRUE
+URI,United Rentals Inc. Common Stock,331.71,2.40,0.01,VeryLarge,United States,771621.00,Technology,255954401.91,TRUE
+SPLK,Splunk Inc. Common Stock,138.27,2.79,0.02,VeryLarge,United States,1842331.00,Technology,254739107.37,TRUE
+LBRDK,Liberty Broadband Corporation Class C Common Stock,149.14,-1.01,-0.01,VeryLarge,United States,1707396.00,Consumer Services,254641039.44,TRUE
+SNPS,Synopsys Inc. Common Stock,254.23,6.45,0.03,VeryLarge,United States,1000663.00,Technology,254398554.49,TRUE
+PPG,PPG Industries Inc. Common Stock,151.96,1.70,0.01,VeryLarge,United States,1670036.00,Basic Industries,253778670.56,TRUE
+TRV,The Travelers Companies Inc. Common Stock,150.62,0.22,0.00,VeryLarge,United States,1679934.00,Finance,253031659.08,TRUE
+HPQ,HP Inc. Common Stock,32.05,0.30,0.01,VeryLarge,United States,7866903.00,Technology,252134241.15,TRUE
+ADP,Automatic Data Processing Inc. Common Stock,189.40,0.93,0.00,VeryLarge,United States,1326853.00,Technology,251305958.20,TRUE
+MLM,Martin Marietta Materials Inc. Common Stock,333.88,-1.94,-0.01,VeryLarge,United States,751259.00,Basic Industries,250830354.92,TRUE
+STX,Seagate Technology PLC Ordinary Shares (Ireland),78.49,1.74,0.02,VeryLarge,Ireland,3178657.00,Technology,249492787.93,TRUE
+NSC,Norfolk Southern Corporation Common Stock,271.18,2.66,0.01,VeryLarge,United States,914773.00,Transportation,248068142.14,TRUE
+CZR,Caesars Entertainment Inc. Common Stock,88.94,1.49,0.02,VeryLarge,United States,2785407.00,Consumer Services,247734098.58,FALSE
+CLX,Clorox Company (The) Common Stock,192.83,-0.05,0.00,VeryLarge,United States,1282168.00,Consumer Durables,247240455.44,TRUE
+BEKE,KE Holdings Inc American Depositary Shares (each representing three Class A Ordinary Shares),60.88,3.90,0.07,VeryLarge,China,4025107.00,Finance,245048514.16,TRUE
+DRI,Darden Restaurants Inc. Common Stock,144.28,2.28,0.02,VeryLarge,United States,1695488.00,Consumer Services,244625008.64,TRUE
+VEEV,Veeva Systems Inc. Class A Common Stock,267.77,6.53,0.03,VeryLarge,,908651.00,Technology,243309478.27,TRUE
+LVS,Las Vegas Sands Corp. Common Stock,61.85,1.09,0.02,VeryLarge,United States,3917747.00,Consumer Services,242312651.95,TRUE
+SYF,Synchrony Financial Common Stock,41.66,1.00,0.02,VeryLarge,United States,5774184.00,Finance,240552505.44,TRUE
+CNC,Centene Corporation Common Stock,63.25,-0.66,-0.01,VeryLarge,United States,3794238.00,Health Care,239985553.50,TRUE
+TRMB,Trimble Inc. Common Stock,80.74,2.95,0.04,VeryLarge,United States,2965380.00,Capital Goods,239409954.30,TRUE
+DOW,Dow Inc. Common Stock ,64.60,0.66,0.01,VeryLarge,,3698223.00,Basic Industries,238905205.80,TRUE
+GPN,Global Payments Inc. Common Stock,207.97,6.39,0.03,VeryLarge,United States,1144800.00,Miscellaneous,238084056.00,TRUE
+EA,Electronic Arts Inc. Common Stock,137.96,2.59,0.02,VeryLarge,United States,1724932.00,Technology,237971618.72,TRUE
+PGR,Progressive Corporation (The) Common Stock,95.55,-0.06,0.00,VeryLarge,United States,2487909.00,Finance,237719704.95,TRUE
+INFO,IHS Markit Ltd. Common Shares,99.50,2.72,0.03,VeryLarge,Bermuda,2377243.00,Technology,236535678.50,TRUE
+DISCK,Discovery Inc. Series C Common Stock,37.08,0.19,0.01,VeryLarge,United States,6326023.00,Consumer Services,234568932.84,TRUE
+AZO,AutoZone Inc. Common Stock,1418.84,14.54,0.01,VeryLarge,United States,164707.00,Consumer Services,233692879.88,TRUE
+FITB,Fifth Third Bancorp Common Stock,37.98,0.53,0.01,VeryLarge,United States,6138494.00,Finance,233140002.12,TRUE
+SWK,Stanley Black & Decker Inc. Common Stock,200.66,0.99,0.01,VeryLarge,United States,1160846.00,Capital Goods,232935358.36,TRUE
+CPNG,Coupang Inc. Class A Common Stock,47.31,-2.04,-0.04,VeryLarge,,4923358.00,Consumer Services,232924066.98,TRUE
+GNRC,Generac Holdlings Inc. Common Stock,323.80,-3.65,-0.01,VeryLarge,United States,717592.00,Consumer Durables,232356289.60,TRUE
+CVNA,Carvana Co. Class A Common Stock,265.32,2.92,0.01,VeryLarge,United States,874170.00,Consumer Durables,231934784.40,TRUE
+MXIM,Maxim Integrated Products Inc. Common Stock,95.45,4.08,0.04,VeryLarge,United States,2426407.00,Technology,231600548.15,TRUE
+BDX,Becton Dickinson and Company Common Stock,241.58,-1.57,-0.01,VeryLarge,United States,958128.00,Health Care,231464562.24,TRUE
+K,Kellogg Company Common Stock,63.34,0.04,0.00,VeryLarge,United States,3652905.00,Consumer Non-Durables,231375002.70,TRUE
+WSM,Williams-Sonoma Inc. Common Stock (DE),182.08,2.88,0.02,VeryLarge,United States,1267065.00,Consumer Services,230707195.20,TRUE
+BILL,Bill.com Holdings Inc. Common Stock,149.87,4.37,0.03,VeryLarge,,1537672.00,Technology,230450902.64,TRUE
+BNTX,BioNTech SE American Depositary Share,113.87,4.68,0.04,VeryLarge,Germany,2017906.00,Health Care,229778956.22,FALSE
+RH,RH Common Stock,595.63,-0.97,0.00,VeryLarge,United States,385004.00,Consumer Services,229319932.52,TRUE
+ANSS,ANSYS Inc. Common Stock,351.85,12.29,0.04,VeryLarge,United States,649780.00,Technology,228625093.00,TRUE
+PSX,Phillips 66 Common Stock,83.16,1.62,0.02,VeryLarge,United States,2732494.00,Energy,227234201.04,TRUE
+ALLY,Ally Financial Inc. Common Stock,46.73,1.52,0.03,VeryLarge,United States,4817115.00,Finance,225103783.95,TRUE
+MMC,Marsh & McLennan Companies Inc. Common Stock,123.15,1.35,0.01,VeryLarge,United States,1827192.00,Finance,225018694.80,TRUE
+SBAC,SBA Communications Corporation Class A Common Stock,281.18,3.63,0.01,VeryLarge,United States,798913.00,Consumer Services,224638357.34,TRUE
+KMI,Kinder Morgan Inc. Common Stock,16.84,0.19,0.01,VeryLarge,United States,13315997.00,Public Utilities,224241389.48,TRUE
+ICE,Intercontinental Exchange Inc. Common Stock,114.20,2.52,0.02,VeryLarge,United States,1955960.00,Finance,223370632.00,TRUE
+VMC,Vulcan Materials Company (Holding Company) Common Stock,166.39,-2.36,-0.01,VeryLarge,United States,1337564.00,Basic Industries,222557273.96,TRUE
+DHI,D.R. Horton Inc. Common Stock,91.05,1.93,0.02,VeryLarge,United States,2443069.00,Capital Goods,222441432.45,TRUE
+LW,Lamb Weston Holdings Inc. Common Stock ,78.08,0.60,0.01,VeryLarge,,2842690.00,Consumer Non-Durables,221957235.20,TRUE
+AVLR,Avalara Inc. Common Stock,139.71,6.28,0.05,VeryLarge,United States,1584085.00,Technology,221312515.35,TRUE
+ULTA,Ulta Beauty Inc. Common Stock,313.62,4.45,0.01,VeryLarge,United States,703981.00,Consumer Services,220782521.22,TRUE
+PAYX,Paychex Inc. Common Stock,98.76,0.74,0.01,VeryLarge,United States,2234750.00,Consumer Services,220703910.00,TRUE
+RKT,Rocket Companies Inc. Class A Common Stock,22.55,-0.54,-0.02,VeryLarge,United States,9779687.00,Finance,220531941.85,TRUE
+ZTS,Zoetis Inc. Class A Common Stock,157.89,0.41,0.00,VeryLarge,United States,1386393.00,Health Care,218897590.77,TRUE
+KDP,Keurig Dr Pepper Inc. Common Stock,34.50,0.13,0.00,VeryLarge,United States,6344524.00,Consumer Non-Durables,218886078.00,TRUE
+BAM,Brookfield Asset Management Inc. Common Stock,44.75,0.25,0.01,VeryLarge,Canada,4891271.00,Consumer Services,218884377.25,TRUE
+STT,State Street Corporation Common Stock,84.95,0.94,0.01,VeryLarge,United States,2567453.00,Finance,218105132.35,TRUE
+TTWO,Take-Two Interactive Software Inc. Common Stock,180.15,3.45,0.02,VeryLarge,United States,1209846.00,Technology,217953756.90,TRUE
+BSX,Boston Scientific Corporation Common Stock,38.58,-0.07,0.00,VeryLarge,United States,5615320.00,Health Care,216639045.60,TRUE
+HIG,Hartford Financial Services Group Inc. (The) Common Stock,68.28,1.49,0.02,VeryLarge,United States,3143512.00,Finance,214638999.36,TRUE
+IDXX,IDEXX Laboratories Inc. Common Stock,486.36,-2.95,-0.01,VeryLarge,United States,440002.00,Health Care,213999372.72,TRUE
+MET,MetLife Inc. Common Stock,61.60,0.81,0.01,VeryLarge,United States,3470625.00,Finance,213790500.00,TRUE
+PSA,Public Storage Common Stock,251.94,5.18,0.02,VeryLarge,United States,844326.00,Consumer Services,212719492.44,TRUE
+DPZ,Domino's Pizza Inc Common Stock,373.38,5.59,0.02,VeryLarge,United States,567617.00,Consumer Non-Durables,211936835.46,TRUE
+SO,Southern Company (The) Common Stock,62.33,0.17,0.00,VeryLarge,United States,3396349.00,Public Utilities,211694433.17,TRUE
+ITW,Illinois Tool Works Inc. Common Stock,221.38,-0.14,0.00,VeryLarge,United States,953029.00,Technology,210981560.02,TRUE
+RCL,D/B/A Royal Caribbean Cruises Ltd. Common Stock,86.67,1.06,0.01,VeryLarge,United States,2394976.00,Consumer Services,207572569.92,TRUE
+ROK,Rockwell Automation Inc. Common Stock,263.44,-2.00,-0.01,VeryLarge,United States,784491.00,Capital Goods,206666309.04,TRUE
+HLT,Hilton Worldwide Holdings Inc. Common Stock ,121.65,0.73,0.01,VeryLarge,,1696932.00,Consumer Services,206431777.80,TRUE
+MCO,Moody's Corporation Common Stock,306.31,7.70,0.03,VeryLarge,United States,673209.00,Finance,206210648.79,TRUE
+BKR,Baker Hughes Company Class A Common Stock,21.73,0.12,0.01,VeryLarge,,9452281.00,Energy,205398066.13,TRUE
+BLL,Ball Corporation Common Stock,86.27,1.53,0.02,VeryLarge,United States,2379100.00,Consumer Durables,205244957.00,TRUE
+EXAS,Exact Sciences Corporation Common Stock,132.58,0.80,0.01,VeryLarge,United States,1547580.00,Health Care,205178156.40,TRUE
+EW,Edwards Lifesciences Corporation Common Stock,83.84,0.20,0.00,VeryLarge,United States,2424066.00,Health Care,203233693.44,FALSE
+LHX,L3Harris Technologies Inc. Common Stock,203.62,0.94,0.00,VeryLarge,United States,996439.00,Capital Goods,202894909.18,TRUE
+DXCM,DexCom Inc. Common Stock,365.50,6.11,0.02,VeryLarge,United States,553663.00,Health Care,202363826.50,TRUE
+CARR,Carrier Global Corporation Common Stock ,42.02,-0.20,0.00,VeryLarge,,4759892.00,Capital Goods,200010661.84,TRUE
+D,Dominion Energy Inc. Common Stock,75.72,-0.24,0.00,VeryLarge,United States,2630683.00,Public Utilities,199195316.76,TRUE
+ATUS,Altice USA Inc. Class A Common Stock,32.08,-0.45,-0.01,VeryLarge,United States,6206861.00,Consumer Services,199116100.88,TRUE
+IQV,IQVIA Holdings Inc. Common Stock,198.06,4.92,0.03,VeryLarge,United States,1003018.00,Health Care,198657745.08,TRUE
+TDY,Teledyne Technologies Incorporated Common Stock,417.43,3.78,0.01,VeryLarge,United States,472037.00,Capital Goods,197042404.91,TRUE
+BAX,Baxter International Inc. Common Stock,84.32,-0.02,0.00,VeryLarge,United States,2298628.00,Health Care,193820312.96,TRUE
+ZTO,ZTO Express (Cayman) Inc. American Depositary Shares each representing one Class A ordinary share.,30.10,0.95,0.03,VeryLarge,China,6432253.00,Transportation,193610815.30,TRUE
+GPS,Gap Inc. (The) Common Stock,29.95,0.17,0.01,VeryLarge,United States,6432757.00,Consumer Services,192661072.15,TRUE
+BK,The Bank of New York Mellon Corporation Common Stock,47.47,0.18,0.00,VeryLarge,United States,4046085.00,Finance,192067654.95,TRUE
+SYK,Stryker Corporation Common Stock,242.95,-0.63,0.00,VeryLarge,United States,789970.00,Health Care,191923211.50,TRUE
+CTSH,Cognizant Technology Solutions Corporation Class A Common Stock,78.88,0.76,0.01,VeryLarge,United States,2430391.00,Technology,191709242.08,TRUE
+WORK,Slack Technologies Inc. Class A Common Stock,41.25,0.62,0.02,VeryLarge,,4642036.00,Technology,191483985.00,TRUE
+HPE,Hewlett Packard Enterprise Company Common Stock,15.70,-0.04,0.00,VeryLarge,United States,12194156.00,Technology,191448249.20,TRUE
+DLR,Digital Realty Trust Inc. Common Stock,143.25,2.41,0.02,VeryLarge,United States,1334087.00,Consumer Services,191107962.75,TRUE
+EIX,Edison International Common Stock,58.29,-0.31,-0.01,VeryLarge,United States,3226003.00,Public Utilities,188043714.87,TRUE
+MPWR,Monolithic Power Systems Inc. Common Stock,367.52,14.31,0.04,VeryLarge,United States,507571.00,Technology,186542493.92,TRUE
+SYY,Sysco Corporation Common Stock,77.99,-0.75,-0.01,VeryLarge,United States,2391594.00,Consumer Non-Durables,186520416.06,TRUE
+AEP,American Electric Power Company Inc. Common Stock,85.54,0.84,0.01,VeryLarge,United States,2179923.00,Public Utilities,186470613.42,TRUE
+BNS,Bank Nova Scotia Halifax Pfd 3 Ordinary Shares,62.95,0.40,0.01,VeryLarge,Canada,2959344.00,Finance,186290704.80,TRUE
+LUMN,Lumen Technologies Inc. Common Stock,13.11,-0.24,-0.02,VeryLarge,United States,14166441.00,Public Utilities,185722041.51,TRUE
+ENTG,Entegris Inc. Common Stock,120.09,8.29,0.07,VeryLarge,United States,1544618.00,Consumer Non-Durables,185493175.62,TRUE
+KEY,KeyCorp Common Stock,20.27,0.29,0.01,VeryLarge,United States,9114016.00,Finance,184741104.32,TRUE
+ITUB,Itau Unibanco Banco Holding SA American Depositary Shares (Each repstg 500 Preferred shares),4.77,-0.19,-0.04,VeryLarge,Brazil,38724909.00,Finance,184717815.93,TRUE
+WIX,Wix.com Ltd. Ordinary Shares,293.30,14.08,0.05,VeryLarge,Israel,629189.00,Technology,184541133.70,TRUE
+LEN,Lennar Corporation Class A Common Stock,103.43,2.20,0.02,VeryLarge,United States,1780866.00,Basic Industries,184194970.38,TRUE
+ORLY,O'Reilly Automotive Inc. Common Stock,507.82,0.57,0.00,VeryLarge,United States,362150.00,Consumer Services,183907013.00,TRUE
+TSCO,Tractor Supply Company Common Stock,176.50,-0.58,0.00,VeryLarge,United States,1039283.00,Consumer Services,183433449.50,TRUE
+JCI,Johnson Controls International plc Ordinary Share,59.90,0.23,0.00,VeryLarge,Switzerland,3049011.00,Consumer Services,182635758.90,TRUE
+KHC,The Kraft Heinz Company Common Stock,40.03,0.03,0.00,VeryLarge,United States,4560998.00,Consumer Non-Durables,182576749.94,TRUE
+APH,Amphenol Corporation Common Stock,67.05,1.08,0.02,VeryLarge,United States,2722595.00,Capital Goods,182549994.75,TRUE
+TDG,Transdigm Group Incorporated Transdigm Group Inc. Common Stock,603.71,15.79,0.03,VeryLarge,United States,302347.00,Capital Goods,182529907.37,TRUE
+XEL,Xcel Energy Inc. Common Stock,66.79,0.28,0.00,VeryLarge,United States,2728612.00,Public Utilities,182243995.48,TRUE
+PPL,PPL Corporation Common Stock,28.77,-0.07,0.00,VeryLarge,United States,6331390.00,Public Utilities,182154090.30,TRUE
+CREE,Cree Inc. Common Stock,115.23,7.10,0.07,VeryLarge,United States,1570062.00,Technology,180918244.26,TRUE
+EXC,Exelon Corporation Common Stock,43.91,0.17,0.00,VeryLarge,United States,4118183.00,Public Utilities,180829415.53,TRUE
+LH,Laboratory Corporation of America Holdings Common Stock,252.70,-2.33,-0.01,VeryLarge,United States,710783.00,Health Care,179614864.10,TRUE
+LI,Li Auto Inc. American Depositary Shares,25.25,0.25,0.01,VeryLarge,China,7091686.00,Capital Goods,179065071.50,TRUE
+IAC,IAC/InterActiveCorp Common Stock,226.69,10.38,0.05,VeryLarge,United States,787867.00,Consumer Services,178601570.23,FALSE
+SJM,J.M. Smucker Company (The) New Common Stock,126.25,-0.28,0.00,VeryLarge,United States,1413352.00,Consumer Non-Durables,178435690.00,TRUE
+DD,DuPont de Nemours Inc. Common Stock,78.13,0.85,0.01,VeryLarge,,2263323.00,Basic Industries,176833425.99,TRUE
+DLTR,Dollar Tree Inc. Common Stock,115.93,1.47,0.01,VeryLarge,United States,1521321.00,Consumer Services,176366743.53,TRUE
+LYV,Live Nation Entertainment Inc. Common Stock,88.07,3.42,0.04,VeryLarge,United States,2002365.00,Consumer Services,176348285.55,TRUE
+TPR,Tapestry Inc. Common Stock,41.03,-0.18,0.00,VeryLarge,United States,4292515.00,Consumer Non-Durables,176121890.45,TRUE
+MSCI,MSCI Inc Common Stock,428.55,9.27,0.02,VeryLarge,United States,410941.00,Miscellaneous,176108765.55,TRUE
+PRU,Prudential Financial Inc. Common Stock,92.71,1.61,0.02,VeryLarge,United States,1895064.00,Finance,175691383.44,TRUE
+RF,Regions Financial Corporation Common Stock,21.06,0.40,0.02,VeryLarge,United States,8296076.00,Finance,174715360.56,TRUE
+FTNT,Fortinet Inc. Common Stock,186.39,1.97,0.01,VeryLarge,United States,930595.00,Technology,173453602.05,TRUE
+TROW,T. Rowe Price Group Inc. Common Stock,173.96,2.36,0.01,VeryLarge,United States,995300.00,Finance,173142388.00,TRUE
+ROP,Roper Technologies Inc. Common Stock,410.35,7.01,0.02,VeryLarge,United States,421804.00,Capital Goods,173087271.40,TRUE
+DELL,Dell Technologies Inc. Class C Common Stock ,89.08,0.93,0.01,VeryLarge,,1928921.00,Technology,171828282.68,TRUE
+CS,Credit Suisse Group American Depositary Shares,10.70,0.10,0.01,VeryLarge,Switzerland,15896186.00,Finance,170089190.20,TRUE
+ALB,Albemarle Corporation Common Stock,150.74,4.63,0.03,VeryLarge,United States,1126181.00,Basic Industries,169760523.94,TRUE
+WM,Waste Management Inc. Common Stock,129.28,0.26,0.00,VeryLarge,United States,1308200.00,Public Utilities,169124096.00,TRUE
+SU,Suncor Energy  Inc. Common Stock,21.53,0.63,0.03,VeryLarge,Canada,7840115.00,Energy,168797675.95,TRUE
+O,Realty Income Corporation Common Stock,65.11,1.61,0.03,VeryLarge,United States,2559283.00,Consumer Services,166634916.13,TRUE
+GLW,Corning Incorporated Common Stock,43.99,0.48,0.01,VeryLarge,United States,3782801.00,Basic Industries,166405415.99,TRUE
+AES,The AES Corporation Common Stock,27.07,0.26,0.01,VeryLarge,United States,6138252.00,Basic Industries,166162481.64,TRUE
+CAG,ConAgra Brands Inc. Common Stock,37.29,-0.31,-0.01,VeryLarge,United States,4444946.00,Consumer Non-Durables,165752036.34,TRUE
+VFC,V.F. Corporation Common Stock,79.49,-0.43,-0.01,VeryLarge,United States,2082628.00,Consumer Non-Durables,165548099.72,TRUE
+MNST,Monster Beverage Corporation,91.36,0.27,0.00,VeryLarge,United States,1811476.00,Consumer Non-Durables,165496447.36,TRUE
+ROST,Ross Stores Inc. Common Stock,120.51,0.60,0.01,VeryLarge,United States,1370938.00,Consumer Services,165211738.38,TRUE
+AIG,American International Group Inc. New Common Stock,46.38,0.17,0.00,VeryLarge,United States,3547722.00,Finance,164543346.36,TRUE
+PRAH,PRA Health Sciences Inc. Common Stock,156.16,2.83,0.02,VeryLarge,United States,1051910.00,Health Care,164266265.60,TRUE
+WHR,Whirlpool Corporation Common Stock,225.30,4.95,0.02,VeryLarge,United States,727999.00,Consumer Durables,164018174.70,TRUE
+IFF,Internationa Flavors & Fragrances Inc. Common Stock,138.85,-0.76,-0.01,VeryLarge,United States,1181188.00,Basic Industries,164007953.80,TRUE
+ICLR,ICON plc Ordinary Shares,202.33,5.96,0.03,VeryLarge,Ireland,809124.00,Health Care,163710058.92,TRUE
+HAL,Halliburton Company Common Stock,21.92,0.46,0.02,VeryLarge,United States,7417740.00,Energy,162596860.80,TRUE
+ESS,Essex Property Trust Inc. Common Stock,276.49,4.65,0.02,VeryLarge,United States,583986.00,Consumer Services,161466289.14,TRUE
+MKC,McCormick & Company Incorporated Common Stock,89.24,0.08,0.00,VeryLarge,United States,1808832.00,Consumer Non-Durables,161420167.68,TRUE
+HZNP,Horizon Therapeutics Public Limited Company Ordinary Shares,90.50,-1.54,-0.02,VeryLarge,Ireland,1781630.00,Health Care,161237515.00,TRUE
+AVY,Avery Dennison Corporation Common Stock,188.07,4.42,0.02,VeryLarge,United States,850876.00,Consumer Durables,160024249.32,TRUE
+WELL,Welltower Inc. Common Stock,73.25,1.62,0.02,VeryLarge,United States,2177975.00,Consumer Services,159536668.75,TRUE
+MCK,McKesson Corporation Common Stock,193.57,-1.47,-0.01,VeryLarge,United States,824133.00,Health Care,159527424.81,TRUE
+ADM,Archer-Daniels-Midland Company Common Stock,57.65,0.65,0.01,VeryLarge,United States,2759431.00,Consumer Non-Durables,159081197.15,TRUE
+TXG,10x Genomics Inc. Class A Common Stock,185.79,4.79,0.03,VeryLarge,United States,855375.00,Capital Goods,158920121.25,TRUE
+NTES,NetEase Inc. American Depositary Shares,106.60,3.34,0.03,VeryLarge,China,1488544.00,Technology,158678790.40,FALSE
+TT,Trane Technologies plc,165.44,-0.12,0.00,VeryLarge,Ireland,958927.00,Capital Goods,158644882.88,TRUE
+WLTW,Willis Towers Watson Public Limited Company Ordinary Shares,233.59,4.71,0.02,VeryLarge,United Kingdom,678031.00,Finance,158381261.29,TRUE
+EDU,New Oriental Education & Technology Group Inc. Sponsored ADR representing 1 Ordinary Share (Cayman Islands),14.50,0.50,0.04,VeryLarge,China,10817559.00,Consumer Services,156854605.50,FALSE
+WMB,Williams Companies Inc. (The) Common Stock,23.90,0.21,0.01,VeryLarge,United States,6510860.00,Public Utilities,155609554.00,TRUE
+EPD,Enterprise Products Partners L.P. Common Stock,22.27,0.25,0.01,VeryLarge,United States,6983310.00,Public Utilities,155518313.70,TRUE
+DFS,Discover Financial Services Common Stock,97.20,2.21,0.02,VeryLarge,United States,1593131.00,Finance,154852333.20,TRUE
+CPRT,Copart Inc. (DE) Common Stock,112.61,4.00,0.04,VeryLarge,United States,1368965.00,Consumer Durables,154159148.65,TRUE
+AAP,Advance Auto Parts Inc Advance Auto Parts Inc W/I,185.96,2.47,0.01,VeryLarge,United States,828962.00,Consumer Services,154153773.52,TRUE
+GD,General Dynamics Corporation Common Stock,180.83,-0.73,0.00,VeryLarge,United States,851009.00,Capital Goods,153887957.47,TRUE
+MOS,Mosaic Company (The) Common Stock,31.26,-0.35,-0.01,VeryLarge,United States,4906949.00,Basic Industries,153391225.74,TRUE
+GDS,GDS Holdings Limited ADS,82.54,1.45,0.02,VeryLarge,China,1852405.00,Technology,152897508.70,TRUE
+NTR,Nutrien Ltd. Common Shares,54.49,0.60,0.01,VeryLarge,,2801112.00,Basic Industries,152632592.88,TRUE
+MTB,M&T Bank Corporation Common Stock,153.17,1.56,0.01,VeryLarge,United States,995183.00,Finance,152432180.11,TRUE
+ECL,Ecolab Inc. Common Stock,216.85,2.78,0.01,VeryLarge,United States,701955.00,Basic Industries,152218941.75,TRUE
+CHD,Church & Dwight Company Inc. Common Stock,86.53,-0.82,-0.01,VeryLarge,United States,1753295.00,Basic Industries,151712616.35,TRUE
+ED,Consolidated Edison Inc. Common Stock,74.29,-0.51,-0.01,VeryLarge,United States,2038216.00,Public Utilities,151419066.64,TRUE
+EXR,Extra Space Storage Inc Common Stock,135.45,2.90,0.02,VeryLarge,United States,1114787.00,Consumer Services,150997899.15,TRUE
+TEL,TE Connectivity Ltd. New Switzerland Registered Shares,130.79,1.68,0.01,VeryLarge,Switzerland,1149113.00,Technology,150292489.27,TRUE
+FAST,Fastenal Company Common Stock,51.11,0.83,0.02,VeryLarge,United States,2939849.00,Consumer Services,150255682.39,TRUE
+CPB,Campbell Soup Company Common Stock,49.97,-0.30,-0.01,VeryLarge,United States,2994699.00,Consumer Non-Durables,149645109.03,TRUE
+PCAR,PACCAR Inc. Common Stock,92.03,-0.89,-0.01,VeryLarge,United States,1622168.00,Capital Goods,149288121.04,TRUE
+OMC,Omnicom Group Inc. Common Stock,75.91,1.76,0.02,VeryLarge,United States,1961539.00,Technology,148900425.49,TRUE
+STE,STERIS plc (Ireland) Ordinary Shares,193.50,3.02,0.02,VeryLarge,United States,768523.00,Health Care,148709200.50,TRUE
+TSN,Tyson Foods Inc. Common Stock,74.87,0.57,0.01,VeryLarge,United States,1985419.00,Consumer Non-Durables,148648320.53,TRUE
+HSY,The Hershey Company Common Stock,158.76,0.60,0.00,VeryLarge,United States,932237.00,Consumer Non-Durables,148001946.12,TRUE
+CERN,Cerner Corporation Common Stock,72.92,1.04,0.01,VeryLarge,United States,2026008.00,Technology,147736503.36,TRUE
+KEYS,Keysight Technologies Inc. Common Stock,143.79,0.39,0.00,VeryLarge,United States,1024814.00,Capital Goods,147358005.06,TRUE
+DBX,Dropbox Inc. Class A Common Stock,27.39,0.73,0.03,VeryLarge,United States,5365216.00,Technology,146953266.24,TRUE
+MT,Arcelor Mittal NY Registry Shares NEW,29.35,0.18,0.01,VeryLarge,Luxembourg,4982814.00,Basic Industries,146245590.90,TRUE
+ARE,Alexandria Real Estate Equities Inc. Common Stock,169.72,5.42,0.03,VeryLarge,United States,854023.00,Consumer Services,144944783.56,TRUE
+NET,Cloudflare Inc. Class A Common Stock,71.79,1.53,0.02,VeryLarge,United States,2017476.00,Technology,144834602.04,TRUE
+OPEN,Opendoor Technologies Inc Common Stock,21.75,0.56,0.03,VeryLarge,United States,6642602.00,Finance,144476593.50,TRUE
+BHP,BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares),69.54,0.15,0.00,VeryLarge,Australia,2074372.00,Basic Industries,144251828.88,TRUE
+A,Agilent Technologies Inc. Common Stock,127.69,0.55,0.00,VeryLarge,United States,1126411.00,Capital Goods,143831420.59,TRUE
+VTR,Ventas Inc. Common Stock,54.40,1.06,0.02,VeryLarge,United States,2634250.00,Consumer Services,143303200.00,TRUE
+RIO,Rio Tinto Plc Common Stock,77.98,0.33,0.00,VeryLarge,Australia,1835020.00,Basic Industries,143094859.60,TRUE
+CBRE,CBRE Group Inc Common Stock Class A,80.05,0.94,0.01,VeryLarge,United States,1784742.00,Finance,142868597.10,TRUE
+HES,Hess Corporation Common Stock,74.48,3.72,0.05,VeryLarge,United States,1916401.00,Energy,142733546.48,TRUE
+FLT,FleetCor Technologies Inc. Common Stock,279.50,10.87,0.04,VeryLarge,United States,507028.00,Miscellaneous,141714326.00,TRUE
+VICI,VICI Properties Inc. Common Stock,28.84,0.60,0.02,VeryLarge,,4860228.00,Consumer Services,140168975.52,TRUE
+CTAS,Cintas Corporation Common Stock,348.31,7.00,0.02,VeryLarge,United States,402119.00,Consumer Non-Durables,140062068.89,TRUE
+WY,Weyerhaeuser Company Common Stock,36.84,1.24,0.03,VeryLarge,United States,3793248.00,Consumer Services,139743256.32,TRUE
+SGEN,Seagen Inc. Common Stock,143.40,4.54,0.03,VeryLarge,United States,972650.00,Health Care,139478010.00,TRUE
+BURL,Burlington Stores Inc. Common Stock,299.29,0.49,0.00,VeryLarge,,465174.00,Consumer Services,139221926.46,TRUE
+CTVA,Corteva Inc. Common Stock ,46.74,0.12,0.00,VeryLarge,,2976815.00,Consumer Non-Durables,139136333.10,TRUE
+IT,Gartner Inc. Common Stock,187.27,4.72,0.03,VeryLarge,United States,740392.00,Consumer Services,138653209.84,TRUE
+INVH,Invitation Homes Inc. Common Stock,32.67,0.68,0.02,VeryLarge,United States,4231379.00,Finance,138239151.93,TRUE
+IP,International Paper Company Common Stock,54.29,0.22,0.00,VeryLarge,United States,2544932.00,Basic Industries,138164358.28,TRUE
+CABO,Cable One Inc. Common Stock,1829.28,0.92,0.00,VeryLarge,United States,75499.00,Consumer Services,138108810.72,TRUE
+FTV,Fortive Corporation Common Stock ,70.90,0.26,0.00,VeryLarge,,1938986.00,Capital Goods,137474107.40,TRUE
+HBAN,Huntington Bancshares Incorporated Common Stock,15.98,0.26,0.02,VeryLarge,United States,8576822.00,Finance,137057615.56,TRUE
+DGX,Quest Diagnostics Incorporated Common Stock,129.44,1.10,0.01,VeryLarge,United States,1048518.00,Health Care,135720169.92,TRUE
+IVZ,Invesco Ltd Common Stock,25.75,0.53,0.02,VeryLarge,United States,5253338.00,Finance,135273453.50,TRUE
+CCK,Crown Holdings Inc.,100.38,3.34,0.03,VeryLarge,United States,1344049.00,Consumer Durables,134915638.62,TRUE
+NVS,Novartis AG Common Stock,86.08,0.60,0.01,VeryLarge,Switzerland,1567106.00,Health Care,134896484.48,TRUE
+FE,FirstEnergy Corp. Common Stock,34.31,-0.38,-0.01,VeryLarge,United States,3901543.00,Public Utilities,133861940.33,TRUE
+ABC,AmerisourceBergen Corporation Common Stock,116.89,-1.18,-0.01,VeryLarge,United States,1142174.00,Health Care,133508718.86,TRUE
+HDB,HDFC Bank Limited Common Stock,77.74,0.05,0.00,VeryLarge,India,1710959.00,Finance,133009952.66,TRUE
+CHKP,Check Point Software Technologies Ltd. Ordinary Shares,113.60,1.63,0.01,VeryLarge,Israel,1162537.00,Technology,132064203.20,TRUE
+PHM,PulteGroup Inc. Common Stock,53.48,1.04,0.02,VeryLarge,United States,2469184.00,Capital Goods,132051960.32,TRUE
+ZBRA,Zebra Technologies Corporation Class A Common Stock,491.78,6.60,0.01,VeryLarge,United States,267480.00,Technology,131541314.40,TRUE
+PAYC,Paycom Software Inc. Common Stock,376.75,6.69,0.02,VeryLarge,,348973.00,Technology,131475577.75,TRUE
+SIRI,Sirius XM Holdings Inc. Common Stock,6.27,0.18,0.03,VeryLarge,United States,20781668.00,Consumer Services,130301058.36,TRUE
+WPM,Wheaton Precious Metals Corp Common Shares (Canada),39.90,1.69,0.04,VeryLarge,Canada,3265618.00,Basic Industries,130298158.20,TRUE
+OKE,ONEOK Inc. Common Stock,51.35,0.69,0.01,VeryLarge,United States,2525422.00,Public Utilities,129680419.70,TRUE
+VRSN,VeriSign Inc. Common Stock,201.90,3.14,0.02,VeryLarge,United States,640435.00,Technology,129303826.50,TRUE
+ODFL,Old Dominion Freight Line Inc. Common Stock,243.69,3.28,0.01,VeryLarge,United States,529426.00,Transportation,129015821.94,TRUE
+AWK,American Water Works Company Inc. Common Stock,150.59,0.67,0.00,VeryLarge,United States,855418.00,Public Utilities,128817396.62,TRUE
+VAR,Varian Medical Systems Inc. Common Stock,176.80,0.27,0.00,VeryLarge,United States,727302.00,Health Care,128586993.60,TRUE
+FIVE,Five Below Inc. Common Stock,195.62,4.83,0.03,VeryLarge,United States,653712.00,Consumer Services,127879141.44,TRUE
+MKTX,MarketAxess Holdings Inc. Common Stock,520.28,22.36,0.04,VeryLarge,United States,245102.00,Finance,127521668.56,TRUE
+AKAM,Akamai Technologies Inc. Common Stock,102.83,0.93,0.01,VeryLarge,United States,1238858.00,Miscellaneous,127391768.14,TRUE
+EQR,Equity Residential Common Shares of Beneficial Interest,72.51,0.88,0.01,VeryLarge,United States,1753778.00,Consumer Services,127166442.78,TRUE
+ZBH,Zimmer Biomet Holdings Inc. Common Stock,160.00,-0.08,0.00,VeryLarge,United States,788484.00,Health Care,126157440.00,TRUE
+LYB,LyondellBasell Industries NV Ordinary Shares Class A (Netherlands),105.55,1.50,0.01,VeryLarge,Netherlands,1192630.00,Basic Industries,125882096.50,TRUE
+BX,The Blackstone Group Inc. Common Stock,75.19,0.66,0.01,VeryLarge,United States,1671702.00,Finance,125695273.38,TRUE
+FICO,Fair Isaac Corproation Common Stock,500.95,14.90,0.03,VeryLarge,United States,249452.00,Miscellaneous,124962979.40,TRUE
+RPRX,Royalty Pharma plc Class A Ordinary Shares ,43.01,-0.61,-0.01,VeryLarge,United States,2900004.00,Health Care,124729172.04,FALSE
+FIVN,Five9 Inc. Common Stock,164.22,7.89,0.05,VeryLarge,United States,758069.00,Technology,124490091.18,TRUE
+FOXA,Fox Corporation Class A Common Stock,36.31,0.20,0.01,VeryLarge,United States,3410348.00,Consumer Services,123829735.88,TRUE
+NTAP,NetApp Inc. Common Stock,73.65,0.98,0.01,VeryLarge,United States,1679110.00,Technology,123666451.50,TRUE
+SRE,Sempra Energy Common Stock,131.80,-0.78,-0.01,VeryLarge,United States,933498.00,Public Utilities,123035036.40,TRUE
+CDW,CDW Corporation Common Stock,169.44,3.69,0.02,VeryLarge,United States,722810.00,Consumer Services,122472926.40,TRUE
+ZNGA,Zynga Inc. Class A Common Stock,10.48,0.27,0.03,VeryLarge,United States,11642662.00,Technology,122015097.76,TRUE
+CNQ,Canadian Natural Resources Limited Common Stock,31.58,0.71,0.02,VeryLarge,Canada,3858024.00,Energy,121836397.92,TRUE
+MAA,Mid-America Apartment Communities Inc. Common Stock,146.64,2.28,0.02,VeryLarge,United States,830712.00,Consumer Services,121815607.68,TRUE
+ANET,Arista Networks Inc. Common Stock,308.04,6.15,0.02,VeryLarge,,394589.00,Technology,121549195.56,TRUE
+VRSK,Verisk Analytics Inc. Common Stock,179.81,3.12,0.02,VeryLarge,United States,675038.00,Technology,121378582.78,TRUE
+PWR,Quanta Services Inc. Common Stock,89.17,1.19,0.01,VeryLarge,United States,1358829.00,Capital Goods,121166781.93,TRUE
+PAGS,PagSeguro Digital Ltd. Class A Common Shares,48.53,2.23,0.05,VeryLarge,Cayman Islands,2493737.00,Technology,121021056.61,TRUE
+KKR,KKR & Co. Inc. Common Stock,50.35,1.50,0.03,VeryLarge,United States,2397407.00,Finance,120709442.45,TRUE
+PTC,PTC Inc. Common Stock,143.87,6.22,0.05,VeryLarge,United States,837590.00,Technology,120504073.30,TRUE
+CTXS,Citrix Systems Inc. Common Stock,140.32,-0.04,0.00,VeryLarge,United States,857333.00,Technology,120300966.56,TRUE
+GH,Guardant Health Inc. Common Stock,156.99,4.34,0.03,VeryLarge,United States,764274.00,Health Care,119983375.26,TRUE
+GGG,Graco Inc. Common Stock,72.90,1.28,0.02,VeryLarge,United States,1640756.00,Capital Goods,119611112.40,TRUE
+ESTC,Elastic N.V. Ordinary Shares,114.53,3.33,0.03,VeryLarge,United States,1037633.00,Technology,118840107.49,TRUE
+AFRM,Affirm Holdings Inc. Class A Common Stock,71.45,0.73,0.01,VeryLarge,United States,1659089.00,Miscellaneous,118541909.05,TRUE
+GDRX,GoodRx Holdings Inc. Class A Common Stock,39.03,0.01,0.00,VeryLarge,United States,3031404.00,Technology,118315698.12,TRUE
+AMP,Ameriprise Financial Inc. Common Stock,235.41,2.96,0.01,VeryLarge,United States,494653.00,Finance,116446262.73,TRUE
+UL,Unilever PLC Common Stock,55.86,0.03,0.00,VeryLarge,United Kingdom,2079208.00,Basic Industries,116144558.88,TRUE
+BBD,Banco Bradesco Sa American Depositary Shares,4.49,-0.21,-0.04,VeryLarge,Brazil,25730905.00,Finance,115531763.45,TRUE
+MAS,Masco Corporation Common Stock,60.99,1.09,0.02,VeryLarge,United States,1879325.00,Capital Goods,114620031.75,TRUE
+NLY,Annaly Capital Management Inc Common Stock,8.72,0.12,0.01,VeryLarge,United States,13029835.00,Consumer Services,113620161.20,TRUE
+SAM,Boston Beer Company Inc. (The) Common Stock,1184.68,-21.60,-0.02,VeryLarge,United States,95558.00,Consumer Non-Durables,113205651.44,TRUE
+AVB,AvalonBay Communities Inc. Common Stock,186.90,2.39,0.01,VeryLarge,United States,603651.00,Consumer Services,112822371.90,TRUE
+DVA,DaVita Inc. Common Stock,105.44,-2.33,-0.02,VeryLarge,United States,1069076.00,Health Care,112723373.44,TRUE
+WST,West Pharmaceutical Services Inc. Common Stock,284.77,2.99,0.01,VeryLarge,United States,394181.00,Basic Industries,112250923.37,TRUE
+AFL,AFLAC Incorporated Common Stock,51.42,0.24,0.00,VeryLarge,United States,2180830.00,Finance,112138278.60,TRUE
+VMW,Vmware Inc. Common stock Class A,152.40,1.95,0.01,VeryLarge,United States,732391.00,Technology,111616388.40,TRUE
+TOT,Total SE,46.38,-0.16,0.00,VeryLarge,France,2402558.00,Energy,111430640.04,TRUE
+PEG,Public Service Enterprise Group Incorporated Common Stock,59.67,-0.54,-0.01,VeryLarge,United States,1855813.00,Public Utilities,110736361.71,TRUE
+PCG,Pacific Gas & Electric Co. Common Stock,11.50,-0.21,-0.02,VeryLarge,United States,9541111.00,Public Utilities,109722776.50,TRUE
+MSI,Motorola Solutions Inc. Common Stock,188.36,0.31,0.00,VeryLarge,United States,581960.00,Technology,109617985.60,TRUE
+GDDY,GoDaddy Inc. Class A Common Stock,80.21,2.59,0.03,VeryLarge,United States,1365411.00,Technology,109519616.31,TRUE
+OTIS,Otis Worldwide Corporation Common Stock ,69.26,0.81,0.01,VeryLarge,,1579230.00,Energy,109377469.80,TRUE
+ERIC,Ericsson American Depositary Shares,13.07,-0.12,-0.01,VeryLarge,Sweden,8319915.00,Technology,108741289.05,TRUE
+FNV,Franco-Nevada Corporation,129.91,4.62,0.04,VeryLarge,Canada,836902.00,Basic Industries,108721938.82,TRUE
+UDR,UDR Inc. Common Stock,44.36,0.50,0.01,VeryLarge,United States,2441313.00,Consumer Services,108296644.68,TRUE
+ELAN,Elanco Animal Health Incorporated Common Stock,28.79,-0.66,-0.02,VeryLarge,United States,3755731.00,Health Care,108127495.49,TRUE
+AJG,Arthur J. Gallagher & Co. Common Stock,126.61,1.84,0.01,VeryLarge,United States,844329.00,Finance,106900494.69,TRUE
+TYL,Tyler Technologies Inc. Common Stock,431.82,7.29,0.02,VeryLarge,United States,246954.00,Technology,106639676.28,TRUE
+WU,Western Union Company (The) Common Stock,25.15,0.49,0.02,VeryLarge,United States,4217337.00,Miscellaneous,106066025.55,TRUE
+CHGG,Chegg Inc. Common Stock,88.25,2.59,0.03,VeryLarge,,1201779.00,Consumer Services,106056996.75,TRUE
+GWW,W.W. Grainger Inc. Common Stock,406.35,5.42,0.01,VeryLarge,United States,259281.00,Consumer Services,105358834.35,TRUE
+HOLX,Hologic Inc. Common Stock,74.34,-0.04,0.00,VeryLarge,United States,1415353.00,Health Care,105217342.02,TRUE
+EFX,Equifax Inc. Common Stock,182.61,1.48,0.01,VeryLarge,United States,575670.00,Finance,105123098.70,TRUE
+PODD,Insulet Corporation Common Stock,264.82,3.90,0.02,VeryLarge,United States,394587.00,Health Care,104494529.34,TRUE
+DISH,DISH Network Corporation Class A Common Stock,36.80,0.60,0.02,VeryLarge,United States,2796914.00,Consumer Services,102926435.20,TRUE
+PEAK,Healthpeak Properties Inc. Common Stock,32.71,0.97,0.03,VeryLarge,United States,3129620.00,Consumer Services,102369870.20,TRUE
+YUM,Yum! Brands Inc.,109.80,1.62,0.02,VeryLarge,United States,927764.00,Consumer Services,101868487.20,TRUE
+CE,Celanese Corporation Celanese Corporation Common Stock,151.89,2.08,0.01,VeryLarge,United States,670378.00,Basic Industries,101823714.42,TRUE
+RACE,Ferrari N.V. Common Shares,208.04,-1.24,-0.01,VeryLarge,,487014.00,Capital Goods,101318392.56,TRUE
+WCN,Waste Connections Inc. Common Shares,109.38,1.40,0.01,VeryLarge,Canada,923812.00,Public Utilities,101046556.56,TRUE
+MHK,Mohawk Industries Inc. Common Stock,198.28,5.97,0.03,VeryLarge,United States,501675.00,Consumer Durables,99472119.00,TRUE
+STLD,Steel Dynamics Inc.,50.97,0.21,0.00,VeryLarge,United States,1950454.00,Basic Industries,99414640.38,TRUE
+IRM,Iron Mountain Incorporated (Delaware)Common Stock REIT,37.30,0.29,0.01,VeryLarge,United States,2659411.00,Consumer Services,99196030.30,TRUE
+ZI,ZoomInfo Technologies Inc. Class A Common Stock,48.17,-0.73,-0.01,VeryLarge,United States,2058398.00,Technology,99153031.66,TRUE
+TAP,Molson Coors Beverage Company Class B Common Stock,51.90,0.75,0.01,VeryLarge,Canada,1908975.00,Consumer Non-Durables,99075802.50,TRUE
+SAP,SAP  SE ADS,125.75,2.96,0.02,VeryLarge,Germany,786782.00,Technology,98937836.50,TRUE
+NDAQ,Nasdaq Inc. Common Stock,150.85,3.39,0.02,VeryLarge,United States,654806.00,Finance,98777485.10,TRUE
+CAH,Cardinal Health Inc. Common Stock,60.88,0.13,0.00,VeryLarge,United States,1610388.00,Health Care,98040421.44,TRUE
+DTE,DTE Energy Company Common Stock,133.03,-0.11,0.00,VeryLarge,United States,736941.00,Public Utilities,98035261.23,TRUE
+VTRS,Viatris Inc. Common Stock,13.90,-0.07,-0.01,VeryLarge,United States,7051684.00,Health Care,98018407.60,TRUE
+MPW,Medical Properties Trust Inc. common stock,21.66,0.38,0.02,VeryLarge,United States,4517806.00,Consumer Services,97855677.96,TRUE
+ET,Energy Transfer LP Common Units ,7.85,0.17,0.02,VeryLarge,United States,12454098.00,Public Utilities,97764669.30,TRUE
+FBHS,Fortune Brands Home & Security Inc. Common Stock,97.15,1.33,0.01,VeryLarge,United States,1005252.00,Basic Industries,97660231.80,TRUE
+NOK,Nokia Corporation Sponsored American Depositary Shares,4.00,0.04,0.01,VeryLarge,Finland,24295024.00,Technology,97180096.00,TRUE
+COO,The Cooper Companies Inc. Common Stock,385.49,1.40,0.00,VeryLarge,United States,251837.00,Health Care,97080645.13,TRUE
+OLED,Universal Display Corporation Common Stock,238.14,1.37,0.01,VeryLarge,United States,407543.00,Capital Goods,97052290.02,TRUE
+RJF,Raymond James Financial Inc. Common Stock,126.51,3.95,0.03,VeryLarge,United States,762187.00,Finance,96424277.37,TRUE
+FFIV,F5 Networks Inc. Common Stock,211.11,2.49,0.01,VeryLarge,United States,456204.00,Technology,96309226.44,TRUE
+MGA,Magna International Inc. Common Stock,89.57,1.53,0.02,VeryLarge,Canada,1075043.00,Capital Goods,96291601.51,TRUE
+EPAM,EPAM Systems Inc. Common Stock,399.99,3.30,0.01,VeryLarge,United States,240618.00,Technology,96244793.82,TRUE
+ACGL,Arch Capital Group Ltd. Common Stock,39.41,1.04,0.03,VeryLarge,Bermuda,2432469.00,Finance,95863603.29,TRUE
+LNG,Cheniere Energy Inc. Common Stock,71.80,-0.21,0.00,VeryLarge,United States,1334949.00,Public Utilities,95849338.20,TRUE
+HWM,Howmet Aerospace Inc. Common Stock,31.82,-0.31,-0.01,VeryLarge,United States,3010994.00,Capital Goods,95809829.08,TRUE
+BBL,BHP Group PlcSponsored ADR,58.09,0.23,0.00,VeryLarge,Australia,1646568.00,Energy,95649135.12,TRUE
+BTI,British American Tobacco  Industries p.l.c. Common Stock ADR,38.33,-0.41,-0.01,VeryLarge,United Kingdom,2468191.00,Consumer Non-Durables,94605761.03,TRUE
+TPL,Texas Pacific Land Corporation Common Stock,1600.00,10.57,0.01,VeryLarge,United States,59126.00,Energy,94601600.00,TRUE
+RMD,ResMed Inc. Common Stock,194.44,0.42,0.00,VeryLarge,United States,485717.00,Health Care,94442813.48,TRUE
+BEN,Franklin Resources Inc. Common Stock,30.16,0.56,0.02,VeryLarge,United States,3126311.00,Finance,94289539.76,TRUE
+INCY,Incyte Corp. Common Stock,83.01,1.74,0.02,VeryLarge,United States,1135660.00,Health Care,94271136.60,TRUE
+ALLE,Allegion plc Ordinary Shares,127.75,2.13,0.02,VeryLarge,United States,735792.00,Consumer Services,93997428.00,TRUE
+ETR,Entergy Corporation Common Stock,99.64,0.17,0.00,VeryLarge,United States,941090.00,Public Utilities,93770207.60,TRUE
+EXPD,Expeditors International of Washington Inc. Common Stock,108.76,1.07,0.01,VeryLarge,United States,861676.00,Transportation,93715881.76,TRUE
+CMA,Comerica Incorporated Common Stock,71.74,0.00,0.00,VeryLarge,United States,1304807.00,Finance,93606854.18,TRUE
+TRU,TransUnion Common Stock,92.26,2.26,0.03,VeryLarge,United States,1009169.00,Finance,93105931.94,TRUE
+ING,ING Group N.V. Common Stock,12.32,0.09,0.01,VeryLarge,Netherlands,7506124.00,Finance,92475447.68,TRUE
+APO,Apollo Global Management Inc. Class A Common Stock,48.01,1.00,0.02,VeryLarge,United States,1923472.00,Finance,92345890.72,TRUE
+IR,Ingersoll Rand Inc. Common Stock,49.61,0.40,0.01,VeryLarge,United States,1857258.00,Technology,92138569.38,FALSE
+BG,Bunge Limited Bunge Limited,80.20,0.93,0.01,VeryLarge,United States,1146677.00,Consumer Non-Durables,91963495.40,TRUE
+GRMN,Garmin Ltd. Common Stock (Switzerland),132.51,0.66,0.01,VeryLarge,Switzerland,686119.00,Capital Goods,90917628.69,TRUE
+AME,AMETEK Inc.,128.66,0.93,0.01,VeryLarge,United States,700971.00,Capital Goods,90186928.86,TRUE
+AEE,Ameren Corporation Common Stock,81.03,-0.33,0.00,VeryLarge,United States,1111872.00,Public Utilities,90094988.16,TRUE
+RSG,Republic Services Inc. Common Stock,99.72,0.37,0.00,VeryLarge,United States,898313.00,Public Utilities,89579772.36,TRUE
+XPO,XPO Logistics Inc.,127.48,4.18,0.03,VeryLarge,United States,702648.00,Consumer Services,89573567.04,TRUE
+CHRW,C.H. Robinson Worldwide Inc. Common Stock,97.15,1.72,0.02,VeryLarge,United States,919605.00,Transportation,89339625.75,TRUE
+EMN,Eastman Chemical Company Common Stock,111.29,1.17,0.01,VeryLarge,United States,797217.00,Basic Industries,88722279.93,TRUE
+MKSI,MKS Instruments Inc. Common Stock,195.84,10.42,0.06,VeryLarge,United States,452310.00,Capital Goods,88580390.40,TRUE
+FDS,FactSet Research Systems Inc. Common Stock,317.01,8.42,0.03,VeryLarge,United States,279309.00,Technology,88543746.09,TRUE
+WEC,WEC Energy Group Inc. Common Stock,93.32,-0.27,0.00,VeryLarge,United States,940242.00,Public Utilities,87743383.44,TRUE
+ENB,Enbridge Inc Common Stock,36.83,0.43,0.01,VeryLarge,Canada,2381187.00,Energy,87699117.21,TRUE
+MTN,Vail Resorts Inc. Common Stock,295.03,3.37,0.01,VeryLarge,United States,296916.00,Consumer Services,87599127.48,TRUE
+IPG,Interpublic Group of Companies Inc. (The) Common Stock,29.35,0.15,0.01,VeryLarge,United States,2980925.00,Technology,87490148.75,TRUE
+MTD,Mettler-Toledo International Inc. Common Stock,1175.19,19.50,0.02,VeryLarge,Switzerland,74137.00,Capital Goods,87125061.03,TRUE
+SUI,Sun Communities Inc. Common Stock,152.80,2.76,0.02,VeryLarge,United States,569775.00,Consumer Services,87061620.00,TRUE
+CRL,Charles River Laboratories International Inc. Common Stock,294.17,4.34,0.02,VeryLarge,United States,295711.00,Health Care,86989304.87,TRUE
+CNI,Canadian National Railway Company Common Stock,117.76,1.78,0.02,VeryLarge,Canada,730506.00,Transportation,86024386.56,TRUE
+NUAN,Nuance Communications Inc. Common Stock,44.91,1.27,0.03,VeryLarge,United States,1908844.00,Technology,85726184.04,TRUE
+BWA,BorgWarner Inc. Common Stock,46.30,-0.06,0.00,VeryLarge,United States,1844153.00,Capital Goods,85384283.90,TRUE
+AZPN,Aspen Technology Inc. Common Stock,153.00,8.67,0.06,VeryLarge,United States,557917.00,Technology,85361301.00,TRUE
+UI,Ubiquiti Inc. Common Stock,289.15,-9.15,-0.03,VeryLarge,United States,295200.00,Technology,85357080.00,TRUE
+WAB,Westinghouse Air Brake Technologies Corporation Common Stock,78.99,-0.17,0.00,VeryLarge,United States,1073014.00,Capital Goods,84757375.86,TRUE
+HAS,Hasbro Inc. Common Stock,95.46,-0.66,-0.01,VeryLarge,United States,878663.00,Consumer Non-Durables,83877169.98,TRUE
+RY,Royal Bank Of Canada Common Stock,92.48,0.27,0.00,VeryLarge,Canada,906942.00,Finance,83873996.16,TRUE
+TECH,Bio-Techne Corp Common Stock,388.50,6.57,0.02,VeryLarge,United States,214754.00,Health Care,83431929.00,TRUE
+SNA,Snap-On Incorporated Common Stock,231.74,1.00,0.00,VeryLarge,United States,359872.00,Capital Goods,83396737.28,TRUE
+FOX,Fox Corporation Class B Common Stock,35.00,0.07,0.00,VeryLarge,United States,2378429.00,Consumer Services,83245015.00,TRUE
+WPC,W. P. Carey Inc. REIT,72.36,1.60,0.02,VeryLarge,United States,1144087.00,Consumer Services,82786135.32,TRUE
+TD,Toronto Dominion Bank (The) Common Stock,65.74,0.53,0.01,VeryLarge,Canada,1250288.00,Finance,82193933.12,TRUE
+DT,Dynatrace Inc. Common Stock,49.55,1.31,0.03,VeryLarge,United States,1651759.00,Technology,81844658.45,TRUE
+BXP,Boston Properties Inc. Common Stock,104.26,3.00,0.03,VeryLarge,United States,776716.00,Consumer Services,80980410.16,TRUE
+DRE,Duke Realty Corporation Common Stock,42.86,0.93,0.02,VeryLarge,United States,1885092.00,Consumer Services,80795043.12,TRUE
+BMRN,BioMarin Pharmaceutical Inc. Common Stock,77.83,2.32,0.03,VeryLarge,United States,1030262.00,Health Care,80185291.46,TRUE
+IEX,IDEX Corporation Common Stock,212.25,2.93,0.01,VeryLarge,United States,377667.00,Capital Goods,80159820.75,TRUE
+AOS,A.O. Smith Corporation Common Stock,67.87,0.26,0.00,VeryLarge,United States,1180369.00,Consumer Durables,80111644.03,TRUE
+INFY,Infosys Limited American Depositary Shares,19.01,0.29,0.02,VeryLarge,India,4213138.00,Technology,80091753.38,TRUE
+SMG,Scotts Miracle-Gro Company (The) Common Stock,250.00,5.03,0.02,VeryLarge,United States,319838.00,Basic Industries,79959500.00,TRUE
+RLX,RLX Technology Inc. American Depositary Shares each representing the right to receive one (1) Class A ordinary share,10.95,0.59,0.06,VeryLarge,,7262906.00,Consumer Non-Durables,79528820.70,TRUE
+HRL,Hormel Foods Corporation Common Stock,47.60,-0.18,0.00,VeryLarge,United States,1667138.00,Consumer Non-Durables,79355768.80,TRUE
+DAR,Darling Ingredients Inc. Common Stock,73.40,-0.18,0.00,VeryLarge,United States,1078203.00,Consumer Non-Durables,79140100.20,TRUE
+XYL,Xylem Inc. Common Stock New,104.64,-0.54,-0.01,VeryLarge,United States,754619.00,Capital Goods,78963332.16,TRUE
+RGEN,Repligen Corporation Common Stock,195.44,1.03,0.01,VeryLarge,United States,401152.00,Health Care,78401146.88,TRUE
+BKI,Black Knight Inc. Common Stock ,74.71,0.72,0.01,VeryLarge,,1046959.00,Technology,78218306.89,TRUE
+CMS,CMS Energy Corporation Common Stock,61.02,-0.20,0.00,VeryLarge,United States,1280553.00,Public Utilities,78139344.06,TRUE
+SSNC,SS&C Technologies Holdings Inc. Common Stock,71.01,1.14,0.02,VeryLarge,United States,1096270.00,Technology,77846132.70,TRUE
+SCCO,Southern Copper Corporation Common Stock,69.41,1.54,0.02,VeryLarge,United States,1121497.00,Basic Industries,77843106.77,TRUE
+PKI,PerkinElmer Inc. Common Stock,129.88,1.59,0.01,VeryLarge,United States,598775.00,Capital Goods,77768897.00,TRUE
+WAT,Waters Corporation Common Stock,284.72,0.55,0.00,VeryLarge,United States,269453.00,Capital Goods,76718658.16,TRUE
+YNDX,Yandex N.V. Class A Ordinary Shares,64.97,0.91,0.01,VeryLarge,Netherlands,1171537.00,Technology,76114758.89,TRUE
+HST,Host Hotels & Resorts Inc. Common Stock,17.11,0.26,0.02,VeryLarge,United States,4447502.00,Consumer Services,76096759.22,TRUE
+CINF,Cincinnati Financial Corporation Common Stock,104.14,1.05,0.01,VeryLarge,United States,719881.00,Finance,74968407.34,TRUE
+XRAY,DENTSPLY SIRONA Inc. Common Stock,63.44,-0.37,-0.01,VeryLarge,United States,1180910.00,Health Care,74916930.40,TRUE
+TRP,TC Energy Corporation Common Stock,46.81,1.06,0.02,VeryLarge,Canada,1600290.00,Public Utilities,74909574.90,TRUE
+CTLT,Catalent Inc. Common Stock,106.54,1.23,0.01,VeryLarge,United States,698594.00,Health Care,74428204.76,TRUE
+AEM,Agnico Eagle Mines Limited Common Stock,59.67,1.86,0.03,VeryLarge,Canada,1246188.00,Basic Industries,74360037.96,TRUE
+J,Jacobs Engineering Group Inc. Common Stock,129.95,0.68,0.01,VeryLarge,United States,570770.00,Basic Industries,74171561.50,TRUE
+FMC,FMC Corporation Common Stock,111.92,1.31,0.01,VeryLarge,United States,660613.00,Basic Industries,73935806.96,TRUE
+AMCR,Amcor plc Ordinary Shares,11.66,-0.02,0.00,VeryLarge,,6316163.00,Consumer Durables,73646460.58,TRUE
+HTHT,Huazhu Group Limited American Depositary Shares,56.75,1.85,0.03,VeryLarge,China,1296030.00,Consumer Services,73549702.50,TRUE
+NVR,NVR Inc. Common Stock,4785.18,74.25,0.02,VeryLarge,United States,15333.00,Capital Goods,73371164.94,TRUE
+ES,Eversource Energy (D/B/A) Common Stock,86.47,-0.12,0.00,VeryLarge,United States,846423.00,Public Utilities,73190196.81,TRUE
+QSR,Restaurant Brands International Inc. Common Shares,65.55,0.55,0.01,VeryLarge,Canada,1109508.00,Consumer Services,72728249.40,TRUE
+CPT,Camden Property Trust Common Stock,111.26,1.35,0.01,VeryLarge,United States,649351.00,Consumer Services,72246792.26,TRUE
+EVRG,Evergy Inc. Common Stock,59.93,0.40,0.01,VeryLarge,,1203745.00,Public Utilities,72140437.85,TRUE
+BUD,Anheuser-Busch Inbev SA Sponsored ADR (Belgium),63.79,0.94,0.02,VeryLarge,Belgium,1130368.00,Consumer Non-Durables,72106174.72,TRUE
+MASI,Masimo Corporation Common Stock,233.67,4.01,0.02,VeryLarge,United States,308288.00,Health Care,72037656.96,TRUE
+CGC,Canopy Growth Corporation Common Shares,32.06,0.03,0.00,VeryLarge,Canada,2238050.00,Consumer Durables,71751883.00,TRUE
+PFG,Principal Financial Group Inc Common Stock,60.86,0.90,0.02,VeryLarge,United States,1172892.00,Finance,71382207.12,TRUE
+WB,Weibo Corporation American Depositary Share,50.01,-0.45,-0.01,VeryLarge,China,1425918.00,Technology,71310159.18,TRUE
+HSBC,HSBC Holdings plc. Common Stock,29.26,0.12,0.00,VeryLarge,United Kingdom,2433918.00,Finance,71216440.68,TRUE
+MOH,Molina Healthcare Inc Common Stock,235.48,1.72,0.01,VeryLarge,United States,300936.00,Health Care,70864409.28,TRUE
+ZG,Zillow Group Inc. Class A Common Stock,135.42,4.04,0.03,VeryLarge,United States,522827.00,Miscellaneous,70801232.34,TRUE
+LNC,Lincoln National Corporation Common Stock,62.90,0.63,0.01,VeryLarge,United States,1125078.00,Finance,70767406.20,TRUE
+NWSA,News Corporation Class A Common Stock,26.06,0.63,0.02,VeryLarge,United States,2708671.00,Consumer Services,70587966.26,TRUE
+BAH,Booz Allen Hamilton Holding Corporation Common Stock,81.71,1.18,0.01,VeryLarge,United States,862056.00,Consumer Services,70438595.76,TRUE
+JBHT,J.B. Hunt Transport Services Inc. Common Stock,169.80,1.73,0.01,VeryLarge,United States,413865.00,Transportation,70274277.00,TRUE
+FNF,FNF Group of Fidelity National Financial Inc. Common Stock,41.28,0.62,0.02,VeryLarge,United States,1692358.00,Finance,69860538.24,TRUE
+AVTR,Avantor Inc. Common Stock,29.45,0.52,0.02,VeryLarge,,2365384.00,Capital Goods,69660558.80,TRUE
+LAD,Lithia Motors Inc. Common Stock,398.55,8.46,0.02,VeryLarge,United States,174623.00,Consumer Durables,69595996.65,TRUE
+CVE,Cenovus Energy Inc Common Stock,7.87,0.35,0.05,VeryLarge,Canada,8782625.00,Energy,69119258.75,TRUE
+DEO,Diageo plc Common Stock,167.44,3.23,0.02,VeryLarge,United Kingdom,411208.00,Consumer Non-Durables,68852667.52,TRUE
+DOV,Dover Corporation Common Stock,137.93,0.80,0.01,VeryLarge,United States,498415.00,Technology,68746380.95,TRUE
+GLPI,Gaming and Leisure Properties Inc. Common Stock,43.67,1.24,0.03,VeryLarge,United States,1561891.00,Consumer Services,68207779.97,TRUE
+ATO,Atmos Energy Corporation Common Stock,98.24,-0.61,-0.01,VeryLarge,United States,689220.00,Public Utilities,67708972.80,TRUE
+SBNY,Signature Bank Common Stock,225.00,-1.10,0.00,VeryLarge,United States,300855.00,Finance,67692375.00,TRUE
+PKG,Packaging Corporation of America Common Stock,135.57,1.09,0.01,VeryLarge,United States,497220.00,Consumer Durables,67408115.40,TRUE
+NTRS,Northern Trust Corporation Common Stock,105.63,0.52,0.01,VeryLarge,United States,638105.00,Finance,67403031.15,TRUE
+TECK,Teck Resources Ltd Ordinary Shares,19.55,0.37,0.02,VeryLarge,Canada,3439440.00,Basic Industries,67241052.00,TRUE
+NLOK,NortonLifeLock Inc. Common Stock,21.42,0.16,0.01,VeryLarge,United States,3118427.00,Technology,66796706.34,TRUE
+BHC,Bausch Health Companies Inc. Common Stock,31.71,-0.03,0.00,VeryLarge,Canada,2096894.00,Health Care,66492508.74,TRUE
+NICE,NICE Ltd American Depositary Shares,225.54,7.57,0.03,VeryLarge,Israel,292473.00,Technology,65964360.42,TRUE
+ABMD,ABIOMED Inc. Common Stock,315.34,-3.39,-0.01,VeryLarge,United States,207713.00,Health Care,65500217.42,TRUE
+IBN,ICICI Bank Limited Common Stock,16.21,0.18,0.01,VeryLarge,India,4032773.00,Finance,65371250.33,TRUE
+AGCO,AGCO Corporation Common Stock,144.42,0.77,0.01,VeryLarge,United States,449261.00,Capital Goods,64882273.62,TRUE
+EQH,Equitable Holdings Inc. Common Stock,33.01,0.39,0.01,VeryLarge,United States,1928071.00,Finance,63645623.71,TRUE
+LKQ,LKQ Corporation Common Stock,42.95,0.62,0.01,VeryLarge,United States,1481321.00,Consumer Services,63622736.95,TRUE
+POOL,Pool Corporation Common Stock,351.57,6.33,0.02,VeryLarge,United States,179613.00,Consumer Durables,63146542.41,TRUE
+STM,STMicroelectronics N.V. Common Stock,39.35,1.02,0.03,VeryLarge,Switzerland,1604444.00,Technology,63134871.40,TRUE
+BR,Broadridge Financial Solutions Inc.Common Stock,154.92,1.82,0.01,VeryLarge,United States,407268.00,Miscellaneous,63093958.56,TRUE
+YUMC,Yum China Holdings Inc. Common Stock,59.13,-0.08,0.00,VeryLarge,United States,1065462.00,Consumer Services,63000768.06,TRUE
+CGNX,Cognex Corporation Common Stock,84.31,1.32,0.02,VeryLarge,United States,735875.00,Capital Goods,62041621.25,TRUE
+LPLA,LPL Financial Holdings Inc. Common Stock,143.43,1.27,0.01,VeryLarge,United States,430549.00,Finance,61753643.07,TRUE
+MPLX,MPLX LP Common Units Representing Limited Partner Interests,26.12,0.49,0.02,VeryLarge,United States,2363738.00,Energy,61740836.56,TRUE
+ELS,Equity Lifestyle Properties Inc. Common Stock,65.04,1.40,0.02,VeryLarge,United States,942520.00,Consumer Services,61301500.80,TRUE
+XP,XP Inc. Class A Common Stock,39.69,2.02,0.05,VeryLarge,Brazil,1543687.00,Finance,61268937.03,TRUE
+GPC,Genuine Parts Company Common Stock,116.62,1.03,0.01,VeryLarge,United States,522370.00,Capital Goods,60918789.40,TRUE
+WRB,W.R. Berkley Corporation Common Stock,76.49,1.14,0.02,VeryLarge,United States,790043.00,Finance,60430389.07,TRUE
+BMO,Bank Of Montreal Common Stock,90.05,0.93,0.01,VeryLarge,Canada,667140.00,Finance,60075957.00,TRUE
+NVCR,NovoCure Limited Ordinary Shares,133.35,1.17,0.01,VeryLarge,Jersey,450383.00,Health Care,60058573.05,TRUE
+IBKR,Interactive Brokers Group Inc. Class A Common Stock,73.67,0.63,0.01,VeryLarge,United States,807855.00,Finance,59514677.85,TRUE
+JKHY,Jack Henry & Associates Inc. Common Stock,154.59,2.87,0.02,VeryLarge,United States,383329.00,Technology,59258830.11,TRUE
+RE,Everest Re Group Ltd. Common Stock,251.11,3.30,0.01,VeryLarge,Bermuda,235406.00,Finance,59112800.66,TRUE
+IPGP,IPG Photonics Corporation Common Stock,217.80,6.86,0.03,VeryLarge,United States,271354.00,Technology,59100901.20,TRUE
+CDAY,Ceridian HCM Holding Inc. Common Stock,84.58,0.31,0.00,VeryLarge,United States,697082.00,Technology,58959195.56,TRUE
+DLB,Dolby Laboratories Common Stock,102.00,3.28,0.03,VeryLarge,United States,573572.00,Miscellaneous,58504344.00,TRUE
+LDOS,Leidos Holdings Inc. Common Stock,96.45,0.17,0.00,VeryLarge,United States,605563.00,Technology,58406551.35,TRUE
+OSH,Oak Street Health Inc. Common Stock,56.82,2.55,0.05,VeryLarge,United States,1006843.00,Health Care,57208819.26,TRUE
+BGNE,BeiGene Ltd. American Depositary Shares,342.28,-5.80,-0.02,VeryLarge,Cayman Islands,166698.00,Health Care,57057391.44,TRUE
+EWBC,East West Bancorp Inc. Common Stock,74.49,0.69,0.01,VeryLarge,United States,760550.00,Finance,56653369.50,TRUE
+WRK,Westrock Company Common Stock,52.19,0.14,0.00,VeryLarge,,1082239.00,Consumer Durables,56482053.41,TRUE
+TREX,Trex Company Inc. Common Stock,94.79,3.25,0.04,VeryLarge,United States,595734.00,Basic Industries,56469625.86,TRUE
+PCTY,Paylocity Holding Corporation Common Stock,184.03,4.20,0.02,VeryLarge,United States,299650.00,Technology,55144589.50,TRUE
+CVAC,CureVac N.V. Ordinary Shares,91.19,-0.27,0.00,VeryLarge,Germany,602140.00,Health Care,54909146.60,FALSE
+NWL,Newell Brands Inc. Common Stock,27.06,0.28,0.01,VeryLarge,United States,2026643.00,Consumer Non-Durables,54840959.58,TRUE
+FND,Floor & Decor Holdings Inc. Common Stock,98.89,3.41,0.04,VeryLarge,,549961.00,Consumer Services,54385643.29,TRUE
+UBS,UBS Group AG Registered Ordinary Shares,15.85,0.32,0.02,VeryLarge,Switzerland,3430563.00,Finance,54374423.55,TRUE
+WLK,Westlake Chemical Corporation Common Stock,91.55,2.76,0.03,VeryLarge,United States,588524.00,Basic Industries,53879372.20,TRUE
+CLVT,Clarivate Plc Ordinary Shares,27.25,0.86,0.03,VeryLarge,,1969331.00,Technology,53664269.75,TRUE
+LEA,Lear Corporation Common Stock,180.13,-1.12,-0.01,VeryLarge,United States,296822.00,Capital Goods,53466546.86,TRUE
+HEI,Heico Corporation Common Stock,127.98,2.18,0.02,VeryLarge,United States,416343.00,Capital Goods,53283577.14,TRUE
+TXT,Textron Inc. Common Stock,57.03,0.95,0.02,VeryLarge,United States,926869.00,Capital Goods,52859339.07,TRUE
+ARGX,argenx SE American Depositary Shares,282.36,6.97,0.03,VeryLarge,Netherlands,186961.00,Health Care,52790307.96,TRUE
+TAK,Takeda Pharmaceutical Company Limited American Depositary Shares (each representing 1/2 of a share of Common Stock),18.64,0.38,0.02,VeryLarge,,2798819.00,Health Care,52169986.16,TRUE
+RYAAY,Ryanair Holdings plc American Depositary Shares,115.74,0.74,0.01,VeryLarge,Ireland,450585.00,Transportation,52150707.90,TRUE
+UHS,Universal Health Services Inc. Common Stock,134.40,1.01,0.01,VeryLarge,United States,385992.00,Health Care,51877324.80,TRUE
+FWONK,Liberty Media Corporation Series C Liberty Formula One Common Stock,43.83,0.54,0.01,VeryLarge,United States,1170537.00,Consumer Services,51304636.71,TRUE
+TFX,Teleflex Incorporated Common Stock,414.15,-1.31,0.00,VeryLarge,United States,123451.00,Health Care,51127231.65,TRUE
+BRO,Brown & Brown Inc. Common Stock,46.52,0.81,0.02,VeryLarge,United States,1088950.00,Finance,50657954.00,TRUE
+BCS,Barclays PLC Common Stock,10.19,-0.04,0.00,VeryLarge,United Kingdom,4873410.00,Finance,49660047.90,TRUE
+BIO,Bio-Rad Laboratories Inc. Class A Common Stock,579.91,8.74,0.02,VeryLarge,United States,85411.00,Capital Goods,49530693.01,TRUE
+UMC,United Microelectronics Corporation (NEW) Common Stock,9.26,0.15,0.02,VeryLarge,Taiwan,5341989.00,Technology,49466818.14,TRUE
+TUYA,Tuya Inc. American Depositary Shares each representing one Class A Ordinary Share,23.34,2.20,0.10,VeryLarge,,2112636.00,Technology,49308924.24,TRUE
+LII,Lennox International Inc. Common Stock,316.74,5.15,0.02,VeryLarge,United States,155181.00,Capital Goods,49152029.94,TRUE
+AMH,American Homes 4 Rent Common Shares of Beneficial Interest,34.23,0.89,0.03,VeryLarge,,1430050.00,Consumer Services,48950611.50,TRUE
+VOD,Vodafone Group Plc American Depositary Shares,18.73,0.30,0.02,VeryLarge,United Kingdom,2604379.00,Public Utilities,48780018.67,TRUE
+LNT,Alliant Energy Corporation Common Stock,54.36,0.20,0.00,VeryLarge,United States,894068.00,Public Utilities,48601536.48,TRUE
+ATHM,Autohome Inc. American Depositary Shares each representing four class A ordinary shares.,95.26,1.99,0.02,VeryLarge,,506950.00,Technology,48292057.00,TRUE
+TW,Tradeweb Markets Inc. Class A Common Stock,76.00,2.00,0.03,VeryLarge,United States,632364.00,Finance,48059664.00,TRUE
+SQM,Sociedad Quimica y Minera S.A. Common Stock,54.28,1.21,0.02,VeryLarge,Chile,883876.00,Basic Industries,47976789.28,TRUE
+BFAM,Bright Horizons Family Solutions Inc. Common Stock,176.76,5.31,0.03,VeryLarge,United States,270367.00,Miscellaneous,47790070.92,TRUE
+LOGI,Logitech International S.A. Ordinary Shares,107.98,3.48,0.03,VeryLarge,United States,439403.00,Technology,47446735.94,TRUE
+CX,Cemex S.A.B. de C.V. Sponsored ADR,6.85,-0.12,-0.02,VeryLarge,Mexico,6792639.00,Capital Goods,46529577.15,TRUE
+L,Loews Corporation Common Stock,52.25,0.97,0.02,VeryLarge,United States,885862.00,Finance,46286289.50,TRUE
+WMG,Warner Music Group Corp. Class A Common Stock,34.02,-0.31,-0.01,VeryLarge,United States,1358864.00,Consumer Services,46228553.28,TRUE
+ALNY,Alnylam Pharmaceuticals Inc. Common Stock,141.81,0.62,0.00,VeryLarge,United States,324981.00,Health Care,46085555.61,TRUE
+PNR,Pentair plc. Ordinary Share,62.39,0.07,0.00,VeryLarge,Switzerland,733243.00,Technology,45747030.77,TRUE
+EQNR,Equinor ASA,19.69,0.23,0.01,VeryLarge,Norway,2296097.00,Energy,45210149.93,TRUE
+TEVA,Teva Pharmaceutical Industries Limited American Depositary Shares,11.48,-0.06,-0.01,VeryLarge,Israel,3930658.00,Health Care,45123953.84,TRUE
+BCE,BCE Inc. Common Stock,45.60,0.46,0.01,VeryLarge,Canada,975653.00,Public Utilities,44489776.80,TRUE
+DNB,Dun & Bradstreet Holdings Inc. Common Stock,23.44,-0.37,-0.02,VeryLarge,United States,1888421.00,Finance,44264588.24,FALSE
+MKL,Markel Corporation Common Stock,1156.95,17.33,0.02,VeryLarge,United States,37944.00,Finance,43899310.80,TRUE
+WSO,Watsco Inc. Common Stock,267.22,6.47,0.02,VeryLarge,United States,161494.00,Consumer Durables,43154426.68,TRUE
+TTC,Toro Company (The) Common Stock,105.36,2.22,0.02,VeryLarge,United States,409285.00,Capital Goods,43122267.60,TRUE
+OZON,Ozon Holdings PLC American Depositary Shares each ADS representing one ordinary share,58.00,1.93,0.03,VeryLarge,Cyprus,740138.00,Consumer Services,42928004.00,FALSE
+CNP,CenterPoint Energy Inc (Holding Co) Common Stock,22.65,0.00,0.00,VeryLarge,United States,1886482.00,Public Utilities,42728817.30,TRUE
+HUBB,Hubbell Inc Common Stock,190.39,3.50,0.02,VeryLarge,United States,222483.00,Capital Goods,42358538.37,TRUE
+TM,Toyota Motor Corporation Common Stock,154.16,-1.90,-0.01,VeryLarge,Japan,274454.00,Capital Goods,42309828.64,TRUE
+ABB,ABB Ltd Common Stock,30.66,0.19,0.01,VeryLarge,Switzerland,1351662.00,Consumer Durables,41441956.92,TRUE
+MGP,MGM Growth Properties LLC Class A common shares representing limited liability company interests,33.64,1.02,0.03,VeryLarge,United States,1228228.00,Consumer Services,41317589.92,TRUE
+ABEV,Ambev S.A. American Depositary Shares (Each representing 1 Common Share),2.67,-0.07,-0.03,VeryLarge,,14989523.00,Consumer Non-Durables,40022026.41,TRUE
+RPM,RPM International Inc. Common Stock,92.43,0.58,0.01,VeryLarge,United States,424275.00,Basic Industries,39215738.25,TRUE
+MFC,Manulife Financial Corporation Common Stock,21.74,0.24,0.01,VeryLarge,Canada,1802914.00,Finance,39195350.36,TRUE
+SNY,Sanofi ADR,49.36,-0.10,0.00,VeryLarge,France,793410.00,Health Care,39162717.60,TRUE
+CM,Canadian Imperial Bank of Commerce Common Stock,98.71,0.84,0.01,VeryLarge,Canada,394631.00,Finance,38954026.01,TRUE
+DISCB,Discovery Inc. Series B Common Stock,111.17,-16.83,-0.13,VeryLarge,United States,349421.00,Consumer Services,38845132.57,TRUE
+BAP,Credicorp Ltd. Common Stock,137.54,0.97,0.01,VeryLarge,Peru,281084.00,Finance,38660293.36,TRUE
+FMX,Fomento Economico Mexicano S.A.B. de C.V. Common Stock,76.87,1.54,0.02,VeryLarge,Mexico,499575.00,Consumer Non-Durables,38402330.25,TRUE
+QGEN,Qiagen N.V. Common Shares ,49.29,0.60,0.01,VeryLarge,Netherlands,775162.00,Health Care,38207734.98,TRUE
+ROL,Rollins Inc. Common Stock,34.83,0.41,0.01,VeryLarge,United States,1083649.00,Finance,37743494.67,TRUE
+GL,Globe Life Inc. Common Stock,98.69,2.06,0.02,VeryLarge,United States,371683.00,Finance,36681395.27,TRUE
+PHG,Koninklijke Philips N.V. NY Registry Shares,58.20,1.17,0.02,VeryLarge,Netherlands,624360.00,Health Care,36337752.00,TRUE
+BSY,Bentley Systems Incorporated Class B Common Stock,47.94,1.01,0.02,VeryLarge,United States,735914.00,Technology,35279717.16,TRUE
+LSXMA,Liberty Media Corporation Series A Liberty SiriusXM Common Stock,45.69,1.61,0.04,VeryLarge,United States,765174.00,Consumer Services,34960800.06,TRUE
+ALC,Alcon Inc. Ordinary Shares,71.16,0.98,0.01,VeryLarge,Switzerland,490948.00,Health Care,34935859.68,TRUE
+XM,Qualtrics International Inc. Class A Common Stock,32.43,-0.48,-0.01,VeryLarge,United States,1064082.00,Technology,34508179.26,TRUE
+UWMC,UWM Holdings Corporation Class A Common Stock,7.75,-0.18,-0.02,VeryLarge,United States,4441239.00,Finance,34419602.25,TRUE
+WTRG,Essential Utilities Inc. Common Stock,44.72,-0.03,0.00,VeryLarge,United States,763631.00,Public Utilities,34149578.32,TRUE
+CG,The Carlyle Group Inc. Common Stock,37.39,0.63,0.02,VeryLarge,United States,899886.00,Finance,33646737.54,TRUE
+PPD,PPD Inc. Common Stock,38.30,0.46,0.01,VeryLarge,United States,866279.00,Health Care,33178485.70,TRUE
+TRI,Thomson Reuters Corp Ordinary Shares,89.59,2.02,0.02,VeryLarge,United States,368722.00,Consumer Services,33033803.98,TRUE
+LSXMK,Liberty Media Corporation Series C Liberty SiriusXM Common Stock,45.54,1.43,0.03,VeryLarge,United States,722148.00,Consumer Services,32886619.92,TRUE
+NDSN,Nordson Corporation Common Stock,202.38,3.70,0.02,VeryLarge,United States,162404.00,Capital Goods,32867321.52,TRUE
+NVO,Novo Nordisk A/S Common Stock,67.66,0.24,0.00,VeryLarge,Denmark,483881.00,Health Care,32739388.46,TRUE
+NGG,National Grid Transco PLC National Grid PLC (NEW) American Depositary Shares,59.64,0.40,0.01,VeryLarge,United Kingdom,544172.00,Public Utilities,32454418.08,TRUE
+DB,Deutsche Bank AG Common Stock,12.12,0.12,0.01,VeryLarge,Germany,2568640.00,Finance,31131916.80,TRUE
+PBA,Pembina Pipeline Corp. Ordinary Shares (Canada),29.23,0.39,0.01,VeryLarge,Canada,1030602.00,Energy,30124496.46,TRUE
+TS,Tenaris S.A. American Depositary Shares,23.14,0.45,0.02,VeryLarge,Luxembourg,1248156.00,Basic Industries,28882329.84,TRUE
+GRFS,Grifols S.A. American Depositary Shares,16.62,-0.67,-0.04,VeryLarge,Spain,1670133.00,Health Care,27757610.46,TRUE
+TU,Telus Corporation Ordinary Shares,20.23,0.30,0.02,VeryLarge,Canada,1341678.00,Public Utilities,27142145.94,FALSE
+CCEP,Coca-Cola European Partners plc Ordinary Shares,51.10,-1.06,-0.02,VeryLarge,,528500.00,Consumer Non-Durables,27006350.00,TRUE
+LU,Lufax Holding Ltd American Depositary Shares two of which representing one Ordinary Share,14.57,0.05,0.00,VeryLarge,China,1824544.00,Finance,26583606.08,TRUE
+VIACA,ViacomCBS Inc. Class A Common Stock,47.48,0.31,0.01,VeryLarge,United States,549351.00,Consumer Services,26083185.48,TRUE
+NWS,News Corporation Class B Common Stock,24.00,0.54,0.02,VeryLarge,United States,1084011.00,Consumer Services,26016264.00,TRUE
+ENIA,Enel Americas S.A. American Depositary Shares,8.47,-0.01,0.00,VeryLarge,Chile,2961624.00,Public Utilities,25084955.28,TRUE
+ELP,Companhia Paranaense de Energia (COPEL) Common Stock,1.12,-0.14,-0.11,VeryLarge,Brazil,21827198.00,Public Utilities,24446461.76,FALSE
+MUFG,Mitsubishi UFJ Financial Group Inc. Common Stock,5.47,0.09,0.02,VeryLarge,Japan,4343969.00,Finance,23761510.43,TRUE
+UHAL,Amerco Common Stock,614.25,1.65,0.00,VeryLarge,United States,38571.00,Consumer Services,23692236.75,TRUE
+CUK,Carnival Plc ADS ADS,22.85,0.44,0.02,VeryLarge,United States,1033345.00,Consumer Services,23611933.25,TRUE
+CNHI,CNH Industrial N.V. Common Shares,15.72,0.08,0.01,VeryLarge,,1408974.00,Capital Goods,22149071.28,TRUE
+RCI,Rogers Communication Inc. Common Stock,46.94,0.84,0.02,VeryLarge,Canada,467925.00,Consumer Services,21964399.50,TRUE
+PLTK,Playtika Holding Corp. Common Stock,26.85,-0.36,-0.01,VeryLarge,Israel,817598.00,Technology,21952506.30,TRUE
+CRH,CRH PLC American Depositary Shares,46.78,-0.20,0.00,VeryLarge,Ireland,466489.00,Capital Goods,21822355.42,TRUE
+BEP,Brookfield Renewable Partners L.P. ,42.77,0.17,0.00,VeryLarge,,507971.00,Public Utilities,21725919.67,TRUE
+ASX,ASE Technology Holding Co. Ltd. American Depositary Shares (each representing Two Common Shares) ,7.97,0.27,0.04,VeryLarge,,2710721.00,Technology,21604446.37,TRUE
+AGR,Avangrid Inc. Common Stock,50.25,0.44,0.01,VeryLarge,United States,394796.00,Public Utilities,19838499.00,TRUE
+SLF,Sun Life Financial Inc. Common Stock,51.04,0.49,0.01,VeryLarge,Canada,379293.00,Finance,19359114.72,TRUE
+FTS,Fortis Inc. Common Shares,43.40,0.03,0.00,VeryLarge,,437800.00,Public Utilities,19000520.00,TRUE
+IMO,Imperial Oil Limited Common Stock,25.20,1.02,0.04,VeryLarge,Canada,711727.00,Energy,17935520.40,TRUE
+LBRDA,Liberty Broadband Corporation Class A Common Stock,143.59,-1.56,-0.01,VeryLarge,United States,123525.00,Consumer Services,17736954.75,TRUE
+AMX,America Movil S.A.B. de C.V. American Depository Receipt Series L,13.69,0.11,0.01,VeryLarge,Mexico,1279669.00,Public Utilities,17518668.61,TRUE
+GFL,GFL Environmental Inc. Subordinate voting shares no par value,35.42,0.47,0.01,VeryLarge,,486401.00,Public Utilities,17228323.42,TRUE
+MCFE,McAfee Corp. Class A Common Stock,23.55,0.81,0.04,VeryLarge,United States,731443.00,Technology,17225482.65,TRUE
+BIP,Brookfield Infrastructure Partners LP Limited Partnership Units,54.36,1.11,0.02,VeryLarge,Bermuda,287427.00,Consumer Services,15624531.72,TRUE
+PKX,POSCO Common Stock,71.58,-0.62,-0.01,VeryLarge,South Korea,218078.00,Basic Industries,15610023.24,TRUE
+VIV,Telefonica Brasil S.A. American Depositary Shares (Each representing One Common Share),7.76,-0.11,-0.01,VeryLarge,Brazil,1999350.00,Public Utilities,15514956.00,TRUE
+HMC,Honda Motor Company Ltd. Common Stock,30.07,-0.13,0.00,VeryLarge,Japan,486487.00,Capital Goods,14628664.09,TRUE
+SNN,Smith & Nephew SNATS Inc. Common Stock,38.19,0.29,0.01,VeryLarge,United Kingdom,366323.00,Health Care,13989875.37,TRUE
+KB,KB Financial Group Inc,48.33,-1.10,-0.02,VeryLarge,South Korea,285631.00,Finance,13804546.23,TRUE
+SJR,Shaw Communications Inc. Common Stock,26.45,0.23,0.01,VeryLarge,Canada,517799.00,Consumer Services,13695783.55,TRUE
+EC,Ecopetrol S.A. American Depositary Shares,12.83,0.01,0.00,VeryLarge,Colombia,1052379.00,Energy,13502022.57,TRUE
+ERIE,Erie Indemnity Company Class A Common Stock,223.48,2.57,0.01,VeryLarge,United States,60226.00,Finance,13459306.48,TRUE
+GIB,CGI Inc. Common Stock,84.18,0.96,0.01,VeryLarge,Canada,157239.00,Consumer Services,13236379.02,TRUE
+TTM,Tata Motors Ltd Tata Motors Limited,21.03,0.24,0.01,VeryLarge,India,619937.00,Capital Goods,13037275.11,TRUE
+OTEX,Open Text Corporation Common Shares,48.30,0.59,0.01,VeryLarge,Canada,267839.00,Technology,12936623.70,TRUE
+WIT,Wipro Limited Common Stock,6.50,0.16,0.03,VeryLarge,India,1784769.00,Technology,11600998.50,TRUE
+RELX,RELX PLC PLC American Depositary Shares (Each representing One Ordinary Share),25.60,0.44,0.02,VeryLarge,United Kingdom,431930.00,Miscellaneous,11057408.00,TRUE
+SKM,SK Telecom Co. Ltd. Common Stock,27.51,0.28,0.01,VeryLarge,South Korea,384629.00,Public Utilities,10581143.79,TRUE
+IEP,Icahn Enterprises L.P. Common Stock,55.05,1.33,0.02,VeryLarge,United States,190772.00,Capital Goods,10501998.60,TRUE
+RDY,Dr. Reddy's Laboratories Ltd Common Stock,62.72,1.33,0.02,VeryLarge,India,167327.00,Health Care,10494749.44,TRUE
+CNA,CNA Financial Corporation Common Stock,45.81,1.18,0.03,VeryLarge,United States,226642.00,Finance,10382470.02,TRUE
+SMFG,Sumitomo Mitsui Financial Group Inc Unsponsored American Depositary Shares (Japan),7.20,-0.05,-0.01,VeryLarge,Japan,1340591.00,Finance,9652255.20,TRUE
+CQP,Cheniere Energy Partners LP Cheniere Energy Partners LP Common Units,42.30,0.75,0.02,VeryLarge,United States,224898.00,Public Utilities,9513185.40,TRUE
+FMS,Fresenius Medical Care AG Common Stock,36.70,-0.18,0.00,VeryLarge,Germany,246494.00,Health Care,9046329.80,TRUE
+BBVA,Banco Bilbao Vizcaya Argentaria S.A. Common Stock,5.25,0.03,0.01,VeryLarge,Spain,1611762.00,Finance,8461750.50,TRUE
+GMAB,Genmab A/S ADS,32.94,0.11,0.00,VeryLarge,Denmark,255302.00,Health Care,8409647.88,TRUE
+BSAC,Banco Santander - Chile ADS,24.73,-0.10,0.00,VeryLarge,Chile,334481.00,Finance,8271715.13,TRUE
+TEF,Telefonica SA Common Stock,4.53,0.00,0.00,VeryLarge,Spain,1795847.00,Public Utilities,8135186.91,TRUE
+FERG,Ferguson plc Ordinary Shares,124.26,4.13,0.03,VeryLarge,,64123.00,Consumer Durables,7967923.98,TRUE
+SHG,Shinhan Financial Group Co Ltd American Depositary Shares,32.94,-0.60,-0.02,VeryLarge,South Korea,233119.00,Finance,7678939.86,TRUE
+NMR,Nomura Holdings Inc ADR American Depositary Shares,5.36,0.00,0.00,VeryLarge,Japan,1388970.00,Finance,7444879.20,TRUE
+SUZ,Suzano S.A. American Depositary Shares (each representing One Ordinary Share),12.13,-0.09,-0.01,VeryLarge,,612266.00,Basic Industries,7426786.58,TRUE
+SAN,Banco Santander S.A. Sponsored ADR (Spain),3.42,-0.01,0.00,VeryLarge,Spain,2141118.00,Finance,7322623.56,TRUE
+BSBR,Banco Santander Brasil SA American Depositary Shares each representing one unit,6.77,-0.28,-0.04,VeryLarge,Brazil,1068382.00,Finance,7232946.14,TRUE
+PTR,PetroChina Company Limited Common Stock,36.52,0.37,0.01,VeryLarge,China,192457.00,Energy,7028529.64,TRUE
+LYG,Lloyds Banking Group Plc American Depositary Shares,2.35,0.03,0.01,VeryLarge,United Kingdom,2761121.00,Finance,6488634.35,TRUE
+SNP,China Petroleum & Chemical Corporation Common Stock,53.72,0.99,0.02,VeryLarge,China,117166.00,Energy,6294157.52,TRUE
+E,ENI S.p.A. Common Stock,25.05,0.34,0.01,VeryLarge,Italy,240784.00,Energy,6031639.20,TRUE
+ORAN,Orange,12.36,0.03,0.00,VeryLarge,France,486393.00,Public Utilities,6011817.48,TRUE
+AEG,AEGON N.V. Common Stock,4.78,0.05,0.01,VeryLarge,Netherlands,1250173.00,Finance,5975826.94,TRUE
+VEDL,Vedanta Limited  American Depositary Shares (Each representing four equity shares),12.71,0.14,0.01,VeryLarge,,467764.00,Basic Industries,5945280.44,TRUE
+TLK,PT Telekomunikasi Indonesia Tbk,23.61,-0.03,0.00,VeryLarge,Indonesia,236725.00,Public Utilities,5589077.25,TRUE
+PUK,Prudential Public Limited Company Common Stock,43.22,0.53,0.01,VeryLarge,United Kingdom,122316.00,Finance,5286497.52,TRUE
+NWG,NatWest Group plc American Depositary Shares,5.43,0.06,0.01,VeryLarge,United Kingdom,871157.00,Finance,4730382.51,TRUE
+CHT,Chunghwa Telecom Co. Ltd.,39.13,-0.01,0.00,VeryLarge,Taiwan,111065.00,Public Utilities,4345973.45,TRUE
+WPP,WPP plc American Depositary Shares,64.96,1.06,0.02,VeryLarge,Ireland,65638.00,Technology,4263844.48,TRUE
+CAJ,Canon Inc. American Depositary Shares,22.89,0.12,0.01,VeryLarge,Japan,184896.00,Miscellaneous,4232269.44,TRUE
+IHG,Intercontinental Hotels Group American Depositary Shares (Each representing one Ordinary Share),69.97,1.07,0.02,VeryLarge,United Kingdom,55338.00,Consumer Services,3871999.86,TRUE
+LFC,China Life Insurance Company Limited American Depositary Shares,10.43,0.02,0.00,VeryLarge,China,366607.00,Finance,3823711.01,TRUE
+BCH,Banco De Chile Banco De Chile ADS,23.65,0.03,0.00,VeryLarge,Chile,122609.00,Finance,2899702.85,TRUE
+IX,Orix Corp Ads Common Stock,84.24,-0.55,-0.01,VeryLarge,Japan,18741.00,Finance,1578741.84,TRUE
+WBK,Westpac Banking Corporation Common Stock,18.73,0.17,0.01,VeryLarge,Australia,82966.00,Finance,1553953.18,TRUE
+LBTYB,Liberty Global plc Class B Ordinary Shares,32.00,3.30,0.12,VeryLarge,United Kingdom,46154.00,Consumer Services,1476928.00,FALSE
+KEP,Korea Electric Power Corporation Common Stock,10.40,0.14,0.01,VeryLarge,South Korea,101336.00,Public Utilities,1053894.40,TRUE
+JHX,James Hardie Industries plc American Depositary Shares (Ireland),31.88,1.30,0.04,VeryLarge,Ireland,27164.00,Capital Goods,865988.32,TRUE
+MFG,Mizuho Financial Group Inc. Sponosred ADR (Japan),2.92,0.01,0.00,VeryLarge,Japan,280345.00,Finance,818607.40,TRUE
+ZNH,China Southern Airlines Company Limited Common Stock,36.53,-0.17,0.00,VeryLarge,China,14159.00,Transportation,517228.27,TRUE

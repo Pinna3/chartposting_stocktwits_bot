@@ -4,7 +4,7 @@ import json
 import csv
 import finnhub
 from time import sleep
-from alpaca import get_all_positions, get_account_value
+from alpaca import get_all_positions, get_account_value, return_candles_json
 
 def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     candles = SecurityTradeDataObject
@@ -263,6 +263,35 @@ def initialize_holdings():
     holdings['short']['acct_percentage'] = round((short_market_value / acct_value) * 100, 2)
 
     return holdings
+
+def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
+    with open(csv_in) as infile:
+        reader = csv.reader(infile)
+        next(reader)
+
+        processed_data = []
+        for row in reader:
+            stock = row[0]
+            smoothness_test = True
+            data = return_candles_json(stock, period='day', num_bars=365)
+            for index, ohlc in enumerate(data[stock][:-1]):
+                if abs(float(ohlc['c']) - float(data[stock][index+1]['o'])) > (float(ohlc['c']) * .5):
+                    smoothness_test = False
+            row.append(smoothness_test)
+            processed_data.append(row)
+            sleep(.3)
+            print(row)
+
+        with open(csv_out, 'w') as outfile:
+            writer = csv.writer(outfile)
+            for row in processed_data:
+                writer.writerow(row)
+
+
+
+
+
+
 
 
 
