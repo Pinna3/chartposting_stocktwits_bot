@@ -2,7 +2,7 @@ import finnhub
 import csv
 from time import sleep
 from candlestick import SecurityTradeData
-from utility_func import bb_param_optomizer
+from utility_func import bb_param_optomizer, make_pulled_csv_list_consumable
 import json
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')

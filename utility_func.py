@@ -5,6 +5,7 @@ import csv
 import finnhub
 from time import sleep
 from alpaca import get_all_positions, get_account_value, return_candles_json
+import pandas as pd
 
 def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     candles = SecurityTradeDataObject
@@ -287,7 +288,55 @@ def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
             for row in processed_data:
                 writer.writerow(row)
 
+def make_pulled_csv_list_consumable(csv_in):
+    with open(csv_in) as infile:
+        stocks = infile.readlines()
+    symbols = [stock.split(',')[0].strip() for stock in stocks[1:]]
+    mkt_caps = [stock.split(',')[5].strip() for stock in stocks[1:]]
+    sectors = [stock.split(',')[8].strip() for stock in stocks[1:]]
+    smoothness_tests = [stock.split(',')[10].strip() for stock in stocks[1:]]
+    #15 allows us to handle up to 3000 stocks without complications
+    batch = len(symbols) // 15
+    remainder = len(symbols) % 15
+    #remainder batch dataframe conversion
+    remainder_reference = symbols[-remainder:]
+    remainder_mkt_cap = mkt_caps[-remainder:]
+    remainder_sector = sectors[-remainder:]
+    remainder_smoothness_test = smoothness_tests[-remainder:]
+    remainder_batch = ','.join(remainder_reference)
+    remainder_data = return_candles_json(remainder_batch, period='day', num_bars=365)
+    #iterable list with retrievable values
+    remainder_df_list = []
+    for index, reference_symbol in enumerate(remainder_reference):
+        df = pd.DataFrame(remainder_data[reference_symbol])
+        del df['t']
+        remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], df])
+    #iterable list with retrievable values
+    total_batch_df_list = []
+    # # for batch_num in range(1, 16):
+    for batch_num in range(1, 16):
+        symbol_reference = symbols[(batch_num - 1)*batch: batch_num*batch]
+        batch_mkt_cap = mkt_caps[(batch_num - 1)*batch: batch_num*batch]
+        batch_sector = sectors[(batch_num - 1)*batch: batch_num*batch]
+        batch_smoothness_test = smoothness_tests[(batch_num - 1)*batch: batch_num*batch]
+        symbol_batch = ','.join(symbol_reference)
+        batch_data = return_candles_json(symbol_batch, period='day', num_bars=365)
+        #iterable list with retrievable values
+        batch_df_list = []
+        for index, reference_symbol in enumerate(symbol_reference):
+            df = pd.DataFrame(batch_data[reference_symbol])
+            del df['t']
+            batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], df])
+        for item in batch_df_list:
+            if item not in total_batch_df_list:
+                total_batch_df_list.append(item)
+        for item in remainder_df_list:
+            if item not in total_batch_df_list:
+                total_batch_df_list.append(item)
 
+        return total_batch_df_list
+
+print(make_pulled_csv_list_consumable('StockLists/VeryLarge>$10B.csv')[0])
 
 
 

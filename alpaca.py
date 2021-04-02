@@ -1,6 +1,5 @@
 import requests, json, time
 from config import APCA_API_KEY_ID_PAPER, APCA_API_SECRET_KEY_PAPER, HEADERS_PAPER, BARS_URL
-import pandas as pd
 
 APCA_API_BASE_URL =  'https://paper-api.alpaca.markets'
 ACCOUNT_URL = '{}/v2/account'.format(APCA_API_BASE_URL)
@@ -98,65 +97,3 @@ def return_candles_json(symbol, period='1Day', num_bars=365):
     data = r.json()
     # df = pd.DataFrame(data)
     return data
-
-
-
-
-
-
-
-
-
-
-
-
-
-###Candlesticks stuff, save for later
-with open('StockLists/VeryLarge>$10B.csv') as infile:
-    stocks = infile.readlines()
-
-symbols = [stock.split(',')[0].strip() for stock in stocks[1:]]
-mkt_caps = [stock.split(',')[5].strip() for stock in stocks[1:]]
-sectors = [stock.split(',')[8].strip() for stock in stocks[1:]]
-smoothness_tests = [stock.split(',')[10].strip() for stock in stocks[1:]]
-
-#15 allows us to handle up to 3000 stocks without complications
-batch = len(symbols) // 15
-remainder = len(symbols) % 15
-
-
-#remainder batch dataframe conversion
-remainder_reference = symbols[-remainder:]
-remainder_mkt_cap = mkt_caps[-remainder:]
-remainder_sector = sectors[-remainder:]
-remainder_smoothness_test = smoothness_tests[-remainder:]
-remainder_batch = ','.join(remainder_reference)
-remainder_data = return_candles_json(remainder_batch, period='day', num_bars=10)
-#iterable list with retrievable values
-remainder_df_list = []
-for index, reference_symbol in enumerate(remainder_reference):
-    df = pd.DataFrame(remainder_data[reference_symbol])
-    del df['t']
-    remainder_df_list.append({reference_symbol: [df, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index]]})
-print(remainder_df_list)
-# json_candle_batches_pair_with_reference_keys = []
-# #iterable list with retrievable values
-# total_batch_df_list = []
-# # # for batch_num in range(1, 16):
-# for batch_num in range(1, 16):
-#     symbol_reference = symbols[(batch_num - 1)*batch: batch_num*batch]
-#     symbol_batch = ','.join(symbol_reference)
-#     batch_data = return_candles_json(symbol_batch, period='day', num_bars=365)
-#     #iterable list with retrievable values
-#     batch_df_list = []
-#     for reference_symbol in symbol_reference:
-#         df = pd.DataFrame(batch_data[reference_symbol])
-#         del df['t']
-#         batch_df_list.append({reference_symbol: df})
-#     for dictdf in batch_df_list:
-#         if dictdf not in total_batch_df_list:
-#             total_batch_df_list.append(dictdf)
-#     for dictdf in remainder_df_list:
-#         if dictdf not in total_batch_df_list:
-#             total_batch_df_list.append(dictdf)
-# print(total_batch_df_list[2].keys())
