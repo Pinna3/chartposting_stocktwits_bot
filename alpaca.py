@@ -1,5 +1,5 @@
 import requests, json, time
-from config import APCA_API_KEY_ID_PAPER, APCA_API_SECRET_KEY_PAPER, HEADERS_PAPER
+from config import APCA_API_KEY_ID_PAPER, APCA_API_SECRET_KEY_PAPER, HEADERS_PAPER, BARS_URL
 
 APCA_API_BASE_URL =  'https://paper-api.alpaca.markets'
 ACCOUNT_URL = '{}/v2/account'.format(APCA_API_BASE_URL)
@@ -107,19 +107,19 @@ def get_account_value():
 
 
 
-
+import pandas as pd
 
 #return candlestick bar data from num_bars to now
 # def return_candles_json(csv_stocklist, period='day', num_bars=365):
 def return_candles_json(symbol, period='1Day', num_bars=365):
-    daily_bars_url_v1 = '{}/{}?symbols={}&limit={}'.format(config.BARS_URL, period, symbol, num_bars)
+    daily_bars_url_v1 = '{}/{}?symbols={}&limit={}'.format(BARS_URL, period, symbol, num_bars)
     daily_bars_url_v2 = 'https://data.alpaca.markets/v2/stocks/{}/bars?limit={}&timeframe={}'.format(symbol, num_bars, period)
-    r = requests.get(daily_bars_url_v1, headers=config.HEADERS_PAPER)
+    r = requests.get(daily_bars_url_v1, headers=HEADERS_PAPER)
     data = r.json()
     # df = pd.DataFrame(data)
     return data
 
-###Candlesticks stuff, save for later
+# ###Candlesticks stuff, save for later
 # with open('StockLists/VeryLargeStocks$4B+.csv') as infile:
 #     stocks = infile.readlines()
 #
@@ -129,28 +129,37 @@ def return_candles_json(symbol, period='1Day', num_bars=365):
 # batch = len(symbols) // 15
 # remainder = len(symbols) % 15
 #
-# # #remainder batch dataframe conversion
-# # remainder_reference = symbols[-remainder:]
-# # remainder_batch = ','.join(remainder_reference)
-# # remainder_data = return_candles_json(remainder_batch, period='day', num_bars=1000)
-# # for reference_symbol in remainder_reference:
-# #     print(pd.DataFrame(remainder_data[reference_symbol]))
+#
+# #remainder batch dataframe conversion
+# remainder_reference = symbols[-remainder:]
+# remainder_batch = ','.join(remainder_reference)
+# remainder_data = return_candles_json(remainder_batch, period='day', num_bars=10)
+# #iterable list with retrievable values
+# remainder_df_list = []
+# for reference_symbol in remainder_reference:
+#     df = pd.DataFrame(remainder_data[reference_symbol])
+#     remainder_df_list.append({reference_symbol: df})
+#     # del df['t']
+# # print(remainder_df_list[0]['ZM']['o'])
 #
 # json_candle_batches_pair_with_reference_keys = []
-# # for batch_num in range(1, 16):
-# for batch_num in range(1, 2):
+# #iterable list with retrievable values
+# total_batch_df_list = []
+# # # for batch_num in range(1, 16):
+# for batch_num in range(1, 16):
 #     symbol_reference = symbols[(batch_num - 1)*batch: batch_num*batch]
 #     symbol_batch = ','.join(symbol_reference)
-#     batch_data = return_candles_json(symbol_batch, period='day', num_bars=1000)
-#     # print(len(batch_data))
-#     json_candle_batches_pair_with_reference_keys.append([batch_data, symbol_reference])
-#     # print(len(json_candle_batches_pair_with_reference_keys[0][1]))
+#     batch_data = return_candles_json(symbol_batch, period='day', num_bars=10)
+#     #iterable list with retrievable values
+#     batch_df_list = []
+#     for reference_symbol in symbol_reference:
+#         df = pd.DataFrame(batch_data[reference_symbol])
+#         batch_df_list.append({reference_symbol: df})
+#         # del df['t']
+#     for dictdf in batch_df_list:
+#         if dictdf not in total_batch_df_list:
+#             total_batch_df_list.append(dictdf)
+#     for dictdf in remainder_df_list:
+#         if dictdf not in total_batch_df_list:
+#             total_batch_df_list.append(dictdf)
 #
-#
-#
-#
-#
-# for pair in json_candle_batches_pair_with_reference_keys:
-#     # print(len(pair))
-#     index = pair[1]
-#     print(pd.DataFrame(pair[0][index]))

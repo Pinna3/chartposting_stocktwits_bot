@@ -26,13 +26,14 @@ def dailyscanner(json_watchlist, op_str, publish=False):
 
     holdings = initialize_holdings()
     print(holdings)
+    missed_connection = []
     missed_candle_object_error = []
     missed_chart_error = []
     missed_order_error = []
 
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
-        # try:
+        try:
             try:
                 candle_object = SecurityTradeData(security['ticker'], 365)
             except ValueError:
@@ -70,22 +71,32 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            if long_capacity(holdings['long']['acct_percentage']) and \
-                            industry_capacity(holdings['long']['industry'][security['industry']]['acct_percentage']) and \
-                            check_daily_counter_capacity('long', security['mktcap']) is False:
-                                price = get_quote(security['ticker'])['last']['askprice']
-                                acct_value = get_account_value()
-                                try:
-                                    qty = (acct_value / 100) // float(price)
-                                except ZeroDivisionError:
-                                    missed_order_error.append(security['ticker'])
-                                    print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
-                                    continue
-                                buy_market(security['ticker'], qty)
-                                sleep(3)
-                                trailing_stop_long(security['ticker'], 2.0)
-                                holdings = initialize_holdings()
-                                print(holdings)
+                            print(f"Long Capacity: {long_capacity(holdings['long']['acct_percentage'])}")
+                            print(f"Daily Counter Capacity: {check_daily_counter_capacity('long', security['mktcap'])}")
+                            if long_capacity(holdings['long']['acct_percentage']) is False and \
+                                check_daily_counter_capacity('long', security['mktcap']) is False:
+                                if security['industry'] in holdings['long']['industry'].keys():
+                                    industry_capacity = industry_capacity(holdings['long']['industry'][security['industry']]['acct_percentage'])
+                                else:
+                                    industry_capacity = False
+                                print(f"Industry Capacity: {industry_capacity}")
+                                if industry_capacity is False:
+                                    # price = get_quote(security['ticker'])['last']['askprice']
+                                    # acct_value = get_account_value()
+                                    # try:
+                                    #     qty = (acct_value / 100) // float(price)
+                                    # except ZeroDivisionError:
+                                    #     missed_order_error.append(security['ticker'])
+                                    #     print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
+                                    #     continue
+                                    # buy_market(security['ticker'], qty)
+                                    # sleep(3)
+                                    # trailing_stop_long(security['ticker'], 2.0)
+                                    add_to_daily_counter('long', security['mktcap'])
+                                    holdings = initialize_holdings()
+                                    print(holdings)
+                                else:
+                                    print(f'At Capacity At Capacity At Capacity At Capacity')
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
 
@@ -115,33 +126,43 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            if short_capacity(holdings['short']['acct_percentage']) and \
-                            industry_capacity(holdings['short']['industry'][security['industry']]['acct_percentage']) and \
-                            check_daily_counter_capacity('short', security['mktcap']) is False:
-                                price = get_quote(security['ticker'])['last']['askprice']
-                                acct_value = get_account_value()
-                                try:
-                                    qty = (acct_value / 100) // float(price)
-                                except ZeroDivisionError:
-                                    missed_order_error.append(security['ticker'])
-                                    print(f'MISSED!!!!...{missed_order_error}')
-                                    continue
-                                sell_market(security['ticker'], qty)
-                                sleep(3)
-                                trailing_stop_short(security['ticker'], 2.0)
-                                holdings = initialize_holdings()
-                                print(holdings)
+                            print(f"Short Capacity: {short_capacity(holdings['short']['acct_percentage'])}")
+                            print(f"Daily Counter Capacity: {check_daily_counter_capacity('short', security['mktcap'])}")
+                            if short_capacity(holdings['short']['acct_percentage']) is False and \
+                                check_daily_counter_capacity('short', security['mktcap']) is False:
+                                if security['industry'] in holdings['short']['industry'].keys():
+                                    industry_capacity = industry_capacity(holdings['short']['industry'][security['industry']]['acct_percentage'])
+                                else:
+                                    industry_capacity = False
+                                print(f"Industry Capacity: {industry_capacity}")
+                                if industry_capacity is False:
+                                    # price = get_quote(security['ticker'])['last']['askprice']
+                                    # acct_value = get_account_value()
+                                    # try:
+                                    #     qty = (acct_value / 100) // float(price)
+                                    # except ZeroDivisionError:
+                                    #     missed_order_error.append(security['ticker'])
+                                    #     print(f'MISSED!!!!...{missed_order_error}')
+                                    #     continue
+                                    # sell_market(security['ticker'], qty)
+                                    # sleep(3)
+                                    # trailing_stop_short(security['ticker'], 2.0)
+                                    add_to_daily_counter('short', security['mktcap'])
+                                    holdings = initialize_holdings()
+                                    print(holdings)
+                                else:
+                                    print(f'At Capacity At Capacity At Capacity At Capacity')
                     else:
                         print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
-        # except:
-        #     missed_error.append(security['ticker'])
-        #     print(f'MISSED!!!!...{missed_error}')
-        #     continue
+        except:
+            missed_connection.append(security['ticker'])
+            print(f'ConnectionError...{missed_connection}')
+            continue
 
 while True:
     # #longs 70%
-    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    # dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-uptrend03-29-21.json', '>', publish=False)
+    # dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
     dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
     dailyscanner('LargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
     dailyscanner('LargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)

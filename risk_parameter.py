@@ -11,9 +11,10 @@ def long_capacity(portfolio_current, max_exposure=69):
 def short_capacity(portfolio_current, max_exposure=29):
     return portfolio_current >= max_exposure
 
-#10% max allocation per industry
+#10% max allocation per industry, key error means no sector exposure yet
 def industry_capacity(portfolio_current, max_exposure=9):
     return portfolio_current >= max_exposure
+
 
 # Maximums: 8 x long(3 x verylarge, 2 x large, 1 x medium, 1 x small, 1 x micro),
 #          4 x short(2 x verylarge, 1 x large, 1 x medium)

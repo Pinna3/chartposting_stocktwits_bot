@@ -6,6 +6,7 @@ import os
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 hours_minutes_now = datetime.now().strftime('%H:%M')
+from alpaca import return_candles_json
 
 #Database Object with candlestick data and moving average data (for now)
 class SecurityTradeData:
@@ -29,9 +30,11 @@ class SecurityTradeData:
         data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
         del data['s']
         del data['t']
-        # data = alpaca.return_candles_json(ticker, period='day', num_bars=365)
+        # data = return_candles_json(ticker, period='day', num_bars=365)
         time.sleep(1)
+        # df = pd.DataFrame(data[ticker])
         df = pd.DataFrame(data)
+        print(df)
         sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
         sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
         sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
@@ -162,6 +165,11 @@ class SecurityTradeData:
         except ZeroDivisionError:
             return [0, 0]
         return [sum, average]
+
+test = SecurityTradeData('AAPL', 365)
+test.chart(365)
+
+
 
 # start_time = int((time.time() - (365 * (31540000 / 365))))
 # current_time = int(time.time())

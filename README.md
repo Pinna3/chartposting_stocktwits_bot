@@ -24,3 +24,5 @@ Micro:
 ***Nothing is set in stone, doesn't have to be perfect just yet. Just get prototype up and running.  
 
 Next step: ATR Trailing Stops, timed exits, bollinger exits.
+
+Also: Will need backup API for finnhub down periods... (need industry data)
