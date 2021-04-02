@@ -119,47 +119,46 @@ def return_candles_json(symbol, period='1Day', num_bars=365):
     # df = pd.DataFrame(data)
     return data
 
-# ###Candlesticks stuff, save for later
-# with open('StockLists/VeryLargeStocks$4B+.csv') as infile:
-#     stocks = infile.readlines()
-#
-# symbols = [stock.split(',')[0].strip() for stock in stocks[1:]]
-#
-# #15 allows us to handle up to 3000 stocks without complications
-# batch = len(symbols) // 15
-# remainder = len(symbols) % 15
-#
-#
-# #remainder batch dataframe conversion
-# remainder_reference = symbols[-remainder:]
-# remainder_batch = ','.join(remainder_reference)
-# remainder_data = return_candles_json(remainder_batch, period='day', num_bars=10)
-# #iterable list with retrievable values
-# remainder_df_list = []
-# for reference_symbol in remainder_reference:
-#     df = pd.DataFrame(remainder_data[reference_symbol])
-#     remainder_df_list.append({reference_symbol: df})
-#     # del df['t']
-# # print(remainder_df_list[0]['ZM']['o'])
-#
-# json_candle_batches_pair_with_reference_keys = []
-# #iterable list with retrievable values
-# total_batch_df_list = []
-# # # for batch_num in range(1, 16):
-# for batch_num in range(1, 16):
-#     symbol_reference = symbols[(batch_num - 1)*batch: batch_num*batch]
-#     symbol_batch = ','.join(symbol_reference)
-#     batch_data = return_candles_json(symbol_batch, period='day', num_bars=10)
-#     #iterable list with retrievable values
-#     batch_df_list = []
-#     for reference_symbol in symbol_reference:
-#         df = pd.DataFrame(batch_data[reference_symbol])
-#         batch_df_list.append({reference_symbol: df})
-#         # del df['t']
-#     for dictdf in batch_df_list:
-#         if dictdf not in total_batch_df_list:
-#             total_batch_df_list.append(dictdf)
-#     for dictdf in remainder_df_list:
-#         if dictdf not in total_batch_df_list:
-#             total_batch_df_list.append(dictdf)
-#
+###Candlesticks stuff, save for later
+with open('StockLists/MicroStocks$1M-$75M.csv') as infile:
+    stocks = infile.readlines()
+
+symbols = [stock.split(',')[0].strip() for stock in stocks[1:]]
+
+#15 allows us to handle up to 3000 stocks without complications
+batch = len(symbols) // 15
+remainder = len(symbols) % 15
+
+
+#remainder batch dataframe conversion
+remainder_reference = symbols[-remainder:]
+remainder_batch = ','.join(remainder_reference)
+remainder_data = return_candles_json(remainder_batch, period='day', num_bars=10)
+#iterable list with retrievable values
+remainder_df_list = []
+for reference_symbol in remainder_reference:
+    df = pd.DataFrame(remainder_data[reference_symbol])
+    remainder_df_list.append({reference_symbol: df})
+    # del df['t']
+
+json_candle_batches_pair_with_reference_keys = []
+#iterable list with retrievable values
+total_batch_df_list = []
+# # for batch_num in range(1, 16):
+for batch_num in range(1, 16):
+    symbol_reference = symbols[(batch_num - 1)*batch: batch_num*batch]
+    symbol_batch = ','.join(symbol_reference)
+    batch_data = return_candles_json(symbol_batch, period='day', num_bars=10)
+    #iterable list with retrievable values
+    batch_df_list = []
+    for reference_symbol in symbol_reference:
+        df = pd.DataFrame(batch_data[reference_symbol])
+        batch_df_list.append({reference_symbol: df})
+        # del df['t']
+    for dictdf in batch_df_list:
+        if dictdf not in total_batch_df_list:
+            total_batch_df_list.append(dictdf)
+    for dictdf in remainder_df_list:
+        if dictdf not in total_batch_df_list:
+            total_batch_df_list.append(dictdf)
+print(len(total_batch_df_list))

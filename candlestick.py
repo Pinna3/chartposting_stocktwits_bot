@@ -18,19 +18,20 @@ class SecurityTradeData:
         self.start_time = int((time.time() - (num_days * (31540000 / 365))))
         self.current_time = int(time.time())
 
-        #Setup client API connection
-        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
-
         #industry and peers data added while scanning
         self.industry = None
         self.peers = None
         self.mktcap = None
 
         #candlestick data
+        data = return_candles_json(ticker, period='day', num_bars=365)
+
+        #Setup client API connection
+        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
         data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
         del data['s']
         del data['t']
-        # data = return_candles_json(ticker, period='day', num_bars=365)
+        data = return_candles_json(ticker, period='day', num_bars=365)
         time.sleep(1)
         # df = pd.DataFrame(data[ticker])
         df = pd.DataFrame(data)

@@ -1,22 +1,20 @@
-Symbol,Name,Last,Industry,Price Vol,Market Cap
-AAON,Aaon Inc,72.33,Building Prdcts - Air Heating,11045,3632377000
-AAT,American Assets Trust,33.41,REIT - Equity Trust Retail,7407,1955696000
-AAWW,Atlas Air Ww,58.27,Transportation - Air Freight,29333,1586482000
-ABCB,Ameris Bancorp,54.94,Banks - Southeast,33667,3595822000
-ABG,Asbury Automotive Group Inc,199.29,Retail - Wsale Auto & Trucks,41173,3505894000
-ABM,ABM Industries Inc,52.49,Building - Maint & Service,28261,3351816000
-ABR,Arbor Realty Trust,15.4,REIT - Equity Trust Other,88975,1983991000
-ACA,Arcosa Inc,64.44,Building & Construction - Misc,23186,2760542000
-ACB,Aurora Cannabis Inc,9.11,Medical Products,75266,1773901000
-ACCD,Accolade Inc,41.81,Technology Services,39159,2107730000
-ACLS,Axcelis Tech Inc,39.19,Electrical - Manufacturing,14571,1227845000
-ACMR,Acm Research Inc,83.36,Containers - Paper Products,19223,1420137000
-ACRS,Aclaris Therapts,23.02,Medical - Drugs,15223,1166626000
-ADCT,Adc Therapeutics Sa,25.11,Medical - Biomedical,6629,1723678000
-ADNT,Adient Plc,41.83,Auto - Truck Original Parts,57378,3482406000
-ADUS,Addus Homecare Corp,107.6,Medical - Outpatient & Hm Care,6047,1669327000
-AEIS,Advanced Energy,111.05,Semi-Eqpt Wafer Fabrication,30850,3907827000
-AEL,American Equity Investment Life,30.7,Insurance - Life,15780,2722732000
-AFIN,American Finance Trust Inc Cl A,9.95,REIT - Equity Trust Other,3302,1044835000
-AFYA,Afya Ltd Cl A,19.34,Schools,3955,1719495000
-CMBM,Cambium Networks Corp,45.87,Wireless National,12623,1085801000
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
+MARA,Marathon Digital Holdings Inc. Common Stock,$48.85 ,0.83,1.73%,Large,United States,20732054,Technology,"$1,012,760,837.90 "
+RIOT,Riot Blockchain Inc.  Common Stock ,$52.03 ,-1.24,-2.33%,Large,United States,14977996,Technology,"$779,305,131.88 "
+AMC,AMC Entertainment Holdings Inc. Class A Common Stock,$9.36 ,-0.85,-8.33%,Large,,77125372,Consumer Services,"$721,893,481.92 "
+X,United States Steel Corporation Common Stock,$25.00 ,-1.17,-4.47%,Large,United States,28542461,Basic Industries,"$713,561,525.00 "
+CLF,Cleveland-Cliffs Inc. Common Stock,$19.42 ,-0.69,-3.43%,Large,United States,33711856,Basic Industries,"$654,684,243.52 "
+MRO,Marathon Oil Corporation Common Stock,$11.79 ,1.11,10.39%,Large,United States,52708665,Energy,"$621,435,160.35 "
+GSX,GSX Techedu Inc. American Depositary Shares three of which representing two Class A Ordinary Shares,$32.18 ,-1.7,-5.02%,Large,,17034734,Consumer Services,"$548,177,740.12 "
+CHPT,ChargePoint Holdings Inc. Common Stock,$29.84 ,3.14,11.76%,Large,,17642395,Capital Goods,"$526,449,066.80 "
+FCEL,FuelCell Energy Inc. Common Stock,$14.35 ,-0.06,-0.42%,Large,United States,34187506,Energy,"$490,590,711.10 "
+CAN,Canaan Inc. American Depositary Shares,$22.00 ,1.33,6.43%,Large,China,20290175,Technology,"$446,383,850.00 "
+FUBO,fuboTV Inc. Common Stock,$22.44 ,0.32,1.45%,Large,,18575618,Consumer Services,"$416,836,867.92 "
+MVIS,MicroVision Inc. Common Stock,$15.54 ,-3.01,-16.23%,Large,United States,26044987,Capital Goods,"$404,739,097.98 "
+JMIA,Jumia Technologies AG American Depositary Shares each representing two Ordinary Shares,$38.01 ,2.55,7.19%,Large,,9837562,Consumer Services,"$373,925,731.62 "
+UTHR,United Therapeutics Corporation Common Stock,$192.34 ,25.07,14.99%,Large,United States,1699438,Health Care,"$326,869,904.92 "
+TIGR,UP Fintech Holding Ltd American Depositary Share representing fifteen Class A Ordinary Shares,$17.58 ,-0.21,-1.18%,Large,China,17845111,Finance,"$313,717,051.38 "
+LPRO,Open Lending Corporation Class A Common Stock,$41.28 ,5.86,16.54%,Large,United States,7596968,Finance,"$313,602,839.04 "
+CCIV,Churchill Capital Corp IV Class A Common Stock,$23.78 ,0.6,2.59%,Large,United States,12737912,Capital Goods,"$302,907,547.36 "
+TLRY,Tilray Inc. Class 2 Common Stock ,$22.34 ,-0.39,-1.72%,Large,Canada,12646667,Consumer Durables,"$282,526,540.78 "
+MSTR,MicroStrategy Incorporated Common Stock Class A,$703.56 ,24.76,3.65%,Large,United States,400935,Technology,"$282,081,828.60 "

@@ -1,22 +1,20 @@
-Symbol,Name,Last,Industry,Price Vol,Market Cap
-AACQ,Artius Acquisition Inc Cl A,10.26,Unclassified,14754,910158000
-AAN,Aarons Holdings Company Inc,25.99,Consumer Services - Misc,10256,834260000
-ABTX,Allegiance Banc CS,41.63,Banks - Southeast,2285,797806000
-ABUS,Arbutus Biopharma Cp,3.36,Medical - Biomedical,2901,318295000
-ACBI,Atlantic Capital,24.73,Banks - Northeast,1108,478765000
-ACCO,Acco Brands Corp,8.27,Office Supply & Forms,4125,754538000
-ACEL,Accel Entertainment Inc,10.81,Gaming,1323,984114000
-ACET,Adicet Bio Inc,13.14,Medical - Biomedical,1137,432208000
-ACIC,Atlas Crest Investment Corp Cl A,10.15,Unclassified,15947,633125000
-ACIU,AC Immune S.A.,7.63,Medical - Biomedical,1109,552406000
-ACND,Ascendant Digital Acquisition Corp Cl A,9.91,Unclassified,6097,508185000
-ACRE,Ares Commercial Real Estate Cor,13.91,REIT - Mortgage Trusts,16513,464675000
-ACTC,Arclight Clean Transition Corp Cl A,16.25,Unclassified,14450,548764000
-ADAP,Adaptimmune Ther Ads,5.13,Medical - Biomedical,7665,786550000
-ADTN,Adtran Inc,17.35,Communications Infrastructure,4339,778242000
-ADV,Advantage Solutions Inc,11.84,Business Information,3140,670655000
-ADVM,Adverum Biotechnlgs,9.94,Medical - Biomedical,6908,905102000
-AEGN,Aegion Corp,28.71,Building & Construction - Misc,9314,880701000
-AENZ,Aenza S.A.A.,2.38,Building & Construction - Misc,1901,380157000
-AERI,Aerie Pharmaceuticals,17.67,Medical - Drugs,11895,851074000
-CTRN,Citi Trends Inc,85.58,Retail - Apparel & Shoes,21250,809801000
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
+UXIN,Uxin Limited ADS,$1.97 ,0.8,68.38%,Medium,China,346095932,Miscellaneous,"$681,808,986.04 "
+FTFT,Future FinTech Group Inc. Common Stock,$5.53 ,-0.675,-10.89%,Medium,China,114149342,Miscellaneous,"$630,675,114.55 "
+FNKO,Funko Inc. Class A Common Stock,$20.96 ,1.28,6.50%,Medium,United States,17599801,Consumer Non-Durables,"$368,891,828.96 "
+BLNK,Blink Charging Co. Common Stock,$41.25 ,0.15,0.37%,Medium,United States,7075882,Capital Goods,"$291,880,132.50 "
+SOS,SOS Limited American Depositary Shares,$4.82 ,-0.16,-3.21%,Medium,,47951190,Finance,"$231,124,735.80 "
+EBON,Ebang International Holdings Inc. Class A Ordinary Shares,$7.03 ,-0.92,-11.57%,Medium,China,27034205,Technology,"$190,050,461.15 "
+VUZI,Vuzix Corporation Common Stock,$24.85 ,-0.59,-2.32%,Medium,United States,6841789,Technology,"$170,018,456.65 "
+NCTY,The9 Limited American Depository Shares,$34.00 ,2.8,8.97%,Medium,China,4872981,Miscellaneous,"$165,681,354.00 "
+IDEX,Ideanomics Inc. Common Stock,$3.16 ,0.24,8.22%,Medium,United States,51692593,Capital Goods,"$163,348,593.88 "
+GEVO,Gevo Inc. Common Stock,$9.97 ,0.16,1.63%,Medium,United States,16158515,Basic Industries,"$161,100,394.55 "
+XL,XL Fleet Corp. Class A Common Stock,$7.89 ,-1.09,-12.14%,Medium,,20162347,Capital Goods,"$159,080,917.83 "
+WKHS,Workhorse Group Inc. Common Stock,$14.14 ,0.37,2.69%,Medium,United States,10364775,Capital Goods,"$146,557,918.50 "
+HOFV,Hall of Fame Resort & Entertainment Company Common Stock,$4.93 ,-0.09,-1.79%,Medium,United States,26084712,Consumer Services,"$128,597,630.16 "
+SNDL,Sundial Growers Inc. Common Shares,$1.10 ,-0.03,-2.66%,Medium,Canada,115852109,Consumer Durables,"$127,437,319.90 "
+LAC,Lithium Americas Corp. Common Shares,$15.87 ,-0.2,-1.25%,Medium,Canada,6835750,Basic Industries,"$108,483,352.50 "
+RMO,Romeo Power Inc. Class A Common Stock,$8.28 ,-0.05,-0.60%,Medium,,12524571,Capital Goods,"$103,703,447.88 "
+USCR,U.S. Concrete Inc. Common Stock,$66.27 ,-7.05,-9.62%,Medium,United States,1546095,Capital Goods,"$102,459,715.65 "
+CPE,Callon Petroleum Company Common Stock,$40.70 ,2.15,5.58%,Medium,United States,2368099,Energy,"$96,381,629.30 "
+RIDE,Lordstown Motors Corp. Class A Common Stock,$12.05 ,0.28,2.38%,Medium,United States,7994379,Capital Goods,"$96,332,266.95 "

@@ -1,22 +1,20 @@
-Symbol,Name,Last,Industry,Price Vol,Market Cap
-AACG,Ata Creativity Global,4.92,Schools,28589,128226000
-AAIC,Arlington Asset Investment Corp,4.03,REIT - Mortgage Trusts,812,129607000
-AAME,Atlantic Amer Cp,3.64,Insurance - Accident & Health,968,83493000
-AAOI,Applied Optoelect,8.29,Electronics - Semiconductors,4239,205590000
-AAU,Almaden Minerals,0.5622,Mining - Gold,1234,76116000
-ABEO,Abeona Therapeutics,1.8,Medical - Biomedical,3254,175380000
-ACAC,Acies Acquisition Corp Cl A,9.88,Unclassified,533,269060000
-ACEV,Ace Convergence Acquisition Corp Cl A,10.1,Unclassified,2650,286063000
-ACR,Acres Commercial Realty Corp,15.26,REIT - Mortgage Trusts,545,144455000
-ACRX,Acelrx Pharmaceutica,1.67,Medical - Drugs,2291,196264000
-ACST,Acasti Pharma,0.6131,Medical - Generic Drugs,4363,108003000
-ACTG,Acacia Res-Acacia,6.07,Business Services,5894,281876000
-ADMA,Adma Biologics,1.81,Medical - Biomedical,11253,187205000
-ADMP,Adamis Pharmaceuticl,0.946,Medical - Drugs,2118,122120000
-ADMS,Adamas Pharma,5.12,Medical - Generic Drugs,531,153451000
-ADN,Advent Technologies Hldg Inc,15.91,Machinery - Electrical,12168,222982000
-ADXS,Advaxis Inc,0.78,Medical - Biomedical,2673,90783000
-AEI,Alset Ehome Intl Inc,11.17,Real Estate Developers,14328,89814000
-AESE,Allied Esports Entertainment Inc,2.79,Leisure & Recreation Services,10000,116217000
-AEYE,Audioeye Inc,26.36,Internet - Software,3103,286171000
-NMCI,Navios Maritime Containers L.P.,10.3,Transportation - Ship,3503,298179000
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
+UPC,Universe Pharmaceuticals Inc. Ordinary Shares,$5.25 ,1.24,30.92%,Small,China,75895807,Health Care,"$398,452,986.75 "
+SUNW,Sunworks Inc. Common Stock,$17.00 ,2.32,15.80%,Small,United States,10621799,Public Utilities,"$180,570,583.00 "
+KOSS,Koss Corporation Common Stock,$23.20 ,0.71,3.16%,Small,United States,4707225,Consumer Non-Durables,"$109,207,620.00 "
+WKEY,WISeKey International Holding AG American Depositary Shares,$13.49 ,-0.84,-5.86%,Small,Switzerland,6004623,Technology,"$81,002,364.27 "
+LGHL,Lion Group Holding Ltd. American Depositary Share,$3.66 ,-0.76,-17.20%,Small,China,16924883,Finance,"$61,945,071.78 "
+RAIL,FreightCar America Inc. Common Stock,$6.65 ,0.055,0.83%,Small,United States,9014049,Capital Goods,"$59,943,425.85 "
+DLPN,Dolphin Entertainment Inc. Common Stock,$13.40 ,0.69,5.43%,Small,United States,3866125,Consumer Services,"$51,806,075.00 "
+JAGX,Jaguar Health Inc. Common Stock,$1.98 ,0.18,10.00%,Small,United States,17274399,Health Care,"$34,203,310.02 "
+YGMZ,MingZhu Logistics Holdings Limited Ordinary Shares,$5.47 ,0.88,19.17%,Small,China,5547603,Consumer Services,"$30,345,388.41 "
+CTIC,CTI BioPharma Corp. (DE) Common Stock,$2.54 ,-0.37,-12.72%,Small,United States,10766100,Health Care,"$27,345,894.00 "
+CIDM,Cinedigm Corp. Class A Common Stock,$1.58 ,-0.09,-5.39%,Small,United States,17112825,Consumer Services,"$27,038,263.50 "
+MOXC,Moxian Inc. Common Stock,$5.39 ,0.86,18.99%,Small,China,4701176,Technology,"$25,339,338.64 "
+CSCW,Color Star Technology Co. Ltd. Ordinary Shares,$1.65 ,-0.13,-7.30%,Small,United States,14037223,Basic Industries,"$23,161,417.95 "
+SLGG,Super League Gaming Inc. Common Stock,$6.99 ,-0.05,-0.71%,Small,United States,3242821,Consumer Services,"$22,667,318.79 "
+AEI,Alset EHome International Inc. Common Stock,$11.43 ,-0.14,-1.21%,Small,United States,1962162,Finance,"$22,427,511.66 "
+SVRA,Savara Inc. Common Stock,$2.25 ,0.17,8.17%,Small,United States,9367206,Health Care,"$21,076,213.50 "
+KZR,Kezar Life Sciences Inc. Common Stock,$5.98 ,0.02,0.34%,Small,United States,3496552,Health Care,"$20,909,380.96 "
+GRNQ,Greenpro Capital Corp. Common Stock,$2.69 ,0.1,3.86%,Small,China,7765016,Technology,"$20,887,893.04 "
+IVAC,Intevac Inc. Common Stock,$8.14 ,0.99,13.85%,Small,United States,2357866,Technology,"$19,193,029.24 "

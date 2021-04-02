@@ -1,660 +1,880 @@
-Symbol,Name,Last,Industry,Price Vol,Market Cap
-AACG,Ata Creativity Global,4.92,Schools,28589,128226000
-AAIC,Arlington Asset Investment Corp,4.03,REIT - Mortgage Trusts,812,129607000
-AAME,Atlantic Amer Cp,3.64,Insurance - Accident & Health,968,83493000
-AAOI,Applied Optoelect,8.29,Electronics - Semiconductors,4239,205590000
-AAU,Almaden Minerals,0.5622,Mining - Gold,1234,76116000
-ABEO,Abeona Therapeutics,1.8,Medical - Biomedical,3254,175380000
-ACAC,Acies Acquisition Corp Cl A,9.88,Unclassified,533,269060000
-ACEV,Ace Convergence Acquisition Corp Cl A,10.1,Unclassified,2650,286063000
-ACR,Acres Commercial Realty Corp,15.26,REIT - Mortgage Trusts,545,144455000
-ACRX,Acelrx Pharmaceutica,1.67,Medical - Drugs,2291,196264000
-ACST,Acasti Pharma,0.6131,Medical - Generic Drugs,4363,108003000
-ACTG,Acacia Res-Acacia,6.07,Business Services,5894,281876000
-ADMA,Adma Biologics,1.81,Medical - Biomedical,11253,187205000
-ADMP,Adamis Pharmaceuticl,0.946,Medical - Drugs,2118,122120000
-ADMS,Adamas Pharma,5.12,Medical - Generic Drugs,531,153451000
-ADN,Advent Technologies Hldg Inc,15.91,Machinery - Electrical,12168,222982000
-ADXS,Advaxis Inc,0.78,Medical - Biomedical,2673,90783000
-AEI,Alset Ehome Intl Inc,11.17,Real Estate Developers,14328,89814000
-AESE,Allied Esports Entertainment Inc,2.79,Leisure & Recreation Services,10000,116217000
-AEYE,Audioeye Inc,26.36,Internet - Software,3103,286171000
-AFI,Armstrong Flooring Inc,5.05,Building Products - Wood,758,109625000
-AGFY,Agrify Corp,11.65,Technology Services,2652,172875000
-AGRX,Agile Therap,2.05,Medical - Generic Drugs,3067,186650000
-AGS,Playags Inc,8.06,Gaming,2051,280565000
-AGTC,Applied Genetic Tech,5.09,Medical - Biomedical,5012,216276000
-AHAC,Alpha Healthcare Acquisition Corp,10.66,Unclassified,2427,135106000
-AIH,Aesthetic Medical International Holdings Group L,7.93,Medical Services,4411,175681000
-AIKI,AIkido Pharma Inc,1.16,Medical - Biomedical,4549,105516000
-AIM,Aim Immunotech Inc,2.17,Medical - Drugs,852,91544000
-AIRG,Airgain Inc,21.63,Communications Components,2269,213148000
-AJX,Great Ajax Corp,11.46,REIT - Mortgage Trusts,1339,254596000
-ALCO,Alico Inc,29.99,Agriculture Operations,546,217830000
-ALNA,Allena Pharmaceuticals Inc,1.43,Medical - Biomedical,1410,81338000
-ALPN,Alpine Immune Sciences Inc,10.98,Medical - Drugs,509,252194000
-ALRN,Aileron Therapeutics Inc,1.5,Medical - Biomedical,1886,131268000
-ALSK,Alaska Commun Sys,3.25,Wireline Regional,3184,175835000
-ALTU,Altitude Acquisition Corp Cl A,10.22,Unclassified,9912,87911000
-ALYA,Alithya Group Inc Cl A,2.6,Technology Services,3086,129976000
-AMPY,Amplify Energy Corp,2.83,Oil - US Exploration & Product,2424,107696000
-AMR,Alpha Metallurgical Resources Inc,13.13,Mining - Misc,2159,225817000
-AMRK,A-Mark Precious Meta,36.94,Precious Metals & Jewelry,2227,249793000
-ANH,Anworth Mortgage Asset Corp,2.98,REIT - Mortgage Trusts,41055,295926000
-ANIX,Anixa Biosciences Inc,5.06,Medical - Biomedical,5485,117477000
-ANVS,Annovis Bio Inc,30.76,Medical - Biomedical,3494,208407000
-AONE,One Cl A,11.85,Unclassified,6986,75935000
-APRE,Aprea Therapeutics Inc,5.1,Medical - Biomedical,2277,105299000
-APRN,Blue Apron Holdings Inc,6.59,Food - Misc & Diversified,4199,122224000
-APT,Alpha Pro Tech,9.64,Protection - Safety,4420,137058000
-APTX,Aptinyx Inc,3.01,Medical - Biomedical,1079,189138000
-APVO,Aptevo Therapeutics Inc,29.5,Medical - Biomedical,572,127072000
-AQMS,Aqua Metals Inc,4.02,Waste Removal Svcs,5480,249761000
-AQST,Aquestive Therapeutics Inc,4.3,Medical - Drugs,2298,146583000
-ARAV,Aravive Inc,6.57,Medical - Biomedical,651,133885000
-AREC,American Resources Corp,3.71,Mining - Misc,5046,190007000
-ARPO,Aerpio Pharmaceuticals Inc,1.49,Medical - Biomedical,797,76647000
-ARYA,Arya Sciences Acquisition Corp III Cl A,12.84,Unclassified,2671,215392000
-ASAQ,Atlantic Street Acquisition Corp Cl A,9.89,Unclassified,1270,242500000
-ASC,Ardmore Shipping Corp,4.98,Transportation - Ship,1250,156643000
-ASLE,Aersale Corp,12.26,Aerospace - Defense Equipment,684,278277000
-ASLN,Aslan Pharmaceuticals Ltd ADR,3.64,Medical - Biomedical,2006,136388000
-ASM,Avino Silver & Gold,1.26,Mining - Silver,1702,121730000
-ASMB,Assembly Biosciences,4.47,Medical - Generic Drugs,2800,165605000
-ASPL,Aspirational Consumer Lifestyle Corp Cl A,10.03,Unclassified,4145,299680000
-ASPU,Aspen Group Inc,6.3,Internet - Services,1743,153942000
-ASRT,Assertio Therapeutics Inc,0.7,Medical - Drugs,3157,125378000
-ASUR,Asure Software,7.7,Internet Services - Delivery,1056,147001000
-ASYS,Amtech Systems Inc,11.83,Semi General,2125,158803000
-AT,Atlantic Power Corp,2.8,Utility - Electric Power,3918,249824000
-ATNF,180 Life Sciences Corp,6.96,Medical - Biomedical,304007,93135000
-ATNM,Actinium Pharmaceuticals Inc,8.41,Medical - Drugs,3259,112772000
-ATOS,Atossa Genetics Inc,2.16,Medical Instruments,19423,154600000
-AUVI,Applied Uv Inc,10.2,Technology Services,2962,80801000
-AVEO,Aveo Pharmaceuticals,7.41,Medical - Biomedical,14156,217040000
-AVGR,Avinger Inc,1.55,Medical Instruments,4321,150571000
-AXLA,Axcella Health Inc,4.87,Medical - Biomedical,598,171489000
-AYLA,Ayala Pharmaceuticals Inc,11.89,Medical - Drugs,502,155648000
-AYRO,Ayro Inc,6.75,Internet - Software,10182,230359000
-AYTU,Aytu Biopharma Inc,7.71,Medical - Biomedical,4791,142349000
-AZRX,Azurrx Biopharma Inc,1.31,Medical - Biomedical,2321,80205000
-BASI,Bioanalytical Syst,16.44,Medical Instruments,1415,182993000
-BATL,Battalion Oil Corp,11.17,Oil - US Exploration & Product,717,192601000
-BATRA,Liberty Braves CS A,29.31,Real Estate Operations,1213,298561000
-BBGI,Beasley Brdcst Gr,2.89,Broadcast - Radio & TV,834,91294000
-BBI,Brickell Biotech Inc,1.16,Medical - Drugs,921,78308000
-BBW,Build-A-Bear Workshop,7.35,Retail - Misc & Diversified,1668,113316000
-BCBP,Bcb Bancorp Inc,13.87,Banks - Northeast,1076,231134000
-BCLI,Brainstorm Cell,3.85,Medical - Biomedical,2893,144313000
-BEEM,Beam Global,40.37,Auto - Truck Original Parts,22950,239891000
-BELFB,BEL Fuse Inc Cl B,19.93,Electronics Products - Misc,929,230698000
-BFI,Burgerfi Intl Inc,15.63,Retail - Restaurants,6172,122421000
-BFRA,Biofrontera Ag ADR,4.78,Medical - Biomedical,694,153706000
-BGSF,Bgsf Inc,14.14,Business Services,539,140827000
-BHR,Braemar Hotels & Resorts Inc,6.41,REIT - Equity Trust Other,2418,243994000
-BIOL,Biolase Inc,0.8588,Medical - Dental Suppliers,6055,134493000
-BIVI,Biovie Inc,18.55,Medical - Drugs,581,264961000
-BKCC,Blackrock Cptl Invt,3.3,Finance - SBIC & Commercial,974,242762000
-BKEP,Blueknight Energy LP,3.28,Oil - Field Services,646,130209000
-BKSC,Bank of So Car Cp,22.79,Banks - Southeast,761,127583000
-BLRX,Biolinerx Ltd,2.9,Medical - Drugs,1030,119126000
-BLU,Bellus Health Inc,3.76,Medical - Biomedical,1706,296114000
-BMTX,Bm Technologies Inc,12.45,Banks - Northeast,789,94400000
-BOCH,Bank of Commerce Hld,12.85,Banks - West,1271,201741000
-BORR,Borr Drilling Ltd,1.04,Oil & Gas - Drilling,1977,112269000
-BOXL,Boxlight Corp Cl A,2.9,Technology Services,21942,139261000
-BPT,BP Prudhoe Bay Royalty Trust,4.02,Oil - US Royalty Trusts,1246,87312000
-BRG,Bluerock Residential Growth Rei,10.74,REIT - Equity Trust Resident,2654,239315000
-BRPA,Big Rock Partners Acquisition Corp,36.55,Unclassified,2968,75189000
-BSET,Bassett Furniture,23.46,Furniture,1082,213313000
-BSGM,Biosig Technologies,4.25,Medical Instruments,1049,135425000
-BSN,Broadstone Acquisition Corp Cl A,9.78,Unclassified,673,295836000
-BTBT,Bit Digital Inc,13.56,Technology Services,9797,207733000
-BTU,Peabody Energy Corp,2.87,Coal,7393,270171000
-BWAY,Brainsway Ltd ADR,9.32,Medical Products,1815,95119000
-BWEN,Broadwind Energy Inc,5.09,Machinery - General Industrial,1796,86668000
-BWFG,Bankwell Financial,27.04,Banks - Northeast,535,206537000
-BXRX,Baudax Bio Inc,1.34,Medical - Drugs,1257,94693000
-CAAS,China Automotive Sys,4.87,Auto - Truck Original Parts,547,156728000
-CABA,Cabaletta Bio Inc,10.83,Medical - Biomedical,653,260843000
-CALA,Calithera Biosci Com,2.47,Medical - Drugs,1453,178160000
-CAPA,Highcape Capital Acquisition Corp Cl A,12.3,Unclassified,11975,166570000
-CAPR,Capricor Therap,5.09,Medical Products,750,112850000
-CASI,Casi Phrmactcls Inc,2.06,Medical - Drugs,8137,239212000
-CATO,Cato Corp,12.34,Retail - Apparel & Shoes,1457,263512000
-CBIO,Catalyst Bio,5.15,Medical - Biomedical,754,164488000
-CCAC,Citic Capital Acquisition Corp Cl A,10,Unclassified,15367,277932000
-CCNC,Code Chain New Continent Ltd,3.81,Waste Removal Svcs,3168,145735000
-CCV,Churchill Capital V Cl A,9.76,Unclassified,14091,145084000
-CDR,Cedar Realty Trust Inc,14.85,REIT - Equity Trust Other,664,188609000
-CDTX,Cidara Thera,2.29,Medical - Biomedical,656,110499000
-CECE,C E C O Envir,8.2,Pollution Controls,1369,269728000
-CERC,Cerecor Inc,2.98,Medical - Biomedical,639,264642000
-CFAC,Cf Finance Acquisition Corp III,10.05,Unclassified,1296,291038000
-CFIV,Cf Acquisition Corp IV Cl A,9.7,Unclassified,1481,135205000
-CFMS,Conformis Inc CS,1,Medical Instruments,2330,182579000
-CFRX,Contrafect,4.59,Medical - Drugs,5120,124033000
-CGRO,Collective Growth Corp Cl A,9.98,Unclassified,5195,193933000
-CHEK,Check-Cap Ltd Ord,1.8,Medical Instruments,5542,81381000
-CHMA,Chiasma Inc,3.03,Medical - Biomedical,8764,174689000
-CHMG,Chemung Financial Cp,42.39,Banks - Southeast,983,192656000
-CHMI,Cherry Hill Mortgage Investmen,10.02,REIT - Mortgage Trusts,2228,169563000
-CIDM,Cinedigm Corp,1.69,Business Services,83693,268845000
-CKPT,Checkpoint Therapeutics Inc,3.16,Medical - Biomedical,2139,232405000
-CLBS,Caladrius Bio,1.92,Medical - Biomedical,2408,115440000
-CLIR,Clearsign Combustion,5.28,Industrial Services,682,149314000
-CLPS,Clps Incorp,4.86,IT Services,1950,82766000
-CLRB,Cellectar Biosc,1.67,Medical Products,1327,83837000
-CLSD,Clearside Biomedi,2.32,Medical - Biomedical,606,132071000
-CLVR,Clever Leaves Holdings Inc,12.33,Unclassified,2750,186029000
-CLXT,Calyxt Inc,6.64,Agriculture Operations,1125,254519000
-CMCL,Caledonia Mining Cp,14.36,Mining - Gold,1259,153996000
-CMCM,Cheetah Mobile Inc,2.24,Internet - Software,2483,297789000
-CNCE,Concert Pharmaceutic,4.89,Medical - Drugs,4718,167948000
-CNET,Chinanet Online Hld,2.72,Advertising Marketing Services,5536,83191000
-CNTY,Century Casinos IN,10.41,Gaming,2317,290732000
-COCP,Cocrystal Pharma Inc,1.4,Medical - Biomedical,621,99342000
-COGT,Cogent Biosciences Inc,8.91,Medical - Biomedical,1734,167482000
-COMS,Comsovereign Holding Corp,2.77,Communication Network Software,2190,147616000
-CORR,Corenergy Infrastructure Trust Inc,7.24,REIT - Equity Trust Other,1573,97468000
-CPLP,Capital Product Part,11.64,Transportation - Ship,787,207491000
-CPSH,Cps Technologies,11.98,Electronics - Misc Components,5091,173202000
-CPST,Capstone Turbine Cp,7.82,Machinery - Electrical,890,97719000
-CRBP,Corbus Pharma,1.95,Medical - Drugs,6150,251123000
-CRESY,Cresud Sacif ADR,4.83,Agriculture Operations,803,234813000
-CRHM,CRH Medical Corp,3.94,Medical Instruments,3310,281467000
-CRMD,Cormedix Inc,8.55,Medical - Biomedical,5988,279548000
-CRU,Crucible Acquisition Corporation Cl A,9.92,Unclassified,632,76037000
-CRVS,Corvus Pharma Com,3.07,Medical - Biomedical,959,80257000
-CSBR,Champions Oncolog,12.5,Medical - Drugs,503,151173000
-CSCW,Color Star Tech CO Ltd,1.51,Technology Services,44812,77904000
-CSLT,Castlight Health Inc,1.5,Internet - Software,1784,249043000
-CSU,Capital Senior Living Corp,37.49,Medical - Nursing Homes,701,77527000
-CTHR,Charles & Colvard,2.86,Precious Metals & Jewelry,543,82936000
-CTIC,Cti Biopharm Corp,2.79,Medical - Drugs,1141,216257000
-CTK,Cootek Cayman Inc,2.64,Internet - Services,1590,173655000
-CTO,Consolidated-Tomoka Land Company,51.22,REIT - Equity Trust Other,3729,292939000
-CTXR,Citius Pharmaceuticals Inc,1.9,Medical - Drugs,12881,150660000
-CVCY,Central Vly Cmty Bcp,19.26,Banks - West,526,228062000
-CVEO,Civeo Corp,16.2,Hotels & Motels,611,213719000
-CWCO,Cons Water CO Inc,13.67,Utility - Water Supply,1203,199321000
-CYBE,Cyberoptics Cp,24.48,Lasers - Systems & Components,1838,173471000
-CYCN,Cyclerion Therapeutics Inc,3.08,Medical - Biomedical,967,112041000
-DARE,Dare Bioscience Inc,1.73,Medical - Biomedical,2202,77369000
-DCRB,Decarbonization Plus Acquisition Corp Cl A,10.65,Unclassified,6554,291727000
-DFFN,Diffusion Pharmaceuticals Inc,0.92,Medical - Biomedical,1750,92936000
-DFHT,Deerfield Healthcare Techn Acquisitions Corp Cl,13.05,Medical Services,525,248331000
-DFPH,Dfp Healthcare Acquisitions Corp Cl A,9.95,Unclassified,2298,288938000
-DLPN,Dolphin Entertainment Inc,13.25,Technology Services,73739,125695000
-DPW,Ault Global Hldg Inc,3.08,Conglomerates - Div Operations,12300,112928000
-DRTT,Dirtt Environmental Solutions Ltd,2.94,Building & Construction - Misc,536,284314000
-DS,Drive Shack Inc,3.35,Leisure & Recreation Services,15729,202510000
-DSAC,Duddell Street Acquisition Corp Cl A,9.96,Unclassified,694,214813000
-DSX,Diana Shipping Inc,3.23,Transportation - Ship,1730,276753000
-DUNE,Dune Acquisition Corporation Cl A,9.68,Unclassified,1291,181125000
-DYAI,Dyadic International,5.35,Medical - Biomedical,1119,149502000
-EARN,Ellington Residential Mortgage,12.63,REIT - Mortgage Trusts,743,152448000
-EBMT,Eagle Bancorp [Mt],25.01,Banks - Midwest,533,162610000
-ECOR,Electrocore Inc,2.07,Medical - Drugs,804,100832000
-EDAP,Edap Tms Sa ADR,8.15,Medical Instruments,610,218856000
-EDTX,Edtechx Holdings Acquisition Corp II Cl A,9.92,Unclassified,603,121750000
-EGAN,Egain Corp,9.31,Internet - Software,3643,283222000
-EGY,Vaalco Energy Inc,2.28,International E&P,1635,133778000
-EIGR,Eiger Biopharma,8.89,Medical - Biomedical,1978,286124000
-ELVT,Elevate Credit Inc,3.1,Finance - Consumer Loans,11409,131884000
-ELYS,Elys Game Tech Corp,5.41,Gaming,3651,124985000
-EMAN,Emagin Corp,3.44,Electronics - Semiconductors,2099,239671000
-EMKR,Emcore Corp,5.83,Electrical - Manufacturing,2554,197858000
-EML,Eastern Company,26.31,Protection - Safety,1000,153388000
-EMX,Emx Royalty Group,2.98,Mining - Misc,696,246416000
-ENG,Englobal Corp,4.32,Engineering & R&D Services,2913,116985000
-ENLV,Enlivex Therapeutics Ltd,11.03,Medical - Drugs,855,179979000
-ENOB,Enochian Biosciences Inc,4,Medical - Biomedical,4286,167171000
-ENZ,Enzo Biochem,3.44,Medical - Biomedical,978,162532000
-EPM,Evolution Petroleum Corp,3.32,Oil - US Exploration & Product,562,109850000
-EPSN,Epsilon Energy,3.98,Oil - US Integrated,1024,93289000
-EQ,Equillium Inc,7.16,Medical - Biomedical,727,170555000
-ESEA,Euroseas Ltd,10.99,Transportation - Ship,663,77532000
-ETON,Eton Pharmaceutcials Inc,7.01,Medical - Biomedical,1134,169147000
-EUCR,Eucrates Biomedical Acquisition Corp,9.81,Unclassified,3596,132033000
-EVFM,Evofem Biosciences Inc,1.87,Medical - Biomedical,16448,193667000
-EVGN,Evogene Ltd Ord,4.45,Medical - Biomedical,3868,119480000
-EXPR,Express Inc,4.24,Retail - Apparel & Shoes,33415,264432000
-EXTN,Exterran Corp,3.54,Oil Field Machinery & Equip,2945,115313000
-EYEN,Eyenovia Inc,5.66,Medical - Biomedical,521,135618000
-EYES,Second Sight,9.11,Medical Instruments,26466,205065000
-EYPT,Eyepoint Pharmaceuticals Inc,9.98,Medical - Biomedical,3951,291146000
-EZPW,Ezcorp Inc,5.16,Finance - Consumer Loans,1361,284667000
-FARM,Farmer Brothers,8.77,Food Items - Wholesale,2342,179309000
-FCAX,Fortress Capital Acquisition Corp Cl A,9.82,Unclassified,925,113734000
-FCBP,First Choice Bancorp,24.72,Banks - Southwest,541,284319000
-FCCO,First Community Corp,20.97,Banks - Southeast,585,147981000
-FENC,Fennec Pharmaceuticals Inc,6.22,Medical - Drugs,679,165899000
-FENG,Phoenix New Media Ltd,1.91,Broadcast - Radio & TV,15696,159412000
-FET,Forum Energy Technologies Inc,19.52,Oil Field Machinery & Equip,738,108462000
-FGNA,Fg New America Acquisition Corp Cl A,10.2,Unclassified,2197,244047000
-FHS,First High-School Education Group ADR,6.57,Schools,20283,199148000
-FINM,Marlin Technology Corporation Cl A,9.72,Unclassified,641,116688000
-FLL,Full House Rsts,8.09,Gaming,8918,181188000
-FLUX,Flux Power Holdings Inc,12.1,Electronics Products - Misc,987,144953000
-FLXS,Flexsteel Inds,35.9,Furniture,2603,256816000
-FNHC,Federated Natl Hld,4.7,Finance - Misc Services,543,81441000
-FRAF,Franklin Finl Svcs Corp,30.76,Banks - Northeast,874,146268000
-FRBA,First Bank,11.97,Banks - Northeast,825,213301000
-FRBK,Republic First Bcp,3.79,Banks - Northeast,769,217223000
-FREQ,Frequency Therapeutics Inc,8.68,Medical - Biomedical,24227,290796000
-FRX,Forest Road Acquisition Corp Cl A,10.25,Unclassified,11693,89963000
-FSBW,FS Bancorp Inc,68.41,Banks - West,746,275187000
-FSTR,Foster L B Company,17.01,Steel - Producers,2730,184174000
-FTCV,Fintech Acquisition Corp V Cl A,11.9,Unclassified,15407,124962000
-FTEK,Fuel Tech Inc,3,Pollution Controls,585,91292000
-FTFT,Future Fintech Group Inc,5.9,Beverages - Soft,45311,292308000
-FTOC,Ftac Olympus Acquisition Corp Cl A,10.8,Unclassified,14099,282025000
-FVE,Five Star Quality Care,6.21,Medical - Nursing Homes,549,198627000
-GAIA,Gaiam Inc,11.75,Broadcast - Radio & TV,908,227916000
-GAU,Galiano Gold Inc,1.13,Mining - Gold,807,246845000
-GEN,Genesis Healthcare Inc,0.4204,Medical - Nursing Homes,6643,80329000
-GENC,Gencor Industries IN,13.07,Machinery - Thermal Processing,580,187541000
-GHM,Graham Corp,14.56,Machinery - General Industrial,501,141240000
-GIK,Gigcapital3 Inc,10.67,Unclassified,7745,276796000
-GIX,Gigcapital2 Inc,10.01,Unclassified,1409,216433000
-GLMD,Galmed Pharmaceutica,3.39,Medical - Drugs,799,88546000
-GLOP,Gaslog Partners LP,2.86,Transportation - Ship,1330,142828000
-GLYC,Glycomimetics Inc,3.04,Medical - Drugs,1515,149848000
-GMBL,Esports Entertainment Group Inc,14.8,Gaming,10712,251646000
-GMTX,Gemini Therapeutics Inc,14.79,Medical - Drugs,3890,236443000
-GNPK,Genesis Park Acquisition Corp Cl A,10.55,Unclassified,30209,202059000
-GNPX,Genprex Inc,4.51,Medical - Biomedical,2882,191284000
-GNRS,Greenrose Acquisition Corp,9.96,Unclassified,4233,217169000
-GNSS,Genasys Inc,7.27,Consumer Services - Misc,834,244234000
-GORO,Gold Resource Corp,2.66,Mining - Gold,1846,198008000
-GPL,Great Panther Mining Ltd,0.7847,Mining - Silver,806,277452000
-GPX,Gp Strategies Corp,16.7,Schools,1117,278798000
-GRAY,Graybug Vision Inc,5.89,Medical - Biomedical,4853,127948000
-GRNQ,Greenpro Capital Corp,2.52,Finance - Misc Services,6555,174057000
-GROY,Gold Royalty Corp,4.54,Mining - Gold,665,185754000
-GRTX,Galera Therapeutics Inc,9.31,Medical - Biomedical,1932,259251000
-GSMG,Glory Star New Media Group Holdings Ltd,4.72,Technology Services,2040,233859000
-GSV,Gold Standard Ventures Corp,0.6,Mining - Gold,2043,214235000
-GTE,Gran Tierra Energy Inc,0.71,Oil - C$ Exploration & Product,3829,263310000
-GTEC,Greenland Technologies Holding Corp,15.5,Electronics Products - Misc,1634,149293000
-GTT,Global Telcom & Technology Inc,1.79,IT Services,1758,101169000
-GWAC,Good Works Acquisition Corp,10.64,Unclassified,3232,218861000
-HBB,Hamilton Beach Brands Holding Company Cl A,16.84,Appliances - Household,1212,235125000
-HBIO,Harvard Bioscience,5.5,Industrial Scientific,1108,219043000
-HCCC,Healthcare Capital Corp. Cl A,9.7,Unclassified,2467,79555000
-HCIC,Hennessy Capital Investment Corp. V Cl A,9.9,Unclassified,5942,99455000
-HEPA,Hepion Pharmaceuticals Inc,1.9,Medical - Biomedical,6501,147114000
-HGBL,Heritage Global Inc,2.95,Finance - Misc Services,549,103947000
-HIL,Hill International Inc,2.9,Consulting,620,155888000
-HMCO,Humanco Acquisition Corp Cl A,9.85,Unclassified,5784,84245000
-HQI,Hirequest Inc,18.35,Staffing,1367,231438000
-HROW,Harrow Health Inc,6.64,Medical Services,675,171748000
-HRZN,Horizon Technology F,14.35,Finance - SBIC & Commercial,1228,270060000
-HSAQ,Health Sciences Acquisitions Corp 2,10.35,Unclassified,2628,215748000
-HTBX,Heat Biologics Inc,7.39,Medical - Drugs,4068,173538000
-HTOO,Fusion Fuel Green Plc,12.2,Other Alt Energy,3181,122903000
-HURC,Hurco Cos Inc,33.52,Machinery - Tools & Related,1210,209885000
-HYMC,Hycroft Mining Holding Corp,4.04,Mining - Misc,3692,296325000
-HYRE,Hyrecar Inc,9.2,Transportation - Services,2325,184411000
-HZN,Horizon Global Corp Comm,10.29,Auto - Truck Original Parts,514,270556000
-IACA,ION Acquisition Corp 1 Ltd Cl A,10.16,Unclassified,2611,261855000
-IDN,Intellicheck Mobilisia,8.43,Protection - Safety,2586,149124000
-IEA,Infrastructure and Energy Alternatives Inc,14.35,Real Estate Operations,13304,297994000
-IEC,IEC Electronics,11.96,Electronics - Misc Components,1039,125490000
-IFRX,Fireman B.V.,4.06,Medical - Biomedical,1793,170751000
-IGC,India Globalization Capital Inc,1.74,Medical - Drugs,2036,78030000
-III,Information Svcs Group,4.37,Consulting,950,201348000
-IIN,Intricon Corp,25.13,Electronics - Misc Components,3008,201116000
-IMBI,Imedia Brands Inc,7.92,Movie & TV Production & Dist,542,109620000
-IMMP,Immutep Ltd ADR,3.11,Medical - Biomedical,22551,128247000
-IMMR,Immersion Corp,9.53,Computers - Peripheral Equpt,23813,287039000
-IMRA,Imara Inc,8.61,Medical - Biomedical,1372,154836000
-IMTX,Immatics NV,12.32,Medical - Biomedical,3679,225344000
-IMV,Imv Inc,3.03,Medical - Drugs,678,197474000
-INFI,Infinity Pharmaceuti,3.39,Medical - Drugs,5975,200326000
-INMB,Inmune Bio Inc,12.39,Medical - Biomedical,828,183676000
-INPX,Inpixon,1.2,Technology Services,6108,84869000
-INSE,Inspired Entertainment Inc,8.62,Technology Services,867,195496000
-INTT,Intest Corp,10.92,Electronics - Measuring Inst,1631,106027000
-INUV,Inuvo Inc,1.07,Internet - Services,6005,133923000
-INVE,Identiv Inc,11.49,Computers - Peripheral Equpt,972,196074000
-ISR,Isoray Inc,1.12,Medical - Drugs,2312,169440000
-ISTR,Investar Holding,20.69,Banks - Southeast,600,214947000
-ITAC,Industrial Tech Acquisitions Inc Cl A,10.05,Technology Services,2112,96100000
-ITI,Iteris Inc,6.2,Computer - Integrated Systems,1300,252761000
-ITRM,Iterum Therapeutics Plc,1.41,Medical - Drugs,14489,250599000
-IVAN,Ivanhoe Capital Acquisition Corp Cl A,9.92,Unclassified,1613,82256000
-IVC,Invacare Corp,8.17,Medical - Dental Suppliers,3454,269196000
-IZEA,Izea Inc,4.05,Internet - Software,14936,214291000
-JAGX,Jaguar Health Inc,1.84,Medical - Drugs,7020,214429000
-JE,Just Energy Group Inc,1.745,Utility - Gas Distribution,2492,83898000
-JILL,J. Jill Inc,8.81,Retail - Apparel & Shoes,1350,77344000
-KERN,Akerna Corp Cl A,5.1,Medical Products,6119,104961000
-KIN,Kindred Biosciences,4.59,Medical - Biomedical,874,183205000
-KINZ,Kins Technology Group Inc Cl A,9.82,Unclassified,1384,80621000
-KLXE,Klx Energy Services Holdings Inc,16.63,Oil - Field Services,733,138119000
-KMDA,Kamada Ltd,6.09,Medical - Biomedical,581,269346000
-KMPH,Kempharm Inc,9.35,Medical - Drugs,7355,257086000
-KOSS,Koss Cp,21.13,Audio & Video Products,97044,125058000
-KRKR,36Kr Holdings Inc ADR,3.36,Business Information,638,121106000
-KRMD,Repro Med Sys Inc,3.47,Medical Instruments,994,165665000
-KRUS,Kura Sushi USA Inc Cl A,31.36,Retail - Restaurants,2170,251904000
-KVHI,K V H Inds Inc,12.82,Communications Components,945,220607000
-KXIN,Kaixin Auto Holdings,3.18,Auto - Truck Replacement Parts,4952,187124000
-KZIA,Kazia Therapeutics Ltd,11.12,Medical - Biomedical,1487,106612000
-LAIX,Laix Inc ADR,2.52,Technology Services,11375,118212000
-LAKE,Lakeland Inds Inc,27.27,Protection - Safety,3229,212771000
-LAZY,Lazydays Holdings Inc,17.2,Leisure & Recreational Prdcts,3247,190184000
-LCAP,Lionheart Acquisition Corp II Cl A,9.82,Unclassified,519,287532000
-LCI,Lannett CO Inc,5.82,Medical - Drugs,1325,241788000
-LEAP,Ribbit Leap Ltd Cl A,10.95,Unclassified,4856,228233000
-LEE,Lee Enterprises Inc,22.37,Publishing - Newspapers,642,133978000
-LEVL,Level One Bancorp Inc,24.75,Banks - Northeast,770,180913000
-LFTR,Lefteris Acquisition Corp Cl A,9.87,Unclassified,1329,252657000
-LFVN,Lifevantage Cp,9.54,Medical - Dental Suppliers,722,132320000
-LGVN,Longeveron Inc,5.88,Medical - Biomedical,931,115235000
-LINC,Lincoln Educational,6.65,Schools,658,182716000
-LIQT,Liqtech International Inc,8.01,Pollution Controls,1668,189481000
-LIVK,Liv Capital Acquisition Corp Cl A,10.1,Unclassified,2198,100611000
-LJPC,LA Jolla Pharma,4.47,Medical - Drugs,925,123426000
-LMB,Limbach Holdings Inc,11.04,Building - Maint & Service,2696,107337000
-LMNL,Liminal Biosciences Inc,4.07,Medical - Biomedical,560,121658000
-LMNR,Limoneira Company,17.34,Agriculture Operations,1196,289857000
-LMPX,Lmp Automotive Holdings Inc,16.92,Internet Commerce,2975,171076000
-LODE,Comstock Mining Inc,4.83,Mining - Gold,6247,196147000
-LOGC,Logicbio Therapeutics Inc,7.03,Medical - Biomedical,763,230587000
-LPCN,Lipocine Inc,1.47,Medical - Drugs,1815,129788000
-LPTH,Lightpath Tech Inc,2.9,Electronics - Misc Components,1052,76846000
-LPTX,Leap Therapeutics Inc,1.98,Medical - Biomedical,863,125282000
-LQDA,Liquidia Corp,2.53,Medical - Biomedical,2692,108773000
-LRMR,Larimar Therapeutics Inc,17.18,Medical - Drugs,569,269247000
-LSAQ,Lifesci Acquisition II Corp,10.4,Unclassified,2440,99309000
-LTRN,Lantern Pharma Inc,18.71,Medical - Biomedical,1246,209438000
-LUMO,Lumos Pharma Inc,12.7,Medical - Biomedical,698,113311000
-LXEH,Lixiang Education Holding CO ADR,7.95,Schools,1253,118480000
-LXU,Lsb Industries Inc,4.5,Conglomerates - Div Operations,621,121354000
-LYRA,Lyra Therapeutics Inc,11.9,Medical - Drugs,966,156282000
-LYTS,L S I Industries,8.55,Building Products - Ltg FX,988,217568000
-MARK,Remark Holdings Inc,2.22,IT Services,6070,215919000
-MBIO,Mustang Bio Inc,3.24,Medical - Biomedical,7927,200281000
-MBRX,Moleculin Biotech CS,3.83,Medical - Biomedical,1188,100123000
-MDNA,Medicenna Therapeutics Corp,3.97,Medical - Biomedical,737,202818000
-MDWD,Mediwound Ltd Ord Sh,4.96,Medical - Drugs,780,136185000
-MHH,Mastech Holdings Inc,18.49,IT Services,549,202784000
-MICT,Micronet Enertec Tec,2.08,Computer - Services,8290,240789000
-MITC,Meatech 3D Ltd,9.01,Technology Services,865,103982000
-MITT,Ag Mortgage Investment Trust,4.2,REIT - Mortgage Trusts,3240,169140000
-MKD,Molecular Data Inc Ads,1.16,Technology Services,18381,119644000
-MKTY,Mechanical Technology Inc,13.25,Industrial Controls,1631,102246000
-MLAC,Malacca Straits Acquisition Company Ltd Cl A,9.92,Unclassified,837,140156000
-MLSS,Milestone Scientific,3.46,Medical - Dental Suppliers,1105,218467000
-MNOV,Medicinova Inc,4.98,Medical - Biomedical,1538,240971000
-MNSB,Mainstreet Bank,20.74,Banks - Northeast,500,152143000
-MOGO,Mogo Inc,8.48,Technology Services,18881,291787000
-MOTN,Motion Acquisition Corp Cl A,9.93,Unclassified,775,141737000
-MOTV,Motive Capital Corp Cl A,9.85,Unclassified,973,118057000
-MRAC,Marquee Raine Acquisition Corp Cl A,9.82,Unclassified,634,108690000
-MRAM,Everspin Technologies Inc,6.2,Technology Services,554,111982000
-MREO,Mereo Biopharma Group Plc ADR,3.59,Medical - Biomedical,6165,88395000
-MRKR,Marker Therapeutics Inc,2.35,Medical - Drugs,13327,118203000
-MTBC,Mtbc Inc,8.65,Medical Information Systems,1349,119161000
-MTNB,Matinas Biopharma Hl,1.12,Medical - Drugs,1988,209414000
-MYFW,First Western Financial Inc,28.9,Banks - Midwest,2587,205553000
-NATH,Nathan's Famous IN,66.9,Retail - Restaurants,1452,265000000
-NBAC,Newborn Acquisition Corp,15.52,Unclassified,1838,115779000
-NBN,Northeast Bncp,26.26,Finance - Savings & Loan,517,233593000
-NBSE,Neu Base Therapeutics Inc,7.25,Medical - Biomedical,1944,174777000
-NC,Nacco Industries,24.9,Appliances - Household,518,151107000
-NCNA,Nucana Plc ADR,4.98,Medical - Biomedical,829,244415000
-NCTY,The9 Ltd,34.29,Internet - Content,41367,106704000
-NDRA,Endra Life Sciences Inc,2.43,Medical Instruments,4365,86824000
-NEBC,Nebula Caravel Acquisition Corp Cl A,10.01,Unclassified,5248,80895000
-NEPT,Neptune Wellness Solutions Inc,1.36,Medical Products,6350,238270000
-NERV,Minerva Neuroscie,2.92,Medical - Drugs,776,122612000
-NETI,Eneti Inc,20.45,Transportation - Ship,1368,230837000
-NEXT,Nextdecade Corp,2.57,Oil Gas Prod Pipeline MLP,62283,254893000
-NGAB,Northern Genesis Acquisition Corp II,9.75,Unclassified,510,119419000
-NGL,Ngl Energy Partners LP,2.1,Oil Refining & Marketing MLP,3541,279003000
-NINE,Nine Energy Service Inc,2.41,Oil - Field Services,529,88038000
-NISN,Nisun Int Ent Dev Grp CO Ltd,16.01,Technology Services,1715,293806000
-NM,Navios Maritime Holdings Inc,10.13,Transportation - Ship,5491,137044000
-NMCI,Navios Maritime Containers L.P.,10.3,Transportation - Ship,3503,298179000
-NMM,Navios Maritime Partners LP,26.2,Transportation - Ship,12374,272610000
-NMRD,Nemaura Med Inc,7.59,Medical Instruments,757,192153000
-NMTR,9 Meters Biopharma Inc,1.42,Medical - Biomedical,3777,196926000
-NOVN,Novan Inc,1.43,Medical - Drugs,4822,222930000
-NR,Newpark Resources,3.26,Oil - Field Services,1520,283777000
-NREF,Nexpoint Real Estate Finance Inc,18.17,REIT - Mortgage Trusts,821,92868000
-NRIM,Northrim Bancorp Inc,43.87,Banks - West,566,258211000
-NSH,Navsight Holdings Inc Cl A,10.05,Unclassified,14331,230230000
-NSPR,Inspiremd Inc,0.6602,Medical Instruments,1658,76002000
-NTIC,Northern Technologies Intl Corp,15.33,Chemical - Diversified,644,134202000
-NUVB,Nuvation Bio Inc,10.28,Medical - Biomedical,11364,220180000
-NXTC,Nextcure Inc,10.46,Medical - Biomedical,983,295320000
-NYMX,Nymox Pharm Corp,2.4,Medical - Biomedical,731,182218000
-OBSV,Obseva Sa,3.2,Medical - Biomedical,3445,179565000
-OCG,Oriental Culture Holding Ltd,9.26,Internet Commerce,19050,190397000
-OCN,Ocwen Financial Corp,26.95,Finance - Mortgage & Rel Svs,838,227444000
-ODT,Odonate Therapeutics Inc,3.09,Medical - Drugs,18940,120058000
-OEG,Orbital Energy Group Inc,5.38,Other Alt Energy,7242,233648000
-OESX,Orion Energy Syst,7.13,Building Products - Ltg FX,2115,221780000
-OGEN,Oragenics Inc,0.9017,Medical - Biomedical,2521,88813000
-OIIM,O2Micro Intl Ltd,7.45,Electronics - Semiconductors,1784,197748000
-ONCS,Oncosec Medical,5.11,Medical - Biomedical,798,194347000
-ONCY,Oncolytics Biotech Inc,3.7,Medical - Biomedical,7584,214065000
-ONDS,Ondas Holdings Inc,9.84,Communication Network Software,3027,259977000
-ONTX,Onconova Therapeutic,1.01,Medical - Drugs,10655,219765000
-OPBK,Open Bank,11.31,Banks - Southwest,1575,161551000
-OPTN,Optinose Inc,3.53,Medical - Drugs,771,183723000
-OPTT,Ocean Power Tech Inc,2.95,Other Alt Energy,5338,145820000
-ORGS,Orgenesis Inc,5.57,Medical - Biomedical,783,146410000
-ORMP,Oramed Pharma,10.1,Medical Products,6309,296050000
-ORN,Orion Group Holdings Inc,5.65,Building - Heavy Construction,697,166317000
-ORRF,Orrstown Finl Svcs,22.57,Banks - Northeast,1158,240343000
-OSG,Overseas Shipholding Group Inc,2.13,Transportation - Ship,1183,182171000
-OSMT,Osmotica Pharmaceuticals Plc,3.73,Medical - Biomedical,1830,217796000
-OSS,One Stop Systems Inc,6.42,Internet - Software,1929,110435000
-OTIC,Otonomy Inc,2.65,Medical - Drugs,599,128529000
-OUST,Ouster Inc,8.99,Electronics - Misc Components,8494,203750000
-OVID,Ovid Therapeutics Inc,3.97,Medical - Biomedical,3554,253810000
-OXSQ,Oxford Square Capital Corp,4.56,Finance - SBIC & Commercial,2322,225635000
-PAYS,Paysign Inc,4.39,Financial Transaction Services,3347,195887000
-PBPB,Potbelly Corp,6.05,Retail - Restaurants,697,172178000
-PBT,Permian Basin Royalty Trust,4.4,Oil - US Royalty Trusts,546,196228000
-PCB,Pacific City Finl Cp,15.34,Banks - Southwest,704,234422000
-PCTI,Pc-Tel Inc,7.09,Wireless Equipment,700,129346000
-PDEX,Pro-Dex Inc,26.9,Medical - Dental Suppliers,581,104120000
-PDS,Precision Drilling Corp,21.39,Oil & Gas - Drilling,1786,269140000
-PDSB,Pds Biotechnology Corp,4.21,Medical - Biomedical,2459,97953000
-PED,Pedevco Corp,1.49,Oil Field Machinery & Equip,516,119187000
-PEI,Pennsylvania Real Estate Investment,1.98,REIT - Equity Trust Retail,2453,156162000
-PFBI,Premier Finl Bncp,17.94,Banks - Southeast,605,250149000
-PFSW,Pfsweb Inc,6.52,Business Services,638,136674000
-PFX,Phenixfin Corp Pr,33.51,Finance - SBIC & Commercial,617,89310000
-PHAS,Phasebio Pharmaceuticals Inc,3.42,Medical - Biomedical,1967,96573000
-PHUN,Phunware Inc,1.63,Internet - Software,21136,113564000
-PINE,Alpine Income Property Trust Inc,16.62,REIT - Equity Trust Other,1602,123501000
-PIPP,Pine Island Acquisition Corp Cl A,10.05,Unclassified,2390,273683000
-PIRS,Pieris Pharma,2.6,Medical - Biomedical,1756,139928000
-PKE,Park Electrochemical Corp,13.76,Aerospace - Defense Equipment,1112,272902000
-PLBY,Plby Group Inc,17.91,Leisure & Recreational Prdcts,10003,140517000
-PLG,Platinum Group Metals Ltd,3.8,Mining - Misc,1523,276895000
-PLX,Protalix Biotherapeutics,4.83,Medical - Biomedical,1453,177304000
-PLXP,Plx Pharma Inc,8.38,Medical - Drugs,3546,185190000
-PMBC,Pacific Mercantile,9.05,Banks - West,2624,198862000
-PNTM,Pontem Corporation Cl A,9.72,Unclassified,2428,193456000
-POLA,Polar Power Inc,11.92,Utility - Electric Power,6362,128519000
-PROG,Progenity Inc,4.43,Medical - Drugs,1135,248238000
-PRQR,Proqr Therapeutics,8.19,Medical - Biomedical,94291,284812000
-PRT,Permrock Royalty Trust Trust Units,6.15,Oil - US Integrated,889,81296000
-PSTI,Pluristem Therapeutc,4.6,Medical - Biomedical,2382,153231000
-PSTL,Postal Realty Trust Cl A,17.24,REIT - Equity Trust Other,990,156387000
-PTN,Palatin Technologies,0.78,Medical - Biomedical,6664,159874000
-PVAC,Penn VA Corp,14.15,Oil - US Exploration & Product,5438,211143000
-PVBC,Provident Bancorp CS,14.35,Banks - Northeast,771,260295000
-PW,Power REIT,46.08,REIT - Equity Trust Other,1571,139601000
-PWFL,Powerfleet Inc,8.94,Transportation - Services,973,296091000
-PXLW,Pixelworks Inc,3.37,Electronics - Semiconductors,1883,171777000
-PYPD,Polypid Ltd,9.45,Medical - Drugs,715,168585000
-QRHC,Quest Resource,4.29,Waste Removal Svcs,1360,77703000
-QUAD,Quad Graphics Inc,4.03,Printing - Commercial,645,225850000
-QUIK,Quicklogic Corp,7.3,Electronics - Semiconductors,669,77587000
-RBAC,Redball Acquisition Corp Cl A,9.98,Unclassified,2314,164975000
-RCON,Recon Technology Ltd,7.22,Oil Field Machinery & Equip,13752,101487000
-RDVT,Red Violet Inc,19.01,Internet Software Services,745,223626000
-REDU,Rise Education Cayman Ltd ADR,4.65,Schools,730,291474000
-REI,Ring Energy Inc,2.48,Oil - US Exploration & Product,6721,256881000
-RENN,Renren Inc,10.07,Internet Services - Delivery,946,229529000
-REPH,Recro Pharma Inc,3.05,Medical - Drugs,856,123250000
-RESN,Resonant Inc,4.19,Semi Radio Frequency,4604,245891000
-RGCO,Rgc Resources Inc,22.25,Oil - Refining and Marketing,1242,186079000
-RGLS,Regulus Therapeutics,1.52,Medical - Drugs,800,110208000
-RICE,Rice Acquisition Corp Cl A,9.96,Unclassified,540,294305000
-RMBL,Rumbleon Inc,43.48,Internet - Services,5183,96627000
-RMTI,Rockwell Medical IN,1.17,Medical Products,2497,109480000
-RNWK,Realnetworks Inc,4.52,Internet - Software,2988,164891000
-RRD,Donnelley R.R. & Sons Company,4.09,Outsourcing,3457,271366000
-RTPZ,Reinvent Technology Partners Z Cl A,10.18,Unclassified,5162,293250000
-RUHN,Ruhnn Holding Ltd ADR,3.27,Technology Services,682,278547000
-RWLK,Rewalk Roboti Ord Sh,2.32,Medical Instruments,4767,105770000
-RYB,Ryb Education Inc Aps,3.82,Schools,2115,98482000
-SACH,Sachem Capital Corp,5.22,Finance - Misc Services,1145,112616000
-SAR,Saratoga Investment Corp,24.55,Finance - SBIC & Commercial,1424,270426000
-SB,Safe Bulkers Inc,2.64,Transportation - Ship,1580,262454000
-SBBP,Strongbridge Bio Ord,2.72,Medical - Biomedical,2020,186330000
-SCM,Stellus Capital Investment Cor,12.66,Finance - SBIC & Commercial,1153,242016000
-SCOR,Comscore Inc,3.66,Business Services,1340,265255000
-SCPE,SC Health Corp Cl A,10.13,Unclassified,6747,229271000
-SCYX,Scynexis Inc,7.65,Medical - Drugs,2456,86426000
-SD,Sandridge Energy Inc,4.01,Oil - US Integrated,668,143095000
-SDH,Global Internet of People Inc,3.88,Internet - Software,892,98314000
-SECO,Secoo Holding ADR,2.61,Internet Commerce,808,194296000
-SEED,Origin Agritech Ltd,21.21,Agriculture Operations,4354,127539000
-SEEL,Seelos Therapeutics Inc,4.28,Medical - Biomedical,20012,282013000
-SFE,Safeguard Scientifics,7.09,Finance - SBIC & Commercial,914,146189000
-SGA,Saga Communications,22.6,Broadcast - Radio & TV,746,131842000
-SGAM,Seaport Global Acquisition Corp Cl A,9.88,Unclassified,1171,153281000
-SHBI,Shore Bancshares Inc,17.52,Banks - Northeast,1051,206073000
-SHIP,Seanergy Maritime Hl,1.06,Transportation - Ship,10992,165392000
-SHSP,Sharpspring Inc,16.09,Internet - Software,1950,181477000
-SIC,Select Interior Concepts Inc Cl A,7.21,Textile - Home Furnishings,769,177812000
-SIEB,Siebert Fin Cp,4.21,Finance - Investment Brokers,1257,138897000
-SINO,Sino-Global Shipping,6.16,Transportation - Services,8417,102429000
-SIOX,Sio Gene Therapies Inc,2.54,Medical - Biomedical,2214,110565000
-SLGG,Super League Gaming Inc,7.55,Gaming,20354,155145000
-SLNO,Soleno Therapeutics Inc,1.27,Medical - Drugs,1948,107627000
-SLS,Sellas Life Sciences Group Inc,8.24,Medical - Biomedical,3004,76926000
-SMED,Sharps Compliance,13.54,Pollution Controls,831,219609000
-SMHI,Seacor Marine Holdings Inc,5.79,Transportation - Ship,1643,116617000
-SMLP,Summit Midstream Partners LP,24.48,Oil Gas Prod Pipeline MLP,1295,152508000
-SMTX,Smtc Corp,6.01,Electronics - Misc Components,3217,171084000
-SNCR,Synchronoss Technolo,3.88,Internet - Software,1067,169140000
-SND,Smart Sand Inc,2.59,Oil - Field Services,593,107225000
-SPI,Spi Energy CO Ads,6.82,Solar,2772,153259000
-SPOK,Spok Holdings Inc,10.68,Wireless National,663,202212000
-SPRT,Support.com Inc,4.78,Internet - Software,7626,88751000
-SQNS,Sequans Communications S A,5.97,Electronics - Semiconductors,1350,205591000
-SRAC,Stable Road Acquisition Corp Cl A,13.97,Aerospace - Defense,9779,242724000
-SRGA,Surgalign Hldg Inc,2.3,Medical Services,1343,178058000
-STG,Sunlands Online Education Group ADR,1.15,Internet - Services,5711,119047000
-STKS,The One Group,8.19,Retail - Restaurants,2925,232960000
-STON,Stonemor Partners LP,1.99,Consumer Services - Misc,1028,241636000
-STRT,Strattec Security,44.57,Auto - Truck Original Parts,1440,166908000
-STSA,Satsuma Pharmaceuticals Inc,5.71,Medical - Biomedical,538,95995000
-SUNS,Slr Senior Investment Corp,14.92,Finance - SBIC & Commercial,864,239290000
-SUP,Superior Industries International,6.25,Auto - Truck Original Parts,1428,154064000
-SUPV,Grupo Supervielle S.A.,1.81,Banks - Foreign,712,161672000
-SVAC,Starboard Value Acquisition Corp Cl A,10,Unclassified,7559,120981000
-SVBI,Severn Bancorp Inc,12.55,Banks - Northeast,708,157265000
-SVFA,Svf Investment Corp Cl A,10.1,Unclassified,10773,178498000
-SVFB,Svf Investment Corp. 2 Cl A,10.09,Unclassified,992,262140000
-SVOK,Seven Oaks Acquisition Corp Cl A,9.83,Unclassified,1504,272250000
-SVRA,Savara Inc,1.65,Medical - Drugs,3049,92201000
-SWET,Athlon Acquisition Corp. Cl A,9.85,Unclassified,607,78992000
-SYBX,Synlogic Inc,3.73,Medical - Biomedical,1303,135156000
-SYN,Synthetic Biologics Inc,0.6801,Medical - Biomedical,2349,85948000
-SYNC,Synacor Inc,2.19,Internet - Services,4535,86424000
-TAOP,Taoping Inc,9.25,Internet - Services,5967,82850000
-TARA,Artara Therapeutics Inc,14.89,Medical - Drugs,2625,183145000
-TCDA,Tricida Inc,5.14,Medical - Drugs,2264,237654000
-TCON,Tracon Pharma,7.96,Medical - Biomedical,1312,126618000
-TDAC,Trident Acquisitions Corp,11.82,Unclassified,4826,147685000
-TEDU,Tarena Intl ADR,3.02,Staffing,5510,167669000
-TELA,Tela Bio Inc,14.55,Medical - Biomedical,1737,202048000
-TH,Target Hospitality Corp,2.33,Leisure & Recreation Services,2777,195260000
-THCA,Tuscan Holdings Corp II,10.09,Unclassified,1149,192669000
-TIPT,Tiptree Fncl Cl A,8.87,Insurance - Brokers,2890,247289000
-TISI,Team Inc,9.85,Building - Maint & Service,1535,298860000
-TLIS,Talis Biomedical Corp,11.51,Medical - Biomedical,2183,283169000
-TMDI,Titan Medical Inc,1.78,Medical Instruments,1358,189478000
-TMKR,Tastemaker Acquisition Corp. Cl A,9.71,Unclassified,2212,290700000
-TMTS,Spartacus Acquisition Corporation Cl A,9.95,Unclassified,1040,197200000
-TNP,Tsakos Energy Navigation Ltd,10,Transportation - Ship,1127,181988000
-TOPS,Top Ships Inc,2.06,Transportation - Ship,3897,81257000
-TRCH,Torchlight Energy,1.85,Oil - US Exploration & Product,12439,281909000
-TREC,Trecora Resources,7.86,Chemical - Diversified,964,190236000
-TRIB,Trinity Bio ADR,3.26,Medical Products,2835,86743000
-TRIT,Triterras Inc Cl A,7.11,Financial Transaction Services,2982,228080000
-TRVN,Trevena Inc,1.83,Medical - Biomedical,3192,285455000
-TRX,Tanzanian Royalty Exploration Corp,0.59,Mining - Gold,1560,149533000
-TSQ,Townsquare Media Llc,10.29,Broadcast - Radio & TV,1341,193196000
-TTOO,T2 Biosystems CS,1.61,Medical Instruments,7108,229332000
-TWCT,Twc Tech Holdings II Corp Cl A,9.86,Unclassified,720,170145000
-TWIN,Twin Disc Inc,9.03,Machinery - General Industrial,538,122250000
-TYME,Tyme Technologies,1.8,Medical - Drugs,3410,234769000
-TZOO,Travelzoo Inc,16.38,Internet Commerce,2364,177567000
-UAMY,U S Antimony Corp,1.12,Mining - Non Ferrous,1991,101909000
-UGRO,Urban-Gro Inc,7.79,Machinery - Farm,1373,82413000
-ULBI,Ultralife Corp,8.57,Electronics - Misc Components,1488,119381000
-UNTY,Unity Bancorp Inc,21.88,Banks - Northeast,691,217237000
-UONE,Urban One Inc,5.3,Broadcast - Radio & TV,5700,256884000
-UONEK,Urban One Inc,1.78,Broadcast - Radio & TV,661,81172000
-URG,Ur Energy Inc,1.23,Mining - Misc,3226,215313000
-USAK,U S A Truck Inc,15.8,Transportation - Truck,1740,135012000
-USAS,Americas Silver Corp,2.1,Mining - Misc,4047,296655000
-USDP,USD Partners LP,6.46,Transportation - Rail,3230,152273000
-USIO,Usio Inc,6.62,Financial Transaction Services,2378,150973000
-USWS,U.S. Well Services Inc,1.09,Oil - Field Services,3525,87615000
-UTI,Universal Technical Institute Inc,5.76,Schools,1081,185308000
-VBLT,Vascular Biogen. Ord,2.03,Medical - Biomedical,663,93399000
-VERB,Verb Technology Company Inc,1.48,Internet - Software,2298,75612000
-VERO,Venus Concept Inc,2.37,Medical Instruments,678,127987000
-VGZ,Vista Gold Corp,1.06,Mining - Gold,682,105446000
-VHAQ,Viveon Health Acquisition Corp,9.92,Unclassified,1623,245271000
-VISL,Vislink Technologies Inc,3.2,Communication Network Software,27135,146508000
-VIST,Vista Oil & Gas S.A.B. DE C.V.,2.62,Oil - International Integrated,1007,242702000
-VNRX,Volitionrx Ltd,3.5,Medical - Biomedical,775,189278000
-VOLT,Volt Information Services Inc,3.91,Business Services,1316,82601000
-VTGN,Vistagen Therap. Com,2.15,Medical - Biomedical,1753,299581000
-VTVT,Vtv Theraptcs Cl A,2.61,Medical - Biomedical,1227,210483000
-VVPR,Vivopower International Plc,8.59,Solar,1611,110995000
-VWTR,Vidler Water Resources Inc,9.07,Utility - Water Supply,623,163390000
-VYGR,Voyager Therapeut,4.82,Medical - Biomedical,1261,173585000
-WATT,Energous Corp,3.93,Machinery - Electrical,8737,166160000
-WKEY,Wisekey International Holding Ltd ADR,15.24,Protection - Safety,484970,274517000
-WMC,Western Asset Mortgage Capital,3.28,REIT - Mortgage Trusts,1970,197642000
-WNEB,Western New England Bancorp Inc,8.59,Banks - Foreign,1102,200079000
-WNW,Wunong Net Technology Company Limited,10.09,Internet Commerce,8012,247750000
-WRAP,Wrap Technologies Inc,5.55,Protection - Safety,840,193495000
-WRN,Western Copper Corp,1.32,Mining - Misc,693,181902000
-WTER,Alkaline Water Company Inc,1.13,Beverages - Soft,792,86976000
-WWR,Westwater Resources,5.21,Mining - Misc,8562,158242000
-WYY,Widepoint Corp,9.66,Computer - Services,954,88055000
-XAIR,Beyond Air Inc,5.32,Medical - Biomedical,2052,107147000
-XCUR,Exicure Inc,2.19,Medical - Biomedical,1058,182077000
-XELA,Exela Technologies Inc,2.36,Technology Services,5303,129732000
-XERS,Xeris Pharmaceuticals Inc,4.36,Medical - Drugs,6118,254001000
-XFOR,X4 Pharmaceuticals Inc,9.15,Medical - Biomedical,1227,151241000
-XGN,Exagen Inc,17.59,Medical Products,797,228187000
-XSPA,Xpresspa Group Inc,1.77,Medical Services,6769,116093000
-YCBD,Cbdmd Inc,3.86,Advertising Marketing Services,1290,197122000
-YSAC,Yellowstone Acquisition Company Cl A,9.99,Unclassified,1218,168970000
-YTRA,Yatra Online Inc,2.39,Internet - Services,1527,141276000
-ZDGE,Zedge Inc Cl B,12.11,Internet - Content,6864,162717000
-ZEUS,Olympic Steel Inc,28.93,Steel - Producers,7247,271448000
-ZKIN,Zk International Group CO Ltd,9.8,Steel - Producers,29425,224254000
-ZNTE,Zanite Acquisition Corp Cl A,10.05,Unclassified,4128,286350000
-ZSAN,Zosano Pharma,1.16,Medical - Biomedical,2114,120108000
-ZVO,Zovio Inc,4.69,Technology Services,817,146724000
-ZYNE,Zynerba Pharma CS,4.62,Medical - Generic Drugs,5531,188934000
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
+UPC,Universe Pharmaceuticals Inc. Ordinary Shares,$5.25 ,1.24,30.92%,Small,China,75895807,Health Care,"$398,452,986.75 "
+SUNW,Sunworks Inc. Common Stock,$17.00 ,2.32,15.80%,Small,United States,10621799,Public Utilities,"$180,570,583.00 "
+KOSS,Koss Corporation Common Stock,$23.20 ,0.71,3.16%,Small,United States,4707225,Consumer Non-Durables,"$109,207,620.00 "
+WKEY,WISeKey International Holding AG American Depositary Shares,$13.49 ,-0.84,-5.86%,Small,Switzerland,6004623,Technology,"$81,002,364.27 "
+LGHL,Lion Group Holding Ltd. American Depositary Share,$3.66 ,-0.76,-17.20%,Small,China,16924883,Finance,"$61,945,071.78 "
+RAIL,FreightCar America Inc. Common Stock,$6.65 ,0.055,0.83%,Small,United States,9014049,Capital Goods,"$59,943,425.85 "
+DLPN,Dolphin Entertainment Inc. Common Stock,$13.40 ,0.69,5.43%,Small,United States,3866125,Consumer Services,"$51,806,075.00 "
+JAGX,Jaguar Health Inc. Common Stock,$1.98 ,0.18,10.00%,Small,United States,17274399,Health Care,"$34,203,310.02 "
+YGMZ,MingZhu Logistics Holdings Limited Ordinary Shares,$5.47 ,0.88,19.17%,Small,China,5547603,Consumer Services,"$30,345,388.41 "
+CTIC,CTI BioPharma Corp. (DE) Common Stock,$2.54 ,-0.37,-12.72%,Small,United States,10766100,Health Care,"$27,345,894.00 "
+CIDM,Cinedigm Corp. Class A Common Stock,$1.58 ,-0.09,-5.39%,Small,United States,17112825,Consumer Services,"$27,038,263.50 "
+MOXC,Moxian Inc. Common Stock,$5.39 ,0.86,18.99%,Small,China,4701176,Technology,"$25,339,338.64 "
+CSCW,Color Star Technology Co. Ltd. Ordinary Shares,$1.65 ,-0.13,-7.30%,Small,United States,14037223,Basic Industries,"$23,161,417.95 "
+SLGG,Super League Gaming Inc. Common Stock,$6.99 ,-0.05,-0.71%,Small,United States,3242821,Consumer Services,"$22,667,318.79 "
+AEI,Alset EHome International Inc. Common Stock,$11.43 ,-0.14,-1.21%,Small,United States,1962162,Finance,"$22,427,511.66 "
+SVRA,Savara Inc. Common Stock,$2.25 ,0.17,8.17%,Small,United States,9367206,Health Care,"$21,076,213.50 "
+KZR,Kezar Life Sciences Inc. Common Stock,$5.98 ,0.02,0.34%,Small,United States,3496552,Health Care,"$20,909,380.96 "
+GRNQ,Greenpro Capital Corp. Common Stock,$2.69 ,0.1,3.86%,Small,China,7765016,Technology,"$20,887,893.04 "
+IVAC,Intevac Inc. Common Stock,$8.14 ,0.99,13.85%,Small,United States,2357866,Technology,"$19,193,029.24 "
+ZKIN,ZK International Group Co. Ltd Ordinary Share,$9.83 ,0.51,5.47%,Small,China,1896714,Capital Goods,"$18,644,698.62 "
+OEG,Orbital Energy Group Inc. Common Stock,$5.96 ,-0.14,-2.30%,Small,United States,2869921,Technology,"$17,104,729.16 "
+AZRX,AzurRx BioPharma Inc. Common Stock,$1.02 ,-0.32,-23.88%,Small,United States,16613032,Health Care,"$16,945,292.64 "
+ISUN,iSun Inc. Common Stock,$15.26 ,1.91,14.31%,Small,United States,1078659,Technology,"$16,460,336.34 "
+GNLN,Greenlane Holdings Inc. Class A Common Stock,$6.20 ,0.895,16.87%,Small,United States,2638265,Capital Goods,"$16,357,243.00 "
+VISL,Vislink Technologies Inc. Common Stock,$3.18 ,0.25,8.53%,Small,United States,4731761,Capital Goods,"$15,046,999.98 "
+EXPR,Express Inc. Common Stock,$3.97 ,-0.05,-1.24%,Small,United States,3670431,Consumer Services,"$14,571,611.07 "
+ATOS,Atossa Therapeutics Inc. Common Stock,$2.16 ,0.05,2.37%,Small,United States,6735434,Health Care,"$14,548,537.44 "
+TRCH,Torchlight Energy Resources Inc. Common Stock,$1.87 ,0.04,2.19%,Small,United States,7709996,Energy,"$14,417,692.52 "
+CPSH,CPS Technologies Corp. Common Stock,$12.65 ,-0.44,-3.36%,Small,United States,1117950,Capital Goods,"$14,142,067.50 "
+RKDA,Arcadia Biosciences Inc. Common Stock,$2.74 ,-0.015,-0.54%,Small,United States,5136846,Consumer Non-Durables,"$14,074,958.04 "
+XSPA,XpresSpa Group Inc. Common Stock,$1.67 ,-0.17,-9.24%,Small,United States,8371724,Consumer Services,"$13,980,779.08 "
+TAOP,Taoping Inc. Ordinary Shares ,$9.11 ,-0.3,-3.19%,Small,China,1470367,Technology,"$13,395,043.37 "
+POLA,Polar Power Inc. Common Stock,$13.64 ,-0.25,-1.80%,Small,United States,977630,Miscellaneous,"$13,334,873.20 "
+ONTX,Onconova Therapeutics Inc. Common Stock,$0.95 ,-0.05,-5.01%,Small,United States,13445648,Health Care,"$12,758,575.39 "
+SEAC,SeaChange International Inc. Common Stock,$1.55 ,0,0.00%,Small,United States,8021959,Technology,"$12,434,036.45 "
+NMM,Navios Maritime Partners LP Common Units Representing Limited Partner Interests,$23.52 ,-0.04,-0.17%,Small,Greece,522958,Transportation,"$12,299,972.16 "
+TMBR,Timber Pharmaceuticals Inc. Common Stock,$2.25 ,0.22,10.84%,Small,United States,5143571,Health Care,"$11,573,034.75 "
+EVFM,Evofem Biosciences Inc. Common Stock,$2.02 ,0.27,15.43%,Small,United States,5591834,Health Care,"$11,295,504.68 "
+VCVC,10X Capital Venture Acquisition Corp Class A Common Stock,$10.00 ,0,0.00%,Small,United States,1124517,Capital Goods,"$11,245,170.00 "
+CFRX,ContraFect Corporation Common Stock,$4.90 ,0.1,2.08%,Small,United States,2273938,Health Care,"$11,142,296.20 "
+OPTT,Ocean Power Technologies Inc. Common Stock,$3.10 ,-0.21,-6.34%,Small,United States,3577114,Public Utilities,"$11,089,053.40 "
+WVE,Wave Life Sciences Ltd. Ordinary Shares,$6.09 ,0.48,8.56%,Small,Singapore,1771255,Health Care,"$10,786,942.95 "
+SRAC,Stable Road Acquisition Corp. Class A Common Stock,$13.13 ,-0.1,-0.76%,Small,United States,816195,Capital Goods,"$10,716,640.35 "
+OCG,Oriental Culture Holding LTD Ordinary Shares,$7.89 ,-0.01,-0.13%,Small,China,1357546,Consumer Services,"$10,711,037.94 "
+EYES,Second Sight Medical Products Inc. Common Stock,$8.05 ,-0.2,-2.42%,Small,United States,1325671,Health Care,"$10,671,651.55 "
+NMTR,9 Meters Biopharma Inc. Common Stock,$1.21 ,0.04,3.42%,Small,United States,8746924,Health Care,"$10,583,778.04 "
+VIAO,VIA optronics AG American Depositary Shares each representing one-fifth of an Ordinary Share,$13.00 ,0.08,0.62%,Small,,811091,Technology,"$10,544,183.00 "
+AMPG,Amplitech Group Inc. Common Stock,$11.73 ,0.78,7.12%,Small,United States,870951,Capital Goods,"$10,216,255.23 "
+BWEN,Broadwind Inc. Common Stock,$6.19 ,-0.41,-6.21%,Small,United States,1640757,Capital Goods,"$10,156,285.83 "
+DPW,Ault Global Holdings Inc. Common Stock,$3.21 ,-0.08,-2.43%,Small,United States,3149440,Capital Goods,"$10,109,702.40 "
+CLSN,Celsion Corporation Common Stock,$1.46 ,0.08,5.80%,Small,United States,6821464,Health Care,"$9,959,337.44 "
+VVPR,VivoPower International PLC Ordinary Shares,$10.37 ,0.29,2.88%,Small,United Kingdom,917401,Public Utilities,"$9,513,448.37 "
+GIK,GigCapital3 Inc. Common Stock,$10.72 ,0.05,0.47%,Small,,876958,Capital Goods,"$9,400,989.76 "
+USAK,USA Truck Inc. Common Stock,$20.78 ,1.67,8.74%,Small,United States,450721,Transportation,"$9,365,982.38 "
+ATNF,180 Life Sciences Corp. Common Stock,$6.70 ,0.14,2.13%,Small,United States,1364640,Health Care,"$9,143,088.00 "
+KIQ,Kelso Technologies Inc Ordinary Shares,$1.08 ,-0.09,-7.69%,Small,Canada,8383175,Capital Goods,"$9,053,829.00 "
+CODX,Co-Diagnostics Inc. Common Stock,$9.56 ,0.02,0.21%,Small,United States,941253,Health Care,"$8,998,378.68 "
+EMAN,eMagin Corporation Common Stock,$3.97 ,0.23,6.15%,Small,United States,2168254,Technology,"$8,607,968.38 "
+NVVE,Nuvve Holding Corp. Common Stock,$12.86 ,2.76,27.33%,Small,China,663353,Capital Goods,"$8,530,719.58 "
+REI,Ring Energy Inc. Common Stock,$2.45 ,0.14,6.06%,Small,United States,3476527,Energy,"$8,517,491.15 "
+RACA,Therapeutics Acquisition Corp. Class A Common Stock,$10.51 ,0,0.00%,Small,United States,795487,Finance,"$8,360,568.37 "
+WWR,Westwater Resources Inc. Common Stock,$5.50 ,0.13,2.42%,Small,United States,1513079,Basic Industries,"$8,321,934.50 "
+DCTH,Delcath Systems Inc. Common Stock,$12.25 ,-0.17,-1.37%,Small,United States,673270,Health Care,"$8,247,557.50 "
+GORO,Gold Resource Corporation Common Stock,$2.87 ,0.23,8.71%,Small,United States,2859137,Basic Industries,"$8,205,723.19 "
+BTU,Peabody Energy Corporation Common Stock ,$3.01 ,-0.05,-1.63%,Small,United States,2716498,Energy,"$8,176,658.98 "
+ADN,Advent Technologies Holdings Inc. Class A Common Stock,$13.43 ,0.04,0.30%,Small,United States,591992,Miscellaneous,"$7,950,452.56 "
+AYRO,AYRO Inc. Common Stock,$6.58 ,0.1,1.54%,Small,United States,1205047,Consumer Services,"$7,929,209.26 "
+SINO,Sino-Global Shipping America Ltd. Common Stock,$6.55 ,0.07,1.08%,Small,United States,1172431,Transportation,"$7,679,423.05 "
+COMS,ComSovereign Holding Corp. Common Stock,$2.75 ,0.08,3.00%,Small,United States,2708132,Capital Goods,"$7,447,363.00 "
+KMPH,KemPharm Inc. Common Stock,$9.50 ,0.3,3.26%,Small,United States,781453,Health Care,"$7,423,803.50 "
+DGLY,Digital Ally Inc. Common Stock,$1.73 ,0.1,6.14%,Small,United States,4163807,Technology,"$7,203,386.11 "
+GRAY,Graybug Vision Inc. Common Stock,$5.52 ,-0.03,-0.54%,Small,United States,1286226,Health Care,"$7,099,967.52 "
+HEPA,Hepion Pharmaceuticals Inc. Common Stock,$1.99 ,0.15,8.15%,Small,United States,3547297,Health Care,"$7,059,121.03 "
+IZEA,IZEA Worldwide Inc. Common Stock,$3.85 ,0.08,2.12%,Small,United States,1809340,Consumer Services,"$6,965,959.00 "
+SLS,SELLAS Life Sciences Group Inc. Common Stock,$9.11 ,0.57,6.67%,Small,United States,764142,Health Care,"$6,961,333.62 "
+AVEO,AVEO Pharmaceuticals Inc. Common Stock,$7.43 ,0.11,1.50%,Small,United States,926139,Health Care,"$6,881,212.77 "
+CEMI,Chembio Diagnostics Inc. Common Stock,$3.52 ,0.01,0.29%,Small,United States,1919944,Health Care,"$6,758,202.88 "
+CAPA,HighCape Capital Acquisition Corp. Class A Common Stock,$12.65 ,0.73,6.12%,Small,United States,532602,Capital Goods,"$6,737,415.30 "
+WATT,Energous Corporation Common Stock,$4.15 ,0.09,2.22%,Small,United States,1617761,Technology,"$6,713,708.15 "
+PFMT,Performant Financial Corporation Common Stock,$2.24 ,0.09,4.19%,Small,United States,2928720,Consumer Services,"$6,560,332.80 "
+CHRA,Charah Solutions Inc. Common Stock,$5.50 ,0.64,13.17%,Small,United States,1181612,Basic Industries,"$6,498,866.00 "
+ITRM,Iterum Therapeutics plc Ordinary Share,$1.46 ,0.05,3.55%,Small,Ireland,4446059,Health Care,"$6,491,246.14 "
+ALYA,Alithya Group inc. Class A Subordinate Voting Shares,$2.56 ,0.13,5.35%,Small,Canada,2453169,Technology,"$6,280,112.64 "
+BOXL,Boxlight Corporation Class A Common Stock,$2.58 ,0.05,1.98%,Small,United States,2326145,Consumer Services,"$6,001,454.10 "
+AGTC,Applied Genetic Technologies Corporation Common Stock,$5.23 ,0.16,3.16%,Small,United States,1145928,Health Care,"$5,993,203.44 "
+MARK,Remark Holdings Inc. Common Stock,$2.39 ,0.11,4.83%,Small,United States,2493274,Consumer Services,"$5,958,924.86 "
+SYN,Synthetic Biologics Inc. Common Stock,$0.71 ,0.0283,4.15%,Small,United States,8342035,Health Care,"$5,927,015.87 "
+XERS,Xeris Pharmaceuticals Inc. Common Stock,$4.51 ,0,0.00%,Small,United States,1310495,Health Care,"$5,910,332.45 "
+ACST,Acasti Pharma Inc. Class A Common Stock,$0.61 ,0.005,0.83%,Small,Canada,9736380,Health Care,"$5,890,509.90 "
+BFI,BurgerFi International Inc. Common Stock ,$15.45 ,0.04,0.26%,Small,Mexico,376390,Consumer Services,"$5,815,225.50 "
+AESE,Allied Esports Entertainment Inc. Common Stock,$2.96 ,0.08,2.78%,Small,United States,1916996,Consumer Services,"$5,674,308.16 "
+FTEK,Fuel Tech Inc. Common Stock,$2.89 ,-0.25,-7.96%,Small,United States,1957976,Capital Goods,"$5,658,550.64 "
+MBIO,Mustang Bio Inc. Common Stock,$3.35 ,0.03,0.90%,Small,United States,1668884,Health Care,"$5,590,761.40 "
+AAOI,Applied Optoelectronics Inc. Common Stock,$8.82 ,0.46,5.50%,Small,United States,618088,Technology,"$5,451,536.16 "
+CABA,Cabaletta Bio Inc. Common Stock,$11.73 ,0.63,5.68%,Small,United States,463329,Health Care,"$5,434,849.17 "
+ITP,IT Tech Packaging Inc. Common Stock,$0.69 ,0.0295,4.47%,Small,China,7801821,Consumer Durables,"$5,382,476.31 "
+FPAY,FlexShopper Inc. Common Stock,$2.63 ,0,0.00%,Small,United States,2043900,Technology,"$5,375,457.00 "
+CTXR,Citius Pharmaceuticals Inc. Common Stock,$1.84 ,0.06,3.37%,Small,United States,2903419,Health Care,"$5,342,290.96 "
+NOVN,Novan Inc. Common Stock,$1.63 ,0.07,4.49%,Small,United States,3222033,Health Care,"$5,251,913.79 "
+AIKI,AIkido Pharma Inc. Common Stock,$1.17 ,0.03,2.63%,Small,United States,4365091,Health Care,"$5,107,156.47 "
+BSPE,Bespoke Capital Acquisition Corp. Class A Restricted Voting Shares,$10.02 ,0.06,0.60%,Small,Canada,505170,Consumer Non-Durables,"$5,061,803.40 "
+MBRX,Moleculin Biotech Inc. Common Stock,$4.06 ,-0.02,-0.49%,Small,United States,1244508,Health Care,"$5,052,702.48 "
+ACEV,ACE Convergence Acquisition Corp. Class A Ordinary Shares,$10.07 ,0.1,1.00%,Small,United States,497813,Technology,"$5,012,976.91 "
+SRAX,SRAX Inc. Class A Common Stock,$5.00 ,0.26,5.49%,Small,United States,1001907,Technology,"$5,009,535.00 "
+UTI,Universal Technical Institute Inc Common Stock,$6.00 ,0.16,2.74%,Small,United States,834164,Consumer Services,"$5,004,984.00 "
+CGRO,Collective Growth Corporation Class A Common Stock,$9.43 ,-0.53,-5.32%,Small,United States,527348,Finance,"$4,972,891.64 "
+PVAC,Penn Virginia Corporation Common Stock,$14.23 ,0.83,6.19%,Small,United States,346554,Energy,"$4,931,463.42 "
+LODE,Comstock Mining Inc. Common Stock,$4.96 ,0.38,8.30%,Small,United States,993162,Basic Industries,"$4,926,083.52 "
+IMMR,Immersion Corporation Common Stock,$9.63 ,0.05,0.52%,Small,United States,506694,Technology,"$4,879,463.22 "
+GCAC,Growth Capital Acquisition Corp. Class A Common Stock,$9.68 ,-0.02,-0.21%,Small,United States,502301,Finance,"$4,862,273.68 "
+DSS,Document Security Systems Inc. Common Stock,$3.75 ,0.14,3.88%,Small,United States,1292811,Consumer Durables,"$4,848,041.25 "
+LATN,Union Acquisition Corp. II Ordinary Shares,$10.06 ,0.01,0.10%,Small,United States,479894,Finance,"$4,827,733.64 "
+AREC,American Resources Corporation Class A Common Stock,$3.80 ,-0.005,-0.13%,Small,United States,1271522,Consumer Services,"$4,825,425.99 "
+SHIP,Seanergy Maritime Holdings Corp Common Stock,$1.06 ,0,0.00%,Small,Greece,4530409,Transportation,"$4,802,233.54 "
+AQMS,Aqua Metals Inc. Common Stock,$4.18 ,0.13,3.21%,Small,United States,1127043,Basic Industries,"$4,711,039.74 "
+CRBP,Corbus Pharmaceuticals Holdings Inc. Common Stock,$2.05 ,0.08,4.06%,Small,United States,2288456,Health Care,"$4,691,334.80 "
+CLVR,Clever Leaves Holdings Inc. Common Shares,$10.82 ,0.53,5.15%,Small,United States,431874,Health Care,"$4,672,876.68 "
+AGFY,Agrify Corporation Common Stock,$12.62 ,0.14,1.12%,Small,United States,369142,Consumer Non-Durables,"$4,658,572.04 "
+NSH,NavSight Holdings Inc. Class A Common Stock,$10.01 ,-0.01,-0.10%,Small,,461728,Finance,"$4,621,897.28 "
+PRPH,ProPhase Labs Inc. Common Stock (DE),$6.83 ,-0.565,-7.64%,Small,United States,674993,Health Care,"$4,610,202.19 "
+TTOO,T2 Biosystems Inc. Common Stock,$1.57 ,-0.05,-3.09%,Small,United States,2934590,Health Care,"$4,607,306.30 "
+AQST,Aquestive Therapeutics Inc. Common Stock,$5.14 ,-0.06,-1.15%,Small,United States,895113,Health Care,"$4,600,880.82 "
+CHEK,Check-Cap Ltd. Ordinary Share,$1.86 ,0.1,5.68%,Small,Israel,2470860,Health Care,"$4,595,799.60 "
+ATIF,ATIF Holdings Limited Ordinary Shares,$1.38 ,0.01,0.73%,Small,China,3313331,Consumer Services,"$4,572,396.78 "
+EVGN,Evogene Ltd Ordinary Shares,$4.88 ,-0.16,-3.18%,Small,Israel,930659,Basic Industries,"$4,541,615.92 "
+LEAF,Leaf Group Ltd. Common Stock,$7.03 ,0.58,8.99%,Small,United States,645668,Technology,"$4,539,046.04 "
+NGL,NGL ENERGY PARTNERS LP Common Units representing Limited Partner Interests,$2.18 ,0.14,6.86%,Small,United States,2078937,Energy,"$4,532,082.66 "
+WNW,Wunong Net Technology Company Limited Ordinary Shares,$10.03 ,-0.07,-0.69%,Small,China,448522,Consumer Services,"$4,498,675.66 "
+AYTU,Aytu BioPharma Inc.  Common Stock,$7.56 ,-0.04,-0.53%,Small,United States,594846,Health Care,"$4,497,035.76 "
+APRN,Blue Apron Holdings Inc. Class A Common Stock,$6.32 ,0.01,0.16%,Small,United States,708658,Consumer Services,"$4,478,718.56 "
+GWAC,Good Works Acquisition Corp. Common Stock,$10.58 ,-0.25,-2.31%,Small,United States,420916,Finance,"$4,453,291.28 "
+INKA,KludeIn I Acquisition Corp. Class A Common Stock,$9.75 ,0.02,0.21%,Small,United States,453582,Finance,"$4,422,424.50 "
+ODT,Odonate Therapeutics Inc. Common Stock,$3.41 ,-0.01,-0.29%,Small,United States,1291223,Health Care,"$4,403,070.43 "
+SPRT,Support.com Inc. Common Stock,$4.58 ,-0.01,-0.22%,Small,United States,932265,Technology,"$4,269,773.70 "
+ANVS,Annovis Bio Inc. Common Stock,$28.23 ,0.33,1.18%,Small,United States,150815,Health Care,"$4,257,507.45 "
+RNWK,RealNetworks Inc. Common Stock,$4.63 ,0.38,8.94%,Small,United States,910358,Technology,"$4,214,957.54 "
+ZYNE,Zynerba Pharmaceuticals Inc. Common Stock,$4.78 ,0.13,2.80%,Small,United States,880549,Health Care,"$4,209,024.22 "
+PHUN,Phunware Inc. Common Stock,$1.62 ,-0.03,-1.82%,Small,Greece,2593374,Technology,"$4,201,265.88 "
+ATNM,Actinium Pharmaceuticals Inc. (Delaware) Common Stock,$8.06 ,0.44,5.77%,Small,United States,517783,Health Care,"$4,173,330.98 "
+SV,Spring Valley Acquisition Corp. Class A Ordinary Share,$10.06 ,-0.05,-0.50%,Small,United States,414748,Finance,"$4,172,364.88 "
+GIX,GigCapital2 Inc. Common Stock,$10.03 ,0,0.00%,Small,,412420,Finance,"$4,136,572.60 "
+WRAP,Wrap Technologies Inc. Common Stock,$5.40 ,-0.16,-2.88%,Small,United States,761836,Capital Goods,"$4,113,914.40 "
+KBNT,Kubient Inc. Common Stock,$7.53 ,0.23,3.15%,Small,United States,543748,Technology,"$4,094,422.44 "
+MICT,MICT Inc. Common Stock,$2.07 ,0,0.00%,Small,United States,1965721,Capital Goods,"$4,069,042.47 "
+IDRA,Idera Pharmaceuticals Inc. Common Stock,$1.32 ,0.02,1.54%,Small,United States,3069336,Health Care,"$4,051,523.52 "
+GNPK,Genesis Park Acquisition Corp. Class A Ordinary Shares,$10.45 ,-0.04,-0.38%,Small,United States,382668,Finance,"$3,998,880.60 "
+CPST,Capstone Turbine Corporation Common Stock,$9.25 ,0.11,1.20%,Small,United States,428412,Energy,"$3,962,811.00 "
+OVID,Ovid Therapeutics Inc. Common Stock,$4.07 ,0.05,1.24%,Small,United States,971582,Health Care,"$3,954,338.74 "
+KXIN,Kaixin Auto Holdings Ordinary Share,$3.39 ,0.09,2.73%,Small,China,1152107,Consumer Durables,"$3,905,642.73 "
+OSTR,Oyster Enterprises Acquisition Corp. Class A Common Stock,$9.68 ,0.04,0.42%,Small,United States,391940,Finance,"$3,793,979.20 "
+JILL,J. Jill Inc. Common Stock,$9.95 ,0.2,2.05%,Small,,376718,Consumer Non-Durables,"$3,748,344.10 "
+METX,Meten EdtechX Education Group Ltd. Ordinary Shares,$2.37 ,-0.04,-1.66%,Small,China,1563342,Consumer Services,"$3,705,120.54 "
+MKD,Molecular Data Inc. American Depositary Shares,$1.08 ,0,0.00%,Small,China,3403531,Miscellaneous,"$3,675,813.48 "
+CFAC,CF Finance Acquisition Corp. III Common Stock,$10.02 ,0.02,0.20%,Small,United States,364563,Finance,"$3,652,921.26 "
+APT,Alpha Pro Tech Ltd. Common Stock,$9.83 ,0.07,0.72%,Small,Canada,371007,Health Care,"$3,646,998.81 "
+CLPS,CLPS Incorporation Common Stock,$5.40 ,0.33,6.51%,Small,China,674678,Technology,"$3,643,261.20 "
+ONDS,Ondas Holdings Inc. Common Stock,$9.44 ,-0.25,-2.58%,Small,United States,384504,Technology,"$3,629,717.76 "
+OPGN,OpGen Inc. Common Stock,$2.55 ,0.05,2.00%,Small,United States,1421846,Health Care,"$3,625,707.30 "
+NXTD,Nxt-ID Inc. Common Stock,$1.38 ,-0.03,-2.13%,Small,United States,2626762,Consumer Services,"$3,624,931.56 "
+NDRA,ENDRA Life Sciences Inc. Common Stock,$2.74 ,0.14,5.39%,Small,United States,1290822,Health Care,"$3,536,852.28 "
+INFI,Infinity Pharmaceuticals Inc. Common Stock,$3.32 ,0.09,2.79%,Small,United States,1061965,Health Care,"$3,525,723.80 "
+AEZS,Aeterna Zentaris Inc. Common Stock,$1.12 ,-0.02,-1.75%,Small,Canada,3124973,Health Care,"$3,499,969.76 "
+MRKR,Marker Therapeutics Inc. Common Stock,$2.19 ,-0.05,-2.23%,Small,United States,1586991,Health Care,"$3,475,510.29 "
+WPG,Washington Prime Group Inc. Common Stock,$2.46 ,0.23,10.31%,Small,United States,1411657,Consumer Services,"$3,472,676.22 "
+ABEO,Abeona Therapeutics Inc. Common Stock,$1.86 ,-0.02,-1.06%,Small,United States,1860294,Health Care,"$3,460,146.84 "
+ASYS,Amtech Systems Inc. Common Stock,$12.79 ,0.97,8.21%,Small,United States,270248,Technology,"$3,456,471.92 "
+GNPX,Genprex Inc. Common Stock,$4.22 ,-0.09,-2.09%,Small,United States,813498,Health Care,"$3,432,961.56 "
+BRG,Bluerock Residential Growth REIT Inc. Class A Common Stock,$10.42 ,0.31,3.07%,Small,,329333,Consumer Services,"$3,431,649.86 "
+XELA,Exela Technologies Inc. Common Stock,$2.21 ,0.03,1.38%,Small,United States,1531766,Miscellaneous,"$3,385,202.86 "
+HYRE,HyreCar Inc. Common Stock,$10.10 ,0.3,3.06%,Small,United States,333487,Consumer Services,"$3,368,218.70 "
+VERB,Verb Technology Company Inc. Common Stock,$1.34 ,-0.06,-4.29%,Small,United States,2506458,Consumer Services,"$3,358,653.72 "
+FLL,Full House Resorts Inc. Common Stock,$8.66 ,0.15,1.76%,Small,United States,387070,Consumer Services,"$3,352,026.20 "
+ZDGE,Zedge Inc. Class B Common Stock ,$12.29 ,0.19,1.57%,Small,,270732,Technology,"$3,327,296.28 "
+ACRX,AcelRx Pharmaceuticals Inc. Common Stock,$1.70 ,0,0.00%,Small,United States,1957233,Health Care,"$3,327,296.10 "
+BIOL,Biolase Inc. Common Stock,$0.83 ,-0.0119,-1.41%,Small,United States,3938821,Health Care,"$3,273,160.25 "
+TRVN,Trevena Inc. Common Stock,$1.86 ,0.07,3.91%,Small,United States,1742224,Health Care,"$3,240,536.64 "
+FARM,Farmer Brothers Company Common Stock,$10.67 ,0.23,2.20%,Small,United States,300150,Consumer Non-Durables,"$3,202,600.50 "
+RESN,Resonant Inc. Common Stock,$4.35 ,0.11,2.59%,Small,United States,733421,Technology,"$3,190,381.35 "
+BRQS,Borqs Technologies Inc. Ordinary Shares,$1.45 ,-0.04,-2.69%,Small,China,2186117,Technology,"$3,169,869.65 "
+LAKE,Lakeland Industries Inc. Common Stock,$27.49 ,-0.37,-1.33%,Small,United States,113797,Health Care,"$3,128,279.53 "
+CLBS,Caladrius Biosciences Inc. Common Stock,$1.90 ,-0.03,-1.55%,Small,United States,1644931,Health Care,"$3,125,368.90 "
+OBSV,ObsEva SA Ordinary Shares,$3.35 ,0.1,3.08%,Small,Switzerland,914760,Health Care,"$3,064,446.00 "
+CSPR,Casper Sleep Inc. Common Stock,$7.25 ,0.01,0.14%,Small,,420430,Consumer Durables,"$3,048,117.50 "
+SMSI,Smith Micro Software Inc. Common Stock,$5.70 ,0.195,3.54%,Small,United States,534490,Technology,"$3,046,593.00 "
+UAMY,United States Antimony Corporation Common Stock,$1.19 ,-0.02,-1.65%,Small,United States,2546158,Capital Goods,"$3,029,928.02 "
+ELVT,Elevate Credit Inc. Common Stock,$3.00 ,0.08,2.74%,Small,United States,1001629,Finance,"$3,004,887.00 "
+BIOC,Biocept Inc. Common Stock,$4.88 ,-0.21,-4.13%,Small,United States,613992,Health Care,"$2,996,280.96 "
+ASMB,Assembly Biosciences Inc. Common Stock,$4.56 ,-0.04,-0.87%,Small,United States,655012,Health Care,"$2,986,854.72 "
+AGRX,Agile Therapeutics Inc. Common Stock,$2.17 ,0.09,4.33%,Small,United States,1367061,Health Care,"$2,966,522.37 "
+BYFC,Broadway Financial Corporation Common Stock,$2.32 ,-0.17,-6.83%,Small,United States,1275821,Finance,"$2,959,904.72 "
+LCI,Lannett Co Inc Common Stock,$5.74 ,0.46,8.71%,Small,United States,513634,Health Care,"$2,948,259.16 "
+ENVB,Enveric Biosciences Inc. Common Stock,$3.13 ,0.06,1.95%,Small,United States,939544,Technology,"$2,940,772.72 "
+INPX,Inpixon Common Stock,$1.19 ,-0.01,-0.83%,Small,United States,2426748,Technology,"$2,887,830.12 "
+ENG,ENGlobal Corporation Common Stock,$4.49 ,-0.03,-0.66%,Small,United States,632606,Consumer Services,"$2,840,400.94 "
+CLIR,ClearSign Technologies Corporation Common Stock,$5.80 ,0.115,2.03%,Small,United States,489310,Capital Goods,"$2,835,551.45 "
+SPI,SPI Energy Co. Ltd. Ordinary Shares,$7.53 ,0.03,0.40%,Small,China,371419,Technology,"$2,796,785.07 "
+OBLG,Oblong Inc. Common Stock,$5.19 ,0.21,4.22%,Small,United States,537975,Technology,"$2,792,090.25 "
+CYTH,Cyclo Therapeutics Inc. Common Stock,$8.87 ,0.66,8.04%,Small,United States,313538,Basic Industries,"$2,781,082.06 "
+AKU,Akumin Inc. Common Shares,$3.06 ,-0.64,-17.30%,Small,Canada,895415,Health Care,"$2,739,969.90 "
+PBPB,Potbelly Corporation Common Stock,$6.33 ,0.42,7.11%,Small,United States,432130,Consumer Services,"$2,735,382.90 "
+HUGE,FSD Pharma Inc. Class B Subordinate Voting Shares,$1.93 ,0.02,1.05%,Small,Canada,1407376,Health Care,"$2,716,235.68 "
+VYGR,Voyager Therapeutics Inc. Common Stock,$4.85 ,0.14,2.97%,Small,United States,559340,Health Care,"$2,712,799.00 "
+OGEN,Oragenics Inc. Common Stock,$0.88 ,-0.0236,-2.60%,Small,United States,3067315,Health Care,"$2,709,052.61 "
+SIOX,Sio Gene Therapies Inc. Common Stock,$2.85 ,0.24,9.20%,Small,United Kingdom,949659,Health Care,"$2,706,528.15 "
+MYFW,First Western Financial Inc. Common Stock,$26.97 ,1.96,7.84%,Small,United States,97873,Finance,"$2,639,634.81 "
+RWLK,ReWalk Robotics Ltd. Ordinary Shares,$2.41 ,-0.01,-0.41%,Small,Israel,1092614,Health Care,"$2,633,199.74 "
+RRD,R.R. Donnelley & Sons Company Common Stock,$4.19 ,0.13,3.20%,Small,United States,627087,Miscellaneous,"$2,627,494.53 "
+TOPS,TOP Ships Inc. Common Stock,$1.99 ,0.1,5.29%,Small,Greece,1319347,Transportation,"$2,625,500.53 "
+ISR,IsoRay Inc. Common Stock (DE),$1.15 ,0.06,5.51%,Small,United States,2274287,Health Care,"$2,615,430.05 "
+EXTN,Exterran Corporation Common Stock,$3.57 ,0.21,6.25%,Small,United States,730743,Technology,"$2,608,752.51 "
+NM,Navios Maritime Holdings Inc. Common Stock,$9.06 ,0.3,3.43%,Small,Monaco,286133,Transportation,"$2,592,364.98 "
+ONCY,Oncolytics Biotech Inc. Common Shares,$3.82 ,0.01,0.26%,Small,Canada,676471,Health Care,"$2,584,119.22 "
+ADMA,ADMA Biologics Inc Common Stock,$1.83 ,0.07,3.98%,Small,United States,1409765,Health Care,"$2,579,869.95 "
+TZOO,Travelzoo Common Stock,$18.00 ,1.24,7.40%,Small,United States,142585,Consumer Services,"$2,566,530.00 "
+NRAC,Noble Rock Acquisition Corporation Class A Ordinary Share,$9.68 ,9.68,,Small,United States,263850,Finance,"$2,554,068.00 "
+CYBE,CyberOptics Corporation Common Stock,$26.69 ,0.72,2.77%,Small,United States,94659,Capital Goods,"$2,526,448.71 "
+AVGR,Avinger Inc. Common Stock,$1.57 ,0.06,3.97%,Small,United States,1604509,Health Care,"$2,519,079.13 "
+CATO,Cato Corporation (The) Class A Common Stock,$12.30 ,0.3,2.50%,Small,United States,203639,Consumer Services,"$2,504,759.70 "
+CNET,ZW Data Action Technologies Inc. Common Stock,$2.68 ,0.04,1.52%,Small,China,925431,Technology,"$2,480,155.08 "
+CHMA,Chiasma Inc. Common Stock,$3.18 ,0.05,1.60%,Small,United States,774927,Health Care,"$2,464,267.86 "
+NETE,Net Element Inc. Common Stock,$11.53 ,0.61,5.59%,Small,United States,212847,Technology,"$2,454,125.91 "
+AT,Atlantic Power Corporation Ordinary Shares (Canada),$2.86 ,-0.03,-1.04%,Small,United States,854979,Energy,"$2,445,239.94 "
+GTE,Gran Tierra Energy Inc. Common Stock,$0.72 ,0.0239,3.42%,Small,Canada,3372785,Energy,"$2,440,884.50 "
+NREF,NexPoint Real Estate Finance Inc. Common Stock,$19.39 ,0.81,4.36%,Small,,124687,Consumer Services,"$2,417,680.93 "
+BORR,Borr Drilling Limited Common Shares,$1.05 ,0.0858,8.90%,Small,,2297299,Energy,"$2,412,163.95 "
+GTT,GTT Communications Inc. Common Stock,$1.87 ,0.04,2.19%,Small,United States,1271914,Public Utilities,"$2,378,479.18 "
+ORMP,Oramed Pharmaceuticals Inc. Common Stock,$10.20 ,0.04,0.39%,Small,Israel,230780,Health Care,"$2,353,956.00 "
+KERN,Akerna Corp. Common Stock,$5.11 ,0.17,3.44%,Small,United States,460056,Technology,"$2,350,886.16 "
+TH,Target Hospitality Corp. Common Stock,$2.17 ,-0.34,-13.55%,Small,United States,1074511,Consumer Services,"$2,331,688.87 "
+TBLT,ToughBuilt Industries Inc. Common Stock,$0.95 ,0.0068,0.72%,Small,United States,2399028,Capital Goods,"$2,271,399.71 "
+HYW,Hywin Holdings Ltd. American Depositary Shares,$9.63 ,-0.17,-1.74%,Small,China,235548,Finance,"$2,268,327.24 "
+MLAC,Malacca Straits Acquisition Company Limited Class A Ordinary Shares,$9.88 ,0.01,0.10%,Small,Hong Kong,229087,Finance,"$2,263,379.56 "
+MMAC,MMA Capital Holdings Inc. Common Stock,$20.23 ,-2.585,-11.33%,Small,United States,111703,Finance,"$2,259,193.18 "
+LAIX,LAIX Inc. American Depositary Shares each  representing one Class A Ordinary Share,$2.44 ,-0.08,-3.18%,Small,,924995,Consumer Services,"$2,256,987.80 "
+VVOS,Vivos Therapeutics Inc. Common Stock,$7.35 ,0.71,10.69%,Small,United States,306790,Health Care,"$2,254,906.50 "
+TMTS,Spartacus Acquisition Corporation Class A Common Stock,$9.85 ,0,0.00%,Small,United States,226793,Finance,"$2,233,911.05 "
+TCON,TRACON Pharmaceuticals Inc. Common Stock,$8.54 ,0.31,3.77%,Small,United States,260451,Health Care,"$2,224,251.54 "
+PLG,Platinum Group Metals Ltd. Ordinary Shares (Canada),$4.01 ,0.18,4.70%,Small,Canada,551535,Basic Industries,"$2,211,655.35 "
+VINC,Vincerx Pharma Inc. Common Stock,$19.23 ,-0.07,-0.36%,Small,United States,114485,Health Care,"$2,201,546.55 "
+SLNO,Soleno Therapeutics Inc. Common Stock,$1.31 ,0.05,3.97%,Small,United States,1664541,Health Care,"$2,180,548.71 "
+PTE,PolarityTE Inc. Common Stock,$1.11 ,0,0.00%,Small,United States,1960315,Health Care,"$2,175,949.65 "
+WYY,WidePoint Corporation Common Stock,$9.73 ,0.53,5.76%,Small,United States,223567,Technology,"$2,175,306.91 "
+MKGI,Monaker Group Inc. Common Stock,$3.57 ,0.2,5.94%,Small,United States,605011,Consumer Services,"$2,159,889.27 "
+EDAP,EDAP TMS S.A. American Depositary Shares,$8.57 ,0.17,2.02%,Small,France,251360,Health Care,"$2,154,155.20 "
+MFH,Mercurity Fintech Holding Inc. ADS,$6.99 ,0.29,4.33%,Small,China,306249,Technology,"$2,140,680.51 "
+ENZ,Enzo Biochem Inc. Common Stock ($0.01 Par Value),$3.56 ,0.12,3.49%,Small,United States,601258,Health Care,"$2,140,478.48 "
+URG,Ur Energy Inc Common Shares (Canada),$1.19 ,0.09,8.18%,Small,Canada,1791780,Basic Industries,"$2,132,218.20 "
+HCDI,Harbor Custom Development Inc. Common Stock,$3.40 ,0.23,7.26%,Small,United States,619180,Capital Goods,"$2,105,212.00 "
+ARYA,ARYA Sciences Acquisition Corp III Class A Ordinary Shares,$14.07 ,0.29,2.10%,Small,United States,148728,Finance,"$2,092,602.96 "
+IDN,Intellicheck Inc. Common Stock,$8.70 ,0.32,3.82%,Small,United States,240329,Technology,"$2,090,862.30 "
+BSET,Bassett Furniture Industries Incorporated Common Stock,$24.18 ,-0.09,-0.37%,Small,United States,85922,Consumer Durables,"$2,077,593.96 "
+DLCA,Deep Lake Capital Acquisition Corp. Class A Ordinary Shares,$9.75 ,-0.05,-0.51%,Small,United States,212361,Finance,"$2,070,519.75 "
+USWS,U.S. Well Services Inc. Class A Common Stock,$1.13 ,0.09,8.65%,Small,United States,1819755,Energy,"$2,056,323.15 "
+NEPT,Neptune Wellness Solutions Inc. Ordinary Shares,$1.36 ,0.05,3.82%,Small,Canada,1508908,Health Care,"$2,052,114.88 "
+LOV,Spark Networks Inc. American Depositary Shares (each representing one-tenth of an Ordinary Share),$6.96 ,-0.49,-6.58%,Small,United States,293619,Consumer Services,"$2,043,588.24 "
+AMHC,Amplitude Healthcare Acquisition Corporation Class A Common Stock,$9.90 ,0,0.00%,Small,United States,206233,Finance,"$2,041,706.70 "
+CHMI,Cherry Hill Mortgage Investment Corporation Common Stock,$9.54 ,0.2,2.14%,Small,,213943,Consumer Services,"$2,041,016.22 "
+ASRT,Assertio Holdings Inc. Common Stock,$0.72 ,0.0325,4.76%,Small,United States,2842724,Health Care,"$2,032,547.66 "
+WMC,Western Asset Mortgage Capital Corporation Common Stock,$3.28 ,0.09,2.82%,Small,United States,618497,Consumer Services,"$2,028,670.16 "
+SBBP,Strongbridge Biopharma plc Ordinary Shares,$2.91 ,0.15,5.44%,Small,United States,696732,Health Care,"$2,027,490.12 "
+NBRV,Nabriva Therapeutics plc Ordinary Shares Ireland,$1.75 ,0.09,5.42%,Small,Ireland,1156833,Health Care,"$2,024,457.75 "
+RMTI,Rockwell Medical Inc. (DE) Common Stock,$1.16 ,0,0.00%,Small,United States,1736977,Health Care,"$2,014,893.32 "
+IIN,Intricon Corporation Common Stock,$25.07 ,-0.57,-2.22%,Small,United States,80040,Capital Goods,"$2,006,602.80 "
+BOCH,Bank of Commerce Holdings (CA) Common Stock,$12.93 ,0.18,1.41%,Small,United States,154843,Finance,"$2,002,119.99 "
+NHIC,NewHold Investment Corp. Class A Common Stock,$10.01 ,0,0.00%,Small,United States,198790,Finance,"$1,989,887.90 "
+PFIE,Profire Energy Inc. Common Stock,$1.12 ,0.02,1.82%,Small,United States,1775973,Energy,"$1,989,089.76 "
+EZGO,EZGO Technologies Ltd. Ordinary Shares,$6.26 ,0.35,5.92%,Small,China,317107,Consumer Non-Durables,"$1,985,089.82 "
+ARBG,Aequi Acquisition Corp. Class A Common Stock,$9.75 ,0.1,1.04%,Small,United States,202006,Finance,"$1,969,558.50 "
+SAII,Software Acquisition Group Inc. II Class A Common Stock,$10.32 ,0.25,2.48%,Small,United States,189331,Finance,"$1,953,895.92 "
+INUV,Inuvo Inc.,$1.02 ,0,0.00%,Small,United States,1911939,Consumer Services,"$1,950,177.78 "
+ADXS,Advaxis Inc. Common Stock,$0.78 ,0.0483,6.56%,Small,United States,2465593,Health Care,"$1,934,257.71 "
+DFHT,Deerfield Healthcare Technology Acquisitions Corp. Class A Common Stock,$12.14 ,0.02,0.17%,Small,United States,158910,Health Care,"$1,929,167.40 "
+PSTI,Pluristem Therapeutics Inc. Common Stock,$4.81 ,0.04,0.84%,Small,Israel,399835,Health Care,"$1,923,206.35 "
+IFMK,iFresh Inc. Common Stock,$1.60 ,0.26,19.40%,Small,United States,1197660,Consumer Services,"$1,916,256.00 "
+CYCN,Cyclerion Therapeutics Inc. Common Stock,$3.29 ,0.5,17.92%,Small,United States,580811,Health Care,"$1,910,868.19 "
+III,Information Services Group Inc. Information Services Group Inc. Common Stock,$4.44 ,0.04,0.91%,Small,United States,429666,Consumer Services,"$1,907,717.04 "
+RTPZ,Reinvent Technology Partners Z Class A Ordinary Shares,$10.14 ,0.13,1.30%,Small,United States,187856,Finance,"$1,904,859.84 "
+CDTX,Cidara Therapeutics Inc. Common Stock,$2.70 ,0.04,1.50%,Small,United States,695630,Health Care,"$1,878,201.00 "
+LTRN,Lantern Pharma Inc. Common Stock,$19.89 ,1.75,9.65%,Small,United States,94411,Health Care,"$1,877,834.79 "
+HDSN,Hudson Technologies Inc. Common Stock,$1.66 ,0.05,3.11%,Small,United States,1125740,Consumer Durables,"$1,868,728.40 "
+PHAS,PhaseBio Pharmaceuticals Inc. Common Stock,$3.38 ,-0.08,-2.31%,Small,United States,552626,Health Care,"$1,867,875.88 "
+SCYX,SCYNEXIS Inc. Common Stock,$8.28 ,0.34,4.28%,Small,United States,225122,Health Care,"$1,864,010.16 "
+INTT,inTest Corporation Common Stock,$12.15 ,0.34,2.88%,Small,United States,151714,Capital Goods,"$1,843,325.10 "
+IPWR,Ideal Power Inc. Common Stock,$13.60 ,0.36,2.72%,Small,United States,135018,Energy,"$1,836,244.80 "
+KIN,Kindred Biosciences Inc. Common Stock,$5.00 ,0.03,0.60%,Small,United States,364785,Health Care,"$1,823,925.00 "
+SACH,Sachem Capital Corp. Common Shares,$5.33 ,0.11,2.11%,Small,United States,341036,Consumer Services,"$1,817,721.88 "
+ENTX,Entera Bio Ltd. Ordinary Shares,$3.90 ,0.09,2.36%,Small,Israel,465250,Health Care,"$1,814,475.00 "
+OSS,One Stop Systems Inc. Common Stock,$6.75 ,0.41,6.47%,Small,United States,268491,Technology,"$1,812,314.25 "
+AIM,AIM ImmunoTech Inc. Common Stock,$2.39 ,0.12,5.29%,Small,United States,748767,Health Care,"$1,789,553.13 "
+SCOR,comScore Inc. Common Stock,$3.69 ,0.03,0.82%,Small,United States,484014,Miscellaneous,"$1,786,011.66 "
+GTBP,GT Biopharma Inc. Common Stock,$7.19 ,0.35,5.12%,Small,United States,247998,Health Care,"$1,783,105.62 "
+AHAC,Alpha Healthcare Acquisition Corp. Class A Common Stock,$10.85 ,0.02,0.19%,Small,United States,163096,Finance,"$1,769,591.60 "
+GTEC,Greenland Technologies Holding Corporation Ordinary Shares,$11.58 ,-0.79,-6.39%,Small,China,152660,Technology,"$1,767,802.80 "
+ASM,Avino Silver & Gold Mines Ltd. Common Shares (Canada),$1.29 ,0.05,4.03%,Small,Canada,1368440,Basic Industries,"$1,765,287.60 "
+XGN,Exagen Inc. Common Stock,$17.50 ,0,0.00%,Small,United States,100407,Health Care,"$1,757,122.50 "
+NXTC,NextCure Inc. Common Stock,$10.08 ,0.07,0.70%,Small,United States,174101,Health Care,"$1,754,938.08 "
+ZSAN,Zosano Pharma Corporation Common Stock,$1.23 ,-0.01,-0.81%,Small,United States,1426558,Health Care,"$1,754,666.34 "
+HTBX,Heat Biologics Inc. Common Stock,$7.46 ,0.18,2.47%,Small,United States,234881,Health Care,"$1,752,212.26 "
+SQNS,Sequans Communications S.A. American Depositary Shares,$6.35 ,0.31,5.13%,Small,France,273795,Technology,"$1,738,598.25 "
+PEI,Pennsylvania Real Estate Investment Trust Common Stock,$2.05 ,0.13,6.77%,Small,United States,839826,Consumer Services,"$1,721,643.30 "
+SEED,Origin Agritech Limited Common Stock,$18.23 ,1.25,7.36%,Small,China,94145,Consumer Non-Durables,"$1,716,263.35 "
+TARA,Protara Therapeutics Inc.  Common Stock,$15.57 ,-0.17,-1.08%,Small,United States,110028,Health Care,"$1,713,135.96 "
+VTNR,Vertex Energy Inc Common Stock,$1.55 ,0.14,9.93%,Small,United States,1101570,Energy,"$1,707,433.50 "
+DBTX,Decibel Therapeutics Inc. Common Stock,$11.36 ,0,0.00%,Small,United States,150239,Health Care,"$1,706,715.04 "
+ELDN,Eledon Pharmaceuticals Inc. Common Stock,$11.75 ,1.05,9.81%,Small,United States,144705,Health Care,"$1,700,283.75 "
+CKPT,Checkpoint Therapeutics Inc. Common Stock,$3.20 ,0.06,1.91%,Small,United States,530316,Health Care,"$1,697,011.20 "
+ACAC,Acies Acquisition Corp. Class A Ordinary Share,$9.93 ,0,0.00%,Small,United States,170685,Technology,"$1,694,902.05 "
+CCNC,Code Chain New Continent Limited Common Stock,$3.80 ,0.22,6.15%,Small,China,444066,Consumer Durables,"$1,687,450.80 "
+CMLS,Cumulus Media Inc. Class A Common Stock,$9.43 ,0.32,3.51%,Small,United States,178520,Consumer Services,"$1,683,443.60 "
+TCDA,Tricida Inc. Common Stock,$5.41 ,0.12,2.27%,Small,United States,306401,Health Care,"$1,657,629.41 "
+STRT,STRATTEC SECURITY CORPORATION Common Stock,$49.09 ,2.19,4.67%,Small,United States,33705,Capital Goods,"$1,654,578.45 "
+LGVN,Longeveron Inc. Class A Common Stock,$6.49 ,-0.1,-1.52%,Small,United States,252429,Health Care,"$1,638,264.21 "
+AIRG,Airgain Inc. Common Stock,$21.99 ,0.8,3.78%,Small,United States,74478,Technology,"$1,637,771.22 "
+HTOO,Fusion Fuel Green PLC Class A Ordinary Shares,$13.03 ,-0.37,-2.76%,Small,Portugal,125482,Public Utilities,"$1,635,030.46 "
+AMPY,Amplify Energy Corp. Common Stock,$2.94 ,0.16,5.76%,Small,United States,555631,Energy,"$1,633,555.14 "
+ADMP,Adamis Pharmaceuticals Corporation Common Stock,$0.93 ,-0.0105,-1.12%,Small,United States,1754578,Health Care,"$1,630,880.25 "
+LAZY,Lazydays Holdings Inc. Common Stock,$18.38 ,0.57,3.20%,Small,United States,88261,Consumer Durables,"$1,622,237.18 "
+LYRA,Lyra Therapeutics Inc. Common Stock,$11.42 ,-0.17,-1.47%,Small,United States,141135,Health Care,"$1,611,761.70 "
+MTNB,Matinas Biopharma Holdings Inc. Common Stock,$1.10 ,0.05,4.76%,Small,United States,1464541,Health Care,"$1,610,995.10 "
+NATH,Nathan's Famous Inc. Common Stock,$65.40 ,2.31,3.66%,Small,United States,24618,Consumer Services,"$1,610,017.20 "
+AACG,ATA Creativity Global American Depositary Shares,$4.19 ,-0.18,-4.12%,Small,China,382186,Consumer Services,"$1,601,359.34 "
+OESX,Orion Energy Systems Inc. Common Stock,$7.17 ,0.21,3.02%,Small,United States,222681,Consumer Durables,"$1,596,622.77 "
+LIFE,aTyr Pharma Inc. Common Stock,$4.57 ,0.12,2.70%,Small,United States,346565,Health Care,"$1,583,802.05 "
+CNCE,Concert Pharmaceuticals Inc. Common Stock,$5.24 ,0.25,5.01%,Small,United States,301613,Health Care,"$1,580,452.12 "
+GLG,TD Holdings Inc. Common Stock,$2.00 ,0.02,1.01%,Small,China,786812,Finance,"$1,573,624.00 "
+ACET,Adicet Bio Inc. Common Stock ,$13.11 ,0.03,0.23%,Small,United States,119498,Health Care,"$1,566,618.78 "
+YCBD,cbdMD Inc. Common Stock,$3.98 ,-0.16,-3.87%,Small,United States,390300,Consumer Non-Durables,"$1,553,394.00 "
+MDGS,Medigus Ltd. American Depositary Shares,$2.17 ,-0.08,-3.56%,Small,Israel,715013,Health Care,"$1,551,578.21 "
+NBN,Northeast Bank Common Stock,$27.13 ,0.74,2.80%,Small,United States,57186,Finance,"$1,551,456.18 "
+CLRO,ClearOne Inc. (DE) Common Stock,$3.43 ,-0.17,-4.72%,Small,United States,452186,Public Utilities,"$1,550,997.98 "
+FENG,Phoenix New Media Limited American Depositary Shares each representing 8 Class A ordinary shares.,$1.77 ,0,0.00%,Small,China,874184,Consumer Services,"$1,547,305.68 "
+AJX,Great Ajax Corp. Common Stock,$11.43 ,0.53,4.86%,Small,United States,134829,Consumer Services,"$1,541,095.47 "
+KRUS,Kura Sushi USA Inc. Class A Common Stock,$31.40 ,-0.24,-0.76%,Small,United States,48976,Consumer Services,"$1,537,846.40 "
+ITI,Iteris Inc. Common Stock,$6.44 ,0.27,4.38%,Small,United States,238029,Capital Goods,"$1,532,906.76 "
+ASPU,Aspen Group Inc. Common Stock,$6.10 ,0.1,1.67%,Small,United States,248580,Consumer Services,"$1,516,338.00 "
+LINC,Lincoln Educational Services Corporation Common Stock,$6.48 ,0.07,1.09%,Small,United States,233892,Consumer Services,"$1,515,620.16 "
+GMLP,Golar LNG Partners LP Common Units Representing Limited Partnership,$3.49 ,0,0.00%,Small,Bermuda,432988,Consumer Services,"$1,511,128.12 "
+ARPO,Aerpio Pharmaceuticals Inc. Common Stock,$1.28 ,-0.01,-0.78%,Small,United States,1175097,Health Care,"$1,504,124.16 "
+APVO,Aptevo Therapeutics Inc. Common Stock,$28.31 ,-2.21,-7.24%,Small,United States,53124,Health Care,"$1,503,940.44 "
+MNOV,Medicinova Inc Common Stock,$5.14 ,0.09,1.78%,Small,United States,291617,Health Care,"$1,498,911.38 "
+CBLI,Cleveland BioLabs Inc. Common Stock,$6.16 ,0.91,17.33%,Small,United States,242739,Health Care,"$1,495,272.24 "
+AAME,Atlantic American Corporation Common Stock,$4.00 ,0.32,8.70%,Small,United States,373582,Finance,"$1,494,328.00 "
+ECOR,electroCore Inc. Common Stock,$2.02 ,-0.04,-1.94%,Small,United States,739507,Health Care,"$1,493,804.14 "
+IGC,India Globalization Capital Inc. Common Stock,$1.80 ,0.01,0.56%,Small,United States,829837,Technology,"$1,493,706.60 "
+EZPW,EZCORP Inc. Class A Non Voting Common Stock,$5.14 ,0.17,3.42%,Small,United States,289677,Consumer Services,"$1,488,939.78 "
+AUVI,Applied UV Inc. Common Stock,$9.98 ,-0.01,-0.10%,Small,United States,148585,Consumer Durables,"$1,482,878.30 "
+GNRS,Greenrose Acquisition Corp. Common Stock,$9.97 ,0.01,0.10%,Small,United States,147169,Finance,"$1,467,274.93 "
+EQHA,EQ Health Acquisition Corp. Class A Common Stock,$9.74 ,0.06,0.62%,Small,,150166,Finance,"$1,462,616.84 "
+GLOP,GasLog Partners LP Common Units representing limited partnership interests,$2.75 ,0.08,3.00%,Small,,531142,Consumer Services,"$1,460,640.50 "
+CORR,CorEnergy Infrastructure Trust Inc. Common Stock,$7.17 ,0.1,1.41%,Small,United States,202644,Consumer Services,"$1,452,957.48 "
+PIXY,ShiftPixy Inc. Common Stock,$2.43 ,0.13,5.65%,Small,United States,596447,Technology,"$1,449,366.21 "
+SIC,Select Interior Concepts Inc. Class A Common Stock,$7.30 ,0.1,1.39%,Small,United States,198301,Basic Industries,"$1,447,597.30 "
+APDN,Applied DNA Sciences Inc. Common Stock,$7.60 ,0.41,5.70%,Small,United States,190460,Consumer Services,"$1,447,496.00 "
+SMED,Sharps Compliance Corp. Common Stock,$13.74 ,-0.63,-4.38%,Small,United States,105300,Basic Industries,"$1,446,822.00 "
+ASLN,ASLAN Pharmaceuticals Limited American Depositary Shares,$3.35 ,0,0.00%,Small,Singapore,431318,Health Care,"$1,444,915.30 "
+SCKT,Socket Mobile Inc. Common Stock,$8.58 ,-0.01,-0.12%,Small,United States,168094,Technology,"$1,442,246.52 "
+PROG,Progenity Inc. Common Stock,$4.92 ,0.16,3.36%,Small,United States,293019,Health Care,"$1,441,653.48 "
+PLX,Protalix BioTherapeutics Inc. (DE) Common Stock,$4.49 ,0.03,0.67%,Small,Israel,319613,Health Care,"$1,435,062.37 "
+IEC,IEC Electronics Corp. Common Stock,$11.89 ,-0.15,-1.25%,Small,United States,120683,Technology,"$1,434,920.87 "
+FLUX,Flux Power Holdings Inc. Common Stock,$13.31 ,0.36,2.78%,Small,United States,107742,Miscellaneous,"$1,434,046.02 "
+FSTR,L.B. Foster Company Common Stock,$18.00 ,0.1,0.56%,Small,United States,79666,Basic Industries,"$1,433,988.00 "
+PXLW,Pixelworks Inc.  Common Stock,$3.43 ,0.12,3.63%,Small,United States,416923,Technology,"$1,430,045.89 "
+PAYS,Paysign Inc. Common Stock,$4.59 ,0.22,5.03%,Small,United States,311517,Miscellaneous,"$1,429,863.03 "
+DSX,Diana Shipping inc. common stock,$3.07 ,0.08,2.68%,Small,Greece,465098,Transportation,"$1,427,850.86 "
+IVC,Invacare Corporation Common Stock,$8.32 ,0.3,3.74%,Small,United States,171456,Health Care,"$1,426,513.92 "
+OSMT,Osmotica Pharmaceuticals plc Ordinary Shares,$3.40 ,0.14,4.29%,Small,United States,419502,Health Care,"$1,426,306.80 "
+PED,Pedevco Corp. Common Stock,$1.51 ,0.05,3.43%,Small,United States,942413,Energy,"$1,423,043.63 "
+OIIM,O2Micro International Limited American Depositary Shares,$8.25 ,0.43,5.50%,Small,Cayman Islands,172425,Technology,"$1,422,506.25 "
+GANX,Gain Therapeutics Inc. Common Stock,$15.40 ,0.48,3.22%,Small,United States,92067,Health Care,"$1,417,831.80 "
+CDR,Cedar Realty Trust Inc. Common Stock,$15.23 ,0.33,2.22%,Small,United States,92578,Consumer Services,"$1,409,962.94 "
+STKS,The ONE Group Hospitality Inc. Common Stock,$7.98 ,0.5,6.68%,Small,United States,176683,Consumer Services,"$1,409,930.34 "
+ELYS,Elys Game Technology Corp. Common Stock,$5.38 ,0.08,1.51%,Small,Canada,260619,Technology,"$1,402,130.22 "
+EMKR,EMCORE Corporation Common Stock,$5.74 ,0.28,5.13%,Small,United States,242605,Technology,"$1,392,552.70 "
+LPCN,Lipocine Inc. Common Stock,$1.55 ,0.04,2.65%,Small,United States,892465,Health Care,"$1,383,320.75 "
+AMR,Alpha Metallurgical Resources Inc. Common Stock,$12.81 ,0.18,1.43%,Small,United States,107959,Energy,"$1,382,954.79 "
+BCLI,Brainstorm Cell Therapeutics Inc. Common Stock,$3.84 ,0.01,0.26%,Small,United States,360138,Health Care,"$1,382,929.92 "
+CBIO,Catalyst Biosciences Inc. Common Stock,$5.33 ,0.29,5.75%,Small,United States,259389,Health Care,"$1,382,543.37 "
+UGRO,urban-gro Inc. Common Stock,$8.50 ,0.07,0.83%,Small,United States,161814,Consumer Durables,"$1,375,419.00 "
+ATXI,Avenue Therapeutics Inc. Common Stock,$6.10 ,0.03,0.49%,Small,United States,224583,Health Care,"$1,369,956.30 "
+HIL,Hill International Inc. Common Stock,$3.16 ,-0.04,-1.25%,Small,United States,430741,Consumer Services,"$1,361,141.56 "
+CWCO,Consolidated Water Co. Ltd. Ordinary Shares,$13.27 ,-0.18,-1.34%,Small,Cayman Islands,102529,Public Utilities,"$1,360,559.83 "
+PIRS,Pieris Pharmaceuticals Inc. Common Stock,$2.59 ,0.02,0.78%,Small,Germany,524778,Health Care,"$1,359,175.02 "
+APRE,Aprea Therapeutics Inc. Common stock,$5.04 ,-0.06,-1.18%,Small,United States,268806,Health Care,"$1,354,782.24 "
+VTVT,vTv Therapeutics Inc. Class A Common Stock,$2.89 ,0.07,2.48%,Small,United States,468716,Health Care,"$1,354,589.24 "
+WTER,The Alkaline Water Company Inc. Common Stock,$1.08 ,-0.01,-0.92%,Small,United States,1253026,Consumer Non-Durables,"$1,353,268.08 "
+ASC,Ardmore Shipping Corporation Common Stock,$4.51 ,-0.03,-0.66%,Small,,298059,Transportation,"$1,344,246.09 "
+THCA,Tuscan Holdings Corp. II Common Stock,$10.09 ,0,0.00%,Small,United States,130431,Finance,"$1,316,048.79 "
+QLGN,Qualigen Therapeutics Inc. Common Stock,$2.75 ,0.05,1.85%,Small,United States,477356,Health Care,"$1,312,729.00 "
+TDAC,Trident Acquisitions Corp. Common Stock,$12.24 ,0.3,2.51%,Small,United States,107138,Finance,"$1,311,369.12 "
+APEN,Apollo Endosurgery Inc. Common Stock,$5.50 ,-0.01,-0.18%,Small,United States,236081,Health Care,"$1,298,445.50 "
+CVCY,Central Valley Community Bancorp Common Stock,$18.95 ,0.54,2.93%,Small,United States,68507,Finance,"$1,298,207.65 "
+HWCC,Houston Wire & Cable Company Common Stock,$5.25 ,0.03,0.58%,Small,United States,246429,Consumer Non-Durables,"$1,293,752.25 "
+PTN,Palatin Technologies Inc. Common Stock,$0.72 ,0.0254,3.68%,Small,United States,1808105,Health Care,"$1,292,795.08 "
+BBW,Build-A-Bear Workshop Inc. Common Stock,$7.30 ,0.4,5.80%,Small,United States,177095,Consumer Services,"$1,292,793.50 "
+ALRN,Aileron Therapeutics Inc. Common Stock,$1.43 ,0,0.00%,Small,United States,903450,Health Care,"$1,291,933.50 "
+ORN,Orion Group Holdings Inc. Common,$6.14 ,0.07,1.15%,Small,United States,210167,Basic Industries,"$1,290,425.38 "
+SHSP,SharpSpring Inc. Common Stock,$16.30 ,0.3,1.88%,Small,United States,79045,Technology,"$1,288,433.50 "
+CLPR,Clipper Realty Inc. Common Stock,$8.03 ,0.11,1.39%,Small,United States,159682,Consumer Services,"$1,282,246.46 "
+GHSI,Guardion Health Sciences Inc. Common Stock,$2.47 ,0.07,2.92%,Small,United States,518803,Health Care,"$1,281,443.41 "
+PINE,Alpine Income Property Trust Inc. Common Stock,$17.85 ,0.49,2.82%,Small,United States,71731,Consumer Services,"$1,280,398.35 "
+MTBC,MTBC Inc. Common Stock,$8.46 ,0.15,1.81%,Small,United States,150095,Technology,"$1,269,803.70 "
+REED,Reeds Inc. Common Stock,$1.18 ,0.01,0.86%,Small,United States,1070173,Consumer Non-Durables,"$1,262,804.14 "
+PW,Power REIT (MD) Common Stock,$46.26 ,1.02,2.26%,Small,United States,27237,Consumer Services,"$1,259,983.62 "
+SB,Safe Bulkers Inc Common Stock ($0.001 par value),$2.45 ,0,0.00%,Small,Monaco,512541,Transportation,"$1,255,725.45 "
+ELOX,Eloxx Pharmaceuticals Inc. Common Stock,$3.36 ,0.04,1.21%,Small,United States,367840,Health Care,"$1,235,942.40 "
+GLYC,GlycoMimetics Inc. Common Stock,$3.17 ,0.16,5.32%,Small,United States,389845,Health Care,"$1,235,808.65 "
+LQDA,Liquidia Corporation Common Stock,$2.76 ,0.07,2.60%,Small,United States,446140,Health Care,"$1,231,346.40 "
+NSPR,InspireMD Inc. Common Stock,$0.67 ,-0.0023,-0.34%,Small,Israel,1835767,Health Care,"$1,229,963.89 "
+CALA,Calithera Biosciences Inc. Common Stock,$2.50 ,0.08,3.31%,Small,United States,491866,Health Care,"$1,229,665.00 "
+CYCC,Cyclacel Pharmaceuticals Inc. Common Stock,$7.48 ,0.37,5.20%,Small,United States,163408,Health Care,"$1,222,291.84 "
+PFBI,Premier Financial Bancorp Inc. Common Stock,$18.70 ,0.11,0.59%,Small,United States,64885,Finance,"$1,213,349.50 "
+SUP,Superior Industries International Inc. Common Stock (DE),$5.88 ,0.2,3.52%,Small,United States,204597,Capital Goods,"$1,203,030.36 "
+GPL,Great Panther Mining Limited Ordinary Shares (Canada),$0.80 ,0.0324,4.21%,Small,Canada,1499242,Basic Industries,"$1,202,991.78 "
+PULM,Pulmatrix Inc. Common Stock,$1.42 ,0.09,6.77%,Small,United States,844163,Health Care,"$1,198,711.46 "
+AP,Ampco-Pittsburgh Corporation Common Stock,$7.70 ,0.95,14.07%,Small,United States,154110,Capital Goods,"$1,186,647.00 "
+MLSS,Milestone Scientific Inc. Common Stock,$3.72 ,0.15,4.20%,Small,United States,316959,Health Care,"$1,179,087.48 "
+ANIX,Anixa Biosciences Inc. Common Stock,$4.75 ,0.07,1.50%,Small,United States,247895,Health Care,"$1,177,501.25 "
+FET,Forum Energy Technologies Inc. Common Stock,$19.60 ,1.06,5.72%,Small,United States,59978,Energy,"$1,175,568.80 "
+AIRT,Air T Inc. Common Stock,$23.73 ,-0.045,-0.19%,Small,United States,49405,Transportation,"$1,172,133.63 "
+DFFN,Diffusion Pharmaceuticals Inc. Common Stock,$0.92 ,0.0041,0.45%,Small,United States,1271204,Health Care,"$1,171,668.73 "
+LXU,LSB Industries Inc. Common Stock,$5.31 ,0.18,3.51%,Small,United States,220164,Basic Industries,"$1,169,070.84 "
+SIEB,Siebert Financial Corp. Common Stock,$4.29 ,0.24,5.93%,Small,United States,271503,Finance,"$1,164,747.87 "
+LMB,Limbach Holdings Inc. Common Stock,$10.36 ,-0.2,-1.89%,Small,United States,112401,Basic Industries,"$1,164,474.36 "
+PSTL,Postal Realty Trust Inc. Class A Common Stock,$17.30 ,0.12,0.70%,Small,,67263,Consumer Services,"$1,163,649.90 "
+RGLS,Regulus Therapeutics Inc. Common Stock,$1.58 ,0.02,1.28%,Small,United States,736213,Health Care,"$1,163,216.54 "
+CFMS,Conformis Inc. Common Stock,$0.99 ,0,0.00%,Small,United States,1173583,Health Care,"$1,161,847.17 "
+SALM,Salem Media Group Inc. Class A Common Stock,$3.05 ,0.11,3.74%,Small,United States,380385,Consumer Services,"$1,160,174.25 "
+ROCC,Roth CH Acquisition II Co. Common Stock,$9.91 ,0,0.00%,Small,United States,116625,Finance,"$1,155,753.75 "
+NOTV,Inotiv Inc. Common Stock,$20.50 ,0.5,2.50%,Small,United States,56179,Health Care,"$1,151,669.50 "
+BXRX,Baudax Bio Inc. Common Stock,$1.34 ,0.05,3.88%,Small,United States,857980,Health Care,"$1,149,693.20 "
+SRGA,Surgalign Holdings Inc. Common Stock,$2.19 ,0.01,0.46%,Small,United States,524391,Health Care,"$1,148,416.29 "
+SNCR,Synchronoss Technologies Inc. Common Stock,$3.87 ,0.3,8.40%,Small,United States,296484,Technology,"$1,147,393.08 "
+SYPR,Sypris Solutions Inc. Common Stock,$3.45 ,0.12,3.60%,Small,United States,332213,Capital Goods,"$1,146,134.85 "
+CLRB,Cellectar Biosciences Inc.  Common Stock,$1.70 ,0.09,5.59%,Small,United States,670187,Health Care,"$1,139,317.90 "
+MDWD,MediWound Ltd. Ordinary Shares,$5.25 ,-0.12,-2.24%,Small,Israel,216881,Consumer Durables,"$1,138,625.25 "
+VCNX,Vaccinex Inc. Common Stock,$2.93 ,-0.05,-1.68%,Small,United States,386792,Health Care,"$1,133,300.56 "
+ATCX,Atlas Technical Consultants Inc. Class A Common Stock,$10.04 ,-0.17,-1.67%,Small,United States,111979,Consumer Services,"$1,124,269.16 "
+GSV,Gold Standard Ventures Corporation Common Stock (Canada),$0.60 ,0.016,2.76%,Small,Canada,1877634,Basic Industries,"$1,120,571.97 "
+ADMS,Adamas Pharmaceuticals Inc. Common Stock,$5.15 ,0.35,7.29%,Small,United States,217401,Health Care,"$1,119,615.15 "
+QUIK,QuickLogic Corporation Common Stock,$7.63 ,0.71,10.26%,Small,United States,146007,Technology,"$1,114,033.41 "
+MYO,Myomo Inc. Common Stock,$13.22 ,0.42,3.28%,Small,United States,84178,Health Care,"$1,112,833.16 "
+CAAS,China Automotive Systems Inc. Common Stock,$5.31 ,0.57,12.03%,Small,China,209391,Capital Goods,"$1,111,866.21 "
+CIA,Citizens Inc. Class A Common Stock ($1.00 Par),$5.88 ,0.09,1.55%,Small,United States,189047,Finance,"$1,111,596.36 "
+ABIO,ARCA biopharma Inc. Common Stock,$3.76 ,0.11,3.01%,Small,United States,294442,Health Care,"$1,107,101.92 "
+BHR,Braemar Hotels & Resorts Inc. Common Stock,$6.22 ,0.15,2.47%,Small,United States,177641,Consumer Services,"$1,104,927.02 "
+NISN,NiSun International Enterprise Development Group Co. Ltd. Class A Common Shares,$16.36 ,-0.22,-1.33%,Small,China,66966,Capital Goods,"$1,095,563.76 "
+CMCT,CIM Commercial Trust Corporation Common stock,$13.20 ,0.31,2.41%,Small,United States,82922,Consumer Services,"$1,094,570.40 "
+PLXP,PLx Pharma Inc. Common Stock,$9.41 ,0.38,4.21%,Small,United States,115329,Health Care,"$1,085,245.89 "
+TRIB,Trinity Biotech plc American Depositary Shares,$3.71 ,-0.05,-1.33%,Small,Ireland,292015,Health Care,"$1,083,375.65 "
+CTK,CooTek (Cayman) Inc. American Depositary Shares each representing 50 Class A Ordinary Shares,$2.66 ,-0.11,-3.97%,Small,,405619,Technology,"$1,078,946.54 "
+SBG,Sandbridge Acquisition Corporation Class A Common Stock,$9.90 ,-0.01,-0.10%,Small,,108510,Capital Goods,"$1,074,249.00 "
+HYMC,Hycroft Mining Holding Corporation Class A Common Stock,$3.95 ,0.45,12.86%,Small,United States,271519,Basic Industries,"$1,072,500.05 "
+YMTX,Yumanity Therapeutics Inc. Common Stock,$19.64 ,1.54,8.51%,Small,United States,54571,Health Care,"$1,071,774.44 "
+RDI,Reading International Inc Class A Common Stock,$6.25 ,0.7,12.61%,Small,United States,170601,Consumer Services,"$1,066,256.25 "
+SMLP,Summit Midstream Partners LP Common Units Representing Limited Partner Interests,$23.65 ,0.08,0.34%,Small,United States,44835,Public Utilities,"$1,060,347.75 "
+CLXT,Calyxt Inc. Common Stock,$6.31 ,0.29,4.82%,Small,United States,166558,Basic Industries,"$1,050,980.98 "
+OCAX,OCA Acquisition Corp. Class A Common Stock,$9.81 ,0.04,0.41%,Small,United States,107070,Finance,"$1,050,356.70 "
+LPTH,LightPath Technologies Inc. Class A Common Stock,$3.24 ,0.14,4.52%,Small,United States,323907,Technology,"$1,049,458.68 "
+LCNB,LCNB Corporation Common Stock,$18.27 ,0.77,4.40%,Small,United States,57284,Finance,"$1,046,578.68 "
+EKSO,Ekso Bionics Holdings Inc. Common Stock,$6.35 ,0.18,2.92%,Small,United States,164729,Capital Goods,"$1,046,029.15 "
+PVBC,Provident Bancorp Inc. (MD) Common Stock,$14.73 ,0.33,2.29%,Small,United States,69972,Finance,"$1,030,687.56 "
+WNEB,Western New England Bancorp Inc. Common Stock,$8.50 ,0.07,0.83%,Small,United States,121205,Finance,"$1,030,242.50 "
+AIHS,Senmiao Technology Limited Common Stock,$1.43 ,0.03,2.14%,Small,China,717176,Finance,"$1,025,561.68 "
+GENE,Genetic Technologies Ltd  Sponsored ADR,$4.38 ,0.21,5.04%,Small,Australia,232789,Health Care,"$1,019,615.82 "
+NVCN,Neovasc Inc. Common Shares,$1.12 ,0.04,3.70%,Small,Canada,909519,Health Care,"$1,018,661.28 "
+EQ,Equillium Inc. Common Stock,$7.24 ,0.09,1.26%,Small,United States,140658,Health Care,"$1,018,363.92 "
+QUAD,Quad Graphics Inc Class A Common Stock,$3.80 ,0.27,7.65%,Small,United States,267902,Miscellaneous,"$1,018,027.60 "
+OTIC,Otonomy Inc. Common Stock,$2.67 ,0.12,4.71%,Small,United States,381222,Health Care,"$1,017,862.74 "
+LWAC,Locust Walk Acquisition Corp. Class A Common Stock,$9.85 ,0.1011,1.04%,Small,United States,103134,Finance,"$1,015,869.90 "
+LYTS,LSI Industries Inc. Common Stock,$8.94 ,0.41,4.81%,Small,United States,113140,Consumer Durables,"$1,011,471.60 "
+LMPX,LMP Automotive Holdings Inc. Common Stock,$16.54 ,-0.09,-0.54%,Small,United States,60640,Consumer Durables,"$1,002,985.60 "
+COCP,Cocrystal Pharma Inc. Common Stock,$1.43 ,0.04,2.88%,Small,United States,701331,Health Care,"$1,002,903.33 "
+CMT,Core Molding Technologies Inc Common Stock,$12.12 ,0.3935,3.36%,Small,United States,82601,Consumer Non-Durables,"$1,001,124.12 "
+BLRX,BioLineRx Ltd. American Depositary Shares,$2.85 ,0.06,2.15%,Small,Israel,347692,Health Care,"$990,922.20 "
+NBSE,NeuBase Therapeutics Inc.  Common Stock,$7.32 ,-0.07,-0.95%,Small,United States,134971,Health Care,"$987,987.72 "
+OCUP,Ocuphire Pharma Inc. Common Stock,$6.38 ,0.57,9.81%,Small,United States,153573,Health Care,"$979,795.74 "
+GROY,Gold Royalty Corp. Common Shares,$4.47 ,-0.03,-0.67%,Small,,218426,Basic Industries,"$976,364.22 "
+SD,SandRidge Energy Inc. Common Stock,$4.01 ,0.1,2.56%,Small,,242988,Energy,"$974,381.88 "
+INMB,INmune Bio Inc. Common stock,$12.32 ,0.44,3.70%,Small,United States,78621,Health Care,"$968,610.72 "
+ALNA,Allena Pharmaceuticals Inc. Common Stock,$1.38 ,-0.01,-0.72%,Small,United States,698445,Health Care,"$963,854.10 "
+PKE,Park Aerospace Corp. Common Stock,$13.80 ,0.58,4.39%,Small,United States,69637,Capital Goods,"$960,990.60 "
+UBFO,United Security Bancshares Common Stock,$8.21 ,0.02,0.24%,Small,United States,116965,Finance,"$960,282.65 "
+OCN,Ocwen Financial Corporation NEW Common Stock,$28.66 ,0.23,0.81%,Small,United States,33485,Finance,"$959,680.10 "
+EVOK,Evoke Pharma Inc. Common Stock,$1.85 ,0.02,1.09%,Small,United States,517712,Health Care,"$957,767.20 "
+ONVO,Organovo Holdings Inc. Common Stock,$9.69 ,0.05,0.52%,Small,United States,98823,Health Care,"$957,594.87 "
+TMPM,Turmeric Acquisition Corp. Class A Ordinary Shares,$9.78 ,0.01,0.10%,Small,United States,97858,Finance,"$957,051.24 "
+SVOKU,Seven Oaks Acquisition Corp. Unit,$10.22 ,0.05,0.49%,Small,United States,93189,Finance,"$952,391.58 "
+IMMP,Immutep Limited American Depositary Shares,$3.13 ,0.06,1.95%,Small,Australia,302893,Health Care,"$948,055.09 "
+NETI,Eneti Inc. Common Stock,$21.87 ,0.84,3.99%,Small,Monaco,43348,Transportation,"$948,020.76 "
+GAU,Galiano Gold Inc.,$1.18 ,0.06,5.36%,Small,Canada,802836,Basic Industries,"$947,346.48 "
+LPTX,Leap Therapeutics Inc. Common Stock,$1.92 ,0.02,1.05%,Small,United States,492780,Health Care,"$946,137.60 "
+PDSB,PDS Biotechnology Corporation Common Stock,$4.71 ,0.16,3.52%,Small,United States,200023,Health Care,"$942,108.33 "
+CTHR,Charles & Colvard Ltd Common Stock,$2.93 ,-0.03,-1.01%,Small,United States,320162,Consumer Durables,"$938,074.66 "
+GSMG,Glory Star New Media Group Holdings Limited Ordinary Share,$3.56 ,-0.15,-4.04%,Small,China,263354,Technology,"$937,540.24 "
+AAU,Almaden Minerals Ltd. Common Shares,$0.56 ,0.0266,5.00%,Small,Canada,1677090,Basic Industries,"$936,319.35 "
+NKSH,National Bankshares Inc. Common Stock,$36.29 ,0.78,2.20%,Small,United States,25741,Finance,"$934,140.89 "
+GAIA,Gaia Inc. Class A Common Stock,$12.05 ,0.16,1.35%,Small,United States,77418,Consumer Services,"$932,886.90 "
+ADRA,Adara Acquisition Corp. Class A Common Stock,$9.68 ,0.05,0.52%,Small,United States,96061,Finance,"$929,870.48 "
+BKEP,Blueknight Energy Partners L.P. Common Units,$3.42 ,0.18,5.56%,Small,United States,271783,Energy,"$929,497.86 "
+LFVN,Lifevantage Corporation Common Stock (Delaware),$9.44 ,0.09,0.96%,Small,United States,98178,Health Care,"$926,800.32 "
+ESCA,Escalade Incorporated Common Stock,$20.86 ,-0.05,-0.24%,Small,United States,44420,Consumer Non-Durables,"$926,601.20 "
+SMTI,Sanara MedTech Inc. Common Stock,$33.18 ,2.03,6.52%,Small,United States,27914,Health Care,"$926,186.52 "
+UONE,Urban One Inc. Class A Common Stock,$5.46 ,0.07,1.30%,Small,United States,168936,Consumer Services,"$922,390.56 "
+DARE,Dare Bioscience Inc. Common Stock,$1.71 ,0.02,1.18%,Small,United States,538825,Health Care,"$921,390.75 "
+LEE,Lee Enterprises Incorporated Common Stock,$26.02 ,0.33,1.29%,Small,United States,35316,Consumer Services,"$918,922.32 "
+HNRG,Hallador Energy Company Common Stock,$1.97 ,0.1,5.35%,Small,United States,461537,Energy,"$909,227.89 "
+FSFG,First Savings Financial Group Inc. Common Stock,$68.50 ,1.36,2.03%,Small,United States,13273,Finance,"$909,200.50 "
+KZIA,Kazia Therapeutics Limited American Depositary Shares,$12.48 ,0.08,0.65%,Small,Australia,72531,Health Care,"$905,186.88 "
+IKT,Inhibikase Therapeutics Inc. Common Stock,$6.23 ,0.22,3.66%,Small,United States,144893,Health Care,"$902,683.39 "
+WRN,Western Copper and Gold Corporation Common Stock,$1.30 ,0.04,3.18%,Small,Canada,693566,Basic Industries,"$901,635.80 "
+BELFB,Bel Fuse Inc. Class B Common Stock,$20.29 ,0.4,2.01%,Small,United States,44081,Capital Goods,"$894,403.49 "
+RMBL,RumbleOn Inc. Class B Common Stock,$43.00 ,-0.85,-1.94%,Small,United States,20773,Technology,"$893,239.00 "
+LFTR,Lefteris Acquisition Corp. Class A Common Stock,$9.87 ,0.03,0.31%,Small,United States,89682,Finance,"$885,161.34 "
+DYAI,Dyadic International Inc. Common Stock,$5.67 ,0.18,3.28%,Small,United States,155618,Health Care,"$882,354.06 "
+FEDU,Four Seasons Education (Cayman) Inc. American Depositary Shares each two ADSs representing one ordinary share,$1.46 ,-0.11,-7.01%,Small,,601475,Consumer Services,"$878,153.50 "
+ORRF,Orrstown Financial Services Inc Common Stock,$23.41 ,1.11,4.98%,Small,United States,37468,Finance,"$877,125.88 "
+ANTE,AirNet Technology Inc. American Depositary Shares,$3.30 ,-0.13,-3.79%,Small,China,264262,Technology,"$872,064.60 "
+GROW,U.S. Global Investors Inc. Class A Common Stock,$7.12 ,0.14,2.01%,Small,United States,121953,Finance,"$868,305.36 "
+STSA,Satsuma Pharmaceuticals Inc. Common Stock,$5.96 ,0.05,0.85%,Small,United States,144424,Health Care,"$860,767.04 "
+NAVB,Navidea Biopharmaceuticals Inc. Common Stock,$2.15 ,0.13,6.44%,Small,United States,396904,Health Care,"$853,343.60 "
+OPBK,OP Bancorp Common Stock,$10.64 ,0.12,1.14%,Small,United States,80134,Finance,"$852,625.76 "
+ENLV,Enlivex Therapeutics Ltd. Ordinary Shares,$11.29 ,0.2,1.80%,Small,Israel,75426,Health Care,"$851,559.54 "
+GTIM,Good Times Restaurants Inc. Common Stock,$4.52 ,0.52,13.00%,Small,United States,188166,Consumer Services,"$850,510.32 "
+KLXE,KLX Energy Services Holdings Inc. Common Stock,$17.27 ,1.24,7.74%,Small,United States,49229,Energy,"$850,184.83 "
+TURN,180 Degree Capital Corp. Common Stock,$7.17 ,-0.23,-3.11%,Small,United States,118472,Finance,"$849,444.24 "
+BMTX,BM Technologies Inc. Common Stock,$11.85 ,0.2,1.72%,Small,,71276,Finance,"$844,620.60 "
+USDP,USD Partners LP Common Units representing limited partner interest,$5.75 ,-0.1,-1.71%,Small,United States,146316,Transportation,"$841,317.00 "
+CATB,Catabasis Pharmaceuticals Inc. Common Stock,$2.87 ,-0.02,-0.69%,Small,United States,292975,Health Care,"$840,838.25 "
+AFI,Armstrong Flooring Inc. Common Stock,$5.20 ,0.31,6.34%,Small,,161085,Consumer Non-Durables,"$837,642.00 "
+FVE,Five Star Senior Living Inc. Common Stock,$6.43 ,0.31,5.07%,Small,United States,129328,Health Care,"$831,579.04 "
+REPH,Recro Pharma Inc. Common Stock,$2.99 ,0.2,7.17%,Small,United States,277987,Health Care,"$831,181.13 "
+SECO,Secoo Holding Limited ADR,$2.58 ,0.05,1.98%,Small,China,320825,Consumer Services,"$827,728.50 "
+OSG,Overseas Shipholding Group Inc. Class A Common Stock,$2.11 ,0.05,2.43%,Small,United States,389741,Transportation,"$822,353.51 "
+ZVO,Zovio Inc. Common Stock,$4.20 ,0.14,3.45%,Small,United States,195507,Consumer Services,"$821,129.40 "
+CTG,Computer Task Group Inc. Common Stock,$9.74 ,0.19,1.99%,Small,United States,84263,Technology,"$820,721.62 "
+ARC,ARC Document Solutions Inc. Common Stock,$2.19 ,0.08,3.79%,Small,United States,373602,Consumer Services,"$818,188.38 "
+DAKT,Daktronics Inc. Common Stock,$6.43 ,0.16,2.55%,Small,United States,126278,Consumer Durables,"$811,967.54 "
+PMBC,Pacific Mercantile Bancorp Common Stock,$8.97 ,0.07,0.79%,Small,United States,90420,Finance,"$811,067.40 "
+MRAM,Everspin Technologies Inc. Common Stock,$6.33 ,0.33,5.50%,Small,United States,127493,Technology,"$807,030.69 "
+CRVS,Corvus Pharmaceuticals Inc. Common Stock,$3.14 ,0.06,1.95%,Small,United States,256284,Health Care,"$804,731.76 "
+NNVC,NanoViricides Inc. Common Stock,$4.75 ,0.03,0.64%,Small,United States,169226,Health Care,"$803,823.50 "
+BPT,BP Prudhoe Bay Royalty Trust Common Stock,$3.83 ,0.09,2.41%,Small,United States,208543,Energy,"$798,719.69 "
+SPOK,Spok Holdings Inc. Common Stock,$10.73 ,0.24,2.29%,Small,United States,74256,Public Utilities,"$796,766.88 "
+CECE,CECO Environmental Corp. Common Stock,$8.16 ,0.23,2.90%,Small,United States,97446,Capital Goods,"$795,159.36 "
+SLRX,Salarius Pharmaceuticals Inc. Common Stock,$1.52 ,0.04,2.70%,Small,United States,522986,Health Care,"$794,938.72 "
+FENC,Fennec Pharmaceuticals Inc. Common Stock,$6.27 ,0.055,0.89%,Small,United States,126787,Health Care,"$794,320.56 "
+MOTS,Motus GI Holdings Inc. Common Stock,$1.20 ,-0.01,-0.83%,Small,Israel,661644,Health Care,"$793,972.80 "
+AAIC,Arlington Asset Investment Corp Class A (new),$4.15 ,0.11,2.72%,Small,United States,190356,Consumer Services,"$789,977.40 "
+ARAV,Aravive Inc. Common Stock,$6.42 ,-0.17,-2.58%,Small,United States,122637,Health Care,"$787,329.54 "
+LJPC,La Jolla Pharmaceutical Company Common Stock,$4.35 ,0.11,2.59%,Small,United States,180458,Health Care,"$784,992.30 "
+VWTR,Vidler Water Resources Inc. Common Stock,$9.02 ,0.12,1.35%,Small,United States,87007,Finance,"$784,803.14 "
+TMDI,Titan Medical Inc. Ordinary Shares,$1.75 ,0.05,2.94%,Small,Canada,448384,Health Care,"$784,672.00 "
+LEGO,Legato Merger Corp. Common stock,$9.76 ,0.08,0.83%,Small,United States,80381,Finance,"$784,518.56 "
+GSIT,GSI Technology Common Stock,$7.06 ,0.37,5.53%,Small,United States,110931,Technology,"$783,172.86 "
+VJET,voxeljet AG American Depositary Shares,$15.96 ,0.36,2.31%,Small,Germany,48850,Capital Goods,"$779,646.00 "
+CSU,Capital Senior Living Corporation Common Stock,$39.42 ,0.92,2.39%,Small,United States,19740,Health Care,"$778,150.80 "
+EYEN,Eyenovia Inc. Common Stock,$5.08 ,-0.03,-0.59%,Small,United States,153105,Health Care,"$777,773.40 "
+STRM,Streamline Health Solutions Inc. Common Stock,$2.25 ,0.2,9.76%,Small,United States,345612,Technology,"$777,627.00 "
+TREC,Trecora Resources Common Stock,$7.70 ,-0.07,-0.90%,Small,United States,100831,Energy,"$776,398.70 "
+MBII,Marrone Bio Innovations Inc. Common Stock,$1.95 ,-0.14,-6.70%,Small,United States,396391,Basic Industries,"$772,962.45 "
+HBIO,Harvard Bioscience Inc. Common Stock,$5.44 ,-0.02,-0.37%,Small,United States,141574,Capital Goods,"$770,162.56 "
+VERO,Venus Concept Inc. Common Stock,$2.42 ,0.07,2.98%,Small,United States,317743,Health Care,"$768,938.06 "
+RUHN,Ruhnn Holding Limited American Depositary Shares,$3.32 ,-0.03,-0.90%,Small,China,231370,Consumer Services,"$768,148.40 "
+PCSB,PCSB Financial Corporation Common Stock,$17.19 ,0.58,3.49%,Small,United States,44526,Finance,"$765,401.94 "
+TNP,Tsakos Energy Navigation Ltd Common Shares,$9.80 ,0.33,3.49%,Small,Greece,77374,Transportation,"$758,265.20 "
+LBPH,Longboard Pharmaceuticals Inc. Common Stock,$16.04 ,-0.34,-2.08%,Small,United States,47230,Health Care,"$757,569.20 "
+ITAC,Industrial Tech Acquisitions Inc. Class A common stock,$10.03 ,0.01,0.10%,Small,United States,75295,Finance,"$755,208.85 "
+FLXS,Flexsteel Industries Inc. Common Stock,$35.90 ,1.05,3.01%,Small,United States,20842,Consumer Durables,"$748,227.80 "
+LHAA,Lerer Hippeau Acquisition Corp. Class A Common Stock,$9.90 ,0,0.00%,Small,United States,75537,Finance,"$747,816.30 "
+VNRX,VolitionRX Limited Common Stock,$3.70 ,-0.08,-2.12%,Small,Singapore,201243,Health Care,"$744,599.10 "
+CHMG,Chemung Financial Corp Common Stock,$42.49 ,0.67,1.60%,Small,United States,17373,Finance,"$738,178.77 "
+ISTR,Investar Holding Corporation Common Stock,$20.72 ,0.17,0.83%,Small,United States,35465,Finance,"$734,834.80 "
+XAIR,Beyond Air Inc. Common Stock,$5.56 ,0.06,1.09%,Small,United States,132164,Health Care,"$734,831.84 "
+CRKN,Crown Electrokinetics Corp. Common Stock,$4.61 ,0.3,6.96%,Small,United States,159071,Capital Goods,"$733,317.31 "
+FSII,FS Development Corp. II Class A Common Stock,$10.00 ,0.04,0.40%,Small,United States,73069,Finance,"$730,690.00 "
+NRIM,Northrim BanCorp Inc Common Stock,$43.67 ,1.16,2.73%,Small,United States,16646,Finance,"$726,930.82 "
+BBI,Brickell Biotech Inc. Common Stock,$1.14 ,0.05,4.59%,Small,United States,631904,Health Care,"$720,370.56 "
+NUZE,NuZee Inc. Common Stock,$3.50 ,0.01,0.29%,Small,United States,202676,Consumer Services,"$709,366.00 "
+EARN,Ellington Residential Mortgage REIT Common Shares of Beneficial Interest,$12.33 ,0.02,0.16%,Small,United States,57201,Consumer Services,"$705,288.33 "
+VRDN,Viridian Therapeutics Inc. Common Stock,$15.77 ,-0.94,-5.63%,Small,United States,44605,Health Care,"$703,420.85 "
+CVEO,Civeo Corporation (Canada) Common Shares,$16.01 ,0.7,4.57%,Small,,43849,Consumer Services,"$702,022.49 "
+WHG,Westwood Holdings Group Inc Common Stock,$15.73 ,1.27,8.78%,Small,United States,44578,Finance,"$701,211.94 "
+RDVT,Red Violet Inc. Common Stock ,$19.06 ,0.64,3.47%,Small,United States,36771,Technology,"$700,855.26 "
+LOGC,LogicBio Therapeutics Inc. Common Stock,$7.16 ,-0.12,-1.65%,Small,United States,97496,Health Care,"$698,071.36 "
+HROW,Harrow Health Inc. Common Stock,$6.79 ,0.04,0.59%,Small,United States,102583,Health Care,"$696,538.57 "
+INSE,Inspired Entertainment Inc. Common Stock,$9.53 ,0.24,2.58%,Small,United States,72417,Technology,"$690,134.01 "
+DHX,DHI Group Inc. Common Stock,$3.41 ,0.06,1.79%,Small,United States,202381,Miscellaneous,"$690,119.21 "
+GDP,Goodrich Petroleum Corporation Common Stock,$10.31 ,0.85,8.99%,Small,United States,66919,Energy,"$689,934.89 "
+ACR,ACRES Commercial Realty Corp. Common Stock,$15.22 ,0.63,4.32%,Small,United States,45316,Consumer Services,"$689,709.52 "
+XCUR,Exicure Inc. Common Stock,$2.24 ,0.06,2.75%,Small,United States,306402,Health Care,"$686,340.48 "
+OPTN,OptiNose Inc. Common Stock,$3.68 ,-0.01,-0.27%,Small,United States,185861,Health Care,"$683,968.48 "
+HURC,Hurco Companies Inc. Common Stock,$35.24 ,-0.06,-0.17%,Small,United States,19352,Capital Goods,"$681,964.48 "
+RNET,RigNet Inc. Common Stock,$9.16 ,0.44,5.05%,Small,United States,74094,Consumer Services,"$678,701.04 "
+ASUR,Asure Software Inc Common Stock,$8.00 ,0.36,4.71%,Small,United States,84577,Technology,"$676,616.00 "
+EDSA,Edesa Biotech Inc. Common Shares,$5.59 ,0.19,3.52%,Small,United States,120965,Health Care,"$676,194.35 "
+MTCR,Metacrine Inc. Common Stock,$5.73 ,-0.47,-7.58%,Small,United States,117340,Health Care,"$672,358.20 "
+SHBI,Shore Bancshares Inc Common Stock,$17.29 ,0.27,1.59%,Small,United States,38866,Finance,"$671,993.14 "
+KVHI,KVH Industries Inc. Common Stock,$12.81 ,0.13,1.03%,Small,United States,52152,Technology,"$668,067.12 "
+GNCA,Genocea Biosciences Inc. Common Stock,$2.71 ,0,0.00%,Small,United States,244939,Health Care,"$663,784.69 "
+FHS,First High-School Education Group Co. Ltd. American Depositary Shares,$6.92 ,-0.08,-1.14%,Small,,95379,Consumer Services,"$660,022.68 "
+BFRA,Biofrontera AG American Depositary Shares,$5.61 ,0.26,4.86%,Small,Germany,115598,Health Care,"$648,504.78 "
+TSQ,Townsquare Media Inc. Class A Common Stock,$11.01 ,0.28,2.61%,Small,United States,58898,Consumer Services,"$648,466.98 "
+TRX,Tanzanian Gold Corporation Common Stock,$0.61 ,0.0195,3.31%,Small,Canada,1062486,Basic Industries,"$647,585.22 "
+NNA,Navios Maritime Acquisition Corporation Common stock,$4.00 ,-0.05,-1.24%,Small,Greece,160844,Transportation,"$643,376.00 "
+ARDS,Aridis Pharmaceuticals Inc. Common Stock,$5.96 ,0.06,1.02%,Small,United States,107780,Health Care,"$642,368.80 "
+AYLA,Ayala Pharmaceuticals Inc. Common Stock,$10.15 ,-0.76,-6.97%,Small,Israel,63239,Health Care,"$641,875.85 "
+ALOT,AstroNova Inc. Common Stock,$13.68 ,0.28,2.09%,Small,United States,46838,Technology,"$640,743.84 "
+RYB,RYB Education Inc. American depositary shares each representing one Class A ordinary share,$3.68 ,-0.1,-2.65%,Small,,173811,Consumer Services,"$639,624.48 "
+GNSS,Genasys Inc. Common Stock,$6.95 ,0.26,3.89%,Small,United States,92032,Consumer Non-Durables,"$639,622.40 "
+HJLI,Hancock Jaffe Laboratories Inc. Common Stock,$6.81 ,0.15,2.25%,Small,United States,93827,Health Care,"$638,961.87 "
+SYBX,Synlogic Inc. Common Stock,$3.61 ,0.03,0.84%,Small,United States,176792,Health Care,"$638,219.12 "
+BWFG,Bankwell Financial Group Inc. Common Stock,$26.98 ,0.03,0.11%,Small,United States,23621,Finance,"$637,294.58 "
+VMAC,Vistas Media Acquisition Company Inc. Class A Common Stock,$9.90 ,-0.0021,-0.02%,Small,United States,64265,Finance,"$636,223.50 "
+BCBP,BCB Bancorp Inc. (NJ) Common Stock,$13.92 ,0.12,0.87%,Small,United States,45675,Finance,"$635,796.00 "
+ULBI,Ultralife Corporation Common Stock,$8.28 ,0,0.00%,Small,United States,76762,Miscellaneous,"$635,589.36 "
+HSAQ,Health Sciences Acquisitions Corporation 2 Ordinary Shares,$10.68 ,-0.51,-4.56%,Small,United States,59377,Finance,"$634,146.36 "
+EGY,VAALCO Energy Inc.  Common Stock,$2.33 ,0.09,4.02%,Small,United States,271728,Energy,"$633,126.24 "
+SONM,Sonim Technologies Inc. Common Stock,$0.85 ,0.0311,3.79%,Small,United States,743856,Public Utilities,"$633,021.46 "
+LUMO,Lumos Pharma Inc. Common Stock,$12.25 ,0.55,4.70%,Small,United States,51641,Health Care,"$632,602.25 "
+AUMN,Golden Minerals Company Common Stock,$0.69 ,0.0337,5.11%,Small,United States,912268,Basic Industries,"$632,201.72 "
+MRLN,Marlin Business Services Corp. Common Stock,$14.27 ,0.63,4.62%,Small,United States,44016,Finance,"$628,108.32 "
+ONCS,OncoSec Medical Incorporated Common Stock,$5.08 ,0.31,6.50%,Small,United States,123496,Health Care,"$627,359.68 "
+GLMD,Galmed Pharmaceuticals Ltd. Ordinary Shares,$3.44 ,0.01,0.29%,Small,Israel,181852,Health Care,"$625,570.88 "
+XFOR,X4 Pharmaceuticals Inc. Common Stock,$9.03 ,0.42,4.88%,Small,United States,69127,Health Care,"$624,216.81 "
+CRHM,CRH Medical Corporation Common Shares of Beneficial Interest,$3.95 ,0,0.00%,Small,,158009,Health Care,"$624,135.55 "
+MIST,Milestone Pharmaceuticals Inc. Common Shares,$6.05 ,0.26,4.49%,Small,Canada,103000,Health Care,"$623,150.00 "
+MBOT,Microbot Medical Inc. Common Stock,$8.36 ,-0.15,-1.76%,Small,Israel,73912,Health Care,"$617,904.32 "
+AKTX,Akari Therapeutics plc ADR (0.01 USD),$2.85 ,0.21,7.96%,Small,United Kingdom,213495,Health Care,"$608,460.75 "
+IMRA,IMARA Inc. Common Stock,$8.41 ,-0.03,-0.36%,Small,United States,72311,Health Care,"$608,135.51 "
+USIO,Usio Inc. Common Stock,$6.54 ,0.12,1.87%,Small,United States,92977,Finance,"$608,069.58 "
+CUEN,Cuentas Inc. Common Stock,$3.70 ,0.28,8.19%,Small,United States,163968,Consumer Non-Durables,"$606,681.60 "
+GBS,GBS Inc. Common Stock,$5.70 ,0.05,0.89%,Small,United States,106067,Health Care,"$604,581.90 "
+JRSH,Jerash Holdings (US) Inc. Common Stock,$6.80 ,0.5001,7.94%,Small,United States,88823,Consumer Non-Durables,"$603,996.40 "
+OCA,Omnichannel Acquisition Corp. Class A Common Stock,$9.85 ,0.09,0.92%,Small,,61217,Finance,"$602,987.45 "
+KRMD,Repro Med Systems Inc. Common Stock,$3.58 ,0.06,1.71%,Small,United States,168156,Health Care,"$601,998.48 "
+APTX,Aptinyx Inc. Common Stock,$3.00 ,0,0.00%,Small,United States,200167,Health Care,"$600,501.00 "
+CPLP,Capital Product Partners L.P. Common Units,$11.01 ,-0.12,-1.08%,Small,Greece,54278,Transportation,"$597,600.78 "
+DLA,Delta Apparel Inc. Common Stock,$28.28 ,1.15,4.24%,Small,United States,21104,Consumer Non-Durables,"$596,821.12 "
+GNE,Genie Energy Ltd. Class B Common Stock Stock,$6.59 ,0.25,3.94%,Small,United States,90335,Public Utilities,"$595,307.65 "
+CFFI,C&F Financial Corporation Common Stock,$46.25 ,1.96,4.43%,Small,United States,12806,Finance,"$592,277.50 "
+ETON,Eton Pharmaceuticals Inc. Common Stock,$7.31 ,-0.01,-0.14%,Small,United States,80807,Health Care,"$590,699.17 "
+ALCO,Alico Inc. Common Stock,$29.51 ,-0.35,-1.17%,Small,United States,19826,Consumer Non-Durables,"$585,065.26 "
+HAPP,Happiness Biotech Group Limited Ordinary Shares,$2.08 ,0.07,3.48%,Small,China,281099,Consumer Durables,"$584,685.92 "
+JWEL,Jowell Global Ltd. Ordinary Shares,$7.79 ,0.0535,0.69%,Small,China,74020,Consumer Services,"$576,615.80 "
+DMAC,DiaMedica Therapeutics Inc. Common Stock,$9.73 ,0.58,6.34%,Small,United States,59205,Health Care,"$576,064.65 "
+SUPV,Grupo Supervielle S.A. American Depositary Shares each Representing five Class B shares,$1.74 ,0.01,0.58%,Small,,330514,Finance,"$575,094.36 "
+INVE,Identiv Inc. Common Stock,$11.58 ,0.12,1.05%,Small,United States,49343,Technology,"$571,391.94 "
+SGAM,Seaport Global Acquisition Corp. Class A Common Stock,$9.90 ,0.09,0.92%,Small,United States,57216,Finance,"$566,438.40 "
+AKER,Akers Biosciences Inc. Common Stock,$3.37 ,0.15,4.66%,Small,United States,167501,Health Care,"$564,478.37 "
+PDEX,Pro-Dex Inc. Common Stock,$27.09 ,0.14,0.52%,Small,United States,20762,Health Care,"$562,442.58 "
+TCFC,The Community Financial Corporation Common Stock,$35.46 ,1.21,3.53%,Small,United States,15748,Finance,"$558,424.08 "
+PCB,PCB Bancorp Common Stock,$15.13 ,0.13,0.87%,Small,United States,36883,Finance,"$558,039.79 "
+LEVL,Level One Bancorp Inc. Common Stock,$26.41 ,0.63,2.44%,Small,United States,21121,Finance,"$557,805.61 "
+GHM,Graham Corporation Common Stock,$14.38 ,0.14,0.98%,Small,United States,38727,Technology,"$556,894.26 "
+GLDG,GoldMining Inc. Common Shares,$1.72 ,0.07,4.24%,Small,,322048,Basic Industries,"$553,922.56 "
+CAPR,Capricor Therapeutics Inc. Common Stock,$4.83 ,0.15,3.21%,Small,United States,114490,Health Care,"$552,986.70 "
+FSBW,FS Bancorp Inc. Common Stock,$67.67 ,0.47,0.70%,Small,United States,8165,Finance,"$552,525.55 "
+BSGM,BioSig Technologies Inc. Common Stock,$4.48 ,0.17,3.94%,Small,United States,122260,Health Care,"$547,724.80 "
+FNWB,First Northwest Bancorp Common Stock,$16.86 ,0.24,1.44%,Small,United States,32228,Finance,"$543,364.08 "
+CSLT,Castlight Health Inc. Class B Common Stock,$1.54 ,0.03,1.99%,Small,,352371,Technology,"$542,651.34 "
+BRBS,Blue Ridge Bankshares Inc. Common Stock,$22.13 ,0.19,0.87%,Small,,24520,Finance,"$542,627.60 "
+MCMJ,Merida Merger Corp. I Common Stock,$9.95 ,0.07,0.71%,Small,United States,54357,Finance,"$540,852.15 "
+VOLT,Volt Information Sciences Inc. Common Stock,$3.92 ,-0.02,-0.51%,Small,United States,136944,Technology,"$536,820.48 "
+ARKR,Ark Restaurants Corp. Common Stock,$20.93 ,0.79,3.92%,Small,United States,25623,Consumer Services,"$536,289.39 "
+STND,Standard AVB Financial Corp. Common Stock,$32.65 ,0,0.00%,Small,United States,16408,Finance,"$535,721.20 "
+GIFI,Gulf Island Fabrication Inc. Common Stock,$3.85 ,-0.01,-0.26%,Small,United States,137085,Capital Goods,"$527,777.25 "
+PFSW,PFSweb Inc. Common Stock,$7.02 ,0.27,4.00%,Small,United States,75171,Miscellaneous,"$527,700.42 "
+MITC,MeaTech 3D Ltd. American Depositary Shares,$9.34 ,0.01,0.11%,Small,Israel,56406,Consumer Non-Durables,"$526,832.04 "
+AVCO,Avalon GloboCare Corp. Common Stock,$1.13 ,0.06,5.61%,Small,United States,465340,Consumer Services,"$525,834.20 "
+INOD,Innodata Inc. Common Stock,$6.62 ,0.32,5.08%,Small,United States,79152,Technology,"$523,986.24 "
+SYNL,Synalloy Corporation Common Stock,$9.25 ,0.41,4.64%,Small,United States,56107,Basic Industries,"$518,989.75 "
+EMX,EMX Royalty Corporation Common Shares (Canada),$3.07 ,0.11,3.72%,Small,Canada,168520,Basic Industries,"$517,356.40 "
+KMDA,Kamada Ltd. Ordinary Shares,$6.19 ,0,0.00%,Small,Israel,83387,Health Care,"$516,165.53 "
+EML,Eastern Company (The) Common Stock,$26.59 ,-0.21,-0.78%,Small,United States,19410,Capital Goods,"$516,111.90 "
+BWAY,Brainsway Ltd. American Depositary Shares,$9.37 ,0.34,3.77%,Small,Israel,55019,Health Care,"$515,528.03 "
+CMCL,Caledonia Mining Corporation Plc Common Shares,$14.85 ,0.56,3.92%,Small,Canada,34699,Basic Industries,"$515,280.15 "
+TSBK,Timberland Bancorp Inc. Common Stock,$28.87 ,1.06,3.81%,Small,United States,17791,Finance,"$513,626.17 "
+NYMX,Nymox Pharmaceutical Corporation Common Stock (Bahamas),$2.48 ,0.26,11.71%,Small,Canada,206533,Health Care,"$512,201.84 "
+BCML,BayCom Corp Common Stock,$17.95 ,-0.07,-0.39%,Small,United States,28447,Finance,"$510,623.65 "
+ID,PARTS iD Inc. Class A Common Stock,$7.85 ,0,0.00%,Small,United States,64835,Technology,"$508,954.75 "
+COFS,ChoiceOne Financial Services Inc. Common Stock,$24.87 ,0.82,3.41%,Small,United States,20402,Finance,"$507,397.74 "
+GRNV,GreenVision Acquisition Corp Common stock,$10.16 ,0,0.00%,Small,United States,49791,Health Care,"$505,876.56 "
+FSTX,F-star Therapeutics Inc. Common Stock,$10.60 ,-0.23,-2.12%,Small,United States,47499,Health Care,"$503,489.40 "
+EPM,Evolution Petroleum Corporation Inc. Common Stock,$3.57 ,0.19,5.62%,Small,United States,140462,Energy,"$501,449.34 "
+TELA,TELA Bio Inc. Common Stock,$14.95 ,0.05,0.34%,Small,United States,33507,Health Care,"$500,929.65 "
+GPP,Green Plains Partners LP Common Units,$12.56 ,0.24,1.95%,Small,United States,39863,Basic Industries,"$500,679.28 "
+IRIX,IRIDEX Corporation Common Stock,$7.18 ,0.43,6.37%,Small,United States,69034,Health Care,"$495,664.12 "
+AMBO,Ambow Education Holding Ltd. American Depository Shares each representing two Class A ordinary shares,$2.23 ,0.04,1.83%,Small,China,221252,Consumer Services,"$493,391.96 "
+BRPA,Big Rock Partners Acquisition Corp. Common Stock,$37.74 ,2.32,6.55%,Small,United States,13070,Health Care,"$493,261.80 "
+PRT,PermRock Royalty Trust Trust Units,$5.98 ,-0.24,-3.86%,Small,United States,82288,Energy,"$492,082.24 "
+DSAC,Duddell Street Acquisition Corp. Class A Ordinary Shares,$9.92 ,0.18,1.85%,Small,Hong Kong,49487,Finance,"$490,911.04 "
+DXYN,Dixie Group Inc. (The) Common Stock,$3.36 ,0.39,13.13%,Small,United States,145795,Consumer Durables,"$489,871.20 "
+SNFCA,Security National Financial Corporation Class A Common Stock,$9.47 ,0.12,1.28%,Small,United States,51685,Finance,"$489,456.95 "
+CERC,Cerecor Inc. Common Stock,$3.05 ,0.03,0.99%,Small,United States,160193,Health Care,"$488,588.65 "
+SCPH,scPharmaceuticals Inc. Common Stock,$6.82 ,0.17,2.56%,Small,United States,71543,Health Care,"$487,923.26 "
+MNTX,Manitex International Inc. Common Stock,$8.35 ,0.46,5.83%,Small,United States,58410,Technology,"$487,723.50 "
+SJT,San Juan Basin Royalty Trust Common Stock,$4.11 ,0.15,3.79%,Small,United States,118322,Energy,"$486,303.42 "
+LIQT,LiqTech International Inc. Common Stock,$8.21 ,0.12,1.48%,Small,Denmark,58932,Technology,"$483,831.72 "
+NWFL,Norwood Financial Corp. Common Stock,$26.60 ,-0.01,-0.04%,Small,United States,18092,Finance,"$481,247.20 "
+TGA,TransGlobe Energy Corporation Ordinary Shares (Canada),$1.61 ,0.03,1.90%,Small,Canada,298685,Energy,"$480,882.85 "
+ESXB,Community Bankers Trust Corporation Common Stock (VA),$8.66 ,-0.16,-1.81%,Small,United States,55357,Finance,"$479,391.62 "
+USAU,U.S. Gold Corp. Common Stock,$11.01 ,0.66,6.38%,Small,United States,43489,Basic Industries,"$478,813.89 "
+FEIM,Frequency Electronics Inc. Common Stock,$11.27 ,-0.02,-0.18%,Small,United States,42342,Capital Goods,"$477,194.34 "
+ISDR,Issuer Direct Corporation Common Stock,$22.70 ,0.77,3.51%,Small,United States,20858,Miscellaneous,"$473,476.60 "
+ALPN,Alpine Immune Sciences Inc. Common Stock,$10.78 ,0.18,1.70%,Small,United States,43527,Health Care,"$469,221.06 "
+PUYI,Puyi Inc. American Depository Shares,$4.51 ,-0.24,-5.05%,Small,China,103854,Finance,"$468,381.54 "
+KSPN,Kaspien Holdings Inc. Common Stock,$24.35 ,0.52,2.18%,Small,United States,19220,Consumer Services,"$468,007.00 "
+MNSB,MainStreet Bancshares Inc. Common Stock,$21.00 ,0.24,1.16%,Small,United States,22256,Finance,"$467,376.00 "
+PPBT,Purple Biotech Ltd. American Depositary Shares,$4.23 ,0.1,2.42%,Small,Israel,110485,Health Care,"$467,351.55 "
+UK,Ucommune International Ltd Ordinary Shares,$3.27 ,0.27,9.00%,Small,United States,142896,Miscellaneous,"$467,269.92 "
+SMTX,SMTC Corporation Common Stock,$6.04 ,0.03,0.50%,Small,Canada,76899,Technology,"$464,469.96 "
+SNMP,Evolve Transition Infrastructure LP Common Stock,$0.99 ,-0.0077,-0.77%,Small,United States,467887,Energy,"$464,237.48 "
+YTRA,Yatra Online Inc. Ordinary Shares,$2.47 ,0.14,6.01%,Small,India,187476,Consumer Services,"$463,065.72 "
+TOMZ,TOMI Environmental Solutions Inc. Common Stock,$4.17 ,0.12,2.96%,Small,United States,110571,Basic Industries,"$461,081.07 "
+SDH,Global Internet of People Inc. Ordinary Shares,$3.72 ,0.1,2.76%,Small,China,123347,Miscellaneous,"$458,850.84 "
+CODA,Coda Octopus Group Inc. Common stock,$9.00 ,0.12,1.35%,Small,United States,50856,Capital Goods,"$457,704.00 "
+MN,Manning & Napier Inc. Class A Common Stock,$6.46 ,-0.01,-0.16%,Small,United States,70741,Finance,"$456,986.86 "
+SFE,Safeguard Scientifics Inc. New Common Stock,$6.94 ,0.12,1.76%,Small,United States,65480,Finance,"$454,431.20 "
+FCCO,First Community Corporation Common Stock,$19.62 ,-0.33,-1.65%,Small,United States,23125,Finance,"$453,712.50 "
+BKSC,Bank of South Carolina Corp. Common Stock,$22.35 ,-0.25,-1.11%,Small,United States,20255,Finance,"$452,699.25 "
+STCN,Steel Connect Inc. Common Stock,$2.07 ,0.09,4.55%,Small,United States,217304,Miscellaneous,"$449,819.28 "
+HALL,Hallmark Financial Services Inc. Common Stock,$3.94 ,0.06,1.55%,Small,United States,113979,Finance,"$449,077.26 "
+PAQC,Provident Acquisition Corp. Class A Ordinary Shares,$9.76 ,-0.01,-0.10%,Small,Hong Kong,45966,Finance,"$448,628.16 "
+NERV,Minerva Neurosciences Inc Common Stock,$2.97 ,0.05,1.71%,Small,United States,150055,Health Care,"$445,663.35 "
+SREV,ServiceSource International Inc. Common Stock,$1.44 ,-0.03,-2.04%,Small,United States,307435,Miscellaneous,"$442,706.40 "
+ALJJ,ALJ Regional Holdings Inc. Common Stock,$1.45 ,0,0.00%,Small,United States,305309,Miscellaneous,"$442,698.05 "
+GRTX,Galera Therapeutics Inc. Common Stock,$8.75 ,-0.07,-0.79%,Small,United States,50515,Health Care,"$442,006.25 "
+ANPC,AnPac Bio-Medical Science Co. Ltd. American Depositary Shares,$6.01 ,0.02,0.33%,Small,China,73416,Health Care,"$441,230.16 "
+HBB,Hamilton Beach Brands Holding Company Class A Common Stock ,$18.10 ,-0.03,-0.17%,Small,,24369,Consumer Durables,"$441,078.90 "
+HQI,HireQuest Inc. Common Stock (DE),$17.15 ,-0.1,-0.58%,Small,United States,25607,Technology,"$439,160.05 "
+ACU,Acme United Corporation. Common Stock,$40.00 ,0.56,1.42%,Small,United States,10958,Capital Goods,"$438,320.00 "
+CMPI,Checkmate Pharmaceuticals Inc. Common Stock,$11.60 ,-0.54,-4.45%,Small,United States,37549,Health Care,"$435,568.40 "
+EBMT,Eagle Bancorp Montana Inc. Common Stock,$24.18 ,-0.14,-0.58%,Small,United States,17961,Finance,"$434,296.98 "
+MKTY,Mechanical Technology Incorporated Common Stock,$11.89 ,-0.11,-0.92%,Small,United States,36492,Capital Goods,"$433,889.88 "
+PCTI,PCTEL Inc. Common Stock,$6.99 ,0.04,0.58%,Small,United States,62050,Technology,"$433,729.50 "
+XIN,Xinyuan Real Estate Co Ltd American Depositary Shares,$2.86 ,0.05,1.78%,Small,China,151125,Basic Industries,"$432,217.50 "
+OFED,Oconee Federal Financial Corp. Common Stock,$26.90 ,0.82,3.14%,Small,United States,15965,Finance,"$429,458.50 "
+TUSK,Mammoth Energy Services Inc. Common Stock,$5.36 ,0.04,0.75%,Small,United States,80096,Energy,"$429,314.56 "
+BIVI,BioVie Inc. Class A Common Stock,$18.69 ,-0.65,-3.36%,Small,United States,22967,Health Care,"$429,253.23 "
+MHLD,Maiden Holdings Ltd.,$3.33 ,0.03,0.91%,Small,Bermuda,128309,Finance,"$427,268.97 "
+AIH,Aesthetic Medical International Holdings Group Ltd. American Depositary Shares,$7.34 ,-0.02,-0.27%,Small,China,57987,Health Care,"$425,624.58 "
+BGSF,BGSF Inc. Common Stock,$14.22 ,0.22,1.57%,Small,United States,29637,Technology,"$421,438.14 "
+PESI,Perma-Fix Environmental Services Inc. Common Stock,$7.39 ,0.06,0.82%,Small,United States,56714,Basic Industries,"$419,116.46 "
+VII,7GC & Co. Holdings Inc. Class A common stock,$9.88 ,-0.01,-0.10%,Small,United States,41961,Finance,"$414,574.68 "
+DFNS,LGL Systems Acquisition Corp. Common Stock,$9.94 ,0,0.00%,Small,United States,41538,Finance,"$412,887.72 "
+IMBI,iMedia Brands Inc. Class A Common Stock,$8.26 ,0.51,6.58%,Small,United States,49746,Consumer Services,"$410,901.96 "
+LMAO,LMF Acquisition Opportunities Inc. Class A common stock,$9.81 ,0.001,0.01%,Small,United States,41746,Finance,"$409,574.18 "
+AGE,AgeX Therapeutics Inc. Common Stock,$1.77 ,0.15,9.26%,Small,,230397,Health Care,"$407,802.69 "
+KWAC,Kingswood Acquisition Corp. Class A Common Stock,$9.98 ,0.042,0.42%,Small,,40845,Finance,"$407,633.10 "
+GENC,Gencor Industries Inc. Common Stock,$13.40 ,-0.01,-0.08%,Small,United States,30281,Capital Goods,"$405,765.40 "
+VBLT,Vascular Biogenics Ltd. Ordinary Shares,$2.00 ,0,0.00%,Small,Israel,202728,Health Care,"$405,456.00 "
+IMV,IMV Inc. Common Shares,$3.20 ,-0.12,-3.61%,Small,Canada,126668,Health Care,"$405,337.60 "
+VIST,Vista Oil & Gas S.A.B. de C.V. American Depositary Shares each representing one series A share with no par value,$2.67 ,0.11,4.30%,Small,,151003,Energy,"$403,178.01 "
+FBIZ,First Business Financial Services Inc. Common Stock,$25.13 ,0.4,1.62%,Small,United States,15912,Finance,"$399,868.56 "
+VS,Versus Systems Inc. Common Shares,$7.49 ,0.18,2.46%,Small,Canada,53157,Technology,"$398,145.93 "
+NGS,Natural Gas Services Group Inc. Common Stock,$9.45 ,0.01,0.11%,Small,United States,42009,Energy,"$396,985.05 "
+EDTX,EdtechX Holdings Acquisition Corp. II Class A common stock,$9.88 ,0.05,0.51%,Small,United Kingdom,40140,Finance,"$396,583.20 "
+STON,StoneMor Inc. Common Stock,$1.94 ,0.05,2.65%,Small,United States,201403,Consumer Services,"$390,721.82 "
+WEI,Weidai Ltd. American depositary shares each  representing one (1) Class A ordinary share,$1.45 ,0.09,6.62%,Small,Cayman Islands,268228,Finance,"$388,930.60 "
+ASPS,Altisource Portfolio Solutions S.A. Common Stock,$9.06 ,-0.13,-1.42%,Small,Luxembourg,42733,Consumer Services,"$387,160.98 "
+NEON,Neonode Inc. Common Stock,$9.73 ,0.36,3.84%,Small,Sweden,39754,Capital Goods,"$386,806.42 "
+CYRN,CYREN Ltd. Ordinary Shares,$0.84 ,0.026,3.19%,Small,United States,458758,Technology,"$385,356.72 "
+GRIN,Grindrod Shipping Holdings Ltd. Ordinary Shares,$6.94 ,-0.33,-4.54%,Small,Singapore,55378,Transportation,"$384,323.32 "
+BGI,Birks Group Inc. Common Stock,$3.24 ,-0.1,-2.99%,Small,Canada,118384,Consumer Services,"$383,564.16 "
+SGOC,SGOCO Group Ltd Ordinary Shares (Cayman Islands),$2.03 ,-0.08,-3.79%,Small,China,188475,Technology,"$382,604.25 "
+NCNA,NuCana plc American Depositary Share,$5.04 ,0.05,1.00%,Small,United Kingdom,74824,Health Care,"$377,112.96 "
+SMID,Smith-Midland Corporation Common Stock,$12.74 ,0.78,6.52%,Small,United States,29541,Capital Goods,"$376,352.34 "
+FRBK,Republic First Bancorp Inc. Common Stock,$3.80 ,0.03,0.80%,Small,United States,98945,Finance,"$375,991.00 "
+WEYS,Weyco Group Inc. Common Stock,$22.90 ,1.27,5.87%,Small,United States,16290,Consumer Non-Durables,"$373,041.00 "
+NMRD,Nemaura Medical Inc. Common Stock,$7.50 ,-0.14,-1.83%,Small,United Kingdom,49622,Health Care,"$372,165.00 "
+BFIN,BankFinancial Corporation Common Stock,$10.52 ,0.2,1.94%,Small,United States,35306,Finance,"$371,419.12 "
+JAX,J. Alexander's Holdings Inc. Common Stock,$9.92 ,0.28,2.91%,Small,,37430,Consumer Services,"$371,305.60 "
+WLFC,Willis Lease Finance Corporation Common Stock,$42.79 ,-0.67,-1.54%,Small,United States,8676,Consumer Durables,"$371,246.04 "
+SLCT,Select Bancorp Inc. Common Stock,$11.14 ,0.07,0.63%,Small,United States,33285,Finance,"$370,794.90 "
+RENN,Renren Inc. American Depositary Shares each representing fifteen Class A ordinary shares,$8.93 ,-0.12,-1.33%,Small,China,41311,Consumer Durables,"$368,907.23 "
+LMNL,Liminal BioSciences Inc. Common Shares,$4.27 ,0.14,3.39%,Small,Canada,86160,Health Care,"$367,903.20 "
+HZN,Horizon Global Corporation Common Shares,$10.28 ,-0.05,-0.48%,Small,United States,35620,Capital Goods,"$366,173.60 "
+SLGL,Sol-Gel Technologies Ltd. Ordinary Shares,$12.30 ,-0.08,-0.65%,Small,Israel,29705,Health Care,"$365,371.50 "
+FUND,Sprott Focus Trust Inc. Common Stock,$7.96 ,0.16,2.05%,Small,United States,45852,Consumer Services,"$364,981.92 "
+ADES,Advanced Emissions Solutions Inc. Common Stock,$5.54 ,0.04,0.73%,Small,United States,65846,Basic Industries,"$364,786.84 "
+LOAN,Manhattan Bridge Capital Inc,$6.18 ,0.08,1.31%,Small,United States,58994,Consumer Services,"$364,582.92 "
+FONR,Fonar Corporation Common Stock,$18.54 ,0.45,2.49%,Small,United States,19540,Health Care,"$362,271.60 "
+MDNA,Medicenna Therapeutics Corp. Common Shares,$4.24 ,0.16,3.92%,Small,Canada,85370,Health Care,"$361,968.80 "
+PFHD,Professional Holding Corp. Class A Common stock,$18.63 ,0.26,1.42%,Small,United States,19243,Finance,"$358,497.09 "
+MDCA,MDC Partners Inc. CL A Subordinate Voting Shares,$3.44 ,0.32,10.26%,Small,Canada,104146,Technology,"$358,262.24 "
+RMBI,Richmond Mutual Bancorporation Inc. Common Stock,$13.86 ,0.3,2.21%,Small,United States,25822,Finance,"$357,892.92 "
+ACHV,Achieve Life Sciences Inc. Common Shares,$11.55 ,-0.03,-0.26%,Small,United States,30136,Health Care,"$348,070.80 "
+LRMR,Larimar Therapeutics Inc. Common Stock,$14.65 ,0.04,0.27%,Small,United States,23700,Health Care,"$347,205.00 "
+STRS,Stratus Properties Inc. Common Stock,$30.88 ,0.38,1.25%,Small,United States,11221,Consumer Services,"$346,504.48 "
+TBNK,Territorial Bancorp Inc. Common Stock,$26.90 ,0.44,1.66%,Small,United States,12854,Finance,"$345,772.60 "
+YTEN,Yield10 Bioscience Inc. Common Stock,$13.13 ,0.59,4.71%,Small,United States,26228,Basic Industries,"$344,373.64 "
+APM,Aptorum Group Limited Class A Ordinary Shares,$3.11 ,0.13,4.36%,Small,Hong Kong,110149,Health Care,"$342,563.39 "
+ESSA,ESSA Bancorp Inc. Common Stock,$16.44 ,0.44,2.75%,Small,United States,20602,Finance,"$338,696.88 "
+GLTO,Galecto Inc. Common Stock,$6.04 ,-0.035,-0.58%,Small,Denmark,56016,Health Care,"$338,336.64 "
+ORGS,Orgenesis Inc. Common Stock,$5.78 ,0.05,0.87%,Small,United States,58102,Health Care,"$335,829.56 "
+ALAC,Alberton Acquisition Corporation Ordinary Shares,$10.96 ,0.03,0.27%,Small,Hong Kong,30550,Basic Industries,"$334,828.00 "
+VOC,VOC Energy Trust Units of Beneficial Interest,$3.50 ,0,0.00%,Small,United States,95146,Energy,"$333,011.00 "
+CLSD,Clearside Biomedical Inc. Common Stock,$2.51 ,0.04,1.62%,Small,United States,132570,Health Care,"$332,750.70 "
+UNTY,Unity Bancorp Inc. Common Stock,$21.60 ,-0.4,-1.82%,Small,United States,15215,Finance,"$328,644.00 "
+ALSK,Alaska Communications Systems Group Inc. Common Stock,$3.27 ,0.02,0.62%,Small,United States,100297,Public Utilities,"$327,971.19 "
+RGCO,RGC Resources Inc. Common Stock,$22.41 ,0.23,1.04%,Small,United States,14633,Public Utilities,"$327,925.53 "
+IPA,ImmunoPrecise Antibodies Ltd. Common Stock,$10.39 ,0.57,5.80%,Small,Canada,31529,Health Care,"$327,586.31 "
+NYC,New York City REIT Inc. Class A Common Stock,$8.50 ,-0.1,-1.16%,Small,,38480,Consumer Services,"$327,080.00 "
+LCAP,Lionheart Acquisition Corp. II Class A Common Stock,$9.86 ,0.04,0.41%,Small,United States,32929,Finance,"$324,679.94 "
+AEHR,Aehr Test Systems Common Stock,$2.57 ,0.05,1.98%,Small,United States,126295,Capital Goods,"$324,578.15 "
+AMST,Amesite Inc. Common Stock,$4.16 ,0.02,0.48%,Small,United States,77363,Technology,"$321,830.08 "
+SND,Smart Sand Inc. Common Stock,$2.62 ,0.09,3.56%,Small,United States,122772,Basic Industries,"$321,662.64 "
+NC,NACCO Industries Inc. Common Stock,$24.65 ,-0.3,-1.20%,Small,United States,13032,Consumer Durables,"$321,238.80 "
+CNTG,Centogene N.V. Common Shares,$12.45 ,0.32,2.64%,Small,Germany,25789,Health Care,"$321,073.05 "
+MMLP,Martin Midstream Partners L.P. Limited Partnership,$2.40 ,-0.07,-2.83%,Small,United States,133055,Energy,"$319,332.00 "
+MNPR,Monopar Therapeutics Inc. Common Stock,$6.22 ,0.02,0.32%,Small,United States,51297,Health Care,"$319,067.34 "
+WLMS,Williams Industrial Services Group Inc. Common Stock,$3.68 ,0.2,5.75%,Small,,86649,Basic Industries,"$318,868.32 "
+CIX,CompX International Inc. Common Stock,$18.52 ,0.51,2.83%,Small,United States,17173,Capital Goods,"$318,043.96 "
+MOTN,Motion Acquisition Corp. Class A Common Stock,$9.89 ,0.035,0.36%,Small,United States,32042,Finance,"$316,735.17 "
+BMRA,Biomerica Inc. Common Stock,$5.90 ,0.435,7.97%,Small,United States,53660,Health Care,"$316,325.70 "
+NRBO,NeuroBo Pharmaceuticals Inc. Common Stock,$4.63 ,0.23,5.23%,Small,United States,68275,Health Care,"$316,113.25 "
+ENOB,Enochian Biosciences Inc. Common Stock,$3.42 ,-0.12,-3.39%,Small,United States,91987,Health Care,"$314,595.54 "
+MOVE,Movano Inc. Common Stock,$5.52 ,-0.02,-0.36%,Small,United States,56911,Health Care,"$314,148.72 "
+MPB,Mid Penn Bancorp Common Stock,$26.70 ,-0.11,-0.41%,Small,United States,11765,Finance,"$314,125.50 "
+VGZ,Vista Gold Corp Common Stock,$1.05 ,-0.01,-0.94%,Small,United States,298240,Basic Industries,"$313,152.00 "
+BBQ,BBQ Holdings Inc. Common Stock,$7.93 ,0.68,9.38%,Small,United States,39487,Consumer Services,"$313,131.91 "
+FURY,Fury Gold Mines Limited Common Shares,$1.22 ,-0.02,-1.61%,Small,,254465,Basic Industries,"$310,447.30 "
+USAP,Universal Stainless & Alloy Products Inc. Common Stock,$9.91 ,-0.26,-2.56%,Small,United States,31295,Basic Industries,"$310,133.45 "
+QRHC,Quest Resource Holding Corporation Common Stock,$3.98 ,0.08,2.05%,Small,United States,77776,Technology,"$309,548.48 "
+APWC,Asia Pacific Wire & Cable Corporation Ltd. Ordinary Shares (Bermuda),$3.90 ,-0.13,-3.23%,Small,Taiwan,79224,Basic Industries,"$308,973.60 "
+SCPE,SC Health Corporation Class A Ordinary Shares,$10.10 ,0.02,0.20%,Small,,30524,Finance,"$308,292.40 "
+ATTO,Atento S.A. Ordinary Shares,$21.20 ,0.21,1.00%,Small,,14537,Public Utilities,"$308,184.40 "
+FVT,Fortress Value Acquisition Corp. III Class A Common Stock,$9.91 ,0.025,0.25%,Small,,30874,Finance,"$305,961.34 "
+AFCG,AFC Gamma Inc. Common Stock,$21.13 ,0.13,0.62%,Small,United States,14462,Finance,"$305,582.06 "
+SGA,Saga Communications Inc. Class A Common Stock (FL),$22.07 ,0.22,1.01%,Small,United States,13798,Consumer Services,"$304,521.86 "
+HLXA,Helix Acquisition Corp. Class A Ordinary Shares,$10.26 ,0.06,0.59%,Small,United States,29667,Finance,"$304,383.42 "
+ARMP,Armata Pharmaceuticals Inc. Common Stock,$4.74 ,-0.04,-0.84%,Small,United States,64100,Health Care,"$303,834.00 "
+HCAQ,HealthCor Catalio Acquisition Corp. Class A Ordinary Shares,$9.98 ,-0.02,-0.20%,Small,United States,30362,Finance,"$303,012.76 "
+CXDC,China XD Plastics Company Limited Common Stock,$1.11 ,0.04,3.74%,Small,China,272432,Capital Goods,"$302,399.52 "
+SCVX,SCVX Corp. Class A Ordinary Shares,$9.89 ,0.03,0.30%,Small,,30557,Finance,"$302,208.73 "
+CELC,Celcuity Inc. Common Stock,$14.75 ,0.41,2.86%,Small,United States,20333,Health Care,"$299,911.75 "
+CWBR,CohBar Inc. Common Stock,$1.34 ,-0.02,-1.47%,Small,United States,222673,Health Care,"$298,381.82 "
+NWHM,New Home Company Inc. (The) Common Stock,$5.63 ,0.39,7.44%,Small,,52555,Capital Goods,"$295,884.65 "
+RVSB,Riverview Bancorp Inc Common Stock,$7.07 ,0.14,2.02%,Small,United States,41692,Finance,"$294,762.44 "
+REDU,RISE Education Cayman Ltd American Depositary Shares,$3.96 ,-0.09,-2.22%,Small,China,73975,Consumer Services,"$292,941.00 "
+GEOS,Geospace Technologies Corporation Common Stock (Texas),$9.01 ,-0.11,-1.21%,Small,United States,32474,Capital Goods,"$292,590.74 "
+FTK,Flotek Industries Inc. Common Stock,$1.75 ,0.07,4.17%,Small,United States,166588,Basic Industries,"$291,529.00 "
+STG,Sunlands Technology Group American Depositary Shares representing Class A ordinary shares,$1.10 ,0,0.00%,Small,,264921,Consumer Services,"$291,413.10 "
+MCHX,Marchex Inc. Class B Common Stock,$2.90 ,0.09,3.20%,Small,United States,100012,Miscellaneous,"$290,034.80 "
+FMAO,Farmers & Merchants Bancorp Inc. Common Stock,$25.15 ,0.01,0.04%,Small,United States,11520,Finance,"$289,728.00 "
+FCCY,1st Constitution Bancorp (NJ) Common Stock,$17.65 ,0.04,0.23%,Small,United States,16407,Finance,"$289,583.55 "
+SRRA,Sierra Oncology Inc. Common Stock,$17.63 ,0.4,2.32%,Small,Canada,16421,Health Care,"$289,502.23 "
+SIF,SIFCO Industries Inc. Common Stock,$13.74 ,1.2,9.57%,Small,United States,21014,Capital Goods,"$288,732.36 "
+QUMU,Qumu Corporation Common Stock,$6.81 ,0.05,0.74%,Small,United States,42127,Technology,"$286,884.87 "
+BSBK,Bogota Financial Corp. Common Stock,$10.26 ,0,0.00%,Small,United States,27915,Finance,"$286,407.90 "
+PWOD,Penns Woods Bancorp Inc. Common Stock,$24.55 ,0.46,1.91%,Small,United States,11541,Finance,"$283,331.55 "
+SMHI,SEACOR Marine Holdings Inc. Common Stock ,$5.33 ,0,0.00%,Small,,53117,Transportation,"$283,113.61 "
+VMAR,Vision Marine Technologies Inc. Common Shares,$7.57 ,0.07,0.93%,Small,Canada,37394,Capital Goods,"$283,072.58 "
+ESEA,Euroseas Ltd. Common Stock (Marshall Islands),$9.97 ,0.14,1.42%,Small,Greece,28316,Transportation,"$282,310.52 "
+ETTX,Entasis Therapeutics Holdings Inc. Common Stock,$2.16 ,0.02,0.94%,Small,United States,130060,Health Care,"$280,929.60 "
+ATHE,Alterity Therapeutics Limited American Depositary Shares,$1.50 ,0.06,4.17%,Small,Australia,186794,Health Care,"$280,191.00 "
+KOR,Corvus Gold Inc. Common Shares,$1.89 ,0.1,5.59%,Small,Canada,147441,Basic Industries,"$278,663.49 "
+ELMD,Electromed Inc. Common Stock,$10.99 ,0.45,4.27%,Small,United States,25310,Health Care,"$278,156.90 "
+GALT,Galectin Therapeutics Inc. Common Stock,$2.20 ,0.03,1.38%,Small,United States,126018,Health Care,"$277,239.60 "
+FNHC,FedNat Holding Company Common Stock,$4.67 ,0.04,0.86%,Small,United States,59105,Finance,"$276,020.35 "
+SHAC,SCP & CO Healthcare Acquisition Company Class A Common Stock,$9.70 ,0.0516,0.54%,Small,United States,28259,Finance,"$274,112.30 "
+JT,Jianpu Technology Inc. American depositary shares,$2.58 ,-0.02,-0.77%,Small,,105392,Technology,"$271,911.36 "
+LTRX,Lantronix Inc. Common Stock,$4.56 ,-0.01,-0.22%,Small,United States,59408,Technology,"$270,900.48 "
+ODC,Oil-Dri Corporation Of America Common Stock,$35.22 ,0.78,2.27%,Small,United States,7667,Consumer Durables,"$270,031.74 "
+RFIL,RF Industries Ltd. Common Stock,$6.24 ,0.18,2.97%,Small,United States,43221,Capital Goods,"$269,699.04 "
+EVBN,Evans Bancorp Inc. Common Stock,$34.14 ,0.25,0.74%,Small,United States,7887,Finance,"$269,262.18 "
+UNB,Union Bankshares Inc. Common Stock,$29.73 ,-0.27,-0.90%,Small,United States,9029,Finance,"$268,432.17 "
+MDWT,Midwest Holding Inc. Common Stock,$50.60 ,0.61,1.22%,Small,United States,5284,Finance,"$267,370.40 "
+NINE,Nine Energy Service Inc. Common Stock,$2.25 ,-0.05,-2.17%,Small,United States,118194,Energy,"$265,936.50 "
+ATLO,Ames National Corporation Common Stock,$26.02 ,0.44,1.72%,Small,United States,10202,Finance,"$265,456.04 "
+KUKE,Kuke Music Holding Limited American Depositary Shares each representing one Ordinary Share,$7.03 ,0.18,2.63%,Small,,37567,Consumer Services,"$264,096.01 "
+EDTXU,EdtechX Holdings Acquisition Corp. II Unit,$10.10 ,0.1,1.00%,Small,United Kingdom,26088,Finance,"$263,488.80 "
+ASRV,AmeriServ Financial Inc. Common Stock,$4.01 ,-0.05,-1.23%,Small,United States,64984,Finance,"$260,585.84 "
+CHAQ,Chardan Healthcare Acquisition 2 Corp. Common Stock,$10.17 ,0.12,1.19%,Small,,25493,Finance,"$259,263.81 "
+BVXV,BiondVax Pharmaceuticals Ltd. American Depositary Shares,$3.91 ,0.11,2.90%,Small,Israel,66286,Health Care,"$259,178.26 "
+BCDA,BioCardia Inc. Common Stock,$4.42 ,0.08,1.84%,Small,United States,57522,Health Care,"$254,247.24 "
+KTRA,Kintara Therapeutics Inc. Common Stock,$1.84 ,0.1,5.75%,Small,United States,137401,Health Care,"$252,817.84 "
+MOGU,MOGU Inc. American Depositary Shares (each  representing 25 Class A Ordinary Shares),$2.00 ,0.06,3.09%,Small,,126308,Miscellaneous,"$252,616.00 "
+BLPH,Bellerophon Therapeutics Inc. Common Stock,$5.65 ,0.46,8.86%,Small,United States,44331,Health Care,"$250,470.15 "
