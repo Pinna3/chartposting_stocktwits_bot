@@ -34,10 +34,16 @@ class SecurityTradeData:
         del df['t']
         time.sleep(.3)
 
-        #finnhub backup for split gaps
+        #finnhub backup for split gaps (set for unlimited pings right now... counter is prob more practical)
         if smoothness_test == False:
             finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
-            data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
+            data = None
+            while data is None:
+                try:
+                    data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
+                except:
+                    time.sleep(1)
+                    continue
             del data['s']
             del data['t']
             df = pd.DataFrame(data)

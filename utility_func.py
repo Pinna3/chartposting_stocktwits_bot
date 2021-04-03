@@ -288,27 +288,42 @@ def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
                 writer.writerow(row)
 
 def tag_imported_stock_csv_file_with_peers(csv_in, csv_out):
+    finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
+
     with open(csv_in) as infile:
         reader = csv.reader(infile)
         next(reader)
 
         processed_data = []
         for row in reader:
-            stock = row[0]
-            smoothness_test = True
-            data = return_candles_json(stock, period='day', num_bars=365)
-            for index, ohlc in enumerate(data[stock][:-1]):
-                if abs(float(ohlc['c']) - float(data[stock][index+1]['o'])) > (float(ohlc['c']) * .5):
-                    smoothness_test = False
-            row.append(smoothness_test)
+            peers = None
+            while peers is None:
+                try:
+                    peers = finnhub_client.company_peers(row[0])
+                    sleep(1.1)
+                except:
+                    continue
+            hashable_peers = []
+            for peer in peers:
+                hashable_peer = '$' + peer
+                hashable_peers.append(hashable_peer)
+            peer_group = hashable_peers[:3]
+            peer_group.append('$SPY')
+            #Solves ETF lack of peers issue for publishing purposes
+            if len(peer_group) <= 1:
+                peer_group.append('$DIA')
+                peer_group.append('$IWM')
+                peer_group.append('$QQQ')
+            row.append(' '.join(peer_group).strip())
             processed_data.append(row)
-            sleep(.3)
             print(row)
 
         with open(csv_out, 'w') as outfile:
             writer = csv.writer(outfile)
             for row in processed_data:
                 writer.writerow(row)
+
+tag_imported_stock_csv_file_with_peers('StockLists/Micro<$50M.csv', 'StockLists/Micro<$50MwPEERS.csv')
 
 def make_pulled_csv_list_consumable(csv_in):
     with open(csv_in) as infile:
