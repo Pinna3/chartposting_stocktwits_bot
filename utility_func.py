@@ -287,6 +287,29 @@ def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
             for row in processed_data:
                 writer.writerow(row)
 
+def tag_imported_stock_csv_file_with_peers(csv_in, csv_out):
+    with open(csv_in) as infile:
+        reader = csv.reader(infile)
+        next(reader)
+
+        processed_data = []
+        for row in reader:
+            stock = row[0]
+            smoothness_test = True
+            data = return_candles_json(stock, period='day', num_bars=365)
+            for index, ohlc in enumerate(data[stock][:-1]):
+                if abs(float(ohlc['c']) - float(data[stock][index+1]['o'])) > (float(ohlc['c']) * .5):
+                    smoothness_test = False
+            row.append(smoothness_test)
+            processed_data.append(row)
+            sleep(.3)
+            print(row)
+
+        with open(csv_out, 'w') as outfile:
+            writer = csv.writer(outfile)
+            for row in processed_data:
+                writer.writerow(row)
+
 def make_pulled_csv_list_consumable(csv_in):
     with open(csv_in) as infile:
         stocks = infile.readlines()

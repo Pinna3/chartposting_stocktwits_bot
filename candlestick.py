@@ -41,7 +41,7 @@ class SecurityTradeData:
             del data['s']
             del data['t']
             df = pd.DataFrame(data)
-            time.sleep(1)
+            time.sleep(.7)
 
         sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
         sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
@@ -174,6 +174,7 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
+#SecurityTradeData object when all attributes are provided as inputs
 class LiteSecurityTradeData(SecurityTradeData):
     def __init__(self, consumable_item):
         #basics
@@ -203,7 +204,7 @@ class LiteSecurityTradeData(SecurityTradeData):
         self.df = df
 
 
-# test = SecurityTradeData('AAL', 365)
+# test = SecurityTradeData('AAPL', 365)
 # # test.custom_bollingers(3, .9)
 # test.chart(120)
 # print(test.df)
