@@ -1,0 +1,9 @@
+[
+  {
+    "ticker": "SWT",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": 6,
+    "bb_std": 0.7
+  }
+]

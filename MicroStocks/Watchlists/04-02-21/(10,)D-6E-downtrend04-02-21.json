@@ -1,0 +1,9 @@
+[
+  {
+    "ticker": "TLGT",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 8,
+    "bb_std": 1.0
+  }
+]

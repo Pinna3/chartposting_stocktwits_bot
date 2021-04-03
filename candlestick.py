@@ -174,9 +174,38 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-# test = SecurityTradeData('MDLY', 365)
-# test.chart(365)
-# print(test.df)
+class LiteSecurityTradeData(SecurityTradeData):
+    def __init__(self, consumable_item):
+        #basics
+        self.ticker = consumable_item[0]
+
+        #industry and peers data added while scanning
+        self.sector = consumable_item[2]
+        self.peers = None
+        self.mktcap = consumable_item[1]
+        self.smoothness = consumable_item[3]
+        df = consumable_item[4]
+        sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
+        sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
+        sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
+        sma200 = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
+        df['sma9'] = sma9
+        df['sma20'] = sma20
+        df['sma50'] = sma50
+        df['sma200'] = sma200
+        #### standard  2 and 20 bollinger data
+        bollinger_reference_lower = df.l.rolling(window=20, min_periods=20).mean()
+        bollinger_reference_upper = df.h.rolling(window=20, min_periods=20).mean()
+        sigma_lower = df.l.rolling(window=20, min_periods=20).std()
+        sigma_upper = df.h.rolling(window=20, min_periods=20).std()
+        df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
+        df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
+        self.df = df
+
+
+test = SecurityTradeData('IMTE', 365)
+test.chart(365)
+print(test.df)
 
 
 

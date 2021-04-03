@@ -69,7 +69,6 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
                 print(std_and_counter[index])
             except:
                 continue
-
         print('')
         for counter in std_and_counter:
             if counter[1][0] <= entry_frequency and counter[1][0] == 12:
@@ -310,6 +309,21 @@ def make_pulled_csv_list_consumable(csv_in):
     for index, reference_symbol in enumerate(remainder_reference):
         df = pd.DataFrame(remainder_data[reference_symbol])
         del df['t']
+        sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
+        sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
+        sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
+        sma200 = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
+        df['sma9'] = sma9
+        df['sma20'] = sma20
+        df['sma50'] = sma50
+        df['sma200'] = sma200
+        #### standard  2 and 20 bollinger data
+        bollinger_reference_lower = df.l.rolling(window=20, min_periods=20).mean()
+        bollinger_reference_upper = df.h.rolling(window=20, min_periods=20).mean()
+        sigma_lower = df.l.rolling(window=20, min_periods=20).std()
+        sigma_upper = df.h.rolling(window=20, min_periods=20).std()
+        df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
+        df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
         remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], df])
     #iterable list with retrievable values
     total_batch_df_list = []
@@ -326,6 +340,21 @@ def make_pulled_csv_list_consumable(csv_in):
         for index, reference_symbol in enumerate(symbol_reference):
             df = pd.DataFrame(batch_data[reference_symbol])
             del df['t']
+            sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
+            sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
+            sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
+            sma200 = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
+            df['sma9'] = sma9
+            df['sma20'] = sma20
+            df['sma50'] = sma50
+            df['sma200'] = sma200
+            #### standard  2 and 20 bollinger data
+            bollinger_reference_lower = df.l.rolling(window=20, min_periods=20).mean()
+            bollinger_reference_upper = df.h.rolling(window=20, min_periods=20).mean()
+            sigma_lower = df.l.rolling(window=20, min_periods=20).std()
+            sigma_upper = df.h.rolling(window=20, min_periods=20).std()
+            df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
+            df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
             batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], df])
         for item in batch_df_list:
             if item not in total_batch_df_list:
@@ -336,8 +365,7 @@ def make_pulled_csv_list_consumable(csv_in):
 
         return total_batch_df_list
 
-print(make_pulled_csv_list_consumable('StockLists/VeryLarge>$10B.csv')[0])
-
+# print(len(make_pulled_csv_list_consumable('StockLists/VeryLarge>$10B.csv')[2][4]))
 
 
 
