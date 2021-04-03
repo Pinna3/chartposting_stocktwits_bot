@@ -307,7 +307,7 @@ def tag_imported_stock_csv_file_with_peers(csv_in, csv_out):
             for peer in peers:
                 hashable_peer = '$' + peer
                 hashable_peers.append(hashable_peer)
-            peer_group = hashable_peers[:3]
+            peer_group = hashable_peers[0:3]
             peer_group.append('$SPY')
             #Solves ETF lack of peers issue for publishing purposes
             if len(peer_group) <= 1:
@@ -323,7 +323,7 @@ def tag_imported_stock_csv_file_with_peers(csv_in, csv_out):
             for row in processed_data:
                 writer.writerow(row)
 
-tag_imported_stock_csv_file_with_peers('StockLists/Micro<$50M.csv', 'StockLists/Micro<$50MwPEERS.csv')
+# tag_imported_stock_csv_file_with_peers('StockLists/VeryLarge>$10B.csv', 'StockLists/VeryLarge>$10BwPEERS.csv')
 
 def make_pulled_csv_list_consumable(csv_in):
     with open(csv_in) as infile:
@@ -332,6 +332,7 @@ def make_pulled_csv_list_consumable(csv_in):
     mkt_caps = [stock.split(',')[5].strip() for stock in stocks[1:]]
     sectors = [stock.split(',')[8].strip() for stock in stocks[1:]]
     smoothness_tests = [stock.split(',')[10].strip() for stock in stocks[1:]]
+    peers = [stock.split(',')[11].strip() for stock in stocks[1:]]
     #15 allows us to handle up to 3000 stocks without complications
     batch = len(symbols) // 15
     remainder = len(symbols) % 15
@@ -340,6 +341,7 @@ def make_pulled_csv_list_consumable(csv_in):
     remainder_mkt_cap = mkt_caps[-remainder:]
     remainder_sector = sectors[-remainder:]
     remainder_smoothness_test = smoothness_tests[-remainder:]
+    remainder_peers = peers[-remainder:]
     remainder_batch = ','.join(remainder_reference)
     remainder_data = return_candles_json(remainder_batch, period='day', num_bars=365)
     #iterable list with retrievable values
@@ -362,7 +364,8 @@ def make_pulled_csv_list_consumable(csv_in):
         sigma_upper = df.h.rolling(window=20, min_periods=20).std()
         df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
         df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
-        remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], df])
+        remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], remainder_peers[index], df])
+    # print(remainder_df_list[1][4])
     #iterable list with retrievable values
     total_batch_df_list = []
     # # for batch_num in range(1, 16):
@@ -371,6 +374,7 @@ def make_pulled_csv_list_consumable(csv_in):
         batch_mkt_cap = mkt_caps[(batch_num - 1)*batch: batch_num*batch]
         batch_sector = sectors[(batch_num - 1)*batch: batch_num*batch]
         batch_smoothness_test = smoothness_tests[(batch_num - 1)*batch: batch_num*batch]
+        batch_peers = peers[(batch_num - 1)*batch: batch_num*batch]
         symbol_batch = ','.join(symbol_reference)
         batch_data = return_candles_json(symbol_batch, period='day', num_bars=365)
         #iterable list with retrievable values
@@ -393,25 +397,22 @@ def make_pulled_csv_list_consumable(csv_in):
             sigma_upper = df.h.rolling(window=20, min_periods=20).std()
             df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
             df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
-            batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], df])
+            batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], batch_peers[index], df])
         for item in batch_df_list:
             if item not in total_batch_df_list:
                 total_batch_df_list.append(item)
         for item in remainder_df_list:
             if item not in total_batch_df_list:
                 total_batch_df_list.append(item)
-
-        return total_batch_df_list
-
-# print(len(make_pulled_csv_list_consumable('StockLists/VeryLarge>$10B.csv')[2][4]))
+    return total_batch_df_list
 
 
 
 
 
 
-# graph_degrees_of_trend('Micro', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
-# graph_degrees_of_trend('Small', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+# graph_degrees_of_trend('Micro', 'up', '04-03-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+# graph_degrees_of_trend('Micro', 'down', '04-03-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
 # graph_degrees_of_trend('Medium', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
 # graph_degrees_of_trend('Large', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
 # graph_degrees_of_trend('VeryLarge', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)

@@ -32,28 +32,8 @@ class Securities:
         trending = []
         for index, candle_object in enumerate(self.candles):
             if len(candle_object.df) > time_markers[-1]:
-                if candle_object.smoothness == 'TRUE':
-                    pass_or_fail = []
-                    #every 10 multiple = 2 trading weeks
-                    for timebar in time_markers:
-                        c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-timebar]
-                        if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
-                            pass_or_fail.append(True)
-                        else:
-                            pass_or_fail.append(False)
-
-                    if False not in pass_or_fail:
-                        bb_window, bb_std = bb_param_optomizer(candle_object, op_str, entry_frequency)
-                        trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
-                                        'mktcap': candle_object.mktcap, 'bb_window': bb_window,
-                                        'bb_std': bb_std})#, 'peers': object.peers})
-                        print(f'{candle_object.ticker}:{len(trending)}')
-                    else:
-                        print(index)
-                else:
-                    #finnhub backupsource
-                    try:
-                        backup_candle_object = SecurityTradeData(candle_object.ticker)
+                try:
+                    if candle_object.smoothness == 'TRUE':
                         pass_or_fail = []
                         #every 10 multiple = 2 trading weeks
                         for timebar in time_markers:
@@ -64,15 +44,58 @@ class Securities:
                                 pass_or_fail.append(False)
 
                         if False not in pass_or_fail:
+                            c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-timebar]
+                            clast, hlast, llast, olast, vlast, sma9last, sma20last, sma50last, sma200last, lowerlast, upperlast = candle_object.df.iloc[-1]
+                            if op_str == '>':
+                                ror = round((((clast - o) / o) * 100), 2)
+                            elif op_str == '<':
+                                ror = round(-(((clast - o) / o) * 100), 2)
                             bb_window, bb_std = bb_param_optomizer(candle_object, op_str, entry_frequency)
                             trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
                                             'mktcap': candle_object.mktcap, 'bb_window': bb_window,
-                                            'bb_std': bb_std})#, 'peers': object.peers})
+                                            'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror})
                             print(f'{candle_object.ticker}:{len(trending)}')
                         else:
                             print(index)
-                    except:
-                        continue
+                    else:
+                        # try:
+                        #finnhub backupsource (set too unlimited attempts)
+                        backup_candle_object = None
+                        while backup_candle_object is None:
+                            try:
+                                backup_candle_object = SecurityTradeData(candle_object.ticker)
+                            except:
+                                continue
+                        pass_or_fail = []
+                        #every 10 multiple = 2 trading weeks
+                        for timebar in time_markers:
+                            c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = backup_candle_object.df.iloc[-timebar]
+                            if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
+                                pass_or_fail.append(True)
+                            else:
+                                pass_or_fail.append(False)
+
+                        if False not in pass_or_fail:
+                            c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-timebar]
+                            clast, hlast, llast, olast, vlast, sma9last, sma20last, sma50last, sma200last, lowerlast, upperlast = candle_object.df.iloc[-1]
+                            if op_str == '>':
+                                ror = (((clast - o) / o) * 100)
+                            elif op_str == '<':
+                                ror = -(((clast - o) / o) * 100)
+                            bb_window, bb_std = bb_param_optomizer(backup_candle_object, op_str, entry_frequency)
+                            trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
+                                            'mktcap': candle_object.mktcap, 'bb_window': bb_window,
+                                            'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror})
+                            print(f'{candle_object.ticker}:{len(trending)} -FINNHUB BACKUP')
+                        else:
+                            print(f'{index} -FINNHUB BACKUP')
+
+                except IndexError:
+                    print(f'INDEX ERROR {candle_object.ticker} INDEX ERROR {candle_object.ticker} INDEX ERROR {candle_object.ticker}')
+                    # except:
+                    #     continue
+
+        trending_sorted_by_ror = sorted(trending, key=operator.itemgetter('ror'), reverse=True)
 
         #save results to timestamped json file
         if op_str == '>':
@@ -83,7 +106,7 @@ class Securities:
         if not os.path.exists(f'{mktcap_group}Stocks/Watchlists/{today_date}'):
             os.mkdir(f'{mktcap_group}Stocks/Watchlists/{today_date}')
         with open(f'{mktcap_group}Stocks/Watchlists/{today_date}/{time_markers[-1:]}D-{entry_frequency}E-{trend}trend{today_date}.json', 'w') as outfile:
-            json.dump(trending, outfile, indent=2)
+            json.dump(trending_sorted_by_ror, outfile, indent=2)
 
 
 # list = Securities('StockLists/Micro<$50M.csv')
@@ -228,37 +251,37 @@ class Securities:
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='<', mktcap_group='Large', entry_frequency=6)
 list = Securities('StockLists/VeryLarge>$10B.csv')
 list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
-list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='<', mktcap_group='VeryLarge', entry_frequency=6)
 #

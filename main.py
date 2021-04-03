@@ -35,10 +35,10 @@ def dailyscanner(json_watchlist, op_str, publish=False):
     for index, security in enumerate(watchlist):
         try:
             try:
-                candle_object = SecurityTradeData(security['ticker'], 365)
+                candle_object = SecurityTradeData(security['ticker'])
             except ValueError:
                     try:
-                        candle_object = SecurityTradeData(security['ticker'], 265)
+                        candle_object = SecurityTradeData(security['ticker'], num_days=265)
                     except ValueError:
                         missed_candle_object_error.append(security['ticker'])
                         print(f'MISSED CANDLE OBJECT ERROR!!!!...{missed_candle_object_error}')

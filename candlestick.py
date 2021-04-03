@@ -11,7 +11,7 @@ from alpaca import return_candles_json
 #Database Object with candlestick data and moving average data (for now)
 class SecurityTradeData:
     # @memoize
-    def __init__(self, ticker, num_days):
+    def __init__(self, ticker, num_days=365):
         #basics
         self.ticker = ticker
         self.num_days = num_days
@@ -41,8 +41,8 @@ class SecurityTradeData:
             while data is None:
                 try:
                     data = finnhub_client.stock_candles(ticker, 'D', self.start_time, self.current_time)
+                    time.sleep(1.1)
                 except:
-                    time.sleep(1)
                     continue
             del data['s']
             del data['t']
@@ -188,10 +188,10 @@ class LiteSecurityTradeData(SecurityTradeData):
 
         #industry and peers data added while scanning
         self.sector = consumable_item[2]
-        self.peers = None
+        self.peers = consumable_item[4]
         self.mktcap = consumable_item[1]
         self.smoothness = consumable_item[3]
-        df = consumable_item[4]
+        df = consumable_item[5]
         sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
         sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
         sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
@@ -210,8 +210,8 @@ class LiteSecurityTradeData(SecurityTradeData):
         self.df = df
 
 
-# test = SecurityTradeData('AAPL', 365)
-# # test.custom_bollingers(3, .9)
+# test = SecurityTradeData('BAMI')
+# test.custom_bollingers(14, .9)
 # test.chart(120)
 # print(test.df)
 
@@ -233,10 +233,10 @@ class LiteSecurityTradeData(SecurityTradeData):
 # print(len(data['l']))
 # print(len(data['h']))
 # print(len(data['v']))
-# bars = SecurityTradeData('VNO', 365)
+# bars = SecurityTradeData('VNO')
 # # bars.custom_bollingers(3, .5)
 # bars.chart(120, destination='browser')
 
-# bars = SecurityTradeData('CARV', 120)
+# bars = SecurityTradeData('CARV', num_days=120)
 # bars.custom_bollingers(5, .9)
 # bars.chart(365)

@@ -26,3 +26,9 @@ Micro:
 Next step: ATR Trailing Stops, timed exits, bollinger exits.
 
 Also: Will need backup API for finnhub down periods... (need industry data)
+
+Top Insights to address:
+1) Allow Long/Short Allocation Ratio to fluctuate with the ratio of uptrending/downtrending
+2) Increase entry frequency proportional to rate of return... prioritize the strongest trends.
+  The current strategy will favor lower rate of return stocks since the higher ror stocks will hug the upper bound...
+  CRITICAL FLAW NEEDS ADDRESSING
