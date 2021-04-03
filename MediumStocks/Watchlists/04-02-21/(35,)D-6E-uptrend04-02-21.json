@@ -1,0 +1,23 @@
+[
+  {
+    "ticker": "FNKO",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "Medium",
+    "bb_window": 2,
+    "bb_std": 0.8
+  },
+  {
+    "ticker": "TMDX",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 5,
+    "bb_std": 0.8
+  },
+  {
+    "ticker": "DAC",
+    "sector": "Transportation",
+    "mktcap": "Medium",
+    "bb_window": 8,
+    "bb_std": 0.9
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "ticker": "FB",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 19,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "BAC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": 7,
+    "bb_std": 0.3
+  },
+  {
+    "ticker": "AMAT",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 19,
+    "bb_std": 0.8
+  },
+  {
+    "ticker": "INTC",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 8,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "LRCX",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 14,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "ASML",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 12,
+    "bb_std": 0.9
+  },
+  {
+    "ticker": "HD",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 10,
+    "bb_std": 0.8
+  },
+  {
+    "ticker": "UNH",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 14,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "CHTR",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 19,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "T",
+    "sector": "Public Utilities",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1
+  },
+  {
+    "ticker": "ZNH",
+    "sector": "Transportation",
+    "mktcap": "VeryLarge",
+    "bb_window": 7,
+    "bb_std": 0.8
+  }
+]

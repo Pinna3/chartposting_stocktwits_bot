@@ -7,13 +7,6 @@
     "bb_std": 0.8
   },
   {
-    "ticker": "IMTE",
-    "sector": "Consumer Non-Durables",
-    "mktcap": "Micro",
-    "bb_window": 4,
-    "bb_std": 1.0
-  },
-  {
     "ticker": "SWT",
     "sector": "Capital Goods",
     "mktcap": "Micro",

@@ -1,0 +1,44 @@
+[
+  {
+    "ticker": "FB",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 19,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "BAC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": 7,
+    "bb_std": 0.3
+  },
+  {
+    "ticker": "AMAT",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 19,
+    "bb_std": 0.8
+  },
+  {
+    "ticker": "INTC",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 8,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "UNH",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 14,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "ZNH",
+    "sector": "Transportation",
+    "mktcap": "VeryLarge",
+    "bb_window": 7,
+    "bb_std": 0.8
+  }
+]

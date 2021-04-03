@@ -1,0 +1,9 @@
+[
+  {
+    "ticker": "RKDA",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "Small",
+    "bb_window": 13,
+    "bb_std": 1.0
+  }
+]

@@ -203,9 +203,10 @@ class LiteSecurityTradeData(SecurityTradeData):
         self.df = df
 
 
-test = SecurityTradeData('IMTE', 365)
-test.chart(365)
-print(test.df)
+# test = SecurityTradeData('AAL', 365)
+# # test.custom_bollingers(3, .9)
+# test.chart(120)
+# print(test.df)
 
 
 

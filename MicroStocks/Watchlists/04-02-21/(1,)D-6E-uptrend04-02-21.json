@@ -7,31 +7,10 @@
     "bb_std": 0.8
   },
   {
-    "ticker": "WAFU",
-    "sector": "Consumer Services",
-    "mktcap": "Micro",
-    "bb_window": 15,
-    "bb_std": 0.9
-  },
-  {
-    "ticker": "IMTE",
-    "sector": "Consumer Non-Durables",
-    "mktcap": "Micro",
-    "bb_window": 4,
-    "bb_std": 1.0
-  },
-  {
     "ticker": "SWT",
     "sector": "Capital Goods",
     "mktcap": "Micro",
     "bb_window": 6,
-    "bb_std": 0.7
-  },
-  {
-    "ticker": "VTSI",
-    "sector": "Consumer Durables",
-    "mktcap": "Micro",
-    "bb_window": 15,
     "bb_std": 0.7
   }
 ]

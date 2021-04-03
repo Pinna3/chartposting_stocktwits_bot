@@ -116,7 +116,7 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
 def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/03-30-21/({period},)D-4E-{down_or_up_str}trend{date_str}.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-6E-{down_or_up_str}trend{date_str}.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             print(period, len(list))
@@ -372,7 +372,12 @@ def make_pulled_csv_list_consumable(csv_in):
 
 
 
-# graph_degrees_of_trend('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+# graph_degrees_of_trend('Micro', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+# graph_degrees_of_trend('Small', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+# graph_degrees_of_trend('Medium', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+# graph_degrees_of_trend('Large', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+# graph_degrees_of_trend('VeryLarge', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
+
 # calculate_and_file_dropoff_rates('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 # rank_dropoffs('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 # rank_dropoffs('Large', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)

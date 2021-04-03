@@ -1,0 +1,65 @@
+[
+  {
+    "ticker": "X",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 0.1
+  },
+  {
+    "ticker": "CLF",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "APPS",
+    "sector": "Miscellaneous",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 0.9
+  },
+  {
+    "ticker": "AYI",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 1.0
+  },
+  {
+    "ticker": "DKS",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 0.9
+  },
+  {
+    "ticker": "AA",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 0.1
+  },
+  {
+    "ticker": "PLAY",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 11,
+    "bb_std": 0.9
+  },
+  {
+    "ticker": "GGB",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 0.8
+  },
+  {
+    "ticker": "WF",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0
+  }
+]

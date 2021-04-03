@@ -1,0 +1,44 @@
+[
+  {
+    "ticker": "RMO",
+    "sector": "Capital Goods",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1
+  },
+  {
+    "ticker": "RIDE",
+    "sector": "Capital Goods",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1
+  },
+  {
+    "ticker": "INO",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 4,
+    "bb_std": 0.1
+  },
+  {
+    "ticker": "HYLN",
+    "sector": "Capital Goods",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.9
+  },
+  {
+    "ticker": "EGO",
+    "sector": "Basic Industries",
+    "mktcap": "Medium",
+    "bb_window": 4,
+    "bb_std": 0.2
+  },
+  {
+    "ticker": "BEDU",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 16,
+    "bb_std": 1.0
+  }
+]
