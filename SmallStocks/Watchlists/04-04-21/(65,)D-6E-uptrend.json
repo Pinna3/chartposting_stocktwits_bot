@@ -1,0 +1,74 @@
+[
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 152.63
+  },
+  {
+    "ticker": "STKS",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 113.71
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 95.9
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 70.58
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 69.32
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 59.38
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 26.82
+  },
+  {
+    "ticker": "MNSB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.7,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 22.18
+  }
+]

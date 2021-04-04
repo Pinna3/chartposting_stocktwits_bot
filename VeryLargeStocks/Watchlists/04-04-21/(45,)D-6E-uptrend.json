@@ -1,0 +1,38 @@
+[
+  {
+    "ticker": "TPL",
+    "sector": "Energy",
+    "mktcap": "VeryLarge",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 90.14
+  },
+  {
+    "ticker": "HPE",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 4,
+    "bb_std": 0.9,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 25.54
+  },
+  {
+    "ticker": "IRM",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 6,
+    "bb_std": 0.5,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": 11.34
+  },
+  {
+    "ticker": "WU",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": 12,
+    "bb_std": 1.0,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 7.89
+  }
+]

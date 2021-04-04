@@ -1,0 +1,38 @@
+[
+  {
+    "ticker": "SCVL",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 12,
+    "bb_std": 1.0,
+    "peers": "$TJX $ROST $BURL $SPY",
+    "ror": 51.09
+  },
+  {
+    "ticker": "GDYN",
+    "sector": "Technology",
+    "mktcap": "Medium",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": "$IBM $CTSH $EPAM $SPY",
+    "ror": 32.78
+  },
+  {
+    "ticker": "FST",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": 5,
+    "bb_std": 0.7,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 24.01
+  },
+  {
+    "ticker": "PLYM",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 9,
+    "bb_std": 0.7,
+    "peers": "$PLD $DRE $COLD $SPY",
+    "ror": 12.24
+  }
+]

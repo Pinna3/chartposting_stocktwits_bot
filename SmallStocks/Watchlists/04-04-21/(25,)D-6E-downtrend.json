@@ -1,0 +1,101 @@
+[
+  {
+    "ticker": "NUZE",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": "$MDLZ $KHC $GIS $SPY",
+    "ror": 46.24
+  },
+  {
+    "ticker": "GLTO",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.7,
+    "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
+    "ror": 39.6
+  },
+  {
+    "ticker": "IMRA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 32.78
+  },
+  {
+    "ticker": "PSTI",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
+    "ror": 24.45
+  },
+  {
+    "ticker": "CNCE",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 23.02
+  },
+  {
+    "ticker": "CHMA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 14,
+    "bb_std": 0.4,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 19.54
+  },
+  {
+    "ticker": "VYGR",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 15,
+    "bb_std": 1.0,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 15.9
+  },
+  {
+    "ticker": "CALA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 15.86
+  },
+  {
+    "ticker": "ASMB",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 12,
+    "bb_std": 0.7,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 12.54
+  },
+  {
+    "ticker": "ASPS",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 0.2,
+    "peers": "$ASPS $SPY",
+    "ror": 9.13
+  },
+  {
+    "ticker": "MBRX",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 0.9,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 6.67
+  }
+]

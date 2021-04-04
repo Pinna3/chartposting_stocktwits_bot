@@ -4,34 +4,36 @@ from glob import glob
 from datetime import date
 today_date = date.today().strftime('%m-%d-%y')
 
-
 #expand to all folders
 def set_long_short_capacities(watchlists_generation_date):
+    mkt_caps = ['MicroStocks', 'SmallStocks', 'MediumStocks', 'LargeStocks', 'VeryLargeStocks']
     long_total = 0
-    for file in glob(f'MicroStocks/Watchlists/{watchlists_generation_date}/*uptrend.json'):
-        with open(file) as infile:
-            content = json.load(infile)
-            long_total += len(content)
+    for group in mkt_caps:
+        for file in glob(f'{group}/Watchlists/{watchlists_generation_date}/*uptrend.json'):
+            with open(file) as infile:
+                content = json.load(infile)
+                long_total += len(content)
 
     short_total = 0
-    for file in glob(f'MicroStocks/Watchlists/{watchlists_generation_date}/*downtrend.json'):
-        with open(file) as infile:
-            content = json.load(infile)
-            short_total += len(content)
+    for group in mkt_caps:
+        for file in glob(f'{group}/Watchlists/{watchlists_generation_date}/*downtrend.json'):
+            with open(file) as infile:
+                content = json.load(infile)
+                short_total += len(content)
 
-    return long_total, short_total
-
-print(set_long_short_capacities(today_date))
-
-
+    long_max_exposure = round((long_total / (long_total + short_total) * 100))
+    short_max_exposure = round((short_total / (long_total + short_total) * 100))
+    return long_max_exposure, short_max_exposure
 
 #70% max long allocation in bull markets
-def long_capacity(portfolio_current, max_exposure=69):
-    return portfolio_current >= max_exposure
+def long_capacity(portfolio_current, watchlists_generation_date):
+    long_max_exposure, short_max_exposure = set_long_short_capacities(watchlists_generation_date)
+    return portfolio_current >= long_max_exposure
 
 #30% max short allocation in bull markets
-def short_capacity(portfolio_current, max_exposure=29):
-    return portfolio_current >= max_exposure
+def short_capacity(portfolio_current, watchlists_generation_date):
+    long_max_exposure, short_max_exposure = set_long_short_capacities(watchlists_generation_date)
+    return portfolio_current >= short_max_exposure
 
 #10% max allocation per industry, key error means no sector exposure yet
 def industry_capacity(portfolio_current, max_exposure=9):

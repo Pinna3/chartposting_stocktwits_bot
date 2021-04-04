@@ -1,0 +1,128 @@
+[
+  {
+    "ticker": "STKS",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 88.89
+  },
+  {
+    "ticker": "USAK",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 69.57
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 51.46
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 49.08
+  },
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 46.22
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 31.19
+  },
+  {
+    "ticker": "TZOO",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.6,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 30.91
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 30.75
+  },
+  {
+    "ticker": "ALOT",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 25.98
+  },
+  {
+    "ticker": "ACU",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 17,
+    "bb_std": 1.0,
+    "peers": "$MSA $MLHR $HNI $SPY",
+    "ror": 22.15
+  },
+  {
+    "ticker": "SACH",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.8,
+    "peers": "$NLY $AGNC $STWD $SPY",
+    "ror": 18.97
+  },
+  {
+    "ticker": "MNSB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.7,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 18.43
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 18.39
+  },
+  {
+    "ticker": "BRBS",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 14.4
+  }
+]

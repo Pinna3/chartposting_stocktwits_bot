@@ -1,0 +1,110 @@
+[
+  {
+    "ticker": "STKS",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 90.09
+  },
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 86.32
+  },
+  {
+    "ticker": "USAK",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 85.77
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 68.33
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 58.22
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 51.62
+  },
+  {
+    "ticker": "TZOO",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.6,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 43.18
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 42.66
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 23.18
+  },
+  {
+    "ticker": "ALOT",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 19.34
+  },
+  {
+    "ticker": "BRBS",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 18.28
+  },
+  {
+    "ticker": "MNSB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.7,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 16.26
+  }
+]

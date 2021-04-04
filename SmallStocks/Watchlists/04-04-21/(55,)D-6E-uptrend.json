@@ -1,0 +1,101 @@
+[
+  {
+    "ticker": "STKS",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 101.08
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 85.56
+  },
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 84.0
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 68.84
+  },
+  {
+    "ticker": "TZOO",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.6,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 66.28
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 57.55
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 44.42
+  },
+  {
+    "ticker": "ALOT",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 25.26
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 21.66
+  },
+  {
+    "ticker": "BRBS",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 15.79
+  },
+  {
+    "ticker": "MNSB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.7,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 14.91
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "ticker": "STKS",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 86.07
+  },
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 72.55
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 71.77
+  },
+  {
+    "ticker": "TZOO",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.6,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 65.96
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 63.06
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 55.59
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 37.71
+  },
+  {
+    "ticker": "ALOT",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 26.44
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 26.0
+  },
+  {
+    "ticker": "MNSB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.7,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 16.39
+  },
+  {
+    "ticker": "BRBS",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 11.11
+  }
+]

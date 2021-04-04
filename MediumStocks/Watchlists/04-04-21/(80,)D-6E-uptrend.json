@@ -1,0 +1,11 @@
+[
+  {
+    "ticker": "GDYN",
+    "sector": "Technology",
+    "mktcap": "Medium",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": "$IBM $CTSH $EPAM $SPY",
+    "ror": 45.59
+  }
+]

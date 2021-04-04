@@ -1,0 +1,92 @@
+[
+  {
+    "ticker": "BKI",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": -0.0
+  },
+  {
+    "ticker": "SNOW",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SNOW $TWLO $OKTA $SPY",
+    "ror": -0.12
+  },
+  {
+    "ticker": "LFC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": 8,
+    "bb_std": 0.1,
+    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
+    "ror": -0.29
+  },
+  {
+    "ticker": "SGEN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -0.82
+  },
+  {
+    "ticker": "BMRN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 4,
+    "bb_std": 0.7,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -1.11
+  },
+  {
+    "ticker": "TREX",
+    "sector": "Basic Industries",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$CARR $MAS $FBHS $SPY",
+    "ror": -1.24
+  },
+  {
+    "ticker": "BABA",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$3690.HK $9618.HK $BABA $SPY",
+    "ror": -1.58
+  },
+  {
+    "ticker": "SPLK",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": -1.76
+  },
+  {
+    "ticker": "SAP",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 4,
+    "bb_std": 0.7,
+    "peers": "$SAP.DE $TMV.DE $NEM.DE $SPY",
+    "ror": -2.05
+  },
+  {
+    "ticker": "GDRX",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$VEEV $TDOC $CERN $SPY",
+    "ror": -4.21
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "ticker": "TPL",
+    "sector": "Energy",
+    "mktcap": "VeryLarge",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 99.7
+  }
+]

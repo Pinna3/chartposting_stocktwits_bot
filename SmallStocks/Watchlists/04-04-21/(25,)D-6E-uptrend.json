@@ -1,0 +1,218 @@
+[
+  {
+    "ticker": "STKS",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 52.34
+  },
+  {
+    "ticker": "BKEP",
+    "sector": "Energy",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$EPD $KMI $WMB $SPY",
+    "ror": 47.56
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 42.94
+  },
+  {
+    "ticker": "USAK",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 39.63
+  },
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 36.6
+  },
+  {
+    "ticker": "WLFC",
+    "sector": "Consumer Durables",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": "$FAST $URI $GWW $SPY",
+    "ror": 32.83
+  },
+  {
+    "ticker": "BKSC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 29.9
+  },
+  {
+    "ticker": "TZOO",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.6,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 27.5
+  },
+  {
+    "ticker": "PRT",
+    "sector": "Energy",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 25.25
+  },
+  {
+    "ticker": "MHLD",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$RE $RNR $ESGR $SPY",
+    "ror": 22.43
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 20.03
+  },
+  {
+    "ticker": "ALOT",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 19.02
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 17.92
+  },
+  {
+    "ticker": "SACH",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 8,
+    "bb_std": 0.8,
+    "peers": "$NLY $AGNC $STWD $SPY",
+    "ror": 17.22
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 1.0,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 14.72
+  },
+  {
+    "ticker": "CTG",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$IBM $CTSH $EPAM $SPY",
+    "ror": 14.42
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 13.66
+  },
+  {
+    "ticker": "TCFC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 13.48
+  },
+  {
+    "ticker": "GRIN",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 12,
+    "bb_std": 0.9,
+    "peers": "$D8DU.SI $S56.SI $BTM.SI $SPY",
+    "ror": 12.58
+  },
+  {
+    "ticker": "MNSB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 7,
+    "bb_std": 0.7,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 11.08
+  },
+  {
+    "ticker": "JAX",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 10.42
+  },
+  {
+    "ticker": "BRBS",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 10.0
+  },
+  {
+    "ticker": "ACU",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 17,
+    "bb_std": 1.0,
+    "peers": "$MSA $MLHR $HNI $SPY",
+    "ror": 9.79
+  },
+  {
+    "ticker": "GTEC",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$1590.TW $300124.SZ $601100.SS $SPY",
+    "ror": -2.03
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "ticker": "QTNT",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 15,
+    "bb_std": 0.1,
+    "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
+    "ror": 29.98
+  },
+  {
+    "ticker": "EPZM",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 24.22
+  }
+]

@@ -71,9 +71,9 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            print(f"Long Capacity: {long_capacity(holdings['long']['acct_percentage'])}")
+                            print(f"Long Capacity: {long_capacity(holdings['long']['acct_percentage'], '04-04-21')}")
                             print(f"Daily Counter Capacity: {check_daily_counter_capacity('long', security['mktcap'])}")
-                            if long_capacity(holdings['long']['acct_percentage']) is False and \
+                            if long_capacity(holdings['long']['acct_percentage'], '04-04-21') is False and \
                                 check_daily_counter_capacity('long', security['mktcap']) is False:
                                 if security['industry'] in holdings['long']['industry'].keys():
                                     industry_capacity = industry_capacity(holdings['long']['industry'][security['industry']]['acct_percentage'])
@@ -126,9 +126,9 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            print(f"Short Capacity: {short_capacity(holdings['short']['acct_percentage'])}")
+                            print(f"Short Capacity: {short_capacity(holdings['short']['acct_percentage'], '04-04-21')}")
                             print(f"Daily Counter Capacity: {check_daily_counter_capacity('short', security['mktcap'])}")
-                            if short_capacity(holdings['short']['acct_percentage']) is False and \
+                            if short_capacity(holdings['short']['acct_percentage'], '04-04-21') is False and \
                                 check_daily_counter_capacity('short', security['mktcap']) is False:
                                 if security['industry'] in holdings['short']['industry'].keys():
                                     industry_capacity = industry_capacity(holdings['short']['industry'][security['industry']]['acct_percentage'])
