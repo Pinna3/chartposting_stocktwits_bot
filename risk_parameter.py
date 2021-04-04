@@ -41,46 +41,42 @@ def industry_capacity(portfolio_current, max_exposure=9):
 
 # Maximums: 8 x long(3 x verylarge, 2 x large, 1 x medium, 1 x small, 1 x micro),
 #          4 x short(2 x verylarge, 1 x large, 1 x medium)
-def check_daily_counter_capacity(side, mkt_cap,
-                        max_long=8, max_short=4,
-                        max_long_verylarge=3, max_long_large=2, max_long_medium=1, max_long_small=1, max_long_micro=1,
-                        max_short_verylarge=2, max_short_large=1, max_short_medium=1, max_short_small=0, max_short_micro=0):
+def check_daily_counter_capacity(side, mkt_cap, watchlists_generation_date, max_daily_trades=12,
+                        max_long_verylarge=.25, max_long_large=.25, max_long_medium=.25, max_long_small=.125, max_long_micro=.125,
+                        max_short_verylarge=.50, max_short_large=.25, max_short_medium=.25, max_short_small=0, max_short_micro=0):
+
+    long_max_exposure, short_max_exposure = set_long_short_capacities(watchlists_generation_date)
+    max_long = round((long_max_exposure / 100) * max_daily_trades)
+    max_short = round((short_max_exposure / 100)* max_daily_trades)
+
+    mktcap_groups  = ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']
+    mktcap_long_maxes = [max_long_verylarge, max_long_large, max_long_medium, max_long_small, max_long_micro]
+    mktcap_short_maxes = [max_short_verylarge, max_short_large, max_short_medium,  max_short_small, max_short_micro]
+    long_mkt_cap_or_short_mkt_cap = f'{side}_mkt_cap'
+
+    if side == 'long':
+        max = max_long
+        for mktcap, mktcap_max in zip(mktcap_groups, mktcap_long_maxes):
+            if mkt_cap == mktcap:
+                fraction = mktcap_max
+
+    elif side == 'short':
+        max = max_short
+        for mktcap, mktcap_max in zip(mktcap_groups, mktcap_short_maxes):
+            if mkt_cap == mktcap:
+                fraction = mktcap_max
+
+    def daily_counter_test(side, mktcap, max, fraction, long_mkt_cap_or_short_mkt_cap):
+        maximum_count = round(fraction * max)
+        if counter[side] < max and counter[long_mkt_cap_or_short_mkt_cap][mktcap] < maximum_count:
+            return False
+        else:
+            return True
+
     with open('DailyCounter.json') as infile:
         counter = json.load(infile)
         if counter['today_date'] == today_date:
-            if side == 'long' and mkt_cap == 'VeryLarge':
-                if counter['long'] < max_long and counter['long_mkt_cap']['VeryLarge'] < max_long_verylarge:
-                    return False
-            elif side == 'long' and mkt_cap == 'Large':
-                if counter['long'] < max_long and counter['long_mkt_cap']['Large'] < max_long_large:
-                    return False
-            elif side == 'long' and mkt_cap == 'Medium':
-                if counter['long'] < max_long and counter['long_mkt_cap']['Medium'] < max_long_medium:
-                    return False
-            elif side == 'long' and mkt_cap == 'Small':
-                if counter['long'] < max_long and counter['long_mkt_cap']['Small'] < max_long_small:
-                    return False
-            elif side == 'long' and mkt_cap == 'Micro':
-                if counter['long'] < max_long and counter['long_mkt_cap']['Micro'] < max_long_micro:
-                    return False
-
-            if side == 'short' and mkt_cap == 'Verylarge':
-                if counter['short'] < max_short and counter['short_mkt_cap']['VeryLarge'] < max_short_verylarge:
-                    return False
-            elif side == 'short' and mkt_cap == 'Large':
-                if counter['short'] < max_short and counter['short_mkt_cap']['Large'] < max_short_large:
-                    return False
-            elif side == 'short' and mkt_cap == 'Medium':
-                if counter['short'] < max_short and counter['short_mkt_cap']['Medium'] < max_short_medium:
-                    return False
-            elif side == 'short' and mkt_cap == 'Small':
-                if counter['short'] < max_short and counter['short_mkt_cap']['Small'] < max_short_small:
-                    return False
-            elif side == 'short' and mkt_cap == 'Micro':
-                if counter['short'] < max_short and counter['short_mkt_cap']['Micro'] < max_short_micro:
-                    return False
-            else:
-                return True
+            return daily_counter_test(side, mkt_cap, max, fraction, long_mkt_cap_or_short_mkt_cap)
         else:
             return False
 
@@ -113,3 +109,7 @@ def add_to_daily_counter(side, mkt_cap):
         counter[f'{side}_mkt_cap'][mkt_cap] += 1
     with open('DailyCounter.json', 'w') as outfile:
         json.dump(counter, outfile, indent=2)
+
+# if short_capacity(20, '04-04-21') is False and \
+#     check_daily_counter_capacity('short', 'VeryLarge', '04-04-21') is False:
+#     add_to_daily_counter('short', 'VeryLarge')
