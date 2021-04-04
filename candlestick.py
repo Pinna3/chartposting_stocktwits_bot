@@ -19,9 +19,10 @@ class SecurityTradeData:
         self.current_time = int(time.time())
 
         #industry and peers data added while scanning
-        self.industry = None
+        self.sector = None
         self.peers = None
         self.mktcap = None
+        self.smoothness = None
 
 
         #candlestick data (Alpaca API Primary, Finnhub backup)

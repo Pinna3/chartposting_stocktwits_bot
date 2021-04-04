@@ -1,0 +1,101 @@
+[
+  {
+    "ticker": "DUOT",
+    "sector": "Technology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.6,
+    "peers": "$MSFT $ORCL $NOW $SPY",
+    "ror": 47.18
+  },
+  {
+    "ticker": "HOVNP",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": 20,
+    "bb_std": 1.0,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 16.58
+  },
+  {
+    "ticker": "MTCN",
+    "sector": "Basic Industries",
+    "mktcap": "Micro",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 9.13
+  },
+  {
+    "ticker": "GFLU",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": 16,
+    "bb_std": 0.1,
+    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
+    "ror": 6.01
+  },
+  {
+    "ticker": "BPYPP",
+    "sector": "Finance",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": "$BPY $H78.SI $ROM.OL $SPY",
+    "ror": 3.27
+  },
+  {
+    "ticker": "SWT",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 2.08
+  },
+  {
+    "ticker": "AFINP",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 1.8
+  },
+  {
+    "ticker": "NYMTM",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 6,
+    "bb_std": 0.7,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 0.61
+  },
+  {
+    "ticker": "NYMTN",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.5,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 0.24
+  },
+  {
+    "ticker": "AGNCN",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 15,
+    "bb_std": 0.9,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": -0.66
+  },
+  {
+    "ticker": "DDT",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 11,
+    "bb_std": 0.9,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": -1.25
+  }
+]

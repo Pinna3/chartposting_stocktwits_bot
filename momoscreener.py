@@ -14,10 +14,26 @@ class Securities:
     def __init__(self, csv_source):
         securities = make_pulled_csv_list_consumable(csv_source)
         candles = []
-        for security in securities:
-            candle_object = LiteSecurityTradeData(security)
-            candles.append(candle_object)
+        backup_candles = []
+        for index, security in enumerate(securities):
+            if security[3] == 'TRUE':
+                candle_object = LiteSecurityTradeData(security)
+                print(f'{index}/{len(securities)} - {security[0]}')
+                candles.append(candle_object)
+            elif security[3] == 'FALSE':
+                backup_candle_object = None
+                while backup_candle_object is None:
+                    try:
+                        backup_candle_object = SecurityTradeData(security[0])
+                        backup_candle_object.sector = security[2]
+                        backup_candle_object.peers = security[4]
+                        backup_candle_object.mktcap = security[1]
+                        print(f'{index}/{len(securities)} - {security[0]} - FINNHUB BACKUP')
+                        backup_candles.append(backup_candle_object)
+                    except:
+                        continue
         self.candles = candles
+        self.backup_candles = backup_candles
 
     def __str__(self):
         return f'Securities(Length: {len(self.securities)})'
@@ -30,10 +46,10 @@ class Securities:
         op_func = ops[op_str]
         #loop through securities and filter for up/down trends
         trending = []
-        for index, candle_object in enumerate(self.candles):
-            if len(candle_object.df) > time_markers[-1]:
+        def main(candle_list):
+            for index, candle_object in enumerate(candle_list):
                 try:
-                    if candle_object.smoothness == 'TRUE':
+                    if len(candle_object.df) > time_markers[-1]:
                         pass_or_fail = []
                         #every 10 multiple = 2 trading weeks
                         for timebar in time_markers:
@@ -42,7 +58,6 @@ class Securities:
                                 pass_or_fail.append(True)
                             else:
                                 pass_or_fail.append(False)
-
                         if False not in pass_or_fail:
                             c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-timebar]
                             clast, hlast, llast, olast, vlast, sma9last, sma20last, sma50last, sma200last, lowerlast, upperlast = candle_object.df.iloc[-1]
@@ -53,80 +68,43 @@ class Securities:
                             bb_window, bb_std = bb_param_optomizer(candle_object, op_str, entry_frequency)
                             trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
                                             'mktcap': candle_object.mktcap, 'bb_window': bb_window,
-                                            'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror})
-                            print(f'{candle_object.ticker}:{len(trending)}')
-                        else:
-                            print(index)
-                    else:
-                        # try:
-                        #finnhub backupsource (set too unlimited attempts)
-                        backup_candle_object = None
-                        while backup_candle_object is None:
-                            try:
-                                backup_candle_object = SecurityTradeData(candle_object.ticker)
-                            except:
-                                continue
-                        pass_or_fail = []
-                        #every 10 multiple = 2 trading weeks
-                        for timebar in time_markers:
-                            c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = backup_candle_object.df.iloc[-timebar]
-                            if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200):
-                                pass_or_fail.append(True)
-                            else:
-                                pass_or_fail.append(False)
+                             'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror})
+                except:
+                    continue
 
-                        if False not in pass_or_fail:
-                            c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-timebar]
-                            clast, hlast, llast, olast, vlast, sma9last, sma20last, sma50last, sma200last, lowerlast, upperlast = candle_object.df.iloc[-1]
-                            if op_str == '>':
-                                ror = (((clast - o) / o) * 100)
-                            elif op_str == '<':
-                                ror = -(((clast - o) / o) * 100)
-                            bb_window, bb_std = bb_param_optomizer(backup_candle_object, op_str, entry_frequency)
-                            trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
-                                            'mktcap': candle_object.mktcap, 'bb_window': bb_window,
-                                            'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror})
-                            print(f'{candle_object.ticker}:{len(trending)} -FINNHUB BACKUP')
-                        else:
-                            print(f'{index} -FINNHUB BACKUP')
-
-                except IndexError:
-                    print(f'INDEX ERROR {candle_object.ticker} INDEX ERROR {candle_object.ticker} INDEX ERROR {candle_object.ticker}')
-                    # except:
-                    #     continue
+        main(self.candles)
+        main(self.backup_candles)
 
         trending_sorted_by_ror = sorted(trending, key=operator.itemgetter('ror'), reverse=True)
-
         #save results to timestamped json file
         if op_str == '>':
             trend = 'up'
         if op_str == '<':
             trend = 'down'
-
         if not os.path.exists(f'{mktcap_group}Stocks/Watchlists/{today_date}'):
             os.mkdir(f'{mktcap_group}Stocks/Watchlists/{today_date}')
-        with open(f'{mktcap_group}Stocks/Watchlists/{today_date}/{time_markers[-1:]}D-{entry_frequency}E-{trend}trend{today_date}.json', 'w') as outfile:
+        with open(f'{mktcap_group}Stocks/Watchlists/{today_date}/{time_markers[-1:]}D-{entry_frequency}E-{trend}trend.json', 'w') as outfile:
             json.dump(trending_sorted_by_ror, outfile, indent=2)
 
 
-# list = Securities('StockLists/Micro<$50M.csv')
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='>', mktcap_group='Micro', entry_frequency=6)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list = Securities('StockLists/Micro<$50M.csv')
+list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='>', mktcap_group='Micro', entry_frequency=6)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='>', mktcap_group='Micro', entry_frequency=6)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='<', mktcap_group='Micro', entry_frequency=6)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='<', mktcap_group='Micro', entry_frequency=6)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='<', mktcap_group='Micro', entry_frequency=6)
@@ -249,8 +227,8 @@ class Securities:
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='<', mktcap_group='Large', entry_frequency=6)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='<', mktcap_group='Large', entry_frequency=6)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='<', mktcap_group='Large', entry_frequency=6)
-list = Securities('StockLists/VeryLarge>$10B.csv')
-list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
+# list = Securities('StockLists/VeryLarge>$10B.csv')
+# list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='>', mktcap_group='VeryLarge', entry_frequency=6)
