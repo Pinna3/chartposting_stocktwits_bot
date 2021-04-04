@@ -32,3 +32,5 @@ Top Insights to address:
 2) Increase entry frequency proportional to rate of return... prioritize the strongest trends.
   The current strategy will favor lower rate of return stocks since the higher ror stocks will hug the upper bound...
   CRITICAL FLAW NEEDS ADDRESSING
+
+Finish ratio setting tmw
