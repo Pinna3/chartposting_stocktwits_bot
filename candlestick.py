@@ -11,7 +11,7 @@ from alpaca import return_candles_json
 #Database Object with candlestick data and moving average data (for now)
 class SecurityTradeData:
     # @memoize
-    def __init__(self, ticker, num_days=365):
+    def __init__(self, ticker, num_days=365, atr_rolling_window=14):
         #basics
         self.ticker = ticker
         self.num_days = num_days
@@ -61,6 +61,10 @@ class SecurityTradeData:
         sigma_upper = df.h.rolling(window=20, min_periods=20).std()
         df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
         df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
+        #### average true range pandas_atr_calculation
+        df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
+        df['top_atr'] = df['h'].shift() + (.75 * df['atr'])
+        df['bottom_atr'] = df['l'].shift(periods=2) - (.75 * df['atr'])
         self.df = df
 
     def __str__(self):
@@ -105,8 +109,14 @@ class SecurityTradeData:
         trace_upper = {'x': self.df.index, 'y': self.df['upper'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'red'}, 'name': 'UpperBB'}
 
+        ###ATR
+        trace_atr_lower = {'x': self.df.index, 'y': self.df['bottom_atr'][-days:], 'type': 'scatter', 'mode': 'lines',
+            'line': {'width': 1, 'color': 'blue'}, 'name': 'B-ATR'}
+        trace_atr_upper = {'x': self.df.index, 'y': self.df['top_atr'][-days:], 'type': 'scatter', 'mode': 'lines',
+            'line': {'width': 1, 'color': 'blue'}, 'name': 'T-ATR'}
+
         #plot data
-        data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper]
+        data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper, trace_atr_lower, trace_atr_upper]
 
         #chart aesthetic
         layout = go.Layout(#'title': {'text': f'{self.ticker} {days}D Daily Chart', 'yanchor': 1.0},
@@ -179,7 +189,7 @@ class SecurityTradeData:
 
 #SecurityTradeData object when all attributes are provided as inputs
 class LiteSecurityTradeData(SecurityTradeData):
-    def __init__(self, consumable_item):
+    def __init__(self, consumable_item, atr_rolling_window=14):
         #basics
         self.ticker = consumable_item[0]
 
@@ -200,10 +210,28 @@ class LiteSecurityTradeData(SecurityTradeData):
         sigma_upper = df.h.rolling(window=20, min_periods=20).std()
         df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
         df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
+        #ATR w/ Wilders EMA
+        df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
         self.df = df
 
+def pandas_atr_calculation(df, window=14):
+    def wilder_ema(results, window):
+        return results.ewm(alpha=1/window, adjust=False).mean()
 
-test = SecurityTradeData('BAMI')
+    df = df.copy()
+    high = df.h
+    low = df.l
+    close = df.c
+    df['tr0'] = abs(high - low)
+    df['tr1'] = abs(high - close.shift())
+    df['tr2'] = abs(low - close.shift())
+    true_range = df[['tr0', 'tr1', 'tr2']].max(axis=1)
+    return wilder_ema(true_range, window)
+
+
+
+
+test = SecurityTradeData('AAPL', atr_rolling_window=5)
 test.custom_bollingers(14, .9)
 test.chart(120)
 print(test.df)
