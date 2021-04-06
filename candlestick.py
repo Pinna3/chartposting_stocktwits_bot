@@ -144,6 +144,7 @@ class SecurityTradeData:
 
     #counts number of bollinger interceptions (i.e. entries for use in optimization)
     #use op_str '>' for uptrend and op_str '<' for downtrend
+    ###MAKE FASTER
     def entry_counter(self, op_str):
         dataframe = self.df
         entries = []
@@ -235,8 +236,8 @@ def pandas_atr_calculation(df, window=14):
 
 #
 # test = SecurityTradeData('DISCB', atr_rolling_window=5)
-# # test.custom_bollingers(14, .9)
-# # test.chart(120)
+# # # test.custom_bollingers(14, .9)
+# # # test.chart(120)
 # print(test.df)
 
 

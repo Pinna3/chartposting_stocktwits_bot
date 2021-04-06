@@ -1,20 +1,20 @@
-Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
-MARA,Marathon Digital Holdings Inc. Common Stock,$48.85 ,0.83,1.73%,Large,United States,20732054,Technology,"$1,012,760,837.90 "
-RIOT,Riot Blockchain Inc.  Common Stock ,$52.03 ,-1.24,-2.33%,Large,United States,14977996,Technology,"$779,305,131.88 "
-AMC,AMC Entertainment Holdings Inc. Class A Common Stock,$9.36 ,-0.85,-8.33%,Large,,77125372,Consumer Services,"$721,893,481.92 "
-X,United States Steel Corporation Common Stock,$25.00 ,-1.17,-4.47%,Large,United States,28542461,Basic Industries,"$713,561,525.00 "
-CLF,Cleveland-Cliffs Inc. Common Stock,$19.42 ,-0.69,-3.43%,Large,United States,33711856,Basic Industries,"$654,684,243.52 "
-MRO,Marathon Oil Corporation Common Stock,$11.79 ,1.11,10.39%,Large,United States,52708665,Energy,"$621,435,160.35 "
-GSX,GSX Techedu Inc. American Depositary Shares three of which representing two Class A Ordinary Shares,$32.18 ,-1.7,-5.02%,Large,,17034734,Consumer Services,"$548,177,740.12 "
-CHPT,ChargePoint Holdings Inc. Common Stock,$29.84 ,3.14,11.76%,Large,,17642395,Capital Goods,"$526,449,066.80 "
-FCEL,FuelCell Energy Inc. Common Stock,$14.35 ,-0.06,-0.42%,Large,United States,34187506,Energy,"$490,590,711.10 "
-CAN,Canaan Inc. American Depositary Shares,$22.00 ,1.33,6.43%,Large,China,20290175,Technology,"$446,383,850.00 "
-FUBO,fuboTV Inc. Common Stock,$22.44 ,0.32,1.45%,Large,,18575618,Consumer Services,"$416,836,867.92 "
-MVIS,MicroVision Inc. Common Stock,$15.54 ,-3.01,-16.23%,Large,United States,26044987,Capital Goods,"$404,739,097.98 "
-JMIA,Jumia Technologies AG American Depositary Shares each representing two Ordinary Shares,$38.01 ,2.55,7.19%,Large,,9837562,Consumer Services,"$373,925,731.62 "
-UTHR,United Therapeutics Corporation Common Stock,$192.34 ,25.07,14.99%,Large,United States,1699438,Health Care,"$326,869,904.92 "
-TIGR,UP Fintech Holding Ltd American Depositary Share representing fifteen Class A Ordinary Shares,$17.58 ,-0.21,-1.18%,Large,China,17845111,Finance,"$313,717,051.38 "
-LPRO,Open Lending Corporation Class A Common Stock,$41.28 ,5.86,16.54%,Large,United States,7596968,Finance,"$313,602,839.04 "
-CCIV,Churchill Capital Corp IV Class A Common Stock,$23.78 ,0.6,2.59%,Large,United States,12737912,Capital Goods,"$302,907,547.36 "
-TLRY,Tilray Inc. Class 2 Common Stock ,$22.34 ,-0.39,-1.72%,Large,Canada,12646667,Consumer Durables,"$282,526,540.78 "
-MSTR,MicroStrategy Incorporated Common Stock Class A,$703.56 ,24.76,3.65%,Large,United States,400935,Technology,"$282,081,828.60 "
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume,Smooth Test,Peers
+MARA,Marathon Digital Holdings Inc. Common Stock,48.85,0.83,0.02,Large,United States,20732054,Technology,1012760838,FALSE,$V $MA $PYPL $SPY
+RIOT,Riot Blockchain Inc.  Common Stock ,52.03,-1.24,-0.02,Large,United States,14977996,Technology,779305131.9,TRUE,$ADBE $CRM $INTU $SPY
+AMC,AMC Entertainment Holdings Inc. Class A Common Stock,9.36,-0.85,-0.08,Large,,77125372,Consumer Services,721893481.9,FALSE,$DIS $NFLX $ROKU $SPY
+X,United States Steel Corporation Common Stock,25,-1.17,-0.04,Large,United States,28542461,Basic Industries,713561525,TRUE,$NUE $STLD $RS $SPY
+CLF,Cleveland-Cliffs Inc. Common Stock,19.42,-0.69,-0.03,Large,United States,33711856,Basic Industries,654684243.5,TRUE,$NUE $STLD $RS $SPY
+MRO,Marathon Oil Corporation Common Stock,11.79,1.11,0.1,Large,United States,52708665,Energy,621435160.4,TRUE,$COP $EOG $PXD $SPY
+GSX,GSX Techedu Inc. American Depositary Shares three of which representing two Class A Ordinary Shares,32.18,-1.7,-0.05,Large,,17034734,Consumer Services,548177740.1,TRUE,$002607.SZ $667.HK $TAL $SPY
+CHPT,ChargePoint Holdings Inc. Common Stock,29.84,3.14,0.12,Large,,17642395,Capital Goods,526449066.8,TRUE,$EMR $3665.TW $ROK $SPY
+FCEL,FuelCell Energy Inc. Common Stock,14.35,-0.06,0,Large,United States,34187506,Energy,490590711.1,FALSE,$EMR $3665.TW $ROK $SPY
+CAN,Canaan Inc. American Depositary Shares,22,1.33,0.06,Large,China,20290175,Technology,446383850,TRUE,$1810.HK $688036.SS $992.HK $SPY
+FUBO,fuboTV Inc. Common Stock,22.44,0.32,0.01,Large,,18575618,Consumer Services,416836867.9,TRUE,$ADBE $CRM $INTU $SPY
+MVIS,MicroVision Inc. Common Stock,15.54,-3.01,-0.16,Large,United States,26044987,Capital Goods,404739098,FALSE,$KEYS $ZBRA $TRMB $SPY
+JMIA,Jumia Technologies AG American Depositary Shares each representing two Ordinary Shares,38.01,2.55,0.07,Large,,9837562,Consumer Services,373925731.6,TRUE,$DHER.DE $ZAL.DE $HFG.DE $SPY
+UTHR,United Therapeutics Corporation Common Stock,192.34,25.07,0.15,Large,United States,1699438,Health Care,326869904.9,TRUE,$950160.KQ $ABBV $AMGN $SPY
+TIGR,UP Fintech Holding Ltd American Depositary Share representing fifteen Class A Ordinary Shares,17.58,-0.21,-0.01,Large,China,17845111,Finance,313717051.4,TRUE,$600030.SS $601066.SS $601995.SS $SPY
+LPRO,Open Lending Corporation Class A Common Stock,41.28,5.86,0.17,Large,United States,7596968,Finance,313602839,TRUE,$SPGI $CME $ICE $SPY
+CCIV,Churchill Capital Corp IV Class A Common Stock,23.78,0.6,0.03,Large,United States,12737912,Capital Goods,302907547.4,TRUE,$SPY $DIA $IWM $QQQ
+TLRY,Tilray Inc. Class 2 Common Stock ,22.34,-0.39,-0.02,Large,Canada,12646667,Consumer Durables,282526540.8,FALSE,$WEED.TO $BHC.TO $CURA.CN $SPY
+MSTR,MicroStrategy Incorporated Common Stock Class A,703.56,24.76,0.04,Large,United States,400935,Technology,282081828.6,TRUE,$ADBE $CRM $INTU $SPY

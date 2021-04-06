@@ -1,20 +1,20 @@
-Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
-TSLA,Tesla Inc. Common Stock,$661.75 ,-6.18,-0.93%,VeryLarge,United States,35204933,Capital Goods,"$23,296,864,412.75 "
-AMZN,Amazon.com Inc. Common Stock,"$3,161.00 ",66.92,2.16%,VeryLarge,United States,2935172,Consumer Services,"$9,278,078,692.00 "
-AAPL,Apple Inc. Common Stock,$123.00 ,0.85,0.70%,VeryLarge,United States,74951179,Technology,"$9,218,995,017.00 "
-MSFT,Microsoft Corporation Common Stock,$242.35 ,6.58,2.79%,VeryLarge,United States,30311846,Technology,"$7,346,075,878.10 "
-BABA,Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share,$224.36 ,-2.37,-1.05%,VeryLarge,China,23482815,Miscellaneous,"$5,268,604,373.40 "
-FB,Facebook Inc. Class A Common Stock,$298.66 ,4.13,1.40%,VeryLarge,United States,17589580,Technology,"$5,253,303,962.80 "
-NIO,NIO Inc. American depositary shares each  representing one Class A ordinary share,$39.66 ,0.68,1.74%,VeryLarge,,116120201,Capital Goods,"$4,605,327,171.66 "
-NVDA,NVIDIA Corporation Common Stock,$552.47 ,18.54,3.47%,VeryLarge,United States,7693754,Technology,"$4,250,568,272.38 "
-GOOGL,Alphabet Inc. Class A Common Stock,"$2,129.78 ",67.26,3.26%,VeryLarge,United States,1993122,Technology,"$4,244,911,373.16 "
-MU,Micron Technology Inc. Common Stock,$92.41 ,4.2,4.76%,VeryLarge,United States,39631774,Technology,"$3,662,372,235.34 "
-GOOG,Alphabet Inc. Class C Capital Stock,"$2,137.75 ",69.12,3.34%,VeryLarge,United States,1698389,Technology,"$3,630,731,084.75 "
-BIDU,Baidu Inc. ADS,$219.70 ,2.15,0.99%,VeryLarge,China,14916434,Technology,"$3,277,140,549.80 "
-AMD,Advanced Micro Devices Inc. Common Stock,$81.09 ,2.59,3.30%,VeryLarge,United States,40141168,Technology,"$3,255,047,313.12 "
-BA,Boeing Company (The) Common Stock,$252.96 ,-1.76,-0.69%,VeryLarge,United States,10913924,Capital Goods,"$2,760,786,215.04 "
-VIAC,ViacomCBS Inc. Class B Common Stock,$44.64 ,-0.46,-1.02%,VeryLarge,United States,59438467,Consumer Services,"$2,653,333,166.88 "
-BAC,Bank of America Corporation Common Stock,$39.49 ,0.8,2.07%,VeryLarge,United States,65569928,Finance,"$2,589,356,456.72 "
-JPM,JP Morgan Chase & Co. Common Stock,$153.71 ,1.48,0.97%,VeryLarge,United States,16556048,Finance,"$2,544,830,138.08 "
-AMAT,Applied Materials Inc. Common Stock,$141.52 ,7.92,5.93%,VeryLarge,United States,15897244,Technology,"$2,249,777,970.88 "
-TSM,Taiwan Semiconductor Manufacturing Company Ltd.,$124.80 ,6.52,5.51%,VeryLarge,Taiwan,17850628,Technology,"$2,227,758,374.40 "
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume,Smooth Test,Peers
+TSLA,Tesla Inc. Common Stock,661.75,-6.18,-0.01,VeryLarge,United States,35204933,Capital Goods,23296864413,FALSE,$TSLA $GM $F $SPY
+AMZN,Amazon.com Inc. Common Stock,3161,66.92,0.02,VeryLarge,United States,2935172,Consumer Services,9278078692,TRUE,$AMZN $BKNG $DASH $SPY
+AAPL,Apple Inc. Common Stock,123,0.85,0.01,VeryLarge,United States,74951179,Technology,9218995017,FALSE,$AAPL $DELL $HPQ $SPY
+MSFT,Microsoft Corporation Common Stock,242.35,6.58,0.03,VeryLarge,United States,30311846,Technology,7346075878,TRUE,$MSFT $ORCL $NOW $SPY
+BABA,Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share,224.36,-2.37,-0.01,VeryLarge,China,23482815,Miscellaneous,5268604373,TRUE,$3690.HK $9618.HK $BABA $SPY
+FB,Facebook Inc. Class A Common Stock,298.66,4.13,0.01,VeryLarge,United States,17589580,Technology,5253303963,TRUE,$GOOGL $FB $SNAP $SPY
+NIO,NIO Inc. American depositary shares each  representing one Class A ordinary share,39.66,0.68,0.02,VeryLarge,,116120201,Capital Goods,4605327172,TRUE,$002594.SZ $601633.SS $600104.SS $SPY
+NVDA,NVIDIA Corporation Common Stock,552.47,18.54,0.03,VeryLarge,United States,7693754,Technology,4250568272,TRUE,$NVDA $INTC $AVGO $SPY
+GOOGL,Alphabet Inc. Class A Common Stock,2129.78,67.26,0.03,VeryLarge,United States,1993122,Technology,4244911373,TRUE,$GOOGL $FB $SNAP $SPY
+MU,Micron Technology Inc. Common Stock,92.41,4.2,0.05,VeryLarge,United States,39631774,Technology,3662372235,TRUE,$NVDA $INTC $AVGO $SPY
+GOOG,Alphabet Inc. Class C Capital Stock,2137.75,69.12,0.03,VeryLarge,United States,1698389,Technology,3630731085,TRUE,$GOOGL $FB $SNAP $SPY
+BIDU,Baidu Inc. ADS,219.7,2.15,0.01,VeryLarge,China,14916434,Technology,3277140550,TRUE,$700.HK $1024.HK $BIDU $SPY
+AMD,Advanced Micro Devices Inc. Common Stock,81.09,2.59,0.03,VeryLarge,United States,40141168,Technology,3255047313,TRUE,$NVDA $INTC $AVGO $SPY
+BA,Boeing Company (The) Common Stock,252.96,-1.76,-0.01,VeryLarge,United States,10913924,Capital Goods,2760786215,TRUE,$BA $RTX $LMT $SPY
+VIAC,ViacomCBS Inc. Class B Common Stock,44.64,-0.46,-0.01,VeryLarge,United States,59438467,Consumer Services,2653333167,TRUE,$VIAC $FOXA $DISCA $SPY
+BAC,Bank of America Corporation Common Stock,39.49,0.8,0.02,VeryLarge,United States,65569928,Finance,2589356457,TRUE,$JPM $BAC $WFC $SPY
+JPM,JP Morgan Chase & Co. Common Stock,153.71,1.48,0.01,VeryLarge,United States,16556048,Finance,2544830138,TRUE,$JPM $BAC $WFC $SPY
+AMAT,Applied Materials Inc. Common Stock,141.52,7.92,0.06,VeryLarge,United States,15897244,Technology,2249777971,TRUE,$AMAT $LRCX $KLAC $SPY
+TSM,Taiwan Semiconductor Manufacturing Company Ltd.,124.8,6.52,0.06,VeryLarge,Taiwan,17850628,Technology,2227758374,TRUE,$2330.TW $2454.TW $2303.TW $SPY

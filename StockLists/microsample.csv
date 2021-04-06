@@ -1,20 +1,20 @@
-Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
-ACY,AeroCentury Corp. Common Stock,$9.70 ,6.15,173.24%,Micro,United States,147576394,Technology,"$1,431,491,021.80 "
-SNOA,Sonoma Pharmaceuticals Inc. Common Stock,$8.80 ,1.37,18.44%,Micro,United States,15284234,Health Care,"$134,501,259.20 "
-VIACP,ViacomCBS Inc. 5.75% Series A Mandatory Convertible Preferred Stock,$67.10 ,-0.05,-0.07%,Micro,United States,938743,Consumer Services,"$62,989,655.30 "
-PFIN,P & F Industries Inc. Class A Common Stock,$7.66 ,1.0597,16.06%,Micro,United States,7126818,Technology,"$54,591,425.88 "
-CMIIU,CM Life Sciences II Inc. Unit,$14.12 ,1.32,10.31%,Micro,United States,3558618,Finance,"$50,247,686.16 "
-MDLY,Medley Management Inc. Class A Common Stock,$7.90 ,0.9,12.86%,Micro,United States,5469918,Finance,"$43,212,352.20 "
-AVGOP,Broadcom Inc. 8.00% Mandatory Convertible Preferred Stock Series A,"$1,502.53 ",28.04,1.90%,Micro,United States,26678,Technology,"$40,084,495.34 "
-ARVL,Arrival Ordinary Shares,$16.24 ,0.18,1.12%,Micro,Luxembourg,2368977,Finance,"$38,472,186.48 "
-GBR,New Concept Energy Inc Common Stock,$5.24 ,0.95,22.15%,Micro,United States,5784015,Energy,"$30,308,238.60 "
-EEIQ,Elite Education Group International Ltd. Common Stock,$11.91 ,-0.59,-4.72%,Micro,United States,2469970,Consumer Services,"$29,417,342.70 "
-TLGT,Teligent Inc. Common Stock,$0.70 ,0.0779,12.52%,Micro,United States,39450026,Health Care,"$27,615,018.20 "
-YVR,Liquid Media Group Ltd. Common Shares,$3.65 ,-0.54,-12.89%,Micro,Canada,7397553,Technology,"$27,001,068.45 "
-JAN,JanOne Inc. Common Stock (NV),$8.80 ,0.38,4.51%,Micro,United States,2944778,Consumer Services,"$25,914,046.40 "
-BNTC,Benitec Biopharma Inc. Common Stock,$5.81 ,0.64,12.38%,Micro,United States,4196670,Health Care,"$24,382,652.70 "
-WAFU,Wah Fu Education Group Limited Ordinary Shares,$10.32 ,-2.18,-17.44%,Micro,China,2315970,Consumer Services,"$23,900,810.40 "
-HPR,HighPoint Resources Corporation Common Stock,$4.73 ,-0.74,-13.53%,Micro,,4060201,Energy,"$19,204,750.73 "
-SJIV,South Jersey Industries Inc. Corporate Units,$50.40 ,0.71,1.43%,Micro,United States,285185,Public Utilities,"$14,373,324.00 "
-IMTE,Integrated Media Technology Limited Ordinary Shares,$5.91 ,0.3,5.35%,Micro,Australia,2323629,Consumer Non-Durables,"$13,732,647.39 "
-TWOA,two Class A Ordinary Shares,$9.95 ,0,0.00%,Micro,,1236907,Finance,"$12,307,224.65 "
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume,Smooth Test,Peers
+ACY,AeroCentury Corp. Common Stock,9.7,6.15,1.73,Micro,United States,147576394,Technology,1431491022,FALSE,$FAST $URI $GWW $SPY
+SNOA,Sonoma Pharmaceuticals Inc. Common Stock,8.8,1.37,0.18,Micro,United States,15284234,Health Care,134501259.2,FALSE,$JNJ $PFE $MRK $SPY
+VIACP,ViacomCBS Inc. 5.75% Series A Mandatory Convertible Preferred Stock,67.1,-0.05,0,Micro,United States,938743,Consumer Services,62989655.3,TRUE,$SPY $DIA $IWM $QQQ
+PFIN,P & F Industries Inc. Class A Common Stock,7.66,1.06,0.16,Micro,United States,7126818,Technology,54591425.88,TRUE,$ITW $PH $SWK $SPY
+CMIIU,CM Life Sciences II Inc. Unit,14.12,1.32,0.1,Micro,United States,3558618,Finance,50247686.16,TRUE,$SPY $DIA $IWM $QQQ
+MDLY,Medley Management Inc. Class A Common Stock,7.9,0.9,0.13,Micro,United States,5469918,Finance,43212352.2,FALSE,$BLK $BX $KKR $SPY
+AVGOP,Broadcom Inc. 8.00% Mandatory Convertible Preferred Stock Series A,1502.53,28.04,0.02,Micro,United States,26678,Technology,40084495.34,TRUE,$SPY $DIA $IWM $QQQ
+ARVL,Arrival Ordinary Shares,16.24,0.18,0.01,Micro,Luxembourg,2368977,Finance,38472186.48,TRUE,$SPY $DIA $IWM $QQQ
+GBR,New Concept Energy Inc Common Stock,5.24,0.95,0.22,Micro,United States,5784015,Energy,30308238.6,FALSE,$COP $EOG $PXD $SPY
+EEIQ,Elite Education Group International Ltd. Common Stock,11.91,-0.59,-0.05,Micro,United States,2469970,Consumer Services,29417342.7,FALSE,$SPY $DIA $IWM $QQQ
+TLGT,Teligent Inc. Common Stock,0.7,0.08,0.13,Micro,United States,39450026,Health Care,27615018.2,FALSE,$JNJ $PFE $MRK $SPY
+YVR,Liquid Media Group Ltd. Common Shares,3.65,-0.54,-0.13,Micro,Canada,7397553,Technology,27001068.45,TRUE,$SCR.TO $IMAX $CGX.TO $SPY
+JAN,JanOne Inc. Common Stock (NV),8.8,0.38,0.05,Micro,United States,2944778,Consumer Services,25914046.4,FALSE,$WM $RSG $ROL $SPY
+BNTC,Benitec Biopharma Inc. Common Stock,5.81,0.64,0.12,Micro,United States,4196670,Health Care,24382652.7,FALSE,$CSL.AX $MSB.AX $CUV.AX $SPY
+WAFU,Wah Fu Education Group Limited Ordinary Shares,10.32,-2.18,-0.17,Micro,China,2315970,Consumer Services,23900810.4,FALSE,$002607.SZ $667.HK $TAL $SPY
+HPR,HighPoint Resources Corporation Common Stock,4.73,-0.74,-0.14,Micro,,4060201,Energy,19204750.73,FALSE,$COP $EOG $PXD $SPY
+SJIV,South Jersey Industries Inc. Corporate Units,50.4,0.71,0.01,Micro,United States,285185,Public Utilities,14373324,TRUE,$SPY $DIA $IWM $QQQ
+IMTE,Integrated Media Technology Limited Ordinary Shares,5.91,0.3,0.05,Micro,Australia,2323629,Consumer Non-Durables,13732647.39,FALSE,$CDA.AX $NVX.AX $CAT.AX $SPY
+TWOA,two Class A Ordinary Shares,9.95,0,0,Micro,,1236907,Finance,12307224.65,TRUE,$SPY $DIA $IWM $QQQ

@@ -1,0 +1,11 @@
+[
+  {
+    "ticker": "BABA",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$3690.HK $9618.HK $BABA $SPY",
+    "ror": 4.97
+  }
+]

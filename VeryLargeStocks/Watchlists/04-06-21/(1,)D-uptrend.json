@@ -1,0 +1,47 @@
+[
+  {
+    "ticker": "AMAT",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 8,
+    "bb_std": 0.7,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 0.39
+  },
+  {
+    "ticker": "FB",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 0.27
+  },
+  {
+    "ticker": "BAC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.8,
+    "peers": "$JPM $BAC $WFC $SPY",
+    "ror": -0.03
+  },
+  {
+    "ticker": "GOOGL",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 9,
+    "bb_std": 1.0,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": -0.34
+  },
+  {
+    "ticker": "GOOG",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 9,
+    "bb_std": 0.9,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": -0.46
+  }
+]

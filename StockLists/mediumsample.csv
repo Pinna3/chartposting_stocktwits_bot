@@ -1,20 +1,20 @@
-Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
-UXIN,Uxin Limited ADS,$1.97 ,0.8,68.38%,Medium,China,346095932,Miscellaneous,"$681,808,986.04 "
-FTFT,Future FinTech Group Inc. Common Stock,$5.53 ,-0.675,-10.89%,Medium,China,114149342,Miscellaneous,"$630,675,114.55 "
-FNKO,Funko Inc. Class A Common Stock,$20.96 ,1.28,6.50%,Medium,United States,17599801,Consumer Non-Durables,"$368,891,828.96 "
-BLNK,Blink Charging Co. Common Stock,$41.25 ,0.15,0.37%,Medium,United States,7075882,Capital Goods,"$291,880,132.50 "
-SOS,SOS Limited American Depositary Shares,$4.82 ,-0.16,-3.21%,Medium,,47951190,Finance,"$231,124,735.80 "
-EBON,Ebang International Holdings Inc. Class A Ordinary Shares,$7.03 ,-0.92,-11.57%,Medium,China,27034205,Technology,"$190,050,461.15 "
-VUZI,Vuzix Corporation Common Stock,$24.85 ,-0.59,-2.32%,Medium,United States,6841789,Technology,"$170,018,456.65 "
-NCTY,The9 Limited American Depository Shares,$34.00 ,2.8,8.97%,Medium,China,4872981,Miscellaneous,"$165,681,354.00 "
-IDEX,Ideanomics Inc. Common Stock,$3.16 ,0.24,8.22%,Medium,United States,51692593,Capital Goods,"$163,348,593.88 "
-GEVO,Gevo Inc. Common Stock,$9.97 ,0.16,1.63%,Medium,United States,16158515,Basic Industries,"$161,100,394.55 "
-XL,XL Fleet Corp. Class A Common Stock,$7.89 ,-1.09,-12.14%,Medium,,20162347,Capital Goods,"$159,080,917.83 "
-WKHS,Workhorse Group Inc. Common Stock,$14.14 ,0.37,2.69%,Medium,United States,10364775,Capital Goods,"$146,557,918.50 "
-HOFV,Hall of Fame Resort & Entertainment Company Common Stock,$4.93 ,-0.09,-1.79%,Medium,United States,26084712,Consumer Services,"$128,597,630.16 "
-SNDL,Sundial Growers Inc. Common Shares,$1.10 ,-0.03,-2.66%,Medium,Canada,115852109,Consumer Durables,"$127,437,319.90 "
-LAC,Lithium Americas Corp. Common Shares,$15.87 ,-0.2,-1.25%,Medium,Canada,6835750,Basic Industries,"$108,483,352.50 "
-RMO,Romeo Power Inc. Class A Common Stock,$8.28 ,-0.05,-0.60%,Medium,,12524571,Capital Goods,"$103,703,447.88 "
-USCR,U.S. Concrete Inc. Common Stock,$66.27 ,-7.05,-9.62%,Medium,United States,1546095,Capital Goods,"$102,459,715.65 "
-CPE,Callon Petroleum Company Common Stock,$40.70 ,2.15,5.58%,Medium,United States,2368099,Energy,"$96,381,629.30 "
-RIDE,Lordstown Motors Corp. Class A Common Stock,$12.05 ,0.28,2.38%,Medium,United States,7994379,Capital Goods,"$96,332,266.95 "
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume,Smooth Test,Peers
+UXIN,Uxin Limited ADS,1.97,0.8,0.68,Medium,China,346095932,Miscellaneous,681808986,TRUE,$3690.HK $9618.HK $BABA $SPY
+FTFT,Future FinTech Group Inc. Common Stock,5.53,-0.68,-0.11,Medium,China,114149342,Miscellaneous,630675114.6,FALSE,$3690.HK $9618.HK $BABA $SPY
+FNKO,Funko Inc. Class A Common Stock,20.96,1.28,0.07,Medium,United States,17599801,Consumer Non-Durables,368891829,TRUE,$GPC $POOL $LKQ $SPY
+BLNK,Blink Charging Co. Common Stock,41.25,0.15,0,Medium,United States,7075882,Capital Goods,291880132.5,TRUE,$CVNA $ORLY $AZO $SPY
+SOS,SOS Limited American Depositary Shares,4.82,-0.16,-0.03,Medium,,47951190,Finance,231124735.8,FALSE,$SPY $DIA $IWM $QQQ
+EBON,Ebang International Holdings Inc. Class A Ordinary Shares,7.03,-0.92,-0.12,Medium,China,27034205,Technology,190050461.2,TRUE,$1810.HK $688036.SS $992.HK $SPY
+VUZI,Vuzix Corporation Common Stock,24.85,-0.59,-0.02,Medium,United States,6841789,Technology,170018456.7,TRUE,$SONO $GPRO $VUZI $SPY
+NCTY,The9 Limited American Depository Shares,34,2.8,0.09,Medium,China,4872981,Miscellaneous,165681354,FALSE,$NTES $002602.SZ $002555.SZ $SPY
+IDEX,Ideanomics Inc. Common Stock,3.16,0.24,0.08,Medium,United States,51692593,Capital Goods,163348593.9,FALSE,$ADBE $CRM $INTU $SPY
+GEVO,Gevo Inc. Common Stock,9.97,0.16,0.02,Medium,United States,16158515,Basic Industries,161100394.6,FALSE,$PSX $MPC $VLO $SPY
+XL,XL Fleet Corp. Class A Common Stock,7.89,-1.09,-0.12,Medium,,20162347,Capital Goods,159080917.8,FALSE,$1316.HK $QS $BWA $SPY
+WKHS,Workhorse Group Inc. Common Stock,14.14,0.37,0.03,Medium,United States,10364775,Capital Goods,146557918.5,TRUE,$TSLA $GM $F $SPY
+HOFV,Hall of Fame Resort & Entertainment Company Common Stock,4.93,-0.09,-0.02,Medium,United States,26084712,Consumer Services,128597630.2,FALSE,$MTN $PLNT $SIX $SPY
+SNDL,Sundial Growers Inc. Common Shares,1.1,-0.03,-0.03,Medium,Canada,115852109,Consumer Durables,127437319.9,FALSE,$WEED.TO $BHC.TO $CURA.CN $SPY
+LAC,Lithium Americas Corp. Common Shares,15.87,-0.2,-0.01,Medium,Canada,6835750,Basic Industries,108483352.5,TRUE,$TECK $IVN.TO $TRQ.TO $SPY
+RMO,Romeo Power Inc. Class A Common Stock,8.28,-0.05,-0.01,Medium,,12524571,Capital Goods,103703447.9,TRUE,$EMR $3665.TW $ROK $SPY
+USCR,U.S. Concrete Inc. Common Stock,66.27,-7.05,-0.1,Medium,United States,1546095,Capital Goods,102459715.7,TRUE,$VMC $MLM $EXP $SPY
+CPE,Callon Petroleum Company Common Stock,40.7,2.15,0.06,Medium,United States,2368099,Energy,96381629.3,FALSE,$COP $EOG $PXD $SPY
+RIDE,Lordstown Motors Corp. Class A Common Stock,12.05,0.28,0.02,Medium,United States,7994379,Capital Goods,96332266.95,TRUE,$TSLA $GM $F $SPY

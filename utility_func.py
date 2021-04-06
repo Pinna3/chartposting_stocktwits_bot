@@ -1,4 +1,4 @@
-from candlestick import SecurityTradeData
+from candlestick import SecurityTradeData, pandas_atr_calculation
 import plotly.graph_objs as go
 import json
 import csv
@@ -8,11 +8,12 @@ from alpaca import get_all_positions, get_account_value, return_candles_json
 import pandas as pd
 from glob import glob
 
+###Preset rolling window range (1 - 25), preset std range (.1 - 3.0)
 def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     candles = SecurityTradeDataObject
     def optimal_bb_window(op_str, entry_frequency):
         rolling_window_and_counter = []
-        for rolling_window in range(21):
+        for rolling_window in range(26):
             try:
                 candles.custom_bollingers(rolling_window, 1)
                 rolling_window_and_counter.append([rolling_window, \
@@ -20,50 +21,19 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
                 print(rolling_window_and_counter[rolling_window])
             except:
                 continue
+        entry_frequency_range = sorted([x for x in range(1,entry_frequency + 1)], reverse=True)
         for counter in rolling_window_and_counter:
-            if counter[1][0] <= entry_frequency and counter[1][0] == 12:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 11:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 10:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 9:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 8:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 7:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 6:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 5:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 4:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 3:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 2:
-                rolling_window = counter[0]
-                return rolling_window
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 1:
-                rolling_window = counter[0]
-                return rolling_window
+            for entries in entry_frequency_range:
+                if counter[1][0] <= entry_frequency and counter[1][0] == entries:
+                    rolling_window = counter[0]
+                    return rolling_window
         return None
 
     def optimal_bb_std(rolling_window, op_str, entry_frequency):
         std_and_counter = []
         for index, std in enumerate([.1, .2, .3, .4, .5, .6, .7, .8, .9,
                                      1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7,
-                                     1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5]):
+                                     1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0]):
             try:
                 candles.custom_bollingers(rolling_window, std)
                 std_and_counter.append([std, candles.entry_counter(op_str)])
@@ -71,45 +41,13 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
             except:
                 continue
         print('')
+        entry_frequency_range = sorted([x for x in range(1,entry_frequency + 1)], reverse=True)
         for counter in std_and_counter:
-            if counter[1][0] <= entry_frequency and counter[1][0] == 12:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 11:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 10:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 9:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 8:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 7:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 6:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 5:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 4:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 3:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 2:
-                std = counter[0]
-                return std
-            elif counter[1][0] <= entry_frequency and counter[1][0] == 1:
-                std = counter[0]
-                return std
+            for entries in entry_frequency_range:
+                if counter[1][0] <= entry_frequency and counter[1][0] == entries:
+                    std = counter[0]
+                    return std
         return None
-
     bb_window = optimal_bb_window(op_str, entry_frequency)
     bb_std = optimal_bb_std(bb_window, op_str, entry_frequency)
     return bb_window, bb_std
@@ -379,7 +317,7 @@ def tag_imported_stock_csv_file_with_peers(csv_in, csv_out):
 
 # tag_imported_stock_csv_file_with_peers('StockLists/VeryLarge>$10B.csv', 'StockLists/VeryLarge>$10BwPEERS.csv')
 
-def make_pulled_csv_list_consumable(csv_in):
+def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     with open(csv_in) as infile:
         stocks = infile.readlines()
     symbols = [stock.split(',')[0].strip() for stock in stocks[1:]]
@@ -418,6 +356,7 @@ def make_pulled_csv_list_consumable(csv_in):
         sigma_upper = df.h.rolling(window=20, min_periods=20).std()
         df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
         df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
+        df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
         remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], remainder_peers[index], df])
     # print(remainder_df_list[1][4])
     #iterable list with retrievable values
@@ -451,6 +390,7 @@ def make_pulled_csv_list_consumable(csv_in):
             sigma_upper = df.h.rolling(window=20, min_periods=20).std()
             df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
             df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
+            df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
             batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], batch_peers[index], df])
         for item in batch_df_list:
             if item not in total_batch_df_list:
@@ -460,6 +400,8 @@ def make_pulled_csv_list_consumable(csv_in):
                 total_batch_df_list.append(item)
     return total_batch_df_list
 
+# list = make_pulled_csv_list_consumable('StockLists/verylargesample.csv')
+# print(list)
 
 # #fixed filenames
 # def filter_watchlists_for_dailyscanner(date, max_per_category=3, drop_off_rate_cutoff=.25):

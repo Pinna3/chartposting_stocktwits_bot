@@ -1,20 +1,20 @@
-Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume
-UPC,Universe Pharmaceuticals Inc. Ordinary Shares,$5.25 ,1.24,30.92%,Small,China,75895807,Health Care,"$398,452,986.75 "
-SUNW,Sunworks Inc. Common Stock,$17.00 ,2.32,15.80%,Small,United States,10621799,Public Utilities,"$180,570,583.00 "
-KOSS,Koss Corporation Common Stock,$23.20 ,0.71,3.16%,Small,United States,4707225,Consumer Non-Durables,"$109,207,620.00 "
-WKEY,WISeKey International Holding AG American Depositary Shares,$13.49 ,-0.84,-5.86%,Small,Switzerland,6004623,Technology,"$81,002,364.27 "
-LGHL,Lion Group Holding Ltd. American Depositary Share,$3.66 ,-0.76,-17.20%,Small,China,16924883,Finance,"$61,945,071.78 "
-RAIL,FreightCar America Inc. Common Stock,$6.65 ,0.055,0.83%,Small,United States,9014049,Capital Goods,"$59,943,425.85 "
-DLPN,Dolphin Entertainment Inc. Common Stock,$13.40 ,0.69,5.43%,Small,United States,3866125,Consumer Services,"$51,806,075.00 "
-JAGX,Jaguar Health Inc. Common Stock,$1.98 ,0.18,10.00%,Small,United States,17274399,Health Care,"$34,203,310.02 "
-YGMZ,MingZhu Logistics Holdings Limited Ordinary Shares,$5.47 ,0.88,19.17%,Small,China,5547603,Consumer Services,"$30,345,388.41 "
-CTIC,CTI BioPharma Corp. (DE) Common Stock,$2.54 ,-0.37,-12.72%,Small,United States,10766100,Health Care,"$27,345,894.00 "
-CIDM,Cinedigm Corp. Class A Common Stock,$1.58 ,-0.09,-5.39%,Small,United States,17112825,Consumer Services,"$27,038,263.50 "
-MOXC,Moxian Inc. Common Stock,$5.39 ,0.86,18.99%,Small,China,4701176,Technology,"$25,339,338.64 "
-CSCW,Color Star Technology Co. Ltd. Ordinary Shares,$1.65 ,-0.13,-7.30%,Small,United States,14037223,Basic Industries,"$23,161,417.95 "
-SLGG,Super League Gaming Inc. Common Stock,$6.99 ,-0.05,-0.71%,Small,United States,3242821,Consumer Services,"$22,667,318.79 "
-AEI,Alset EHome International Inc. Common Stock,$11.43 ,-0.14,-1.21%,Small,United States,1962162,Finance,"$22,427,511.66 "
-SVRA,Savara Inc. Common Stock,$2.25 ,0.17,8.17%,Small,United States,9367206,Health Care,"$21,076,213.50 "
-KZR,Kezar Life Sciences Inc. Common Stock,$5.98 ,0.02,0.34%,Small,United States,3496552,Health Care,"$20,909,380.96 "
-GRNQ,Greenpro Capital Corp. Common Stock,$2.69 ,0.1,3.86%,Small,China,7765016,Technology,"$20,887,893.04 "
-IVAC,Intevac Inc. Common Stock,$8.14 ,0.99,13.85%,Small,United States,2357866,Technology,"$19,193,029.24 "
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,Volume,Sector,Price x Volume,Smooth Test,Peers
+UPC,Universe Pharmaceuticals Inc. Ordinary Shares,5.25,1.24,0.31,Small,China,75895807,Health Care,398452986.8,FALSE,$600276.SS $3692.HK $000661.SZ $SPY
+SUNW,Sunworks Inc. Common Stock,17,2.32,0.16,Small,United States,10621799,Public Utilities,180570583,FALSE,$EMR $3665.TW $ROK $SPY
+KOSS,Koss Corporation Common Stock,23.2,0.71,0.03,Small,United States,4707225,Consumer Non-Durables,109207620,FALSE,$SONO $GPRO $VUZI $SPY
+WKEY,WISeKey International Holding AG American Depositary Shares,13.49,-0.84,-0.06,Small,Switzerland,6004623,Technology,81002364.27,TRUE,$STM.PA $UBXN.SW $WIHN.SW $SPY
+LGHL,Lion Group Holding Ltd. American Depositary Share,3.66,-0.76,-0.17,Small,China,16924883,Finance,61945071.78,FALSE,$FUTU $665.HK $1788.HK $SPY
+RAIL,FreightCar America Inc. Common Stock,6.65,0.06,0.01,Small,United States,9014049,Capital Goods,59943425.85,TRUE,$CAT $CMI $PCAR $SPY
+DLPN,Dolphin Entertainment Inc. Common Stock,13.4,0.69,0.05,Small,United States,3866125,Consumer Services,51806075,FALSE,$DIS $NFLX $ROKU $SPY
+JAGX,Jaguar Health Inc. Common Stock,1.98,0.18,0.1,Small,United States,17274399,Health Care,34203310.02,FALSE,$JNJ $PFE $MRK $SPY
+YGMZ,MingZhu Logistics Holdings Limited Ordinary Shares,5.47,0.88,0.19,Small,China,5547603,Consumer Services,30345388.41,TRUE,$600662.SS $699.HK $600611.SS $SPY
+CTIC,CTI BioPharma Corp. (DE) Common Stock,2.54,-0.37,-0.13,Small,United States,10766100,Health Care,27345894,FALSE,$950160.KQ $ABBV $AMGN $SPY
+CIDM,Cinedigm Corp. Class A Common Stock,1.58,-0.09,-0.05,Small,United States,17112825,Consumer Services,27038263.5,FALSE,$DIS $NFLX $ROKU $SPY
+MOXC,Moxian Inc. Common Stock,5.39,0.86,0.19,Small,China,4701176,Technology,25339338.64,FALSE,$3690.HK $9618.HK $BABA $SPY
+CSCW,Color Star Technology Co. Ltd. Ordinary Shares,1.65,-0.13,-0.07,Small,United States,14037223,Basic Industries,23161417.95,FALSE,$688111.SS $600588.SS $002230.SZ $SPY
+SLGG,Super League Gaming Inc. Common Stock,6.99,-0.05,-0.01,Small,United States,3242821,Consumer Services,22667318.79,FALSE,$GOOGL $FB $SNAP $SPY
+AEI,Alset EHome International Inc. Common Stock,11.43,-0.14,-0.01,Small,United States,1962162,Finance,22427511.66,TRUE,$HHC $FOR $STRS $SPY
+SVRA,Savara Inc. Common Stock,2.25,0.17,0.08,Small,United States,9367206,Health Care,21076213.5,FALSE,$950160.KQ $ABBV $AMGN $SPY
+KZR,Kezar Life Sciences Inc. Common Stock,5.98,0.02,0,Small,United States,3496552,Health Care,20909380.96,FALSE,$950160.KQ $ABBV $AMGN $SPY
+GRNQ,Greenpro Capital Corp. Common Stock,2.69,0.1,0.04,Small,China,7765016,Technology,20887893.04,FALSE,$806.HK $329.HK $612.HK $SPY
+IVAC,Intevac Inc. Common Stock,8.14,0.99,0.14,Small,United States,2357866,Technology,19193029.24,TRUE,$AAPL $DELL $HPQ $SPY

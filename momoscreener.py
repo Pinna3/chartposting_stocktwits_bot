@@ -48,7 +48,7 @@ class Securities:
         trending = []
         def main(candle_list):
             for index, candle_object in enumerate(candle_list):
-                try:
+                # try:
                     if len(candle_object.df) > time_markers[-1]:
                         pass_or_fail = []
                         #every 10 multiple = 2 trading weeks
@@ -60,7 +60,7 @@ class Securities:
                                 pass_or_fail.append(False)
                         if False not in pass_or_fail:
                             c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper, atr = candle_object.df.iloc[-timebar]
-                            clast, hlast, llast, olast, vlast, sma9last, sma20last, sma50last, sma200last, lowerlast, upperlast = candle_object.df.iloc[-1]
+                            clast, hlast, llast, olast, vlast, sma9last, sma20last, sma50last, sma200last, lowerlast, upperlast, atrlast = candle_object.df.iloc[-1]
                             if op_str == '>':
                                 ror = round((((clast - o) / o) * 100), 2)
                             elif op_str == '<':
@@ -69,8 +69,8 @@ class Securities:
                             trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
                                             'mktcap': candle_object.mktcap, 'bb_window': bb_window,
                              'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror})
-                except:
-                    continue
+                # except:
+                #     continue
 
         main(self.candles)
         main(self.backup_candles)
