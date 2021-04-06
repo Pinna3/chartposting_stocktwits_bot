@@ -37,3 +37,5 @@ Top Insights to address:
 Finish ratio setting tmw
 
 ***Think about using shifting ATR values to optimize ATR stop multiples (For now, use trailing stops of 1ATR[placeholder])
+
+Figure out why scan is not working !!! WTF!!!
