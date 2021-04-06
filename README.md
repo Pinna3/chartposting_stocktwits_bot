@@ -25,7 +25,7 @@ Micro:
 
 Next step: ATR Trailing Stops, timed exits, bollinger exits.
 
-Also: Will need backup API for finnhub down periods... (need industry data)
+Also: Will need backup API for finnhub down periods... (need sector data)
 
 Top Insights to address:
 1) Allow Long/Short Allocation Ratio to fluctuate with the ratio of uptrending/downtrending
@@ -35,3 +35,5 @@ Top Insights to address:
 3) Show daily trade limit change according to market conditions as well? Why not? Think about it...
 
 Finish ratio setting tmw
+
+***Think about using shifting ATR values to optimize ATR stop multiples (For now, use trailing stops of 1ATR[placeholder])

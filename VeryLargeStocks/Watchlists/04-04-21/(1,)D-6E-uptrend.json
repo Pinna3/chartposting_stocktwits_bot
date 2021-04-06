@@ -1,13 +1,13 @@
 [
-  {
-    "ticker": "DISCB",
-    "sector": "Consumer Services",
-    "mktcap": "VeryLarge",
-    "bb_window": 6,
-    "bb_std": 1.0,
-    "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 10.65
-  },
+    {
+      "ticker": "DISCB",
+      "sector": "Consumer Services",
+      "mktcap": "VeryLarge",
+      "bb_window": 6,
+      "bb_std": 1.0,
+      "peers": "$VIAC $FOXA $DISCA $SPY",
+      "ror": 153.92
+    },
   {
     "ticker": "SAM",
     "sector": "Consumer Non-Durables",

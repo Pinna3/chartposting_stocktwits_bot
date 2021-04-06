@@ -5,13 +5,13 @@ from tweet import twitter_api
 import json
 import operator
 from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short
-from utility_func import initialize_holdings
+from utility_func import initialize_holdings, filter_watchlists_for_dailyscanner, pull_top_tier_unbroken_trenders
 from risk_parameter import*
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
 
-def dailyscanner(json_watchlist, op_str, publish=False):
+def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
     with open(json_watchlist) as infile:
         watchlist = json.load(infile)
 
@@ -33,7 +33,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
 
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
-        try:
+        # try:
             try:
                 candle_object = SecurityTradeData(security['ticker'])
             except ValueError:
@@ -44,7 +44,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                         print(f'MISSED CANDLE OBJECT ERROR!!!!...{missed_candle_object_error}')
                         continue
             candle_object.custom_bollingers(security['bb_window'], security['bb_std'])
-            c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper = candle_object.df.iloc[-1]
+            c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper, atr = candle_object.df.iloc[-1]
             if op_str == '>':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     opposite_op_func(c, lower):
@@ -66,21 +66,23 @@ def dailyscanner(json_watchlist, op_str, publish=False):
 
                         if publish:
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
-                            tweet = f'''${security['ticker']} Trade Alert\n\nType: Long, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
+                            tweet = f'''${security['ticker']} Trade Alert\n\nType: Long, Momentum\nSector: {security['sector']}\nPeers: {' '.join(security['peers'])}'''
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            print(f"Long Capacity: {long_capacity(holdings['long']['acct_percentage'], '04-04-21')}")
-                            print(f"Daily Counter Capacity: {check_daily_counter_capacity('long', security['mktcap'], '04-04-21')}")
-                            if long_capacity(holdings['long']['acct_percentage'], '04-04-21') is False and \
-                                check_daily_counter_capacity('long', security['mktcap'], '04-04-21') is False:
-                                if security['industry'] in holdings['long']['industry'].keys():
-                                    industry_capacity = industry_capacity(holdings['long']['industry'][security['industry']]['acct_percentage'])
+                            long_cap = long_capacity(holdings['long']['acct_percentage'], watchlists_generation_date=watchlist_date)
+                            print(f"Long Capacity: {long_cap}")
+                            daily_counter_cap = check_daily_counter_capacity('long', security['mktcap'], watchlists_generation_date=watchlist_date)
+                            print(f"Daily Counter Capacity: {daily_counter_cap}")
+                            if long_cap is False and \
+                                daily_counter_cap is False:
+                                if security['sector'] in holdings['long']['sector'].keys():
+                                    sector_capacity = sector_capacity(holdings['long']['sector'][security['sector']]['acct_percentage'])
                                 else:
-                                    industry_capacity = False
-                                print(f"Industry Capacity: {industry_capacity}")
-                                if industry_capacity is False:
+                                    sector_capacity = False
+                                print(f"Sector Capacity: {sector_capacity}")
+                                if sector_capacity is False:
                                     # price = get_quote(security['ticker'])['last']['askprice']
                                     # acct_value = get_account_value()
                                     # try:
@@ -91,7 +93,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                     #     continue
                                     # buy_market(security['ticker'], qty)
                                     # sleep(3)
-                                    # trailing_stop_long(security['ticker'], 2.0)
+                                    # trailing_stop_long(security['ticker'], atr)
                                     add_to_daily_counter('long', security['mktcap'])
                                     holdings = initialize_holdings()
                                     print(holdings)
@@ -121,21 +123,23 @@ def dailyscanner(json_watchlist, op_str, publish=False):
 
                         if publish:
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
-                            tweet = f'''${security['ticker']} Trade Alert\n\nType: Short, Momentum\nIndustry: {security['industry']}\nPeers: {' '.join(security['peers'])}'''
+                            tweet = f'''${security['ticker']} Trade Alert\n\nType: Short, Momentum\nSector: {security['sector']}\nPeers: {' '.join(security['peers'])}'''
                             twitter_api.update_status(tweet, media_ids=[media.media_id])
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            print(f"Short Capacity: {short_capacity(holdings['short']['acct_percentage'], '04-04-21')}")
-                            print(f"Daily Counter Capacity: {check_daily_counter_capacity('short', security['mktcap'], '04-04-21')}")
-                            if short_capacity(holdings['short']['acct_percentage'], '04-04-21') is False and \
-                                check_daily_counter_capacity('short', security['mktcap'], '04-04-21') is False:
-                                if security['industry'] in holdings['short']['industry'].keys():
-                                    industry_capacity = industry_capacity(holdings['short']['industry'][security['industry']]['acct_percentage'])
+                            short_cap = short_capacity(holdings['short']['acct_percentage'], watchlists_generation_date=watchlist_date)
+                            print(f"Short Capacity: {short_cap}")
+                            daily_counter_cap = check_daily_counter_capacity('short', security['mktcap'], watchlists_generation_date=watchlist_date)
+                            print(f"Daily Counter Capacity: {daily_counter_cap}")
+                            if short_cap is False and \
+                                daily_counter_cap is False:
+                                if security['sector'] in holdings['short']['sector'].keys():
+                                    sector_capacity = sector_capacity(holdings['short']['sector'][security['sector']]['acct_percentage'])
                                 else:
-                                    industry_capacity = False
-                                print(f"Industry Capacity: {industry_capacity}")
-                                if industry_capacity is False:
+                                    sector_capacity = False
+                                print(f"Sector Capacity: {sector_capacity}")
+                                if sector_capacity is False:
                                     # price = get_quote(security['ticker'])['last']['askprice']
                                     # acct_value = get_account_value()
                                     # try:
@@ -146,7 +150,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                     #     continue
                                     # sell_market(security['ticker'], qty)
                                     # sleep(3)
-                                    # trailing_stop_short(security['ticker'], 2.0)
+                                    # trailing_stop_short(security['ticker'], atr)
                                     add_to_daily_counter('short', security['mktcap'])
                                     holdings = initialize_holdings()
                                     print(holdings)
@@ -154,33 +158,26 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                     print(f'At Capacity At Capacity At Capacity At Capacity')
                     else:
                         print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
-        except:
-            missed_connection.append(security['ticker'])
-            print(f'ConnectionError...{missed_connection}')
-            continue
+        # except:
+        #     missed_connection.append(security['ticker'])
+        #     print(f'ConnectionError...{missed_connection}')
+        #     continue
+
+
+watchlists_generation_date = '04-04-21'
+[print(item[0]) for item in filter_watchlists_for_dailyscanner(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25)]
+print('')
 
 while True:
+    ###Think about another filtering mechanism (worried about shorts) (maybe restrict to long trending or winning trend, feels off)
+    for filename, direction, number, total in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10):
+        print('')
+        print(filename)
+        print('')
+        dailyscanner(filename, direction, watchlist_date=watchlists_generation_date, publish=False)
     # #longs 70%
-    # dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    # dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('LargeStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('LargeStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('LargeStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('MediumStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('MediumStocks/Watchlists/03-29-21/(25,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('MediumStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('SmallStocks/Watchlists/03-29-21/(45,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('SmallStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('SmallStocks/Watchlists/03-29-21/(30,)D-6E-uptrend03-29-21.json', '>', publish=False)
-    dailyscanner('MicroStocks/Watchlists/03-29-21/(5,)D-6E-uptrend03-29-21.json', '>', publish=False)
-
-    #shorts 30%
-    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    dailyscanner('VeryLargeStocks/Watchlists/03-29-21/(20,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    dailyscanner('LargeStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    dailyscanner('LargeStocks/Watchlists/03-29-21/(15,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    dailyscanner('MediumStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    dailyscanner('SmallStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
-    dailyscanner('MicroStocks/Watchlists/03-29-21/(10,)D-6E-downtrend03-29-21.json', '<', publish=False)
+    for filename, direction in filter_watchlists_for_dailyscanner(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25):
+        print('')
+        print(filename)
+        print('')
+        dailyscanner(filename, direction, watchlist_date=watchlists_generation_date, publish=False)

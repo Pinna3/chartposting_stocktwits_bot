@@ -6,6 +6,7 @@ import finnhub
 from time import sleep
 from alpaca import get_all_positions, get_account_value, return_candles_json
 import pandas as pd
+from glob import glob
 
 def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     candles = SecurityTradeDataObject
@@ -116,10 +117,10 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
 def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-6E-{down_or_up_str}trend{date_str}.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-6E-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
-            print(period, len(list))
+            # print(period, len(list))
     trace = {'x': time_markers, 'y': hits, 'type': 'scatter', 'mode': 'lines',
         'line': {'width': 1, 'color': 'blue'}, 'name': 'Hits'}
     data = [trace]
@@ -127,11 +128,12 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
             'font': {'size': 15}}})
     fig = go.Figure(data=data, layout=layout)
     fig.show()
+    return f'{mktcap_dir} {down_or_up_str}trend'
 
 def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/03-30-21/({period},)D-4E-{down_or_up_str}trend{date_str}.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-6E-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             # print(period, len(list))
@@ -148,6 +150,44 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time
     with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
         json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
     return dropoffs, dropoffs_sorted
+
+#Label Fixed for Next Scan
+# def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
+#     hits = []
+#     for period in time_markers:
+#         with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-{down_or_up_str}trend.json') as infile:
+#             list = json.load(infile)
+#             hits.append(len(list))
+#             # print(period, len(list))
+#     trace = {'x': time_markers, 'y': hits, 'type': 'scatter', 'mode': 'lines',
+#         'line': {'width': 1, 'color': 'blue'}, 'name': 'Hits'}
+#     data = [trace]
+#     layout = go.Layout({'title': {'text': f'{mktcap_dir} {down_or_up_str}trend Hits',
+#             'font': {'size': 15}}})
+#     fig = go.Figure(data=data, layout=layout)
+#     fig.show()
+#     return f'{mktcap_dir} {down_or_up_str}trend'
+#
+# def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
+#     hits = []
+#     for period in time_markers:
+#         with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-{down_or_up_str}trend.json') as infile:
+#             list = json.load(infile)
+#             hits.append(len(list))
+#             # print(period, len(list))
+#     dropoffs = []
+#     for index, count in enumerate(hits):
+#         if index != 0:
+#             try:
+#                 dropoff = round(1 - (count / hits[index-1]), 2)
+#                 dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
+#             except ZeroDivisionError:
+#                 dropoff = 0
+#                 dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
+#     dropoffs_sorted = sorted(dropoffs, key = lambda x: x[1])
+#     with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
+#         json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
+#     return dropoffs, dropoffs_sorted
 
 def count_stock_csv_list(csv_source):
     securities = []
@@ -178,7 +218,7 @@ def return_list_of_tickers(csv_source):
 #*time_markers = 1, 5, 10, 15, 20, 25, ... etc
 #interval = time between time_markers
 def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
-    graph_degrees_of_trend(mktcap_group, trend, date, *time_markers)
+    # label = graph_degrees_of_trend(mktcap_group, trend, date, *time_markers)
     dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates(mktcap_group, trend, date, *time_markers, interval)
     ranking = []
     ranking_time_weighted = []
@@ -191,15 +231,35 @@ def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
             rating = round(percentage_of_total / dropoff_rate, 2)
         except ZeroDivisionError:
             rating = 0
-        ranking.append((days, rating))
-        weighted_ranking = round(days * rating, 2)
-        ranking_time_weighted.append((days, weighted_ranking))
-    ranking_sorted = sorted(ranking, key = lambda x: x[1], reverse=True)
-    ranking_time_weighted_sorted = sorted(ranking_time_weighted, key = lambda x: x[1], reverse=True)
-    # print(ranking_sorted)
-    print(ranking_time_weighted_sorted)
-    print('')
+        if days != 5:
+            starting = days - 5
+        else:
+            starting = 1
+        ranking.append({'days': days, 'starting': starting, 'drop_rate': dropoff_rate, 'percentage': percentage_of_total, 'quality_rating': rating})
+        weighted_rating = round(days * rating, 2)
+        ranking_time_weighted.append({'days': days, 'starting': starting, 'drop_rate': dropoff_rate, 'percentage': percentage_of_total, 'quality_rating': weighted_rating})
 
+    drop_off_percentage_sorted = sorted(ranking, key = lambda x: x['drop_rate'], reverse=False)
+    ranking_sorted = sorted(ranking, key = lambda x: x['quality_rating'], reverse=True)
+    ranking_time_weighted_sorted = sorted(ranking_time_weighted, key = lambda x: x['quality_rating'], reverse=True)
+    # print(ranking_sorted)
+    # print(ranking_time_weighted_sorted)
+    # print('')
+    # [print(dict['days']) for dict in drop_off_percentage_sorted]
+    # print(label)
+    # [print(f"{dict['days']} {dict['drop_rate']*100}%") for dict in ranking_time_weighted_sorted[:3]]
+
+    return [[dict['starting'], dict['drop_rate']] for dict in ranking_time_weighted_sorted]
+
+def fetch_sector(symbol):
+    files = ['Micro<$50M', 'Small$50M-$300M', 'Medium$300M-$2B', 'Large$2B-$10B', 'VeryLarge>$10B']
+    for file in files:
+        with open(f'StockLists/{file}.csv') as infile:
+            reader = csv.reader(infile)
+            next(reader)
+            for row in reader:
+                if row[0] == symbol:
+                    return row[8]
 
 def initialize_holdings():
     positions = get_all_positions()
@@ -207,58 +267,52 @@ def initialize_holdings():
         "long": {
             "market_value": None,
             "acct_percentage": None,
-            "industry": {
+            "sector": {
             }
         },
         "short": {
             "market_value": None,
             "acct_percentage": None,
-            "industry": {
+            "sector": {
             }
         },
     }
     for holding in positions:
         symbol = holding['symbol']
         market_value = round(float(holding['market_value']), 2)
-        side = holding['side']
-        finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
-        try:
-            industry = finnhub_client.company_profile2(symbol=symbol)['finnhubIndustry']
-        except KeyError:
-            industry = 'ETF'
-        sleep(1)
-        if industry not in holdings[side]['industry'].keys():
-            holdings[side]['industry'][industry] = {}
-            holdings[side]['industry'][industry]['market_value'] = None
-            holdings[side]['industry'][industry]['acct_percentage'] = None
-            holdings[side]['industry'][industry]['stocks'] = [[symbol, market_value]]
+        sector = fetch_sector(symbol)
+        if sector not in holdings[side]['sector'].keys():
+            holdings[side]['sector'][sector] = {}
+            holdings[side]['sector'][sector]['market_value'] = None
+            holdings[side]['sector'][sector]['acct_percentage'] = None
+            holdings[side]['sector'][sector]['stocks'] = [[symbol, market_value]]
         else:
-            holdings[side]['industry'][industry]['stocks'].append([symbol, market_value])
+            holdings[side]['sector'][sector]['stocks'].append([symbol, market_value])
 
     acct_value = get_account_value()
-    long_industry_keys = holdings['long']['industry'].keys()
-    short_industry_keys = holdings['short']['industry'].keys()
-    for industry in long_industry_keys:
+    long_sector_keys = holdings['long']['sector'].keys()
+    short_sector_keys = holdings['short']['sector'].keys()
+    for sector in long_sector_keys:
         market_value = 0.0
-        for stock in holdings['long']['industry'][industry]['stocks']:
+        for stock in holdings['long']['sector'][sector]['stocks']:
             market_value += round(float(stock[1]), 2)
-        holdings['long']['industry'][industry]['market_value'] = market_value
-        holdings['long']['industry'][industry]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
-    for industry in short_industry_keys:
+        holdings['long']['sector'][sector]['market_value'] = market_value
+        holdings['long']['sector'][sector]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
+    for sector in short_sector_keys:
         market_value = 0.0
-        for stock in holdings['short']['industry'][industry]['stocks']:
+        for stock in holdings['short']['sector'][sector]['stocks']:
             market_value += round(float(stock[1]), 2)
-        holdings['short']['industry'][industry]['market_value'] = market_value
-        holdings['short']['industry'][industry]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
+        holdings['short']['sector'][sector]['market_value'] = market_value
+        holdings['short']['sector'][sector]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
 
     long_market_value = 0.0
-    for industry in long_industry_keys:
-        long_market_value += round(holdings['long']['industry'][industry]['market_value'], 2)
+    for sector in long_sector_keys:
+        long_market_value += round(holdings['long']['sector'][sector]['market_value'], 2)
     holdings['long']['market_value'] = round(long_market_value, 2)
     holdings['long']['acct_percentage'] = round((long_market_value / acct_value) * 100, 2)
     short_market_value = 0.0
-    for industry in short_industry_keys:
-        short_market_value += round(holdings['short']['industry'][industry]['market_value'], 2)
+    for sector in short_sector_keys:
+        short_market_value += round(holdings['short']['sector'][sector]['market_value'], 2)
     holdings['short']['market_value'] = round(short_market_value, 2)
     holdings['short']['acct_percentage'] = round((short_market_value / acct_value) * 100, 2)
 
@@ -407,22 +461,93 @@ def make_pulled_csv_list_consumable(csv_in):
     return total_batch_df_list
 
 
+# #fixed filenames
+# def filter_watchlists_for_dailyscanner(date, max_per_category=3, drop_off_rate_cutoff=.25):
+#     approved_files_w_operator = []
+#     for direction in ['up', 'down']:
+#         for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+#             if direction == 'up':
+#                 operator = '>'
+#             elif direction == 'down':
+#                 operator = '<'
+#             time_weighted_ranked = rank_dropoffs(mktcap, direction, date, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+#             for result in time_weighted_ranked:
+#                 if result[1] < drop_off_rate_cutoff:
+#                     approved_files_w_operator.append([f'({result[0]},)D-{direction}trend.json'])
+
+
+def filter_watchlists_for_dailyscanner(date, max_per_category=3, drop_off_rate_cutoff=.25):
+    approved_files_w_operator = []
+    for direction in ['up', 'down']:
+        for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+            if direction == 'up':
+                operator = '>'
+            elif direction == 'down':
+                operator = '<'
+            time_weighted_ranked = rank_dropoffs(mktcap, direction, date, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+            for result in time_weighted_ranked[:max_per_category]:
+                if result[1] < drop_off_rate_cutoff:
+                    approved_files_w_operator.append([f'{mktcap}Stocks/Watchlists/{date}/({result[0]},)D-6E-{direction}trend.json', operator])
+    return approved_files_w_operator
+# [print(item) for item in filter_watchlists_for_dailyscanner('04-04-21', max_per_category=3, drop_off_rate_cutoff=.25)]
+
+def pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10):
+    def there_can_only_be_n(watchlists, tier_percentage, op_str):
+        grandtotal = watchlists[0][0]
+        for total, file in watchlists:
+            if total < (tier_percentage / 100) * grandtotal and total != 0:
+                return [file, op_str, total, grandtotal]
+    top_trenders = {}
+    top_tier_list = []
+    mkt_caps = ['VeryLargeStocks', 'LargeStocks', 'MediumStocks', 'SmallStocks', 'MicroStocks']
+    for group in mkt_caps:
+        top_trenders[group] = []
+        for file in glob(f'{group}/Watchlists/{watchlists_generation_date}/*uptrend.json'):
+            with open(file) as infile:
+                content = json.load(infile)
+                top_trenders[group].append([len(content), file])
+                top_trenders[group].sort(reverse=True)
+        top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '>'))
+    for group in mkt_caps:
+        top_trenders[group] = []
+        for file in glob(f'{group}/Watchlists/{watchlists_generation_date}/*downtrend.json'):
+            with open(file) as infile:
+                content = json.load(infile)
+                top_trenders[group].append([len(content), file])
+                top_trenders[group].sort(reverse=True)
+        top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '<'))
+    return top_tier_list
+
+# for item in pull_top_tier_unbroken_trenders('04-04-21', tier_percentage=10):
+#     print(item)
+
+
+
+# for item in pull_top_10_unbroken_trenders('04-04-21')['MicroStocks']:
+#     print(item)
+
+    # short_total = 0
+    # for group in mkt_caps:
+    #     for file in glob(f'{group}/Watchlists/{watchlists_generation_date}/*downtrend.json'):
+    #         with open(file) as infile:
+    #             content = json.load(infile)
+    #             short_total += len(content)
 
 
 
 
-# graph_degrees_of_trend('Micro', 'up', '04-03-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
-# graph_degrees_of_trend('Micro', 'down', '04-03-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
-# graph_degrees_of_trend('Medium', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
-# graph_degrees_of_trend('Large', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
-# graph_degrees_of_trend('VeryLarge', 'up', '04-02-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
 
-# calculate_and_file_dropoff_rates('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# rank_dropoffs('Small', 'up', '03-30-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# rank_dropoffs('Large', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# rank_dropoffs('Medium', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# rank_dropoffs('Small', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# rank_dropoffs('Micro', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+
+# print(rank_dropoffs('VeryLarge', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('Large', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('Medium', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('Small', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('Micro', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('VeryLarge', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('Large', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('Medium', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('Small', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
+# print(rank_dropoffs('Micro', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
 
 # graph_degrees_of_trend('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 # dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)

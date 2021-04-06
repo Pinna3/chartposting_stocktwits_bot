@@ -18,14 +18,14 @@ class SecurityTradeData:
         self.start_time = int((time.time() - (num_days * (31540000 / 365))))
         self.current_time = int(time.time())
 
-        #industry and peers data added while scanning
+        #sector and peers data added while scanning
         self.sector = None
         self.peers = None
         self.mktcap = None
         self.smoothness = None
 
-
         #candlestick data (Alpaca API Primary, Finnhub backup)
+        # try:
         smoothness_test = True
         data = return_candles_json(ticker, period='day', num_bars=365)
         for index, ohlc in enumerate(data[ticker][:-1]):
@@ -34,6 +34,8 @@ class SecurityTradeData:
         df = pd.DataFrame(data[ticker])
         del df['t']
         time.sleep(.3)
+        # except KeyError:
+            # smoothness_test = False
 
         #finnhub backup for split gaps (set for unlimited pings right now... counter is prob more practical)
         if smoothness_test == False:
@@ -63,8 +65,9 @@ class SecurityTradeData:
         df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
         #### average true range pandas_atr_calculation
         df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
-        df['top_atr'] = df['h'].shift() + (.75 * df['atr'])
-        df['bottom_atr'] = df['l'].shift(periods=2) - (.75 * df['atr'])
+        # #Play with shifting method to optimize ATR mulitple for traling stops
+        # df['top_atr'] = df['h'].shift() + (.75 * df['atr'])
+        # df['bottom_atr'] = df['l'].shift(periods=2) - (.75 * df['atr'])
         self.df = df
 
     def __str__(self):
@@ -109,14 +112,14 @@ class SecurityTradeData:
         trace_upper = {'x': self.df.index, 'y': self.df['upper'][-days:], 'type': 'scatter', 'mode': 'lines',
             'line': {'width': 1, 'color': 'red'}, 'name': 'UpperBB'}
 
-        ###ATR
-        trace_atr_lower = {'x': self.df.index, 'y': self.df['bottom_atr'][-days:], 'type': 'scatter', 'mode': 'lines',
-            'line': {'width': 1, 'color': 'blue'}, 'name': 'B-ATR'}
-        trace_atr_upper = {'x': self.df.index, 'y': self.df['top_atr'][-days:], 'type': 'scatter', 'mode': 'lines',
-            'line': {'width': 1, 'color': 'blue'}, 'name': 'T-ATR'}
+        # ###ATR (For help with ATR optimization)
+        # trace_atr_lower = {'x': self.df.index, 'y': self.df['bottom_atr'][-days:], 'type': 'scatter', 'mode': 'lines',
+        #     'line': {'width': 1, 'color': 'blue'}, 'name': 'B-ATR'}
+        # trace_atr_upper = {'x': self.df.index, 'y': self.df['top_atr'][-days:], 'type': 'scatter', 'mode': 'lines',
+        #     'line': {'width': 1, 'color': 'blue'}, 'name': 'T-ATR'}
 
         #plot data
-        data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper, trace_atr_lower, trace_atr_upper]
+        data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper,]# trace_atr_lower, trace_atr_upper]
 
         #chart aesthetic
         layout = go.Layout(#'title': {'text': f'{self.ticker} {days}D Daily Chart', 'yanchor': 1.0},
@@ -193,7 +196,7 @@ class LiteSecurityTradeData(SecurityTradeData):
         #basics
         self.ticker = consumable_item[0]
 
-        #industry and peers data added while scanning
+        #sector and peers data added while scanning
         self.sector = consumable_item[2]
         self.peers = consumable_item[4]
         self.mktcap = consumable_item[1]
@@ -230,11 +233,11 @@ def pandas_atr_calculation(df, window=14):
 
 
 
-
-test = SecurityTradeData('AAPL', atr_rolling_window=5)
-test.custom_bollingers(14, .9)
-test.chart(120)
-print(test.df)
+#
+# test = SecurityTradeData('DISCB', atr_rolling_window=5)
+# # test.custom_bollingers(14, .9)
+# # test.chart(120)
+# print(test.df)
 
 
 

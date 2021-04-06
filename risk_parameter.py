@@ -35,8 +35,8 @@ def short_capacity(portfolio_current, watchlists_generation_date):
     long_max_exposure, short_max_exposure = set_long_short_capacities(watchlists_generation_date)
     return portfolio_current >= short_max_exposure
 
-#10% max allocation per industry, key error means no sector exposure yet
-def industry_capacity(portfolio_current, max_exposure=9):
+#10% max allocation per sector, key error means no sector exposure yet
+def sector_capacity(portfolio_current, max_exposure=9):
     return portfolio_current >= max_exposure
 
 # Maximums: 8 x long(3 x verylarge, 2 x large, 1 x medium, 1 x small, 1 x micro),
