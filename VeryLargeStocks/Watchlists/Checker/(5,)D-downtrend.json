@@ -1,0 +1,132 @@
+[
+  {
+    "ticker": "BABA",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.5,
+    "peers": "$3690.HK $9618.HK $BABA $SPY",
+    "ror": 1.39,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "LFC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": 20,
+    "bb_std": 1.0,
+    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
+    "ror": 0.48,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "PLTK",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$PLTK $BMLK.TA $SPY",
+    "ror": -0.52,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "BKI",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": -1.87,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "U",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": -3.41,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "SNOW",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$SNOW $TWLO $OKTA $SPY",
+    "ror": -4.55,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "CRM",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": -4.68,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "SGEN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 11,
+    "bb_std": 1.0,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -4.74,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "BMRN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -4.98,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "TREX",
+    "sector": "Basic Industries",
+    "mktcap": "VeryLarge",
+    "bb_window": 16,
+    "bb_std": 0.9,
+    "peers": "$CARR $MAS $FBHS $SPY",
+    "ror": -5.15,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "AFRM",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": -5.92,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "SPLK",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 14,
+    "bb_std": 0.7,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": -6.47,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "GDRX",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 15,
+    "bb_std": 0.4,
+    "peers": "$VEEV $TDOC $CERN $SPY",
+    "ror": -7.27,
+    "entry_frequency": 2
+  }
+]

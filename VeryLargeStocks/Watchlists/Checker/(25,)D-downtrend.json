@@ -1,0 +1,22 @@
+[
+  {
+    "ticker": "SPLK",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": 5.81,
+    "entry_frequency": 13
+  },
+  {
+    "ticker": "BMRN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -0.94,
+    "entry_frequency": 2
+  }
+]

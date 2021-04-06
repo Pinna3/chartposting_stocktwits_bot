@@ -8,19 +8,20 @@ from alpaca import get_all_positions, get_account_value, return_candles_json
 import pandas as pd
 from glob import glob
 
-###Preset rolling window range (1 - 50), preset std range (.1 - 3.0)
-def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
+###Check for proper ranges using get_bb_params_distribution(), last window=2-20 = (range(2, 21)), last std=.1-1 (4/6/21), expand for testing once in a while
+def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency, window_range=range(2, 21), std_range=[x/10 for x in range(1, 12)]):
     candles = SecurityTradeDataObject
     def optimal_bb_window(op_str, entry_frequency):
         rolling_window_and_counter = []
-        for rolling_window in range(50):
+        for index, rolling_window in enumerate(window_range):
             try:
                 candles.custom_bollingers(rolling_window, 1)
                 rolling_window_and_counter.append([rolling_window, \
                     candles.entry_counter(op_str)])
-                print(rolling_window_and_counter[rolling_window])
+                print(rolling_window_and_counter[index])
             except:
                 continue
+        ###update range according to get_bb_params_distribution()
         entry_frequency_range = sorted([x for x in range(1,entry_frequency + 1)], reverse=True)
         for counter in rolling_window_and_counter:
             for entries in entry_frequency_range:
@@ -31,9 +32,7 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
 
     def optimal_bb_std(rolling_window, op_str, entry_frequency):
         std_and_counter = []
-        for index, std in enumerate([.1, .2, .3, .4, .5, .6, .7, .8, .9,
-                                     1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7,
-                                     1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0]):
+        for index, std in enumerate(std_range):
             try:
                 candles.custom_bollingers(rolling_window, std)
                 std_and_counter.append([std, candles.entry_counter(op_str)])
@@ -461,10 +460,24 @@ def pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=
         top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '<'))
     return top_tier_list
 
-# for item in pull_top_tier_unbroken_trenders('04-04-21', tier_percentage=10):
-#     print(item)
-
-
+#returns bb_params for all trending symbols (window and std) as a set for use in bb_param_optomizer
+#range settings.
+def get_bb_params_distribution(watchlists_generation_date='04-04-21'):
+    param_count = {'bb_window': [], 'bb_std': []}
+    for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+        for file in glob(f'{mktcap}Stocks/Watchlists/{watchlists_generation_date}/*.json'):
+            with open(file) as infile:
+                watchlist = json.load(infile)
+                for item in watchlist:
+                    bb_window = item['bb_window']
+                    bb_std = item['bb_std']
+                    param_count['bb_window'].append(bb_window)
+                    param_count['bb_std'].append(bb_std)
+    bb_windows = param_count['bb_window']
+    bb_stds = param_count['bb_std']
+    bb_window_dist = sorted(set([x for x in bb_windows if x != None]), reverse=True)
+    bb_stds_dist = sorted(set(x for x in bb_stds if x != None), reverse=True)
+    return bb_window_dist, bb_stds_dist
 
 # for item in pull_top_10_unbroken_trenders('04-04-21')['MicroStocks']:
 #     print(item)
