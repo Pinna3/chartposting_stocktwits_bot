@@ -1,0 +1,112 @@
+[
+  {
+    "ticker": "ORGO",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 167.07,
+    "entry_frequency": 335
+  },
+  {
+    "ticker": "SGRY",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$HCA $UHS $EHC $SPY",
+    "ror": 52.13,
+    "entry_frequency": 105
+  },
+  {
+    "ticker": "SLM",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AXP $COF $DFS $SPY",
+    "ror": 51.82,
+    "entry_frequency": 105
+  },
+  {
+    "ticker": "PLAY",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 48.17,
+    "entry_frequency": 97
+  },
+  {
+    "ticker": "NAVI",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AXP $COF $DFS $SPY",
+    "ror": 47.15,
+    "entry_frequency": 95
+  },
+  {
+    "ticker": "FIX",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$PWR $ACM $MTZ $SPY",
+    "ror": 44.83,
+    "entry_frequency": 91
+  },
+  {
+    "ticker": "IHRT",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$VIAC $FOXA $DISCA $SPY",
+    "ror": 40.06,
+    "entry_frequency": 81
+  },
+  {
+    "ticker": "OSK",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$CAT $CMI $PCAR $SPY",
+    "ror": 39.86,
+    "entry_frequency": 81
+  },
+  {
+    "ticker": "STN",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
+    "ror": 34.6,
+    "entry_frequency": 70
+  },
+  {
+    "ticker": "MMS",
+    "sector": "Miscellaneous",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 26.28,
+    "entry_frequency": 54
+  },
+  {
+    "ticker": "NSA",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": 12.91,
+    "entry_frequency": 27
+  }
+]

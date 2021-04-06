@@ -1,0 +1,42 @@
+[
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 145.39,
+    "entry_frequency": 292
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 109.95,
+    "entry_frequency": 221
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 94.15,
+    "entry_frequency": 189
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 71.21,
+    "entry_frequency": 143
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "ticker": "ORGO",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 271.61,
+    "entry_frequency": 544
+  },
+  {
+    "ticker": "PLAY",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 70.1,
+    "entry_frequency": 141
+  },
+  {
+    "ticker": "SGRY",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$HCA $UHS $EHC $SPY",
+    "ror": 64.57,
+    "entry_frequency": 130
+  },
+  {
+    "ticker": "SLM",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AXP $COF $DFS $SPY",
+    "ror": 54.05,
+    "entry_frequency": 109
+  },
+  {
+    "ticker": "IHRT",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$VIAC $FOXA $DISCA $SPY",
+    "ror": 46.38,
+    "entry_frequency": 94
+  },
+  {
+    "ticker": "OSK",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$CAT $CMI $PCAR $SPY",
+    "ror": 39.25,
+    "entry_frequency": 80
+  },
+  {
+    "ticker": "STN",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
+    "ror": 37.05,
+    "entry_frequency": 75
+  }
+]

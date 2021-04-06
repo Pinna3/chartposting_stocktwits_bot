@@ -78,27 +78,32 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
                             if long_cap is False and \
                                 daily_counter_cap is False:
                                 if security['sector'] in holdings['long']['sector'].keys():
-                                    sector_capacity = sector_capacity(holdings['long']['sector'][security['sector']]['acct_percentage'])
+                                    sector_cap = sector_capacity(holdings['long']['sector'][security['sector']]['acct_percentage'])
                                 else:
-                                    sector_capacity = False
-                                print(f"Sector Capacity: {sector_capacity}")
-                                if sector_capacity is False:
-                                    # price = get_quote(security['ticker'])['last']['askprice']
-                                    # acct_value = get_account_value()
-                                    # try:
-                                    #     qty = (acct_value / 100) // float(price)
-                                    # except ZeroDivisionError:
-                                    #     missed_order_error.append(security['ticker'])
-                                    #     print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
-                                    #     continue
-                                    # buy_market(security['ticker'], qty)
-                                    # sleep(3)
-                                    # trailing_stop_long(security['ticker'], atr)
-                                    add_to_daily_counter('long', security['mktcap'])
-                                    holdings = initialize_holdings()
-                                    print(holdings)
+                                    sector_cap = False
+                                if sector_cap is False:
+                                    if check_daily_tradelist(security['ticker']) == False:
+                                        price = get_quote(security['ticker'])['last']['askprice']
+                                        acct_value = get_account_value()
+                                        try:
+                                            qty = (acct_value / 100) // float(price)
+                                        except ZeroDivisionError:
+                                            missed_order_error.append(security['ticker'])
+                                            print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
+                                            continue
+                                        buy_market(security['ticker'], qty)
+                                        sleep(3)
+                                        trailing_stop_long(security['ticker'], atr)
+                                        add_to_daily_counter('long', security['mktcap'])
+                                        holdings = initialize_holdings()
+                                        print(holdings)
+                                        candle_object.chart(120)
+                                    else:
+                                        print('No Duplicate Trades No Duplicate Trades No Duplicate Trades')
                                 else:
                                     print(f'At Capacity At Capacity At Capacity At Capacity')
+                            else:
+                                print(f'At Capacity At Capacity At Capacity At Capacity')
                 else:
                     print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
 
@@ -135,27 +140,33 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
                             if short_cap is False and \
                                 daily_counter_cap is False:
                                 if security['sector'] in holdings['short']['sector'].keys():
-                                    sector_capacity = sector_capacity(holdings['short']['sector'][security['sector']]['acct_percentage'])
+                                    sector_cap = sector_capacity(holdings['short']['sector'][security['sector']]['acct_percentage'])
                                 else:
-                                    sector_capacity = False
+                                    sector_cap = False
                                 print(f"Sector Capacity: {sector_capacity}")
-                                if sector_capacity is False:
-                                    # price = get_quote(security['ticker'])['last']['askprice']
-                                    # acct_value = get_account_value()
-                                    # try:
-                                    #     qty = (acct_value / 100) // float(price)
-                                    # except ZeroDivisionError:
-                                    #     missed_order_error.append(security['ticker'])
-                                    #     print(f'MISSED!!!!...{missed_order_error}')
-                                    #     continue
-                                    # sell_market(security['ticker'], qty)
-                                    # sleep(3)
-                                    # trailing_stop_short(security['ticker'], atr)
-                                    add_to_daily_counter('short', security['mktcap'])
-                                    holdings = initialize_holdings()
-                                    print(holdings)
+                                if sector_cap is False:
+                                    if check_daily_tradelist(security['ticker']) == False:
+                                        price = get_quote(security['ticker'])['last']['askprice']
+                                        acct_value = get_account_value()
+                                        try:
+                                            qty = (acct_value / 100) // float(price)
+                                        except ZeroDivisionError:
+                                            missed_order_error.append(security['ticker'])
+                                            print(f'MISSED!!!!...{missed_order_error}')
+                                            continue
+                                        sell_market(security['ticker'], qty)
+                                        sleep(3)
+                                        trailing_stop_short(security['ticker'], atr)
+                                        add_to_daily_counter('short', security['mktcap'])
+                                        holdings = initialize_holdings()
+                                        print(holdings)
+                                        candle_object.chart(120)
+                                    else:
+                                        print('No Duplicate Trades No Duplicate Trades No Duplicate Trades')
                                 else:
                                     print(f'At Capacity At Capacity At Capacity At Capacity')
+                            else:
+                                print(f'At Capacity At Capacity At Capacity At Capacity')
                     else:
                         print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
         # except:
@@ -165,17 +176,27 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
 
 
 watchlists_generation_date = '04-04-21'
-[print(item[0]) for item in filter_watchlists_for_dailyscanner(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25)]
-print('')
-
 while True:
     ###Think about another filtering mechanism (worried about shorts) (maybe restrict to long trending or winning trend, feels off)
+    print('.')
+    print('.')
+    print('.')
+    [print(item[0]) for item in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10)]
+    print('.')
+    print('.')
+    print('.')
     for filename, direction, number, total in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10):
         print('')
         print(filename)
         print('')
         dailyscanner(filename, direction, watchlist_date=watchlists_generation_date, publish=False)
-    # #longs 70%
+    print('.')
+    print('.')
+    print('.')
+    [print(item[0]) for item in filter_watchlists_for_dailyscanner(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25)]
+    print('.')
+    print('.')
+    print('.')
     for filename, direction in filter_watchlists_for_dailyscanner(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25):
         print('')
         print(filename)

@@ -1,0 +1,42 @@
+[
+  {
+    "ticker": "NUZE",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$MDLZ $KHC $GIS $SPY",
+    "ror": 53.12,
+    "entry_frequency": 107
+  },
+  {
+    "ticker": "GLTO",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
+    "ror": 49.83,
+    "entry_frequency": 101
+  },
+  {
+    "ticker": "VYGR",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 31.24,
+    "entry_frequency": 63
+  },
+  {
+    "ticker": "UK",
+    "sector": "Miscellaneous",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$KW $RFL $FRPH $SPY",
+    "ror": 16.53,
+    "entry_frequency": 34
+  }
+]

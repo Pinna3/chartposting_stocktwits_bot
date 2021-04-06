@@ -1,0 +1,72 @@
+[
+  {
+    "ticker": "HPR",
+    "sector": "Energy",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 41.6,
+    "entry_frequency": 84
+  },
+  {
+    "ticker": "WINT",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 36.5,
+    "entry_frequency": 74
+  },
+  {
+    "ticker": "TLGT",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 25.72,
+    "entry_frequency": 52
+  },
+  {
+    "ticker": "CHFS",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": 23.62,
+    "entry_frequency": 48
+  },
+  {
+    "ticker": "RMED",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": 21.35,
+    "entry_frequency": 44
+  },
+  {
+    "ticker": "EFOI",
+    "sector": "Consumer Durables",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$EMR $3665.TW $ROK $SPY",
+    "ror": 15.37,
+    "entry_frequency": 32
+  },
+  {
+    "ticker": "ENSV",
+    "sector": "Energy",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SLB $BKR $HAL $SPY",
+    "ror": 13.91,
+    "entry_frequency": 29
+  }
+]

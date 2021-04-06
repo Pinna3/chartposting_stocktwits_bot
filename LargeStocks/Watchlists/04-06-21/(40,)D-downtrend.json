@@ -1,0 +1,22 @@
+[
+  {
+    "ticker": "GLPG",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
+    "ror": 26.35,
+    "entry_frequency": 54
+  },
+  {
+    "ticker": "SRPT",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 20.73,
+    "entry_frequency": 42
+  }
+]

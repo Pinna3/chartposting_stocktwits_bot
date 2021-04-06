@@ -37,7 +37,7 @@ def short_capacity(portfolio_current, watchlists_generation_date):
 
 #10% max allocation per sector, key error means no sector exposure yet
 def sector_capacity(portfolio_current, max_exposure=9):
-    return portfolio_current >= max_exposure
+    return abs(portfolio_current) >= max_exposure
 
 # Maximums: 8 x long(3 x verylarge, 2 x large, 1 x medium, 1 x small, 1 x micro),
 #          4 x short(2 x verylarge, 1 x large, 1 x medium)
@@ -109,6 +109,30 @@ def add_to_daily_counter(side, mkt_cap):
         counter[f'{side}_mkt_cap'][mkt_cap] += 1
     with open('DailyCounter.json', 'w') as outfile:
         json.dump(counter, outfile, indent=2)
+
+#Checks to make sure date is current, if so adds to daily tally.
+#If its the first trade of the day it erases yesterday tally and starts fresh.
+def add_to_daily_tradelist(symbol):
+    with open('DailyTrades.json') as infile:
+        trades = json.load(infile)
+        if trades['today_date'] != today_date:
+            trades = {
+                'today_date': today_date,
+                'trades': []}
+            trades['trades'].append(symbol)
+        else:
+            trades['trades'].append(symbol)
+    with open('DailyTrades.json', 'w') as outfile:
+        json.dump(trades, outfile, indent=2)
+
+def check_daily_tradelist(symbol):
+    with open('DailyTrades.json') as infile:
+        trades = json.load(infile)
+        if trades['today_date'] != today_date:
+            return False
+        else:
+            return symbol in trades['trades']
+
 
 # if short_capacity(20, '04-04-21') is False and \
 #     check_daily_counter_capacity('short', 'VeryLarge', '04-04-21') is False:

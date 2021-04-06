@@ -1,0 +1,32 @@
+[
+  {
+    "ticker": "HOVNP",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.6,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 18.74,
+    "entry_frequency": 38
+  },
+  {
+    "ticker": "GFLU",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
+    "ror": 8.34,
+    "entry_frequency": 18
+  },
+  {
+    "ticker": "NYMTN",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 2.9,
+    "entry_frequency": 7
+  }
+]

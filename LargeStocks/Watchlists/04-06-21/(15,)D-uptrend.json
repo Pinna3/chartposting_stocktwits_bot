@@ -1,0 +1,1472 @@
+[
+  {
+    "ticker": "MARA",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 2,
+    "bb_std": 0.1,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 23.95,
+    "entry_frequency": 49
+  },
+  {
+    "ticker": "AYI",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$EMR $3665.TW $ROK $SPY",
+    "ror": 18.53,
+    "entry_frequency": 38
+  },
+  {
+    "ticker": "ORGO",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 17.75,
+    "entry_frequency": 36
+  },
+  {
+    "ticker": "KBR",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950140.KQ $CSGP $VRSK $SPY",
+    "ror": 16.01,
+    "entry_frequency": 33
+  },
+  {
+    "ticker": "X",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$NUE $STLD $RS $SPY",
+    "ror": 15.31,
+    "entry_frequency": 32
+  },
+  {
+    "ticker": "BAK",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$BRKM5.SA $UNIP6.SA $GPCP3.SA $SPY",
+    "ror": 14.39,
+    "entry_frequency": 30
+  },
+  {
+    "ticker": "TTEC",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 13.69,
+    "entry_frequency": 28
+  },
+  {
+    "ticker": "MFGP",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TEAM $AVV.L $SGE.L $SPY",
+    "ror": 12.93,
+    "entry_frequency": 27
+  },
+  {
+    "ticker": "CAR",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.8,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 12.8,
+    "entry_frequency": 27
+  },
+  {
+    "ticker": "FCN",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950140.KQ $CSGP $VRSK $SPY",
+    "ror": 12.33,
+    "entry_frequency": 26
+  },
+  {
+    "ticker": "LGIH",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$DHI $LEN $NVR $SPY",
+    "ror": 12.29,
+    "entry_frequency": 26
+  },
+  {
+    "ticker": "BOX",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": 12.03,
+    "entry_frequency": 25
+  },
+  {
+    "ticker": "CXP",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ARE $BXP $VNO $SPY",
+    "ror": 11.83,
+    "entry_frequency": 25
+  },
+  {
+    "ticker": "DOOO",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.4,
+    "peers": "$DOO.TO $TOY.TO $VMAR $SPY",
+    "ror": 11.68,
+    "entry_frequency": 24
+  },
+  {
+    "ticker": "OLN",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$DOW $WLK $OLN $SPY",
+    "ror": 11.41,
+    "entry_frequency": 24
+  },
+  {
+    "ticker": "NAVI",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AXP $COF $DFS $SPY",
+    "ror": 10.47,
+    "entry_frequency": 22
+  },
+  {
+    "ticker": "LPX",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": "$LPX $RRIF $KEWL $SPY",
+    "ror": 10.46,
+    "entry_frequency": 22
+  },
+  {
+    "ticker": "CMC",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$NUE $STLD $RS $SPY",
+    "ror": 10.35,
+    "entry_frequency": 22
+  },
+  {
+    "ticker": "INOV",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.2,
+    "peers": "$VEEV $TDOC $CERN $SPY",
+    "ror": 10.33,
+    "entry_frequency": 22
+  },
+  {
+    "ticker": "CENTA",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$PG $CL $KMB $SPY",
+    "ror": 10.32,
+    "entry_frequency": 22
+  },
+  {
+    "ticker": "UFPI",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$CARR $MAS $FBHS $SPY",
+    "ror": 10.15,
+    "entry_frequency": 21
+  },
+  {
+    "ticker": "TMHC",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": "$DHI $LEN $NVR $SPY",
+    "ror": 9.69,
+    "entry_frequency": 20
+  },
+  {
+    "ticker": "KNX",
+    "sector": "Transportation",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.2,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 9.68,
+    "entry_frequency": 20
+  },
+  {
+    "ticker": "LOB",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.2,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 9.55,
+    "entry_frequency": 20
+  },
+  {
+    "ticker": "CENT",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.7,
+    "peers": "$PG $CL $KMB $SPY",
+    "ror": 9.42,
+    "entry_frequency": 20
+  },
+  {
+    "ticker": "SLM",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.4,
+    "peers": "$AXP $COF $DFS $SPY",
+    "ror": 9.24,
+    "entry_frequency": 19
+  },
+  {
+    "ticker": "CVCO",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$DHI $LEN $NVR $SPY",
+    "ror": 8.87,
+    "entry_frequency": 19
+  },
+  {
+    "ticker": "KBH",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$DHI $LEN $NVR $SPY",
+    "ror": 8.76,
+    "entry_frequency": 19
+  },
+  {
+    "ticker": "TX",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": "$MT.AS $TX $APAM.AS $SPY",
+    "ror": 8.55,
+    "entry_frequency": 18
+  },
+  {
+    "ticker": "HRB",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SCI $TMX $FTDR $SPY",
+    "ror": 8.51,
+    "entry_frequency": 18
+  },
+  {
+    "ticker": "ENSG",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 0.6,
+    "peers": "$HCA $UHS $EHC $SPY",
+    "ror": 7.73,
+    "entry_frequency": 16
+  },
+  {
+    "ticker": "ACM",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.4,
+    "peers": "$PWR $ACM $MTZ $SPY",
+    "ror": 7.46,
+    "entry_frequency": 16
+  },
+  {
+    "ticker": "BCC",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$FAST $URI $GWW $SPY",
+    "ror": 7.39,
+    "entry_frequency": 16
+  },
+  {
+    "ticker": "AA",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AA $ARNC $KALU $SPY",
+    "ror": 7.26,
+    "entry_frequency": 16
+  },
+  {
+    "ticker": "VIRT",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": "$MS $SCHW $GS $SPY",
+    "ror": 6.85,
+    "entry_frequency": 15
+  },
+  {
+    "ticker": "SGRY",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 9,
+    "bb_std": 0.8,
+    "peers": "$HCA $UHS $EHC $SPY",
+    "ror": 6.85,
+    "entry_frequency": 15
+  },
+  {
+    "ticker": "AVT",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$CDW $ARW $SNX $SPY",
+    "ror": 6.79,
+    "entry_frequency": 15
+  },
+  {
+    "ticker": "CUB",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.5,
+    "peers": "$BA $RTX $LMT $SPY",
+    "ror": 6.69,
+    "entry_frequency": 14
+  },
+  {
+    "ticker": "BWXT",
+    "sector": "Energy",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$BA $RTX $LMT $SPY",
+    "ror": 6.64,
+    "entry_frequency": 14
+  },
+  {
+    "ticker": "UCTT",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 6.61,
+    "entry_frequency": 14
+  },
+  {
+    "ticker": "ITT",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 6.38,
+    "entry_frequency": 14
+  },
+  {
+    "ticker": "BERY",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": "$BLL $CCK $ATR $SPY",
+    "ror": 6.37,
+    "entry_frequency": 14
+  },
+  {
+    "ticker": "JBL",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$IPGP $JBL $SANM $SPY",
+    "ror": 6.12,
+    "entry_frequency": 13
+  },
+  {
+    "ticker": "EXLS",
+    "sector": "Miscellaneous",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 6.08,
+    "entry_frequency": 13
+  },
+  {
+    "ticker": "MMS",
+    "sector": "Miscellaneous",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 6.06,
+    "entry_frequency": 13
+  },
+  {
+    "ticker": "KAI",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 5.81,
+    "entry_frequency": 13
+  },
+  {
+    "ticker": "UNVR",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": "$FAST $URI $GWW $SPY",
+    "ror": 5.78,
+    "entry_frequency": 13
+  },
+  {
+    "ticker": "HII",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$BA $RTX $LMT $SPY",
+    "ror": 5.75,
+    "entry_frequency": 12
+  },
+  {
+    "ticker": "TOL",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 0.1,
+    "peers": "$DHI $LEN $NVR $SPY",
+    "ror": 5.72,
+    "entry_frequency": 12
+  },
+  {
+    "ticker": "SKX",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$NKE $DECK $SKX $SPY",
+    "ror": 5.47,
+    "entry_frequency": 12
+  },
+  {
+    "ticker": "OC",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 0.9,
+    "peers": "$CARR $MAS $FBHS $SPY",
+    "ror": 5.35,
+    "entry_frequency": 12
+  },
+  {
+    "ticker": "SMCI",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.5,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 5.29,
+    "entry_frequency": 12
+  },
+  {
+    "ticker": "CNXC",
+    "sector": "Miscellaneous",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 5.23,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "BIPC",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": "$ATO $UGI $NFG $SPY",
+    "ror": 5.22,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "OMI",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": "$MCK $ABC $CAH $SPY",
+    "ror": 5.17,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "MTG",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$RKT $PCSO $UWMC $SPY",
+    "ror": 5.04,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "DKS",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.9,
+    "peers": "$TSCO $ULTA $FIVE $SPY",
+    "ror": 5.0,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "SAIA",
+    "sector": "Transportation",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 0.7,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 4.89,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "FUL",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 0.8,
+    "peers": "$SHW $ECL $DD $SPY",
+    "ror": 4.86,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "FIX",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$PWR $ACM $MTZ $SPY",
+    "ror": 4.84,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "AMG",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.6,
+    "peers": "$BLK $BX $KKR $SPY",
+    "ror": 4.74,
+    "entry_frequency": 10
+  },
+  {
+    "ticker": "CNMD",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.8,
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": 4.6,
+    "entry_frequency": 10
+  },
+  {
+    "ticker": "RS",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 0.2,
+    "peers": "$NUE $STLD $RS $SPY",
+    "ror": 4.54,
+    "entry_frequency": 10
+  },
+  {
+    "ticker": "AB",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 0.7,
+    "peers": "$BLK $BX $KKR $SPY",
+    "ror": 4.54,
+    "entry_frequency": 10
+  },
+  {
+    "ticker": "PLXS",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 0.4,
+    "peers": "$IPGP $JBL $SANM $SPY",
+    "ror": 4.49,
+    "entry_frequency": 10
+  },
+  {
+    "ticker": "HUBG",
+    "sector": "Transportation",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 0.8,
+    "peers": "$UPS $FDX $EXPD $SPY",
+    "ror": 4.32,
+    "entry_frequency": 10
+  },
+  {
+    "ticker": "WERN",
+    "sector": "Transportation",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 0.1,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 4.2,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "ANAT",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AIG $HIG $AFG $SPY",
+    "ror": 4.05,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "KT",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.7,
+    "peers": "$030200.KS $032640.KS $036630.KQ $SPY",
+    "ror": 4.03,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "FLIR",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$KEYS $ZBRA $TRMB $SPY",
+    "ror": 3.97,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "SANM",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$IPGP $JBL $SANM $SPY",
+    "ror": 3.91,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "CSWI",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 1.0,
+    "peers": "$CARR $MAS $FBHS $SPY",
+    "ror": 3.86,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "WH",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 11,
+    "bb_std": 0.1,
+    "peers": "$ABNB $MAR $HLT $SPY",
+    "ror": 3.74,
+    "entry_frequency": 8
+  },
+  {
+    "ticker": "ABG",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 0.9,
+    "peers": "$CVNA $ORLY $AZO $SPY",
+    "ror": 3.54,
+    "entry_frequency": 8
+  },
+  {
+    "ticker": "RUSHB",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": "$FAST $URI $GWW $SPY",
+    "ror": 3.36,
+    "entry_frequency": 8
+  },
+  {
+    "ticker": "OSK",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$CAT $CMI $PCAR $SPY",
+    "ror": 3.28,
+    "entry_frequency": 8
+  },
+  {
+    "ticker": "SEIC",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 9,
+    "bb_std": 0.1,
+    "peers": "$BLK $BX $KKR $SPY",
+    "ror": 3.13,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "AGNC",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$NLY $AGNC $STWD $SPY",
+    "ror": 3.03,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "BIG",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 1.0,
+    "peers": "$TGT $DG $DLTR $SPY",
+    "ror": 3.03,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "NVST",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 0.8,
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": 2.96,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "FELE",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 17,
+    "bb_std": 1.0,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 2.91,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "MSM",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": "$FAST $URI $GWW $SPY",
+    "ror": 2.9,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "LSTR",
+    "sector": "Transportation",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 0.8,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 2.89,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "SPB",
+    "sector": "Miscellaneous",
+    "mktcap": "Large",
+    "bb_window": 11,
+    "bb_std": 0.9,
+    "peers": "$PG $CL $KMB $SPY",
+    "ror": 2.85,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "SON",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 0.6,
+    "peers": "$IP $AVY $WRK $SPY",
+    "ror": 2.84,
+    "entry_frequency": 7
+  },
+  {
+    "ticker": "FLR",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 0.3,
+    "peers": "$PWR $ACM $MTZ $SPY",
+    "ror": 2.73,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "SC",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 8,
+    "bb_std": 0.7,
+    "peers": "$AXP $COF $DFS $SPY",
+    "ror": 2.65,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "THG",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$PGR $TRV $ALL $SPY",
+    "ror": 2.62,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "ALK",
+    "sector": "Transportation",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 0.2,
+    "peers": "$LUV $DAL $UAL $SPY",
+    "ror": 2.61,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "RUSHA",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.1,
+    "peers": "$FAST $URI $GWW $SPY",
+    "ror": 2.58,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "STN",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
+    "ror": 2.51,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "POST",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "Large",
+    "bb_window": 9,
+    "bb_std": 0.1,
+    "peers": "$MDLZ $KHC $GIS $SPY",
+    "ror": 2.49,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "NWE",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.9,
+    "peers": "$D $SRE $PEG $SPY",
+    "ror": 2.47,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "AN",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 11,
+    "bb_std": 0.9,
+    "peers": "$CVNA $ORLY $AZO $SPY",
+    "ror": 2.45,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "FR",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 0.6,
+    "peers": "$PLD $DRE $COLD $SPY",
+    "ror": 2.26,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "CR",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 13,
+    "bb_std": 0.9,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 2.13,
+    "entry_frequency": 5
+  },
+  {
+    "ticker": "EBC",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.8,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 2.11,
+    "entry_frequency": 5
+  },
+  {
+    "ticker": "TDS",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TMUS $USM $TDS $SPY",
+    "ror": 2.08,
+    "entry_frequency": 5
+  },
+  {
+    "ticker": "BKH",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 6,
+    "bb_std": 1.0,
+    "peers": "$D $SRE $PEG $SPY",
+    "ror": 2.03,
+    "entry_frequency": 5
+  },
+  {
+    "ticker": "CBRL",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 0.9,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 2.02,
+    "entry_frequency": 5
+  },
+  {
+    "ticker": "SFBS",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 1.89,
+    "entry_frequency": 5
+  },
+  {
+    "ticker": "PSB",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 1.0,
+    "peers": "$WPC $VER $STOR $SPY",
+    "ror": 1.74,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "EME",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": "$PWR $ACM $MTZ $SPY",
+    "ror": 1.73,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "SASR",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 0.7,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 1.61,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "G",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$G $SPY",
+    "ror": 1.55,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "DDS",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 9,
+    "bb_std": 1.0,
+    "peers": "$KSS $JWN $M $SPY",
+    "ror": 1.55,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "SCL",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 22,
+    "bb_std": 0.8,
+    "peers": "$SHW $ECL $DD $SPY",
+    "ror": 1.55,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "WF",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 7,
+    "bb_std": 0.7,
+    "peers": "$105560.KS $055550.KS $086790.KS $SPY",
+    "ror": 1.42,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "GGB",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$VALE3.SA $CMIN3.SA $CSNA3.SA $SPY",
+    "ror": 1.37,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "ABM",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 24,
+    "bb_std": 0.4,
+    "peers": "$WM $RSG $ROL $SPY",
+    "ror": 1.33,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "JACK",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 1.0,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 1.32,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "AVA",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 4,
+    "bb_std": 1.0,
+    "peers": "$D $SRE $PEG $SPY",
+    "ror": 1.31,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "ASH",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 19,
+    "bb_std": 0.7,
+    "peers": "$SHW $ECL $DD $SPY",
+    "ror": 1.29,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "NFG",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$ATO $UGI $NFG $SPY",
+    "ror": 1.25,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "STAY",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 15,
+    "bb_std": 1.0,
+    "peers": "$ABNB $MAR $HLT $SPY",
+    "ror": 1.24,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "GWPH",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 20,
+    "bb_std": 1.0,
+    "peers": "$AZN.L $GSK.L $GWPH $SPY",
+    "ror": 1.08,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "ADS",
+    "sector": "Miscellaneous",
+    "mktcap": "Large",
+    "bb_window": 17,
+    "bb_std": 0.8,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 0.95,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "STWD",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 0.9,
+    "peers": "$NLY $AGNC $STWD $SPY",
+    "ror": 0.94,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "MDU",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$D $SRE $PEG $SPY",
+    "ror": 0.92,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "ORI",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 1.0,
+    "peers": "$PGR $TRV $ALL $SPY",
+    "ror": 0.77,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "CUBE",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 23,
+    "bb_std": 1.0,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": 0.75,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "POR",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 9,
+    "bb_std": 1.0,
+    "peers": "$NEE $DUK $SO $SPY",
+    "ror": 0.73,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "COTY",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 0.8,
+    "peers": "$EL $COTY $NUS $SPY",
+    "ror": 0.55,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "PS",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 30,
+    "bb_std": 0.7,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": 0.54,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "RP",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 36,
+    "bb_std": 0.8,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": 0.33,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "ACC",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$EQR $AVB $INVH $SPY",
+    "ror": 0.11,
+    "entry_frequency": 1
+  },
+  {
+    "ticker": "PGRE",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 20,
+    "bb_std": 0.9,
+    "peers": "$ARE $BXP $VNO $SPY",
+    "ror": 0.1,
+    "entry_frequency": 1
+  },
+  {
+    "ticker": "LECO",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 45,
+    "bb_std": 1.0,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 0.06,
+    "entry_frequency": 1
+  },
+  {
+    "ticker": "FCNCA",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 1.0,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": -0.01,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "CWST",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 23,
+    "bb_std": 0.9,
+    "peers": "$WM $RSG $ROL $SPY",
+    "ror": -0.02,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "TLND",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 1.0,
+    "peers": "$TLND $VMX.PA $ALLIX.PA $SPY",
+    "ror": -0.16,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "NRZ",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 15,
+    "bb_std": 1.0,
+    "peers": "$NLY $AGNC $STWD $SPY",
+    "ror": -0.27,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "STAG",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 25,
+    "bb_std": 1.0,
+    "peers": "$PLD $DRE $COLD $SPY",
+    "ror": -0.61,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "UGI",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 15,
+    "bb_std": 1.0,
+    "peers": "$ATO $UGI $NFG $SPY",
+    "ror": -0.86,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "CNX",
+    "sector": "Energy",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 1.0,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": -1.07,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "ARES",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 32,
+    "bb_std": 0.9,
+    "peers": "$BLK $BX $KKR $SPY",
+    "ror": -1.08,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "NSA",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 33,
+    "bb_std": 1.0,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": -1.14,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "CIM",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 14,
+    "bb_std": 0.9,
+    "peers": "$NLY $AGNC $STWD $SPY",
+    "ror": -1.16,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "PLAY",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 16,
+    "bb_std": 0.9,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": -1.22,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "CIT",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 17,
+    "bb_std": 1.0,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": -1.55,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "THS",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "Large",
+    "bb_window": 10,
+    "bb_std": 0.9,
+    "peers": "$MDLZ $KHC $GIS $SPY",
+    "ror": -1.67,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "NUVA",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 16,
+    "bb_std": 0.6,
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": -1.68,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "SR",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 12,
+    "bb_std": 0.2,
+    "peers": "$ATO $UGI $NFG $SPY",
+    "ror": -2.04,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "SLGN",
+    "sector": "Consumer Durables",
+    "mktcap": "Large",
+    "bb_window": 47,
+    "bb_std": 1.0,
+    "peers": "$BLL $CCK $ATR $SPY",
+    "ror": -2.1,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "IDA",
+    "sector": "Public Utilities",
+    "mktcap": "Large",
+    "bb_window": 16,
+    "bb_std": 0.9,
+    "peers": "$NEE $DUK $SO $SPY",
+    "ror": -2.53,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "IHRT",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 18,
+    "bb_std": 0.7,
+    "peers": "$VIAC $FOXA $DISCA $SPY",
+    "ror": -2.99,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "RUBY",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 5,
+    "bb_std": 0.9,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -21.02,
+    "entry_frequency": 2
+  }
+]

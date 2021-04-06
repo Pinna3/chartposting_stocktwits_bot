@@ -1,0 +1,22 @@
+[
+  {
+    "ticker": "HOVNP",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 40.94,
+    "entry_frequency": 83
+  },
+  {
+    "ticker": "NYMTN",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.5,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 2.52,
+    "entry_frequency": 6
+  }
+]

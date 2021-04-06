@@ -27,7 +27,13 @@ class SecurityTradeData:
         #candlestick data (Alpaca API Primary, Finnhub backup)
         # try:
         smoothness_test = True
-        data = return_candles_json(ticker, period='day', num_bars=365)
+        data = None
+        while data is None:
+            try:
+                data = return_candles_json(ticker, period='day', num_bars=365)
+                time.sleep(.7)
+            except:
+                continue
         for index, ohlc in enumerate(data[ticker][:-1]):
             if abs(float(ohlc['c']) - float(data[ticker][index+1]['o'])) > (float(ohlc['c']) * .5):
                 smoothness_test = False

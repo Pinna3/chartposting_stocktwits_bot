@@ -1,0 +1,62 @@
+[
+  {
+    "ticker": "HOVNP",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 25.48,
+    "entry_frequency": 52
+  },
+  {
+    "ticker": "MTCN",
+    "sector": "Basic Industries",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 16.11,
+    "entry_frequency": 33
+  },
+  {
+    "ticker": "GFLU",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": 7,
+    "bb_std": 0.8,
+    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
+    "ror": 5.39,
+    "entry_frequency": 12
+  },
+  {
+    "ticker": "AFINP",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 4.15,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "BPYPP",
+    "sector": "Finance",
+    "mktcap": "Micro",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$BPY $H78.SI $ROM.OL $SPY",
+    "ror": 1.24,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "NYMTN",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 18,
+    "bb_std": 1.0,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": -0.6,
+    "entry_frequency": 2
+  }
+]

@@ -218,6 +218,7 @@ def initialize_holdings():
     for holding in positions:
         symbol = holding['symbol']
         market_value = round(float(holding['market_value']), 2)
+        side = holding['side']
         sector = fetch_sector(symbol)
         if sector not in holdings[side]['sector'].keys():
             holdings[side]['sector'][sector] = {}
@@ -240,7 +241,7 @@ def initialize_holdings():
         market_value = 0.0
         for stock in holdings['short']['sector'][sector]['stocks']:
             market_value += round(float(stock[1]), 2)
-        holdings['short']['sector'][sector]['market_value'] = market_value
+        holdings['short']['sector'][sector]['market_value'] = abs(market_value)
         holdings['short']['sector'][sector]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
 
     long_market_value = 0.0
@@ -250,7 +251,7 @@ def initialize_holdings():
     holdings['long']['acct_percentage'] = round((long_market_value / acct_value) * 100, 2)
     short_market_value = 0.0
     for sector in short_sector_keys:
-        short_market_value += round(holdings['short']['sector'][sector]['market_value'], 2)
+        short_market_value += round(abs(holdings['short']['sector'][sector]['market_value'], 2))
     holdings['short']['market_value'] = round(short_market_value, 2)
     holdings['short']['acct_percentage'] = round((short_market_value / acct_value) * 100, 2)
 

@@ -1,0 +1,132 @@
+[
+  {
+    "ticker": "DBI",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TJX $ROST $BURL $SPY",
+    "ror": 111.26,
+    "entry_frequency": 224
+  },
+  {
+    "ticker": "CNTY",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 2,
+    "bb_std": 0.1,
+    "peers": "$LVS $DKNG $MGM $SPY",
+    "ror": 79.88,
+    "entry_frequency": 161
+  },
+  {
+    "ticker": "BBCP",
+    "sector": "Basic Industries",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$PWR $ACM $MTZ $SPY",
+    "ror": 67.73,
+    "entry_frequency": 136
+  },
+  {
+    "ticker": "RRGB",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 65.92,
+    "entry_frequency": 133
+  },
+  {
+    "ticker": "TWI",
+    "sector": "Basic Industries",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$DE $TTC $AGCO $SPY",
+    "ror": 59.4,
+    "entry_frequency": 120
+  },
+  {
+    "ticker": "SCVL",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TJX $ROST $BURL $SPY",
+    "ror": 51.6,
+    "entry_frequency": 104
+  },
+  {
+    "ticker": "CUBI",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 47.23,
+    "entry_frequency": 95
+  },
+  {
+    "ticker": "RBNC",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 47.14,
+    "entry_frequency": 95
+  },
+  {
+    "ticker": "HCI",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$PGR $TRV $ALL $SPY",
+    "ror": 46.51,
+    "entry_frequency": 94
+  },
+  {
+    "ticker": "TRNS",
+    "sector": "Capital Goods",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$FAST $URI $GWW $SPY",
+    "ror": 42.15,
+    "entry_frequency": 85
+  },
+  {
+    "ticker": "AMEH",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$CVS $CI $LH $SPY",
+    "ror": 31.46,
+    "entry_frequency": 64
+  },
+  {
+    "ticker": "FST",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 24.68,
+    "entry_frequency": 50
+  },
+  {
+    "ticker": "PLYM",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$PLD $DRE $COLD $SPY",
+    "ror": 16.13,
+    "entry_frequency": 33
+  }
+]
