@@ -8,12 +8,12 @@ from alpaca import get_all_positions, get_account_value, return_candles_json
 import pandas as pd
 from glob import glob
 
-###Preset rolling window range (1 - 25), preset std range (.1 - 3.0)
+###Preset rolling window range (1 - 50), preset std range (.1 - 3.0)
 def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency):
     candles = SecurityTradeDataObject
     def optimal_bb_window(op_str, entry_frequency):
         rolling_window_and_counter = []
-        for rolling_window in range(26):
+        for rolling_window in range(50):
             try:
                 candles.custom_bollingers(rolling_window, 1)
                 rolling_window_and_counter.append([rolling_window, \
