@@ -25,8 +25,6 @@ Micro:
 
 Next step: ATR Trailing Stops, timed exits, bollinger exits.
 
-Also: Will need backup API for finnhub down periods... (need sector data)
-
 Top Insights to address:
 1) Allow Long/Short Allocation Ratio to fluctuate with the ratio of uptrending/downtrending
 2) Increase entry frequency proportional to rate of return... prioritize the strongest trends.
@@ -34,10 +32,18 @@ Top Insights to address:
   CRITICAL FLAW NEEDS ADDRESSING
 3) Show daily trade limit change according to market conditions as well? Why not? Think about it...
 
-Finish ratio setting tmw
-
 ***Think about using shifting ATR values to optimize ATR stop multiples (For now, use trailing stops of 1ATR[placeholder])
 
-Figure out why scan is not working !!! WTF!!!
-
 Why aren't the sector allocation maximums set dynamically like the Long/Shorts??? Implement.
+
+
+
+***To Do List for Wednesday:
+[Must complete]
+1) Setup CSV File or some other data structure to easily view drop off rate rankings...
+2) After doing so remove dates from watchlist, watchlists updated nightly
+
+[Should address]
+3+) Think about Priority Scheme
+4+) Clean up some code, a little every day... must be done.
+5+) ROR strategy for high/low timeframes... think about

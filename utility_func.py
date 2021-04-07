@@ -79,13 +79,18 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time
         if index != 0:
             try:
                 dropoff = round(1 - (count / hits[index-1]), 2)
-                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
+                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3), date_str))
             except ZeroDivisionError:
                 dropoff = 0
-                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
+                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3), date_str))
     dropoffs_sorted = sorted(dropoffs, key = lambda x: x[1])
     with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
         json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
+    # data = [date_str, index * interval, dropoff, count, hits[0], round(count/hits[0], 3)]
+    # with open(f'{mktcap_dir}Stocks/WeeklyDropOff/DropOffs.csv', 'a+', newline='') as outfile:
+    #     writer = csv.writer(outfile)
+    #     if date_str not in str(writer):
+    #         writer.writerow(data)
     return dropoffs, dropoffs_sorted
 
 #Label Fixed for Next Scan
@@ -163,7 +168,7 @@ def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
     # print(dropoffs)
     # print('')
     for tuple in dropoffs_sorted:
-        days, dropoff_rate, count, starting_total, percentage_of_total = tuple
+        days, dropoff_rate, count, starting_total, percentage_of_total, date_str = tuple
         try:
             rating = round(percentage_of_total / dropoff_rate, 2)
         except ZeroDivisionError:
@@ -404,7 +409,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
 # print(list)
 
 # #fixed filenames
-# def filter_watchlists_for_dailyscanner(date, max_per_category=3, drop_off_rate_cutoff=.25):
+# def drop_off_based_watchlist_filter(date, max_per_category=3, drop_off_rate_cutoff=.25):
 #     approved_files_w_operator = []
 #     for direction in ['up', 'down']:
 #         for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
@@ -418,7 +423,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
 #                     approved_files_w_operator.append([f'({result[0]},)D-{direction}trend.json'])
 
 
-def filter_watchlists_for_dailyscanner(date, max_per_category=3, drop_off_rate_cutoff=.25):
+def drop_off_based_watchlist_filter(date, max_per_category=3, drop_off_rate_cutoff=.25):
     approved_files_w_operator = []
     for direction in ['up', 'down']:
         for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
@@ -431,7 +436,7 @@ def filter_watchlists_for_dailyscanner(date, max_per_category=3, drop_off_rate_c
                 if result[1] < drop_off_rate_cutoff:
                     approved_files_w_operator.append([f'{mktcap}Stocks/Watchlists/{date}/({result[0]},)D-6E-{direction}trend.json', operator])
     return approved_files_w_operator
-# [print(item) for item in filter_watchlists_for_dailyscanner('04-04-21', max_per_category=3, drop_off_rate_cutoff=.25)]
+# [print(item) for item in drop_off_based_watchlist_filter('04-04-21', max_per_category=3, drop_off_rate_cutoff=.25)]
 
 def pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10):
     def there_can_only_be_n(watchlists, tier_percentage, op_str):

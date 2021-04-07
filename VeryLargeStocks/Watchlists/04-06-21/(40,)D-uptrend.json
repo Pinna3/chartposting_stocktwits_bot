@@ -133,8 +133,8 @@
     "ticker": "TROW",
     "sector": "Finance",
     "mktcap": "VeryLarge",
-    "bb_window": 8,
-    "bb_std": 0.9,
+    "bb_window": 7,
+    "bb_std": 0.8,
     "peers": "$BLK $BX $KKR $SPY",
     "ror": 7.23,
     "entry_frequency": 15

@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
-    "ror": 90.52,
-    "entry_frequency": 182
+    "ror": 89.41,
+    "entry_frequency": 180
   },
   {
     "ticker": "UHAL",
@@ -16,8 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 32.05,
-    "entry_frequency": 65
+    "ror": 31.4,
+    "entry_frequency": 64
   },
   {
     "ticker": "HPE",
@@ -26,7 +26,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 26.79,
+    "ror": 28.48,
+    "entry_frequency": 58
+  },
+  {
+    "ticker": "SNA",
+    "sector": "Capital Goods",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 26.87,
     "entry_frequency": 55
   },
   {
@@ -36,7 +46,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 20.35,
+    "ror": 20.74,
     "entry_frequency": 42
   },
   {
@@ -44,9 +54,19 @@
     "sector": "Finance",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.7,
+    "bb_std": 0.5,
     "peers": "$BLK $BX $KKR $SPY",
-    "ror": 12.08,
-    "entry_frequency": 25
+    "ror": 12.33,
+    "entry_frequency": 26
+  },
+  {
+    "ticker": "WU",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 10.49,
+    "entry_frequency": 22
   }
 ]

@@ -334,7 +334,7 @@
     "sector": "Finance",
     "mktcap": "VeryLarge",
     "bb_window": 5,
-    "bb_std": 0.9,
+    "bb_std": 0.3,
     "peers": "$BLK $BX $KKR $SPY",
     "ror": 8.48,
     "entry_frequency": 18
@@ -434,7 +434,7 @@
     "sector": "Technology",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.9,
+    "bb_std": 1.0,
     "peers": "$WPP.L $INF.L $SFOR.L $SPY",
     "ror": 6.25,
     "entry_frequency": 14
@@ -513,8 +513,8 @@
     "ticker": "CTVA",
     "sector": "Consumer Non-Durables",
     "mktcap": "VeryLarge",
-    "bb_window": 21,
-    "bb_std": 0.9,
+    "bb_window": null,
+    "bb_std": 0.1,
     "peers": "$CTVA $FMC $SMG $SPY",
     "ror": 1.44,
     "entry_frequency": 4

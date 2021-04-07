@@ -184,7 +184,7 @@
     "sector": "Basic Industries",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 1.0,
+    "bb_std": 0.5,
     "peers": "$950140.KQ $CSGP $VRSK $SPY",
     "ror": 8.26,
     "entry_frequency": 18
@@ -403,8 +403,8 @@
     "ticker": "GFL",
     "sector": "Public Utilities",
     "mktcap": "VeryLarge",
-    "bb_window": 5,
-    "bb_std": 0.6,
+    "bb_window": 6,
+    "bb_std": 0.3,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 6.69,
     "entry_frequency": 14
@@ -653,8 +653,8 @@
     "ticker": "WRB",
     "sector": "Finance",
     "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 1.0,
+    "bb_window": 4,
+    "bb_std": 0.5,
     "peers": "$PGR $TRV $ALL $SPY",
     "ror": 4.25,
     "entry_frequency": 10
@@ -863,8 +863,8 @@
     "ticker": "PAYX",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 23,
-    "bb_std": 0.9,
+    "bb_window": null,
+    "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 0.5,
     "entry_frequency": 2
@@ -890,23 +890,23 @@
     "entry_frequency": 2
   },
   {
-    "ticker": "IR",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 32,
-    "bb_std": 1.0,
-    "peers": "$ITW $PH $SWK $SPY",
-    "ror": -0.47,
-    "entry_frequency": 2
-  },
-  {
     "ticker": "TROW",
     "sector": "Finance",
     "mktcap": "VeryLarge",
-    "bb_window": 26,
-    "bb_std": 1.0,
+    "bb_window": 18,
+    "bb_std": 0.8,
     "peers": "$BLK $BX $KKR $SPY",
     "ror": -0.57,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "IR",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": -0.59,
     "entry_frequency": 2
   },
   {

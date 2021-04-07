@@ -5,7 +5,7 @@ from tweet import twitter_api
 import json
 import operator
 from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short
-from utility_func import initialize_holdings, filter_watchlists_for_dailyscanner, pull_top_tier_unbroken_trenders
+from utility_func import initialize_holdings, drop_off_based_watchlist_filter, pull_top_tier_unbroken_trenders
 from risk_parameter import*
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
@@ -177,27 +177,27 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
 
 watchlists_generation_date = '04-04-21'
 while True:
-    ###Think about another filtering mechanism (worried about shorts) (maybe restrict to long trending or winning trend, feels off)
+    # ###Think about another filtering mechanism (worried about shorts) (maybe restrict to long trending or winning trend, feels off)
+    # print('.')
+    # print('.')
+    # print('.')
+    # [print(item[0]) for item in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10)]
+    # print('.')
+    # print('.')
+    # print('.')
+    # for filename, direction, number, total in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10):
+    #     print('')
+    #     print(filename)
+    #     print('')
+    #     dailyscanner(filename, direction, watchlist_date=watchlists_generation_date, publish=False)
     print('.')
     print('.')
     print('.')
-    [print(item[0]) for item in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10)]
+    [print(item[0]) for item in drop_off_based_watchlist_filter(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25)]
     print('.')
     print('.')
     print('.')
-    for filename, direction, number, total in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10):
-        print('')
-        print(filename)
-        print('')
-        dailyscanner(filename, direction, watchlist_date=watchlists_generation_date, publish=False)
-    print('.')
-    print('.')
-    print('.')
-    [print(item[0]) for item in filter_watchlists_for_dailyscanner(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25)]
-    print('.')
-    print('.')
-    print('.')
-    for filename, direction in filter_watchlists_for_dailyscanner(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25):
+    for filename, direction in drop_off_based_watchlist_filter(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25):
         print('')
         print(filename)
         print('')

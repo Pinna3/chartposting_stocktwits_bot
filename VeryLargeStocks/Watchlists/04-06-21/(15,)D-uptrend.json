@@ -144,7 +144,7 @@
     "sector": "Capital Goods",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 0.9,
     "peers": "$DHI $LEN $NVR $SPY",
     "ror": 9.52,
     "entry_frequency": 20
@@ -184,7 +184,7 @@
     "sector": "Transportation",
     "mktcap": "VeryLarge",
     "bb_window": 4,
-    "bb_std": 1.0,
+    "bb_std": 0.8,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 8.24,
     "entry_frequency": 17
@@ -294,7 +294,7 @@
     "sector": "Public Utilities",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.3,
+    "bb_std": 0.1,
     "peers": "$WM $RSG $ROL $SPY",
     "ror": 6.89,
     "entry_frequency": 15
@@ -403,8 +403,8 @@
     "ticker": "TSCO",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 6,
-    "bb_std": 0.8,
+    "bb_window": 7,
+    "bb_std": 0.1,
     "peers": "$TSCO $ULTA $FIVE $SPY",
     "ror": 5.65,
     "entry_frequency": 12
@@ -513,8 +513,8 @@
     "ticker": "ORLY",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 4,
-    "bb_std": 0.6,
+    "bb_window": 5,
+    "bb_std": 0.1,
     "peers": "$CVNA $ORLY $AZO $SPY",
     "ror": 4.84,
     "entry_frequency": 11
@@ -734,7 +734,7 @@
     "sector": "Technology",
     "mktcap": "VeryLarge",
     "bb_window": 12,
-    "bb_std": 0.9,
+    "bb_std": 1.0,
     "peers": "$PNR $SPX.L $WEIR.L $SPY",
     "ror": 3.28,
     "entry_frequency": 8
@@ -1093,8 +1093,8 @@
     "ticker": "MOH",
     "sector": "Health Care",
     "mktcap": "VeryLarge",
-    "bb_window": 23,
-    "bb_std": 0.9,
+    "bb_window": null,
+    "bb_std": 0.1,
     "peers": "$UNH $ANTM $HUM $SPY",
     "ror": 1.53,
     "entry_frequency": 4
@@ -1183,8 +1183,8 @@
     "ticker": "TT",
     "sector": "Capital Goods",
     "mktcap": "VeryLarge",
-    "bb_window": 22,
-    "bb_std": 0.9,
+    "bb_window": null,
+    "bb_std": 0.1,
     "peers": "$JCI $TT $KRX.IR $SPY",
     "ror": 0.96,
     "entry_frequency": 3
@@ -1253,8 +1253,8 @@
     "ticker": "CNI",
     "sector": "Transportation",
     "mktcap": "VeryLarge",
-    "bb_window": 31,
-    "bb_std": 0.9,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$CNR.TO $CP.TO $SPY",
     "ror": 0.53,
     "entry_frequency": 2
@@ -1263,8 +1263,8 @@
     "ticker": "CI",
     "sector": "Health Care",
     "mktcap": "VeryLarge",
-    "bb_window": 30,
-    "bb_std": 1.0,
+    "bb_window": null,
+    "bb_std": 0.1,
     "peers": "$CVS $CI $LH $SPY",
     "ror": 0.43,
     "entry_frequency": 2
@@ -1313,8 +1313,8 @@
     "ticker": "SBUX",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 24,
-    "bb_std": 1.0,
+    "bb_window": null,
+    "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 0.04,
     "entry_frequency": 1
@@ -1330,16 +1330,6 @@
     "entry_frequency": 2
   },
   {
-    "ticker": "IR",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 32,
-    "bb_std": 1.0,
-    "peers": "$ITW $PH $SWK $SPY",
-    "ror": -0.04,
-    "entry_frequency": 2
-  },
-  {
     "ticker": "BX",
     "sector": "Finance",
     "mktcap": "VeryLarge",
@@ -1347,6 +1337,16 @@
     "bb_std": 0.9,
     "peers": "$BLK $BX $KKR $SPY",
     "ror": -0.09,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "IR",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": -0.16,
     "entry_frequency": 2
   },
   {
@@ -1363,8 +1363,8 @@
     "ticker": "NLY",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 47,
-    "bb_std": 1.0,
+    "bb_window": 2,
+    "bb_std": 0.8,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": -0.46,
     "entry_frequency": 2
@@ -1373,8 +1373,8 @@
     "ticker": "RYAAY",
     "sector": "Transportation",
     "mktcap": "VeryLarge",
-    "bb_window": 22,
-    "bb_std": 1.0,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$RY4C.IR $SPY",
     "ror": -0.79,
     "entry_frequency": 2
@@ -1393,8 +1393,8 @@
     "ticker": "PAYX",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 23,
-    "bb_std": 0.9,
+    "bb_window": null,
+    "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": -3.08,
     "entry_frequency": 2

@@ -34,7 +34,7 @@
     "sector": "Finance",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.4,
+    "bb_std": 0.1,
     "peers": "$BLK $BX $KKR $SPY",
     "ror": 13.55,
     "entry_frequency": 28
