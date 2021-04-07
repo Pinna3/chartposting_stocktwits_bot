@@ -175,7 +175,7 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
         #     continue
 
 
-watchlists_generation_date = '04-04-21'
+watchlists_generation_date = '04-06-21'
 while True:
     # ###Think about another filtering mechanism (worried about shorts) (maybe restrict to long trending or winning trend, feels off)
     # print('.')

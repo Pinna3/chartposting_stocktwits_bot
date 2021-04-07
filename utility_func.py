@@ -54,7 +54,7 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency, window_
 def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-6E-{down_or_up_str}trend.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             # print(period, len(list))
@@ -66,11 +66,12 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
     fig = go.Figure(data=data, layout=layout)
     fig.show()
     return f'{mktcap_dir} {down_or_up_str}trend'
+# graph_degrees_of_trend('VeryLarge', 'up', '04-06-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
 
 def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-6E-{down_or_up_str}trend.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             # print(period, len(list))
@@ -80,64 +81,39 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time
         if index != 0:
             try:
                 dropoff = round(1 - (count / hits[index-1]), 2)
-                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
+                percentage = round(count/hits[0], 3)
+                dropoffs.append((index * interval, dropoff, count, hits[0], percentage))
             except ZeroDivisionError:
-                dropoff = 0
-                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
+                try:
+                    dropoff = 0
+                    percentage = round(count/hits[0], 3)
+                    dropoffs.append((index * interval, dropoff, count, hits[0], percentage))
+                except ZeroDivisionError:
+                    dropoff = 0
+                    percentage = 0
+                    dropoffs.append((index * interval, dropoff, count, hits[0], percentage))
     dropoffs_sorted = sorted(dropoffs, key = lambda x: x[1])
     csv_row = [date]
     for group in dropoffs_sorted:
-        if group[1] == 0:
+        if group[1] <= 0:
             continue
         else:
             for datapoint in group:
                 csv_row.append(datapoint)
-    # print(csv_row)
-    # with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
-    #     json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
-    with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend.csv', 'a') as outfile:
-        writer = csv.writer(outfile)
-        writer.writerow(csv_row)
+    print(csv_row)
+    with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend.csv') as infile:
+        reader = csv.reader(infile)
+        up_to_date = False
+        for row in reader:
+            if row[0] == date_str:
+                up_to_date = True
+        if up_to_date == False:
+            with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend.csv', 'a') as outfile:
+                writer = csv.writer(outfile)
+                writer.writerow(csv_row)
 #### check for date with in file, if not in, append file
-    return dropoffs, dropoffs_sorted
-
-#Label Fixed for Next Scan
-# def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
-#     hits = []
-#     for period in time_markers:
-#         with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-{down_or_up_str}trend.json') as infile:
-#             list = json.load(infile)
-#             hits.append(len(list))
-#             # print(period, len(list))
-#     trace = {'x': time_markers, 'y': hits, 'type': 'scatter', 'mode': 'lines',
-#         'line': {'width': 1, 'color': 'blue'}, 'name': 'Hits'}
-#     data = [trace]
-#     layout = go.Layout({'title': {'text': f'{mktcap_dir} {down_or_up_str}trend Hits',
-#             'font': {'size': 15}}})
-#     fig = go.Figure(data=data, layout=layout)
-#     fig.show()
-#     return f'{mktcap_dir} {down_or_up_str}trend'
-#
-# def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
-#     hits = []
-#     for period in time_markers:
-#         with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-{down_or_up_str}trend.json') as infile:
-#             list = json.load(infile)
-#             hits.append(len(list))
-#             # print(period, len(list))
-#     dropoffs = []
-#     for index, count in enumerate(hits):
-#         if index != 0:
-#             try:
-#                 dropoff = round(1 - (count / hits[index-1]), 2)
-#                 dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
-#             except ZeroDivisionError:
-#                 dropoff = 0
-#                 dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
-#     dropoffs_sorted = sorted(dropoffs, key = lambda x: x[1])
-#     with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
-#         json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
-#     return dropoffs, dropoffs_sorted
+    return dropoffs_sorted
+# calculate_and_file_dropoff_rates('VeryLarge', 'up', '04-06-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 
 def count_stock_csv_list(csv_source):
     securities = []
@@ -169,13 +145,14 @@ def return_list_of_tickers(csv_source):
 #interval = time between time_markers
 def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
     # label = graph_degrees_of_trend(mktcap_group, trend, date, *time_markers)
-    dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates(mktcap_group, trend, date, *time_markers, interval)
+    dropoffs_s = calculate_and_file_dropoff_rates(mktcap_group, trend, date, *time_markers, interval)
+    print(dropoffs_s)
     ranking = []
     ranking_time_weighted = []
     # print('')
     # print(dropoffs)
     # print('')
-    for tuple in dropoffs_sorted:
+    for tuple in dropoffs_s:
         days, dropoff_rate, count, starting_total, percentage_of_total = tuple
         try:
             rating = round(percentage_of_total / dropoff_rate, 2)
@@ -413,24 +390,6 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
                 total_batch_df_list.append(item)
     return total_batch_df_list
 
-# list = make_pulled_csv_list_consumable('StockLists/verylargesample.csv')
-# print(list)
-
-# #fixed filenames
-# def drop_off_based_watchlist_filter(date, max_per_category=3, drop_off_rate_cutoff=.25):
-#     approved_files_w_operator = []
-#     for direction in ['up', 'down']:
-#         for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
-#             if direction == 'up':
-#                 operator = '>'
-#             elif direction == 'down':
-#                 operator = '<'
-#             time_weighted_ranked = rank_dropoffs(mktcap, direction, date, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-#             for result in time_weighted_ranked:
-#                 if result[1] < drop_off_rate_cutoff:
-#                     approved_files_w_operator.append([f'({result[0]},)D-{direction}trend.json'])
-
-
 def drop_off_based_watchlist_filter(date, max_per_category=3, drop_off_rate_cutoff=.25):
     approved_files_w_operator = []
     for direction in ['up', 'down']:
@@ -442,7 +401,7 @@ def drop_off_based_watchlist_filter(date, max_per_category=3, drop_off_rate_cuto
             time_weighted_ranked = rank_dropoffs(mktcap, direction, date, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
             for result in time_weighted_ranked[:max_per_category]:
                 if result[1] < drop_off_rate_cutoff:
-                    approved_files_w_operator.append([f'{mktcap}Stocks/Watchlists/{date}/({result[0]},)D-6E-{direction}trend.json', operator])
+                    approved_files_w_operator.append([f'{mktcap}Stocks/Watchlists/{date}/({result[0]},)D-{direction}trend.json', operator])
     return approved_files_w_operator
 # [print(item) for item in drop_off_based_watchlist_filter('04-04-21', max_per_category=3, drop_off_rate_cutoff=.25)]
 
@@ -491,68 +450,3 @@ def get_bb_params_distribution(watchlists_generation_date='04-04-21'):
     bb_window_dist = sorted(set([x for x in bb_windows if x != None]), reverse=True)
     bb_stds_dist = sorted(set(x for x in bb_stds if x != None), reverse=True)
     return bb_window_dist, bb_stds_dist
-
-# for item in pull_top_10_unbroken_trenders('04-04-21')['MicroStocks']:
-#     print(item)
-
-    # short_total = 0
-    # for group in mkt_caps:
-    #     for file in glob(f'{group}/Watchlists/{watchlists_generation_date}/*downtrend.json'):
-    #         with open(file) as infile:
-    #             content = json.load(infile)
-    #             short_total += len(content)
-
-
-
-
-
-
-# print(rank_dropoffs('VeryLarge', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('Large', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('Medium', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('Small', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('Micro', 'up', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('VeryLarge', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('Large', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('Medium', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('Small', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-# print(rank_dropoffs('Micro', 'down', '04-04-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5))
-
-# graph_degrees_of_trend('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-29-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# print(dropoffs_sorted)
-
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('VeryLarge', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# for instance in dropoffs_sorted:
-#     index, drop_off_rate, count, total, count_total_fract = instance
-#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-#         print('VeryLarge')
-#         print(instance)
-# print('')
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Large', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# for instance in dropoffs_sorted:
-#     index, drop_off_rate, count, total, count_total_fract = instance
-#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-#         print('Large')
-#         print(instance)
-# print('')
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Medium', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# for instance in dropoffs_sorted:
-#     index, drop_off_rate, count, total, count_total_fract = instance
-#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-#         print('Medium')
-#         print(instance)
-# print('')
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Small', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# for instance in dropoffs_sorted:
-#     index, drop_off_rate, count, total, count_total_fract = instance
-#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-#         print('Small')
-#         print(instance)
-# print('')
-# dropoffs, dropoffs_sorted = calculate_and_file_dropoff_rates('Micro', 'down', '03-28-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
-# for instance in dropoffs_sorted:
-#     index, drop_off_rate, count, total, count_total_fract = instance
-#     if drop_off_rate != 0 and count_total_fract > .3 and drop_off_rate < .3:
-#         print('Micro')
-#         print(instance)
