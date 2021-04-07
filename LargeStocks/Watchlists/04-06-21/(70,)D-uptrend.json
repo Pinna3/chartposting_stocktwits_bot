@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 205.34,
-    "entry_frequency": 412
+    "entry_frequency": 206
   },
   {
     "ticker": "SGRY",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 58.11,
-    "entry_frequency": 117
+    "entry_frequency": 59
   },
   {
     "ticker": "SLM",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 53.55,
-    "entry_frequency": 108
+    "entry_frequency": 55
   },
   {
     "ticker": "PLAY",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 52.69,
-    "entry_frequency": 106
+    "entry_frequency": 54
   },
   {
     "ticker": "IHRT",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$VIAC $FOXA $DISCA $SPY",
     "ror": 51.75,
-    "entry_frequency": 104
+    "entry_frequency": 53
   },
   {
     "ticker": "FIX",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 42.26,
-    "entry_frequency": 86
+    "entry_frequency": 43
   },
   {
     "ticker": "OSK",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$CAT $CMI $PCAR $SPY",
     "ror": 40.88,
-    "entry_frequency": 83
+    "entry_frequency": 42
   },
   {
     "ticker": "STN",
@@ -77,7 +77,7 @@
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 35.6,
-    "entry_frequency": 72
+    "entry_frequency": 37
   },
   {
     "ticker": "MMS",
@@ -87,6 +87,6 @@
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 26.94,
-    "entry_frequency": 55
+    "entry_frequency": 28
   }
 ]

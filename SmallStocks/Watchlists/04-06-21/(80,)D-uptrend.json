@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 140.47,
-    "entry_frequency": 282
+    "entry_frequency": 141
   },
   {
     "ticker": "HQI",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 102.61,
-    "entry_frequency": 206
+    "entry_frequency": 104
   },
   {
     "ticker": "PMBC",
@@ -27,6 +27,6 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 85.36,
-    "entry_frequency": 172
+    "entry_frequency": 86
   }
 ]

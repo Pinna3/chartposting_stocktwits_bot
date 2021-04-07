@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
     "ror": 48.65,
-    "entry_frequency": 98
+    "entry_frequency": 50
   },
   {
     "ticker": "NUZE",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$MDLZ $KHC $GIS $SPY",
     "ror": 45.65,
-    "entry_frequency": 92
+    "entry_frequency": 47
   },
   {
     "ticker": "IMRA",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 34.25,
-    "entry_frequency": 70
+    "entry_frequency": 35
   },
   {
     "ticker": "VYGR",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 21.74,
-    "entry_frequency": 44
+    "entry_frequency": 23
   },
   {
     "ticker": "UK",
@@ -47,6 +47,6 @@
     "bb_std": 0.1,
     "peers": "$KW $RFL $FRPH $SPY",
     "ror": 8.61,
-    "entry_frequency": 18
+    "entry_frequency": 10
   }
 ]

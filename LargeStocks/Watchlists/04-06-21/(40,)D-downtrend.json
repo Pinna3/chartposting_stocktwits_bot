@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 26.35,
-    "entry_frequency": 54
+    "entry_frequency": 27
   },
   {
     "ticker": "SRPT",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 20.73,
-    "entry_frequency": 42
+    "entry_frequency": 22
   }
 ]

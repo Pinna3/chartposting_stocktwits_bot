@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 20.7,
-    "entry_frequency": 42
+    "ror": 19.54,
+    "entry_frequency": 21
   },
   {
     "ticker": "TLGT",
@@ -16,8 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 18.55,
-    "entry_frequency": 38
+    "ror": 19.24,
+    "entry_frequency": 20
   },
   {
     "ticker": "CHFS",
@@ -26,18 +26,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 10.91,
-    "entry_frequency": 23
-  },
-  {
-    "ticker": "ENSV",
-    "sector": "Energy",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$SLB $BKR $HAL $SPY",
-    "ror": 8.67,
-    "entry_frequency": 18
+    "ror": 11.25,
+    "entry_frequency": 12
   },
   {
     "ticker": "EFOI",
@@ -46,57 +36,57 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": 6.56,
-    "entry_frequency": 14
+    "ror": 10.41,
+    "entry_frequency": 11
+  },
+  {
+    "ticker": "ENSV",
+    "sector": "Energy",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.3,
+    "peers": "$SLB $BKR $HAL $SPY",
+    "ror": 9.14,
+    "entry_frequency": 10
   },
   {
     "ticker": "WINT",
     "sector": "Health Care",
     "mktcap": "Micro",
-    "bb_window": 8,
+    "bb_window": 9,
     "bb_std": 1.0,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 3.18,
-    "entry_frequency": 7
-  },
-  {
-    "ticker": "ESP",
-    "sector": "Capital Goods",
-    "mktcap": "Micro",
-    "bb_window": 15,
-    "bb_std": 1.0,
-    "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": 1.96,
+    "ror": 4.29,
     "entry_frequency": 5
   },
   {
     "ticker": "HYACU",
     "sector": "Finance",
     "mktcap": "Micro",
-    "bb_window": 5,
-    "bb_std": 1.0,
+    "bb_window": 7,
+    "bb_std": 0.9,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.4,
-    "entry_frequency": 2
+    "entry_frequency": 1
   },
   {
     "ticker": "HPR",
     "sector": "Energy",
     "mktcap": "Micro",
-    "bb_window": 7,
-    "bb_std": 0.4,
+    "bb_window": null,
+    "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": -0.21,
-    "entry_frequency": 2
+    "entry_frequency": 1
   },
   {
     "ticker": "ELC",
     "sector": "Public Utilities",
     "mktcap": "Micro",
-    "bb_window": 5,
+    "bb_window": 13,
     "bb_std": 1.0,
     "peers": "$NEE $DUK $SO $SPY",
     "ror": -1.02,
-    "entry_frequency": 2
+    "entry_frequency": 1
   }
 ]

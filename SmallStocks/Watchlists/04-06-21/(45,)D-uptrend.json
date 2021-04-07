@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 108.84,
-    "entry_frequency": 219
+    "entry_frequency": 110
   },
   {
     "ticker": "USAK",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 89.34,
-    "entry_frequency": 180
+    "entry_frequency": 90
   },
   {
     "ticker": "PRT",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 83.77,
-    "entry_frequency": 169
+    "entry_frequency": 85
   },
   {
     "ticker": "TZOO",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$GOOGL $FB $SNAP $SPY",
     "ror": 61.47,
-    "entry_frequency": 124
+    "entry_frequency": 62
   },
   {
     "ticker": "INTT",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 59.17,
-    "entry_frequency": 119
+    "entry_frequency": 60
   },
   {
     "ticker": "NMM",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$CMRE $NMCI $NMM $SPY",
     "ror": 55.62,
-    "entry_frequency": 112
+    "entry_frequency": 57
   },
   {
     "ticker": "PMBC",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 50.42,
-    "entry_frequency": 102
+    "entry_frequency": 51
   },
   {
     "ticker": "HQI",
@@ -77,17 +77,17 @@
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 49.28,
-    "entry_frequency": 100
+    "entry_frequency": 50
   },
   {
     "ticker": "MHLD",
     "sector": "Finance",
     "mktcap": "Small",
     "bb_window": 2,
-    "bb_std": 0.1,
+    "bb_std": 0.8,
     "peers": "$RE $RNR $ESGR $SPY",
     "ror": 40.95,
-    "entry_frequency": 83
+    "entry_frequency": 42
   },
   {
     "ticker": "ALOT",
@@ -97,7 +97,7 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 29.78,
-    "entry_frequency": 61
+    "entry_frequency": 31
   },
   {
     "ticker": "LOAN",
@@ -107,7 +107,7 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 25.74,
-    "entry_frequency": 52
+    "entry_frequency": 27
   },
   {
     "ticker": "SACH",
@@ -117,7 +117,7 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 21.8,
-    "entry_frequency": 45
+    "entry_frequency": 23
   },
   {
     "ticker": "BRBS",
@@ -127,6 +127,6 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 13.05,
-    "entry_frequency": 27
+    "entry_frequency": 14
   }
 ]

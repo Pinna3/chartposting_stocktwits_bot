@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$MDLZ $KHC $GIS $SPY",
     "ror": 53.12,
-    "entry_frequency": 107
+    "entry_frequency": 54
   },
   {
     "ticker": "GLTO",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
     "ror": 49.83,
-    "entry_frequency": 101
+    "entry_frequency": 51
   },
   {
     "ticker": "VYGR",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 31.24,
-    "entry_frequency": 63
+    "entry_frequency": 32
   },
   {
     "ticker": "UK",
@@ -37,6 +37,6 @@
     "bb_std": 0.1,
     "peers": "$KW $RFL $FRPH $SPY",
     "ror": 16.53,
-    "entry_frequency": 34
+    "entry_frequency": 18
   }
 ]

@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 80.29,
-    "entry_frequency": 162
+    "entry_frequency": 81
   },
   {
     "ticker": "CAR",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 76.73,
-    "entry_frequency": 154
+    "entry_frequency": 78
   },
   {
     "ticker": "GWPH",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$AZN.L $GSK.L $GWPH $SPY",
     "ror": 51.24,
-    "entry_frequency": 103
+    "entry_frequency": 52
   },
   {
     "ticker": "LPX",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$LPX $RRIF $KEWL $SPY",
     "ror": 48.58,
-    "entry_frequency": 98
+    "entry_frequency": 50
   },
   {
     "ticker": "SLM",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 36.5,
-    "entry_frequency": 74
+    "entry_frequency": 38
   },
   {
     "ticker": "AYI",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$EMR $3665.TW $ROK $SPY",
     "ror": 36.14,
-    "entry_frequency": 73
+    "entry_frequency": 37
   },
   {
     "ticker": "FIX",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 35.98,
-    "entry_frequency": 73
+    "entry_frequency": 37
   },
   {
     "ticker": "IHRT",
@@ -77,7 +77,7 @@
     "bb_std": 0.1,
     "peers": "$VIAC $FOXA $DISCA $SPY",
     "ror": 30.98,
-    "entry_frequency": 63
+    "entry_frequency": 32
   },
   {
     "ticker": "PLAY",
@@ -87,7 +87,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 29.94,
-    "entry_frequency": 61
+    "entry_frequency": 31
   },
   {
     "ticker": "STWD",
@@ -97,7 +97,7 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 29.44,
-    "entry_frequency": 60
+    "entry_frequency": 30
   },
   {
     "ticker": "OSK",
@@ -107,7 +107,7 @@
     "bb_std": 0.1,
     "peers": "$CAT $CMI $PCAR $SPY",
     "ror": 29.0,
-    "entry_frequency": 59
+    "entry_frequency": 30
   },
   {
     "ticker": "NAVI",
@@ -117,7 +117,7 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 27.65,
-    "entry_frequency": 56
+    "entry_frequency": 29
   },
   {
     "ticker": "CBRL",
@@ -127,27 +127,27 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 24.23,
-    "entry_frequency": 49
+    "entry_frequency": 25
   },
   {
     "ticker": "MMS",
     "sector": "Miscellaneous",
     "mktcap": "Large",
-    "bb_window": 3,
+    "bb_window": 4,
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 20.88,
-    "entry_frequency": 43
+    "entry_frequency": 22
   },
   {
     "ticker": "STN",
     "sector": "Consumer Services",
     "mktcap": "Large",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 0.6,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 19.67,
-    "entry_frequency": 40
+    "entry_frequency": 21
   },
   {
     "ticker": "PSB",
@@ -157,46 +157,46 @@
     "bb_std": 0.1,
     "peers": "$WPC $VER $STOR $SPY",
     "ror": 15.37,
-    "entry_frequency": 32
+    "entry_frequency": 16
   },
   {
     "ticker": "STAG",
     "sector": "Consumer Services",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": 4,
+    "bb_std": 1.0,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 10.77,
-    "entry_frequency": 23
+    "entry_frequency": 12
   },
   {
     "ticker": "CUBE",
     "sector": "Consumer Services",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": 4,
+    "bb_std": 0.5,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 9.03,
-    "entry_frequency": 19
+    "entry_frequency": 10
   },
   {
     "ticker": "NSA",
     "sector": "Consumer Services",
     "mktcap": "Large",
-    "bb_window": 3,
+    "bb_window": 9,
     "bb_std": 1.0,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 8.94,
-    "entry_frequency": 19
+    "entry_frequency": 10
   },
   {
     "ticker": "SGRY",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 9,
-    "bb_std": 0.8,
+    "bb_window": 14,
+    "bb_std": 0.5,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 7.69,
-    "entry_frequency": 16
+    "entry_frequency": 9
   }
 ]

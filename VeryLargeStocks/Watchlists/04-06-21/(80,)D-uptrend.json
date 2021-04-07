@@ -7,16 +7,16 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 44.47,
-    "entry_frequency": 90
+    "entry_frequency": 45
   },
   {
     "ticker": "DELL",
     "sector": "Technology",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 0.5,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 24.93,
-    "entry_frequency": 51
+    "entry_frequency": 26
   }
 ]

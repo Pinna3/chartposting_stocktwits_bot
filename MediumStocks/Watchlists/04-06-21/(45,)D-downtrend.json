@@ -3,18 +3,18 @@
     "ticker": "EPZM",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": 5,
+    "bb_std": 0.2,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 15.23,
-    "entry_frequency": 31
+    "entry_frequency": 16
   },
   {
     "ticker": "QURE",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 22,
-    "bb_std": 1.0,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$ARGX.BR $QURE $MRUS $SPY",
     "ror": 0.56,
     "entry_frequency": 2

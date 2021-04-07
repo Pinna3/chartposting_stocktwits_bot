@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$002353.SZ $600871.SS $600968.SS $SPY",
-    "ror": 74.61,
-    "entry_frequency": 150
+    "ror": 73.37,
+    "entry_frequency": 74
   },
   {
     "ticker": "YVR",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$SCR.TO $IMAX $CGX.TO $SPY",
     "ror": 54.76,
-    "entry_frequency": 111
+    "entry_frequency": 56
   },
   {
     "ticker": "DUOT",
@@ -26,48 +26,48 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": 47.45,
-    "entry_frequency": 96
+    "ror": 49.93,
+    "entry_frequency": 51
   },
   {
     "ticker": "GFLU",
     "sector": "Public Utilities",
     "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 1.0,
+    "bb_window": 7,
+    "bb_std": 0.8,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 8.92,
-    "entry_frequency": 19
+    "entry_frequency": 10
   },
   {
     "ticker": "MTCN",
     "sector": "Basic Industries",
     "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.9,
+    "bb_window": 8,
+    "bb_std": 0.8,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 8.91,
-    "entry_frequency": 19
+    "entry_frequency": 10
   },
   {
     "ticker": "HOVNP",
     "sector": "Capital Goods",
     "mktcap": "Micro",
-    "bb_window": 13,
+    "bb_window": 20,
     "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 4.91,
-    "entry_frequency": 11
+    "entry_frequency": 6
   },
   {
     "ticker": "SWT",
     "sector": "Capital Goods",
     "mktcap": "Micro",
-    "bb_window": 5,
-    "bb_std": 0.4,
+    "bb_window": 6,
+    "bb_std": 0.7,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 4.81,
-    "entry_frequency": 11
+    "entry_frequency": 6
   },
   {
     "ticker": "AFINP",
@@ -77,17 +77,17 @@
     "bb_std": 0.8,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 3.58,
-    "entry_frequency": 8
+    "entry_frequency": 5
   },
   {
     "ticker": "DTP",
     "sector": "Public Utilities",
     "mktcap": "Micro",
-    "bb_window": 8,
+    "bb_window": 12,
     "bb_std": 1.0,
     "peers": "$D $SRE $PEG $SPY",
     "ror": 1.6,
-    "entry_frequency": 4
+    "entry_frequency": 3
   },
   {
     "ticker": "BPYPP",
@@ -103,11 +103,11 @@
     "ticker": "AGNCO",
     "sector": "Consumer Services",
     "mktcap": "Micro",
-    "bb_window": 15,
-    "bb_std": 0.9,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.49,
-    "entry_frequency": 2
+    "entry_frequency": 1
   },
   {
     "ticker": "NYMTN",
@@ -117,6 +117,6 @@
     "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.2,
-    "entry_frequency": 2
+    "entry_frequency": 1
   }
 ]

@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 93.0,
-    "entry_frequency": 187
+    "entry_frequency": 94
   },
   {
     "ticker": "BKEP",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 62.0,
-    "entry_frequency": 125
+    "entry_frequency": 63
   },
   {
     "ticker": "GTIM",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 51.04,
-    "entry_frequency": 103
+    "entry_frequency": 52
   },
   {
     "ticker": "TZOO",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$GOOGL $FB $SNAP $SPY",
     "ror": 44.63,
-    "entry_frequency": 90
+    "entry_frequency": 46
   },
   {
     "ticker": "CTG",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$IBM $CTSH $EPAM $SPY",
     "ror": 41.48,
-    "entry_frequency": 84
+    "entry_frequency": 42
   },
   {
     "ticker": "INTT",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 37.99,
-    "entry_frequency": 77
+    "entry_frequency": 39
   },
   {
     "ticker": "USAK",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 35.0,
-    "entry_frequency": 71
+    "entry_frequency": 36
   },
   {
     "ticker": "PMBC",
@@ -77,7 +77,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 29.72,
-    "entry_frequency": 60
+    "entry_frequency": 31
   },
   {
     "ticker": "NMM",
@@ -87,7 +87,7 @@
     "bb_std": 0.1,
     "peers": "$CMRE $NMCI $NMM $SPY",
     "ror": 28.99,
-    "entry_frequency": 59
+    "entry_frequency": 30
   },
   {
     "ticker": "LXU",
@@ -97,7 +97,7 @@
     "bb_std": 0.1,
     "peers": "$EMN $HUN $CC $SPY",
     "ror": 27.34,
-    "entry_frequency": 56
+    "entry_frequency": 28
   },
   {
     "ticker": "BOCH",
@@ -107,7 +107,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 25.7,
-    "entry_frequency": 52
+    "entry_frequency": 27
   },
   {
     "ticker": "PRT",
@@ -117,7 +117,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 24.94,
-    "entry_frequency": 51
+    "entry_frequency": 26
   },
   {
     "ticker": "ALOT",
@@ -127,17 +127,17 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 24.36,
-    "entry_frequency": 50
+    "entry_frequency": 25
   },
   {
     "ticker": "HQI",
     "sector": "Technology",
     "mktcap": "Small",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 0.8,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 24.23,
-    "entry_frequency": 49
+    "entry_frequency": 25
   },
   {
     "ticker": "SACH",
@@ -147,7 +147,7 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 20.18,
-    "entry_frequency": 41
+    "entry_frequency": 21
   },
   {
     "ticker": "JAX",
@@ -157,17 +157,17 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 19.9,
-    "entry_frequency": 41
+    "entry_frequency": 21
   },
   {
     "ticker": "LOAN",
     "sector": "Consumer Services",
     "mktcap": "Small",
     "bb_window": 2,
-    "bb_std": 0.1,
+    "bb_std": 0.8,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 18.08,
-    "entry_frequency": 37
+    "entry_frequency": 19
   },
   {
     "ticker": "MHLD",
@@ -177,27 +177,27 @@
     "bb_std": 0.8,
     "peers": "$RE $RNR $ESGR $SPY",
     "ror": 16.37,
-    "entry_frequency": 34
+    "entry_frequency": 17
   },
   {
     "ticker": "MNSB",
     "sector": "Finance",
     "mktcap": "Small",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 0.6,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 13.88,
-    "entry_frequency": 29
+    "entry_frequency": 15
   },
   {
     "ticker": "ESXB",
     "sector": "Finance",
     "mktcap": "Small",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 0.9,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 13.77,
-    "entry_frequency": 29
+    "entry_frequency": 15
   },
   {
     "ticker": "BRBS",
@@ -207,6 +207,6 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 10.55,
-    "entry_frequency": 22
+    "entry_frequency": 12
   }
 ]

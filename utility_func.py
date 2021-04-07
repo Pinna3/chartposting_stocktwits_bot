@@ -75,22 +75,30 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time
             hits.append(len(list))
             # print(period, len(list))
     dropoffs = []
+    date = date_str
     for index, count in enumerate(hits):
         if index != 0:
             try:
                 dropoff = round(1 - (count / hits[index-1]), 2)
-                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3), date_str))
+                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
             except ZeroDivisionError:
                 dropoff = 0
-                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3), date_str))
+                dropoffs.append((index * interval, dropoff, count, hits[0], round(count/hits[0], 3)))
     dropoffs_sorted = sorted(dropoffs, key = lambda x: x[1])
-    with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
-        json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
-    # data = [date_str, index * interval, dropoff, count, hits[0], round(count/hits[0], 3)]
-    # with open(f'{mktcap_dir}Stocks/WeeklyDropOff/DropOffs.csv', 'a+', newline='') as outfile:
-    #     writer = csv.writer(outfile)
-    #     if date_str not in str(writer):
-    #         writer.writerow(data)
+    csv_row = [date]
+    for group in dropoffs_sorted:
+        if group[1] == 0:
+            continue
+        else:
+            for datapoint in group:
+                csv_row.append(datapoint)
+    # print(csv_row)
+    # with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend{date_str}.json', 'w') as outfile:
+    #     json.dump((dropoffs, dropoffs_sorted), outfile, indent=4)
+    with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend.csv', 'a') as outfile:
+        writer = csv.writer(outfile)
+        writer.writerow(csv_row)
+#### check for date with in file, if not in, append file
     return dropoffs, dropoffs_sorted
 
 #Label Fixed for Next Scan
@@ -168,7 +176,7 @@ def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
     # print(dropoffs)
     # print('')
     for tuple in dropoffs_sorted:
-        days, dropoff_rate, count, starting_total, percentage_of_total, date_str = tuple
+        days, dropoff_rate, count, starting_total, percentage_of_total = tuple
         try:
             rating = round(percentage_of_total / dropoff_rate, 2)
         except ZeroDivisionError:

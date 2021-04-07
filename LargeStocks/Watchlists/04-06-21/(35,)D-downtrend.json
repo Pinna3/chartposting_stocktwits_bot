@@ -7,16 +7,16 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 16.93,
-    "entry_frequency": 35
+    "entry_frequency": 18
   },
   {
     "ticker": "GLPG",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 4,
+    "bb_window": 7,
     "bb_std": 1.0,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 7.54,
-    "entry_frequency": 16
+    "entry_frequency": 9
   }
 ]

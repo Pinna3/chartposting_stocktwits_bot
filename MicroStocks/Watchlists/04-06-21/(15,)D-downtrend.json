@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 41.6,
-    "entry_frequency": 84
+    "entry_frequency": 43
   },
   {
     "ticker": "WINT",
@@ -16,8 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 36.5,
-    "entry_frequency": 74
+    "ror": 37.23,
+    "entry_frequency": 38
   },
   {
     "ticker": "TLGT",
@@ -26,8 +26,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 25.72,
-    "entry_frequency": 52
+    "ror": 26.35,
+    "entry_frequency": 27
   },
   {
     "ticker": "CHFS",
@@ -36,8 +36,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 23.62,
-    "entry_frequency": 48
+    "ror": 23.91,
+    "entry_frequency": 25
   },
   {
     "ticker": "RMED",
@@ -46,8 +46,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 21.35,
-    "entry_frequency": 44
+    "ror": 20.2,
+    "entry_frequency": 21
   },
   {
     "ticker": "EFOI",
@@ -56,8 +56,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": 15.37,
-    "entry_frequency": 32
+    "ror": 18.85,
+    "entry_frequency": 20
   },
   {
     "ticker": "ENSV",
@@ -66,7 +66,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$SLB $BKR $HAL $SPY",
-    "ror": 13.91,
-    "entry_frequency": 29
+    "ror": 14.35,
+    "entry_frequency": 15
   }
 ]

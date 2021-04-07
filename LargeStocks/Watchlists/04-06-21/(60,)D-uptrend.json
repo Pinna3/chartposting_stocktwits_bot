@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 162.17,
-    "entry_frequency": 325
+    "entry_frequency": 163
   },
   {
     "ticker": "SGRY",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 45.96,
-    "entry_frequency": 93
+    "entry_frequency": 47
   },
   {
     "ticker": "SLM",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 44.47,
-    "entry_frequency": 90
+    "entry_frequency": 45
   },
   {
     "ticker": "PLAY",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 41.48,
-    "entry_frequency": 84
+    "entry_frequency": 42
   },
   {
     "ticker": "IHRT",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$VIAC $FOXA $DISCA $SPY",
     "ror": 36.9,
-    "entry_frequency": 75
+    "entry_frequency": 38
   },
   {
     "ticker": "FIX",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 33.69,
-    "entry_frequency": 68
+    "entry_frequency": 35
   },
   {
     "ticker": "NAVI",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 32.33,
-    "entry_frequency": 66
+    "entry_frequency": 33
   },
   {
     "ticker": "OSK",
@@ -77,7 +77,7 @@
     "bb_std": 0.1,
     "peers": "$CAT $CMI $PCAR $SPY",
     "ror": 30.71,
-    "entry_frequency": 62
+    "entry_frequency": 32
   },
   {
     "ticker": "STN",
@@ -87,26 +87,26 @@
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 30.07,
-    "entry_frequency": 61
+    "entry_frequency": 31
   },
   {
     "ticker": "MMS",
     "sector": "Miscellaneous",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": 4,
+    "bb_std": 0.2,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 19.77,
-    "entry_frequency": 41
+    "entry_frequency": 21
   },
   {
     "ticker": "NSA",
     "sector": "Consumer Services",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.6,
+    "bb_window": 9,
+    "bb_std": 1.0,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 9.27,
-    "entry_frequency": 20
+    "entry_frequency": 10
   }
 ]

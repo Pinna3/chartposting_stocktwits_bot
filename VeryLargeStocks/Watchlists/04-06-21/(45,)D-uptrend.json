@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 89.41,
-    "entry_frequency": 180
+    "entry_frequency": 90
   },
   {
     "ticker": "UHAL",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 31.4,
-    "entry_frequency": 64
+    "entry_frequency": 32
   },
   {
     "ticker": "HPE",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 28.48,
-    "entry_frequency": 58
+    "entry_frequency": 29
   },
   {
     "ticker": "SNA",
@@ -37,36 +37,36 @@
     "bb_std": 0.1,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 26.87,
-    "entry_frequency": 55
+    "entry_frequency": 28
   },
   {
     "ticker": "DELL",
     "sector": "Technology",
     "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": 4,
+    "bb_std": 0.6,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 20.74,
-    "entry_frequency": 42
+    "entry_frequency": 22
   },
   {
     "ticker": "TROW",
     "sector": "Finance",
     "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.5,
+    "bb_window": 8,
+    "bb_std": 1.0,
     "peers": "$BLK $BX $KKR $SPY",
     "ror": 12.33,
-    "entry_frequency": 26
+    "entry_frequency": 13
   },
   {
     "ticker": "WU",
     "sector": "Miscellaneous",
     "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": 5,
+    "bb_std": 0.6,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 10.49,
-    "entry_frequency": 22
+    "entry_frequency": 11
   }
 ]
