@@ -40,7 +40,6 @@ Why aren't the sector allocation maximums set dynamically like the Long/Shorts??
 
 ***To Do List for Wednesday:
 [Must complete]
-1) Setup CSV File or some other data structure to easily view drop off rate rankings... CHECK AGAINST JSON FILES, THEN DELETE JSON
 2) After doing so remove dates from watchlist, watchlists updated nightly
 
 [Should address]
