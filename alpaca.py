@@ -8,7 +8,7 @@ ORDERS_URL = '{}/v2/orders'.format(APCA_API_BASE_URL)
 
 DATA_BASE_URL = 'https://data.alpaca.markets'
 QUOTE_URL = '{}/v1/last_quote/stocks'.format(DATA_BASE_URL)
-
+LASTTRADE_URL = '{}/v1/last/stocks'.format(DATA_BASE_URL)
 
 def get_account():
     r = requests.get(ACCOUNT_URL, headers=HEADERS_PAPER)
@@ -26,6 +26,9 @@ def get_quote(symbol):
     r = requests.get(f'{QUOTE_URL}/{symbol}', headers=HEADERS_PAPER)
     return json.loads(r.content)
 
+def get_last_trade(symbol):
+    r = requests.get(f'{LASTTRADE_URL}/{symbol}', headers=HEADERS_PAPER)
+    return json.loads(r.content)
 
 def buy_market(symbol, qty):
     data = {
@@ -101,3 +104,12 @@ def return_candles_json_v2(symbol, start_date, end_date, period='1Day'):
     r = requests.get(daily_bars_url_v2, headers=HEADERS_PAPER)
     data = r.json()
     return data
+
+# acct_value = get_account_value()
+# print(acct_value)
+# price = get_quote('JOBS')#['last']['askprice']
+# # qty = (acct_value / 100) // float(price)
+# print(price)
+#
+# last_trade_price = get_last_trade('JOBS')['last']['price']
+# print(last_trade_price)

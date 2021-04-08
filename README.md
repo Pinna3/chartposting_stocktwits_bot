@@ -34,13 +34,7 @@ Top Insights to address:
 
 ***Think about using shifting ATR values to optimize ATR stop multiples (For now, use trailing stops of 1ATR[placeholder])
 
-Why aren't the sector allocation maximums set dynamically like the Long/Shorts??? Implement.
-
-
-
-***To Do List for Wednesday:
-[Must complete]
-2) After doing so remove dates from watchlist, watchlists updated nightly
+Why aren't the sector allocation maximums set dynamically like the Long/Shorts??? Implement? Maybe not? Think about it.
 
 [Should address]
 3+) Think about Priority Scheme

@@ -20,7 +20,7 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency, window_
                 candles.custom_bollingers(rolling_window, 1)
                 rolling_window_and_counter.append([rolling_window, \
                     candles.entry_counter(op_str)])
-                print(rolling_window_and_counter[index])
+                # print(rolling_window_and_counter[index])
             except:
                 continue
         ###update range according to get_bb_params_distribution()
@@ -38,10 +38,10 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency, window_
             try:
                 candles.custom_bollingers(rolling_window, std)
                 std_and_counter.append([std, candles.entry_counter(op_str)])
-                print(std_and_counter[index])
+                # print(std_and_counter[index])
             except:
                 continue
-        print('')
+        # print('')
         entry_frequency_range = sorted([x for x in range(1,entry_frequency + 1)], reverse=True)
         for counter in std_and_counter:
             for entries in entry_frequency_range:
@@ -100,7 +100,6 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, *time_markers, 
         else:
             for datapoint in group:
                 csv_row.append(datapoint)
-    print(csv_row)
     with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend.csv') as infile:
         reader = csv.reader(infile)
         up_to_date = False
@@ -120,7 +119,6 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, *time_markers, 
 #interval = time between time_markers
 def rank_dropoffs(mktcap_group, trend, *time_markers, interval=5):
     dropoffs_s = calculate_and_file_dropoff_rates(mktcap_group, trend, *time_markers, interval)
-    print(dropoffs_s)
     ranking = []
     ranking_time_weighted = []
     for tuple in dropoffs_s:
@@ -203,7 +201,7 @@ def initialize_holdings():
     holdings['long']['acct_percentage'] = round((long_market_value / acct_value) * 100, 2)
     short_market_value = 0.0
     for sector in short_sector_keys:
-        short_market_value += round(abs(holdings['short']['sector'][sector]['market_value'], 2))
+        short_market_value += round(abs(holdings['short']['sector'][sector]['market_value']), 2)
     holdings['short']['market_value'] = round(short_market_value, 2)
     holdings['short']['acct_percentage'] = round((short_market_value / acct_value) * 100, 2)
 
@@ -224,7 +222,6 @@ def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
             row.append(smoothness_test)
             processed_data.append(row)
             sleep(.3)
-            print(row)
         with open(csv_out, 'w') as outfile:
             writer = csv.writer(outfile)
             for row in processed_data:
@@ -257,7 +254,6 @@ def tag_imported_stock_csv_file_with_peers(csv_in, csv_out):
                 peer_group.append('$QQQ')
             row.append(' '.join(peer_group).strip())
             processed_data.append(row)
-            print(row)
         with open(csv_out, 'w') as outfile:
             writer = csv.writer(outfile)
             for row in processed_data:

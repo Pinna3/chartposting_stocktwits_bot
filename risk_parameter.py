@@ -23,7 +23,7 @@ def set_long_short_capacities():
 
     long_max_exposure = round((long_total / (long_total + short_total) * 100))
     short_max_exposure = round((short_total / (long_total + short_total) * 100))
-    print(f"Long Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure}%, Long Total: {long_total}, Short Total: {short_total}")
+    print(f"\n\nLong Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure}%, Long Total: {long_total}, Short Total: {short_total}")
     return long_max_exposure, short_max_exposure
 
 #70% max long allocation in bull markets
@@ -75,10 +75,11 @@ def check_daily_counter_capacity(side, mkt_cap, max_daily_trades=12,
             return True
 
     #make sure Daily Counter is working
-    print(f"\n\nDaily Counter Capacities:\n\nLong: {max_long}, VeryLarge: {max_long_verylarge*max_long}, Large: {max_long_large*max_long}, \
-            Medium: {max_long_medium*max_long}, Small: {max_long_small*max_long}, Micro: {max_long_micro*max_long}\n\n \
-            Short: {max_short}, VeryLarge: {max_short_verylarge*max_short}, Large: {max_short_large*max_short}, Medium: {max_short_medium*max_short}, \
-            Small: {max_short_small*max_short}, Micro: {max_short_micro*max_short}")
+    print(f"""
+Daily Counter Capacities:
+Long: {max_long}, VeryLarge: {max_long_verylarge*max_long}, Large: {max_long_large*max_long}, Medium: {max_long_medium*max_long}, Small: {max_long_small*max_long}, Micro: {max_long_micro*max_long}
+Short: {max_short}, VeryLarge: {max_short_verylarge*max_short}, Large: {max_short_large*max_short}, Medium: {max_short_medium*max_short}, Small: {max_short_small*max_short}, Micro: {max_short_micro*max_short}
+""")
 
     with open('DailyCounter.json') as infile:
         counter = json.load(infile)
