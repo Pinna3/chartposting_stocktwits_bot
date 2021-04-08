@@ -1,0 +1,22 @@
+[
+  {
+    "ticker": "WINT",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 39.09,
+    "entry_frequency": 40
+  },
+  {
+    "ticker": "CHFS",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": 29.88,
+    "entry_frequency": 31
+  }
+]

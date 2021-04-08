@@ -1,9 +1,0 @@
-[
-  {
-    "ticker": "AYX",
-    "sector": "Technology",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.9
-  }
-]

@@ -94,20 +94,10 @@ def return_candles_json(symbol, period='1Day', num_bars=365):
     daily_bars_url_v1 = '{}/{}?symbols={}&limit={}'.format(BARS_URL, period, symbol, num_bars)
     r = requests.get(daily_bars_url_v1, headers=HEADERS_PAPER)
     data = r.json()
-    # df = pd.DataFrame(data)
     return data
 
 def return_candles_json_v2(symbol, start_date, end_date, period='1Day'):
     daily_bars_url_v2 = 'https://data.alpaca.markets/v2/stocks/{}/bars?start={}&end={}&timeframe={}'.format(symbol, start_date, end_date, period)
     r = requests.get(daily_bars_url_v2, headers=HEADERS_PAPER)
     data = r.json()
-    # df = pd.DataFrame(data)
     return data
-
-
-# # # data = return_candles_json_v2('DISCB', '2020-04-05', '2021-04-05', period='1Day')
-# data = return_candles_json('DISCB', period='day', num_bars=365)
-# print(data)
-# # # print(get_account_value())
-
-# print(get_quote('DISCB'))

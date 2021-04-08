@@ -1,0 +1,122 @@
+[
+  {
+    "ticker": "RCON",
+    "sector": "Energy",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$002353.SZ $600871.SS $600968.SS $SPY",
+    "ror": 73.37,
+    "entry_frequency": 74
+  },
+  {
+    "ticker": "DUOT",
+    "sector": "Technology",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$MSFT $ORCL $NOW $SPY",
+    "ror": 48.11,
+    "entry_frequency": 49
+  },
+  {
+    "ticker": "YVR",
+    "sector": "Technology",
+    "mktcap": "Micro",
+    "bb_window": 2,
+    "bb_std": 0.1,
+    "peers": "$SCR.TO $IMAX $CGX.TO $SPY",
+    "ror": 32.41,
+    "entry_frequency": 33
+  },
+  {
+    "ticker": "HOVNP",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 8.05,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "MTCN",
+    "sector": "Basic Industries",
+    "mktcap": "Micro",
+    "bb_window": 8,
+    "bb_std": 0.8,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 7.73,
+    "entry_frequency": 9
+  },
+  {
+    "ticker": "FBIOP",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 12,
+    "bb_std": 0.8,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 5.24,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "GFLU",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": 16,
+    "bb_std": 1.0,
+    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
+    "ror": 4.68,
+    "entry_frequency": 6
+  },
+  {
+    "ticker": "BPTH",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 3.14,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "DTP",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": 8,
+    "bb_std": 1.0,
+    "peers": "$D $SRE $PEG $SPY",
+    "ror": 2.7,
+    "entry_frequency": 4
+  },
+  {
+    "ticker": "BPYPP",
+    "sector": "Finance",
+    "mktcap": "Micro",
+    "bb_window": 15,
+    "bb_std": 0.9,
+    "peers": "$BPY $H78.SI $ROM.OL $SPY",
+    "ror": 2.15,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "SWT",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": 18,
+    "bb_std": 1.0,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 1.16,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "AFINP",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 0.7,
+    "entry_frequency": 2
+  }
+]

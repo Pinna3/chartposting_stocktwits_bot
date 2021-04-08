@@ -239,35 +239,7 @@ def pandas_atr_calculation(df, window=14):
     return wilder_ema(true_range, window)
 
 
-
-#
 # test = SecurityTradeData('DISCB', atr_rolling_window=5)
 # # # test.custom_bollingers(14, .9)
 # # # test.chart(120)
 # print(test.df)
-
-
-
-# start_time = int((time.time() - (365 * (31540000 / 365))))
-# current_time = int(time.time())
-#
-# finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
-# data = finnhub_client.stock_candles('VNO', 'D', start_time, current_time)
-# del data['s']
-# del data['t']
-# for key in data.keys():
-#     print(len(data[key]))
-# df = pd.DataFrame(data)
-# print(df)
-# print(len(data['c']))
-# print(len(data['o']))
-# print(len(data['l']))
-# print(len(data['h']))
-# print(len(data['v']))
-# bars = SecurityTradeData('VNO')
-# # bars.custom_bollingers(3, .5)
-# bars.chart(120, destination='browser')
-
-# bars = SecurityTradeData('CARV', num_days=120)
-# bars.custom_bollingers(5, .9)
-# bars.chart(365)

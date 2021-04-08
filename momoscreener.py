@@ -78,16 +78,13 @@ class Securities:
 
         main(self.candles)
         main(self.backup_candles)
-
         trending_sorted_by_ror = sorted(trending, key=operator.itemgetter('ror'), reverse=True)
         #save results to timestamped json file
         if op_str == '>':
             trend = 'up'
         if op_str == '<':
             trend = 'down'
-        if not os.path.exists(f'{mktcap_group}Stocks/Watchlists/{today_date}'):
-            os.mkdir(f'{mktcap_group}Stocks/Watchlists/{today_date}')
-        with open(f'{mktcap_group}Stocks/Watchlists/{today_date}/{time_markers[-1:]}D-{trend}trend.json', 'w') as outfile:
+        with open(f'{mktcap_group}Stocks/Watchlists/{time_markers[-1:]}D-{trend}trend.json', 'w') as outfile:
             json.dump(trending_sorted_by_ror, outfile, indent=2)
 
 

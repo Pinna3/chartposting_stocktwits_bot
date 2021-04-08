@@ -7,6 +7,8 @@ from time import sleep
 from alpaca import get_all_positions, get_account_value, return_candles_json
 import pandas as pd
 from glob import glob
+from datetime import datetime, date
+today_date = date.today().strftime('%m-%d-%y')
 
 ###Check for proper ranges using get_bb_params_distribution(), last window=2-20 = (range(2, 21)), last std=.1-1 (4/6/21), expand for testing once in a while
 def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency, window_range=range(2, 21), std_range=[x/10 for x in range(1, 12)]):
@@ -51,10 +53,10 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency, window_
     bb_std = optimal_bb_std(bb_window, op_str, entry_frequency)
     return bb_window, bb_std
 
-def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
+def graph_degrees_of_trend(mktcap_dir, down_or_up_str, *time_markers):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-{down_or_up_str}trend.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/({period},)D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             # print(period, len(list))
@@ -66,17 +68,15 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, date_str, *time_markers):
     fig = go.Figure(data=data, layout=layout)
     fig.show()
     return f'{mktcap_dir} {down_or_up_str}trend'
-# graph_degrees_of_trend('VeryLarge', 'up', '04-06-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80)
 
-def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time_markers, interval=5):
+def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, *time_markers, interval=5):
     hits = []
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/{date_str}/({period},)D-{down_or_up_str}trend.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/({period},)D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
-            # print(period, len(list))
     dropoffs = []
-    date = date_str
+    date = today_date
     for index, count in enumerate(hits):
         if index != 0:
             try:
@@ -105,53 +105,24 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, date_str, *time
         reader = csv.reader(infile)
         up_to_date = False
         for row in reader:
-            if row[0] == date_str:
+            if row[0] == date:
                 up_to_date = True
         if up_to_date == False:
             with open(f'{mktcap_dir}Stocks/WeeklyDropOff/{down_or_up_str}trend.csv', 'a') as outfile:
                 writer = csv.writer(outfile)
                 writer.writerow(csv_row)
-#### check for date with in file, if not in, append file
     return dropoffs_sorted
-# calculate_and_file_dropoff_rates('VeryLarge', 'up', '04-06-21', 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
 
-def count_stock_csv_list(csv_source):
-    securities = []
-    # CSV Database- comprehensive list of optionable stocks obtain from barchart
-    with open(csv_source, 'r') as infile:
-        reader = csv.reader(infile)
-        next(reader)  # skip the header line
-        for row in reader:
-            ticker = str(row[0])
-            securities.append(ticker)
-    return(len(securities))
-
-def return_list_of_tickers(csv_source):
-    securities = []
-    # CSV Database- comprehensive list of optionable stocks obtain from barchart
-    with open(csv_source, 'r') as infile:
-        reader = csv.reader(infile)
-        next(reader)  # skip the header line
-        for row in reader:
-            ticker = str(row[0])
-            securities.append(ticker)
-    return securities
-
-#experiment with prioritizing methods... right now leaning towards ranking_time_weighted_sorted
+#experiment with prioritizing methods... right now using ranking_time_weighted_sorted
 #mktcap_group = 'VeryLarge', 'Large', 'Medium', 'Small', 'Micro'
 #trend = 'up', 'down'
-#date = 'MM-DD-YY'
 #*time_markers = 1, 5, 10, 15, 20, 25, ... etc
 #interval = time between time_markers
-def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
-    # label = graph_degrees_of_trend(mktcap_group, trend, date, *time_markers)
-    dropoffs_s = calculate_and_file_dropoff_rates(mktcap_group, trend, date, *time_markers, interval)
+def rank_dropoffs(mktcap_group, trend, *time_markers, interval=5):
+    dropoffs_s = calculate_and_file_dropoff_rates(mktcap_group, trend, *time_markers, interval)
     print(dropoffs_s)
     ranking = []
     ranking_time_weighted = []
-    # print('')
-    # print(dropoffs)
-    # print('')
     for tuple in dropoffs_s:
         days, dropoff_rate, count, starting_total, percentage_of_total = tuple
         try:
@@ -165,17 +136,9 @@ def rank_dropoffs(mktcap_group, trend, date, *time_markers, interval=5):
         ranking.append({'days': days, 'starting': starting, 'drop_rate': dropoff_rate, 'percentage': percentage_of_total, 'quality_rating': rating})
         weighted_rating = round(days * rating, 2)
         ranking_time_weighted.append({'days': days, 'starting': starting, 'drop_rate': dropoff_rate, 'percentage': percentage_of_total, 'quality_rating': weighted_rating})
-
     drop_off_percentage_sorted = sorted(ranking, key = lambda x: x['drop_rate'], reverse=False)
     ranking_sorted = sorted(ranking, key = lambda x: x['quality_rating'], reverse=True)
     ranking_time_weighted_sorted = sorted(ranking_time_weighted, key = lambda x: x['quality_rating'], reverse=True)
-    # print(ranking_sorted)
-    # print(ranking_time_weighted_sorted)
-    # print('')
-    # [print(dict['days']) for dict in drop_off_percentage_sorted]
-    # print(label)
-    # [print(f"{dict['days']} {dict['drop_rate']*100}%") for dict in ranking_time_weighted_sorted[:3]]
-
     return [[dict['starting'], dict['drop_rate']] for dict in ranking_time_weighted_sorted]
 
 def fetch_sector(symbol):
@@ -250,7 +213,6 @@ def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
     with open(csv_in) as infile:
         reader = csv.reader(infile)
         next(reader)
-
         processed_data = []
         for row in reader:
             stock = row[0]
@@ -263,7 +225,6 @@ def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
             processed_data.append(row)
             sleep(.3)
             print(row)
-
         with open(csv_out, 'w') as outfile:
             writer = csv.writer(outfile)
             for row in processed_data:
@@ -271,11 +232,9 @@ def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
 
 def tag_imported_stock_csv_file_with_peers(csv_in, csv_out):
     finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
-
     with open(csv_in) as infile:
         reader = csv.reader(infile)
         next(reader)
-
         processed_data = []
         for row in reader:
             peers = None
@@ -299,13 +258,10 @@ def tag_imported_stock_csv_file_with_peers(csv_in, csv_out):
             row.append(' '.join(peer_group).strip())
             processed_data.append(row)
             print(row)
-
         with open(csv_out, 'w') as outfile:
             writer = csv.writer(outfile)
             for row in processed_data:
                 writer.writerow(row)
-
-# tag_imported_stock_csv_file_with_peers('StockLists/VeryLarge>$10B.csv', 'StockLists/VeryLarge>$10BwPEERS.csv')
 
 def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     with open(csv_in) as infile:
@@ -348,10 +304,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
         df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
         df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
         remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], remainder_peers[index], df])
-    # print(remainder_df_list[1][4])
-    #iterable list with retrievable values
     total_batch_df_list = []
-    # # for batch_num in range(1, 16):
     for batch_num in range(1, 16):
         symbol_reference = symbols[(batch_num - 1)*batch: batch_num*batch]
         batch_mkt_cap = mkt_caps[(batch_num - 1)*batch: batch_num*batch]
@@ -390,7 +343,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
                 total_batch_df_list.append(item)
     return total_batch_df_list
 
-def drop_off_based_watchlist_filter(date, max_per_category=3, drop_off_rate_cutoff=.25):
+def drop_off_based_watchlist_filter(max_per_category=3, drop_off_rate_cutoff=.25):
     approved_files_w_operator = []
     for direction in ['up', 'down']:
         for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
@@ -398,14 +351,13 @@ def drop_off_based_watchlist_filter(date, max_per_category=3, drop_off_rate_cuto
                 operator = '>'
             elif direction == 'down':
                 operator = '<'
-            time_weighted_ranked = rank_dropoffs(mktcap, direction, date, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
+            time_weighted_ranked = rank_dropoffs(mktcap, direction, 1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, interval=5)
             for result in time_weighted_ranked[:max_per_category]:
                 if result[1] < drop_off_rate_cutoff:
-                    approved_files_w_operator.append([f'{mktcap}Stocks/Watchlists/{date}/({result[0]},)D-{direction}trend.json', operator])
+                    approved_files_w_operator.append([f'{mktcap}Stocks/Watchlists/({result[0]},)D-{direction}trend.json', operator])
     return approved_files_w_operator
-# [print(item) for item in drop_off_based_watchlist_filter('04-04-21', max_per_category=3, drop_off_rate_cutoff=.25)]
 
-def pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10):
+def pull_top_tier_unbroken_trenders(tier_percentage=10):
     def there_can_only_be_n(watchlists, tier_percentage, op_str):
         grandtotal = watchlists[0][0]
         for total, file in watchlists:
@@ -416,7 +368,7 @@ def pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=
     mkt_caps = ['VeryLargeStocks', 'LargeStocks', 'MediumStocks', 'SmallStocks', 'MicroStocks']
     for group in mkt_caps:
         top_trenders[group] = []
-        for file in glob(f'{group}/Watchlists/{watchlists_generation_date}/*uptrend.json'):
+        for file in glob(f'{group}/Watchlists/*uptrend.json'):
             with open(file) as infile:
                 content = json.load(infile)
                 top_trenders[group].append([len(content), file])
@@ -424,7 +376,7 @@ def pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=
         top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '>'))
     for group in mkt_caps:
         top_trenders[group] = []
-        for file in glob(f'{group}/Watchlists/{watchlists_generation_date}/*downtrend.json'):
+        for file in glob(f'{group}/Watchlists/*downtrend.json'):
             with open(file) as infile:
                 content = json.load(infile)
                 top_trenders[group].append([len(content), file])
@@ -434,10 +386,10 @@ def pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=
 
 #returns bb_params for all trending symbols (window and std) as a set for use in bb_param_optomizer
 #range settings.
-def get_bb_params_distribution(watchlists_generation_date='04-04-21'):
+def get_bb_params_distribution():
     param_count = {'bb_window': [], 'bb_std': []}
     for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
-        for file in glob(f'{mktcap}Stocks/Watchlists/{watchlists_generation_date}/*.json'):
+        for file in glob(f'{mktcap}Stocks/Watchlists/*.json'):
             with open(file) as infile:
                 watchlist = json.load(infile)
                 for item in watchlist:

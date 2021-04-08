@@ -11,12 +11,9 @@ from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
 
-def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
+def dailyscanner(json_watchlist, op_str, publish=False):
     with open(json_watchlist) as infile:
         watchlist = json.load(infile)
-
-    # Setup finnhub client connection
-    finnhub_client = finnhub.Client(api_key='c1aiaan48v6v5v4gv69g')
 
     #up/down trendtrend toggle
     ops = {"<": operator.lt, ">": operator.gt}
@@ -33,7 +30,7 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
 
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
-        # try:
+        try:
             try:
                 candle_object = SecurityTradeData(security['ticker'])
             except ValueError:
@@ -50,7 +47,6 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
                     opposite_op_func(c, lower):
                     holding = security['ticker']
                     if holding not in str(holdings):
-                    #Some market caps showing up null... keep an eye on
                         try:
                             candle_object.chart(120, destination=security['mktcap'])
                         except FileNotFoundError:
@@ -71,9 +67,9 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            long_cap = long_capacity(holdings['long']['acct_percentage'], watchlists_generation_date=watchlist_date)
+                            long_cap = long_capacity(holdings['long']['acct_percentage'])
                             print(f"Long Capacity: {long_cap}")
-                            daily_counter_cap = check_daily_counter_capacity('long', security['mktcap'], watchlists_generation_date=watchlist_date)
+                            daily_counter_cap = check_daily_counter_capacity('long', security['mktcap'])
                             print(f"Daily Counter Capacity: {daily_counter_cap}")
                             if long_cap is False and \
                                 daily_counter_cap is False:
@@ -133,9 +129,9 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
                             holdings = initialize_holdings()
                             print(holdings)
                         else:
-                            short_cap = short_capacity(holdings['short']['acct_percentage'], watchlists_generation_date=watchlist_date)
+                            short_cap = short_capacity(holdings['short']['acct_percentage'])
                             print(f"Short Capacity: {short_cap}")
-                            daily_counter_cap = check_daily_counter_capacity('short', security['mktcap'], watchlists_generation_date=watchlist_date)
+                            daily_counter_cap = check_daily_counter_capacity('short', security['mktcap'])
                             print(f"Daily Counter Capacity: {daily_counter_cap}")
                             if short_cap is False and \
                                 daily_counter_cap is False:
@@ -169,36 +165,35 @@ def dailyscanner(json_watchlist, op_str, watchlist_date, publish=False):
                                 print(f'At Capacity At Capacity At Capacity At Capacity')
                     else:
                         print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
-        # except:
-        #     missed_connection.append(security['ticker'])
-        #     print(f'ConnectionError...{missed_connection}')
-        #     continue
+        except:
+            missed_connection.append(security['ticker'])
+            print(f'ConnectionError...{missed_connection}')
+            continue
 
 
-watchlists_generation_date = '04-06-21'
 while True:
     # ###Think about another filtering mechanism (worried about shorts) (maybe restrict to long trending or winning trend, feels off)
     # print('.')
     # print('.')
     # print('.')
-    # [print(item[0]) for item in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10)]
+    # [print(item[0]) for item in pull_top_tier_unbroken_trenders(tier_percentage=10)]
     # print('.')
     # print('.')
     # print('.')
-    # for filename, direction, number, total in pull_top_tier_unbroken_trenders(watchlists_generation_date, tier_percentage=10):
+    # for filename, direction, number, total in pull_top_tier_unbroken_trenders(tier_percentage=10):
     #     print('')
     #     print(filename)
     #     print('')
-    #     dailyscanner(filename, direction, watchlist_date=watchlists_generation_date, publish=False)
+    #     dailyscanner(filename, direction, publish=False)
     print('.')
     print('.')
     print('.')
-    [print(item[0]) for item in drop_off_based_watchlist_filter(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25)]
+    [print(item[0]) for item in drop_off_based_watchlist_filter(max_per_category=3, drop_off_rate_cutoff=.25)]
     print('.')
     print('.')
     print('.')
-    for filename, direction in drop_off_based_watchlist_filter(watchlists_generation_date, max_per_category=3, drop_off_rate_cutoff=.25):
+    for filename, direction in drop_off_based_watchlist_filter(max_per_category=3, drop_off_rate_cutoff=.25):
         print('')
         print(filename)
         print('')
-        dailyscanner(filename, direction, watchlist_date=watchlists_generation_date, publish=False)
+        dailyscanner(filename, direction, publish=False)
