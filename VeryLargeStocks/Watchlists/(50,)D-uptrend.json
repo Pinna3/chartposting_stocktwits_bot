@@ -6,18 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
-    "ror": 90.81,
-    "entry_frequency": 92
-  },
-  {
-    "ticker": "UHAL",
-    "sector": "Consumer Services",
-    "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 32.04,
-    "entry_frequency": 33
+    "ror": 99.67,
+    "entry_frequency": 101
   },
   {
     "ticker": "HPE",
@@ -26,27 +16,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 29.27,
-    "entry_frequency": 30
+    "ror": 21.56,
+    "entry_frequency": 23
   },
   {
-    "ticker": "DELL",
-    "sector": "Technology",
+    "ticker": "TRI",
+    "sector": "Consumer Services",
     "mktcap": "VeryLarge",
     "bb_window": 5,
-    "bb_std": 0.6,
-    "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 18.08,
-    "entry_frequency": 19
-  },
-  {
-    "ticker": "TROW",
-    "sector": "Finance",
-    "mktcap": "VeryLarge",
-    "bb_window": 8,
-    "bb_std": 1.0,
-    "peers": "$BLK $BX $KKR $SPY",
-    "ror": 11.66,
-    "entry_frequency": 13
+    "bb_std": 0.9,
+    "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
+    "ror": 12.79,
+    "entry_frequency": 14
   }
 ]

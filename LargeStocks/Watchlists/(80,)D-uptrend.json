@@ -6,7 +6,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 316.42,
+    "ror": 315.8,
     "entry_frequency": 317
   },
   {
@@ -16,18 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 73.34,
-    "entry_frequency": 74
-  },
-  {
-    "ticker": "SLM",
-    "sector": "Finance",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$AXP $COF $DFS $SPY",
-    "ror": 63.57,
-    "entry_frequency": 65
+    "ror": 77.94,
+    "entry_frequency": 79
   },
   {
     "ticker": "SGRY",
@@ -36,8 +26,18 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
-    "ror": 61.69,
-    "entry_frequency": 63
+    "ror": 59.68,
+    "entry_frequency": 61
+  },
+  {
+    "ticker": "SLM",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AXP $COF $DFS $SPY",
+    "ror": 56.85,
+    "entry_frequency": 58
   },
   {
     "ticker": "IHRT",
@@ -46,18 +46,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 46.97,
-    "entry_frequency": 48
-  },
-  {
-    "ticker": "OSK",
-    "sector": "Capital Goods",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$CAT $CMI $PCAR $SPY",
-    "ror": 40.6,
-    "entry_frequency": 42
+    "ror": 45.31,
+    "entry_frequency": 46
   },
   {
     "ticker": "STN",
@@ -66,7 +56,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
-    "ror": 35.26,
-    "entry_frequency": 36
+    "ror": 34.33,
+    "entry_frequency": 35
   }
 ]

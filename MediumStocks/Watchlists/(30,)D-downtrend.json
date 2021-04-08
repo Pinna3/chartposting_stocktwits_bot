@@ -6,28 +6,38 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 39.66,
-    "entry_frequency": 41
+    "ror": 34.89,
+    "entry_frequency": 36
   },
   {
     "ticker": "KPTI",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 2,
+    "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 23.7,
-    "entry_frequency": 25
+    "ror": 29.1,
+    "entry_frequency": 30
   },
   {
     "ticker": "QTNT",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 1.0,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
-    "ror": 23.3,
-    "entry_frequency": 24
+    "ror": 14.12,
+    "entry_frequency": 15
+  },
+  {
+    "ticker": "EPZM",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 5,
+    "bb_std": 0.7,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 12.38,
+    "entry_frequency": 13
   },
   {
     "ticker": "AFYA",
@@ -36,47 +46,37 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
-    "ror": 12.33,
-    "entry_frequency": 13
+    "ror": 10.5,
+    "entry_frequency": 12
   },
   {
-    "ticker": "EPZM",
-    "sector": "Health Care",
+    "ticker": "DEA",
+    "sector": "Consumer Services",
     "mktcap": "Medium",
     "bb_window": 6,
-    "bb_std": 0.9,
+    "bb_std": 1.0,
+    "peers": "$ARE $BXP $VNO $SPY",
+    "ror": 7.5,
+    "entry_frequency": 8
+  },
+  {
+    "ticker": "CHRS",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 10.23,
-    "entry_frequency": 11
+    "ror": 6.04,
+    "entry_frequency": 7
   },
   {
     "ticker": "COOL",
     "sector": "Finance",
     "mktcap": "Medium",
-    "bb_window": 7,
-    "bb_std": 0.4,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 4.11,
-    "entry_frequency": 5
-  },
-  {
-    "ticker": "QURE",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ARGX.BR $QURE $MRUS $SPY",
-    "ror": 1.08,
-    "entry_frequency": 2
-  },
-  {
-    "ticker": "CCX",
-    "sector": "Technology",
-    "mktcap": "Medium",
-    "bb_window": 9,
+    "bb_window": 12,
     "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 0.5,
-    "entry_frequency": 2
+    "ror": 2.09,
+    "entry_frequency": 3
   }
 ]

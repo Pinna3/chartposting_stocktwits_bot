@@ -1,13 +1,13 @@
 [
   {
-    "ticker": "INTT",
-    "sector": "Capital Goods",
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
     "mktcap": "Small",
-    "bb_window": 3,
+    "bb_window": 2,
     "bb_std": 0.1,
-    "peers": "$AMAT $LRCX $KLAC $SPY",
-    "ror": 140.47,
-    "entry_frequency": 141
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 152.88,
+    "entry_frequency": 154
   },
   {
     "ticker": "HQI",
@@ -16,8 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 102.61,
-    "entry_frequency": 104
+    "ror": 107.37,
+    "entry_frequency": 108
   },
   {
     "ticker": "PMBC",
@@ -26,7 +26,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 85.36,
-    "entry_frequency": 86
+    "ror": 80.57,
+    "entry_frequency": 82
   }
 ]

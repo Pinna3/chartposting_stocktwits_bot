@@ -6,28 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
-    "ror": 89.41,
-    "entry_frequency": 90
-  },
-  {
-    "ticker": "UHAL",
-    "sector": "Consumer Services",
-    "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 31.4,
-    "entry_frequency": 32
-  },
-  {
-    "ticker": "HPE",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 28.48,
-    "entry_frequency": 29
+    "ror": 75.97,
+    "entry_frequency": 77
   },
   {
     "ticker": "SNA",
@@ -36,37 +16,47 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$ITW $PH $SWK $SPY",
-    "ror": 26.87,
-    "entry_frequency": 28
+    "ror": 32.39,
+    "entry_frequency": 33
   },
   {
-    "ticker": "DELL",
+    "ticker": "HPE",
     "sector": "Technology",
     "mktcap": "VeryLarge",
-    "bb_window": 4,
-    "bb_std": 0.6,
+    "bb_window": 3,
+    "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 20.74,
-    "entry_frequency": 22
+    "ror": 24.9,
+    "entry_frequency": 26
   },
   {
-    "ticker": "TROW",
-    "sector": "Finance",
+    "ticker": "EXR",
+    "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 8,
-    "bb_std": 1.0,
-    "peers": "$BLK $BX $KKR $SPY",
-    "ror": 12.33,
-    "entry_frequency": 13
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": 18.31,
+    "entry_frequency": 19
   },
   {
     "ticker": "WU",
     "sector": "Miscellaneous",
     "mktcap": "VeryLarge",
-    "bb_window": 5,
-    "bb_std": 0.6,
+    "bb_window": 4,
+    "bb_std": 0.5,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": 10.49,
-    "entry_frequency": 11
+    "ror": 10.92,
+    "entry_frequency": 12
+  },
+  {
+    "ticker": "TRI",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 9,
+    "bb_std": 0.6,
+    "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
+    "ror": 6.85,
+    "entry_frequency": 8
   }
 ]

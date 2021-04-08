@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MDLZ $KHC $GIS $SPY",
-    "ror": 54.93,
-    "entry_frequency": 56
+    "ror": 56.07,
+    "entry_frequency": 57
   },
   {
     "ticker": "GLTO",
@@ -16,8 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
-    "ror": 50.89,
-    "entry_frequency": 52
+    "ror": 51.72,
+    "entry_frequency": 53
   },
   {
     "ticker": "UK",
@@ -26,7 +26,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$KW $RFL $FRPH $SPY",
-    "ror": 15.38,
-    "entry_frequency": 16
+    "ror": 18.32,
+    "entry_frequency": 19
   }
 ]

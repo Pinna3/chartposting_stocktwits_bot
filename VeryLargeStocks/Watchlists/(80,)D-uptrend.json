@@ -1,22 +1,12 @@
 [
   {
-    "ticker": "UHAL",
-    "sector": "Consumer Services",
+    "ticker": "TPL",
+    "sector": "Energy",
     "mktcap": "VeryLarge",
     "bb_window": 3,
     "bb_std": 0.1,
-    "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 44.47,
-    "entry_frequency": 45
-  },
-  {
-    "ticker": "DELL",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.5,
-    "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 24.93,
-    "entry_frequency": 26
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 132.05,
+    "entry_frequency": 133
   }
 ]

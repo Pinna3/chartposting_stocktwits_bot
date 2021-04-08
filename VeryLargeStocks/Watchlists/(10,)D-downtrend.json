@@ -1,13 +1,23 @@
 [
   {
+    "ticker": "BKI",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 9,
+    "bb_std": 1.0,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": -1.21,
+    "entry_frequency": 1
+  },
+  {
     "ticker": "BABA",
     "sector": "Miscellaneous",
     "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": 4,
+    "bb_std": 0.8,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
-    "ror": 4.97,
-    "entry_frequency": 6
+    "ror": -2.68,
+    "entry_frequency": 1
   },
   {
     "ticker": "LFC",
@@ -16,7 +26,17 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$601318.SS $601628.SS $601336.SS $SPY",
-    "ror": 0.29,
+    "ror": -3.17,
+    "entry_frequency": 1
+  },
+  {
+    "ticker": "BMRN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -4.82,
     "entry_frequency": 1
   },
   {
@@ -26,47 +46,7 @@
     "bb_window": 13,
     "bb_std": 1.0,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -0.21,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "SPLK",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 18,
-    "bb_std": 1.0,
-    "peers": "$ADBE $CRM $INTU $SPY",
-    "ror": -1.63,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "CRM",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 17,
-    "bb_std": 0.9,
-    "peers": "$ADBE $CRM $INTU $SPY",
-    "ror": -2.26,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "BMRN",
-    "sector": "Health Care",
-    "mktcap": "VeryLarge",
-    "bb_window": 19,
-    "bb_std": 1.0,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -2.7,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "SNOW",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 10,
-    "bb_std": 1.0,
-    "peers": "$SNOW $TWLO $OKTA $SPY",
-    "ror": -5.47,
+    "ror": -6.53,
     "entry_frequency": 1
   }
 ]

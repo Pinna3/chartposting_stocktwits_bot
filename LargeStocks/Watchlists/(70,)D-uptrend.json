@@ -6,18 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 205.34,
-    "entry_frequency": 206
-  },
-  {
-    "ticker": "SGRY",
-    "sector": "Health Care",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$HCA $UHS $EHC $SPY",
-    "ror": 58.11,
-    "entry_frequency": 59
+    "ror": 200.3,
+    "entry_frequency": 201
   },
   {
     "ticker": "SLM",
@@ -26,8 +16,18 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
-    "ror": 53.55,
-    "entry_frequency": 55
+    "ror": 55.81,
+    "entry_frequency": 57
+  },
+  {
+    "ticker": "SGRY",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$HCA $UHS $EHC $SPY",
+    "ror": 54.72,
+    "entry_frequency": 56
   },
   {
     "ticker": "PLAY",
@@ -36,18 +36,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 52.69,
-    "entry_frequency": 54
-  },
-  {
-    "ticker": "IHRT",
-    "sector": "Consumer Services",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 51.75,
-    "entry_frequency": 53
+    "ror": 53.53,
+    "entry_frequency": 55
   },
   {
     "ticker": "FIX",
@@ -56,18 +46,28 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
-    "ror": 42.26,
-    "entry_frequency": 43
+    "ror": 40.01,
+    "entry_frequency": 41
   },
   {
-    "ticker": "OSK",
-    "sector": "Capital Goods",
+    "ticker": "CNX",
+    "sector": "Energy",
     "mktcap": "Large",
     "bb_window": 3,
     "bb_std": 0.1,
-    "peers": "$CAT $CMI $PCAR $SPY",
-    "ror": 40.88,
-    "entry_frequency": 42
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 39.87,
+    "entry_frequency": 41
+  },
+  {
+    "ticker": "IHRT",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$VIAC $FOXA $DISCA $SPY",
+    "ror": 39.3,
+    "entry_frequency": 40
   },
   {
     "ticker": "STN",
@@ -76,7 +76,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
-    "ror": 35.6,
+    "ror": 36.34,
     "entry_frequency": 37
   },
   {
@@ -86,7 +86,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": 26.94,
-    "entry_frequency": 28
+    "ror": 24.67,
+    "entry_frequency": 26
   }
 ]

@@ -1,23 +1,23 @@
 [
   {
-    "ticker": "INTT",
-    "sector": "Capital Goods",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$AMAT $LRCX $KLAC $SPY",
-    "ror": 136.98,
-    "entry_frequency": 138
-  },
-  {
     "ticker": "NMM",
     "sector": "Transportation",
     "mktcap": "Small",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 135.4,
-    "entry_frequency": 136
+    "ror": 185.76,
+    "entry_frequency": 187
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 2,
+    "bb_std": 0.1,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 111.84,
+    "entry_frequency": 113
   },
   {
     "ticker": "HQI",
@@ -26,8 +26,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 83.25,
-    "entry_frequency": 84
+    "ror": 98.95,
+    "entry_frequency": 100
   },
   {
     "ticker": "PMBC",
@@ -36,7 +36,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 72.71,
-    "entry_frequency": 74
+    "ror": 80.93,
+    "entry_frequency": 82
   }
 ]

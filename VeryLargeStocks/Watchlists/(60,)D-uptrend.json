@@ -6,37 +6,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
-    "ror": 98.3,
-    "entry_frequency": 99
-  },
-  {
-    "ticker": "UHAL",
-    "sector": "Consumer Services",
-    "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 31.74,
-    "entry_frequency": 33
-  },
-  {
-    "ticker": "DELL",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 6,
-    "bb_std": 0.7,
-    "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 15.66,
-    "entry_frequency": 17
-  },
-  {
-    "ticker": "TROW",
-    "sector": "Finance",
-    "mktcap": "VeryLarge",
-    "bb_window": 8,
-    "bb_std": 0.9,
-    "peers": "$BLK $BX $KKR $SPY",
-    "ror": 13.55,
-    "entry_frequency": 15
+    "ror": 81.97,
+    "entry_frequency": 83
   }
 ]

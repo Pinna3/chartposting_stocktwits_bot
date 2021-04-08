@@ -1,23 +1,33 @@
 [
   {
-    "ticker": "GLTO",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
-    "ror": 48.65,
-    "entry_frequency": 50
-  },
-  {
     "ticker": "NUZE",
     "sector": "Consumer Services",
     "mktcap": "Small",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MDLZ $KHC $GIS $SPY",
-    "ror": 45.65,
-    "entry_frequency": 47
+    "ror": 52.89,
+    "entry_frequency": 54
+  },
+  {
+    "ticker": "GLTO",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
+    "ror": 49.27,
+    "entry_frequency": 50
+  },
+  {
+    "ticker": "HYMC",
+    "sector": "Basic Industries",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$NEM $RGLD $CDE $SPY",
+    "ror": 42.57,
+    "entry_frequency": 44
   },
   {
     "ticker": "IMRA",
@@ -26,8 +36,28 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 34.25,
-    "entry_frequency": 35
+    "ror": 38.59,
+    "entry_frequency": 40
+  },
+  {
+    "ticker": "ASMB",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 23.59,
+    "entry_frequency": 25
+  },
+  {
+    "ticker": "CHMA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 23.38,
+    "entry_frequency": 24
   },
   {
     "ticker": "VYGR",
@@ -36,7 +66,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 21.74,
+    "ror": 22.9,
+    "entry_frequency": 24
+  },
+  {
+    "ticker": "PSTI",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
+    "ror": 21.55,
     "entry_frequency": 23
   },
   {
@@ -46,7 +86,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$KW $RFL $FRPH $SPY",
-    "ror": 8.61,
-    "entry_frequency": 10
+    "ror": 10.42,
+    "entry_frequency": 11
   }
 ]

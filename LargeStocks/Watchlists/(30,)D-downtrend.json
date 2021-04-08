@@ -1,22 +1,72 @@
 [
   {
+    "ticker": "AXSM",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 23.44,
+    "entry_frequency": 24
+  },
+  {
     "ticker": "SRPT",
     "sector": "Health Care",
     "mktcap": "Large",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 10.03,
-    "entry_frequency": 11
+    "ror": 14.7,
+    "entry_frequency": 16
+  },
+  {
+    "ticker": "MOR",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$BNTX $CVAC $MOR.DE $SPY",
+    "ror": 12.5,
+    "entry_frequency": 14
+  },
+  {
+    "ticker": "AYX",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": 12.23,
+    "entry_frequency": 13
+  },
+  {
+    "ticker": "FROG",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$MSFT $ORCL $NOW $SPY",
+    "ror": 12.11,
+    "entry_frequency": 13
   },
   {
     "ticker": "GLPG",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 9,
-    "bb_std": 1.0,
+    "bb_window": 7,
+    "bb_std": 0.9,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
-    "ror": 7.31,
-    "entry_frequency": 8
+    "ror": 8.54,
+    "entry_frequency": 10
+  },
+  {
+    "ticker": "JOBS",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": 11,
+    "bb_std": 0.9,
+    "peers": "$300662.SZ $JOBS $6919.HK $SPY",
+    "ror": 2.74,
+    "entry_frequency": 4
   }
 ]

@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ticker": "BMRN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 5,
+    "bb_std": 0.6,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 4.05,
+    "entry_frequency": 5
+  }
+]

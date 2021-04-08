@@ -1,32 +1,62 @@
 [
   {
+    "ticker": "VUZI",
+    "sector": "Technology",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SONO $GPRO $VUZI $SPY",
+    "ror": 227.8,
+    "entry_frequency": 229
+  },
+  {
+    "ticker": "CNTY",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": 2,
+    "bb_std": 0.1,
+    "peers": "$LVS $DKNG $MGM $SPY",
+    "ror": 96.89,
+    "entry_frequency": 98
+  },
+  {
+    "ticker": "TWI",
+    "sector": "Basic Industries",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$DE $TTC $AGCO $SPY",
+    "ror": 87.36,
+    "entry_frequency": 88
+  },
+  {
+    "ticker": "BBCP",
+    "sector": "Basic Industries",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$PWR $ACM $MTZ $SPY",
+    "ror": 85.57,
+    "entry_frequency": 87
+  },
+  {
     "ticker": "SCVL",
     "sector": "Consumer Services",
     "mktcap": "Medium",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TJX $ROST $BURL $SPY",
-    "ror": 54.97,
-    "entry_frequency": 56
-  },
-  {
-    "ticker": "FST",
-    "sector": "Finance",
-    "mktcap": "Medium",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 24.07,
-    "entry_frequency": 25
+    "ror": 57.61,
+    "entry_frequency": 59
   },
   {
     "ticker": "PLYM",
     "sector": "Consumer Services",
     "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 0.9,
     "peers": "$PLD $DRE $COLD $SPY",
-    "ror": 15.59,
+    "ror": 16.45,
     "entry_frequency": 17
   }
 ]

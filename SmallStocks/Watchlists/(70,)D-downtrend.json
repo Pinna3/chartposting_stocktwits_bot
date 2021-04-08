@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "ticker": "NUZE",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$MDLZ $KHC $GIS $SPY",
+    "ror": 65.07,
+    "entry_frequency": 66
+  }
+]
