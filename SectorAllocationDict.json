@@ -1,33 +1,92 @@
 {
   "long": {
-    "market_value": 883.0,
-    "acct_percentage": 1.7,
+    "market_value": 3654.22,
+    "acct_percentage": 7.03,
     "sector": {
+      "Basic Industries": {
+        "market_value": 1030.29,
+        "acct_percentage": 1.98,
+        "stocks": [
+          [
+            "X",
+            509.91
+          ],
+          [
+            "VEDL",
+            520.38
+          ]
+        ]
+      },
       "Technology": {
-        "market_value": 519.2,
-        "acct_percentage": 1.0,
+        "market_value": 1032.28,
+        "acct_percentage": 1.99,
         "stocks": [
           [
             "WPP",
-            519.2
+            518.88
+          ],
+          [
+            "MFGP",
+            513.4
+          ]
+        ]
+      },
+      "Consumer Services": {
+        "market_value": 518.94,
+        "acct_percentage": 1.0,
+        "stocks": [
+          [
+            "TZOO",
+            518.94
+          ]
+        ]
+      },
+      "Health Care": {
+        "market_value": 503.01,
+        "acct_percentage": 0.97,
+        "stocks": [
+          [
+            "ICAD",
+            503.01
           ]
         ]
       },
       "Capital Goods": {
-        "market_value": 363.8,
-        "acct_percentage": 0.7,
+        "market_value": 569.7,
+        "acct_percentage": 1.1,
         "stocks": [
           [
-            "GD",
-            363.8
+            "HOVNP",
+            569.7
           ]
         ]
       }
     }
   },
   "short": {
-    "market_value": 0.0,
-    "acct_percentage": 0.0,
-    "sector": {}
+    "market_value": 785.89,
+    "acct_percentage": 1.51,
+    "sector": {
+      "Health Care": {
+        "market_value": 284.26,
+        "acct_percentage": -0.55,
+        "stocks": [
+          [
+            "SGEN",
+            -284.26
+          ]
+        ]
+      },
+      "Consumer Services": {
+        "market_value": 501.63,
+        "acct_percentage": -0.97,
+        "stocks": [
+          [
+            "AFYA",
+            -501.63
+          ]
+        ]
+      }
+    }
   }
 }

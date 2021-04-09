@@ -83,6 +83,10 @@ def get_orders():
     r = requests.get(ORDERS_URL, headers=HEADERS_PAPER)
     return json.loads(r.content)
 
+def get_order_by_id(id):
+    r = requests.get(f'{ORDERS_URL}/{id}', headers=HEADERS_PAPER)
+    return json.loads(r.content)
+
 def get_account_value():
     acct = get_account()
     acct_equity = float(acct['equity'])
@@ -104,6 +108,32 @@ def return_candles_json_v2(symbol, start_date, end_date, period='1Day'):
     r = requests.get(daily_bars_url_v2, headers=HEADERS_PAPER)
     data = r.json()
     return data
+
+def get_current_open_market_price(symbol, op_str):
+    if op_str == '>':
+        price = 0
+        while price == 0:
+            price = get_quote(symbol)['last']['askprice']
+            time.sleep(.7)
+            if price == 0:
+                price = get_quote(symbol)['last']['bidprice']
+                time.sleep(.7)
+                if price == 0:
+                    price = get_last_trade(symbol)['last']['price']
+                    time.sleep(.7)
+    elif op_str == '<':
+        price = 0
+        while price == 0:
+            price = get_quote(symbol)['last']['bidprice']
+            time.sleep(.7)
+            if price == 0:
+                price = get_quote(symbol)['last']['askprice']
+                time.sleep(.7)
+                if price == 0:
+                    price = get_last_trade(symbol)['last']['price']
+                    time.sleep(.7)
+    return price
+
 
 # acct_value = get_account_value()
 # print(acct_value)

@@ -4,7 +4,7 @@ import finnhub
 from tweet import twitter_api
 import json
 import operator
-from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short, get_last_trade
+from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short, get_last_trade, get_order_by_id, get_current_open_market_price
 from utility_func import initialize_sector_allocation_dict, drop_off_based_watchlist_filter, pull_top_tier_unbroken_trenders
 from risk_parameter import*
 from datetime import datetime, date
@@ -38,6 +38,8 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                 continue
             candle_object.custom_bollingers(security['bb_window'], security['bb_std'])
             c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper, atr = candle_object.df.iloc[-1]
+            #find better way... weak link... slow and innaccurate. (i think the funded keys access  more exchanges so this may be a non issue)
+            c = get_current_open_market_price(security['ticker'], op_str)
             if op_str == '>':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
                     opposite_op_func(c, lower):
@@ -96,14 +98,18 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                             #     n += 1
                                             #     sleep(1)
                                             #     continue
-                                            buy_market(security['ticker'], qty)
-                                            sleep(3)
-                                            # #trailing stop only works when marke is open
-                                            trailing_stop_long(security['ticker'], atr)
+                                            market_order_id = buy_market(security['ticker'], qty)['id']
+                                            sleep(2)
+                                            market_order_fill_price = round(float(get_order_by_id(market_order_id)['filled_avg_price']), 2)
+                                            trailing_percentage = (atr / market_order_fill_price) * 100
+                                            #trailing stop only works when marke is open
+                                            tstop_order_id = trailing_stop_long(security['ticker'], trailing_percentage)['id']
+                                            sleep(2)
+                                            tstop_stop_price = round(float(get_order_by_id(tstop_order_id)['stop_price']), 2)
                                             add_to_daily_counter('long', security['mktcap'])
                                             add_to_daily_tradelist(security['ticker'])
                                             sector_allocation_dict = initialize_sector_allocation_dict()
-                                            print(f"TRADE PLACED..... {holding}: Current Price: {c}, Lower Bollinger: {lower} MktGroup: {security['mktcap']}\n")
+                                            print(f"TRADE PLACED..... {holding}: Current Price: {c}, Trade Price: {market_order_fill_price} \nLower Bollinger: {lower}, Stop Price: {tstop_stop_price} \nMktGroup: {security['mktcap']}\n")
                                     else:
                                         print('No Duplicate Trades No Duplicate Trades No Duplicate Trades')
                                 else:
@@ -111,7 +117,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             else:
                                 print(f'Long or Daily Capacity Hit Long  or Daily Capacity Hit Long  or Daily Capacity Hit')
                 else:
-                    print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
+                    print(security['ticker'] + ' ' + str(index+1) + '/' + str(len(watchlist)))
 
             elif op_str == '<':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
@@ -172,14 +178,18 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                                 #     n += 1
                                                 #     sleep(1)
                                                 #     continue
-                                            sell_market(security['ticker'], qty)
-                                            sleep(3)
+                                            market_order_id = sell_market(security['ticker'], qty)['id']
+                                            sleep(2)
+                                            market_order_fill_price = round(float(get_order_by_id(market_order_id)['filled_avg_price']), 2)
+                                            trailing_percentage = (atr / market_order_fill_price) * 100
                                             # #trailing stop only works when market is open
-                                            trailing_stop_short(security['ticker'], atr)
+                                            tstop_order_id = trailing_stop_short(security['ticker'], trailing_percentage)['id']
+                                            sleep(2)
+                                            tstop_stop_price = round(float(get_order_by_id(tstop_order_id)['stop_price']), 2)
                                             add_to_daily_counter('short', security['mktcap'])
                                             add_to_daily_tradelist(security['ticker'])
                                             sector_allocation_dict = initialize_sector_allocation_dict()
-                                            print(f"TRADE PLACED..... {holding}: Current Price: {c}, Upper Bollinger: {upper} MktGroup: {security['mktcap']}\n")
+                                            print(f"TRADE PLACED..... {holding}: Current Price: {c}, Trade Price: {market_order_fill_price} \nUpper Bollinger: {upper}, Stop Price: {tstop_stop_price} \nMktGroup: {security['mktcap']}\n")
                                     else:
                                         print('No Duplicate Trades No Duplicate Trades No Duplicate Trades')
                                 else:
@@ -187,7 +197,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                             else:
                                 print(f'Short or Daily Capacity Hit Short or Daily Capacity Hit Short or Daily Capacity Hit')
                     else:
-                        print(security['ticker'] + ' ' + str(index) + '/' + str(len(watchlist)))
+                        print(security['ticker'] + ' ' + str(index+1) + '/' + str(len(watchlist)))
         # except:
         #     missed_connection.append(security['ticker'])
         #     print(f'ConnectionError...{missed_connection}')
@@ -198,6 +208,8 @@ while True:
     ###Think about another filtering mechanism (worried about shorts) (maybe restrict to long trending or winning trend, feels off)
     print('.')
     print('.')
+    print('.')
+    print('Top_Tier_Unbroken_Trenders')
     print('.')
     [print(item[0]) for item in pull_top_tier_unbroken_trenders(tier_percentage=10)]
     print('.')
@@ -210,6 +222,8 @@ while True:
         dailyscanner(filename, direction, publish=False)
     print('.')
     print('.')
+    print('.')
+    print('Dropoff Based Watchlists')
     print('.')
     [print(item[0]) for item in drop_off_based_watchlist_filter(max_per_category=3, drop_off_rate_cutoff=.25)]
     print('.')
