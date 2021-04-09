@@ -238,7 +238,7 @@ def pandas_atr_calculation(df, window=14):
     true_range = df[['tr0', 'tr1', 'tr2']].max(axis=1)
     return wilder_ema(true_range, window)
 
-test = SecurityTradeData('AFYA', atr_rolling_window=14)
+test = SecurityTradeData('VEDL', atr_rolling_window=14)
 # test.custom_bollingers(3, .1)
 # test.chart(120)
 print(test.df)

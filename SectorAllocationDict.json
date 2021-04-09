@@ -1,53 +1,37 @@
 {
   "long": {
-    "market_value": 3654.22,
-    "acct_percentage": 7.03,
+    "market_value": 3532.18,
+    "acct_percentage": 6.79,
     "sector": {
-      "Basic Industries": {
-        "market_value": 1030.29,
-        "acct_percentage": 1.98,
-        "stocks": [
-          [
-            "X",
-            509.91
-          ],
-          [
-            "VEDL",
-            520.38
-          ]
-        ]
-      },
       "Technology": {
-        "market_value": 1032.28,
-        "acct_percentage": 1.99,
+        "market_value": 901.06,
+        "acct_percentage": 1.73,
         "stocks": [
           [
             "WPP",
             518.88
           ],
           [
-            "MFGP",
-            513.4
+            "CCMP",
+            382.18
           ]
         ]
       },
-      "Consumer Services": {
-        "market_value": 518.94,
-        "acct_percentage": 1.0,
+      "Basic Industries": {
+        "market_value": 1543.9499999999998,
+        "acct_percentage": 2.97,
         "stocks": [
           [
-            "TZOO",
-            518.94
-          ]
-        ]
-      },
-      "Health Care": {
-        "market_value": 503.01,
-        "acct_percentage": 0.97,
-        "stocks": [
+            "VEDL",
+            519.12
+          ],
           [
-            "ICAD",
-            503.01
+            "BBCP",
+            516.96
+          ],
+          [
+            "BAK",
+            507.87
           ]
         ]
       },
@@ -60,33 +44,22 @@
             569.7
           ]
         ]
+      },
+      "Consumer Services": {
+        "market_value": 517.47,
+        "acct_percentage": 1.0,
+        "stocks": [
+          [
+            "CNTY",
+            517.47
+          ]
+        ]
       }
     }
   },
   "short": {
-    "market_value": 785.89,
-    "acct_percentage": 1.51,
-    "sector": {
-      "Health Care": {
-        "market_value": 284.26,
-        "acct_percentage": -0.55,
-        "stocks": [
-          [
-            "SGEN",
-            -284.26
-          ]
-        ]
-      },
-      "Consumer Services": {
-        "market_value": 501.63,
-        "acct_percentage": -0.97,
-        "stocks": [
-          [
-            "AFYA",
-            -501.63
-          ]
-        ]
-      }
-    }
+    "market_value": 0.0,
+    "acct_percentage": 0.0,
+    "sector": {}
   }
 }

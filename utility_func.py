@@ -209,8 +209,6 @@ def initialize_sector_allocation_dict():
         json.dump(sector_allocation_dict, outfile, indent=2)
     return sector_allocation_dict
 
-initialize_sector_allocation_dict()
-
 def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
     with open(csv_in) as infile:
         reader = csv.reader(infile)

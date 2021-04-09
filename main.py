@@ -30,15 +30,10 @@ def dailyscanner(json_watchlist, op_str, publish=False):
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
         # try:
-            try:
-                candle_object = SecurityTradeData(security['ticker'], num_days=201)
-            except ValueError:
-                missed_candle_object_error.append(security['ticker'])
-                print(f'MISSED CANDLE OBJECT ERROR!!!!...{missed_candle_object_error}')
-                continue
+            candle_object = SecurityTradeData(security['ticker'], num_days=201)
             candle_object.custom_bollingers(security['bb_window'], security['bb_std'])
             c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper, atr = candle_object.df.iloc[-1]
-            #find better way... weak link... slow and innaccurate. (i think the funded keys access  more exchanges so this may be a non issue)
+            #find better way... weak link... slow and innaccurate. (i think the funded keys access more exchanges so this may be a non issue)
             c = get_current_open_market_price(security['ticker'], op_str)
             if op_str == '>':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and op_func(sma50, sma200) and \
@@ -46,19 +41,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                     holding = security['ticker']
                     print(f"BUYING RANGE..... {holding}: Current Price: {c}, Lower Bollinger: {lower}")
                     if holding not in str(sector_allocation_dict):
-                        try:
-                            candle_object.chart(120, destination=security['mktcap'])
-                        except FileNotFoundError:
-                            security['mktcap'] = 'VeryLarge'
-                            candle_object.chart(120, destination=security['mktcap'])
-                        except ValueError:
-                            try:
-                                candle_object.chart(60, destination=security['mktcap'])
-                            except ValueError:
-                                missed_chart_error.append(security['ticker'])
-                                print(f'MISSED CHART!!!!...{missed_chart_error}')
-                                continue
-
+                        candle_object.chart(120, destination=security['mktcap'])
                         if publish:
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Long, Momentum\nSector: {security['sector']}\nPeers: {' '.join(security['peers'])}'''
@@ -75,29 +58,12 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                     sector_cap = False
                                 if sector_cap is False:
                                     if check_daily_tradelist(security['ticker']) == False:
-                                        price = 0
-                                        while price == 0:
-                                            try:
-                                                price = get_quote(security['ticker'])['last']['askprice']
-                                                if price == 0:
-                                                    price = get_quote(security['ticker'])['last']['bidprice']
-                                                    if price == 0:
-                                                        price = get_last_trade(security['ticker'])['last']['price']
-                                            except KeyError:
-                                                missed_order_error.append(security['ticker'])
-                                                print(f"Missed Order Error: {security['ticker']}")
-                                                break
+                                        price = c
                                         if price == 0:
                                             continue
                                         else:
                                             acct_value = get_account_value()
                                             qty = (acct_value / 100) // float(price)
-                                            # except ZeroDivisionError:
-                                            #     missed_order_error.append(security['ticker'])
-                                            #     print(f'MISSED ORDER ERROR!!!!...{missed_order_error}')
-                                            #     n += 1
-                                            #     sleep(1)
-                                            #     continue
                                             market_order_id = buy_market(security['ticker'], qty)['id']
                                             sleep(2)
                                             market_order_fill_price = round(float(get_order_by_id(market_order_id)['filled_avg_price']), 2)
@@ -125,20 +91,7 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                     holding = security['ticker']
                     print(f"SHORTING RANGE..... {holding}: Current Price: {c}, Upper Bollinger: {upper}")
                     if holding not in sector_allocation_dict:
-                    #Some market caps showing up null... keep an eye on
-                        try:
-                            candle_object.chart(120, destination=security['mktcap'])
-                        except FileNotFoundError:
-                            security['mktcap'] = 'VeryLarge'
-                            candle_object.chart(120, destination=security['mktcap'])
-                        except ValueError:
-                            try:
-                                candle_object.chart(60, destination=security['mktcap'])
-                            except ValueError:
-                                missed_candle_object_error.append(security['ticker'])
-                                print(f'MISSED!!!!...{missed_candle_object_error}')
-                                continue
-
+                        candle_object.chart(120, destination=security['mktcap'])
                         if publish:
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
                             tweet = f'''${security['ticker']} Trade Alert\n\nType: Short, Momentum\nSector: {security['sector']}\nPeers: {' '.join(security['peers'])}'''
@@ -155,29 +108,12 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                     sector_cap = False
                                 if sector_cap is False:
                                     if check_daily_tradelist(security['ticker']) == False:
-                                        price = 0
-                                        while price == 0:
-                                            try:
-                                                price = get_quote(security['ticker'])['last']['bidprice']
-                                                if price == 0:
-                                                    price = get_quote(security['ticker'])['last']['askprice']
-                                                    if price == 0:
-                                                        price = get_last_trade(security['ticker'])['last']['price']
-                                            except KeyError:
-                                                missed_order_error.append(security['ticker'])
-                                                print(f"Missed Order Error: {security['ticker']}")
-                                                break
+                                        price = c
                                         if price == 0:
                                             continue
                                         else:
                                             acct_value = get_account_value()
                                             qty = (acct_value / 100) // float(price)
-                                                # except ZeroDivisionError:
-                                                #     missed_order_error.append(security['ticker'])
-                                                #     print(f'MISSED!!!!...{missed_order_error}')
-                                                #     n += 1
-                                                #     sleep(1)
-                                                #     continue
                                             market_order_id = sell_market(security['ticker'], qty)['id']
                                             sleep(2)
                                             market_order_fill_price = round(float(get_order_by_id(market_order_id)['filled_avg_price']), 2)
