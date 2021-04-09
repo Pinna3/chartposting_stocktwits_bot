@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
     "ror": 5.15,
-    "entry_frequency": 6
+    "entry_frequency": 7
   },
   {
     "ticker": "BKI",
@@ -17,17 +17,17 @@
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 3.44,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "SGEN",
     "sector": "Health Care",
     "mktcap": "VeryLarge",
-    "bb_window": 7,
-    "bb_std": 0.1,
+    "bb_window": 4,
+    "bb_std": 0.3,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 3.12,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "BMRN",

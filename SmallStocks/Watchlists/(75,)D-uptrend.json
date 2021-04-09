@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$CMRE $NMCI $NMM $SPY",
     "ror": 185.76,
-    "entry_frequency": 187
+    "entry_frequency": 233
   },
   {
     "ticker": "GTIM",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 111.84,
-    "entry_frequency": 113
+    "entry_frequency": 141
   },
   {
     "ticker": "HQI",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 98.95,
-    "entry_frequency": 100
+    "entry_frequency": 125
   },
   {
     "ticker": "PMBC",
@@ -37,6 +37,6 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 80.93,
-    "entry_frequency": 82
+    "entry_frequency": 102
   }
 ]

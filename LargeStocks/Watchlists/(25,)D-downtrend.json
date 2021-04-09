@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 21.79,
-    "entry_frequency": 23
+    "ror": 22.56,
+    "entry_frequency": 29
   },
   {
     "ticker": "QDEL",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$950130.KQ $ALGN $WST $SPY",
     "ror": 11.58,
-    "entry_frequency": 13
+    "entry_frequency": 15
   },
   {
     "ticker": "SRPT",
@@ -27,27 +27,27 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 11.48,
-    "entry_frequency": 12
+    "entry_frequency": 15
   },
   {
     "ticker": "GLPG",
     "sector": "Health Care",
     "mktcap": "Large",
     "bb_window": 7,
-    "bb_std": 1.0,
+    "bb_std": 0.8,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 8.09,
-    "entry_frequency": 9
+    "entry_frequency": 11
   },
   {
     "ticker": "MOR",
     "sector": "Health Care",
     "mktcap": "Large",
     "bb_window": 3,
-    "bb_std": 0.7,
+    "bb_std": 0.1,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": 7.71,
-    "entry_frequency": 9
+    "entry_frequency": 11
   },
   {
     "ticker": "MPLN",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$VEEV $TDOC $CERN $SPY",
     "ror": 4.05,
-    "entry_frequency": 5
+    "entry_frequency": 6
   },
   {
     "ticker": "JOBS",

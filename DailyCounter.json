@@ -1,18 +1,18 @@
 {
-  "today_date": "04-08-21",
-  "long": 6,
+  "today_date": "04-09-21",
+  "long": 2,
   "long_mkt_cap": {
-    "VeryLarge": 1,
-    "Large": 2,
-    "Medium": 2,
-    "Small": 1,
+    "VeryLarge": 2,
+    "Large": 0,
+    "Medium": 0,
+    "Small": 0,
     "Micro": 0
   },
-  "short": 3,
+  "short": 0,
   "short_mkt_cap": {
-    "VeryLarge": 1,
-    "Large": 1,
-    "Medium": 1,
+    "VeryLarge": 0,
+    "Large": 0,
+    "Medium": 0,
     "Small": 0,
     "Micro": 0
   }

@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MDLZ $KHC $GIS $SPY",
-    "ror": 61.46,
-    "entry_frequency": 62
+    "ror": 61.14,
+    "entry_frequency": 77
   },
   {
     "ticker": "GLTO",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
     "ror": 52.07,
-    "entry_frequency": 53
+    "entry_frequency": 66
   }
 ]

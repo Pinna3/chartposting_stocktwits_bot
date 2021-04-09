@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
     "ror": 34.89,
-    "entry_frequency": 36
+    "entry_frequency": 45
   },
   {
     "ticker": "KPTI",
@@ -17,27 +17,27 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 29.1,
-    "entry_frequency": 30
+    "entry_frequency": 37
   },
   {
     "ticker": "QTNT",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 1.0,
+    "bb_std": 0.8,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
     "ror": 14.12,
-    "entry_frequency": 15
+    "entry_frequency": 19
   },
   {
     "ticker": "EPZM",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": 5,
-    "bb_std": 0.7,
+    "bb_std": 0.2,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 12.38,
-    "entry_frequency": 13
+    "entry_frequency": 16
   },
   {
     "ticker": "AFYA",
@@ -47,17 +47,17 @@
     "bb_std": 0.1,
     "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
     "ror": 10.5,
-    "entry_frequency": 12
+    "entry_frequency": 14
   },
   {
     "ticker": "DEA",
     "sector": "Consumer Services",
     "mktcap": "Medium",
-    "bb_window": 6,
+    "bb_window": 5,
     "bb_std": 1.0,
     "peers": "$ARE $BXP $VNO $SPY",
     "ror": 7.5,
-    "entry_frequency": 8
+    "entry_frequency": 10
   },
   {
     "ticker": "CHRS",
@@ -67,16 +67,16 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 6.04,
-    "entry_frequency": 7
+    "entry_frequency": 9
   },
   {
     "ticker": "COOL",
     "sector": "Finance",
     "mktcap": "Medium",
     "bb_window": 12,
-    "bb_std": 1.0,
+    "bb_std": 0.9,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 2.09,
-    "entry_frequency": 3
+    "entry_frequency": 4
   }
 ]

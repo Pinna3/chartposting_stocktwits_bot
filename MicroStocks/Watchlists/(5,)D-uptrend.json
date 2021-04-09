@@ -1,5 +1,15 @@
 [
   {
+    "ticker": "RCON",
+    "sector": "Energy",
+    "mktcap": "Micro",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$002353.SZ $600871.SS $600968.SS $SPY",
+    "ror": 7.49,
+    "entry_frequency": 10
+  },
+  {
     "ticker": "YVR",
     "sector": "Technology",
     "mktcap": "Micro",
@@ -7,17 +17,17 @@
     "bb_std": 0.8,
     "peers": "$SCR.TO $IMAX $CGX.TO $SPY",
     "ror": 5.78,
-    "entry_frequency": 7
+    "entry_frequency": 8
   },
   {
-    "ticker": "BPTH",
-    "sector": "Health Care",
+    "ticker": "DUOT",
+    "sector": "Technology",
     "mktcap": "Micro",
-    "bb_window": 2,
+    "bb_window": 3,
     "bb_std": 0.8,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 1.98,
-    "entry_frequency": 3
+    "peers": "$MSFT $ORCL $NOW $SPY",
+    "ror": 2.55,
+    "entry_frequency": 4
   },
   {
     "ticker": "FBIOP",
@@ -30,6 +40,16 @@
     "entry_frequency": 3
   },
   {
+    "ticker": "SNCA",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": 4,
+    "bb_std": 1.0,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 1.45,
+    "entry_frequency": 3
+  },
+  {
     "ticker": "AEFC",
     "sector": "Finance",
     "mktcap": "Micro",
@@ -37,7 +57,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 1.26,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "DTP",
@@ -47,6 +67,16 @@
     "bb_std": 1.0,
     "peers": "$D $SRE $PEG $SPY",
     "ror": 1.06,
+    "entry_frequency": 2
+  },
+  {
+    "ticker": "SOLN",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": 19,
+    "bb_std": 1.0,
+    "peers": "$NEE $DUK $SO $SPY",
+    "ror": 0.74,
     "entry_frequency": 2
   },
   {
@@ -77,17 +107,17 @@
     "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.43,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "QVCD",
     "sector": "Consumer Services",
     "mktcap": "Micro",
     "bb_window": null,
-    "bb_std": null,
+    "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.43,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "DHCNL",
@@ -107,16 +137,6 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.37,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "SOLN",
-    "sector": "Public Utilities",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$NEE $DUK $SO $SPY",
-    "ror": 0.36,
     "entry_frequency": 1
   },
   {
@@ -164,7 +184,7 @@
     "sector": "Transportation",
     "mktcap": "Micro",
     "bb_window": 14,
-    "bb_std": 0.9,
+    "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.04,
     "entry_frequency": 1
@@ -190,26 +210,6 @@
     "entry_frequency": 1
   },
   {
-    "ticker": "GFLU",
-    "sector": "Public Utilities",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": 0.1,
-    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
-    "ror": -0.04,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "DUOT",
-    "sector": "Technology",
-    "mktcap": "Micro",
-    "bb_window": 12,
-    "bb_std": 0.8,
-    "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": -0.09,
-    "entry_frequency": 1
-  },
-  {
     "ticker": "CMSC",
     "sector": "Public Utilities",
     "mktcap": "Micro",
@@ -220,13 +220,13 @@
     "entry_frequency": 1
   },
   {
-    "ticker": "IFFT",
-    "sector": "Basic Industries",
+    "ticker": "GFLU",
+    "sector": "Public Utilities",
     "mktcap": "Micro",
-    "bb_window": 9,
-    "bb_std": 1.0,
-    "peers": "$SHW $ECL $DD $SPY",
-    "ror": -0.61,
+    "bb_window": null,
+    "bb_std": 0.1,
+    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
+    "ror": -0.41,
     "entry_frequency": 1
   },
   {
@@ -236,6 +236,16 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": -0.61,
+    "entry_frequency": 1
+  },
+  {
+    "ticker": "IFFT",
+    "sector": "Basic Industries",
+    "mktcap": "Micro",
+    "bb_window": 9,
+    "bb_std": 1.0,
+    "peers": "$SHW $ECL $DD $SPY",
     "ror": -0.73,
     "entry_frequency": 1
   },
@@ -316,7 +326,7 @@
     "bb_window": 18,
     "bb_std": 0.9,
     "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": -6.03,
+    "ror": -7.57,
     "entry_frequency": 1
   },
   {
@@ -326,7 +336,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BA $RTX $LMT $SPY",
-    "ror": -16.86,
+    "ror": -16.44,
     "entry_frequency": 1
   },
   {
@@ -336,17 +346,7 @@
     "bb_window": 17,
     "bb_std": 1.0,
     "peers": "$002607.SZ $667.HK $TAL $SPY",
-    "ror": -21.56,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "RCON",
-    "sector": "Energy",
-    "mktcap": "Micro",
-    "bb_window": 10,
-    "bb_std": 0.9,
-    "peers": "$002353.SZ $600871.SS $600968.SS $SPY",
-    "ror": -40.04,
+    "ror": -20.62,
     "entry_frequency": 1
   }
 ]

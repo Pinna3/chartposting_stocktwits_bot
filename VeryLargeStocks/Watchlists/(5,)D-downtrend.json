@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 3.49,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "U",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": 2.01,
-    "entry_frequency": 3
+    "entry_frequency": 4
   },
   {
     "ticker": "LFC",
@@ -40,13 +40,23 @@
     "entry_frequency": 1
   },
   {
+    "ticker": "VRTX",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": 19,
+    "bb_std": 0.9,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -0.29,
+    "entry_frequency": 1
+  },
+  {
     "ticker": "BKI",
     "sector": "Technology",
     "mktcap": "VeryLarge",
     "bb_window": 9,
     "bb_std": 1.0,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": -0.37,
+    "ror": -0.39,
     "entry_frequency": 1
   },
   {

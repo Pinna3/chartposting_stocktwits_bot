@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 84.16,
-    "entry_frequency": 85
+    "entry_frequency": 106
   },
   {
     "ticker": "CAR",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 82.07,
-    "entry_frequency": 83
+    "entry_frequency": 104
   },
   {
     "ticker": "GWPH",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$AZN.L $GSK.L $GWPH $SPY",
     "ror": 59.08,
-    "entry_frequency": 60
+    "entry_frequency": 75
   },
   {
     "ticker": "LPX",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$LPX $RRIF $KEWL $SPY",
     "ror": 55.41,
-    "entry_frequency": 56
+    "entry_frequency": 70
   },
   {
     "ticker": "SGRY",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 38.39,
-    "entry_frequency": 39
+    "entry_frequency": 49
   },
   {
     "ticker": "SLM",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 35.0,
-    "entry_frequency": 36
+    "entry_frequency": 45
   },
   {
     "ticker": "IHRT",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$VIAC $FOXA $DISCA $SPY",
     "ror": 31.68,
-    "entry_frequency": 33
+    "entry_frequency": 41
   },
   {
     "ticker": "FIX",
@@ -77,7 +77,7 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 30.6,
-    "entry_frequency": 32
+    "entry_frequency": 39
   },
   {
     "ticker": "CEQP",
@@ -87,7 +87,7 @@
     "bb_std": 0.1,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 30.59,
-    "entry_frequency": 32
+    "entry_frequency": 39
   },
   {
     "ticker": "PLAY",
@@ -97,7 +97,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 28.77,
-    "entry_frequency": 30
+    "entry_frequency": 37
   },
   {
     "ticker": "NAVI",
@@ -107,7 +107,7 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 25.61,
-    "entry_frequency": 27
+    "entry_frequency": 33
   },
   {
     "ticker": "STN",
@@ -117,36 +117,36 @@
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 25.06,
-    "entry_frequency": 26
+    "entry_frequency": 32
   },
   {
     "ticker": "MMS",
     "sector": "Miscellaneous",
     "mktcap": "Large",
-    "bb_window": 4,
-    "bb_std": 0.3,
+    "bb_window": 3,
+    "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 19.85,
-    "entry_frequency": 21
+    "entry_frequency": 26
   },
   {
     "ticker": "CNX",
     "sector": "Energy",
     "mktcap": "Large",
     "bb_window": 3,
-    "bb_std": 1.0,
+    "bb_std": 0.9,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 17.51,
-    "entry_frequency": 19
+    "entry_frequency": 23
   },
   {
     "ticker": "EQT",
     "sector": "Energy",
     "mktcap": "Large",
-    "bb_window": 11,
+    "bb_window": 9,
     "bb_std": 1.0,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 10.01,
-    "entry_frequency": 11
+    "entry_frequency": 14
   }
 ]

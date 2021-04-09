@@ -149,9 +149,9 @@ def fetch_sector(symbol):
                 if row[0] == symbol:
                     return row[8]
 
-def initialize_holdings():
+def initialize_sector_allocation_dict():
     positions = get_all_positions()
-    holdings = {
+    sector_allocation_dict = {
         "long": {
             "market_value": None,
             "acct_percentage": None,
@@ -170,42 +170,46 @@ def initialize_holdings():
         market_value = round(float(holding['market_value']), 2)
         side = holding['side']
         sector = fetch_sector(symbol)
-        if sector not in holdings[side]['sector'].keys():
-            holdings[side]['sector'][sector] = {}
-            holdings[side]['sector'][sector]['market_value'] = None
-            holdings[side]['sector'][sector]['acct_percentage'] = None
-            holdings[side]['sector'][sector]['stocks'] = [[symbol, market_value]]
+        if sector not in sector_allocation_dict[side]['sector'].keys():
+            sector_allocation_dict[side]['sector'][sector] = {}
+            sector_allocation_dict[side]['sector'][sector]['market_value'] = None
+            sector_allocation_dict[side]['sector'][sector]['acct_percentage'] = None
+            sector_allocation_dict[side]['sector'][sector]['stocks'] = [[symbol, market_value]]
         else:
-            holdings[side]['sector'][sector]['stocks'].append([symbol, market_value])
+            sector_allocation_dict[side]['sector'][sector]['stocks'].append([symbol, market_value])
 
     acct_value = get_account_value()
-    long_sector_keys = holdings['long']['sector'].keys()
-    short_sector_keys = holdings['short']['sector'].keys()
+    long_sector_keys = sector_allocation_dict['long']['sector'].keys()
+    short_sector_keys = sector_allocation_dict['short']['sector'].keys()
     for sector in long_sector_keys:
         market_value = 0.0
-        for stock in holdings['long']['sector'][sector]['stocks']:
+        for stock in sector_allocation_dict['long']['sector'][sector]['stocks']:
             market_value += round(float(stock[1]), 2)
-        holdings['long']['sector'][sector]['market_value'] = market_value
-        holdings['long']['sector'][sector]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
+        sector_allocation_dict['long']['sector'][sector]['market_value'] = market_value
+        sector_allocation_dict['long']['sector'][sector]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
     for sector in short_sector_keys:
         market_value = 0.0
-        for stock in holdings['short']['sector'][sector]['stocks']:
+        for stock in sector_allocation_dict['short']['sector'][sector]['stocks']:
             market_value += round(float(stock[1]), 2)
-        holdings['short']['sector'][sector]['market_value'] = abs(market_value)
-        holdings['short']['sector'][sector]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
+        sector_allocation_dict['short']['sector'][sector]['market_value'] = abs(market_value)
+        sector_allocation_dict['short']['sector'][sector]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
 
     long_market_value = 0.0
     for sector in long_sector_keys:
-        long_market_value += round(holdings['long']['sector'][sector]['market_value'], 2)
-    holdings['long']['market_value'] = round(long_market_value, 2)
-    holdings['long']['acct_percentage'] = round((long_market_value / acct_value) * 100, 2)
+        long_market_value += round(sector_allocation_dict['long']['sector'][sector]['market_value'], 2)
+    sector_allocation_dict['long']['market_value'] = round(long_market_value, 2)
+    sector_allocation_dict['long']['acct_percentage'] = round((long_market_value / acct_value) * 100, 2)
     short_market_value = 0.0
     for sector in short_sector_keys:
-        short_market_value += round(abs(holdings['short']['sector'][sector]['market_value']), 2)
-    holdings['short']['market_value'] = round(short_market_value, 2)
-    holdings['short']['acct_percentage'] = round((short_market_value / acct_value) * 100, 2)
+        short_market_value += round(abs(sector_allocation_dict['short']['sector'][sector]['market_value']), 2)
+    sector_allocation_dict['short']['market_value'] = round(short_market_value, 2)
+    sector_allocation_dict['short']['acct_percentage'] = round((short_market_value / acct_value) * 100, 2)
 
-    return holdings
+    with open('SectorAllocationDict.json', 'w') as outfile:
+        json.dump(sector_allocation_dict, outfile, indent=2)
+    return sector_allocation_dict
+
+initialize_sector_allocation_dict()
 
 def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
     with open(csv_in) as infile:
@@ -277,7 +281,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     remainder_smoothness_test = smoothness_tests[-remainder:]
     remainder_peers = peers[-remainder:]
     remainder_batch = ','.join(remainder_reference)
-    remainder_data = return_candles_json(remainder_batch, period='day', num_bars=365)
+    remainder_data = return_candles_json(remainder_batch, period='day', num_bars=201)
     #iterable list with retrievable values
     remainder_df_list = []
     for index, reference_symbol in enumerate(remainder_reference):
@@ -308,7 +312,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
         batch_smoothness_test = smoothness_tests[(batch_num - 1)*batch: batch_num*batch]
         batch_peers = peers[(batch_num - 1)*batch: batch_num*batch]
         symbol_batch = ','.join(symbol_reference)
-        batch_data = return_candles_json(symbol_batch, period='day', num_bars=365)
+        batch_data = return_candles_json(symbol_batch, period='day', num_bars=201)
         #iterable list with retrievable values
         batch_df_list = []
         for index, reference_symbol in enumerate(symbol_reference):

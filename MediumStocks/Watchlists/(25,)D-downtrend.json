@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$NTES $002602.SZ $002555.SZ $SPY",
     "ror": 24.75,
-    "entry_frequency": 26
+    "entry_frequency": 32
   },
   {
     "ticker": "AFIB",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
     "ror": 24.13,
-    "entry_frequency": 25
+    "entry_frequency": 31
   },
   {
     "ticker": "HYLN",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$CAT $CMI $PCAR $SPY",
     "ror": 21.15,
-    "entry_frequency": 22
+    "entry_frequency": 27
   },
   {
     "ticker": "KPTI",
@@ -37,7 +37,17 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 10.99,
-    "entry_frequency": 12
+    "entry_frequency": 15
+  },
+  {
+    "ticker": "ATNX",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 9.25,
+    "entry_frequency": 13
   },
   {
     "ticker": "EPZM",
@@ -47,17 +57,17 @@
     "bb_std": 0.9,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 8.04,
-    "entry_frequency": 9
+    "entry_frequency": 11
   },
   {
     "ticker": "AFYA",
     "sector": "Consumer Services",
     "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 1.0,
+    "bb_std": 0.4,
     "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
     "ror": 7.2,
-    "entry_frequency": 8
+    "entry_frequency": 10
   },
   {
     "ticker": "CHRS",
@@ -67,17 +77,17 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 6.1,
-    "entry_frequency": 7
+    "entry_frequency": 9
   },
   {
     "ticker": "EGAN",
     "sector": "Technology",
     "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 1.0,
+    "bb_std": 0.1,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": 4.41,
-    "entry_frequency": 5
+    "entry_frequency": 7
   },
   {
     "ticker": "DEA",
@@ -94,7 +104,7 @@
     "sector": "Finance",
     "mktcap": "Medium",
     "bb_window": 16,
-    "bb_std": 0.9,
+    "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.81,
     "entry_frequency": 2

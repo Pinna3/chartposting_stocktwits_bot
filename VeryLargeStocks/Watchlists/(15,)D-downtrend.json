@@ -4,10 +4,10 @@
     "sector": "Miscellaneous",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.5,
+    "bb_std": 0.4,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
     "ror": 3.27,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "BMRN",

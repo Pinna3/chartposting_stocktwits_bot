@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": 83.78,
-    "entry_frequency": 85
+    "ror": 88.63,
+    "entry_frequency": 112
   },
   {
     "ticker": "HOVNP",
@@ -17,6 +17,16 @@
     "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 44.02,
-    "entry_frequency": 45
+    "entry_frequency": 56
+  },
+  {
+    "ticker": "GFLU",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": 5,
+    "bb_std": 0.6,
+    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
+    "ror": 11.62,
+    "entry_frequency": 16
   }
 ]

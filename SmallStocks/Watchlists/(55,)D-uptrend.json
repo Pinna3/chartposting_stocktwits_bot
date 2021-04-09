@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 101.92,
-    "entry_frequency": 103
+    "entry_frequency": 128
   },
   {
     "ticker": "NMM",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$CMRE $NMCI $NMM $SPY",
     "ror": 87.17,
-    "entry_frequency": 88
+    "entry_frequency": 110
   },
   {
     "ticker": "PRT",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 86.2,
-    "entry_frequency": 87
+    "entry_frequency": 109
   },
   {
     "ticker": "HQI",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 86.09,
-    "entry_frequency": 87
+    "entry_frequency": 109
   },
   {
     "ticker": "TZOO",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$GOOGL $FB $SNAP $SPY",
     "ror": 64.88,
-    "entry_frequency": 66
+    "entry_frequency": 82
   },
   {
     "ticker": "INTT",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 62.67,
-    "entry_frequency": 64
+    "entry_frequency": 79
   },
   {
     "ticker": "GTIM",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 62.63,
-    "entry_frequency": 64
+    "entry_frequency": 79
   },
   {
     "ticker": "PMBC",
@@ -77,7 +77,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 52.22,
-    "entry_frequency": 53
+    "entry_frequency": 66
   },
   {
     "ticker": "ALOT",
@@ -87,7 +87,7 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 35.39,
-    "entry_frequency": 36
+    "entry_frequency": 45
   },
   {
     "ticker": "BRBS",
@@ -97,6 +97,6 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 12.24,
-    "entry_frequency": 13
+    "entry_frequency": 16
   }
 ]

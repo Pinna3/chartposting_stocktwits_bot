@@ -11,7 +11,7 @@ from alpaca import return_candles_json
 #Database Object with candlestick data and moving average data (for now)
 class SecurityTradeData:
     # @memoize
-    def __init__(self, ticker, num_days=365, atr_rolling_window=14):
+    def __init__(self, ticker, num_days=201, atr_rolling_window=14):
         #basics
         self.ticker = ticker
         self.num_days = num_days
@@ -72,8 +72,8 @@ class SecurityTradeData:
         #### average true range pandas_atr_calculation
         df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
         # #Play with shifting method to optimize ATR mulitple for traling stops
-        # df['top_atr'] = df['h'].shift() + (.75 * df['atr'])
-        # df['bottom_atr'] = df['l'].shift(periods=2) - (.75 * df['atr'])
+        # df['top_atr'] = df['h'].shift(periods=-2) + (1 * df['atr'])
+        # df['bottom_atr'] = df['l'].shift(periods=-2) - (1 * df['atr'])
         self.df = df
 
     def __str__(self):
@@ -125,8 +125,8 @@ class SecurityTradeData:
         #     'line': {'width': 1, 'color': 'blue'}, 'name': 'T-ATR'}
 
         #plot data
-        data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper,]# trace_atr_lower, trace_atr_upper]
-
+        data = [trace_bar, trace_9sma, trace_20sma, trace_50sma, trace_200sma, trace_lower, trace_upper]
+        # data2 = [trace_bar, trace_atr_lower, trace_atr_upper]
         #chart aesthetic
         layout = go.Layout(#'title': {'text': f'{self.ticker} {days}D Daily Chart', 'yanchor': 1.0},
                             {'font': {'size': 12}, 'width': 1200, 'height': 675,
@@ -238,8 +238,8 @@ def pandas_atr_calculation(df, window=14):
     true_range = df[['tr0', 'tr1', 'tr2']].max(axis=1)
     return wilder_ema(true_range, window)
 
-
-# test = SecurityTradeData('DISCB', atr_rolling_window=5)
-# # # test.custom_bollingers(14, .9)
-# # # test.chart(120)
+# test = SecurityTradeData('KBH', atr_rolling_window=5)
+# # test.custom_bollingers(3, .1)
+# test.chart(120)
 # print(test.df)
+# print(test.df.iloc[-1])

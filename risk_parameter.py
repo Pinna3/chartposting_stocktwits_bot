@@ -23,17 +23,16 @@ def set_long_short_capacities():
 
     long_max_exposure = round((long_total / (long_total + short_total) * 100))
     short_max_exposure = round((short_total / (long_total + short_total) * 100))
-    print(f"\n\nLong Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure}%, Long Total: {long_total}, Short Total: {short_total}")
-    return long_max_exposure, short_max_exposure
+    return long_max_exposure, short_max_exposure, long_total, short_total
 
 #70% max long allocation in bull markets
-def long_capacity(portfolio_current):
-    long_max_exposure, short_max_exposure = set_long_short_capacities()
+def check_long_capacity(portfolio_current):
+    long_max_exposure, short_max_exposure, long_total, short_total = set_long_short_capacities()
     return portfolio_current >= long_max_exposure
 
 #30% max short allocation in bull markets
-def short_capacity(portfolio_current):
-    long_max_exposure, short_max_exposure = set_long_short_capacities()
+def check_short_capacity(portfolio_current):
+    long_max_exposure, short_max_exposure, long_total, short_total = set_long_short_capacities()
     return portfolio_current >= short_max_exposure
 
 #10% max allocation per sector, key error means no sector exposure yet
@@ -46,7 +45,7 @@ def check_daily_counter_capacity(side, mkt_cap, max_daily_trades=12,
                         max_long_verylarge=.25, max_long_large=.25, max_long_medium=.25, max_long_small=.125, max_long_micro=.125,
                         max_short_verylarge=.50, max_short_large=.25, max_short_medium=.25, max_short_small=0, max_short_micro=0):
 
-    long_max_exposure, short_max_exposure = set_long_short_capacities()
+    long_max_exposure, short_max_exposure, long_total, short_total = set_long_short_capacities()
     max_long = round((long_max_exposure / 100) * max_daily_trades)
     max_short = round((short_max_exposure / 100)* max_daily_trades)
 
@@ -79,6 +78,7 @@ def check_daily_counter_capacity(side, mkt_cap, max_daily_trades=12,
 Daily Counter Capacities:
 Long: {max_long}, VeryLarge: {max_long_verylarge*max_long}, Large: {max_long_large*max_long}, Medium: {max_long_medium*max_long}, Small: {max_long_small*max_long}, Micro: {max_long_micro*max_long}
 Short: {max_short}, VeryLarge: {max_short_verylarge*max_short}, Large: {max_short_large*max_short}, Medium: {max_short_medium*max_short}, Small: {max_short_small*max_short}, Micro: {max_short_micro*max_short}
+Long Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure}%, Long Total: {long_total}, Short Total: {short_total}
 """)
 
     with open('DailyCounter.json') as infile:

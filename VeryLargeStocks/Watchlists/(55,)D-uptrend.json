@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 90.94,
-    "entry_frequency": 92
+    "entry_frequency": 115
   },
   {
     "ticker": "HPE",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 28.85,
-    "entry_frequency": 30
+    "entry_frequency": 37
   }
 ]

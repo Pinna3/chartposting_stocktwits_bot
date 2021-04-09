@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 75.97,
-    "entry_frequency": 77
+    "entry_frequency": 96
   },
   {
     "ticker": "SNA",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 32.39,
-    "entry_frequency": 33
+    "entry_frequency": 41
   },
   {
     "ticker": "HPE",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 24.9,
-    "entry_frequency": 26
+    "entry_frequency": 32
   },
   {
     "ticker": "EXR",
@@ -37,26 +37,26 @@
     "bb_std": 0.1,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 18.31,
-    "entry_frequency": 19
+    "entry_frequency": 24
   },
   {
     "ticker": "WU",
     "sector": "Miscellaneous",
     "mktcap": "VeryLarge",
-    "bb_window": 4,
-    "bb_std": 0.5,
+    "bb_window": 3,
+    "bb_std": 0.4,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 10.92,
-    "entry_frequency": 12
+    "entry_frequency": 15
   },
   {
     "ticker": "TRI",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 9,
-    "bb_std": 0.6,
+    "bb_window": 8,
+    "bb_std": 0.7,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 6.85,
-    "entry_frequency": 8
+    "entry_frequency": 10
   }
 ]

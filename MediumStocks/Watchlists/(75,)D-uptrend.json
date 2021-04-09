@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$SONO $GPRO $VUZI $SPY",
     "ror": 250.57,
-    "entry_frequency": 252
+    "entry_frequency": 314
   },
   {
     "ticker": "PLYM",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 21.38,
-    "entry_frequency": 22
+    "entry_frequency": 28
   }
 ]

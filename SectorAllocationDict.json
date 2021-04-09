@@ -1,0 +1,33 @@
+{
+  "long": {
+    "market_value": 883.0,
+    "acct_percentage": 1.7,
+    "sector": {
+      "Technology": {
+        "market_value": 519.2,
+        "acct_percentage": 1.0,
+        "stocks": [
+          [
+            "WPP",
+            519.2
+          ]
+        ]
+      },
+      "Capital Goods": {
+        "market_value": 363.8,
+        "acct_percentage": 0.7,
+        "stocks": [
+          [
+            "GD",
+            363.8
+          ]
+        ]
+      }
+    }
+  },
+  "short": {
+    "market_value": 0.0,
+    "acct_percentage": 0.0,
+    "sector": {}
+  }
+}

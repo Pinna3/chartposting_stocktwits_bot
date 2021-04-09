@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 99.67,
-    "entry_frequency": 101
+    "entry_frequency": 126
   },
   {
     "ticker": "HPE",
@@ -17,16 +17,16 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 21.56,
-    "entry_frequency": 23
+    "entry_frequency": 28
   },
   {
     "ticker": "TRI",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 5,
-    "bb_std": 0.9,
+    "bb_window": 3,
+    "bb_std": 1.0,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 12.79,
-    "entry_frequency": 14
+    "entry_frequency": 17
   }
 ]

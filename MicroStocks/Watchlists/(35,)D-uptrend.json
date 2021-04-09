@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": 60.67,
-    "entry_frequency": 62
+    "ror": 64.91,
+    "entry_frequency": 82
   },
   {
     "ticker": "HOVNP",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 45.38,
-    "entry_frequency": 46
+    "entry_frequency": 58
   }
 ]

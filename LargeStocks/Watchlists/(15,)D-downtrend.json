@@ -1,33 +1,33 @@
 [
   {
-    "ticker": "AXSM",
-    "sector": "Health Care",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 18.97,
-    "entry_frequency": 20
-  },
-  {
     "ticker": "AI",
     "sector": "Technology",
     "mktcap": "Large",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$ADBE $CRM $INTU $SPY",
-    "ror": 18.23,
-    "entry_frequency": 19
+    "ror": 19.81,
+    "entry_frequency": 26
+  },
+  {
+    "ticker": "AXSM",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 19.77,
+    "entry_frequency": 26
   },
   {
     "ticker": "NKLA",
     "sector": "Capital Goods",
     "mktcap": "Large",
     "bb_window": 3,
-    "bb_std": 0.4,
+    "bb_std": 0.1,
     "peers": "$CAT $CMI $PCAR $SPY",
     "ror": 14.01,
-    "entry_frequency": 15
+    "entry_frequency": 19
   },
   {
     "ticker": "SRPT",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 12.29,
-    "entry_frequency": 13
+    "entry_frequency": 16
   },
   {
     "ticker": "CERT",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$VEEV $TDOC $CERN $SPY",
     "ror": 10.78,
-    "entry_frequency": 12
+    "entry_frequency": 14
   },
   {
     "ticker": "FOLD",
@@ -57,17 +57,17 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 6.79,
-    "entry_frequency": 8
+    "entry_frequency": 9
   },
   {
     "ticker": "GLPG",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 16,
-    "bb_std": 0.6,
+    "bb_window": 11,
+    "bb_std": 1.0,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 3.01,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "QDEL",
@@ -83,11 +83,11 @@
     "ticker": "OCFT",
     "sector": "Technology",
     "mktcap": "Large",
-    "bb_window": 9,
-    "bb_std": 0.2,
+    "bb_window": 3,
+    "bb_std": 1.0,
     "peers": "$688111.SS $600588.SS $002230.SZ $SPY",
     "ror": 2.14,
-    "entry_frequency": 3
+    "entry_frequency": 4
   },
   {
     "ticker": "ABCL",
@@ -103,11 +103,11 @@
     "ticker": "KNSL",
     "sector": "Finance",
     "mktcap": "Large",
-    "bb_window": 5,
-    "bb_std": 0.8,
+    "bb_window": 3,
+    "bb_std": 0.1,
     "peers": "$PGR $TRV $ALL $SPY",
     "ror": 1.28,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "FROG",

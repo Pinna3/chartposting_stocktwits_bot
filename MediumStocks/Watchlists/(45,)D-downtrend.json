@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 24.93,
-    "entry_frequency": 26
+    "entry_frequency": 32
   },
   {
     "ticker": "QTNT",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
     "ror": 22.92,
-    "entry_frequency": 24
+    "entry_frequency": 30
   }
 ]
