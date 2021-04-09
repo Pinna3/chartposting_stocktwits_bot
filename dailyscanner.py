@@ -138,35 +138,3 @@ def dailyscanner(json_watchlist, op_str, publish=False):
         #     missed_connection.append(security['ticker'])
         #     print(f'ConnectionError...{missed_connection}')
         #     continue
-
-
-while True:
-    ###Think about another filtering mechanism (worried about shorts) (maybe restrict to long trending or winning trend, feels off)
-    print('.')
-    print('.')
-    print('.')
-    print('Top_Tier_Unbroken_Trenders')
-    print('.')
-    [print(item[0]) for item in pull_top_tier_unbroken_trenders(tier_percentage=10)]
-    print('.')
-    print('.')
-    print('.')
-    for filename, direction, number, total in pull_top_tier_unbroken_trenders(tier_percentage=10):
-        print('')
-        print(filename)
-        print('')
-        dailyscanner(filename, direction, publish=False)
-    print('.')
-    print('.')
-    print('.')
-    print('Dropoff Based Watchlists')
-    print('.')
-    [print(item[0]) for item in drop_off_based_watchlist_filter(max_per_category=3, drop_off_rate_cutoff=.25)]
-    print('.')
-    print('.')
-    print('.')
-    for filename, direction in drop_off_based_watchlist_filter(max_per_category=3, drop_off_rate_cutoff=.25):
-        print('')
-        print(filename)
-        print('')
-        dailyscanner(filename, direction, publish=False)

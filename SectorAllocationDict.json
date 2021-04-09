@@ -1,57 +1,53 @@
 {
   "long": {
-    "market_value": 3532.18,
-    "acct_percentage": 6.79,
+    "market_value": 3024.48,
+    "acct_percentage": 5.82,
     "sector": {
-      "Technology": {
-        "market_value": 901.06,
-        "acct_percentage": 1.73,
-        "stocks": [
-          [
-            "WPP",
-            518.88
-          ],
-          [
-            "CCMP",
-            382.18
-          ]
-        ]
-      },
       "Basic Industries": {
-        "market_value": 1543.9499999999998,
-        "acct_percentage": 2.97,
+        "market_value": 995.0500000000001,
+        "acct_percentage": 1.91,
         "stocks": [
           [
             "VEDL",
-            519.12
+            518.7
           ],
           [
-            "BBCP",
-            516.96
-          ],
-          [
-            "BAK",
-            507.87
+            "MTCN",
+            476.35
           ]
         ]
       },
-      "Capital Goods": {
-        "market_value": 569.7,
-        "acct_percentage": 1.1,
+      "Energy": {
+        "market_value": 522.24,
+        "acct_percentage": 1.0,
         "stocks": [
           [
-            "HOVNP",
-            569.7
+            "PRT",
+            522.24
           ]
         ]
       },
       "Consumer Services": {
-        "market_value": 517.47,
-        "acct_percentage": 1.0,
+        "market_value": 975.88,
+        "acct_percentage": 1.88,
         "stocks": [
           [
+            "DISCB",
+            468.96
+          ],
+          [
             "CNTY",
-            517.47
+            506.92
+          ]
+        ]
+      },
+      "Capital Goods": {
+        "market_value": 531.31,
+        "acct_percentage": 1.02,
+        "stocks": [
+          [
+            "BW",
+            531.31
           ]
         ]
       }
