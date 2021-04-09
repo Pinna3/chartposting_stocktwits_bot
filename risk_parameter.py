@@ -39,11 +39,38 @@ def check_short_capacity(portfolio_current):
 def sector_capacity(portfolio_current, max_exposure=9):
     return abs(portfolio_current) >= max_exposure
 
-# Maximums: 8 x long(3 x verylarge, 2 x large, 1 x medium, 1 x small, 1 x micro),
-#          4 x short(2 x verylarge, 1 x large, 1 x medium)
-def check_daily_counter_capacity(side, mkt_cap, max_daily_trades=12,
-                        max_long_verylarge=.25, max_long_large=.25, max_long_medium=.25, max_long_small=.125, max_long_micro=.125,
-                        max_short_verylarge=.50, max_short_large=.25, max_short_medium=.25, max_short_small=0, max_short_micro=0):
+###These can change with market conditions as well... play with it...
+###if long/short = 75/25 then...
+###if long/short = 50/50 then... (add ratios make numbers work)
+def preset_daily_counter_capacities():
+    daily_counter_capacities = {
+        'max_daily_trades': 15,
+        'max_long_verylarge': .25,
+        'max_long_large': .25,
+        'max_long_medium': .25,
+        'max_long_small': .125,
+        'max_long_micro': .125,
+        'max_short_verylarge': .50,
+        'max_short_large': .50,
+        'max_short_medium': 0,
+        'max_short_small': 0,
+        'max_short_micro': 0
+    }
+    return daily_counter_capacities
+
+def check_daily_counter_capacity(side, mkt_cap):
+    daily_counter_capacities = preset_daily_counter_capacities()
+    max_daily_trades = daily_counter_capacities['max_daily_trades']
+    max_long_verylarge = daily_counter_capacities['max_long_verylarge']
+    max_long_large = daily_counter_capacities['max_long_large']
+    max_long_medium = daily_counter_capacities['max_long_medium']
+    max_long_small = daily_counter_capacities['max_long_small']
+    max_long_micro = daily_counter_capacities['max_long_micro']
+    max_short_verylarge = daily_counter_capacities['max_short_verylarge']
+    max_short_large = daily_counter_capacities['max_short_large']
+    max_short_medium = daily_counter_capacities['max_short_medium']
+    max_short_small = daily_counter_capacities['max_short_small']
+    max_short_micro = daily_counter_capacities['max_short_micro']
 
     long_max_exposure, short_max_exposure, long_total, short_total = set_long_short_capacities()
     max_long = round((long_max_exposure / 100) * max_daily_trades)
@@ -68,7 +95,7 @@ def check_daily_counter_capacity(side, mkt_cap, max_daily_trades=12,
 
     def daily_counter_test(side, mktcap, max, fraction, long_mkt_cap_or_short_mkt_cap):
         maximum_count = round(fraction * max)
-        if counter[side] < max and counter[long_mkt_cap_or_short_mkt_cap][mktcap] < maximum_count:
+        if counter[side] <= max and counter[long_mkt_cap_or_short_mkt_cap][mktcap] <= maximum_count:
             return False
         else:
             return True
@@ -76,8 +103,8 @@ def check_daily_counter_capacity(side, mkt_cap, max_daily_trades=12,
     #make sure Daily Counter is working
     print(f"""
 Daily Counter Capacities:
-Long: {max_long}, VeryLarge: {max_long_verylarge*max_long}, Large: {max_long_large*max_long}, Medium: {max_long_medium*max_long}, Small: {max_long_small*max_long}, Micro: {max_long_micro*max_long}
-Short: {max_short}, VeryLarge: {max_short_verylarge*max_short}, Large: {max_short_large*max_short}, Medium: {max_short_medium*max_short}, Small: {max_short_small*max_short}, Micro: {max_short_micro*max_short}
+Long: {max_long}, VeryLarge: {round(max_long_verylarge*max_long)}, Large: {round(max_long_large*max_long)}, Medium: {round(max_long_medium*max_long)}, Small: {round(max_long_small*max_long)}, Micro: {round(max_long_micro*max_long)}
+Short: {max_short}, VeryLarge: {round(max_short_verylarge*max_short)}, Large: {round(max_short_large*max_short)}, Medium: {round(max_short_medium*max_short)}, Small: {round(max_short_small*max_short)}, Micro: {round(max_short_micro*max_short)}
 Long Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure}%, Long Total: {long_total}, Short Total: {short_total}
 """)
 
@@ -87,6 +114,8 @@ Long Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure
             return daily_counter_test(side, mkt_cap, max, fraction, long_mkt_cap_or_short_mkt_cap)
         else:
             return False
+
+print(check_daily_counter_capacity('long', 'Medium'))
 
 #Checks to make sure date is current, if so adds to daily tally.
 #If its the first trade of the day it erases yesterday tally and starts fresh.

@@ -6,18 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 231.67,
-    "entry_frequency": 291
-  },
-  {
-    "ticker": "PLAY",
-    "sector": "Consumer Services",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 60.3,
-    "entry_frequency": 76
+    "ror": 257.43,
+    "entry_frequency": 323
   },
   {
     "ticker": "SGRY",
@@ -26,8 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
-    "ror": 52.66,
-    "entry_frequency": 67
+    "ror": 65.62,
+    "entry_frequency": 83
   },
   {
     "ticker": "SLM",
@@ -36,18 +26,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
-    "ror": 52.42,
-    "entry_frequency": 67
-  },
-  {
-    "ticker": "IHRT",
-    "sector": "Consumer Services",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 43.21,
-    "entry_frequency": 55
+    "ror": 53.57,
+    "entry_frequency": 68
   },
   {
     "ticker": "FIX",
@@ -56,8 +36,18 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
-    "ror": 41.3,
-    "entry_frequency": 53
+    "ror": 46.38,
+    "entry_frequency": 59
+  },
+  {
+    "ticker": "EXP",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$VMC $MLM $EXP $SPY",
+    "ror": 38.87,
+    "entry_frequency": 50
   },
   {
     "ticker": "STN",
@@ -66,18 +56,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
-    "ror": 35.37,
-    "entry_frequency": 45
-  },
-  {
-    "ticker": "CNX",
-    "sector": "Energy",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$COP $EOG $PXD $SPY",
-    "ror": 31.8,
-    "entry_frequency": 41
+    "ror": 37.27,
+    "entry_frequency": 48
   },
   {
     "ticker": "MMS",
@@ -86,7 +66,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": 24.77,
-    "entry_frequency": 32
+    "ror": 28.74,
+    "entry_frequency": 37
+  },
+  {
+    "ticker": "CNX",
+    "sector": "Energy",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 27.62,
+    "entry_frequency": 36
   }
 ]

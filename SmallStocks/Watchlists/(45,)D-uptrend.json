@@ -6,68 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 113.16,
-    "entry_frequency": 142
-  },
-  {
-    "ticker": "PRT",
-    "sector": "Energy",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$COP $EOG $PXD $SPY",
-    "ror": 78.55,
-    "entry_frequency": 99
-  },
-  {
-    "ticker": "NMM",
-    "sector": "Transportation",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 72.29,
-    "entry_frequency": 91
-  },
-  {
-    "ticker": "USAK",
-    "sector": "Transportation",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 61.68,
-    "entry_frequency": 78
-  },
-  {
-    "ticker": "INTT",
-    "sector": "Capital Goods",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$AMAT $LRCX $KLAC $SPY",
-    "ror": 52.67,
-    "entry_frequency": 67
-  },
-  {
-    "ticker": "PMBC",
-    "sector": "Finance",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 50.17,
-    "entry_frequency": 64
-  },
-  {
-    "ticker": "HQI",
-    "sector": "Technology",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 45.15,
-    "entry_frequency": 57
+    "ror": 111.62,
+    "entry_frequency": 141
   },
   {
     "ticker": "GTIM",
@@ -76,28 +16,38 @@
     "bb_window": 2,
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 44.83,
-    "entry_frequency": 57
+    "ror": 57.56,
+    "entry_frequency": 73
   },
   {
-    "ticker": "MHLD",
-    "sector": "Finance",
-    "mktcap": "Small",
-    "bb_window": 2,
-    "bb_std": 0.1,
-    "peers": "$RE $RNR $ESGR $SPY",
-    "ror": 44.26,
-    "entry_frequency": 56
-  },
-  {
-    "ticker": "TZOO",
-    "sector": "Consumer Services",
+    "ticker": "USAK",
+    "sector": "Transportation",
     "mktcap": "Small",
     "bb_window": 3,
     "bb_std": 0.1,
-    "peers": "$GOOGL $FB $SNAP $SPY",
-    "ror": 33.18,
-    "entry_frequency": 42
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 55.8,
+    "entry_frequency": 71
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 49.58,
+    "entry_frequency": 63
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 49.51,
+    "entry_frequency": 63
   },
   {
     "ticker": "ALOT",
@@ -106,8 +56,28 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 28.96,
-    "entry_frequency": 37
+    "ror": 35.2,
+    "entry_frequency": 45
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 32.19,
+    "entry_frequency": 41
+  },
+  {
+    "ticker": "TZOO",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 30.22,
+    "entry_frequency": 39
   },
   {
     "ticker": "SACH",
@@ -116,8 +86,18 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
-    "ror": 23.44,
-    "entry_frequency": 30
+    "ror": 20.98,
+    "entry_frequency": 27
+  },
+  {
+    "ticker": "MNSB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 19.55,
+    "entry_frequency": 25
   },
   {
     "ticker": "BRBS",
@@ -126,7 +106,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 15.54,
-    "entry_frequency": 20
+    "ror": 16.48,
+    "entry_frequency": 22
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 14.5,
+    "entry_frequency": 19
   }
 ]

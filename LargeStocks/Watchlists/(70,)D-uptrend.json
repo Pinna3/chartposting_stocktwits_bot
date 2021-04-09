@@ -6,8 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 200.3,
-    "entry_frequency": 251
+    "ror": 208.12,
+    "entry_frequency": 261
   },
   {
     "ticker": "SLM",
@@ -16,8 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
-    "ror": 55.81,
-    "entry_frequency": 71
+    "ror": 60.8,
+    "entry_frequency": 77
   },
   {
     "ticker": "SGRY",
@@ -26,18 +26,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
-    "ror": 54.72,
-    "entry_frequency": 69
-  },
-  {
-    "ticker": "PLAY",
-    "sector": "Consumer Services",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 53.53,
-    "entry_frequency": 68
+    "ror": 60.72,
+    "entry_frequency": 77
   },
   {
     "ticker": "FIX",
@@ -46,8 +36,18 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
-    "ror": 40.01,
-    "entry_frequency": 51
+    "ror": 46.49,
+    "entry_frequency": 59
+  },
+  {
+    "ticker": "EXP",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$VMC $MLM $EXP $SPY",
+    "ror": 38.26,
+    "entry_frequency": 49
   },
   {
     "ticker": "CNX",
@@ -56,18 +56,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
-    "ror": 39.87,
-    "entry_frequency": 51
-  },
-  {
-    "ticker": "IHRT",
-    "sector": "Consumer Services",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 39.3,
-    "entry_frequency": 50
+    "ror": 36.45,
+    "entry_frequency": 47
   },
   {
     "ticker": "STN",
@@ -76,8 +66,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
-    "ror": 36.34,
-    "entry_frequency": 46
+    "ror": 33.88,
+    "entry_frequency": 43
   },
   {
     "ticker": "MMS",
@@ -86,7 +76,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": 24.67,
-    "entry_frequency": 32
+    "ror": 28.14,
+    "entry_frequency": 36
+  },
+  {
+    "ticker": "NSA",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": 18.19,
+    "entry_frequency": 24
   }
 ]

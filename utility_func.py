@@ -279,16 +279,16 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     remainder_smoothness_test = smoothness_tests[-remainder:]
     remainder_peers = peers[-remainder:]
     remainder_batch = ','.join(remainder_reference)
-    remainder_data = return_candles_json(remainder_batch, period='day', num_bars=201)
+    remainder_data = return_candles_json(remainder_batch, period='day', num_bars=281)
     #iterable list with retrievable values
     remainder_df_list = []
     for index, reference_symbol in enumerate(remainder_reference):
         df = pd.DataFrame(remainder_data[reference_symbol])
         del df['t']
-        sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
-        sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
-        sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
-        sma200 = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
+        sma9 = round(df.c.rolling(window=9, min_periods=9).mean(), 2)
+        sma20 = round(df.c.rolling(window=20, min_periods=20).mean(), 2)
+        sma50 = round(df.c.rolling(window=50, min_periods=50).mean(), 2)
+        sma200 = round(df.c.rolling(window=200, min_periods=200).mean(), 2)
         df['sma9'] = sma9
         df['sma20'] = sma20
         df['sma50'] = sma50
@@ -310,16 +310,16 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
         batch_smoothness_test = smoothness_tests[(batch_num - 1)*batch: batch_num*batch]
         batch_peers = peers[(batch_num - 1)*batch: batch_num*batch]
         symbol_batch = ','.join(symbol_reference)
-        batch_data = return_candles_json(symbol_batch, period='day', num_bars=201)
+        batch_data = return_candles_json(symbol_batch, period='day', num_bars=281)
         #iterable list with retrievable values
         batch_df_list = []
         for index, reference_symbol in enumerate(symbol_reference):
             df = pd.DataFrame(batch_data[reference_symbol])
             del df['t']
-            sma9 = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
-            sma20 = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
-            sma50 = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
-            sma200 = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
+            sma9 = round(df.c.rolling(window=9, min_periods=9).mean(), 2)
+            sma20 = round(df.c.rolling(window=20, min_periods=20).mean(), 2)
+            sma50 = round(df.c.rolling(window=50, min_periods=50).mean(), 2)
+            sma200 = round(df.c.rolling(window=200, min_periods=200).mean(), 2)
             df['sma9'] = sma9
             df['sma20'] = sma20
             df['sma50'] = sma50

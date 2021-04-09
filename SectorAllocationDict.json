@@ -1,53 +1,61 @@
 {
   "long": {
-    "market_value": 3024.48,
-    "acct_percentage": 5.82,
+    "market_value": 4036.24,
+    "acct_percentage": 7.76,
     "sector": {
       "Basic Industries": {
-        "market_value": 995.0500000000001,
-        "acct_percentage": 1.91,
+        "market_value": 2008.45,
+        "acct_percentage": 3.86,
         "stocks": [
           [
+            "X",
+            505.08
+          ],
+          [
             "VEDL",
-            518.7
+            520.38
           ],
           [
             "MTCN",
-            476.35
+            476.77
+          ],
+          [
+            "BAK",
+            506.22
           ]
         ]
       },
       "Energy": {
-        "market_value": 522.24,
+        "market_value": 521.28,
         "acct_percentage": 1.0,
         "stocks": [
           [
             "PRT",
-            522.24
+            521.28
           ]
         ]
       },
       "Consumer Services": {
-        "market_value": 975.88,
-        "acct_percentage": 1.88,
+        "market_value": 973.98,
+        "acct_percentage": 1.87,
         "stocks": [
           [
             "DISCB",
-            468.96
+            462.0
           ],
           [
             "CNTY",
-            506.92
+            511.98
           ]
         ]
       },
       "Capital Goods": {
-        "market_value": 531.31,
+        "market_value": 532.53,
         "acct_percentage": 1.02,
         "stocks": [
           [
             "BW",
-            531.31
+            532.53
           ]
         ]
       }

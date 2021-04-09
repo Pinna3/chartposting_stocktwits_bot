@@ -6,28 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 172.85,
-    "entry_frequency": 217
-  },
-  {
-    "ticker": "PLAY",
-    "sector": "Consumer Services",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 57.85,
-    "entry_frequency": 73
-  },
-  {
-    "ticker": "SLM",
-    "sector": "Finance",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$AXP $COF $DFS $SPY",
-    "ror": 52.42,
-    "entry_frequency": 67
+    "ror": 197.7,
+    "entry_frequency": 248
   },
   {
     "ticker": "SGRY",
@@ -36,8 +16,18 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
-    "ror": 51.85,
+    "ror": 52.06,
     "entry_frequency": 66
+  },
+  {
+    "ticker": "SLM",
+    "sector": "Finance",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AXP $COF $DFS $SPY",
+    "ror": 49.38,
+    "entry_frequency": 63
   },
   {
     "ticker": "FIX",
@@ -46,8 +36,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
-    "ror": 41.84,
-    "entry_frequency": 53
+    "ror": 35.27,
+    "entry_frequency": 45
   },
   {
     "ticker": "NAVI",
@@ -56,18 +46,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
-    "ror": 41.31,
-    "entry_frequency": 53
-  },
-  {
-    "ticker": "IHRT",
-    "sector": "Consumer Services",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 38.54,
-    "entry_frequency": 49
+    "ror": 34.22,
+    "entry_frequency": 44
   },
   {
     "ticker": "STN",
@@ -76,18 +56,38 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
-    "ror": 35.0,
-    "entry_frequency": 45
+    "ror": 32.75,
+    "entry_frequency": 42
   },
   {
-    "ticker": "CNX",
-    "sector": "Energy",
+    "ticker": "IHRT",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 2,
+    "bb_std": 0.1,
+    "peers": "$VIAC $FOXA $DISCA $SPY",
+    "ror": 29.88,
+    "entry_frequency": 38
+  },
+  {
+    "ticker": "EXP",
+    "sector": "Capital Goods",
     "mktcap": "Large",
     "bb_window": 3,
     "bb_std": 0.1,
-    "peers": "$COP $EOG $PXD $SPY",
-    "ror": 29.24,
-    "entry_frequency": 38
+    "peers": "$VMC $MLM $EXP $SPY",
+    "ror": 24.45,
+    "entry_frequency": 32
+  },
+  {
+    "ticker": "NSA",
+    "sector": "Consumer Services",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": 20.68,
+    "entry_frequency": 27
   },
   {
     "ticker": "MMS",
@@ -96,7 +96,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": 22.74,
-    "entry_frequency": 29
+    "ror": 19.82,
+    "entry_frequency": 26
+  },
+  {
+    "ticker": "CNX",
+    "sector": "Energy",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 17.75,
+    "entry_frequency": 23
   }
 ]

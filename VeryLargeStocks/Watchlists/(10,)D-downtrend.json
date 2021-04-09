@@ -1,52 +1,42 @@
 [
   {
+    "ticker": "LFC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": 8,
+    "bb_std": 0.2,
+    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
+    "ror": 1.64,
+    "entry_frequency": 3
+  },
+  {
+    "ticker": "BABA",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.8,
+    "peers": "$3690.HK $9618.HK $BABA $SPY",
+    "ror": 1.03,
+    "entry_frequency": 2
+  },
+  {
     "ticker": "BKI",
     "sector": "Technology",
     "mktcap": "VeryLarge",
     "bb_window": 9,
     "bb_std": 1.0,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": -1.23,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "BABA",
-    "sector": "Miscellaneous",
-    "mktcap": "VeryLarge",
-    "bb_window": 4,
-    "bb_std": 0.8,
-    "peers": "$3690.HK $9618.HK $BABA $SPY",
-    "ror": -2.68,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "LFC",
-    "sector": "Finance",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
-    "ror": -3.17,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "BMRN",
-    "sector": "Health Care",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -4.82,
+    "ror": -0.33,
     "entry_frequency": 1
   },
   {
     "ticker": "SGEN",
     "sector": "Health Care",
     "mktcap": "VeryLarge",
-    "bb_window": 13,
+    "bb_window": 11,
     "bb_std": 1.0,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -6.53,
+    "ror": -3.08,
     "entry_frequency": 1
   }
 ]

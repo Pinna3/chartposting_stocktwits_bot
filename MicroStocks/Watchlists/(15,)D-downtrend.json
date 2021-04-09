@@ -1,112 +1,12 @@
 [
   {
-    "ticker": "HPR",
-    "sector": "Energy",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$COP $EOG $PXD $SPY",
-    "ror": 41.6,
-    "entry_frequency": 53
-  },
-  {
     "ticker": "WINT",
     "sector": "Health Care",
     "mktcap": "Micro",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 40.29,
-    "entry_frequency": 51
-  },
-  {
-    "ticker": "TLGT",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 27.65,
-    "entry_frequency": 36
-  },
-  {
-    "ticker": "RMED",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 24.19,
-    "entry_frequency": 31
-  },
-  {
-    "ticker": "HTGM",
-    "sector": "Capital Goods",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$VEEV $TDOC $CERN $SPY",
-    "ror": 16.42,
-    "entry_frequency": 22
-  },
-  {
-    "ticker": "ENSV",
-    "sector": "Energy",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$SLB $BKR $HAL $SPY",
-    "ror": 13.37,
-    "entry_frequency": 18
-  },
-  {
-    "ticker": "CHFS",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 12.0,
-    "entry_frequency": 16
-  },
-  {
-    "ticker": "EFOI",
-    "sector": "Consumer Durables",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": 11.7,
-    "entry_frequency": 16
-  },
-  {
-    "ticker": "TTNP",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": 4,
-    "bb_std": 0.7,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 8.57,
-    "entry_frequency": 12
-  },
-  {
-    "ticker": "BKYI",
-    "sector": "Technology",
-    "mktcap": "Micro",
-    "bb_window": 2,
-    "bb_std": 0.8,
-    "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": 4.44,
-    "entry_frequency": 7
-  },
-  {
-    "ticker": "THMO",
-    "sector": "Capital Goods",
-    "mktcap": "Micro",
-    "bb_window": 2,
-    "bb_std": 0.8,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 2.46,
-    "entry_frequency": 4
+    "ror": 38.5,
+    "entry_frequency": 49
   }
 ]

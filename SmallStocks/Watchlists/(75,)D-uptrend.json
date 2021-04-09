@@ -1,23 +1,13 @@
 [
   {
-    "ticker": "NMM",
-    "sector": "Transportation",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 185.76,
-    "entry_frequency": 233
-  },
-  {
     "ticker": "GTIM",
     "sector": "Consumer Services",
     "mktcap": "Small",
     "bb_window": 2,
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 111.84,
-    "entry_frequency": 141
+    "ror": 123.74,
+    "entry_frequency": 156
   },
   {
     "ticker": "HQI",
@@ -26,17 +16,27 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 98.95,
-    "entry_frequency": 125
+    "ror": 100.41,
+    "entry_frequency": 127
   },
   {
-    "ticker": "PMBC",
+    "ticker": "MNSB",
     "sector": "Finance",
     "mktcap": "Small",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 80.93,
-    "entry_frequency": 102
+    "ror": 24.25,
+    "entry_frequency": 31
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 23.09,
+    "entry_frequency": 30
   }
 ]

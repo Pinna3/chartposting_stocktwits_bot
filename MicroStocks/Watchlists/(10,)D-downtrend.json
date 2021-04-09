@@ -1,152 +1,32 @@
 [
   {
-    "ticker": "RMED",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": 4,
-    "bb_std": 0.6,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 8.56,
-    "entry_frequency": 12
-  },
-  {
-    "ticker": "TLGT",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.6,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 8.4,
-    "entry_frequency": 12
-  },
-  {
-    "ticker": "CHFS",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 1.0,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 5.98,
-    "entry_frequency": 8
-  },
-  {
-    "ticker": "HTGM",
-    "sector": "Capital Goods",
-    "mktcap": "Micro",
-    "bb_window": 5,
-    "bb_std": 0.1,
-    "peers": "$VEEV $TDOC $CERN $SPY",
-    "ror": 5.04,
-    "entry_frequency": 7
-  },
-  {
     "ticker": "ESP",
     "sector": "Capital Goods",
     "mktcap": "Micro",
-    "bb_window": null,
+    "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": -0.0,
-    "entry_frequency": 1
+    "ror": 3.16,
+    "entry_frequency": 5
   },
   {
-    "ticker": "HPR",
-    "sector": "Energy",
+    "ticker": "EMP",
+    "sector": "Public Utilities",
     "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": 0.1,
-    "peers": "$COP $EOG $PXD $SPY",
-    "ror": -0.21,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "HYACU",
-    "sector": "Finance",
-    "mktcap": "Micro",
-    "bb_window": 10,
-    "bb_std": 1.0,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": -1.32,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "HCAR",
-    "sector": "Finance",
-    "mktcap": "Micro",
-    "bb_window": 11,
-    "bb_std": 0.1,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": -1.35,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "GSAQU",
-    "sector": "Finance",
-    "mktcap": "Micro",
-    "bb_window": 3,
+    "bb_window": 18,
     "bb_std": 0.9,
     "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": -1.71,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "TTNP",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": -2.86,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "ENSV",
-    "sector": "Energy",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$SLB $BKR $HAL $SPY",
-    "ror": -2.94,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "EFOI",
-    "sector": "Consumer Durables",
-    "mktcap": "Micro",
-    "bb_window": 10,
-    "bb_std": 1.0,
-    "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": -3.75,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "BKYI",
-    "sector": "Technology",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": 0.1,
-    "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": -3.98,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "THMO",
-    "sector": "Capital Goods",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": -9.45,
+    "ror": -0.71,
     "entry_frequency": 1
   },
   {
     "ticker": "WINT",
     "sector": "Health Care",
     "mktcap": "Micro",
-    "bb_window": 20,
+    "bb_window": 13,
     "bb_std": 1.0,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -10.31,
+    "ror": -2.5,
     "entry_frequency": 1
   }
 ]

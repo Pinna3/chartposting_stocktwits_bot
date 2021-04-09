@@ -6,7 +6,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
-    "ror": 116.4,
-    "entry_frequency": 146
+    "ror": 120.55,
+    "entry_frequency": 152
+  },
+  {
+    "ticker": "FTNT",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$MSFT $ORCL $NOW $SPY",
+    "ror": 34.55,
+    "entry_frequency": 44
   }
 ]

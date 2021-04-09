@@ -1,43 +1,53 @@
 [
   {
-    "ticker": "AFIB",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 34.89,
-    "entry_frequency": 45
-  },
-  {
     "ticker": "KPTI",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 29.1,
-    "entry_frequency": 37
+    "ror": 27.15,
+    "entry_frequency": 35
+  },
+  {
+    "ticker": "EGAN",
+    "sector": "Technology",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": 16.81,
+    "entry_frequency": 22
+  },
+  {
+    "ticker": "EPZM",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 12.23,
+    "entry_frequency": 16
   },
   {
     "ticker": "QTNT",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 0.8,
+    "bb_std": 0.1,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
-    "ror": 14.12,
-    "entry_frequency": 19
+    "ror": 11.36,
+    "entry_frequency": 15
   },
   {
-    "ticker": "EPZM",
+    "ticker": "CGEN",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 5,
-    "bb_std": 0.2,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 12.38,
-    "entry_frequency": 16
+    "bb_window": 2,
+    "bb_std": 0.1,
+    "peers": "$CGEN $BOLT.TA $CKNTF $SPY",
+    "ror": 10.54,
+    "entry_frequency": 14
   },
   {
     "ticker": "AFYA",
@@ -46,37 +56,17 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
-    "ror": 10.5,
-    "entry_frequency": 14
+    "ror": 7.47,
+    "entry_frequency": 10
   },
   {
     "ticker": "DEA",
     "sector": "Consumer Services",
     "mktcap": "Medium",
-    "bb_window": 5,
-    "bb_std": 1.0,
-    "peers": "$ARE $BXP $VNO $SPY",
-    "ror": 7.5,
-    "entry_frequency": 10
-  },
-  {
-    "ticker": "CHRS",
-    "sector": "Health Care",
-    "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 6.04,
-    "entry_frequency": 9
-  },
-  {
-    "ticker": "COOL",
-    "sector": "Finance",
-    "mktcap": "Medium",
-    "bb_window": 12,
     "bb_std": 0.9,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 2.09,
-    "entry_frequency": 4
+    "peers": "$ARE $BXP $VNO $SPY",
+    "ror": 4.14,
+    "entry_frequency": 6
   }
 ]

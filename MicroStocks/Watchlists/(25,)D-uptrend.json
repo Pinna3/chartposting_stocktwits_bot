@@ -1,42 +1,32 @@
 [
   {
-    "ticker": "DUOT",
-    "sector": "Technology",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": 72.95,
-    "entry_frequency": 92
-  },
-  {
-    "ticker": "MTCN",
-    "sector": "Basic Industries",
-    "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 22.46,
-    "entry_frequency": 29
-  },
-  {
     "ticker": "HOVNP",
     "sector": "Capital Goods",
     "mktcap": "Micro",
-    "bb_window": 4,
-    "bb_std": 1.0,
+    "bb_window": 3,
+    "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 21.15,
-    "entry_frequency": 27
+    "ror": 16.92,
+    "entry_frequency": 22
   },
   {
     "ticker": "GFLU",
     "sector": "Public Utilities",
     "mktcap": "Micro",
-    "bb_window": 5,
-    "bb_std": 0.6,
+    "bb_window": 3,
+    "bb_std": 0.1,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
-    "ror": 11.6,
-    "entry_frequency": 16
+    "ror": 11.4,
+    "entry_frequency": 15
+  },
+  {
+    "ticker": "AFINP",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 0.98,
+    "entry_frequency": 2
   }
 ]

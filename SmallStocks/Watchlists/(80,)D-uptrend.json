@@ -6,8 +6,8 @@
     "bb_window": 2,
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 152.88,
-    "entry_frequency": 192
+    "ror": 157.89,
+    "entry_frequency": 198
   },
   {
     "ticker": "HQI",
@@ -16,17 +16,27 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 107.37,
-    "entry_frequency": 135
+    "ror": 114.72,
+    "entry_frequency": 144
   },
   {
-    "ticker": "PMBC",
+    "ticker": "MNSB",
     "sector": "Finance",
     "mktcap": "Small",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 80.57,
-    "entry_frequency": 102
+    "ror": 26.7,
+    "entry_frequency": 34
+  },
+  {
+    "ticker": "ESXB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 23.18,
+    "entry_frequency": 30
   }
 ]

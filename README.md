@@ -40,3 +40,5 @@ Why aren't the sector allocation maximums set dynamically like the Long/Shorts??
 3+) Think about Priority Scheme
 4+) Clean up some code, a little every day... must be done.
 5+) ROR strategy for high/low timeframes... think about
+
+RIGHT NOW ATR TRAILING STOP WINDOWS ARE SET AT THE STANDARD 14 DAY... 5 DAY MIGHT MAKE MORE SENSE (OR WHATEVER HOLDING PERIOD YOU'RE GOING WITH... PONDER)

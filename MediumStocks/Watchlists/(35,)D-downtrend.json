@@ -1,23 +1,13 @@
 [
   {
-    "ticker": "AFIB",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 42.24,
-    "entry_frequency": 54
-  },
-  {
     "ticker": "QTNT",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
-    "ror": 25.14,
-    "entry_frequency": 32
+    "ror": 27.64,
+    "entry_frequency": 36
   },
   {
     "ticker": "EPZM",
@@ -26,7 +16,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 20.79,
+    "ror": 20.6,
     "entry_frequency": 27
   }
 ]

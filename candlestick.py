@@ -9,9 +9,10 @@ hours_minutes_now = datetime.now().strftime('%H:%M')
 from alpaca import return_candles_json
 
 #Database Object with candlestick data and moving average data (for now)
+#timeseries data should cover the longest moving average period 200 + the # of days of longest trend test
 class SecurityTradeData:
     # @memoize
-    def __init__(self, ticker, num_days=201, atr_rolling_window=14):
+    def __init__(self, ticker, num_days=281, atr_rolling_window=14):
         #basics
         self.ticker = ticker
         self.num_days = num_days
@@ -30,7 +31,7 @@ class SecurityTradeData:
         data = None
         while data is None:
             try:
-                data = return_candles_json(ticker, period='day', num_bars=365)
+                data = return_candles_json(ticker, period='day', num_bars=num_days)
                 time.sleep(.7)
             except:
                 continue
@@ -58,10 +59,10 @@ class SecurityTradeData:
             df = pd.DataFrame(data)
             time.sleep(.7)
 
-        df['sma9'] = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
-        df['sma20'] = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
-        df['sma50'] = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
-        df['sma200'] = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
+        df['sma9'] = round(df.c.rolling(window=9, min_periods=9).mean(), 2)
+        df['sma20'] = round(df.c.rolling(window=20, min_periods=20).mean(), 2)
+        df['sma50'] = round(df.c.rolling(window=50, min_periods=50).mean(), 2)
+        df['sma200'] = round(df.c.rolling(window=200, min_periods=200).mean(), 2)
         #### standard  2 and 20 bollinger data
         bollinger_reference_lower = df.l.rolling(window=20, min_periods=20).mean()
         bollinger_reference_upper = df.h.rolling(window=20, min_periods=20).mean()
@@ -209,10 +210,10 @@ class LiteSecurityTradeData(SecurityTradeData):
         self.mktcap = consumable_item[1]
         self.smoothness = consumable_item[3]
         df = consumable_item[5]
-        df['sma9'] = round(df.c.rolling(window=9, min_periods=1).mean(), 2)
-        df['sma20'] = round(df.c.rolling(window=20, min_periods=1).mean(), 2)
-        df['sma50'] = round(df.c.rolling(window=50, min_periods=1).mean(), 2)
-        df['sma200'] = round(df.c.rolling(window=200, min_periods=1).mean(), 2)
+        df['sma9'] = round(df.c.rolling(window=9, min_periods=9).mean(), 2)
+        df['sma20'] = round(df.c.rolling(window=20, min_periods=20).mean(), 2)
+        df['sma50'] = round(df.c.rolling(window=50, min_periods=50).mean(), 2)
+        df['sma200'] = round(df.c.rolling(window=200, min_periods=200).mean(), 2)
         #### standard  2 and 20 bollinger data
         bollinger_reference_lower = df.l.rolling(window=20, min_periods=20).mean()
         bollinger_reference_upper = df.h.rolling(window=20, min_periods=20).mean()

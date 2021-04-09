@@ -1,42 +1,12 @@
 [
   {
-    "ticker": "GLTO",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
-    "ror": 51.88,
-    "entry_frequency": 66
-  },
-  {
-    "ticker": "NUZE",
-    "sector": "Consumer Services",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$MDLZ $KHC $GIS $SPY",
-    "ror": 51.61,
-    "entry_frequency": 66
-  },
-  {
     "ticker": "VYGR",
     "sector": "Health Care",
     "mktcap": "Small",
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 28.23,
-    "entry_frequency": 36
-  },
-  {
-    "ticker": "UK",
-    "sector": "Miscellaneous",
-    "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$KW $RFL $FRPH $SPY",
-    "ror": 17.53,
-    "entry_frequency": 23
+    "ror": 29.27,
+    "entry_frequency": 38
   }
 ]

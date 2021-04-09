@@ -6,18 +6,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 315.8,
-    "entry_frequency": 396
-  },
-  {
-    "ticker": "PLAY",
-    "sector": "Consumer Services",
-    "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 77.94,
-    "entry_frequency": 98
+    "ror": 330.53,
+    "entry_frequency": 414
   },
   {
     "ticker": "SGRY",
@@ -26,8 +16,8 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
-    "ror": 59.68,
-    "entry_frequency": 76
+    "ror": 73.03,
+    "entry_frequency": 92
   },
   {
     "ticker": "SLM",
@@ -36,18 +26,18 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
-    "ror": 56.85,
-    "entry_frequency": 72
+    "ror": 59.72,
+    "entry_frequency": 76
   },
   {
-    "ticker": "IHRT",
-    "sector": "Consumer Services",
+    "ticker": "EXP",
+    "sector": "Capital Goods",
     "mktcap": "Large",
     "bb_window": 3,
     "bb_std": 0.1,
-    "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 45.31,
-    "entry_frequency": 58
+    "peers": "$VMC $MLM $EXP $SPY",
+    "ror": 41.64,
+    "entry_frequency": 53
   },
   {
     "ticker": "STN",
@@ -56,7 +46,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
-    "ror": 34.33,
-    "entry_frequency": 44
+    "ror": 36.0,
+    "entry_frequency": 46
   }
 ]

@@ -1,22 +1,22 @@
 [
   {
+    "ticker": "LFC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
+    "ror": 4.85,
+    "entry_frequency": 7
+  },
+  {
     "ticker": "SGEN",
     "sector": "Health Care",
     "mktcap": "VeryLarge",
-    "bb_window": 13,
-    "bb_std": 1.0,
+    "bb_window": 3,
+    "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -2.21,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "BMRN",
-    "sector": "Health Care",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -2.67,
-    "entry_frequency": 1
+    "ror": 3.58,
+    "entry_frequency": 5
   }
 ]

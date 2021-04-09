@@ -49,7 +49,7 @@ class Securities:
         def main(candle_list):
             for index, candle_object in enumerate(candle_list):
                 # try:
-                    if len(candle_object.df) > time_markers[-1]:
+                    if len(candle_object.df) > (time_markers[-1] + 200):
                         pass_or_fail = []
                         #every 10 multiple = 2 trading weeks
                         for timebar in time_markers:
@@ -73,9 +73,10 @@ class Securities:
                             trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
                                             'mktcap': candle_object.mktcap, 'bb_window': bb_window,
                              'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror, 'entry_frequency': entry_frequency})
+
+                            candle_object.df.to_csv(f"{mktcap_group}Stocks/Dataframes/{candle_object.ticker}.csv")
                 # except:
                 #     continue
-
         main(self.candles)
         main(self.backup_candles)
         trending_sorted_by_ror = sorted(trending, key=operator.itemgetter('ror'), reverse=True)
