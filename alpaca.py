@@ -97,13 +97,13 @@ def get_account_value():
     acct_value = acct_equity * acct_multiplier
     return acct_value
 
-def return_candles_json(symbol, period='1Day', num_bars=365):
-    daily_bars_url_v1 = '{}/{}?symbols={}&limit={}'.format(BARS_URL, period, symbol, num_bars)
+def return_candles_json(symbol, period_len='1Day', num_bars=365):
+    daily_bars_url_v1 = '{}/{}?symbols={}&limit={}'.format(BARS_URL, period_len, symbol, num_bars)
     r = requests.get(daily_bars_url_v1, headers=HEADERS_PAPER)
     data = r.json()
     return data
 
-def return_candles_json_v2(symbol, start_date, end_date, period='1Day'):
+def return_candles_json_v2(symbol, start_date, end_date, period_len='1Day'):
     daily_bars_url_v2 = 'https://data.alpaca.markets/v2/stocks/{}/bars?start={}&end={}&timeframe={}'.format(symbol, start_date, end_date, period)
     r = requests.get(daily_bars_url_v2, headers=HEADERS_PAPER)
     data = r.json()

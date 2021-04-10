@@ -12,11 +12,12 @@ from alpaca import return_candles_json
 #timeseries data should cover the longest moving average period 200 + the # of days of longest trend test
 class SecurityTradeData:
     # @memoize
-    def __init__(self, ticker, period='day', num_days=281, atr_rolling_window=14):
+    def __init__(self, ticker, period_len='day', num_of_periods=281, atr_rolling_window=14):
         #basics
         self.ticker = ticker
-        self.num_days = num_days
-        self.start_time = int((time.time() - (num_days * (31540000 / 365))))
+        self.period = period_len
+        self.num_of_periods = num_of_periods
+        self.start_time = int((time.time() - (num_of_periods * (31540000 / 365))))
         self.current_time = int(time.time())
 
         #sector and peers data added while scanning
@@ -31,7 +32,7 @@ class SecurityTradeData:
         data = None
         while data is None:
             try:
-                data = return_candles_json(ticker, period='day', num_bars=num_days)
+                data = return_candles_json(ticker, period_len, num_bars=num_of_periods)
                 time.sleep(.7)
             except:
                 continue
@@ -200,10 +201,10 @@ class SecurityTradeData:
 
 #SecurityTradeData object when all attributes are provided as inputs
 class LiteSecurityTradeData(SecurityTradeData):
-    def __init__(self, consumable_item, atr_rolling_window=14):
+    def __init__(self, consumable_item, period_len='day', atr_rolling_window=14):
         #basics
         self.ticker = consumable_item[0]
-
+        self.period = period_len
         #sector and peers data added while scanning
         self.sector = consumable_item[2]
         self.peers = consumable_item[4]

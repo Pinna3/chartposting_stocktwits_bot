@@ -42,3 +42,5 @@ Why aren't the sector allocation maximums set dynamically like the Long/Shorts??
 5+) ROR strategy for high/low timeframes... think about
 
 RIGHT NOW ATR TRAILING STOP WINDOWS ARE SET AT THE STANDARD 14 DAY... 5 DAY MIGHT MAKE MORE SENSE (OR WHATEVER HOLDING PERIOD YOU'RE GOING WITH... PONDER)
+
+I'm wondering if the whole BB-Param_optimization ordeal is a big waste of time and I should be optimizing the entry frequency of the top trenders relative to a simple moving average, the rolling window of which changes to accomodate the ror_prioritization_factor and daily counter. seems a lot easiier... fuck. day wasted.

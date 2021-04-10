@@ -219,7 +219,7 @@ def tag_imported_stock_csv_file_with_smoothness_test(csv_in, csv_out):
         for row in reader:
             stock = row[0]
             smoothness_test = True
-            data = return_candles_json(stock, period='day', num_bars=365)
+            data = return_candles_json(stock, period_len='day', num_bars=365)
             for index, ohlc in enumerate(data[stock][:-1]):
                 if abs(float(ohlc['c']) - float(data[stock][index+1]['o'])) > (float(ohlc['c']) * .5):
                     smoothness_test = False
@@ -281,7 +281,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     remainder_smoothness_test = smoothness_tests[-remainder:]
     remainder_peers = peers[-remainder:]
     remainder_batch = ','.join(remainder_reference)
-    remainder_data = return_candles_json(remainder_batch, period='day', num_bars=281)
+    remainder_data = return_candles_json(remainder_batch, period_len='day', num_bars=281)
     #iterable list with retrievable values
     remainder_df_list = []
     for index, reference_symbol in enumerate(remainder_reference):
@@ -312,7 +312,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
         batch_smoothness_test = smoothness_tests[(batch_num - 1)*batch: batch_num*batch]
         batch_peers = peers[(batch_num - 1)*batch: batch_num*batch]
         symbol_batch = ','.join(symbol_reference)
-        batch_data = return_candles_json(symbol_batch, period='day', num_bars=281)
+        batch_data = return_candles_json(symbol_batch, period_len='day', num_bars=281)
         #iterable list with retrievable values
         batch_df_list = []
         for index, reference_symbol in enumerate(symbol_reference):

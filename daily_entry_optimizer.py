@@ -2,7 +2,7 @@ import json
 import pandas as pd
 from risk_parameter import preset_daily_counter_capacities
 from utility_func import pull_top_tier_unbroken_trenders
-from candlestick import LiteSecurityTradeData
+from candlestick import LiteSecurityTradeData, SecurityTradeData
 from momoscreener import LiteSecurities
 
 trender_watchlist_filenames = pull_top_tier_unbroken_trenders(tier_percentage=10)
@@ -18,7 +18,13 @@ for filename in trender_watchlist_filenames:
                 peers = stock['peers']
                 mktcap = stock['mktcap']
                 smoothness = 'TRUE'
-                df = pd.read_csv(f"{mktcap}Stocks/Dataframes/{ticker}.csv", index_col=0)
+                bb_window = stock["bb_window"]
+                bb_std = stock['bb_std']
+                if bb_std == .1:
+                    df = SecurityTradeData(ticker, period_len='day', num_of_periods=281, atr_rolling_window=14).df
+                    print(df)
+                else:
+                    df = pd.read_csv(f"{mktcap}Stocks/Dataframes/{ticker}.csv", index_col=0)
                 if 'uptrend' in filename[0]:
                     opt_str = '>'
                 elif 'downtrend' in filename[0]:
@@ -54,11 +60,11 @@ for almost_consumable_list in list_of_almost_consumable_lists:
 # print(length)
 
 candles = LiteSecurities(candle_object_list_dict['>']['Large'])
-candles.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=2.5)
+candles.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='>', mktcap_group='Large', ror_prioritization_factor=1.5)
 hits = []
 for candle in candle_object_list_dict['>']['Large']:
     c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper, atr = candle.df.iloc[-1]
-    if sma9 > sma20 and sma20 > sma50 and sma50 > sma200 and l < lower:
+    if l < lower:
         hits.append(candle)
 print(len(hits))
 print(len(candle_object_list_dict['>']['Large']))
