@@ -11,7 +11,9 @@ from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
 ###Check for proper ranges using get_bb_params_distribution(), last window=2-20 = (range(2, 21)), last std=.1-1 (4/6/21), expand for testing once in a while
-def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency, window_range=range(2, 21), std_range=[x/10 for x in range(1, 12)]):
+def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency,
+                       window_range=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+                       std_range=[.1, .2, .3, .4, .5, .6, .7, .8, .9, 1.0]):
     candles = SecurityTradeDataObject
     def optimal_bb_window(op_str, entry_frequency):
         rolling_window_and_counter = []

@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 111.08,
-    "entry_frequency": 140
+    "entry_frequency": 151
   },
   {
     "ticker": "BBCP",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 67.24,
-    "entry_frequency": 85
+    "entry_frequency": 92
   },
   {
     "ticker": "CUBI",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 55.2,
-    "entry_frequency": 70
+    "entry_frequency": 76
   },
   {
     "ticker": "SCVL",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 45.74,
-    "entry_frequency": 58
+    "entry_frequency": 63
   },
   {
     "ticker": "HCI",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$PGR $TRV $ALL $SPY",
     "ror": 44.07,
-    "entry_frequency": 56
+    "entry_frequency": 60
   },
   {
     "ticker": "AMEH",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$CVS $CI $LH $SPY",
     "ror": 27.33,
-    "entry_frequency": 35
+    "entry_frequency": 38
   },
   {
     "ticker": "PLYM",
@@ -67,6 +67,6 @@
     "bb_std": 0.1,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 17.11,
-    "entry_frequency": 22
+    "entry_frequency": 24
   }
 ]

@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 25.12,
-    "entry_frequency": 32
+    "entry_frequency": 51
   },
   {
     "ticker": "AXSM",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 16.88,
-    "entry_frequency": 22
+    "entry_frequency": 35
   },
   {
     "ticker": "SRPT",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 13.19,
-    "entry_frequency": 17
+    "entry_frequency": 27
   },
   {
     "ticker": "FOLD",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 9.66,
-    "entry_frequency": 13
+    "entry_frequency": 20
   },
   {
     "ticker": "QDEL",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$950130.KQ $ALGN $WST $SPY",
     "ror": 6.36,
-    "entry_frequency": 9
+    "entry_frequency": 14
   },
   {
     "ticker": "IRTC",
@@ -57,17 +57,17 @@
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
     "ror": 6.0,
-    "entry_frequency": 8
+    "entry_frequency": 13
   },
   {
     "ticker": "GLPG",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 4,
-    "bb_std": 0.7,
+    "bb_window": 3,
+    "bb_std": 0.9,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 5.2,
-    "entry_frequency": 8
+    "entry_frequency": 11
   },
   {
     "ticker": "GBT",
@@ -77,17 +77,17 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 4.77,
-    "entry_frequency": 7
+    "entry_frequency": 11
   },
   {
     "ticker": "MOR",
     "sector": "Health Care",
     "mktcap": "Large",
     "bb_window": 2,
-    "bb_std": 0.8,
+    "bb_std": 0.1,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": 3.76,
-    "entry_frequency": 6
+    "entry_frequency": 9
   },
   {
     "ticker": "OCFT",
@@ -103,20 +103,20 @@
     "ticker": "AYX",
     "sector": "Technology",
     "mktcap": "Large",
-    "bb_window": 7,
+    "bb_window": 6,
     "bb_std": 0.9,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": -1.02,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "TREE",
     "sector": "Finance",
     "mktcap": "Large",
-    "bb_window": 13,
+    "bb_window": 8,
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": -1.09,
-    "entry_frequency": 1
+    "entry_frequency": 2
   }
 ]

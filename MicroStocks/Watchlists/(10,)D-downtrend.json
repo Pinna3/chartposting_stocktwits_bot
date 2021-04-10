@@ -7,26 +7,26 @@
     "bb_std": 0.1,
     "peers": "$EMR $3665.TW $ROK $SPY",
     "ror": 3.16,
-    "entry_frequency": 5
+    "entry_frequency": 7
   },
   {
     "ticker": "EMP",
     "sector": "Public Utilities",
     "mktcap": "Micro",
-    "bb_window": 18,
-    "bb_std": 0.9,
+    "bb_window": 9,
+    "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.71,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "WINT",
     "sector": "Health Care",
     "mktcap": "Micro",
-    "bb_window": 13,
+    "bb_window": 9,
     "bb_std": 1.0,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": -2.5,
-    "entry_frequency": 1
+    "entry_frequency": 2
   }
 ]

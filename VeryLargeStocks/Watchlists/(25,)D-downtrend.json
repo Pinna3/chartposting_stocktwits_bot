@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$601318.SS $601628.SS $601336.SS $SPY",
     "ror": 4.85,
-    "entry_frequency": 7
+    "entry_frequency": 11
   },
   {
     "ticker": "SGEN",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 3.58,
-    "entry_frequency": 5
+    "entry_frequency": 8
   }
 ]

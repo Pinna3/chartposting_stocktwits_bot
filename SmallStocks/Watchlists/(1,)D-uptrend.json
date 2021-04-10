@@ -7,7 +7,7 @@
     "bb_std": 0.8,
     "peers": "$327.HK $3393.HK $31.HK $SPY",
     "ror": 11.0,
-    "entry_frequency": 15
+    "entry_frequency": 16
   },
   {
     "ticker": "FARM",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$MDLZ $KHC $GIS $SPY",
     "ror": 8.07,
-    "entry_frequency": 11
+    "entry_frequency": 12
   },
   {
     "ticker": "BKEP",
@@ -27,7 +27,7 @@
     "bb_std": 0.8,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 6.62,
-    "entry_frequency": 9
+    "entry_frequency": 10
   },
   {
     "ticker": "HNRG",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$STM.PA $UBXN.SW $WIHN.SW $SPY",
     "ror": 5.7,
-    "entry_frequency": 8
+    "entry_frequency": 9
   },
   {
     "ticker": "DHX",
@@ -87,7 +87,7 @@
     "bb_std": 0.1,
     "peers": "$NUE $STLD $RS $SPY",
     "ror": 4.33,
-    "entry_frequency": 6
+    "entry_frequency": 7
   },
   {
     "ticker": "LOAN",
@@ -97,7 +97,7 @@
     "bb_std": 0.8,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 4.09,
-    "entry_frequency": 6
+    "entry_frequency": 7
   },
   {
     "ticker": "RAIL",
@@ -113,11 +113,11 @@
     "ticker": "EML",
     "sector": "Capital Goods",
     "mktcap": "Small",
-    "bb_window": 12,
-    "bb_std": 0.7,
+    "bb_window": 11,
+    "bb_std": 0.2,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 3.38,
-    "entry_frequency": 5
+    "entry_frequency": 6
   },
   {
     "ticker": "LOV",
@@ -143,11 +143,11 @@
     "ticker": "ORN",
     "sector": "Basic Industries",
     "mktcap": "Small",
-    "bb_window": 14,
+    "bb_window": 8,
     "bb_std": 1.0,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 1.87,
-    "entry_frequency": 3
+    "entry_frequency": 4
   },
   {
     "ticker": "PW",
@@ -203,11 +203,11 @@
     "ticker": "III",
     "sector": "Consumer Services",
     "mktcap": "Small",
-    "bb_window": 16,
+    "bb_window": 13,
     "bb_std": 1.0,
     "peers": "$IBM $CTSH $EPAM $SPY",
     "ror": 1.15,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "PVBC",

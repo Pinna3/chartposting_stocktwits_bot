@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 13.49,
-    "entry_frequency": 18
+    "entry_frequency": 28
   },
   {
     "ticker": "EPZM",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 11.76,
-    "entry_frequency": 16
+    "entry_frequency": 25
   },
   {
     "ticker": "AFYA",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
     "ror": 7.27,
-    "entry_frequency": 10
+    "entry_frequency": 16
   },
   {
     "ticker": "EGAN",
@@ -37,27 +37,27 @@
     "bb_std": 0.1,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": 3.21,
-    "entry_frequency": 5
+    "entry_frequency": 7
   },
   {
     "ticker": "BDTX",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 7,
-    "bb_std": 0.8,
+    "bb_window": 5,
+    "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 1.79,
-    "entry_frequency": 3
+    "entry_frequency": 5
   },
   {
     "ticker": "DEA",
     "sector": "Consumer Services",
     "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": 0.1,
+    "bb_window": 12,
+    "bb_std": 0.8,
     "peers": "$ARE $BXP $VNO $SPY",
     "ror": -0.29,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "CGEN",
@@ -67,7 +67,7 @@
     "bb_std": 0.8,
     "peers": "$CGEN $BOLT.TA $CKNTF $SPY",
     "ror": -0.72,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "SVM",
@@ -77,16 +77,16 @@
     "bb_std": 0.9,
     "peers": "$PAAS.TO $FR.TO $MAG.TO $SPY",
     "ror": -4.5,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "QTNT",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 15,
-    "bb_std": 0.9,
+    "bb_window": 12,
+    "bb_std": 1.0,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
     "ror": -5.01,
-    "entry_frequency": 1
+    "entry_frequency": 2
   }
 ]

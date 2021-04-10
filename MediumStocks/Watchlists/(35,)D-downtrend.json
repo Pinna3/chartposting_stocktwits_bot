@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
     "ror": 27.64,
-    "entry_frequency": 36
+    "entry_frequency": 56
   },
   {
     "ticker": "EPZM",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 20.6,
-    "entry_frequency": 27
+    "entry_frequency": 42
   }
 ]

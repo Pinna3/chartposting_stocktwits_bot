@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 27.15,
-    "entry_frequency": 35
+    "entry_frequency": 55
   },
   {
     "ticker": "EGAN",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": 16.81,
-    "entry_frequency": 22
+    "entry_frequency": 35
   },
   {
     "ticker": "EPZM",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 12.23,
-    "entry_frequency": 16
+    "entry_frequency": 25
   },
   {
     "ticker": "QTNT",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
     "ror": 11.36,
-    "entry_frequency": 15
+    "entry_frequency": 24
   },
   {
     "ticker": "CGEN",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$CGEN $BOLT.TA $CKNTF $SPY",
     "ror": 10.54,
-    "entry_frequency": 14
+    "entry_frequency": 22
   },
   {
     "ticker": "AFYA",
@@ -57,16 +57,16 @@
     "bb_std": 0.1,
     "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
     "ror": 7.47,
-    "entry_frequency": 10
+    "entry_frequency": 16
   },
   {
     "ticker": "DEA",
     "sector": "Consumer Services",
     "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 0.9,
+    "bb_std": 0.1,
     "peers": "$ARE $BXP $VNO $SPY",
     "ror": 4.14,
-    "entry_frequency": 6
+    "entry_frequency": 9
   }
 ]

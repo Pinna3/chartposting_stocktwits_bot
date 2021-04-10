@@ -3,11 +3,11 @@
     "ticker": "LB",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 6,
-    "bb_std": 0.1,
+    "bb_window": 4,
+    "bb_std": 0.4,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 5.59,
-    "entry_frequency": 8
+    "entry_frequency": 9
   },
   {
     "ticker": "SAM",
@@ -24,10 +24,10 @@
     "sector": "Public Utilities",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.4,
+    "bb_std": 0.1,
     "peers": "$ENELAM.SN $ENELCHILE.SN $CGE.SN $SPY",
     "ror": 4.17,
-    "entry_frequency": 6
+    "entry_frequency": 7
   },
   {
     "ticker": "HES",
@@ -87,7 +87,7 @@
     "bb_std": 0.1,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 3.5,
-    "entry_frequency": 5
+    "entry_frequency": 6
   },
   {
     "ticker": "CCK",
@@ -143,31 +143,31 @@
     "ticker": "FTNT",
     "sector": "Technology",
     "mktcap": "VeryLarge",
-    "bb_window": 14,
+    "bb_window": 5,
     "bb_std": 0.9,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 2.79,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "FMX",
     "sector": "Consumer Non-Durables",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 0.7,
+    "bb_std": 0.1,
     "peers": "$FEMSAUBD.MX $AC.MX $KOFUBL.MX $SPY",
     "ror": 2.72,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "IQV",
     "sector": "Health Care",
     "mktcap": "VeryLarge",
     "bb_window": 6,
-    "bb_std": 0.9,
+    "bb_std": 0.7,
     "peers": "$TMO $ILMN $A $SPY",
     "ror": 2.7,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "TECH",
@@ -513,51 +513,51 @@
     "ticker": "ZBRA",
     "sector": "Technology",
     "mktcap": "VeryLarge",
-    "bb_window": 18,
-    "bb_std": 0.9,
+    "bb_window": 6,
+    "bb_std": 1.0,
     "peers": "$KEYS $ZBRA $TRMB $SPY",
     "ror": 1.2,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "GOOGL",
     "sector": "Technology",
     "mktcap": "VeryLarge",
-    "bb_window": 16,
-    "bb_std": 0.9,
+    "bb_window": 9,
+    "bb_std": 0.6,
     "peers": "$GOOGL $FB $SNAP $SPY",
     "ror": 1.19,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "AMH",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
     "bb_window": 9,
-    "bb_std": 0.9,
+    "bb_std": 0.3,
     "peers": "$EQR $AVB $INVH $SPY",
     "ror": 1.18,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "BIP",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
-    "bb_window": 10,
-    "bb_std": 1.0,
+    "bb_window": 9,
+    "bb_std": 0.4,
     "peers": "$BIP $SPY",
     "ror": 1.17,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "SHG",
     "sector": "Finance",
     "mktcap": "VeryLarge",
-    "bb_window": 7,
-    "bb_std": 0.7,
+    "bb_window": 5,
+    "bb_std": 0.8,
     "peers": "$105560.KS $055550.KS $086790.KS $SPY",
     "ror": 1.12,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "DUK",
@@ -1133,11 +1133,11 @@
     "ticker": "BK",
     "sector": "Finance",
     "mktcap": "VeryLarge",
-    "bb_window": 16,
+    "bb_window": 13,
     "bb_std": 1.0,
     "peers": "$BLK $BX $KKR $SPY",
     "ror": 0.39,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "UBS",

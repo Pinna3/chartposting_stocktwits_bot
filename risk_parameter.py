@@ -115,6 +115,9 @@ Long Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure
         else:
             return False
 
+# check_daily_counter_capacity('long', 'VeryLarge')
+# print(preset_daily_counter_capacities())
+
 #Checks to make sure date is current, if so adds to daily tally.
 #If its the first trade of the day it erases yesterday tally and starts fresh.
 def add_to_daily_counter(side, mkt_cap):

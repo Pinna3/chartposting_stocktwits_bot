@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 9.84,
-    "entry_frequency": 13
+    "entry_frequency": 14
   },
   {
     "ticker": "AWX",
@@ -43,11 +43,11 @@
     "ticker": "YVR",
     "sector": "Technology",
     "mktcap": "Micro",
-    "bb_window": 5,
-    "bb_std": 0.7,
+    "bb_window": 4,
+    "bb_std": 0.2,
     "peers": "$SCR.TO $IMAX $CGX.TO $SPY",
     "ror": 1.93,
-    "entry_frequency": 3
+    "entry_frequency": 4
   },
   {
     "ticker": "BPYPO",
@@ -263,8 +263,8 @@
     "ticker": "JSM",
     "sector": "Finance",
     "mktcap": "Micro",
-    "bb_window": 2,
-    "bb_std": 0.8,
+    "bb_window": 9,
+    "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.45,
     "entry_frequency": 1

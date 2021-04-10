@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 98.54,
-    "entry_frequency": 124
+    "entry_frequency": 134
   },
   {
     "ticker": "BW",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$BE $TPIC $AZZ $SPY",
     "ror": 97.56,
-    "entry_frequency": 123
+    "entry_frequency": 133
   },
   {
     "ticker": "OMP",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 60.99,
-    "entry_frequency": 77
+    "entry_frequency": 83
   },
   {
     "ticker": "BBCP",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 47.0,
-    "entry_frequency": 60
+    "entry_frequency": 64
   },
   {
     "ticker": "MX",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$MX $SPY",
     "ror": 45.83,
-    "entry_frequency": 58
+    "entry_frequency": 63
   },
   {
     "ticker": "CUBI",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 45.58,
-    "entry_frequency": 58
+    "entry_frequency": 63
   },
   {
     "ticker": "HCI",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$PGR $TRV $ALL $SPY",
     "ror": 44.28,
-    "entry_frequency": 56
+    "entry_frequency": 61
   },
   {
     "ticker": "RBNC",
@@ -77,7 +77,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 43.22,
-    "entry_frequency": 55
+    "entry_frequency": 59
   },
   {
     "ticker": "SCVL",
@@ -87,7 +87,7 @@
     "bb_std": 0.1,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 43.21,
-    "entry_frequency": 55
+    "entry_frequency": 59
   },
   {
     "ticker": "DIN",
@@ -97,7 +97,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 36.85,
-    "entry_frequency": 47
+    "entry_frequency": 51
   },
   {
     "ticker": "AMTBB",
@@ -107,7 +107,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 34.79,
-    "entry_frequency": 44
+    "entry_frequency": 48
   },
   {
     "ticker": "AMEH",
@@ -117,7 +117,7 @@
     "bb_std": 0.1,
     "peers": "$CVS $CI $LH $SPY",
     "ror": 27.96,
-    "entry_frequency": 36
+    "entry_frequency": 39
   },
   {
     "ticker": "PLYM",
@@ -127,7 +127,7 @@
     "bb_std": 0.1,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 18.79,
-    "entry_frequency": 24
+    "entry_frequency": 26
   },
   {
     "ticker": "ARR",
@@ -137,6 +137,6 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 11.19,
-    "entry_frequency": 15
+    "entry_frequency": 16
   }
 ]

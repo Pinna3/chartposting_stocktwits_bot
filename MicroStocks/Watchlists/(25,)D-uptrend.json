@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 16.92,
-    "entry_frequency": 22
+    "entry_frequency": 24
   },
   {
     "ticker": "GFLU",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 11.4,
-    "entry_frequency": 15
+    "entry_frequency": 16
   },
   {
     "ticker": "AFINP",

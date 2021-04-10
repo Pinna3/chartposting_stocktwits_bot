@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 101.05,
-    "entry_frequency": 127
+    "entry_frequency": 137
   },
   {
     "ticker": "FTNT",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 42.29,
-    "entry_frequency": 54
+    "entry_frequency": 58
   }
 ]

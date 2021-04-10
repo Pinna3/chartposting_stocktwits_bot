@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 20.41,
-    "entry_frequency": 27
+    "entry_frequency": 42
   },
   {
     "ticker": "SRPT",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 17.73,
-    "entry_frequency": 23
+    "entry_frequency": 36
   },
   {
     "ticker": "AYX",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": 12.04,
-    "entry_frequency": 16
+    "entry_frequency": 25
   },
   {
     "ticker": "MOR",
@@ -37,16 +37,16 @@
     "bb_std": 0.1,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": 10.41,
-    "entry_frequency": 14
+    "entry_frequency": 22
   },
   {
     "ticker": "GLPG",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 4,
-    "bb_std": 0.7,
+    "bb_window": 3,
+    "bb_std": 0.8,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 5.76,
-    "entry_frequency": 8
+    "entry_frequency": 13
   }
 ]

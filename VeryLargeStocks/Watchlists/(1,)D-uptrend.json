@@ -7,17 +7,17 @@
     "bb_std": 0.1,
     "peers": "$VIAC $FOXA $DISCA $SPY",
     "ror": 6.62,
-    "entry_frequency": 9
+    "entry_frequency": 10
   },
   {
     "ticker": "TAP",
     "sector": "Consumer Non-Durables",
     "mktcap": "VeryLarge",
-    "bb_window": 6,
+    "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$SAM $TAP $CHIF $SPY",
     "ror": 3.56,
-    "entry_frequency": 5
+    "entry_frequency": 6
   },
   {
     "ticker": "DRI",
@@ -163,41 +163,41 @@
     "ticker": "DAL",
     "sector": "Transportation",
     "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
+    "bb_window": 19,
+    "bb_std": 0.8,
     "peers": "$LUV $DAL $UAL $SPY",
     "ror": 1.2,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "TMUS",
     "sector": "Public Utilities",
     "mktcap": "VeryLarge",
-    "bb_window": 11,
-    "bb_std": 0.9,
+    "bb_window": 6,
+    "bb_std": 0.2,
     "peers": "$TMUS $USM $TDS $SPY",
     "ror": 1.15,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "WBA",
     "sector": "Health Care",
     "mktcap": "VeryLarge",
-    "bb_window": 11,
-    "bb_std": 0.6,
+    "bb_window": 10,
+    "bb_std": 0.3,
     "peers": "$WBA $RAD $HESG $SPY",
     "ror": 1.13,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "PPD",
     "sector": "Health Care",
     "mktcap": "VeryLarge",
-    "bb_window": 15,
+    "bb_window": 12,
     "bb_std": 1.0,
     "peers": "$TMO $ILMN $A $SPY",
     "ror": 1.12,
-    "entry_frequency": 2
+    "entry_frequency": 3
   },
   {
     "ticker": "SCHW",
@@ -703,11 +703,11 @@
     "ticker": "KSU",
     "sector": "Transportation",
     "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": 0.1,
+    "bb_window": 9,
+    "bb_std": 0.8,
     "peers": "$UNP $CSX $NSC $SPY",
     "ror": 0.39,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "SO",
@@ -717,7 +717,7 @@
     "bb_std": null,
     "peers": "$NEE $DUK $SO $SPY",
     "ror": 0.38,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "RJF",
@@ -1593,8 +1593,8 @@
     "ticker": "PFG",
     "sector": "Finance",
     "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
+    "bb_window": 2,
+    "bb_std": 0.8,
     "peers": "$MET $PRU $AFL $SPY",
     "ror": -0.24,
     "entry_frequency": 1

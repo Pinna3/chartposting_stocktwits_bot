@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 94.67,
-    "entry_frequency": 119
+    "entry_frequency": 129
   },
   {
     "ticker": "FTNT",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 31.19,
-    "entry_frequency": 40
+    "entry_frequency": 43
   },
   {
     "ticker": "HPE",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 28.47,
-    "entry_frequency": 37
+    "entry_frequency": 39
   },
   {
     "ticker": "IRM",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 23.43,
-    "entry_frequency": 30
+    "entry_frequency": 33
   },
   {
     "ticker": "WU",
@@ -47,6 +47,6 @@
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 13.29,
-    "entry_frequency": 18
+    "entry_frequency": 19
   }
 ]

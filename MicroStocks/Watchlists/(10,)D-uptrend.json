@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$WM $RSG $ROL $SPY",
     "ror": 10.81,
-    "entry_frequency": 15
+    "entry_frequency": 16
   },
   {
     "ticker": "DUOT",
@@ -17,17 +17,17 @@
     "bb_std": 0.1,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 7.97,
-    "entry_frequency": 11
+    "entry_frequency": 12
   },
   {
     "ticker": "GFLU",
     "sector": "Public Utilities",
     "mktcap": "Micro",
     "bb_window": 5,
-    "bb_std": 1.0,
+    "bb_std": 0.9,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 3.39,
-    "entry_frequency": 5
+    "entry_frequency": 6
   },
   {
     "ticker": "BPYPN",
@@ -47,7 +47,7 @@
     "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 2.66,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "DTP",
@@ -93,11 +93,11 @@
     "ticker": "MTCN",
     "sector": "Basic Industries",
     "mktcap": "Micro",
-    "bb_window": 4,
+    "bb_window": 3,
     "bb_std": 0.9,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.38,
-    "entry_frequency": 1
+    "entry_frequency": 2
   },
   {
     "ticker": "FCNCP",

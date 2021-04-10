@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 157.89,
-    "entry_frequency": 198
+    "entry_frequency": 214
   },
   {
     "ticker": "HQI",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 114.72,
-    "entry_frequency": 144
+    "entry_frequency": 156
   },
   {
     "ticker": "MNSB",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 26.7,
-    "entry_frequency": 34
+    "entry_frequency": 37
   },
   {
     "ticker": "ESXB",
@@ -37,6 +37,6 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 23.18,
-    "entry_frequency": 30
+    "entry_frequency": 32
   }
 ]

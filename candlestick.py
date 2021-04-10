@@ -12,7 +12,7 @@ from alpaca import return_candles_json
 #timeseries data should cover the longest moving average period 200 + the # of days of longest trend test
 class SecurityTradeData:
     # @memoize
-    def __init__(self, ticker, num_days=281, atr_rolling_window=14):
+    def __init__(self, ticker, period='day', num_days=281, atr_rolling_window=14):
         #basics
         self.ticker = ticker
         self.num_days = num_days
@@ -78,9 +78,9 @@ class SecurityTradeData:
         self.df = df
 
     def __str__(self):
-        c, h, l, o, s, t, v, sma9, sma20, sma50, sma200 = self.df.iloc[-1]
-        return f'SecurityTradeData({self.ticker}-{self.num_days}d: Close/Current:{c}, ' +\
-               f'9SMA:{sma9}, 20SMA:{sma20}, 50SMA:{sma50}, 200SMA:{sma200})'
+        c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper, atr = self.df.iloc[-1]
+        return f'SecurityTradeData({self.ticker}-{self.sector}-{self.mktcap})'#: Close/Current:{c}, ' +\
+               # f'9SMA:{sma9}, 20SMA:{sma20}, 50SMA:{sma50}, 200SMA:{sma200})'
 
     def custom_bollingers(self, bollinger_rolling_window, bollinger_std):
         try:
@@ -239,8 +239,8 @@ def pandas_atr_calculation(df, window=14):
     true_range = df[['tr0', 'tr1', 'tr2']].max(axis=1)
     return wilder_ema(true_range, window)
 
-# test = SecurityTradeData('VEDL', atr_rolling_window=14)
-# # test.custom_bollingers(3, .1)
-# # test.chart(120)
-# print(test.df)
+# test = SecurityTradeData('LB', atr_rolling_window=14)
+# test.custom_bollingers(3, .1)
+# test.chart(120)
+# # print(test.df)
 # # print(test.df.iloc[-1])

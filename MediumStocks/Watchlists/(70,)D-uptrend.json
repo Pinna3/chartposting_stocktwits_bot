@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 46.75,
-    "entry_frequency": 59
+    "entry_frequency": 64
   },
   {
     "ticker": "PLYM",
@@ -17,6 +17,6 @@
     "bb_std": 0.1,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 16.1,
-    "entry_frequency": 21
+    "entry_frequency": 23
   }
 ]

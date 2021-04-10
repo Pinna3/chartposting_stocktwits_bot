@@ -17,7 +17,7 @@
     "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 2.66,
-    "entry_frequency": 4
+    "entry_frequency": 5
   },
   {
     "ticker": "DTP",
@@ -247,16 +247,6 @@
     "bb_std": 0.9,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -4.36,
-    "entry_frequency": 1
-  },
-  {
-    "ticker": "PFIN",
-    "sector": "Technology",
-    "mktcap": "Micro",
-    "bb_window": 14,
-    "bb_std": 1.0,
-    "peers": "$ITW $PH $SWK $SPY",
-    "ror": -4.41,
     "entry_frequency": 1
   },
   {

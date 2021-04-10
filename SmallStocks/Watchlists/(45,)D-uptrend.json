@@ -7,7 +7,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 111.62,
-    "entry_frequency": 141
+    "entry_frequency": 152
   },
   {
     "ticker": "GTIM",
@@ -17,7 +17,7 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 57.56,
-    "entry_frequency": 73
+    "entry_frequency": 79
   },
   {
     "ticker": "USAK",
@@ -27,7 +27,7 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 55.8,
-    "entry_frequency": 71
+    "entry_frequency": 76
   },
   {
     "ticker": "PMBC",
@@ -37,7 +37,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 49.58,
-    "entry_frequency": 63
+    "entry_frequency": 68
   },
   {
     "ticker": "HQI",
@@ -47,7 +47,7 @@
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 49.51,
-    "entry_frequency": 63
+    "entry_frequency": 68
   },
   {
     "ticker": "ALOT",
@@ -57,7 +57,7 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 35.2,
-    "entry_frequency": 45
+    "entry_frequency": 49
   },
   {
     "ticker": "INTT",
@@ -67,7 +67,7 @@
     "bb_std": 0.1,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 32.19,
-    "entry_frequency": 41
+    "entry_frequency": 44
   },
   {
     "ticker": "TZOO",
@@ -77,7 +77,7 @@
     "bb_std": 0.1,
     "peers": "$GOOGL $FB $SNAP $SPY",
     "ror": 30.22,
-    "entry_frequency": 39
+    "entry_frequency": 42
   },
   {
     "ticker": "SACH",
@@ -87,7 +87,7 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 20.98,
-    "entry_frequency": 27
+    "entry_frequency": 29
   },
   {
     "ticker": "MNSB",
@@ -97,7 +97,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 19.55,
-    "entry_frequency": 25
+    "entry_frequency": 27
   },
   {
     "ticker": "BRBS",
@@ -107,7 +107,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 16.48,
-    "entry_frequency": 22
+    "entry_frequency": 23
   },
   {
     "ticker": "ESXB",
@@ -117,6 +117,6 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 14.5,
-    "entry_frequency": 19
+    "entry_frequency": 21
   }
 ]
