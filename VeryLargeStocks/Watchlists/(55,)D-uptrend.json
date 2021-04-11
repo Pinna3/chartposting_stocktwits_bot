@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "ticker": "TPL",
+    "sector": "Energy",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 94.67,
+    "entry_frequency": 129,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "FTNT",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 1.0,
+    "peers": "$MSFT $ORCL $NOW $SPY",
+    "ror": 31.19,
+    "entry_frequency": 43,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "HPE",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 4,
+    "bb_std": 0.1,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 28.47,
+    "entry_frequency": 39,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "IRM",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 6,
+    "bb_std": 0.1,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": 23.43,
+    "entry_frequency": 33,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "WU",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": 12,
+    "bb_std": 1.0,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 13.29,
+    "entry_frequency": 19,
+    "200sma_double_agent": null
+  }
+]

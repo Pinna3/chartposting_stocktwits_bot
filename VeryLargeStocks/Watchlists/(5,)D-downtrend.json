@@ -1,5 +1,27 @@
 [
   {
+    "ticker": "LFC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": 0.1,
+    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
+    "ror": 2.21,
+    "entry_frequency": 5,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "CHKP",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CHKP $CYBR $ALLT $SPY",
+    "ror": 0.7,
+    "entry_frequency": 2,
+    "200sma_double_agent": null
+  },
+  {
     "ticker": "BABA",
     "sector": "Miscellaneous",
     "mktcap": "VeryLarge",
@@ -8,6 +30,83 @@
     "peers": "$3690.HK $9618.HK $BABA $SPY",
     "ror": 0.16,
     "entry_frequency": 1,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "SGEN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -0.1,
+    "entry_frequency": 2,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "AEM",
+    "sector": "Basic Industries",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ABX.TO $FNV.TO $WPM.TO $SPY",
+    "ror": -0.27,
+    "entry_frequency": 2,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "BKI",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": -0.54,
+    "entry_frequency": 2,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "NOK",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$NOKIA.HE $TLT1V.HE $SPY",
+    "ror": -0.74,
+    "entry_frequency": 2,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "ZM",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": -1.59,
+    "entry_frequency": 2,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "GOLD",
+    "sector": "Basic Industries",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ABX.TO $FNV.TO $WPM.TO $SPY",
+    "ror": -1.94,
+    "entry_frequency": 2,
+    "200sma_double_agent": null
+  },
+  {
+    "ticker": "VIV",
+    "sector": "Public Utilities",
+    "mktcap": "VeryLarge",
+    "bb_window": 2,
+    "bb_std": 0.8,
+    "peers": "$VIVT3.SA $OIBR4.SA $TELB4.SA $SPY",
+    "ror": -2.1,
+    "entry_frequency": 2,
     "200sma_double_agent": null
   }
 ]
