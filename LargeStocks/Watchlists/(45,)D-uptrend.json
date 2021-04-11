@@ -8,7 +8,7 @@
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 81.07,
     "entry_frequency": 110,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "CAR",
@@ -19,7 +19,7 @@
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 69.17,
     "entry_frequency": 94,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "LPX",
@@ -30,7 +30,7 @@
     "peers": "$LPX $RRIF $KEWL $SPY",
     "ror": 49.42,
     "entry_frequency": 68,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "AYI",
@@ -41,7 +41,7 @@
     "peers": "$EMR $3665.TW $ROK $SPY",
     "ror": 40.4,
     "entry_frequency": 56,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "FIX",
@@ -52,7 +52,7 @@
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 33.77,
     "entry_frequency": 47,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "IHRT",
@@ -63,7 +63,7 @@
     "peers": "$VIAC $FOXA $DISCA $SPY",
     "ror": 27.82,
     "entry_frequency": 39,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "SLM",
@@ -74,7 +74,7 @@
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 25.64,
     "entry_frequency": 36,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "SGRY",
@@ -85,7 +85,7 @@
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 24.3,
     "entry_frequency": 34,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "STWD",
@@ -96,7 +96,7 @@
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 23.38,
     "entry_frequency": 33,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "HRB",
@@ -107,7 +107,7 @@
     "peers": "$SCI $TMX $FTDR $SPY",
     "ror": 20.91,
     "entry_frequency": 29,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "NAVI",
@@ -118,7 +118,7 @@
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 18.71,
     "entry_frequency": 26,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "EXP",
@@ -129,7 +129,7 @@
     "peers": "$VMC $MLM $EXP $SPY",
     "ror": 17.4,
     "entry_frequency": 24,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "MMS",
@@ -140,7 +140,7 @@
     "peers": "$V $MA $PYPL $SPY",
     "ror": 15.63,
     "entry_frequency": 22,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "STN",
@@ -151,7 +151,7 @@
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 14.01,
     "entry_frequency": 20,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "PSB",
@@ -162,7 +162,7 @@
     "peers": "$WPC $VER $STOR $SPY",
     "ror": 11.8,
     "entry_frequency": 17,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "CUBE",
@@ -173,7 +173,7 @@
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 11.76,
     "entry_frequency": 17,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "NSA",
@@ -184,7 +184,7 @@
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 9.53,
     "entry_frequency": 14,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "CNX",
@@ -195,7 +195,7 @@
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 6.38,
     "entry_frequency": 10,
-    "time_period": "day"
+    "200sma_double_agent": null
   },
   {
     "ticker": "GWPH",
@@ -206,6 +206,6 @@
     "peers": "$AZN.L $GSK.L $GWPH $SPY",
     "ror": 1.71,
     "entry_frequency": 3,
-    "time_period": "day"
+    "200sma_double_agent": null
   }
 ]

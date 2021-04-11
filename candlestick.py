@@ -99,6 +99,8 @@ class SecurityTradeData:
             self.df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
             self.df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
 
+    def sma200_double_agent_activate(self, rolling_window):
+        self.df['sma200'] = round(self.df.c.rolling(window=rolling_window, min_periods=rolling_window).mean(), 2)
 
     #destination options: 'browser', or filepaths 'Micro', 'Small', 'Medium', 'Large', 'VeryLarge'
     def chart(self, days, destination='browser'):
@@ -240,8 +242,8 @@ def pandas_atr_calculation(df, window=14):
     true_range = df[['tr0', 'tr1', 'tr2']].max(axis=1)
     return wilder_ema(true_range, window)
 
-# test = SecurityTradeData('LB', atr_rolling_window=14)
-# test.custom_bollingers(3, .1)
-# test.chart(120)
-# # print(test.df)
-# # print(test.df.iloc[-1])
+test = SecurityTradeData('LB', atr_rolling_window=14)
+# test.sma200_double_agent_activate(3)
+test.chart(120)
+print(test.df)
+# print(test.df.iloc[-1])

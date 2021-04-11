@@ -69,11 +69,12 @@ class Securities:
                                 entry_frequency = int(round((ror_prioritization_factor * ror) + 1, 0))
                             else:
                                 entry_frequency = int(ror_prioritization_factor)
+                            sma200_double_agent_window = None
                             bb_window, bb_std = bb_param_optomizer(candle_object, op_str, entry_frequency)
                             trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
                                             'mktcap': candle_object.mktcap, 'bb_window': bb_window,
                                             'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror,
-                                            'entry_frequency': entry_frequency, 'time_period': candle_object.period})
+                                            'entry_frequency': entry_frequency, '200sma_double_agent': sma200_double_agent_window})
 
                             candle_object.df.to_csv(f"{mktcap_group}Stocks/Dataframes/{candle_object.ticker}.csv")
                 # except:
