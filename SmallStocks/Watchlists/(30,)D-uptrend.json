@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 70.67,
-    "entry_frequency": 96
+    "entry_frequency": 96,
+    "time_period": "day"
   },
   {
     "ticker": "BKEP",
@@ -17,7 +18,8 @@
     "bb_std": 0.1,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 59.22,
-    "entry_frequency": 81
+    "entry_frequency": 81,
+    "time_period": "day"
   },
   {
     "ticker": "GTIM",
@@ -27,7 +29,8 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 41.62,
-    "entry_frequency": 57
+    "entry_frequency": 57,
+    "time_period": "day"
   },
   {
     "ticker": "MHLD",
@@ -37,7 +40,8 @@
     "bb_std": 0.1,
     "peers": "$RE $RNR $ESGR $SPY",
     "ror": 32.35,
-    "entry_frequency": 45
+    "entry_frequency": 45,
+    "time_period": "day"
   },
   {
     "ticker": "WLFC",
@@ -47,7 +51,8 @@
     "bb_std": 0.1,
     "peers": "$FAST $URI $GWW $SPY",
     "ror": 31.31,
-    "entry_frequency": 43
+    "entry_frequency": 43,
+    "time_period": "day"
   },
   {
     "ticker": "HQI",
@@ -57,7 +62,8 @@
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 31.18,
-    "entry_frequency": 43
+    "entry_frequency": 43,
+    "time_period": "day"
   },
   {
     "ticker": "USAK",
@@ -67,7 +73,8 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 28.28,
-    "entry_frequency": 39
+    "entry_frequency": 39,
+    "time_period": "day"
   },
   {
     "ticker": "ALOT",
@@ -77,7 +84,8 @@
     "bb_std": 0.1,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 27.73,
-    "entry_frequency": 38
+    "entry_frequency": 38,
+    "time_period": "day"
   },
   {
     "ticker": "TZOO",
@@ -87,7 +95,8 @@
     "bb_std": 0.1,
     "peers": "$GOOGL $FB $SNAP $SPY",
     "ror": 26.83,
-    "entry_frequency": 37
+    "entry_frequency": 37,
+    "time_period": "day"
   },
   {
     "ticker": "INTT",
@@ -97,7 +106,8 @@
     "bb_std": 0.1,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 24.76,
-    "entry_frequency": 34
+    "entry_frequency": 34,
+    "time_period": "day"
   },
   {
     "ticker": "CTG",
@@ -107,7 +117,8 @@
     "bb_std": 0.1,
     "peers": "$IBM $CTSH $EPAM $SPY",
     "ror": 24.57,
-    "entry_frequency": 34
+    "entry_frequency": 34,
+    "time_period": "day"
   },
   {
     "ticker": "PMBC",
@@ -117,7 +128,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 20.43,
-    "entry_frequency": 29
+    "entry_frequency": 29,
+    "time_period": "day"
   },
   {
     "ticker": "SACH",
@@ -127,7 +139,8 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 19.21,
-    "entry_frequency": 27
+    "entry_frequency": 27,
+    "time_period": "day"
   },
   {
     "ticker": "BKSC",
@@ -137,7 +150,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 19.01,
-    "entry_frequency": 27
+    "entry_frequency": 27,
+    "time_period": "day"
   },
   {
     "ticker": "JAX",
@@ -147,7 +161,8 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 15.12,
-    "entry_frequency": 21
+    "entry_frequency": 21,
+    "time_period": "day"
   },
   {
     "ticker": "TCFC",
@@ -157,7 +172,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 14.5,
-    "entry_frequency": 21
+    "entry_frequency": 21,
+    "time_period": "day"
   },
   {
     "ticker": "MNSB",
@@ -167,7 +183,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 12.12,
-    "entry_frequency": 17
+    "entry_frequency": 17,
+    "time_period": "day"
   },
   {
     "ticker": "BRBS",
@@ -177,7 +194,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 12.0,
-    "entry_frequency": 17
+    "entry_frequency": 17,
+    "time_period": "day"
   },
   {
     "ticker": "ESXB",
@@ -187,7 +205,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 9.92,
-    "entry_frequency": 14
+    "entry_frequency": 14,
+    "time_period": "day"
   },
   {
     "ticker": "PRT",
@@ -197,6 +216,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 9.74,
-    "entry_frequency": 14
+    "entry_frequency": 14,
+    "time_period": "day"
   }
 ]

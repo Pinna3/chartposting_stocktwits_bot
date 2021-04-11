@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 38.64,
-    "entry_frequency": 78
+    "entry_frequency": 78,
+    "time_period": "day"
   },
   {
     "ticker": "CNCE",
@@ -17,7 +18,8 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 30.34,
-    "entry_frequency": 62
+    "entry_frequency": 62,
+    "time_period": "day"
   },
   {
     "ticker": "PSTI",
@@ -27,7 +29,8 @@
     "bb_std": 0.1,
     "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
     "ror": 25.24,
-    "entry_frequency": 51
+    "entry_frequency": 51,
+    "time_period": "day"
   },
   {
     "ticker": "CHMA",
@@ -37,7 +40,8 @@
     "bb_std": 0.1,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 23.14,
-    "entry_frequency": 47
+    "entry_frequency": 47,
+    "time_period": "day"
   },
   {
     "ticker": "CALA",
@@ -47,7 +51,8 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 17.59,
-    "entry_frequency": 36
+    "entry_frequency": 36,
+    "time_period": "day"
   },
   {
     "ticker": "VYGR",
@@ -57,6 +62,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 15.9,
-    "entry_frequency": 33
+    "entry_frequency": 33,
+    "time_period": "day"
   }
 ]

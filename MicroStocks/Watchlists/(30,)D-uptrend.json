@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 32.4,
-    "entry_frequency": 45
+    "entry_frequency": 45,
+    "time_period": "day"
   },
   {
     "ticker": "GFLU",
@@ -17,6 +18,7 @@
     "bb_std": 0.1,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 12.66,
-    "entry_frequency": 18
+    "entry_frequency": 18,
+    "time_period": "day"
   }
 ]

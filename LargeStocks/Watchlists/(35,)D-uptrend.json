@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 65.41,
-    "entry_frequency": 89
+    "entry_frequency": 89,
+    "time_period": "day"
   },
   {
     "ticker": "CAR",
@@ -17,7 +18,8 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 51.78,
-    "entry_frequency": 71
+    "entry_frequency": 71,
+    "time_period": "day"
   },
   {
     "ticker": "AYI",
@@ -27,7 +29,8 @@
     "bb_std": 0.1,
     "peers": "$EMR $3665.TW $ROK $SPY",
     "ror": 37.27,
-    "entry_frequency": 51
+    "entry_frequency": 51,
+    "time_period": "day"
   },
   {
     "ticker": "UFPI",
@@ -37,7 +40,8 @@
     "bb_std": 0.1,
     "peers": "$CARR $MAS $FBHS $SPY",
     "ror": 33.23,
-    "entry_frequency": 46
+    "entry_frequency": 46,
+    "time_period": "day"
   },
   {
     "ticker": "LPX",
@@ -47,7 +51,8 @@
     "bb_std": 0.1,
     "peers": "$LPX $RRIF $KEWL $SPY",
     "ror": 30.66,
-    "entry_frequency": 42
+    "entry_frequency": 42,
+    "time_period": "day"
   },
   {
     "ticker": "SFBS",
@@ -57,7 +62,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 30.24,
-    "entry_frequency": 42
+    "entry_frequency": 42,
+    "time_period": "day"
   },
   {
     "ticker": "OLN",
@@ -67,7 +73,8 @@
     "bb_std": 0.1,
     "peers": "$DOW $WLK $OLN $SPY",
     "ror": 28.99,
-    "entry_frequency": 40
+    "entry_frequency": 40,
+    "time_period": "day"
   },
   {
     "ticker": "ADS",
@@ -77,7 +84,8 @@
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 28.07,
-    "entry_frequency": 39
+    "entry_frequency": 39,
+    "time_period": "day"
   },
   {
     "ticker": "FIX",
@@ -87,7 +95,8 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 27.48,
-    "entry_frequency": 38
+    "entry_frequency": 38,
+    "time_period": "day"
   },
   {
     "ticker": "SLM",
@@ -97,7 +106,8 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 27.14,
-    "entry_frequency": 38
+    "entry_frequency": 38,
+    "time_period": "day"
   },
   {
     "ticker": "STAY",
@@ -107,7 +117,8 @@
     "bb_std": 0.1,
     "peers": "$ABNB $MAR $HLT $SPY",
     "ror": 24.69,
-    "entry_frequency": 34
+    "entry_frequency": 34,
+    "time_period": "day"
   },
   {
     "ticker": "ABM",
@@ -117,7 +128,8 @@
     "bb_std": 0.1,
     "peers": "$WM $RSG $ROL $SPY",
     "ror": 21.89,
-    "entry_frequency": 31
+    "entry_frequency": 31,
+    "time_period": "day"
   },
   {
     "ticker": "ABG",
@@ -127,7 +139,8 @@
     "bb_std": 0.1,
     "peers": "$CVNA $ORLY $AZO $SPY",
     "ror": 21.44,
-    "entry_frequency": 30
+    "entry_frequency": 30,
+    "time_period": "day"
   },
   {
     "ticker": "IHRT",
@@ -137,7 +150,8 @@
     "bb_std": 0.1,
     "peers": "$VIAC $FOXA $DISCA $SPY",
     "ror": 20.01,
-    "entry_frequency": 28
+    "entry_frequency": 28,
+    "time_period": "day"
   },
   {
     "ticker": "OSK",
@@ -147,7 +161,8 @@
     "bb_std": 0.1,
     "peers": "$CAT $CMI $PCAR $SPY",
     "ror": 19.98,
-    "entry_frequency": 28
+    "entry_frequency": 28,
+    "time_period": "day"
   },
   {
     "ticker": "SANM",
@@ -157,7 +172,8 @@
     "bb_std": 0.1,
     "peers": "$IPGP $JBL $SANM $SPY",
     "ror": 19.43,
-    "entry_frequency": 27
+    "entry_frequency": 27,
+    "time_period": "day"
   },
   {
     "ticker": "NAVI",
@@ -167,7 +183,8 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 19.39,
-    "entry_frequency": 27
+    "entry_frequency": 27,
+    "time_period": "day"
   },
   {
     "ticker": "BOX",
@@ -177,7 +194,8 @@
     "bb_std": 0.1,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": 18.79,
-    "entry_frequency": 26
+    "entry_frequency": 26,
+    "time_period": "day"
   },
   {
     "ticker": "ORI",
@@ -187,7 +205,8 @@
     "bb_std": 0.1,
     "peers": "$PGR $TRV $ALL $SPY",
     "ror": 18.66,
-    "entry_frequency": 26
+    "entry_frequency": 26,
+    "time_period": "day"
   },
   {
     "ticker": "SGRY",
@@ -197,7 +216,8 @@
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 18.62,
-    "entry_frequency": 26
+    "entry_frequency": 26,
+    "time_period": "day"
   },
   {
     "ticker": "HRB",
@@ -207,7 +227,8 @@
     "bb_std": 0.1,
     "peers": "$SCI $TMX $FTDR $SPY",
     "ror": 17.33,
-    "entry_frequency": 24
+    "entry_frequency": 24,
+    "time_period": "day"
   },
   {
     "ticker": "SASR",
@@ -217,7 +238,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 17.22,
-    "entry_frequency": 24
+    "entry_frequency": 24,
+    "time_period": "day"
   },
   {
     "ticker": "ACM",
@@ -227,7 +249,8 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 15.19,
-    "entry_frequency": 22
+    "entry_frequency": 22,
+    "time_period": "day"
   },
   {
     "ticker": "STN",
@@ -237,7 +260,8 @@
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 14.97,
-    "entry_frequency": 21
+    "entry_frequency": 21,
+    "time_period": "day"
   },
   {
     "ticker": "JACK",
@@ -247,7 +271,8 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 14.54,
-    "entry_frequency": 21
+    "entry_frequency": 21,
+    "time_period": "day"
   },
   {
     "ticker": "MMS",
@@ -257,7 +282,8 @@
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 13.6,
-    "entry_frequency": 19
+    "entry_frequency": 19,
+    "time_period": "day"
   },
   {
     "ticker": "WH",
@@ -267,7 +293,8 @@
     "bb_std": 0.1,
     "peers": "$ABNB $MAR $HLT $SPY",
     "ror": 13.14,
-    "entry_frequency": 19
+    "entry_frequency": 19,
+    "time_period": "day"
   },
   {
     "ticker": "STWD",
@@ -277,7 +304,8 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 12.22,
-    "entry_frequency": 17
+    "entry_frequency": 17,
+    "time_period": "day"
   },
   {
     "ticker": "CNMD",
@@ -287,7 +315,8 @@
     "bb_std": 0.1,
     "peers": "$ABT $DHR $SYK $SPY",
     "ror": 12.06,
-    "entry_frequency": 17
+    "entry_frequency": 17,
+    "time_period": "day"
   },
   {
     "ticker": "CIM",
@@ -297,7 +326,8 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 11.73,
-    "entry_frequency": 17
+    "entry_frequency": 17,
+    "time_period": "day"
   },
   {
     "ticker": "SAIA",
@@ -307,7 +337,8 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 11.12,
-    "entry_frequency": 16
+    "entry_frequency": 16,
+    "time_period": "day"
   },
   {
     "ticker": "NRZ",
@@ -317,7 +348,8 @@
     "bb_std": 0.1,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 11.11,
-    "entry_frequency": 16
+    "entry_frequency": 16,
+    "time_period": "day"
   },
   {
     "ticker": "MDU",
@@ -327,7 +359,8 @@
     "bb_std": 0.1,
     "peers": "$D $SRE $PEG $SPY",
     "ror": 11.01,
-    "entry_frequency": 16
+    "entry_frequency": 16,
+    "time_period": "day"
   },
   {
     "ticker": "CR",
@@ -337,7 +370,8 @@
     "bb_std": 0.1,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 10.72,
-    "entry_frequency": 15
+    "entry_frequency": 15,
+    "time_period": "day"
   },
   {
     "ticker": "FUL",
@@ -347,7 +381,8 @@
     "bb_std": 0.1,
     "peers": "$SHW $ECL $DD $SPY",
     "ror": 10.47,
-    "entry_frequency": 15
+    "entry_frequency": 15,
+    "time_period": "day"
   },
   {
     "ticker": "PSB",
@@ -357,7 +392,8 @@
     "bb_std": 0.1,
     "peers": "$WPC $VER $STOR $SPY",
     "ror": 10.12,
-    "entry_frequency": 15
+    "entry_frequency": 15,
+    "time_period": "day"
   },
   {
     "ticker": "EXP",
@@ -367,7 +403,8 @@
     "bb_std": 0.7,
     "peers": "$VMC $MLM $EXP $SPY",
     "ror": 9.86,
-    "entry_frequency": 14
+    "entry_frequency": 14,
+    "time_period": "day"
   },
   {
     "ticker": "NSA",
@@ -377,7 +414,8 @@
     "bb_std": 0.1,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 9.82,
-    "entry_frequency": 14
+    "entry_frequency": 14,
+    "time_period": "day"
   },
   {
     "ticker": "CUBE",
@@ -387,7 +425,8 @@
     "bb_std": 0.1,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 8.54,
-    "entry_frequency": 13
+    "entry_frequency": 13,
+    "time_period": "day"
   },
   {
     "ticker": "ARES",
@@ -397,7 +436,8 @@
     "bb_std": 0.1,
     "peers": "$BLK $BX $KKR $SPY",
     "ror": 7.94,
-    "entry_frequency": 12
+    "entry_frequency": 12,
+    "time_period": "day"
   },
   {
     "ticker": "CUB",
@@ -407,7 +447,8 @@
     "bb_std": 0.1,
     "peers": "$BA $RTX $LMT $SPY",
     "ror": 7.81,
-    "entry_frequency": 12
+    "entry_frequency": 12,
+    "time_period": "day"
   },
   {
     "ticker": "LSTR",
@@ -417,7 +458,8 @@
     "bb_std": 0.1,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 5.55,
-    "entry_frequency": 8
+    "entry_frequency": 8,
+    "time_period": "day"
   },
   {
     "ticker": "CSWI",
@@ -427,7 +469,8 @@
     "bb_std": 1.0,
     "peers": "$CARR $MAS $FBHS $SPY",
     "ror": 4.87,
-    "entry_frequency": 8
+    "entry_frequency": 8,
+    "time_period": "day"
   },
   {
     "ticker": "UGI",
@@ -437,7 +480,8 @@
     "bb_std": 0.1,
     "peers": "$ATO $UGI $NFG $SPY",
     "ror": 4.64,
-    "entry_frequency": 7
+    "entry_frequency": 7,
+    "time_period": "day"
   },
   {
     "ticker": "CNX",
@@ -447,7 +491,8 @@
     "bb_std": 0.9,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 1.97,
-    "entry_frequency": 4
+    "entry_frequency": 4,
+    "time_period": "day"
   },
   {
     "ticker": "GWPH",
@@ -457,7 +502,8 @@
     "bb_std": 0.8,
     "peers": "$AZN.L $GSK.L $GWPH $SPY",
     "ror": 1.88,
-    "entry_frequency": 4
+    "entry_frequency": 4,
+    "time_period": "day"
   },
   {
     "ticker": "RP",
@@ -467,6 +513,7 @@
     "bb_std": 1.0,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": 0.97,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   }
 ]

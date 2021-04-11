@@ -7,6 +7,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 25.18,
-    "entry_frequency": 51
+    "entry_frequency": 51,
+    "time_period": "day"
   }
 ]

@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 257.43,
-    "entry_frequency": 349
+    "entry_frequency": 349,
+    "time_period": "day"
   },
   {
     "ticker": "SGRY",
@@ -17,7 +18,8 @@
     "bb_std": 0.1,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 65.62,
-    "entry_frequency": 90
+    "entry_frequency": 90,
+    "time_period": "day"
   },
   {
     "ticker": "SLM",
@@ -27,7 +29,8 @@
     "bb_std": 0.1,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 53.57,
-    "entry_frequency": 73
+    "entry_frequency": 73,
+    "time_period": "day"
   },
   {
     "ticker": "FIX",
@@ -37,7 +40,8 @@
     "bb_std": 0.1,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 46.38,
-    "entry_frequency": 64
+    "entry_frequency": 64,
+    "time_period": "day"
   },
   {
     "ticker": "EXP",
@@ -47,7 +51,8 @@
     "bb_std": 0.1,
     "peers": "$VMC $MLM $EXP $SPY",
     "ror": 38.87,
-    "entry_frequency": 53
+    "entry_frequency": 53,
+    "time_period": "day"
   },
   {
     "ticker": "STN",
@@ -57,7 +62,8 @@
     "bb_std": 0.1,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 37.27,
-    "entry_frequency": 51
+    "entry_frequency": 51,
+    "time_period": "day"
   },
   {
     "ticker": "MMS",
@@ -67,7 +73,8 @@
     "bb_std": 0.1,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 28.74,
-    "entry_frequency": 40
+    "entry_frequency": 40,
+    "time_period": "day"
   },
   {
     "ticker": "CNX",
@@ -77,6 +84,7 @@
     "bb_std": 0.1,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 27.62,
-    "entry_frequency": 38
+    "entry_frequency": 38,
+    "time_period": "day"
   }
 ]

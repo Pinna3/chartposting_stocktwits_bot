@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 41.14,
-    "entry_frequency": 57
+    "entry_frequency": 57,
+    "time_period": "day"
   },
   {
     "ticker": "YVR",
@@ -17,7 +18,8 @@
     "bb_std": 0.1,
     "peers": "$SCR.TO $IMAX $CGX.TO $SPY",
     "ror": 12.16,
-    "entry_frequency": 17
+    "entry_frequency": 17,
+    "time_period": "day"
   },
   {
     "ticker": "FBIOP",
@@ -27,17 +29,19 @@
     "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 7.11,
-    "entry_frequency": 11
+    "entry_frequency": 11,
+    "time_period": "day"
   },
   {
     "ticker": "GFLU",
     "sector": "Public Utilities",
     "mktcap": "Micro",
     "bb_window": 3,
-    "bb_std": 0.9,
+    "bb_std": 1.0,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 6.43,
-    "entry_frequency": 10
+    "entry_frequency": 10,
+    "time_period": "day"
   },
   {
     "ticker": "MTCN",
@@ -47,7 +51,8 @@
     "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 4.63,
-    "entry_frequency": 7
+    "entry_frequency": 7,
+    "time_period": "day"
   },
   {
     "ticker": "DTP",
@@ -57,7 +62,8 @@
     "bb_std": 0.1,
     "peers": "$D $SRE $PEG $SPY",
     "ror": 3.15,
-    "entry_frequency": 5
+    "entry_frequency": 5,
+    "time_period": "day"
   },
   {
     "ticker": "BPYPP",
@@ -67,7 +73,8 @@
     "bb_std": 1.0,
     "peers": "$BPY $H78.SI $ROM.OL $SPY",
     "ror": 2.18,
-    "entry_frequency": 4
+    "entry_frequency": 4,
+    "time_period": "day"
   },
   {
     "ticker": "HOVNP",
@@ -77,7 +84,8 @@
     "bb_std": 1.0,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 2.15,
-    "entry_frequency": 4
+    "entry_frequency": 4,
+    "time_period": "day"
   },
   {
     "ticker": "SWT",
@@ -87,7 +95,8 @@
     "bb_std": 1.0,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 1.64,
-    "entry_frequency": 3
+    "entry_frequency": 3,
+    "time_period": "day"
   },
   {
     "ticker": "AFINP",
@@ -97,6 +106,7 @@
     "bb_std": 0.8,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.73,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   }
 ]

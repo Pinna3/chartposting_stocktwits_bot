@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 139.43,
-    "entry_frequency": 189
+    "entry_frequency": 189,
+    "time_period": "day"
   },
   {
     "ticker": "HQI",
@@ -17,7 +18,8 @@
     "bb_std": 0.1,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 93.61,
-    "entry_frequency": 127
+    "entry_frequency": 127,
+    "time_period": "day"
   },
   {
     "ticker": "GTIM",
@@ -27,7 +29,8 @@
     "bb_std": 0.1,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 91.41,
-    "entry_frequency": 124
+    "entry_frequency": 124,
+    "time_period": "day"
   },
   {
     "ticker": "PMBC",
@@ -37,7 +40,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 71.15,
-    "entry_frequency": 97
+    "entry_frequency": 97,
+    "time_period": "day"
   },
   {
     "ticker": "INTT",
@@ -47,7 +51,8 @@
     "bb_std": 0.1,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 70.98,
-    "entry_frequency": 97
+    "entry_frequency": 97,
+    "time_period": "day"
   },
   {
     "ticker": "MNSB",
@@ -57,7 +62,8 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 23.33,
-    "entry_frequency": 32
+    "entry_frequency": 32,
+    "time_period": "day"
   },
   {
     "ticker": "ESXB",
@@ -67,6 +73,7 @@
     "bb_std": 0.1,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 22.65,
-    "entry_frequency": 32
+    "entry_frequency": 32,
+    "time_period": "day"
   }
 ]

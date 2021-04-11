@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$601318.SS $601628.SS $601336.SS $SPY",
     "ror": 2.21,
-    "entry_frequency": 5
+    "entry_frequency": 5,
+    "time_period": "day"
   },
   {
     "ticker": "CHKP",
@@ -17,7 +18,8 @@
     "bb_std": 0.1,
     "peers": "$CHKP $CYBR $ALLT $SPY",
     "ror": 0.7,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   },
   {
     "ticker": "BABA",
@@ -27,7 +29,8 @@
     "bb_std": 0.8,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
     "ror": 0.16,
-    "entry_frequency": 1
+    "entry_frequency": 1,
+    "time_period": "day"
   },
   {
     "ticker": "SGEN",
@@ -37,7 +40,8 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": -0.1,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   },
   {
     "ticker": "AEM",
@@ -47,7 +51,8 @@
     "bb_std": null,
     "peers": "$ABX.TO $FNV.TO $WPM.TO $SPY",
     "ror": -0.27,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   },
   {
     "ticker": "BKI",
@@ -57,7 +62,8 @@
     "bb_std": 0.9,
     "peers": "$V $MA $PYPL $SPY",
     "ror": -0.54,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   },
   {
     "ticker": "NOK",
@@ -67,7 +73,8 @@
     "bb_std": 0.1,
     "peers": "$NOKIA.HE $TLT1V.HE $SPY",
     "ror": -0.74,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   },
   {
     "ticker": "ZM",
@@ -77,7 +84,8 @@
     "bb_std": 0.1,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": -1.59,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   },
   {
     "ticker": "GOLD",
@@ -87,7 +95,8 @@
     "bb_std": 0.1,
     "peers": "$ABX.TO $FNV.TO $WPM.TO $SPY",
     "ror": -1.94,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   },
   {
     "ticker": "VIV",
@@ -97,6 +106,7 @@
     "bb_std": 0.9,
     "peers": "$VIVT3.SA $OIBR4.SA $TELB4.SA $SPY",
     "ror": -2.1,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   }
 ]

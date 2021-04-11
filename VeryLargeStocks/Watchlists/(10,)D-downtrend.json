@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$601318.SS $601628.SS $601336.SS $SPY",
     "ror": 1.64,
-    "entry_frequency": 4
+    "entry_frequency": 4,
+    "time_period": "day"
   },
   {
     "ticker": "BABA",
@@ -17,7 +18,8 @@
     "bb_std": 0.7,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
     "ror": 1.03,
-    "entry_frequency": 3
+    "entry_frequency": 3,
+    "time_period": "day"
   },
   {
     "ticker": "BKI",
@@ -27,7 +29,8 @@
     "bb_std": 0.9,
     "peers": "$V $MA $PYPL $SPY",
     "ror": -0.33,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   },
   {
     "ticker": "SGEN",
@@ -37,6 +40,7 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": -3.08,
-    "entry_frequency": 2
+    "entry_frequency": 2,
+    "time_period": "day"
   }
 ]

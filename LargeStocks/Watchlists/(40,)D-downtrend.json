@@ -7,7 +7,8 @@
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 21.1,
-    "entry_frequency": 43
+    "entry_frequency": 43,
+    "time_period": "day"
   },
   {
     "ticker": "GLPG",
@@ -17,6 +18,7 @@
     "bb_std": 0.1,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 9.25,
-    "entry_frequency": 20
+    "entry_frequency": 20,
+    "time_period": "day"
   }
 ]

@@ -7,6 +7,7 @@
     "bb_std": 0.1,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 41.79,
-    "entry_frequency": 57
+    "entry_frequency": 57,
+    "time_period": "day"
   }
 ]

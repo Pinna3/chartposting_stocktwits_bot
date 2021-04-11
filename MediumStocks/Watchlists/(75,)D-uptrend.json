@@ -7,6 +7,7 @@
     "bb_std": 0.1,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 21.52,
-    "entry_frequency": 30
+    "entry_frequency": 30,
+    "time_period": "day"
   }
 ]
