@@ -20,6 +20,7 @@ for filename in trender_watchlist_filenames:
                 smoothness = 'TRUE'
                 bb_window = stock["bb_window"]
                 bb_std = stock['bb_std']
+                sma200_double_agent = stock['200sma_double_agent']
                 # if bb_std == .1:
                 #     df = SecurityTradeData(ticker, period_len='day', num_of_periods=281, atr_rolling_window=14).df
                 #     print(df)

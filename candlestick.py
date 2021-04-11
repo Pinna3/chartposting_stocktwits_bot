@@ -156,7 +156,7 @@ class SecurityTradeData:
     #use op_str '>' for uptrend and op_str '<' for downtrend
     ###MAKE FASTER
     #Remember entry count is limited by average time variable, eliminates repeats (consider removing or implementing average variable)
-    def entry_counter_bollingers_WITH_average(self, op_str):
+    def entry_counter_bollingers_WITH_average(self, op_str, timebar):
         dataframe = self.df
         entries = []
         repeats = []
@@ -175,7 +175,7 @@ class SecurityTradeData:
         if op_str == '<':
             bollinger = 'upper'
         #ignoring other sma9 >/< sma20 >/< sma50 >/< sma200 condtion for now (HYPOTHESIS: UNNECESSARY IN CURRENT OPERATING CONTEXT)
-        for index, row in dataframe.iterrows():
+        for index, row in dataframe.iloc[-timebar:].iterrows():
             if op_reversed_func(row[h_or_l], row[bollinger]) and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
                 entries.append(index)
         total = len(entries)
@@ -201,7 +201,7 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-    def entry_counter_bollingers_WITHOUT_average(self, op_str):
+    def entry_counter_bollingers_WITHOUT_average(self, op_str, timebar):
         dataframe = self.df
         entries = []
         repeats = []
@@ -220,8 +220,8 @@ class SecurityTradeData:
         if op_str == '<':
             bollinger = 'upper'
         #ignoring other sma9 >/< sma20 >/< sma50 >/< sma200 condtion for now (HYPOTHESIS: UNNECESSARY IN CURRENT OPERATING CONTEXT)
-        for index, row in dataframe.iterrows():
-            if op_reversed_func(row[h_or_l], row[bollinger]) and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
+        for index, row in dataframe.iloc[-timebar:].iterrows():
+            if op_reversed_func(row[h_or_l], row[bollinger]):# and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
                 entries.append(index)
         total = len(entries)
         return total

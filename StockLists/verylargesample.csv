@@ -5,7 +5,7 @@ AAPL,Apple Inc. Common Stock,123,0.85,0.01,VeryLarge,United States,74951179,Tech
 MSFT,Microsoft Corporation Common Stock,242.35,6.58,0.03,VeryLarge,United States,30311846,Technology,7346075878,TRUE,$MSFT $ORCL $NOW $SPY
 BABA,Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share,224.36,-2.37,-0.01,VeryLarge,China,23482815,Miscellaneous,5268604373,TRUE,$3690.HK $9618.HK $BABA $SPY
 FB,Facebook Inc. Class A Common Stock,298.66,4.13,0.01,VeryLarge,United States,17589580,Technology,5253303963,TRUE,$GOOGL $FB $SNAP $SPY
-NIO,NIO Inc. American depositary shares each  representing one Class A ordinary share,39.66,0.68,0.02,VeryLarge,,116120201,Capital Goods,4605327172,TRUE,$002594.SZ $601633.SS $600104.SS $SPY
+DISCB,Discovery Inc. Series B Common Stock,111.17,-16.83,-0.13,VeryLarge,United States,349421,Consumer Services,38845132.6,TRUE,$VIAC $FOXA $DISCA $SPY
 NVDA,NVIDIA Corporation Common Stock,552.47,18.54,0.03,VeryLarge,United States,7693754,Technology,4250568272,TRUE,$NVDA $INTC $AVGO $SPY
 GOOGL,Alphabet Inc. Class A Common Stock,2129.78,67.26,0.03,VeryLarge,United States,1993122,Technology,4244911373,TRUE,$GOOGL $FB $SNAP $SPY
 MU,Micron Technology Inc. Common Stock,92.41,4.2,0.05,VeryLarge,United States,39631774,Technology,3662372235,TRUE,$NVDA $INTC $AVGO $SPY

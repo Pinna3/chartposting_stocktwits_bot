@@ -11,20 +11,20 @@ from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
 ###Check for proper ranges using get_bb_params_distribution(), last window=2-20 = (range(2, 21)), last std=.1-1 (4/6/21), expand for testing once in a while
-def bb_param_optomizer_WITH_average(SecurityTradeDataObject, op_str, entry_frequency,
+def bb_param_optomizer_WITH_average(SecurityTradeDataObject, op_str, entry_frequency, timebar,
                        window_range=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
                        std_range=[.1, .2, .3, .4, .5, .6, .7, .8, .9, 1.0]):
     candles = SecurityTradeDataObject
-    def optimal_bb_window(op_str, entry_frequency):
+    def optimal_bb_window(op_str, entry_frequency, timebar):
         rolling_window_and_counter = []
         for index, rolling_window in enumerate(window_range):
-            try:
+            # try:
                 candles.custom_bollingers(rolling_window, 1)
                 rolling_window_and_counter.append([rolling_window, \
-                    candles.entry_counter_bollingers_WITH_average(op_str)])
+                    candles.entry_counter_bollingers_WITH_average(op_str, timebar)])
                 # print(rolling_window_and_counter[index])
-            except:
-                continue
+            # except:
+            #     continue
         ###update range according to get_bb_params_distribution()
         entry_frequency_range = sorted([x for x in range(1,entry_frequency + 1)], reverse=True)
         for counter in rolling_window_and_counter:
@@ -34,12 +34,12 @@ def bb_param_optomizer_WITH_average(SecurityTradeDataObject, op_str, entry_frequ
                     return rolling_window
         return None
 
-    def optimal_bb_std(rolling_window, op_str, entry_frequency):
+    def optimal_bb_std(rolling_window, op_str, entry_frequency, timebar):
         std_and_counter = []
         for index, std in enumerate(std_range):
             try:
                 candles.custom_bollingers(rolling_window, std)
-                std_and_counter.append([std, candles.entry_counter_bollingers_WITH_average(op_str)])
+                std_and_counter.append([std, candles.entry_counter_bollingers_WITH_average(op_str, timebar)])
                 # print(std_and_counter[index])
             except:
                 continue
@@ -51,21 +51,21 @@ def bb_param_optomizer_WITH_average(SecurityTradeDataObject, op_str, entry_frequ
                     std = counter[0]
                     return std
         return None
-    bb_window = optimal_bb_window(op_str, entry_frequency)
-    bb_std = optimal_bb_std(bb_window, op_str, entry_frequency)
+    bb_window = optimal_bb_window(op_str, entry_frequency, timebar)
+    bb_std = optimal_bb_std(bb_window, op_str, entry_frequency, timebar)
     return bb_window, bb_std
 
-def bb_param_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_frequency,
+def bb_param_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_frequency, timebar,
                        window_range=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
                        std_range=[.1, .2, .3, .4, .5, .6, .7, .8, .9, 1.0]):
     candles = SecurityTradeDataObject
-    def optimal_bb_window(op_str, entry_frequency):
+    def optimal_bb_window(op_str, entry_frequency, timebar):
         rolling_window_and_counter = []
         for index, rolling_window in enumerate(window_range):
             try:
                 candles.custom_bollingers(rolling_window, 1)
                 rolling_window_and_counter.append([rolling_window, \
-                    candles.entry_counter_bollingers_WITHOUT_average(op_str)])
+                    candles.entry_counter_bollingers_WITHOUT_average(op_str, timebar)])
                 # print(rolling_window_and_counter[index])
             except:
                 continue
@@ -78,12 +78,12 @@ def bb_param_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_fr
                     return rolling_window
         return None
 
-    def optimal_bb_std(rolling_window, op_str, entry_frequency):
+    def optimal_bb_std(rolling_window, op_str, entry_frequency, timebar):
         std_and_counter = []
         for index, std in enumerate(std_range):
             try:
                 candles.custom_bollingers(rolling_window, std)
-                std_and_counter.append([std, candles.entry_counter_bollingers_WITHOUT_average(op_str)])
+                std_and_counter.append([std, candles.entry_counter_bollingers_WITHOUT_average(op_str, timebar)])
                 # print(std_and_counter[index])
             except:
                 continue
@@ -95,9 +95,32 @@ def bb_param_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_fr
                     std = counter[0]
                     return std
         return None
-    bb_window = optimal_bb_window(op_str, entry_frequency)
-    bb_std = optimal_bb_std(bb_window, op_str, entry_frequency)
+    bb_window = optimal_bb_window(op_str, entry_frequency, timebar)
+    bb_std = optimal_bb_std(bb_window, op_str, entry_frequency, timebar)
     return bb_window, bb_std
+
+def sm200doubleagent_window_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_frequency,
+                       window_range=range(2, 11)):
+    candles = SecurityTradeDataObject
+    window_and_counter = []
+    for index, window in enumerate(window_range):
+        # try:
+        candles.sma200_double_agent_activate(window)
+        window_and_counter.append([window, candles.entry_counter_200sma_double_agent_WITHOUT_average(op_str)])
+        # except:
+        #     continue
+    entry_frequency_range = sorted([x for x in range(1, entry_frequency + 1)], reverse=True)
+    for counter in window_and_counter:
+        for entries in entry_frequency_range:
+            if counter[1] <= entry_frequency and counter[1] <= entries:
+                # print(counter[1])
+                # print(counter[0])
+                # print(entries)
+                window = counter[0]
+                candles.sma200_double_agent_activate(200)
+                return window
+    candles.sma200_double_agent_activate(200)
+    return None
 
 def graph_degrees_of_trend(mktcap_dir, down_or_up_str, *time_markers):
     hits = []
