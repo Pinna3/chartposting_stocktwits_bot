@@ -72,7 +72,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$MMC $AJG $BRO $SPY",
-    "ror": 12.28,
+    "ror": 12.4,
     "entry_frequency": 18,
     "time_period": "day"
   },
@@ -490,7 +490,7 @@
     "bb_window": 6,
     "bb_std": 0.9,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 3.17,
+    "ror": 3.14,
     "entry_frequency": 5,
     "time_period": "day"
   },
@@ -578,7 +578,7 @@
     "bb_window": 9,
     "bb_std": 1.0,
     "peers": "$AMT $CCI $EQIX $SPY",
-    "ror": 2.73,
+    "ror": 2.71,
     "entry_frequency": 5,
     "time_period": "day"
   },
@@ -985,7 +985,7 @@
     "bb_window": 9,
     "bb_std": 0.6,
     "peers": "$D $SRE $PEG $SPY",
-    "ror": 0.77,
+    "ror": 0.86,
     "entry_frequency": 2,
     "time_period": "day"
   },
@@ -1364,6 +1364,17 @@
     "time_period": "day"
   },
   {
+    "ticker": "RS",
+    "sector": "Basic Industries",
+    "mktcap": "Large",
+    "bb_window": 16,
+    "bb_std": 1.0,
+    "peers": "$NUE $STLD $RS $SPY",
+    "ror": -1.11,
+    "entry_frequency": 1,
+    "time_period": "day"
+  },
+  {
     "ticker": "MSM",
     "sector": "Capital Goods",
     "mktcap": "Large",
@@ -1371,17 +1382,6 @@
     "bb_std": null,
     "peers": "$FAST $URI $GWW $SPY",
     "ror": -1.13,
-    "entry_frequency": 1,
-    "time_period": "day"
-  },
-  {
-    "ticker": "RS",
-    "sector": "Basic Industries",
-    "mktcap": "Large",
-    "bb_window": 16,
-    "bb_std": 1.0,
-    "peers": "$NUE $STLD $RS $SPY",
-    "ror": -1.16,
     "entry_frequency": 1,
     "time_period": "day"
   },
@@ -1491,7 +1491,7 @@
     "bb_window": null,
     "bb_std": 0.1,
     "peers": "$IP $AVY $WRK $SPY",
-    "ror": -1.82,
+    "ror": -1.79,
     "entry_frequency": 1,
     "time_period": "day"
   },
@@ -1700,7 +1700,7 @@
     "bb_window": 20,
     "bb_std": 0.9,
     "peers": "$COP $EOG $PXD $SPY",
-    "ror": -10.0,
+    "ror": -10.19,
     "entry_frequency": 1,
     "time_period": "day"
   },

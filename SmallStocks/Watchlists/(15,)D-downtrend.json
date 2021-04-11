@@ -135,7 +135,7 @@
     "ticker": "TRX",
     "sector": "Basic Industries",
     "mktcap": "Small",
-    "bb_window": 3,
+    "bb_window": 2,
     "bb_std": 0.1,
     "peers": "$ABX.TO $FNV.TO $WPM.TO $SPY",
     "ror": 12.5,

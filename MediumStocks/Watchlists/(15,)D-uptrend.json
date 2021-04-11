@@ -433,7 +433,7 @@
     "sector": "Energy",
     "mktcap": "Medium",
     "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_std": 0.9,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 5.49,
     "entry_frequency": 8,

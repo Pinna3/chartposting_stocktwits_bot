@@ -2127,7 +2127,7 @@
     "sector": "Energy",
     "mktcap": "Large",
     "bb_window": 3,
-    "bb_std": 0.7,
+    "bb_std": 0.1,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": -6.31,
     "entry_frequency": 1,

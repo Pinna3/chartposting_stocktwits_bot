@@ -6,7 +6,7 @@
     "bb_window": 3,
     "bb_std": 0.1,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 22.49,
+    "ror": 22.41,
     "entry_frequency": 46,
     "time_period": "day"
   },
@@ -66,17 +66,6 @@
     "time_period": "day"
   },
   {
-    "ticker": "ZYME",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$AUP.TO $ZYME $TRIL.TO $SPY",
-    "ror": 5.53,
-    "entry_frequency": 12,
-    "time_period": "day"
-  },
-  {
     "ticker": "BEST",
     "sector": "Transportation",
     "mktcap": "Medium",
@@ -85,6 +74,17 @@
     "peers": "$002352.SZ $2057.HK $002120.SZ $SPY",
     "ror": 5.46,
     "entry_frequency": 12,
+    "time_period": "day"
+  },
+  {
+    "ticker": "ZYME",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$AUP.TO $ZYME $TRIL.TO $SPY",
+    "ror": 5.23,
+    "entry_frequency": 11,
     "time_period": "day"
   },
   {
@@ -223,8 +223,8 @@
     "ticker": "SPPI",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 2,
-    "bb_std": 0.8,
+    "bb_window": 4,
+    "bb_std": 0.5,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": -0.0,
     "entry_frequency": 2,
@@ -480,6 +480,17 @@
     "bb_std": 1.0,
     "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
     "ror": -12.16,
+    "entry_frequency": 2,
+    "time_period": "day"
+  },
+  {
+    "ticker": "ATHX",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.3,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -13.1,
     "entry_frequency": 2,
     "time_period": "day"
   }

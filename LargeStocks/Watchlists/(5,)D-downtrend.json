@@ -330,6 +330,17 @@
     "time_period": "day"
   },
   {
+    "ticker": "HCM",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$1177.HK $3320.HK $570.HK $SPY",
+    "ror": -2.4,
+    "entry_frequency": 2,
+    "time_period": "day"
+  },
+  {
     "ticker": "BTG",
     "sector": "Basic Industries",
     "mktcap": "Large",

@@ -160,7 +160,7 @@
     "bb_window": 3,
     "bb_std": 1.0,
     "peers": "$BA $RTX $LMT $SPY",
-    "ror": 6.01,
+    "ror": 6.02,
     "entry_frequency": 9,
     "time_period": "day"
   },
@@ -322,11 +322,11 @@
     "ticker": "IEX",
     "sector": "Capital Goods",
     "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.9,
+    "bb_window": 4,
+    "bb_std": 0.8,
     "peers": "$ITW $PH $SWK $SPY",
-    "ror": 4.87,
-    "entry_frequency": 8,
+    "ror": 4.79,
+    "entry_frequency": 7,
     "time_period": "day"
   },
   {
@@ -473,17 +473,6 @@
     "time_period": "day"
   },
   {
-    "ticker": "HD",
-    "sector": "Consumer Services",
-    "mktcap": "VeryLarge",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$HD $LOW $FND $SPY",
-    "ror": 3.86,
-    "entry_frequency": 6,
-    "time_period": "day"
-  },
-  {
     "ticker": "KSU",
     "sector": "Transportation",
     "mktcap": "VeryLarge",
@@ -491,6 +480,17 @@
     "bb_std": 0.7,
     "peers": "$UNP $CSX $NSC $SPY",
     "ror": 3.84,
+    "entry_frequency": 6,
+    "time_period": "day"
+  },
+  {
+    "ticker": "HD",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$HD $LOW $FND $SPY",
+    "ror": 3.83,
     "entry_frequency": 6,
     "time_period": "day"
   },
@@ -924,17 +924,6 @@
     "time_period": "day"
   },
   {
-    "ticker": "KHC",
-    "sector": "Consumer Non-Durables",
-    "mktcap": "VeryLarge",
-    "bb_window": 5,
-    "bb_std": 1.0,
-    "peers": "$MDLZ $KHC $GIS $SPY",
-    "ror": 1.92,
-    "entry_frequency": 4,
-    "time_period": "day"
-  },
-  {
     "ticker": "LII",
     "sector": "Capital Goods",
     "mktcap": "VeryLarge",
@@ -942,6 +931,17 @@
     "bb_std": 1.0,
     "peers": "$CARR $MAS $FBHS $SPY",
     "ror": 1.92,
+    "entry_frequency": 4,
+    "time_period": "day"
+  },
+  {
+    "ticker": "KHC",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "VeryLarge",
+    "bb_window": 5,
+    "bb_std": 1.0,
+    "peers": "$MDLZ $KHC $GIS $SPY",
+    "ror": 1.91,
     "entry_frequency": 4,
     "time_period": "day"
   },
@@ -996,7 +996,7 @@
     "bb_window": 11,
     "bb_std": 0.7,
     "peers": "$MHK $TPX $LEG $SPY",
-    "ror": 1.8,
+    "ror": 1.83,
     "entry_frequency": 3,
     "time_period": "day"
   },
@@ -1639,23 +1639,23 @@
     "time_period": "day"
   },
   {
-    "ticker": "WPC",
-    "sector": "Consumer Services",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": 0.1,
-    "peers": "$WPC $VER $STOR $SPY",
-    "ror": -0.64,
-    "entry_frequency": 1,
-    "time_period": "day"
-  },
-  {
     "ticker": "SWK",
     "sector": "Capital Goods",
     "mktcap": "VeryLarge",
     "bb_window": 9,
     "bb_std": 0.8,
     "peers": "$ITW $PH $SWK $SPY",
+    "ror": -0.67,
+    "entry_frequency": 1,
+    "time_period": "day"
+  },
+  {
+    "ticker": "WPC",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": 0.1,
+    "peers": "$WPC $VER $STOR $SPY",
     "ror": -0.67,
     "entry_frequency": 1,
     "time_period": "day"
@@ -1727,17 +1727,6 @@
     "time_period": "day"
   },
   {
-    "ticker": "VMW",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": 4,
-    "bb_std": 0.8,
-    "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": -0.87,
-    "entry_frequency": 1,
-    "time_period": "day"
-  },
-  {
     "ticker": "BAM",
     "sector": "Consumer Services",
     "mktcap": "VeryLarge",
@@ -1755,6 +1744,17 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BLK $BX $KKR $SPY",
+    "ror": -0.9,
+    "entry_frequency": 1,
+    "time_period": "day"
+  },
+  {
+    "ticker": "VMW",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": 4,
+    "bb_std": 0.8,
+    "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": -0.9,
     "entry_frequency": 1,
     "time_period": "day"

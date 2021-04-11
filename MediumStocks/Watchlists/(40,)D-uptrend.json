@@ -242,6 +242,17 @@
     "time_period": "day"
   },
   {
+    "ticker": "USX",
+    "sector": "Transportation",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 21.88,
+    "entry_frequency": 31,
+    "time_period": "day"
+  },
+  {
     "ticker": "PGC",
     "sector": "Finance",
     "mktcap": "Medium",

@@ -251,5 +251,16 @@
     "ror": -1.02,
     "entry_frequency": 2,
     "time_period": "day"
+  },
+  {
+    "ticker": "ATHX",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.3,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -1.6,
+    "entry_frequency": 2,
+    "time_period": "day"
   }
 ]

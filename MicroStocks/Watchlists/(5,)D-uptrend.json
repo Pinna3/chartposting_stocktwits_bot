@@ -209,6 +209,17 @@
     "time_period": "day"
   },
   {
+    "ticker": "RZA",
+    "sector": "Finance",
+    "mktcap": "Micro",
+    "bb_window": 13,
+    "bb_std": 0.9,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": -1.54,
+    "entry_frequency": 1,
+    "time_period": "day"
+  },
+  {
     "ticker": "BPYPP",
     "sector": "Finance",
     "mktcap": "Micro",
@@ -271,6 +282,17 @@
     "bb_std": 0.9,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -4.36,
+    "entry_frequency": 1,
+    "time_period": "day"
+  },
+  {
+    "ticker": "PFIN",
+    "sector": "Technology",
+    "mktcap": "Micro",
+    "bb_window": 14,
+    "bb_std": 1.0,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": -4.41,
     "entry_frequency": 1,
     "time_period": "day"
   },

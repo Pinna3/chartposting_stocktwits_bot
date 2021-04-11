@@ -26,7 +26,7 @@
     "sector": "Public Utilities",
     "mktcap": "Micro",
     "bb_window": 5,
-    "bb_std": 1.0,
+    "bb_std": 0.9,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 3.39,
     "entry_frequency": 6,

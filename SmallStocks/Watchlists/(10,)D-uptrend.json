@@ -278,7 +278,7 @@
     "ticker": "HIL",
     "sector": "Consumer Services",
     "mktcap": "Small",
-    "bb_window": 10,
+    "bb_window": 11,
     "bb_std": 0.1,
     "peers": "$950140.KQ $CSGP $VRSK $SPY",
     "ror": 3.09,

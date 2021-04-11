@@ -323,7 +323,7 @@
     "sector": "Transportation",
     "mktcap": "Small",
     "bb_window": 4,
-    "bb_std": 0.8,
+    "bb_std": 0.9,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 3.41,
     "entry_frequency": 6,

@@ -451,6 +451,17 @@
     "time_period": "day"
   },
   {
+    "ticker": "RPLA",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": 3,
+    "bb_std": 0.1,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": -0.53,
+    "entry_frequency": 2,
+    "time_period": "day"
+  },
+  {
     "ticker": "OSUR",
     "sector": "Health Care",
     "mktcap": "Medium",
@@ -513,17 +524,6 @@
     "bb_std": 0.7,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": -0.72,
-    "entry_frequency": 2,
-    "time_period": "day"
-  },
-  {
-    "ticker": "RPLA",
-    "sector": "Finance",
-    "mktcap": "Medium",
-    "bb_window": 3,
-    "bb_std": 0.1,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": -0.95,
     "entry_frequency": 2,
     "time_period": "day"
   },
@@ -674,7 +674,7 @@
     "ticker": "IMUX",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 3,
+    "bb_window": 4,
     "bb_std": 0.1,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": -1.95,
@@ -740,8 +740,8 @@
     "ticker": "SPPI",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 2,
-    "bb_std": 0.8,
+    "bb_window": 4,
+    "bb_std": 0.5,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": -2.6,
     "entry_frequency": 2,
