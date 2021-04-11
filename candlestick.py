@@ -155,7 +155,8 @@ class SecurityTradeData:
     #counts number of bollinger interceptions (i.e. entries for use in optimization)
     #use op_str '>' for uptrend and op_str '<' for downtrend
     ###MAKE FASTER
-    def entry_counter(self, op_str):
+    #Remember entry count is limited by average time variable, eliminates repeats (consider removing or implementing average variable)
+    def entry_counter_bollingers(self, op_str):
         dataframe = self.df
         entries = []
         repeats = []
@@ -173,10 +174,51 @@ class SecurityTradeData:
             bollinger = 'lower'
         if op_str == '<':
             bollinger = 'upper'
-
+        #ignoring other sma9 >/< sma20 >/< sma50 >/< sma200 condtion for now (HYPOTHESIS: UNNECESSARY IN CURRENT OPERATING CONTEXT)
         for index, row in dataframe.iterrows():
-            if op_reversed_func(row[h_or_l], row[bollinger]) and op_func(row['sma9'], row['sma20']) \
-                and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
+            if op_reversed_func(row[h_or_l], row[bollinger]):# and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
+                entries.append(index)
+        total = len(entries)
+        i = 0
+        while i < len(entries):
+            try:
+                if entries[i] - entries[i + 1] == -1:
+                    entries.remove(entries[i])
+                    repeats.append(i)
+                    groupings.add(i)
+                    i -= 1
+                else:
+                    i += 1
+            except IndexError:
+                break
+        sum = 0
+        for grouping in groupings:
+            sum += repeats.count(grouping)
+        sum += len(entries) - len(repeats)
+        try:
+            average = total / sum
+        except ZeroDivisionError:
+            return [0, 0]
+        return [sum, average]
+
+    #Remember entry count is limited by average time variable, eliminates repeats (consider removing or implementing average variable)
+    def entry_counter_200sma_double_agent(self, op_str):
+        dataframe = self.df
+        entries = []
+        repeats = []
+        groupings = set()
+
+        ops = {"<": operator.lt, ">": operator.gt}
+        op_func = ops[op_str]
+        ops_reversed = {">": operator.lt, "<": operator.gt}
+        op_reversed_func = ops_reversed[op_str]
+        if op_str == '>':
+            h_or_l = 'l'
+        if op_str == '<':
+            h_or_l = 'h'
+        #ignoring other sma9 >/< sma20 >/< sma50 >/< sma200 condtion for now (HYPOTHESIS: UNNECESSARY IN CURRENT OPERATING CONTEXT)
+        for index, row in dataframe.iterrows():
+            if op_reversed_func(row[h_or_l], row['sma200']):# and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']):
                 entries.append(index)
         total = len(entries)
         i = 0
@@ -243,7 +285,8 @@ def pandas_atr_calculation(df, window=14):
     return wilder_ema(true_range, window)
 
 test = SecurityTradeData('LB', atr_rolling_window=14)
-# test.sma200_double_agent_activate(3)
-test.chart(120)
+test.sma200_double_agent_activate(2)
+test.chart(281)
 print(test.df)
+print(test.entry_counter_200sma_double_agent('>'))
 # print(test.df.iloc[-1])

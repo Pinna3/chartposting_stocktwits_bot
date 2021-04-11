@@ -21,7 +21,7 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency,
             try:
                 candles.custom_bollingers(rolling_window, 1)
                 rolling_window_and_counter.append([rolling_window, \
-                    candles.entry_counter(op_str)])
+                    candles.entry_counter_bollingers(op_str)])
                 # print(rolling_window_and_counter[index])
             except:
                 continue
@@ -39,7 +39,7 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency,
         for index, std in enumerate(std_range):
             try:
                 candles.custom_bollingers(rolling_window, std)
-                std_and_counter.append([std, candles.entry_counter(op_str)])
+                std_and_counter.append([std, candles.entry_counter_bollingers(op_str)])
                 # print(std_and_counter[index])
             except:
                 continue
