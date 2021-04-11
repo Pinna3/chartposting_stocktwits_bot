@@ -176,7 +176,7 @@ class SecurityTradeData:
             bollinger = 'upper'
         #ignoring other sma9 >/< sma20 >/< sma50 >/< sma200 condtion for now (HYPOTHESIS: UNNECESSARY IN CURRENT OPERATING CONTEXT)
         for index, row in dataframe.iterrows():
-            if op_reversed_func(row[h_or_l], row[bollinger]):# and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
+            if op_reversed_func(row[h_or_l], row[bollinger]) and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
                 entries.append(index)
         total = len(entries)
         i = 0
@@ -221,7 +221,7 @@ class SecurityTradeData:
             bollinger = 'upper'
         #ignoring other sma9 >/< sma20 >/< sma50 >/< sma200 condtion for now (HYPOTHESIS: UNNECESSARY IN CURRENT OPERATING CONTEXT)
         for index, row in dataframe.iterrows():
-            if op_reversed_func(row[h_or_l], row[bollinger]):# and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
+            if op_reversed_func(row[h_or_l], row[bollinger]) and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']) and op_func(row['sma50'], row['sma200']):
                 entries.append(index)
         total = len(entries)
         return total

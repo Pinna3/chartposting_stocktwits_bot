@@ -15,7 +15,7 @@
     "sector": "Technology",
     "mktcap": "VeryLarge",
     "bb_window": 3,
-    "bb_std": 1.0,
+    "bb_std": 0.1,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 33.28,
     "entry_frequency": 46,
