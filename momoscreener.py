@@ -2,7 +2,7 @@ import finnhub
 import csv
 from time import sleep
 from candlestick import SecurityTradeData, LiteSecurityTradeData
-from utility_func import bb_param_optomizer, make_pulled_csv_list_consumable
+from utility_func import bb_param_optomizer_WITH_average, bb_param_optomizer_WITHOUT_average, make_pulled_csv_list_consumable
 import json
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
@@ -70,12 +70,12 @@ class Securities:
                             else:
                                 entry_frequency = int(ror_prioritization_factor)
                             sma200_double_agent_window = None
-                            bb_window, bb_std = bb_param_optomizer(candle_object, op_str, entry_frequency)
+                            bb_window, bb_std = bb_param_optomizer_WITH_average(candle_object, op_str, entry_frequency)
                             trending.append({'ticker': candle_object.ticker, 'sector': candle_object.sector,
                                             'mktcap': candle_object.mktcap, 'bb_window': bb_window,
                                             'bb_std': bb_std, 'peers': candle_object.peers, 'ror': ror,
                                             'entry_frequency': entry_frequency, '200sma_double_agent': sma200_double_agent_window})
-
+                            #If std == .1 (lowest) use sma200 double agent as a backup too fill in the gaps. run through regular cycle then sma200 cycle
                             candle_object.df.to_csv(f"{mktcap_group}Stocks/Dataframes/{candle_object.ticker}.csv")
                 # except:
                 #     continue
@@ -237,38 +237,38 @@ class LiteSecurities(Securities):
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='<', mktcap_group='Large', ror_prioritization_factor=2.0)
 # list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='<', mktcap_group='Large', ror_prioritization_factor=2.0)
 # list = Securities('StockLists/VeryLarge>$10B.csv')
-# # list = Securities('StockLists/verylargesample.csv')
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
-# list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list = Securities('StockLists/verylargesample.csv')
+list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1.35)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
+list.trend_9SMA_20SMA_50SMA_200SMA(1, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=2.0)
