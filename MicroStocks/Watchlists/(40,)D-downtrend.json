@@ -3,11 +3,11 @@
     "ticker": "WINT",
     "sector": "Health Care",
     "mktcap": "Micro",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 55.35,
-    "entry_frequency": 112,
-    "time_period": "day"
+    "entry_frequency": 56,
+    "200sma_double_agent": 2
   }
 ]

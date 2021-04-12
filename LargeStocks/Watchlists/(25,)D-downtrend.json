@@ -3,56 +3,56 @@
     "ticker": "AXSM",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 17.52,
-    "entry_frequency": 36,
-    "time_period": "day"
+    "entry_frequency": 19,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "SRPT",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 15.6,
-    "entry_frequency": 32,
-    "time_period": "day"
+    "entry_frequency": 17,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "QDEL",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$950130.KQ $ALGN $WST $SPY",
     "ror": 15.38,
-    "entry_frequency": 32,
-    "time_period": "day"
+    "entry_frequency": 16,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "MOR",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 2,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": 7.47,
-    "entry_frequency": 16,
-    "time_period": "day"
+    "entry_frequency": 8,
+    "200sma_double_agent": 15
   },
   {
     "ticker": "GLPG",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 6.91,
-    "entry_frequency": 15,
-    "time_period": "day"
+    "entry_frequency": 8,
+    "200sma_double_agent": 14
   },
   {
     "ticker": "GBT",
@@ -63,17 +63,17 @@
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 0.05,
     "entry_frequency": 1,
-    "time_period": "day"
+    "200sma_double_agent": 40
   },
   {
     "ticker": "AYX",
     "sector": "Technology",
     "mktcap": "Large",
-    "bb_window": 6,
-    "bb_std": 0.9,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": -1.17,
-    "entry_frequency": 2,
-    "time_period": "day"
+    "entry_frequency": 1,
+    "200sma_double_agent": 31
   }
 ]

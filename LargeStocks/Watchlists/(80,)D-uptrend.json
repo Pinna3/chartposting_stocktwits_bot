@@ -3,55 +3,55 @@
     "ticker": "ORGO",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 330.53,
-    "entry_frequency": 447,
-    "time_period": "day"
+    "entry_frequency": 332,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "SGRY",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 73.03,
-    "entry_frequency": 100,
-    "time_period": "day"
+    "entry_frequency": 74,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "SLM",
     "sector": "Finance",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 59.72,
-    "entry_frequency": 82,
-    "time_period": "day"
+    "entry_frequency": 61,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "EXP",
     "sector": "Capital Goods",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$VMC $MLM $EXP $SPY",
     "ror": 41.64,
-    "entry_frequency": 57,
-    "time_period": "day"
+    "entry_frequency": 43,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "STN",
     "sector": "Consumer Services",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 36.0,
-    "entry_frequency": 50,
-    "time_period": "day"
+    "entry_frequency": 37,
+    "200sma_double_agent": 8
   }
 ]

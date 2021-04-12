@@ -268,7 +268,7 @@ class SecurityTradeData:
             return [0, 0]
         return [sum, average]
 
-    def entry_counter_200sma_double_agent_WITHOUT_average(self, op_str):
+    def entry_counter_200sma_double_agent_WITHOUT_average(self, op_str, timebar):
         dataframe = self.df
         entries = []
         repeats = []
@@ -283,7 +283,7 @@ class SecurityTradeData:
         if op_str == '<':
             h_or_l = 'h'
         #ignoring other sma9 >/< sma20 >/< sma50 >/< sma200 condtion for now (HYPOTHESIS: UNNECESSARY IN CURRENT OPERATING CONTEXT)
-        for index, row in dataframe.iterrows():
+        for index, row in dataframe.iloc[-timebar:].iterrows():
             if op_reversed_func(row[h_or_l], row['sma200']):# and op_func(row['sma9'], row['sma20']) and op_func(row['sma20'], row['sma50']):
                 entries.append(index)
         total = len(entries)
@@ -301,7 +301,8 @@ class LiteSecurityTradeData(SecurityTradeData):
         self.peers = consumable_item[4]
         self.mktcap = consumable_item[1]
         self.smoothness = consumable_item[3]
-        df = consumable_item[5]
+        self.sma200_double_agent = consumable_item[5]
+        df = consumable_item[6]
         df['sma9'] = round(df.c.rolling(window=9, min_periods=9).mean(), 2)
         df['sma20'] = round(df.c.rolling(window=20, min_periods=20).mean(), 2)
         df['sma50'] = round(df.c.rolling(window=50, min_periods=50).mean(), 2)

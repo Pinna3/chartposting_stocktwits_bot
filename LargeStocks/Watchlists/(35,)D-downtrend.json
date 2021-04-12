@@ -3,22 +3,22 @@
     "ticker": "SRPT",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 16.19,
-    "entry_frequency": 33,
-    "time_period": "day"
+    "entry_frequency": 17,
+    "200sma_double_agent": 12
   },
   {
     "ticker": "GLPG",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 9.8,
-    "entry_frequency": 21,
-    "time_period": "day"
+    "entry_frequency": 11,
+    "200sma_double_agent": 13
   }
 ]

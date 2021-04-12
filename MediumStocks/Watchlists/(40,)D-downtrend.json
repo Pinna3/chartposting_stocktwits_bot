@@ -3,22 +3,22 @@
     "ticker": "QTNT",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
     "ror": 22.27,
-    "entry_frequency": 46,
-    "time_period": "day"
+    "entry_frequency": 23,
+    "200sma_double_agent": 11
   },
   {
     "ticker": "EPZM",
     "sector": "Health Care",
     "mktcap": "Medium",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 22.15,
-    "entry_frequency": 45,
-    "time_period": "day"
+    "entry_frequency": 23,
+    "200sma_double_agent": 7
   }
 ]

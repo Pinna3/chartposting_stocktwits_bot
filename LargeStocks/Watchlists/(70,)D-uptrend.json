@@ -3,99 +3,99 @@
     "ticker": "ORGO",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 208.12,
-    "entry_frequency": 282,
-    "time_period": "day"
+    "entry_frequency": 209,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "SLM",
     "sector": "Finance",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 60.8,
-    "entry_frequency": 83,
-    "time_period": "day"
+    "entry_frequency": 62,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "SGRY",
     "sector": "Health Care",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 60.72,
-    "entry_frequency": 83,
-    "time_period": "day"
+    "entry_frequency": 62,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "FIX",
     "sector": "Capital Goods",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 46.49,
-    "entry_frequency": 64,
-    "time_period": "day"
+    "entry_frequency": 47,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "EXP",
     "sector": "Capital Goods",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$VMC $MLM $EXP $SPY",
     "ror": 38.26,
-    "entry_frequency": 53,
-    "time_period": "day"
+    "entry_frequency": 39,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "CNX",
     "sector": "Energy",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 36.45,
-    "entry_frequency": 50,
-    "time_period": "day"
+    "entry_frequency": 37,
+    "200sma_double_agent": 18
   },
   {
     "ticker": "STN",
     "sector": "Consumer Services",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 33.88,
-    "entry_frequency": 47,
-    "time_period": "day"
+    "entry_frequency": 35,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "MMS",
     "sector": "Miscellaneous",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 28.14,
-    "entry_frequency": 39,
-    "time_period": "day"
+    "entry_frequency": 29,
+    "200sma_double_agent": 14
   },
   {
     "ticker": "NSA",
     "sector": "Consumer Services",
     "mktcap": "Large",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 18.19,
-    "entry_frequency": 26,
-    "time_period": "day"
+    "entry_frequency": 19,
+    "200sma_double_agent": 25
   }
 ]

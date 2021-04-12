@@ -3,88 +3,88 @@
     "ticker": "STKS",
     "sector": "Consumer Services",
     "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 125.88,
-    "entry_frequency": 171,
-    "time_period": "day"
+    "entry_frequency": 127,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "HQI",
     "sector": "Technology",
     "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 104.68,
-    "entry_frequency": 142,
-    "time_period": "day"
+    "entry_frequency": 106,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "GTIM",
     "sector": "Consumer Services",
     "mktcap": "Small",
-    "bb_window": 2,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 68.38,
-    "entry_frequency": 93,
-    "time_period": "day"
+    "entry_frequency": 69,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "INTT",
     "sector": "Capital Goods",
     "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 65.82,
-    "entry_frequency": 90,
-    "time_period": "day"
+    "entry_frequency": 67,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "PMBC",
     "sector": "Finance",
     "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 62.11,
-    "entry_frequency": 85,
-    "time_period": "day"
+    "entry_frequency": 63,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "BRBS",
     "sector": "Finance",
     "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 25.28,
-    "entry_frequency": 35,
-    "time_period": "day"
+    "entry_frequency": 26,
+    "200sma_double_agent": 16
   },
   {
     "ticker": "MNSB",
     "sector": "Finance",
     "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 18.49,
-    "entry_frequency": 26,
-    "time_period": "day"
+    "entry_frequency": 19,
+    "200sma_double_agent": 23
   },
   {
     "ticker": "ESXB",
     "sector": "Finance",
     "mktcap": "Small",
-    "bb_window": 3,
-    "bb_std": 0.1,
+    "bb_window": null,
+    "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 18.47,
-    "entry_frequency": 26,
-    "time_period": "day"
+    "entry_frequency": 19,
+    "200sma_double_agent": 15
   }
 ]

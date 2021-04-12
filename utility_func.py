@@ -99,23 +99,20 @@ def bb_param_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_fr
     bb_std = optimal_bb_std(bb_window, op_str, entry_frequency, timebar)
     return bb_window, bb_std
 
-def sm200doubleagent_window_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_frequency,
-                       window_range=range(2, 11)):
+def sm200doubleagent_window_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_frequency, timebar,
+                       window_range=range(2, 201)):
     candles = SecurityTradeDataObject
     window_and_counter = []
     for index, window in enumerate(window_range):
         # try:
         candles.sma200_double_agent_activate(window)
-        window_and_counter.append([window, candles.entry_counter_200sma_double_agent_WITHOUT_average(op_str)])
+        window_and_counter.append([window, candles.entry_counter_200sma_double_agent_WITHOUT_average(op_str, timebar)])
         # except:
         #     continue
     entry_frequency_range = sorted([x for x in range(1, entry_frequency + 1)], reverse=True)
     for counter in window_and_counter:
         for entries in entry_frequency_range:
             if counter[1] <= entry_frequency and counter[1] <= entries:
-                # print(counter[1])
-                # print(counter[0])
-                # print(entries)
                 window = counter[0]
                 candles.sma200_double_agent_activate(200)
                 return window
@@ -338,6 +335,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     sectors = [stock.split(',')[8].strip() for stock in stocks[1:]]
     smoothness_tests = [stock.split(',')[10].strip() for stock in stocks[1:]]
     peers = [stock.split(',')[11].strip() for stock in stocks[1:]]
+    sma200_double_agent = None
     #15 allows us to handle up to 3000 stocks without complications
     batch = len(symbols) // 15
     remainder = len(symbols) % 15
@@ -347,6 +345,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     remainder_sector = sectors[-remainder:]
     remainder_smoothness_test = smoothness_tests[-remainder:]
     remainder_peers = peers[-remainder:]
+    # remainder_sma200_double_agent = [None for sma200_double_agent in range(remainder)]
     remainder_batch = ','.join(remainder_reference)
     remainder_data = return_candles_json(remainder_batch, period_len='day', num_bars=281)
     #iterable list with retrievable values
@@ -370,7 +369,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
         df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
         df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
         df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
-        remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], remainder_peers[index], df])
+        remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], remainder_peers[index], sma200_double_agent, df])
     total_batch_df_list = []
     for batch_num in range(1, 16):
         symbol_reference = symbols[(batch_num - 1)*batch: batch_num*batch]
@@ -378,6 +377,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
         batch_sector = sectors[(batch_num - 1)*batch: batch_num*batch]
         batch_smoothness_test = smoothness_tests[(batch_num - 1)*batch: batch_num*batch]
         batch_peers = peers[(batch_num - 1)*batch: batch_num*batch]
+        # batch_sma200_double_agent = [None for sma200_double_agent in range(batch)]
         symbol_batch = ','.join(symbol_reference)
         batch_data = return_candles_json(symbol_batch, period_len='day', num_bars=281)
         #iterable list with retrievable values
@@ -401,7 +401,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
             df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
             df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
             df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
-            batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], batch_peers[index], df])
+            batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], batch_peers[index], sma200_double_agent, df])
         for item in batch_df_list:
             if item not in total_batch_df_list:
                 total_batch_df_list.append(item)
