@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 9.84,
-    "entry_frequency": 11,
+    "entry_frequency": 21,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$WM $RSG $ROL $SPY",
     "ror": 3.8,
-    "entry_frequency": 5,
+    "entry_frequency": 9,
     "200sma_double_agent": 2
   },
   {
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 3.12,
-    "entry_frequency": 4,
+    "entry_frequency": 7,
     "200sma_double_agent": 2
   },
   {
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 2.01,
-    "entry_frequency": 3,
+    "entry_frequency": 5,
     "200sma_double_agent": 2
   },
   {
@@ -51,7 +51,7 @@
     "bb_std": null,
     "peers": "$SCR.TO $IMAX $CGX.TO $SPY",
     "ror": 1.93,
-    "entry_frequency": 3,
+    "entry_frequency": 5,
     "200sma_double_agent": 2
   },
   {
@@ -62,7 +62,7 @@
     "bb_std": null,
     "peers": "$BPY $H78.SI $ROM.OL $SPY",
     "ror": 1.05,
-    "entry_frequency": 2,
+    "entry_frequency": 3,
     "200sma_double_agent": 2
   },
   {
@@ -73,7 +73,7 @@
     "bb_std": null,
     "peers": "$BPY $H78.SI $ROM.OL $SPY",
     "ror": 0.91,
-    "entry_frequency": 2,
+    "entry_frequency": 3,
     "200sma_double_agent": 2
   },
   {
@@ -84,7 +84,18 @@
     "bb_std": null,
     "peers": "$D $SRE $PEG $SPY",
     "ror": 0.42,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "RZA",
+    "sector": "Finance",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 0.37,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -95,7 +106,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.35,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -106,7 +117,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.28,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -117,7 +128,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.25,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -161,7 +172,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.0,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -172,7 +183,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.0,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -183,7 +194,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.01,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -194,7 +205,7 @@
     "bb_std": null,
     "peers": "$NEE $DUK $SO $SPY",
     "ror": -0.04,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -205,7 +216,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.08,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -216,7 +227,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.09,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -227,7 +238,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.11,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -238,7 +249,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.13,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -249,7 +260,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.16,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -260,7 +271,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.2,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -271,7 +282,7 @@
     "bb_std": null,
     "peers": "$SHW $ECL $DD $SPY",
     "ror": -0.3,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -282,7 +293,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.36,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -293,7 +304,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.45,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -304,7 +315,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.53,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -315,7 +326,7 @@
     "bb_std": null,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": -0.54,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -326,7 +337,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.61,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -337,7 +348,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.73,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -348,7 +359,7 @@
     "bb_std": null,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": -0.91,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -359,7 +370,7 @@
     "bb_std": null,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": -2.46,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   },
   {
@@ -370,7 +381,7 @@
     "bb_std": null,
     "peers": "$327.HK $3393.HK $31.HK $SPY",
     "ror": -3.66,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 2
   }
 ]

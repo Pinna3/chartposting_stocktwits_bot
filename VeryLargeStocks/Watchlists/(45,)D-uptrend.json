@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 64.16,
-    "entry_frequency": 643,
+    "entry_frequency": 129,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 25.3,
-    "entry_frequency": 254,
+    "entry_frequency": 52,
     "200sma_double_agent": 2
   },
   {
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 24.92,
-    "entry_frequency": 250,
+    "entry_frequency": 51,
     "200sma_double_agent": 2
   },
   {
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 21.53,
-    "entry_frequency": 216,
-    "200sma_double_agent": 2
+    "entry_frequency": 44,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "EXR",
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 17.94,
-    "entry_frequency": 180,
-    "200sma_double_agent": 2
+    "entry_frequency": 37,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "IRM",
@@ -62,8 +62,8 @@
     "bb_std": null,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 16.94,
-    "entry_frequency": 170,
-    "200sma_double_agent": 2
+    "entry_frequency": 35,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "PSA",
@@ -73,8 +73,8 @@
     "bb_std": null,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 11.65,
-    "entry_frequency": 118,
-    "200sma_double_agent": 2
+    "entry_frequency": 24,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "WU",
@@ -84,7 +84,7 @@
     "bb_std": null,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 8.61,
-    "entry_frequency": 87,
-    "200sma_double_agent": 2
+    "entry_frequency": 18,
+    "200sma_double_agent": 16
   }
 ]

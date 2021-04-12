@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 131.03,
-    "entry_frequency": 132,
+    "entry_frequency": 263,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 33.28,
-    "entry_frequency": 34,
-    "200sma_double_agent": 8
+    "entry_frequency": 68,
+    "200sma_double_agent": 2
   }
 ]

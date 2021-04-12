@@ -7,8 +7,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 16.19,
-    "entry_frequency": 17,
-    "200sma_double_agent": 12
+    "entry_frequency": 33,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "GLPG",
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 9.8,
-    "entry_frequency": 11,
-    "200sma_double_agent": 13
+    "entry_frequency": 21,
+    "200sma_double_agent": 6
   }
 ]

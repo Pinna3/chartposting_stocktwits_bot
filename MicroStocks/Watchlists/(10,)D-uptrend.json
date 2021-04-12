@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$WM $RSG $ROL $SPY",
     "ror": 10.81,
-    "entry_frequency": 12,
+    "entry_frequency": 23,
     "200sma_double_agent": 2
   },
   {
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 7.97,
-    "entry_frequency": 9,
-    "200sma_double_agent": 4
+    "entry_frequency": 17,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "GFLU",
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": 3.39,
-    "entry_frequency": 4,
-    "200sma_double_agent": 5
+    "entry_frequency": 8,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "BPYPN",
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 3.31,
-    "entry_frequency": 4,
-    "200sma_double_agent": 7
+    "entry_frequency": 8,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "FBIOP",
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 2.66,
-    "entry_frequency": 4,
-    "200sma_double_agent": 5
+    "entry_frequency": 6,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "DTP",
@@ -62,8 +62,8 @@
     "bb_std": null,
     "peers": "$D $SRE $PEG $SPY",
     "ror": 1.38,
-    "entry_frequency": 2,
-    "200sma_double_agent": 10
+    "entry_frequency": 4,
+    "200sma_double_agent": 6
   },
   {
     "ticker": "SREA",
@@ -73,7 +73,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.91,
-    "entry_frequency": 2,
+    "entry_frequency": 3,
     "200sma_double_agent": 8
   },
   {
@@ -84,8 +84,8 @@
     "bb_std": null,
     "peers": "$SCR.TO $IMAX $CGX.TO $SPY",
     "ror": 0.82,
-    "entry_frequency": 2,
-    "200sma_double_agent": 20
+    "entry_frequency": 3,
+    "200sma_double_agent": 18
   },
   {
     "ticker": "BPYPP",
@@ -106,7 +106,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.38,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 11
   },
   {
@@ -150,8 +150,8 @@
     "bb_std": null,
     "peers": "$SHW $ECL $DD $SPY",
     "ror": -0.18,
-    "entry_frequency": 1,
-    "200sma_double_agent": 19
+    "entry_frequency": 2,
+    "200sma_double_agent": 11
   },
   {
     "ticker": "AFINP",
@@ -161,8 +161,8 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.58,
-    "entry_frequency": 1,
-    "200sma_double_agent": 36
+    "entry_frequency": 2,
+    "200sma_double_agent": 27
   },
   {
     "ticker": "CMSC",
@@ -172,8 +172,8 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -0.68,
-    "entry_frequency": 1,
-    "200sma_double_agent": 26
+    "entry_frequency": 2,
+    "200sma_double_agent": 23
   },
   {
     "ticker": "HOVNP",
@@ -183,7 +183,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": -2.76,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 25
   }
 ]

@@ -7,8 +7,8 @@
     "bb_std": null,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 46.75,
-    "entry_frequency": 48,
-    "200sma_double_agent": 6
+    "entry_frequency": 94,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "PLYM",
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 16.1,
-    "entry_frequency": 17,
-    "200sma_double_agent": 24
+    "entry_frequency": 33,
+    "200sma_double_agent": 17
   }
 ]

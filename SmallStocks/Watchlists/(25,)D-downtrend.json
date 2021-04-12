@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$CHGG $BFAM $LOPE $SPY",
     "ror": 32.17,
-    "entry_frequency": 33,
+    "entry_frequency": 65,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 24.96,
-    "entry_frequency": 26,
+    "entry_frequency": 51,
     "200sma_double_agent": 2
   },
   {
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 22.5,
-    "entry_frequency": 24,
+    "entry_frequency": 46,
     "200sma_double_agent": 2
   },
   {
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 13.77,
-    "entry_frequency": 15,
-    "200sma_double_agent": 7
+    "entry_frequency": 29,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "CALA",
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 10.99,
-    "entry_frequency": 12,
-    "200sma_double_agent": 7
+    "entry_frequency": 23,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "BFRA",
@@ -62,8 +62,8 @@
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": 7.53,
-    "entry_frequency": 9,
-    "200sma_double_agent": 18
+    "entry_frequency": 16,
+    "200sma_double_agent": 12
   },
   {
     "ticker": "PSTI",
@@ -73,8 +73,8 @@
     "bb_std": null,
     "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
     "ror": 5.01,
-    "entry_frequency": 6,
-    "200sma_double_agent": 16
+    "entry_frequency": 11,
+    "200sma_double_agent": 14
   },
   {
     "ticker": "CHMA",
@@ -84,8 +84,8 @@
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 2.61,
-    "entry_frequency": 4,
-    "200sma_double_agent": 16
+    "entry_frequency": 6,
+    "200sma_double_agent": 15
   },
   {
     "ticker": "OPTN",

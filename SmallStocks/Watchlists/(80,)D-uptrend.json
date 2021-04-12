@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 157.89,
-    "entry_frequency": 159,
+    "entry_frequency": 317,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 114.72,
-    "entry_frequency": 116,
+    "entry_frequency": 230,
     "200sma_double_agent": 2
   },
   {
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 26.7,
-    "entry_frequency": 28,
-    "200sma_double_agent": 20
+    "entry_frequency": 54,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "ESXB",
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 23.18,
-    "entry_frequency": 24,
-    "200sma_double_agent": 20
+    "entry_frequency": 47,
+    "200sma_double_agent": 9
   }
 ]

@@ -7,8 +7,8 @@
     "bb_std": null,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
     "ror": 6.14,
-    "entry_frequency": 7,
-    "200sma_double_agent": 12
+    "entry_frequency": 13,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "LFC",
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$601318.SS $601628.SS $601336.SS $SPY",
     "ror": 3.68,
-    "entry_frequency": 5,
-    "200sma_double_agent": 11
+    "entry_frequency": 8,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "SGEN",
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 1.82,
-    "entry_frequency": 3,
-    "200sma_double_agent": 21
+    "entry_frequency": 5,
+    "200sma_double_agent": 20
   }
 ]

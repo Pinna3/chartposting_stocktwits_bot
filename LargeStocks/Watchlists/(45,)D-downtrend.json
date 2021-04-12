@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 25.18,
-    "entry_frequency": 26,
-    "200sma_double_agent": 9
+    "entry_frequency": 51,
+    "200sma_double_agent": 2
   }
 ]

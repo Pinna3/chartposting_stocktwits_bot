@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 330.53,
-    "entry_frequency": 332,
+    "entry_frequency": 662,
     "200sma_double_agent": 2
   },
   {
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 73.03,
-    "entry_frequency": 74,
-    "200sma_double_agent": 3
+    "entry_frequency": 147,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "SLM",
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 59.72,
-    "entry_frequency": 61,
-    "200sma_double_agent": 4
+    "entry_frequency": 120,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "EXP",
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$VMC $MLM $EXP $SPY",
     "ror": 41.64,
-    "entry_frequency": 43,
-    "200sma_double_agent": 7
+    "entry_frequency": 84,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "STN",
@@ -51,7 +51,7 @@
     "bb_std": null,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 36.0,
-    "entry_frequency": 37,
-    "200sma_double_agent": 8
+    "entry_frequency": 73,
+    "200sma_double_agent": 3
   }
 ]

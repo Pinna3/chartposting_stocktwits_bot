@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 25.12,
-    "entry_frequency": 26,
+    "entry_frequency": 51,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 16.88,
-    "entry_frequency": 18,
+    "entry_frequency": 35,
     "200sma_double_agent": 2
   },
   {
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 13.19,
-    "entry_frequency": 14,
-    "200sma_double_agent": 3
+    "entry_frequency": 27,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "FOLD",
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 9.66,
-    "entry_frequency": 11,
-    "200sma_double_agent": 5
+    "entry_frequency": 20,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "QDEL",
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$950130.KQ $ALGN $WST $SPY",
     "ror": 6.36,
-    "entry_frequency": 7,
-    "200sma_double_agent": 13
+    "entry_frequency": 14,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "IRTC",
@@ -62,8 +62,8 @@
     "bb_std": null,
     "peers": "$ABT $DHR $SYK $SPY",
     "ror": 6.0,
-    "entry_frequency": 7,
-    "200sma_double_agent": 21
+    "entry_frequency": 13,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "GLPG",
@@ -73,8 +73,8 @@
     "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 5.2,
-    "entry_frequency": 6,
-    "200sma_double_agent": 13
+    "entry_frequency": 11,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "GBT",
@@ -84,8 +84,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 4.77,
-    "entry_frequency": 6,
-    "200sma_double_agent": 27
+    "entry_frequency": 11,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "MOR",
@@ -95,8 +95,8 @@
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": 3.76,
-    "entry_frequency": 5,
-    "200sma_double_agent": 12
+    "entry_frequency": 9,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "OCFT",
@@ -117,8 +117,8 @@
     "bb_std": null,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": -1.02,
-    "entry_frequency": 1,
-    "200sma_double_agent": 31
+    "entry_frequency": 2,
+    "200sma_double_agent": 30
   },
   {
     "ticker": "TREE",
@@ -128,7 +128,7 @@
     "bb_std": null,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": -1.09,
-    "entry_frequency": 1,
-    "200sma_double_agent": 30
+    "entry_frequency": 2,
+    "200sma_double_agent": 29
   }
 ]

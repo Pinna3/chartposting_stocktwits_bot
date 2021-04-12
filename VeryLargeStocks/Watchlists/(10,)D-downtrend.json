@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$601318.SS $601628.SS $601336.SS $SPY",
     "ror": 1.64,
-    "entry_frequency": 3,
+    "entry_frequency": 4,
     "200sma_double_agent": 13
   },
   {
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
     "ror": 1.03,
-    "entry_frequency": 2,
-    "200sma_double_agent": 14
+    "entry_frequency": 3,
+    "200sma_double_agent": 12
   },
   {
     "ticker": "BKI",
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$V $MA $PYPL $SPY",
     "ror": -0.33,
-    "entry_frequency": 1,
+    "entry_frequency": 2,
     "200sma_double_agent": 33
   },
   {
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": -3.08,
-    "entry_frequency": 1,
-    "200sma_double_agent": 34
+    "entry_frequency": 2,
+    "200sma_double_agent": 33
   }
 ]

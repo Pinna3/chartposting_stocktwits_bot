@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 21.52,
-    "entry_frequency": 23,
-    "200sma_double_agent": 22
+    "entry_frequency": 44,
+    "200sma_double_agent": 12
   }
 ]

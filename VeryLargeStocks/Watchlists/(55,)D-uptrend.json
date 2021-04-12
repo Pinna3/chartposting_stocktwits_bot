@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 94.67,
-    "entry_frequency": 96,
+    "entry_frequency": 190,
     "200sma_double_agent": 2
   },
   {
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$MSFT $ORCL $NOW $SPY",
     "ror": 31.19,
-    "entry_frequency": 32,
-    "200sma_double_agent": 5
+    "entry_frequency": 63,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "HPE",
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 28.47,
-    "entry_frequency": 29,
-    "200sma_double_agent": 9
+    "entry_frequency": 58,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "IRM",
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$AMT $CCI $EQIX $SPY",
     "ror": 23.43,
-    "entry_frequency": 24,
-    "200sma_double_agent": 13
+    "entry_frequency": 48,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "WU",
@@ -51,7 +51,7 @@
     "bb_std": null,
     "peers": "$V $MA $PYPL $SPY",
     "ror": 13.29,
-    "entry_frequency": 14,
-    "200sma_double_agent": 24
+    "entry_frequency": 28,
+    "200sma_double_agent": 11
   }
 ]
