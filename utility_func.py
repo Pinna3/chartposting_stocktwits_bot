@@ -119,8 +119,15 @@ def sm200doubleagent_window_optomizer_WITHOUT_average(SecurityTradeDataObject, o
     candles.sma200_double_agent_activate(200)
     return None
 
-def graph_degrees_of_trend(mktcap_dir, down_or_up_str, *time_markers):
+def generate_list_of_time_markers(title_time_marker, increment=5):
+    head_timebar = title_time_marker
+    initial_timebar = [1]
+    [initial_timebar.append(timebar*increment) for timebar in range(1, int(head_timebar/increment+1))]
+    return initial_timebar
+
+def graph_degrees_of_trend(mktcap_dir, down_or_up_str, title_time_marker):
     hits = []
+    time_markers = generate_list_of_time_markers(title_time_marker)
     for period in time_markers:
         with open(f'{mktcap_dir}Stocks/Watchlists/({period},)D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
@@ -135,8 +142,9 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, *time_markers):
     fig.show()
     return f'{mktcap_dir} {down_or_up_str}trend'
 
-def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, *time_markers, interval=5):
+def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_marker, interval=5):
     hits = []
+    time_markers = generate_list_of_time_markers(title_time_marker)
     for period in time_markers:
         with open(f'{mktcap_dir}Stocks/Watchlists/({period},)D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
@@ -183,8 +191,8 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, *time_markers, 
 #trend = 'up', 'down'
 #*time_markers = 1, 5, 10, 15, 20, 25, ... etc
 #interval = time between time_markers
-def rank_dropoffs(mktcap_group, trend, *time_markers, interval=5):
-    dropoffs_s = calculate_and_file_dropoff_rates(mktcap_group, trend, *time_markers, interval)
+def rank_dropoffs(mktcap_group, trend, title_time_marker, interval=5):
+    dropoffs_s = calculate_and_file_dropoff_rates(mktcap_group, trend, title_time_marker, interval)
     ranking = []
     ranking_time_weighted = []
     for tuple in dropoffs_s:
@@ -424,18 +432,25 @@ def drop_off_based_watchlist_filter(max_per_category=3, drop_off_rate_cutoff=.25
                     approved_files_w_operator.append([f'{mktcap}Stocks/Watchlists/({result[0]},)D-{direction}trend.json', operator])
     return approved_files_w_operator
 
+def extract_time_marker_from_filename(filename):
+    filename_str = filename
+    char_list = [char for char in filename_str]
+    num_list = [num for num in char_list if num.isdigit()]
+    time_marker = int(''.join(num_list))
+    return time_marker
+
 def pull_top_tier_unbroken_trenders(tier_percentage=10):
     def there_can_only_be_n(watchlists, tier_percentage, op_str):
         grandtotal = watchlists[0][0]
         for total, file in watchlists:
             if total < (tier_percentage / 100) * grandtotal and total != 0:
-                return [file, op_str, total, grandtotal]
+                return [file, extract_time_marker_from_filename(file), group, op_str, total, grandtotal]
     top_trenders = {}
     top_tier_list = []
-    mkt_caps = ['VeryLargeStocks', 'LargeStocks', 'MediumStocks', 'SmallStocks', 'MicroStocks']
+    mkt_caps = ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']
     for group in mkt_caps:
         top_trenders[group] = []
-        for file in glob(f'{group}/Watchlists/*uptrend.json'):
+        for file in glob(f'{group}Stocks/Watchlists/*uptrend.json'):
             with open(file) as infile:
                 content = json.load(infile)
                 top_trenders[group].append([len(content), file])
@@ -443,14 +458,14 @@ def pull_top_tier_unbroken_trenders(tier_percentage=10):
         top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '>'))
     for group in mkt_caps:
         top_trenders[group] = []
-        for file in glob(f'{group}/Watchlists/*downtrend.json'):
+        for file in glob(f'{group}Stocks/Watchlists/*downtrend.json'):
             with open(file) as infile:
                 content = json.load(infile)
                 top_trenders[group].append([len(content), file])
                 top_trenders[group].sort(reverse=True)
         top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '<'))
     return top_tier_list
-
+# print(pull_top_tier_unbroken_trenders(tier_percentage=10))
 #returns bb_params for all trending symbols (window and std) as a set for use in bb_param_optomizer
 #range settings.
 def get_bb_params_distribution():

@@ -5,13 +5,13 @@ from tweet import twitter_api
 import json
 import operator
 from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short, get_last_trade, get_order_by_id, get_current_open_market_price
-from utility_func import initialize_sector_allocation_dict, drop_off_based_watchlist_filter, pull_top_tier_unbroken_trenders
+from utility_func import initialize_sector_allocation_dict, drop_off_based_watchlist_filter
 from risk_parameter import*
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
 
-def dailyscanner(json_watchlist, op_str, publish=False):
+def dailyscanner_double_agent(json_watchlist, op_str, publish=False):
     with open(json_watchlist) as infile:
         watchlist = json.load(infile)
 
@@ -25,12 +25,12 @@ def dailyscanner(json_watchlist, op_str, publish=False):
     missed_connection = []
     missed_candle_object_error = []
     missed_chart_error = []
-    missed_order_error = []
+    missed_order = []
 
     #loop through securities and filter for up/down trends
     for index, security in enumerate(watchlist):
         # try:
-            candle_object = SecurityTradeData(security['ticker'], num_days=201)
+            candle_object = SecurityTradeData(security['ticker'], num_of_periods=201)
             candle_object.sma200_double_agent_activate(security['200sma_double_agent'])
             c, h, l, o, v, sma9, sma20, sma50, sma200, lower, upper, atr = candle_object.df.iloc[-1]
             #find better way... weak link... slow and innaccurate. (i think the funded keys access more exchanges so this may be a non issue)
@@ -38,8 +38,8 @@ def dailyscanner(json_watchlist, op_str, publish=False):
             if op_str == '>':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and opposite_op_func(c, sma200):
                     holding = security['ticker']
-                    print(f"BUYING RANGE..... {holding}: Current Price: {c}, Lower Bollinger: {lower}")
                     if holding not in str(sector_allocation_dict):
+                        print(f"BUYING RANGE..... {holding}: Current Price: {c}, 200SMA Double Agent: {sma200}")
                         candle_object.chart(120, destination=security['mktcap'])
                         if publish:
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
@@ -62,7 +62,12 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                         else:
                                             acct_value = get_account_value()
                                             qty = (acct_value / 100) // float(price)
-                                            market_order_id = buy_market(security['ticker'], qty)['id']
+                                            try:
+                                                market_order_id = buy_market(security['ticker'], qty)['id']
+                                            except KeyError:
+                                                missed_order.append(security['ticker'])
+                                                print(f"MISSED ORDER......... TICKER: {security['ticker']}")
+                                                continue
                                             sleep(2)
                                             market_order_fill_price = round(float(get_order_by_id(market_order_id)['filled_avg_price']), 2)
                                             trailing_percentage = (atr / market_order_fill_price) * 100
@@ -73,21 +78,21 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                             add_to_daily_counter('long', security['mktcap'])
                                             add_to_daily_tradelist(security['ticker'])
                                             sector_allocation_dict = initialize_sector_allocation_dict()
-                                            print(f"TRADE PLACED..... {holding}: Current Price: {c}, Trade Price: {market_order_fill_price} \nLower Bollinger: {lower}, Stop Price: {tstop_stop_price} \nMktGroup: {security['mktcap']}\n")
+                                            print(f"TRADE PLACED..... {holding}: Current Price: {c}, Trade Price: {market_order_fill_price} \n200SMA Double Agent: {sma200}, Stop Price: {tstop_stop_price} \nMktGroup: {security['mktcap']}\n")
                                     else:
-                                        print('No Duplicate Trades No Duplicate Trades No Duplicate Trades')
+                                        print('TRADE NOT PLACED... No Duplicate Trades')
                                 else:
-                                    print(f'Sector At Capacity Sector At Capacity Sector At Capacity')
+                                    print('TRADE NOT PLACED... Sector At Capacity')
                             else:
-                                print(f'Long or Daily Capacity Hit Long  or Daily Capacity Hit Long  or Daily Capacity Hit')
+                                print('TRADE NOT PLACED... Long/Daily Capacity Hit')
                 else:
                     print(security['ticker'] + ' ' + str(index+1) + '/' + str(len(watchlist)))
 
             elif op_str == '<':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and opposite_op_func(c, sma200):
                     holding = security['ticker']
-                    print(f"SHORTING RANGE..... {holding}: Current Price: {c}, Upper Bollinger: {upper}")
                     if holding not in sector_allocation_dict:
+                        print(f"SHORTING RANGE..... {holding}: Current Price: {c}, 200SMA Double Agent: {sma200}")
                         candle_object.chart(120, destination=security['mktcap'])
                         if publish:
                             media = twitter_api.media_upload(f'''{security['mktcap']}Stocks/Charts/{today_date}/{security['ticker']}.png''')
@@ -110,7 +115,12 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                         else:
                                             acct_value = get_account_value()
                                             qty = (acct_value / 100) // float(price)
-                                            market_order_id = sell_market(security['ticker'], qty)['id']
+                                            try:
+                                                market_order_id = sell_market(security['ticker'], qty)['id']
+                                            except KeyError:
+                                                missed_order.append(security['ticker'])
+                                                print(f"MISSED ORDER......... TICKER: {security['ticker']}")
+                                                continue
                                             sleep(2)
                                             market_order_fill_price = round(float(get_order_by_id(market_order_id)['filled_avg_price']), 2)
                                             trailing_percentage = (atr / market_order_fill_price) * 100
@@ -121,13 +131,13 @@ def dailyscanner(json_watchlist, op_str, publish=False):
                                             add_to_daily_counter('short', security['mktcap'])
                                             add_to_daily_tradelist(security['ticker'])
                                             sector_allocation_dict = initialize_sector_allocation_dict()
-                                            print(f"TRADE PLACED..... {holding}: Current Price: {c}, Trade Price: {market_order_fill_price} \nUpper Bollinger: {upper}, Stop Price: {tstop_stop_price} \nMktGroup: {security['mktcap']}\n")
+                                            print(f"TRADE PLACED..... {holding}: Current Price: {c}, Trade Price: {market_order_fill_price} \n200SMA Double Agent: {sma200}, Stop Price: {tstop_stop_price} \nMktGroup: {security['mktcap']}\n")
                                     else:
-                                        print('No Duplicate Trades No Duplicate Trades No Duplicate Trades')
+                                        print('TRADE NOT PLACED... No Duplicate Trades')
                                 else:
-                                    print(f'Sector At Capacity Sector At Capacity Sector At Capacity')
+                                    print('TRADE NOT PLACED... Sector At Capacity')
                             else:
-                                print(f'Short or Daily Capacity Hit Short or Daily Capacity Hit Short or Daily Capacity Hit')
+                                print('TRADE NOT PLACED... Short/Daily Capacity Hit')
                     else:
                         print(security['ticker'] + ' ' + str(index+1) + '/' + str(len(watchlist)))
         # except:
