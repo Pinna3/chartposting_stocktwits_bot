@@ -11,20 +11,20 @@ from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 
 ###Check for proper ranges using get_bb_params_distribution(), last window=2-20 = (range(2, 21)), last std=.1-1 (4/6/21), expand for testing once in a while
-def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency,
+def bb_param_optomizer_WITH_average(SecurityTradeDataObject, op_str, entry_frequency, timebar,
                        window_range=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
                        std_range=[.1, .2, .3, .4, .5, .6, .7, .8, .9, 1.0]):
     candles = SecurityTradeDataObject
-    def optimal_bb_window(op_str, entry_frequency):
+    def optimal_bb_window(op_str, entry_frequency, timebar):
         rolling_window_and_counter = []
         for index, rolling_window in enumerate(window_range):
-            try:
+            # try:
                 candles.custom_bollingers(rolling_window, 1)
                 rolling_window_and_counter.append([rolling_window, \
-                    candles.entry_counter(op_str)])
+                    candles.entry_counter_bollingers_WITH_average(op_str, timebar)])
                 # print(rolling_window_and_counter[index])
-            except:
-                continue
+            # except:
+            #     continue
         ###update range according to get_bb_params_distribution()
         entry_frequency_range = sorted([x for x in range(1,entry_frequency + 1)], reverse=True)
         for counter in rolling_window_and_counter:
@@ -34,12 +34,12 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency,
                     return rolling_window
         return None
 
-    def optimal_bb_std(rolling_window, op_str, entry_frequency):
+    def optimal_bb_std(rolling_window, op_str, entry_frequency, timebar):
         std_and_counter = []
         for index, std in enumerate(std_range):
             try:
                 candles.custom_bollingers(rolling_window, std)
-                std_and_counter.append([std, candles.entry_counter(op_str)])
+                std_and_counter.append([std, candles.entry_counter_bollingers_WITH_average(op_str, timebar)])
                 # print(std_and_counter[index])
             except:
                 continue
@@ -51,12 +51,83 @@ def bb_param_optomizer(SecurityTradeDataObject, op_str, entry_frequency,
                     std = counter[0]
                     return std
         return None
-    bb_window = optimal_bb_window(op_str, entry_frequency)
-    bb_std = optimal_bb_std(bb_window, op_str, entry_frequency)
+    bb_window = optimal_bb_window(op_str, entry_frequency, timebar)
+    bb_std = optimal_bb_std(bb_window, op_str, entry_frequency, timebar)
     return bb_window, bb_std
 
-def graph_degrees_of_trend(mktcap_dir, down_or_up_str, *time_markers):
+def bb_param_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_frequency, timebar,
+                       window_range=[2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+                       std_range=[.1, .2, .3, .4, .5, .6, .7, .8, .9, 1.0]):
+    candles = SecurityTradeDataObject
+    def optimal_bb_window(op_str, entry_frequency, timebar):
+        rolling_window_and_counter = []
+        for index, rolling_window in enumerate(window_range):
+            try:
+                candles.custom_bollingers(rolling_window, 1)
+                rolling_window_and_counter.append([rolling_window, \
+                    candles.entry_counter_bollingers_WITHOUT_average(op_str, timebar)])
+                # print(rolling_window_and_counter[index])
+            except:
+                continue
+        ###update range according to get_bb_params_distribution()
+        entry_frequency_range = sorted([x for x in range(1,entry_frequency + 1)], reverse=True)
+        for counter in rolling_window_and_counter:
+            for entries in entry_frequency_range:
+                if counter[1] <= entry_frequency and counter[1] == entries:
+                    rolling_window = counter[0]
+                    return rolling_window
+        return None
+
+    def optimal_bb_std(rolling_window, op_str, entry_frequency, timebar):
+        std_and_counter = []
+        for index, std in enumerate(std_range):
+            try:
+                candles.custom_bollingers(rolling_window, std)
+                std_and_counter.append([std, candles.entry_counter_bollingers_WITHOUT_average(op_str, timebar)])
+                # print(std_and_counter[index])
+            except:
+                continue
+        # print('')
+        entry_frequency_range = sorted([x for x in range(1,entry_frequency + 1)], reverse=True)
+        for counter in std_and_counter:
+            for entries in entry_frequency_range:
+                if counter[1] <= entry_frequency and counter[1] == entries:
+                    std = counter[0]
+                    return std
+        return None
+    bb_window = optimal_bb_window(op_str, entry_frequency, timebar)
+    bb_std = optimal_bb_std(bb_window, op_str, entry_frequency, timebar)
+    return bb_window, bb_std
+
+def sm200doubleagent_window_optomizer_WITHOUT_average(SecurityTradeDataObject, op_str, entry_frequency, timebar,
+                       window_range=range(2, 201)):
+    candles = SecurityTradeDataObject
+    window_and_counter = []
+    for index, window in enumerate(window_range):
+        # try:
+        candles.sma200_double_agent_activate(window)
+        window_and_counter.append([window, candles.entry_counter_200sma_double_agent_WITHOUT_average(op_str, timebar)])
+        # except:
+        #     continue
+    entry_frequency_range = sorted([x for x in range(1, entry_frequency + 1)], reverse=True)
+    for counter in window_and_counter:
+        for entries in entry_frequency_range:
+            if counter[1] <= entry_frequency and counter[1] <= entries:
+                window = counter[0]
+                candles.sma200_double_agent_activate(200)
+                return window
+    candles.sma200_double_agent_activate(200)
+    return None
+
+def generate_list_of_time_markers(title_time_marker, increment=5):
+    head_timebar = title_time_marker
+    initial_timebar = [1]
+    [initial_timebar.append(timebar*increment) for timebar in range(1, int(head_timebar/increment+1))]
+    return initial_timebar
+
+def graph_degrees_of_trend(mktcap_dir, down_or_up_str, title_time_marker):
     hits = []
+    time_markers = generate_list_of_time_markers(title_time_marker)
     for period in time_markers:
         with open(f'{mktcap_dir}Stocks/Watchlists/({period},)D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
@@ -71,8 +142,9 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, *time_markers):
     fig.show()
     return f'{mktcap_dir} {down_or_up_str}trend'
 
-def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, *time_markers, interval=5):
+def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_marker, interval=5):
     hits = []
+    time_markers = generate_list_of_time_markers(title_time_marker)
     for period in time_markers:
         with open(f'{mktcap_dir}Stocks/Watchlists/({period},)D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
@@ -119,8 +191,8 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, *time_markers, 
 #trend = 'up', 'down'
 #*time_markers = 1, 5, 10, 15, 20, 25, ... etc
 #interval = time between time_markers
-def rank_dropoffs(mktcap_group, trend, *time_markers, interval=5):
-    dropoffs_s = calculate_and_file_dropoff_rates(mktcap_group, trend, *time_markers, interval)
+def rank_dropoffs(mktcap_group, trend, title_time_marker, interval=5):
+    dropoffs_s = calculate_and_file_dropoff_rates(mktcap_group, trend, title_time_marker, interval)
     ranking = []
     ranking_time_weighted = []
     for tuple in dropoffs_s:
@@ -271,6 +343,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     sectors = [stock.split(',')[8].strip() for stock in stocks[1:]]
     smoothness_tests = [stock.split(',')[10].strip() for stock in stocks[1:]]
     peers = [stock.split(',')[11].strip() for stock in stocks[1:]]
+    sma200_double_agent = None
     #15 allows us to handle up to 3000 stocks without complications
     batch = len(symbols) // 15
     remainder = len(symbols) % 15
@@ -280,6 +353,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
     remainder_sector = sectors[-remainder:]
     remainder_smoothness_test = smoothness_tests[-remainder:]
     remainder_peers = peers[-remainder:]
+    # remainder_sma200_double_agent = [None for sma200_double_agent in range(remainder)]
     remainder_batch = ','.join(remainder_reference)
     remainder_data = return_candles_json(remainder_batch, period_len='day', num_bars=281)
     #iterable list with retrievable values
@@ -303,7 +377,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
         df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
         df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
         df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
-        remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], remainder_peers[index], df])
+        remainder_df_list.append([reference_symbol, remainder_mkt_cap[index], remainder_sector[index], remainder_smoothness_test[index], remainder_peers[index], sma200_double_agent, df])
     total_batch_df_list = []
     for batch_num in range(1, 16):
         symbol_reference = symbols[(batch_num - 1)*batch: batch_num*batch]
@@ -311,6 +385,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
         batch_sector = sectors[(batch_num - 1)*batch: batch_num*batch]
         batch_smoothness_test = smoothness_tests[(batch_num - 1)*batch: batch_num*batch]
         batch_peers = peers[(batch_num - 1)*batch: batch_num*batch]
+        # batch_sma200_double_agent = [None for sma200_double_agent in range(batch)]
         symbol_batch = ','.join(symbol_reference)
         batch_data = return_candles_json(symbol_batch, period_len='day', num_bars=281)
         #iterable list with retrievable values
@@ -334,7 +409,7 @@ def make_pulled_csv_list_consumable(csv_in, atr_rolling_window=14):
             df['lower'] = bollinger_reference_lower - (2 * sigma_lower)
             df['upper'] = bollinger_reference_upper + (2 * sigma_upper)
             df['atr'] = pandas_atr_calculation(df, atr_rolling_window)
-            batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], batch_peers[index], df])
+            batch_df_list.append([reference_symbol, batch_mkt_cap[index], batch_sector[index], batch_smoothness_test[index], batch_peers[index], sma200_double_agent, df])
         for item in batch_df_list:
             if item not in total_batch_df_list:
                 total_batch_df_list.append(item)
@@ -357,18 +432,25 @@ def drop_off_based_watchlist_filter(max_per_category=3, drop_off_rate_cutoff=.25
                     approved_files_w_operator.append([f'{mktcap}Stocks/Watchlists/({result[0]},)D-{direction}trend.json', operator])
     return approved_files_w_operator
 
+def extract_time_marker_from_filename(filename):
+    filename_str = filename
+    char_list = [char for char in filename_str]
+    num_list = [num for num in char_list if num.isdigit()]
+    time_marker = int(''.join(num_list))
+    return time_marker
+
 def pull_top_tier_unbroken_trenders(tier_percentage=10):
     def there_can_only_be_n(watchlists, tier_percentage, op_str):
         grandtotal = watchlists[0][0]
         for total, file in watchlists:
             if total < (tier_percentage / 100) * grandtotal and total != 0:
-                return [file, op_str, total, grandtotal]
+                return [file, extract_time_marker_from_filename(file), group, op_str, total, grandtotal]
     top_trenders = {}
     top_tier_list = []
-    mkt_caps = ['VeryLargeStocks', 'LargeStocks', 'MediumStocks', 'SmallStocks', 'MicroStocks']
+    mkt_caps = ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']
     for group in mkt_caps:
         top_trenders[group] = []
-        for file in glob(f'{group}/Watchlists/*uptrend.json'):
+        for file in glob(f'{group}Stocks/Watchlists/*uptrend.json'):
             with open(file) as infile:
                 content = json.load(infile)
                 top_trenders[group].append([len(content), file])
@@ -376,14 +458,14 @@ def pull_top_tier_unbroken_trenders(tier_percentage=10):
         top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '>'))
     for group in mkt_caps:
         top_trenders[group] = []
-        for file in glob(f'{group}/Watchlists/*downtrend.json'):
+        for file in glob(f'{group}Stocks/Watchlists/*downtrend.json'):
             with open(file) as infile:
                 content = json.load(infile)
                 top_trenders[group].append([len(content), file])
                 top_trenders[group].sort(reverse=True)
         top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '<'))
     return top_tier_list
-
+# print(pull_top_tier_unbroken_trenders(tier_percentage=10))
 #returns bb_params for all trending symbols (window and std) as a set for use in bb_param_optomizer
 #range settings.
 def get_bb_params_distribution():

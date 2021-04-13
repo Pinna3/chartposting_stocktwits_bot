@@ -44,3 +44,33 @@ Why aren't the sector allocation maximums set dynamically like the Long/Shorts??
 RIGHT NOW ATR TRAILING STOP WINDOWS ARE SET AT THE STANDARD 14 DAY... 5 DAY MIGHT MAKE MORE SENSE (OR WHATEVER HOLDING PERIOD YOU'RE GOING WITH... PONDER)
 
 I'm wondering if the whole BB-Param_optimization ordeal is a big waste of time and I should be optimizing the entry frequency of the top trenders relative to a simple moving average, the rolling window of which changes to accomodate the ror_prioritization_factor and daily counter. seems a lot easiier... fuck. day wasted.
+
+Is it appropriate to buy the daily limit every day or are there some days where it unwise to buy?
+
+Set for total target allocation, not daily counter... daily counter target will yield the lowest tickers, try 2 for nightly scan...
+then think about...
+long short ratio (85/15)
+'max_long_verylarge': .25,
+'max_long_large': .25,
+'max_long_medium': .25,
+'max_long_small': .125,
+'max_long_micro': .125,
+'max_short_verylarge': .50,
+'max_short_large': .50,
+'max_short_medium': 0,
+'max_short_small': 0,
+'max_short_micro': 0
+
+long:
+verylarge ~21
+large ~21
+medium ~21
+small ~11
+micro ~11
+
+short:
+verylarge ~7
+large ~7
+medium 0
+small 0
+micro 0

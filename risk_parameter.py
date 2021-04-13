@@ -48,15 +48,40 @@ def preset_daily_counter_capacities():
         'max_long_verylarge': .25,
         'max_long_large': .25,
         'max_long_medium': .25,
-        'max_long_small': .125,
-        'max_long_micro': .125,
+        'max_long_small': .25,
+        'max_long_micro': .25,
         'max_short_verylarge': .50,
         'max_short_large': .50,
-        'max_short_medium': 0,
+        'max_short_medium': .50,
         'max_short_small': 0,
         'max_short_micro': 0
     }
     return daily_counter_capacities
+
+def print_daily_counter_capacities():
+    daily_counter_capacities = preset_daily_counter_capacities()
+    max_daily_trades = daily_counter_capacities['max_daily_trades']
+    max_long_verylarge = daily_counter_capacities['max_long_verylarge']
+    max_long_large = daily_counter_capacities['max_long_large']
+    max_long_medium = daily_counter_capacities['max_long_medium']
+    max_long_small = daily_counter_capacities['max_long_small']
+    max_long_micro = daily_counter_capacities['max_long_micro']
+    max_short_verylarge = daily_counter_capacities['max_short_verylarge']
+    max_short_large = daily_counter_capacities['max_short_large']
+    max_short_medium = daily_counter_capacities['max_short_medium']
+    max_short_small = daily_counter_capacities['max_short_small']
+    max_short_micro = daily_counter_capacities['max_short_micro']
+
+    long_max_exposure, short_max_exposure, long_total, short_total = set_long_short_capacities()
+    max_long = round((long_max_exposure / 100) * max_daily_trades)
+    max_short = round((short_max_exposure / 100)* max_daily_trades)
+
+    print(f"""
+Daily Counter Capacities:
+Long: {max_long}, VeryLarge: {round(max_long_verylarge*max_long)}, Large: {round(max_long_large*max_long)}, Medium: {round(max_long_medium*max_long)}, Small: {round(max_long_small*max_long)}, Micro: {round(max_long_micro*max_long)}
+Short: {max_short}, VeryLarge: {round(max_short_verylarge*max_short)}, Large: {round(max_short_large*max_short)}, Medium: {round(max_short_medium*max_short)}, Small: {round(max_short_small*max_short)}, Micro: {round(max_short_micro*max_short)}
+Long Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure}%, Long Total: {long_total}, Short Total: {short_total}
+""")
 
 def check_daily_counter_capacity(side, mkt_cap):
     daily_counter_capacities = preset_daily_counter_capacities()
@@ -99,14 +124,6 @@ def check_daily_counter_capacity(side, mkt_cap):
             return False
         else:
             return True
-
-    #make sure Daily Counter is working
-    print(f"""
-Daily Counter Capacities:
-Long: {max_long}, VeryLarge: {round(max_long_verylarge*max_long)}, Large: {round(max_long_large*max_long)}, Medium: {round(max_long_medium*max_long)}, Small: {round(max_long_small*max_long)}, Micro: {round(max_long_micro*max_long)}
-Short: {max_short}, VeryLarge: {round(max_short_verylarge*max_short)}, Large: {round(max_short_large*max_short)}, Medium: {round(max_short_medium*max_short)}, Small: {round(max_short_small*max_short)}, Micro: {round(max_short_micro*max_short)}
-Long Max Exposure: {long_max_exposure}%, Short Max Exposure: {short_max_exposure}%, Long Total: {long_total}, Short Total: {short_total}
-""")
 
     with open('DailyCounter.json') as infile:
         counter = json.load(infile)

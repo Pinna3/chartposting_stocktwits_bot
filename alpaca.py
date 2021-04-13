@@ -133,13 +133,3 @@ def get_current_open_market_price(symbol, op_str):
                     price = get_last_trade(symbol)['last']['price']
                     time.sleep(.7)
     return price
-
-
-# acct_value = get_account_value()
-# print(acct_value)
-# price = get_quote('JOBS')#['last']['askprice']
-# # qty = (acct_value / 100) // float(price)
-# print(price)
-#
-# last_trade_price = get_last_trade('JOBS')['last']['price']
-# print(last_trade_price)
