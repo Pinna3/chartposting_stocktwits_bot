@@ -1,21 +1,22 @@
 {
-  "today_date": "04-12-21",
+  "today_date": "04-13-21",
   "trades": [
-    "LB",
+    "HIG",
+    "SNA",
     "MHK",
-    "VEDL",
-    "FTNT",
+    "MO",
     "CAR",
-    "SGRY",
-    "PSB",
+    "ORGO",
+    "ANF",
+    "SEAS",
     "HOV",
-    "OMP",
-    "MX",
+    "FNKO",
+    "RCKY",
     "DBI",
-    "STKS",
-    "INTT",
-    "BRBS",
-    "QTNT",
-    "AFYA"
+    "NMM",
+    "USAK",
+    "GLPG",
+    "SRPT",
+    "ONE"
   ]
 }

@@ -72,6 +72,7 @@ def print_daily_counter_capacities():
     max_short_small = daily_counter_capacities['max_short_small']
     max_short_micro = daily_counter_capacities['max_short_micro']
 
+    long_max_exposure, short_max_exposure, long_total, short_total = set_long_short_capacities()
     max_long = round((long_max_exposure / 100) * max_daily_trades)
     max_short = round((short_max_exposure / 100)* max_daily_trades)
 
@@ -119,7 +120,7 @@ def check_daily_counter_capacity(side, mkt_cap):
 
     def daily_counter_test(side, mktcap, max, fraction, long_mkt_cap_or_short_mkt_cap):
         maximum_count = round(fraction * max)
-        if counter[side] <= max and counter[long_mkt_cap_or_short_mkt_cap][mktcap] <= maximum_count:
+        if counter[side] < max and counter[long_mkt_cap_or_short_mkt_cap][mktcap] < maximum_count:
             return False
         else:
             return True

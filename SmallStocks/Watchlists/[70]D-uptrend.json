@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 169.98,
-    "entry_frequency": 341,
+    "ror": 142.58,
+    "entry_frequency": 571,
     "200sma_double_agent": 2
   },
   {
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 150.7,
-    "entry_frequency": 302,
+    "ror": 137.82,
+    "entry_frequency": 552,
     "200sma_double_agent": 2
   },
   {
@@ -28,19 +28,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 95.62,
-    "entry_frequency": 192,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "INTT",
-    "sector": "Capital Goods",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$AMAT $LRCX $KLAC $SPY",
-    "ror": 74.71,
-    "entry_frequency": 150,
+    "ror": 92.85,
+    "entry_frequency": 372,
     "200sma_double_agent": 2
   },
   {
@@ -50,19 +39,30 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 72.73,
-    "entry_frequency": 146,
+    "ror": 78.02,
+    "entry_frequency": 313,
     "200sma_double_agent": 2
   },
   {
-    "ticker": "GTIM",
-    "sector": "Consumer Services",
+    "ticker": "INTT",
+    "sector": "Capital Goods",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 65.87,
-    "entry_frequency": 133,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 59.79,
+    "entry_frequency": 240,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "BRBS",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 25.27,
+    "entry_frequency": 102,
     "200sma_double_agent": 2
   }
 ]

@@ -244,7 +244,7 @@ def initialize_sector_allocation_dict():
     }
     for holding in positions:
         symbol = holding['symbol']
-        market_value = round(float(holding['market_value']), 2)
+        market_value = abs(round(float(holding['market_value']), 2))
         side = holding['side']
         sector = fetch_sector(symbol)
         if sector not in sector_allocation_dict[side]['sector'].keys():
@@ -268,7 +268,7 @@ def initialize_sector_allocation_dict():
         market_value = 0.0
         for stock in sector_allocation_dict['short']['sector'][sector]['stocks']:
             market_value += round(float(stock[1]), 2)
-        sector_allocation_dict['short']['sector'][sector]['market_value'] = abs(market_value)
+        sector_allocation_dict['short']['sector'][sector]['market_value'] = market_value
         sector_allocation_dict['short']['sector'][sector]['acct_percentage'] = round((market_value / acct_value) * 100, 2)
 
     long_market_value = 0.0
@@ -278,7 +278,7 @@ def initialize_sector_allocation_dict():
     sector_allocation_dict['long']['acct_percentage'] = round((long_market_value / acct_value) * 100, 2)
     short_market_value = 0.0
     for sector in short_sector_keys:
-        short_market_value += round(abs(sector_allocation_dict['short']['sector'][sector]['market_value']), 2)
+        short_market_value += round(sector_allocation_dict['short']['sector'][sector]['market_value'], 2)
     sector_allocation_dict['short']['market_value'] = round(short_market_value, 2)
     sector_allocation_dict['short']['acct_percentage'] = round((short_market_value / acct_value) * 100, 2)
 
@@ -442,7 +442,7 @@ def extract_time_marker_from_filename(filename):
     time_marker = int(''.join(num_list))
     return time_marker
 
-def pull_top_tier_unbroken_trenders(tier_percentage=12):
+def pull_top_tier_unbroken_trenders(tier_percentage=15):
     def there_can_only_be_n(watchlists, tier_percentage, op_str):
         grandtotal = watchlists[0][0]
         for total, file in watchlists:
@@ -468,7 +468,7 @@ def pull_top_tier_unbroken_trenders(tier_percentage=12):
                 top_trenders[group].sort(reverse=True)
         top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '<'))
     return top_tier_list
-# print(pull_top_tier_unbroken_trenders(tier_percentage=12))
+# print(pull_top_tier_unbroken_trenders(tier_percentage=15))
 #returns bb_params for all trending symbols (window and std) as a set for use in bb_param_optomizer
 #range settings.
 def get_bb_params_distribution():

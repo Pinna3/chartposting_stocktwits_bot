@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 23.5,
-    "entry_frequency": 48,
+    "ror": 25.79,
+    "entry_frequency": 104,
     "200sma_double_agent": 2
   },
   {
@@ -17,8 +17,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 19.07,
-    "entry_frequency": 39,
+    "ror": 22.11,
+    "entry_frequency": 89,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "QDEL",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950130.KQ $ALGN $WST $SPY",
+    "ror": 20.35,
+    "entry_frequency": 82,
     "200sma_double_agent": 2
   },
   {
@@ -28,9 +39,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
-    "ror": 11.34,
-    "entry_frequency": 24,
-    "200sma_double_agent": 3
+    "ror": 12.22,
+    "entry_frequency": 50,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "GLPG",
@@ -39,8 +50,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
-    "ror": 9.43,
-    "entry_frequency": 20,
-    "200sma_double_agent": 4
+    "ror": 9.41,
+    "entry_frequency": 39,
+    "200sma_double_agent": 2
   }
 ]

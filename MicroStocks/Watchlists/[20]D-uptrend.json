@@ -6,19 +6,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$MSFT $ORCL $NOW $SPY",
-    "ror": 48.65,
-    "entry_frequency": 98,
+    "ror": 44.28,
+    "entry_frequency": 178,
     "200sma_double_agent": 2
   },
   {
-    "ticker": "GFLU",
-    "sector": "Public Utilities",
+    "ticker": "MTCN",
+    "sector": "Basic Industries",
     "mktcap": "Micro",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
-    "ror": 10.19,
-    "entry_frequency": 21,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 7.68,
+    "entry_frequency": 32,
     "200sma_double_agent": 2
   },
   {
@@ -28,31 +28,31 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$ITW $PH $SWK $SPY",
-    "ror": 5.01,
-    "entry_frequency": 11,
-    "200sma_double_agent": 8
+    "ror": 6.05,
+    "entry_frequency": 25,
+    "200sma_double_agent": 2
   },
   {
-    "ticker": "HOVNP",
-    "sector": "Capital Goods",
+    "ticker": "DTP",
+    "sector": "Public Utilities",
     "mktcap": "Micro",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 3.38,
-    "entry_frequency": 8,
+    "peers": "$D $SRE $PEG $SPY",
+    "ror": 2.63,
+    "entry_frequency": 12,
+    "200sma_double_agent": 5
+  },
+  {
+    "ticker": "GFLU",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
+    "ror": 2.14,
+    "entry_frequency": 10,
     "200sma_double_agent": 9
-  },
-  {
-    "ticker": "AFINP",
-    "sector": "Consumer Services",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 0.35,
-    "entry_frequency": 2,
-    "200sma_double_agent": 36
   },
   {
     "ticker": "BPYPP",
@@ -61,8 +61,41 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BPY $H78.SI $ROM.OL $SPY",
-    "ror": 0.2,
-    "entry_frequency": 1,
-    "200sma_double_agent": 53
+    "ror": 0.95,
+    "entry_frequency": 5,
+    "200sma_double_agent": 30
+  },
+  {
+    "ticker": "AGNCO",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 0.49,
+    "entry_frequency": 3,
+    "200sma_double_agent": 36
+  },
+  {
+    "ticker": "AFINP",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 0.31,
+    "entry_frequency": 2,
+    "200sma_double_agent": 36
+  },
+  {
+    "ticker": "HOVNP",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": -1.56,
+    "entry_frequency": 4,
+    "200sma_double_agent": 23
   }
 ]

@@ -6,8 +6,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 45.08,
-    "entry_frequency": 46,
+    "ror": 46.2,
+    "entry_frequency": 47,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "ASPU",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CHGG $BFAM $LOPE $SPY",
+    "ror": 38.24,
+    "entry_frequency": 39,
     "200sma_double_agent": 2
   },
   {
@@ -17,8 +28,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 34.1,
-    "entry_frequency": 35,
+    "ror": 31.27,
+    "entry_frequency": 32,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "CHMA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 29.15,
+    "entry_frequency": 30,
     "200sma_double_agent": 2
   },
   {
@@ -28,19 +50,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
-    "ror": 24.28,
-    "entry_frequency": 25,
-    "200sma_double_agent": 5
+    "ror": 25.04,
+    "entry_frequency": 26,
+    "200sma_double_agent": 4
   },
   {
-    "ticker": "CHMA",
+    "ticker": "CALA",
     "sector": "Health Care",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 24.05,
-    "entry_frequency": 25,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 21.87,
+    "entry_frequency": 23,
     "200sma_double_agent": 4
   },
   {
@@ -50,9 +72,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 20.3,
-    "entry_frequency": 21,
-    "200sma_double_agent": 5
+    "ror": 17.78,
+    "entry_frequency": 19,
+    "200sma_double_agent": 6
   },
   {
     "ticker": "BFRA",
@@ -61,8 +83,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
-    "ror": 14.81,
-    "entry_frequency": 16,
-    "200sma_double_agent": 13
+    "ror": 12.72,
+    "entry_frequency": 14,
+    "200sma_double_agent": 15
   }
 ]

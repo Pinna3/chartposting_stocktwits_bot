@@ -99,29 +99,29 @@ class LiteSecurities(Securities):
 if __name__ == '__main__':
     timemarkers = generate_list_of_time_markers(80, increment=5)
 
-    # list = Securities('StockLists/Micro<$50M.csv')
-    # for timemarker in timemarkers:
-    #     list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Micro', ror_prioritization_factor=2)
-    # for timemarker in timemarkers:
-    #     list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Micro', ror_prioritization_factor=2)
-    #
-    # list = Securities('StockLists/Small$50M-$300M.csv')
-    # for timemarker in timemarkers:
-    #     list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Small', ror_prioritization_factor=2)
-    # for timemarker in timemarkers:
-    #     list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Small', ror_prioritization_factor=2)
-    #
-    # list = Securities('StockLists/Medium$300M-$2B.csv')
-    # for timemarker in timemarkers:
-    #     list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Medium', ror_prioritization_factor=2)
-    # for timemarker in timemarkers:
-    #     list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Medium', ror_prioritization_factor=2)
-    #
-    # list = Securities('StockLists/Large$2B-$10B.csv')
-    # for timemarker in timemarkers:
-    #     list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Large', ror_prioritization_factor=2)
-    # for timemarker in timemarkers:
-    #     list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Large', ror_prioritization_factor=2)
+    list = Securities('StockLists/Micro<$50M.csv')
+    for timemarker in timemarkers:
+        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Micro', ror_prioritization_factor=4.0)
+    for timemarker in timemarkers:
+        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Micro', ror_prioritization_factor=1.0)
+
+    list = Securities('StockLists/Small$50M-$300M.csv')
+    for timemarker in timemarkers:
+        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Small', ror_prioritization_factor=4.0)
+    for timemarker in timemarkers:
+        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Small', ror_prioritization_factor=1.0)
+
+    list = Securities('StockLists/Medium$300M-$2B.csv')
+    for timemarker in timemarkers:
+        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Medium', ror_prioritization_factor=1.6)
+    for timemarker in timemarkers:
+        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Medium', ror_prioritization_factor=1.5)
+
+    list = Securities('StockLists/Large$2B-$10B.csv')
+    for timemarker in timemarkers:
+        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Large', ror_prioritization_factor=4)
+    for timemarker in timemarkers:
+        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Large', ror_prioritization_factor=4)
 
     list = Securities('StockLists/VeryLarge>$10B.csv')
     # list = Securities('StockLists/verylargesample.csv')

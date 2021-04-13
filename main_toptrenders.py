@@ -1,4 +1,5 @@
 from dailyscanner_double_agent import*
+from utility_func import pull_top_tier_unbroken_trenders
 
 if __name__ == '__main__':
     while True:

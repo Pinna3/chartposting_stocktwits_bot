@@ -1,13 +1,13 @@
 [
   {
-    "ticker": "HQI",
-    "sector": "Technology",
+    "ticker": "STKS",
+    "sector": "Consumer Services",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 91.8,
-    "entry_frequency": 919,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 116.34,
+    "entry_frequency": 466,
     "200sma_double_agent": 2
   },
   {
@@ -17,8 +17,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 79.37,
-    "entry_frequency": 795,
+    "ror": 96.1,
+    "entry_frequency": 385,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 93.14,
+    "entry_frequency": 374,
     "200sma_double_agent": 2
   },
   {
@@ -28,19 +39,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$GOOGL $FB $SNAP $SPY",
-    "ror": 61.9,
-    "entry_frequency": 620,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "GTIM",
-    "sector": "Consumer Services",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 58.82,
-    "entry_frequency": 589,
+    "ror": 68.32,
+    "entry_frequency": 274,
     "200sma_double_agent": 2
   },
   {
@@ -50,8 +50,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 53.7,
-    "entry_frequency": 538,
+    "ror": 58.58,
+    "entry_frequency": 235,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "INTT",
+    "sector": "Capital Goods",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$AMAT $LRCX $KLAC $SPY",
+    "ror": 50.07,
+    "entry_frequency": 201,
     "200sma_double_agent": 2
   },
   {
@@ -61,8 +72,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 34.09,
-    "entry_frequency": 342,
+    "ror": 32.5,
+    "entry_frequency": 131,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "BRBS",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 19.05,
+    "entry_frequency": 77,
     "200sma_double_agent": 2
   }
 ]

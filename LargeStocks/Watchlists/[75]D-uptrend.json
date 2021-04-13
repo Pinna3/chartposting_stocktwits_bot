@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 259.72,
-    "entry_frequency": 520,
+    "ror": 246.04,
+    "entry_frequency": 985,
     "200sma_double_agent": 2
   },
   {
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$HCA $UHS $EHC $SPY",
-    "ror": 62.95,
-    "entry_frequency": 127,
+    "ror": 59.75,
+    "entry_frequency": 240,
     "200sma_double_agent": 2
   },
   {
@@ -28,8 +28,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AXP $COF $DFS $SPY",
-    "ror": 55.26,
-    "entry_frequency": 112,
+    "ror": 56.33,
+    "entry_frequency": 226,
     "200sma_double_agent": 2
   },
   {
@@ -39,8 +39,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 49.88,
-    "entry_frequency": 101,
+    "ror": 51.67,
+    "entry_frequency": 208,
     "200sma_double_agent": 2
   },
   {
@@ -50,8 +50,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$PWR $ACM $MTZ $SPY",
-    "ror": 48.84,
-    "entry_frequency": 99,
+    "ror": 47.52,
+    "entry_frequency": 191,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "OSK",
+    "sector": "Capital Goods",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CAT $CMI $PCAR $SPY",
+    "ror": 42.49,
+    "entry_frequency": 171,
     "200sma_double_agent": 2
   },
   {
@@ -61,8 +72,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
-    "ror": 38.86,
-    "entry_frequency": 79,
+    "ror": 41.68,
+    "entry_frequency": 168,
     "200sma_double_agent": 2
   },
   {
@@ -72,8 +83,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": 31.23,
-    "entry_frequency": 63,
-    "200sma_double_agent": 4
+    "ror": 27.9,
+    "entry_frequency": 113,
+    "200sma_double_agent": 2
   }
 ]

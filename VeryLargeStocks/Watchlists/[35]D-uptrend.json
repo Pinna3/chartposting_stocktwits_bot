@@ -11,6 +11,28 @@
     "200sma_double_agent": 2
   },
   {
+    "ticker": "DISCB",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$VIAC $FOXA $DISCA $SPY",
+    "ror": 35.67,
+    "entry_frequency": 37,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "LB",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TJX $ROST $BURL $SPY",
+    "ror": 30.6,
+    "entry_frequency": 32,
+    "200sma_double_agent": 3
+  },
+  {
     "ticker": "HIG",
     "sector": "Finance",
     "mktcap": "VeryLarge",
@@ -253,6 +275,17 @@
     "200sma_double_agent": 15
   },
   {
+    "ticker": "TT",
+    "sector": "Capital Goods",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JCI $TT $KRX.IR $SPY",
+    "ror": 11.4,
+    "entry_frequency": 12,
+    "200sma_double_agent": 11
+  },
+  {
     "ticker": "GPC",
     "sector": "Capital Goods",
     "mktcap": "VeryLarge",
@@ -482,6 +515,17 @@
     "ror": 7.06,
     "entry_frequency": 8,
     "200sma_double_agent": 15
+  },
+  {
+    "ticker": "L",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$PGR $TRV $ALL $SPY",
+    "ror": 6.96,
+    "entry_frequency": 8,
+    "200sma_double_agent": 17
   },
   {
     "ticker": "MKL",

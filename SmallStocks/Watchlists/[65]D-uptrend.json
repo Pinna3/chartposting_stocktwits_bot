@@ -1,24 +1,24 @@
 [
   {
-    "ticker": "NMM",
-    "sector": "Transportation",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 142.41,
-    "entry_frequency": 286,
-    "200sma_double_agent": 2
-  },
-  {
     "ticker": "STKS",
     "sector": "Consumer Services",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 139.25,
-    "entry_frequency": 280,
+    "ror": 146.2,
+    "entry_frequency": 586,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 129.44,
+    "entry_frequency": 519,
     "200sma_double_agent": 2
   },
   {
@@ -28,19 +28,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 100.72,
-    "entry_frequency": 202,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "GTIM",
-    "sector": "Consumer Services",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 72.34,
-    "entry_frequency": 146,
+    "ror": 100.82,
+    "entry_frequency": 404,
     "200sma_double_agent": 2
   },
   {
@@ -50,8 +39,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 59.46,
-    "entry_frequency": 120,
+    "ror": 64.27,
+    "entry_frequency": 258,
     "200sma_double_agent": 2
   },
   {
@@ -61,8 +50,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
-    "ror": 59.17,
-    "entry_frequency": 119,
+    "ror": 62.03,
+    "entry_frequency": 249,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "BRBS",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 21.91,
+    "entry_frequency": 89,
     "200sma_double_agent": 2
   }
 ]

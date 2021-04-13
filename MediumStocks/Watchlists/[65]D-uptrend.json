@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TJX $ROST $BURL $SPY",
-    "ror": 115.28,
-    "entry_frequency": 232,
+    "ror": 115.98,
+    "entry_frequency": 187,
     "200sma_double_agent": 2
   },
   {
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$PWR $ACM $MTZ $SPY",
-    "ror": 66.74,
-    "entry_frequency": 134,
+    "ror": 66.59,
+    "entry_frequency": 108,
     "200sma_double_agent": 2
   },
   {
@@ -28,8 +28,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$DE $TTC $AGCO $SPY",
-    "ror": 60.26,
-    "entry_frequency": 122,
+    "ror": 60.03,
+    "entry_frequency": 97,
     "200sma_double_agent": 2
   },
   {
@@ -39,8 +39,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TJX $ROST $BURL $SPY",
-    "ror": 54.03,
-    "entry_frequency": 109,
+    "ror": 54.32,
+    "entry_frequency": 88,
     "200sma_double_agent": 2
   },
   {
@@ -50,8 +50,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 51.14,
-    "entry_frequency": 103,
+    "ror": 53.97,
+    "entry_frequency": 87,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "RBNC",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 41.83,
+    "entry_frequency": 68,
     "200sma_double_agent": 2
   },
   {
@@ -61,20 +72,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$PGR $TRV $ALL $SPY",
-    "ror": 40.84,
-    "entry_frequency": 83,
+    "ror": 41.52,
+    "entry_frequency": 67,
     "200sma_double_agent": 2
   },
   {
-    "ticker": "DLX",
-    "sector": "Consumer Durables",
+    "ticker": "OBNK",
+    "sector": "Finance",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$BRC $BEEN $DLX $SPY",
-    "ror": 29.61,
-    "entry_frequency": 60,
-    "200sma_double_agent": 4
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 40.5,
+    "entry_frequency": 66,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "AMEH",
@@ -83,8 +94,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CVS $CI $LH $SPY",
-    "ror": 22.12,
-    "entry_frequency": 45,
-    "200sma_double_agent": 5
+    "ror": 24.37,
+    "entry_frequency": 40,
+    "200sma_double_agent": 7
+  },
+  {
+    "ticker": "PLYM",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$PLD $DRE $COLD $SPY",
+    "ror": 14.99,
+    "entry_frequency": 25,
+    "200sma_double_agent": 21
   }
 ]

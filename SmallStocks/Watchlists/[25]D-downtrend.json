@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CHGG $BFAM $LOPE $SPY",
-    "ror": 30.3,
-    "entry_frequency": 62,
+    "ror": 34.6,
+    "entry_frequency": 36,
     "200sma_double_agent": 2
   },
   {
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 24.25,
-    "entry_frequency": 50,
+    "ror": 27.2,
+    "entry_frequency": 28,
     "200sma_double_agent": 2
   },
   {
@@ -28,8 +28,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 19.92,
-    "entry_frequency": 41,
+    "ror": 25.69,
+    "entry_frequency": 27,
     "200sma_double_agent": 2
   },
   {
@@ -39,20 +39,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 13.64,
-    "entry_frequency": 28,
-    "200sma_double_agent": 2
+    "ror": 20.03,
+    "entry_frequency": 21,
+    "200sma_double_agent": 4
   },
   {
-    "ticker": "GLOP",
-    "sector": "Consumer Services",
+    "ticker": "CALA",
+    "sector": "Health Care",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$OET.OL $GLOG $TNP $SPY",
-    "ror": 4.71,
-    "entry_frequency": 10,
-    "200sma_double_agent": 17
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 19.06,
+    "entry_frequency": 20,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "PSTI",
@@ -61,8 +61,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
-    "ror": 3.48,
-    "entry_frequency": 8,
+    "ror": 11.07,
+    "entry_frequency": 12,
+    "200sma_double_agent": 14
+  },
+  {
+    "ticker": "GLOP",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$OET.OL $GLOG $TNP $SPY",
+    "ror": 10.7,
+    "entry_frequency": 12,
     "200sma_double_agent": 15
   },
   {
@@ -72,20 +83,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
-    "ror": 2.62,
-    "entry_frequency": 6,
-    "200sma_double_agent": 21
-  },
-  {
-    "ticker": "OPTN",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 1.12,
-    "entry_frequency": 3,
-    "200sma_double_agent": 25
+    "ror": 8.91,
+    "entry_frequency": 10,
+    "200sma_double_agent": 19
   },
   {
     "ticker": "CHMA",
@@ -94,8 +94,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": -0.67,
-    "entry_frequency": 2,
-    "200sma_double_agent": 24
+    "ror": 8.74,
+    "entry_frequency": 10,
+    "200sma_double_agent": 13
+  },
+  {
+    "ticker": "OPTN",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 5.46,
+    "entry_frequency": 6,
+    "200sma_double_agent": 22
   }
 ]

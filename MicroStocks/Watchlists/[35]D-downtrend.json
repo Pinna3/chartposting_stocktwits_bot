@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 55.62,
-    "entry_frequency": 112,
+    "ror": 55.43,
+    "entry_frequency": 56,
     "200sma_double_agent": 2
   }
 ]

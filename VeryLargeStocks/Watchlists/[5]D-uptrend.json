@@ -591,7 +591,7 @@
     "peers": "$JCI $TT $KRX.IR $SPY",
     "ror": 2.49,
     "entry_frequency": 3,
-    "200sma_double_agent": 5
+    "200sma_double_agent": 7
   },
   {
     "ticker": "AVY",
@@ -712,7 +712,7 @@
     "peers": "$BLK $BX $KKR $SPY",
     "ror": 2.27,
     "entry_frequency": 3,
-    "200sma_double_agent": 5
+    "200sma_double_agent": 6
   },
   {
     "ticker": "CDW",
@@ -745,7 +745,7 @@
     "peers": "$CVNA $ORLY $AZO $SPY",
     "ror": 2.22,
     "entry_frequency": 3,
-    "200sma_double_agent": 7
+    "200sma_double_agent": 8
   },
   {
     "ticker": "ADP",
@@ -1218,7 +1218,7 @@
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 1.55,
     "entry_frequency": 3,
-    "200sma_double_agent": 5
+    "200sma_double_agent": 9
   },
   {
     "ticker": "NVR",
@@ -1350,7 +1350,7 @@
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 1.39,
     "entry_frequency": 2,
-    "200sma_double_agent": 13
+    "200sma_double_agent": 14
   },
   {
     "ticker": "SJM",
@@ -1504,7 +1504,7 @@
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 1.19,
     "entry_frequency": 2,
-    "200sma_double_agent": 6
+    "200sma_double_agent": 7
   },
   {
     "ticker": "GWW",
@@ -1570,7 +1570,7 @@
     "peers": "$CARR $MAS $FBHS $SPY",
     "ror": 1.16,
     "entry_frequency": 2,
-    "200sma_double_agent": 23
+    "200sma_double_agent": 24
   },
   {
     "ticker": "ORLY",
@@ -1834,7 +1834,7 @@
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 0.79,
     "entry_frequency": 2,
-    "200sma_double_agent": 19
+    "200sma_double_agent": 20
   },
   {
     "ticker": "MET",
@@ -2090,6 +2090,17 @@
     "200sma_double_agent": 9
   },
   {
+    "ticker": "PCG",
+    "sector": "Public Utilities",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$NEE $DUK $SO $SPY",
+    "ror": 0.53,
+    "entry_frequency": 2,
+    "200sma_double_agent": 145
+  },
+  {
     "ticker": "GOOG",
     "sector": "Technology",
     "mktcap": "VeryLarge",
@@ -2120,7 +2131,7 @@
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 0.51,
     "entry_frequency": 2,
-    "200sma_double_agent": 5
+    "200sma_double_agent": 6
   },
   {
     "ticker": "PLD",
@@ -2175,7 +2186,7 @@
     "peers": "$IBM $CTSH $EPAM $SPY",
     "ror": 0.49,
     "entry_frequency": 1,
-    "200sma_double_agent": 9
+    "200sma_double_agent": 10
   },
   {
     "ticker": "BR",
@@ -2285,7 +2296,7 @@
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 0.4,
     "entry_frequency": 1,
-    "200sma_double_agent": 16
+    "200sma_double_agent": 39
   },
   {
     "ticker": "KDP",
@@ -2483,7 +2494,7 @@
     "peers": "$CNQ.TO $TOU.TO $IPCO.ST $SPY",
     "ror": 0.2,
     "entry_frequency": 1,
-    "200sma_double_agent": 34
+    "200sma_double_agent": 35
   },
   {
     "ticker": "DLTR",
@@ -2593,7 +2604,7 @@
     "peers": "$CTVA $FMC $SMG $SPY",
     "ror": 0.02,
     "entry_frequency": 1,
-    "200sma_double_agent": 31
+    "200sma_double_agent": 32
   },
   {
     "ticker": "SUI",
@@ -2703,7 +2714,7 @@
     "peers": "$105560.KS $055550.KS $086790.KS $SPY",
     "ror": -0.29,
     "entry_frequency": 1,
-    "200sma_double_agent": 17
+    "200sma_double_agent": 18
   },
   {
     "ticker": "FB",
@@ -2726,6 +2737,17 @@
     "ror": -0.32,
     "entry_frequency": 1,
     "200sma_double_agent": 31
+  },
+  {
+    "ticker": "ROK",
+    "sector": "Capital Goods",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$EMR $3665.TW $ROK $SPY",
+    "ror": -0.33,
+    "entry_frequency": 1,
+    "200sma_double_agent": 37
   },
   {
     "ticker": "O",
@@ -2769,7 +2791,7 @@
     "peers": "$LBTYA $GAMA.L $TALK.L $SPY",
     "ror": -0.38,
     "entry_frequency": 1,
-    "200sma_double_agent": 41
+    "200sma_double_agent": 44
   },
   {
     "ticker": "XRAY",
@@ -2923,7 +2945,7 @@
     "peers": "$WPP.L $INF.L $SFOR.L $SPY",
     "ror": -0.49,
     "entry_frequency": 1,
-    "200sma_double_agent": 13
+    "200sma_double_agent": 14
   },
   {
     "ticker": "WU",
@@ -2970,6 +2992,17 @@
     "200sma_double_agent": 13
   },
   {
+    "ticker": "IR",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": -0.54,
+    "entry_frequency": 1,
+    "200sma_double_agent": 26
+  },
+  {
     "ticker": "OKE",
     "sector": "Public Utilities",
     "mktcap": "VeryLarge",
@@ -3000,7 +3033,7 @@
     "peers": "$HSBA.L $BARC.L $LLOY.L $SPY",
     "ror": -0.58,
     "entry_frequency": 1,
-    "200sma_double_agent": 14
+    "200sma_double_agent": 15
   },
   {
     "ticker": "PEG",
@@ -3506,7 +3539,7 @@
     "peers": "$ENI.MI $GSP.MI $SPY",
     "ror": -2.13,
     "entry_frequency": 1,
-    "200sma_double_agent": 32
+    "200sma_double_agent": 31
   },
   {
     "ticker": "ING",
@@ -3540,6 +3573,17 @@
     "ror": -2.27,
     "entry_frequency": 1,
     "200sma_double_agent": 13
+  },
+  {
+    "ticker": "INFY",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TCS.NS $INFY.NS $HCLTECH.NS $SPY",
+    "ror": -2.34,
+    "entry_frequency": 1,
+    "200sma_double_agent": 12
   },
   {
     "ticker": "TPL",

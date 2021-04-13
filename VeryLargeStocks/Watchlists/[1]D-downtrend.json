@@ -6,30 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$ITUB4.SA $BBDC4.SA $SANB4.SA $SPY",
-    "ror": 1.99,
+    "ror": 2.2,
     "entry_frequency": 3,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "VIV",
-    "sector": "Public Utilities",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$VIVT3.SA $OIBR4.SA $TELB4.SA $SPY",
-    "ror": 0.19,
-    "entry_frequency": 1,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "LFC",
-    "sector": "Finance",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
-    "ror": 0.1,
-    "entry_frequency": 1,
     "200sma_double_agent": 2
   },
   {
@@ -39,18 +17,18 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": -0.02,
+    "ror": 0.44,
     "entry_frequency": 1,
     "200sma_double_agent": 2
   },
   {
-    "ticker": "TAL",
-    "sector": "Consumer Services",
+    "ticker": "VIV",
+    "sector": "Public Utilities",
     "mktcap": "VeryLarge",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$002607.SZ $667.HK $TAL $SPY",
-    "ror": -0.41,
+    "peers": "$VIVT3.SA $OIBR4.SA $TELB4.SA $SPY",
+    "ror": 0.38,
     "entry_frequency": 1,
     "200sma_double_agent": 2
   },
@@ -61,18 +39,29 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$LULU $GIL.TO $GOOS.TO $SPY",
-    "ror": -0.45,
+    "ror": 0.31,
     "entry_frequency": 1,
     "200sma_double_agent": 2
   },
   {
-    "ticker": "BABA",
-    "sector": "Miscellaneous",
+    "ticker": "LFC",
+    "sector": "Finance",
     "mktcap": "VeryLarge",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$3690.HK $9618.HK $BABA $SPY",
-    "ror": -0.58,
+    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
+    "ror": 0.15,
+    "entry_frequency": 1,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "TAL",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$002607.SZ $667.HK $TAL $SPY",
+    "ror": 0.09,
     "entry_frequency": 1,
     "200sma_double_agent": 2
   },
@@ -83,7 +72,18 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CHKP $CYBR $ALLT $SPY",
-    "ror": -0.66,
+    "ror": -0.55,
+    "entry_frequency": 1,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "BABA",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$3690.HK $9618.HK $BABA $SPY",
+    "ror": -0.9,
     "entry_frequency": 1,
     "200sma_double_agent": 2
   },
@@ -94,7 +94,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -1.16,
+    "ror": -0.91,
     "entry_frequency": 1,
     "200sma_double_agent": 2
   }
