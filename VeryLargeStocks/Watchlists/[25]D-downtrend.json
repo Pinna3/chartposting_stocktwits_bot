@@ -1,0 +1,24 @@
+[
+  {
+    "ticker": "LFC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
+    "ror": 6.68,
+    "entry_frequency": 8,
+    "200sma_double_agent": 13
+  },
+  {
+    "ticker": "SGEN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 6.34,
+    "entry_frequency": 7,
+    "200sma_double_agent": 20
+  }
+]

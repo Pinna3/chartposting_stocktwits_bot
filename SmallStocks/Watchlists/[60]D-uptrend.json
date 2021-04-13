@@ -1,0 +1,68 @@
+[
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 91.8,
+    "entry_frequency": 919,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 79.37,
+    "entry_frequency": 795,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "TZOO",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 61.9,
+    "entry_frequency": 620,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 58.82,
+    "entry_frequency": 589,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 53.7,
+    "entry_frequency": 538,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "ALOT",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 34.09,
+    "entry_frequency": 342,
+    "200sma_double_agent": 2
+  }
+]

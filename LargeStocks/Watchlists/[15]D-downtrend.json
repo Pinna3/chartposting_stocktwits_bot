@@ -1,0 +1,101 @@
+[
+  {
+    "ticker": "IRTC",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": 40.12,
+    "entry_frequency": 81,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "ACAD",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 24.44,
+    "entry_frequency": 50,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "AXSM",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 16.75,
+    "entry_frequency": 34,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "SRPT",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 15.75,
+    "entry_frequency": 32,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "FOLD",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 11.6,
+    "entry_frequency": 24,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "QDEL",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950130.KQ $ALGN $WST $SPY",
+    "ror": 11.59,
+    "entry_frequency": 24,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "GLPG",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
+    "ror": 6.56,
+    "entry_frequency": 14,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "MOR",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BNTX $CVAC $MOR.DE $SPY",
+    "ror": 2.89,
+    "entry_frequency": 7,
+    "200sma_double_agent": 8
+  },
+  {
+    "ticker": "OCFT",
+    "sector": "Technology",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$688111.SS $600588.SS $002230.SZ $SPY",
+    "ror": 2.43,
+    "entry_frequency": 6,
+    "200sma_double_agent": 16
+  }
+]

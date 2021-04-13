@@ -1,0 +1,13 @@
+[
+  {
+    "ticker": "WINT",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 38.44,
+    "entry_frequency": 78,
+    "200sma_double_agent": 2
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "ticker": "ASPU",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CHGG $BFAM $LOPE $SPY",
+    "ror": 30.3,
+    "entry_frequency": 62,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "CNCE",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 24.25,
+    "entry_frequency": 50,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "IMRA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 19.92,
+    "entry_frequency": 41,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "VYGR",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 13.64,
+    "entry_frequency": 28,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "GLOP",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$OET.OL $GLOG $TNP $SPY",
+    "ror": 4.71,
+    "entry_frequency": 10,
+    "200sma_double_agent": 17
+  },
+  {
+    "ticker": "PSTI",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
+    "ror": 3.48,
+    "entry_frequency": 8,
+    "200sma_double_agent": 15
+  },
+  {
+    "ticker": "BFRA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BNTX $CVAC $MOR.DE $SPY",
+    "ror": 2.62,
+    "entry_frequency": 6,
+    "200sma_double_agent": 21
+  },
+  {
+    "ticker": "OPTN",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 1.12,
+    "entry_frequency": 3,
+    "200sma_double_agent": 25
+  },
+  {
+    "ticker": "CHMA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": -0.67,
+    "entry_frequency": 2,
+    "200sma_double_agent": 24
+  }
+]

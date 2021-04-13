@@ -9,11 +9,11 @@ if __name__ == '__main__':
         print('.')
         print('Top_Tier_Unbroken_Trenders')
         print('.')
-        [print(item[0]) for item in pull_top_tier_unbroken_trenders(tier_percentage=10) if item != None]
+        [print(item[0]) for item in pull_top_tier_unbroken_trenders(tier_percentage=12) if item != None]
         print('.')
         print('.')
         print('.')
-        top_trender_watchlists = [penta_tuple for penta_tuple in pull_top_tier_unbroken_trenders(tier_percentage=10) if penta_tuple != None]
+        top_trender_watchlists = [penta_tuple for penta_tuple in pull_top_tier_unbroken_trenders(tier_percentage=12) if penta_tuple != None]
         for filename, timemarker, mktcap, direction, number, total in top_trender_watchlists:
             print('')
             print(filename)

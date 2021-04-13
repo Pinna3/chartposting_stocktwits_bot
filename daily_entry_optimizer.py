@@ -1,13 +1,13 @@
 import json, csv
 import pandas as pd
 from risk_parameter import preset_daily_counter_capacities, set_long_short_capacities
-from utility_func import pull_top_tier_unbroken_trenders, initialize_sector_allocation_dict
+from utility_func import pull_top_tier_unbroken_trenders, get_all_portfolio_tickers
 from candlestick import LiteSecurityTradeData, SecurityTradeData
 from momoscreener import LiteSecurities
 from alpaca import get_all_positions
 from glob import glob
 
-def construct_dict_of_top_tier_unbroken_trenders(tier_percentage=10):
+def construct_dict_of_top_tier_unbroken_trenders(tier_percentage=12):
     trender_watchlist_filenames = pull_top_tier_unbroken_trenders(tier_percentage)
     list_of_almost_consumable_lists = []
     for filename in trender_watchlist_filenames:
@@ -16,15 +16,14 @@ def construct_dict_of_top_tier_unbroken_trenders(tier_percentage=10):
                 watchlist = json.load(infile)
                 consumable_list_plus_side = []
                 for stock in watchlist:
-                    sector_allocation_dict = initialize_sector_allocation_dict()
-                    if stock['ticker'] not in str(sector_allocation_dict):
+                    if stock['ticker'] not in get_all_portfolio_tickers():
                         ticker = stock['ticker']
                         sector = stock['sector']
                         peers = stock['peers']
                         mktcap = stock['mktcap']
                         smoothness = 'TRUE'
-                        bb_window = stock["bb_window"]
-                        bb_std = stock['bb_std']
+                        # bb_window = stock["bb_window"]
+                        # bb_std = stock['bb_std']
                         sma200_double_agent = stock['200sma_double_agent']
                         df = pd.read_csv(f"{mktcap}Stocks/Dataframes/{ticker}.csv", index_col=0)
                         if 'uptrend' in filename[0]:
@@ -163,17 +162,18 @@ def open_capacities_dict():
         }
     }
     return capacities_dict
-print(open_capacities_dict())
+# print(open_capacities_dict())
 
-# capacities_dict = open_capacities_dict()
-# candle_object_list_dict = construct_dict_of_top_tier_unbroken_trenders(tier_percentage=10)
-# top_tier_trenders = pull_top_tier_unbroken_trenders(tier_percentage=10)
-# for filename, timemarker, mktcap, op_str, num, total in [trender for trender in top_tier_trenders if trender != None]:
-#     print(filename, num, total)
-#     priority_factor_range = [i/10 for i in range(10, 101)]
-#     for ror_priority_factor in priority_factor_range:
-#         hits, category_total = optimal_ror_prioritization_factor_for_nightly_scan_input(candle_object_list_dict, op_str, mktcap, timemarker, ror_prioritization_factor=ror_priority_factor)
-#         if hits >= capacities_dict[op_str][mktcap]:
-#             print(hits, ror_priority_factor)
-#             break
-#     print(hits, ror_priority_factor)
+capacities_dict = open_capacities_dict()
+candle_object_list_dict = construct_dict_of_top_tier_unbroken_trenders(tier_percentage=12)
+# print(candle_object_list_dict['>']['VeryLarge'][1].sma200_double_agent)
+top_tier_trenders = pull_top_tier_unbroken_trenders(tier_percentage=12)
+for filename, timemarker, mktcap, op_str, num, total in [trender for trender in top_tier_trenders if trender != None]:
+    print(filename, num, total)
+    priority_factor_range = [i/10 for i in range(10, 51)]
+    for ror_priority_factor in priority_factor_range:
+        hits, category_total = optimal_ror_prioritization_factor_for_nightly_scan_input(candle_object_list_dict, op_str, mktcap, timemarker, ror_prioritization_factor=ror_priority_factor)
+        if hits >= capacities_dict[op_str][mktcap]:
+            print(hits, ror_priority_factor)
+            break
+    print(hits, ror_priority_factor)

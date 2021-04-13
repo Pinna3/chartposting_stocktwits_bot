@@ -38,7 +38,7 @@ def dailyscanner_double_agent(json_watchlist, op_str, publish=False):
             if op_str == '>':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and opposite_op_func(c, sma200):
                     holding = security['ticker']
-                    if holding not in str(sector_allocation_dict):
+                    if holding not in get_all_portfolio_tickers():
                         print(f"BUYING RANGE..... {holding}: Current Price: {c}, 200SMA Double Agent: {sma200}")
                         candle_object.chart(120, destination=security['mktcap'])
                         if publish:
@@ -91,7 +91,7 @@ def dailyscanner_double_agent(json_watchlist, op_str, publish=False):
             elif op_str == '<':
                 if op_func(sma9, sma20) and op_func(sma20, sma50) and opposite_op_func(c, sma200):
                     holding = security['ticker']
-                    if holding not in sector_allocation_dict:
+                    if holding not in get_all_portfolio_tickers():
                         print(f"SHORTING RANGE..... {holding}: Current Price: {c}, 200SMA Double Agent: {sma200}")
                         candle_object.chart(120, destination=security['mktcap'])
                         if publish:

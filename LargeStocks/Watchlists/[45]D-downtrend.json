@@ -1,0 +1,13 @@
+[
+  {
+    "ticker": "SRPT",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 26.58,
+    "entry_frequency": 54,
+    "200sma_double_agent": 2
+  }
+]

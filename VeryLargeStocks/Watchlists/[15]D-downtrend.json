@@ -1,0 +1,35 @@
+[
+  {
+    "ticker": "LFC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$601318.SS $601628.SS $601336.SS $SPY",
+    "ror": 2.21,
+    "entry_frequency": 3,
+    "200sma_double_agent": 13
+  },
+  {
+    "ticker": "SGEN",
+    "sector": "Health Care",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 1.83,
+    "entry_frequency": 3,
+    "200sma_double_agent": 21
+  },
+  {
+    "ticker": "BABA",
+    "sector": "Miscellaneous",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$3690.HK $9618.HK $BABA $SPY",
+    "ror": -2.38,
+    "entry_frequency": 1,
+    "200sma_double_agent": 55
+  }
+]

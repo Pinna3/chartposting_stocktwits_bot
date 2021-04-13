@@ -72,7 +72,6 @@ def print_daily_counter_capacities():
     max_short_small = daily_counter_capacities['max_short_small']
     max_short_micro = daily_counter_capacities['max_short_micro']
 
-    long_max_exposure, short_max_exposure, long_total, short_total = set_long_short_capacities()
     max_long = round((long_max_exposure / 100) * max_daily_trades)
     max_short = round((short_max_exposure / 100)* max_daily_trades)
 

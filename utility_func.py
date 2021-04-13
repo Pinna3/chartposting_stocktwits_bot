@@ -223,6 +223,9 @@ def fetch_sector(symbol):
                 if row[0] == symbol:
                     return row[8]
 
+def get_all_portfolio_tickers():
+    return [position['symbol']  for position in get_all_positions()]
+
 def initialize_sector_allocation_dict():
     positions = get_all_positions()
     sector_allocation_dict = {
@@ -439,7 +442,7 @@ def extract_time_marker_from_filename(filename):
     time_marker = int(''.join(num_list))
     return time_marker
 
-def pull_top_tier_unbroken_trenders(tier_percentage=10):
+def pull_top_tier_unbroken_trenders(tier_percentage=12):
     def there_can_only_be_n(watchlists, tier_percentage, op_str):
         grandtotal = watchlists[0][0]
         for total, file in watchlists:
@@ -465,7 +468,7 @@ def pull_top_tier_unbroken_trenders(tier_percentage=10):
                 top_trenders[group].sort(reverse=True)
         top_tier_list.append(there_can_only_be_n(top_trenders[group], tier_percentage, '<'))
     return top_tier_list
-# print(pull_top_tier_unbroken_trenders(tier_percentage=10))
+# print(pull_top_tier_unbroken_trenders(tier_percentage=12))
 #returns bb_params for all trending symbols (window and std) as a set for use in bb_param_optomizer
 #range settings.
 def get_bb_params_distribution():

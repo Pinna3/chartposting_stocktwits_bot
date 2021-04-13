@@ -1,0 +1,68 @@
+[
+  {
+    "ticker": "KPTI",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 27.47,
+    "entry_frequency": 56,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "EGAN",
+    "sector": "Technology",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ADBE $CRM $INTU $SPY",
+    "ror": 16.44,
+    "entry_frequency": 34,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "CGEN",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CGEN $BOLT.TA $CKNTF $SPY",
+    "ror": 16.05,
+    "entry_frequency": 33,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "QTNT",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
+    "ror": 13.98,
+    "entry_frequency": 29,
+    "200sma_double_agent": 3
+  },
+  {
+    "ticker": "AFYA",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
+    "ror": 4.91,
+    "entry_frequency": 11,
+    "200sma_double_agent": 13
+  },
+  {
+    "ticker": "DEA",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ARE $BXP $VNO $SPY",
+    "ror": 2.31,
+    "entry_frequency": 6,
+    "200sma_double_agent": 24
+  }
+]

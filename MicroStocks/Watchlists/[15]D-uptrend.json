@@ -1,0 +1,134 @@
+[
+  {
+    "ticker": "DUOT",
+    "sector": "Technology",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$MSFT $ORCL $NOW $SPY",
+    "ror": 37.87,
+    "entry_frequency": 77,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "GFLU",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
+    "ror": 8.24,
+    "entry_frequency": 17,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "MTCN",
+    "sector": "Basic Industries",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 7.55,
+    "entry_frequency": 16,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "FBIOP",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 7.38,
+    "entry_frequency": 16,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "SWT",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ITW $PH $SWK $SPY",
+    "ror": 4.1,
+    "entry_frequency": 9,
+    "200sma_double_agent": 7
+  },
+  {
+    "ticker": "DTP",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$D $SRE $PEG $SPY",
+    "ror": 4.06,
+    "entry_frequency": 9,
+    "200sma_double_agent": 5
+  },
+  {
+    "ticker": "IFFT",
+    "sector": "Basic Industries",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SHW $ECL $DD $SPY",
+    "ror": 1.84,
+    "entry_frequency": 5,
+    "200sma_double_agent": 13
+  },
+  {
+    "ticker": "BPYPO",
+    "sector": "Finance",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BPY $H78.SI $ROM.OL $SPY",
+    "ror": 1.36,
+    "entry_frequency": 4,
+    "200sma_double_agent": 17
+  },
+  {
+    "ticker": "HOVNP",
+    "sector": "Capital Goods",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 1.32,
+    "entry_frequency": 4,
+    "200sma_double_agent": 20
+  },
+  {
+    "ticker": "AFINP",
+    "sector": "Consumer Services",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": 0.67,
+    "entry_frequency": 2,
+    "200sma_double_agent": 36
+  },
+  {
+    "ticker": "BPYPP",
+    "sector": "Finance",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BPY $H78.SI $ROM.OL $SPY",
+    "ror": 0.2,
+    "entry_frequency": 1,
+    "200sma_double_agent": 30
+  },
+  {
+    "ticker": "AWX",
+    "sector": "Public Utilities",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$WM $RSG $ROL $SPY",
+    "ror": -2.23,
+    "entry_frequency": 2,
+    "200sma_double_agent": 57
+  }
+]

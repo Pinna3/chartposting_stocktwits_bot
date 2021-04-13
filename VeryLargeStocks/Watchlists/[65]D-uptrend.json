@@ -1,0 +1,46 @@
+[
+  {
+    "ticker": "TPL",
+    "sector": "Energy",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$COP $EOG $PXD $SPY",
+    "ror": 96.11,
+    "entry_frequency": 97,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "UHAL",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 28.01,
+    "entry_frequency": 29,
+    "200sma_double_agent": 9
+  },
+  {
+    "ticker": "DELL",
+    "sector": "Technology",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 21.27,
+    "entry_frequency": 22,
+    "200sma_double_agent": 14
+  },
+  {
+    "ticker": "TROW",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BLK $BX $KKR $SPY",
+    "ror": 17.44,
+    "entry_frequency": 18,
+    "200sma_double_agent": 20
+  }
+]

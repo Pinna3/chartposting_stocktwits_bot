@@ -1,0 +1,13 @@
+[
+  {
+    "ticker": "VYGR",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 33.94,
+    "entry_frequency": 69,
+    "200sma_double_agent": 2
+  }
+]

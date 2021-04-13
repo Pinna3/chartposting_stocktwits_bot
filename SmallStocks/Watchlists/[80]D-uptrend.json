@@ -1,0 +1,46 @@
+[
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 167.51,
+    "entry_frequency": 336,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "GTIM",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$MCD $SBUX $CMG $SPY",
+    "ror": 149.24,
+    "entry_frequency": 299,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "HQI",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$RHI $UPWK $MAN $SPY",
+    "ror": 93.5,
+    "entry_frequency": 188,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 78.6,
+    "entry_frequency": 158,
+    "200sma_double_agent": 2
+  }
+]
