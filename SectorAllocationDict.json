@@ -1,211 +1,251 @@
 {
   "long": {
-    "market_value": 13198.88,
-    "acct_percentage": 25.53,
+    "market_value": 18984.51,
+    "acct_percentage": 36.35,
     "sector": {
       "Basic Industries": {
-        "market_value": 1543.75,
-        "acct_percentage": 2.99,
+        "market_value": 2068.59,
+        "acct_percentage": 3.96,
         "stocks": [
           [
             "VEDL",
-            525.15
+            542.7
           ],
           [
             "MTCN",
-            477.4
+            489.02
+          ],
+          [
+            "CMC",
+            494.02
           ],
           [
             "BAK",
-            541.2
+            542.85
           ]
         ]
       },
       "Transportation": {
-        "market_value": 998.81,
-        "acct_percentage": 1.93,
+        "market_value": 1524.48,
+        "acct_percentage": 2.92,
         "stocks": [
           [
             "USAK",
-            504.89
+            502.86
           ],
           [
             "NMM",
-            493.92
+            513.9
+          ],
+          [
+            "JBHT",
+            507.72
           ]
         ]
       },
       "Consumer Services": {
-        "market_value": 3880.6400000000003,
-        "acct_percentage": 7.51,
+        "market_value": 4601.339999999999,
+        "acct_percentage": 8.81,
         "stocks": [
           [
+            "TZOO",
+            518.1
+          ],
+          [
             "STKS",
-            535.5
+            542.43
           ],
           [
             "SEAS",
-            490.9
+            501.6
+          ],
+          [
+            "SACH",
+            573.1
           ],
           [
             "PSB",
-            482.25
+            482.19
           ],
           [
             "LB",
-            458.5
-          ],
-          [
-            "DISCB",
-            448.5
+            471.03
           ],
           [
             "DBI",
-            510.9
+            534.0
           ],
           [
             "CAR",
-            452.94
+            465.78
           ],
           [
             "ANF",
-            501.15
+            513.11
           ]
         ]
       },
       "Capital Goods": {
-        "market_value": 1418.1,
-        "acct_percentage": 2.74,
+        "market_value": 2441.79,
+        "acct_percentage": 4.68,
         "stocks": [
           [
             "SNA",
-            465.4
+            468.78
           ],
           [
             "INTT",
-            519.5
+            518.5
+          ],
+          [
+            "HOVNP",
+            527.85
           ],
           [
             "HOV",
-            433.2
+            445.28
+          ],
+          [
+            "FIX",
+            481.38
           ]
         ]
       },
       "Consumer Non-Durables": {
-        "market_value": 1521.6200000000001,
-        "acct_percentage": 2.94,
+        "market_value": 1008.73,
+        "acct_percentage": 1.93,
         "stocks": [
           [
             "RCKY",
-            513.0
-          ],
-          [
-            "MO",
-            518.9
+            524.07
           ],
           [
             "FNKO",
-            489.72
+            484.66
           ]
         ]
       },
       "Energy": {
-        "market_value": 1040.49,
-        "acct_percentage": 2.01,
+        "market_value": 1058.9099999999999,
+        "acct_percentage": 2.03,
         "stocks": [
           [
             "PRT",
-            512.64
+            524.16
           ],
           [
             "OMP",
-            527.85
+            534.75
           ]
         ]
       },
       "Health Care": {
-        "market_value": 505.44,
-        "acct_percentage": 0.98,
+        "market_value": 520.56,
+        "acct_percentage": 1.0,
         "stocks": [
           [
             "ORGO",
-            505.44
+            520.56
           ]
         ]
       },
       "Technology": {
-        "market_value": 905.88,
-        "acct_percentage": 1.75,
+        "market_value": 1369.92,
+        "acct_percentage": 2.62,
         "stocks": [
           [
             "MX",
-            506.4
+            503.8
           ],
           [
             "FTNT",
-            399.48
-          ]
-        ]
-      },
-      "Consumer Durables": {
-        "market_value": 406.42,
-        "acct_percentage": 0.79,
-        "stocks": [
+            400.82
+          ],
           [
-            "MHK",
-            406.42
+            "DELL",
+            465.3
           ]
         ]
       },
       "Finance": {
-        "market_value": 977.73,
-        "acct_percentage": 1.89,
+        "market_value": 3001.52,
+        "acct_percentage": 5.75,
         "stocks": [
           [
+            "MHLD",
+            517.93
+          ],
+          [
             "HIG",
-            465.29
+            465.92
+          ],
+          [
+            "FMBH",
+            520.08
+          ],
+          [
+            "CUBI",
+            510.56
+          ],
+          [
+            "CAC",
+            473.9
           ],
           [
             "BRBS",
-            512.44
+            513.13
+          ]
+        ]
+      },
+      "Consumer Durables": {
+        "market_value": 1388.67,
+        "acct_percentage": 2.66,
+        "stocks": [
+          [
+            "MHK",
+            405.58
+          ],
+          [
+            "AYI",
+            511.71
+          ],
+          [
+            "AOS",
+            471.38
           ]
         ]
       }
     }
   },
   "short": {
-    "market_value": 2468.86,
-    "acct_percentage": 4.78,
+    "market_value": 2012.95,
+    "acct_percentage": 3.85,
     "sector": {
       "Health Care": {
-        "market_value": 1450.3000000000002,
-        "acct_percentage": -2.81,
+        "market_value": 1007.18,
+        "acct_percentage": 1.93,
         "stocks": [
           [
-            "SRPT",
-            -487.48
-          ],
-          [
             "QTNT",
-            -493.92
+            491.4
           ],
           [
-            "GLPG",
-            -468.9
+            "CHRS",
+            515.78
           ]
         ]
       },
       "Consumer Services": {
-        "market_value": 1018.56,
-        "acct_percentage": -1.97,
+        "market_value": 1005.77,
+        "acct_percentage": 1.93,
         "stocks": [
           [
             "ONE",
-            -513.02
+            506.21
           ],
           [
             "AFYA",
-            -505.54
+            499.56
           ]
         ]
       }

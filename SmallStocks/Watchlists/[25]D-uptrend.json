@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 60.37,
-    "entry_frequency": 242,
+    "entry_frequency": 61,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$CMRE $NMCI $NMM $SPY",
     "ror": 45.34,
-    "entry_frequency": 182,
+    "entry_frequency": 46,
     "200sma_double_agent": 2
   },
   {
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$MSA $MLHR $HNI $SPY",
     "ror": 37.62,
-    "entry_frequency": 151,
+    "entry_frequency": 39,
     "200sma_double_agent": 2
   },
   {
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 34.78,
-    "entry_frequency": 140,
+    "entry_frequency": 36,
     "200sma_double_agent": 2
   },
   {
@@ -51,7 +51,7 @@
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 31.33,
-    "entry_frequency": 126,
+    "entry_frequency": 32,
     "200sma_double_agent": 2
   },
   {
@@ -62,7 +62,7 @@
     "bb_std": null,
     "peers": "$GOOGL $FB $SNAP $SPY",
     "ror": 25.6,
-    "entry_frequency": 103,
+    "entry_frequency": 27,
     "200sma_double_agent": 2
   },
   {
@@ -73,7 +73,7 @@
     "bb_std": null,
     "peers": "$EMN $HUN $CC $SPY",
     "ror": 25.06,
-    "entry_frequency": 101,
+    "entry_frequency": 26,
     "200sma_double_agent": 2
   },
   {
@@ -84,7 +84,7 @@
     "bb_std": null,
     "peers": "$RE $RNR $ESGR $SPY",
     "ror": 24.91,
-    "entry_frequency": 101,
+    "entry_frequency": 26,
     "200sma_double_agent": 2
   },
   {
@@ -95,7 +95,7 @@
     "bb_std": null,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 24.43,
-    "entry_frequency": 99,
+    "entry_frequency": 25,
     "200sma_double_agent": 2
   },
   {
@@ -106,8 +106,8 @@
     "bb_std": null,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 22.57,
-    "entry_frequency": 91,
-    "200sma_double_agent": 2
+    "entry_frequency": 24,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "WLFC",
@@ -117,8 +117,8 @@
     "bb_std": null,
     "peers": "$FAST $URI $GWW $SPY",
     "ror": 21.7,
-    "entry_frequency": 88,
-    "200sma_double_agent": 2
+    "entry_frequency": 23,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "CTG",
@@ -128,8 +128,8 @@
     "bb_std": null,
     "peers": "$IBM $CTSH $EPAM $SPY",
     "ror": 20.73,
-    "entry_frequency": 84,
-    "200sma_double_agent": 2
+    "entry_frequency": 22,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "PMBC",
@@ -139,8 +139,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 15.24,
-    "entry_frequency": 62,
-    "200sma_double_agent": 2
+    "entry_frequency": 16,
+    "200sma_double_agent": 6
   },
   {
     "ticker": "STRS",
@@ -150,8 +150,8 @@
     "bb_std": null,
     "peers": "$HHC $FOR $STRS $SPY",
     "ror": 13.51,
-    "entry_frequency": 55,
-    "200sma_double_agent": 2
+    "entry_frequency": 15,
+    "200sma_double_agent": 8
   },
   {
     "ticker": "USAK",
@@ -161,8 +161,8 @@
     "bb_std": null,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 12.99,
-    "entry_frequency": 53,
-    "200sma_double_agent": 2
+    "entry_frequency": 14,
+    "200sma_double_agent": 12
   },
   {
     "ticker": "SACH",
@@ -172,8 +172,8 @@
     "bb_std": null,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 11.63,
-    "entry_frequency": 48,
-    "200sma_double_agent": 2
+    "entry_frequency": 13,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "JAX",
@@ -183,8 +183,8 @@
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 11.17,
-    "entry_frequency": 46,
-    "200sma_double_agent": 2
+    "entry_frequency": 12,
+    "200sma_double_agent": 8
   },
   {
     "ticker": "BOCH",
@@ -194,8 +194,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 9.85,
-    "entry_frequency": 40,
-    "200sma_double_agent": 2
+    "entry_frequency": 11,
+    "200sma_double_agent": 12
   },
   {
     "ticker": "USDP",
@@ -205,8 +205,8 @@
     "bb_std": null,
     "peers": "$EPD $KMI $WMB $SPY",
     "ror": 8.46,
-    "entry_frequency": 35,
-    "200sma_double_agent": 2
+    "entry_frequency": 9,
+    "200sma_double_agent": 17
   },
   {
     "ticker": "PFBI",
@@ -216,8 +216,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 8.25,
-    "entry_frequency": 34,
-    "200sma_double_agent": 2
+    "entry_frequency": 9,
+    "200sma_double_agent": 10
   },
   {
     "ticker": "FARM",
@@ -227,8 +227,8 @@
     "bb_std": null,
     "peers": "$MDLZ $KHC $GIS $SPY",
     "ror": 7.4,
-    "entry_frequency": 31,
-    "200sma_double_agent": 2
+    "entry_frequency": 8,
+    "200sma_double_agent": 16
   },
   {
     "ticker": "BRBS",
@@ -238,8 +238,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 7.11,
-    "entry_frequency": 29,
-    "200sma_double_agent": 2
+    "entry_frequency": 8,
+    "200sma_double_agent": 11
   },
   {
     "ticker": "CTHR",
@@ -249,8 +249,8 @@
     "bb_std": null,
     "peers": "$VFC $MAJJ $TPR $SPY",
     "ror": 6.76,
-    "entry_frequency": 28,
-    "200sma_double_agent": 2
+    "entry_frequency": 8,
+    "200sma_double_agent": 15
   },
   {
     "ticker": "BKSC",
@@ -260,8 +260,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 6.49,
-    "entry_frequency": 27,
-    "200sma_double_agent": 2
+    "entry_frequency": 7,
+    "200sma_double_agent": 22
   },
   {
     "ticker": "ESXB",
@@ -271,8 +271,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 6.0,
-    "entry_frequency": 25,
-    "200sma_double_agent": 2
+    "entry_frequency": 7,
+    "200sma_double_agent": 20
   },
   {
     "ticker": "TCFC",
@@ -282,8 +282,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 4.27,
-    "entry_frequency": 18,
-    "200sma_double_agent": 9
+    "entry_frequency": 5,
+    "200sma_double_agent": 25
   },
   {
     "ticker": "LOAN",
@@ -293,8 +293,8 @@
     "bb_std": null,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 2.21,
-    "entry_frequency": 10,
-    "200sma_double_agent": 9
+    "entry_frequency": 3,
+    "200sma_double_agent": 47
   },
   {
     "ticker": "INTT",
@@ -304,8 +304,8 @@
     "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 1.47,
-    "entry_frequency": 7,
-    "200sma_double_agent": 16
+    "entry_frequency": 2,
+    "200sma_double_agent": 35
   },
   {
     "ticker": "LEVL",
@@ -315,19 +315,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": -0.17,
-    "entry_frequency": 4,
-    "200sma_double_agent": 28
-  },
-  {
-    "ticker": "ORRF",
-    "sector": "Finance",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$TFC $PNC $FRC $SPY",
-    "ror": -0.57,
-    "entry_frequency": 4,
-    "200sma_double_agent": 28
+    "entry_frequency": 1,
+    "200sma_double_agent": 31
   },
   {
     "ticker": "MNSB",
@@ -337,7 +326,7 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": -1.28,
-    "entry_frequency": 4,
-    "200sma_double_agent": 29
+    "entry_frequency": 1,
+    "200sma_double_agent": 31
   }
 ]

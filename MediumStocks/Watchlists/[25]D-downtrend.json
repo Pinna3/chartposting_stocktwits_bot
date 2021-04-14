@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$002607.SZ $667.HK $TAL $SPY",
     "ror": 24.83,
-    "entry_frequency": 38,
+    "entry_frequency": 26,
     "200sma_double_agent": 2
   },
   {
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 14.64,
-    "entry_frequency": 23,
-    "200sma_double_agent": 5
+    "entry_frequency": 16,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "KPTI",
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 13.23,
-    "entry_frequency": 21,
-    "200sma_double_agent": 4
+    "entry_frequency": 14,
+    "200sma_double_agent": 6
   },
   {
     "ticker": "EGAN",
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$ADBE $CRM $INTU $SPY",
     "ror": 5.95,
-    "entry_frequency": 10,
-    "200sma_double_agent": 15
+    "entry_frequency": 7,
+    "200sma_double_agent": 18
   },
   {
     "ticker": "QTNT",
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
     "ror": 5.62,
-    "entry_frequency": 9,
-    "200sma_double_agent": 15
+    "entry_frequency": 7,
+    "200sma_double_agent": 16
   },
   {
     "ticker": "DEA",
@@ -62,8 +62,8 @@
     "bb_std": null,
     "peers": "$ARE $BXP $VNO $SPY",
     "ror": 1.18,
-    "entry_frequency": 3,
-    "200sma_double_agent": 26
+    "entry_frequency": 2,
+    "200sma_double_agent": 28
   },
   {
     "ticker": "ARCE",
@@ -73,7 +73,7 @@
     "bb_std": null,
     "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
     "ror": 1.06,
-    "entry_frequency": 3,
-    "200sma_double_agent": 29
+    "entry_frequency": 2,
+    "200sma_double_agent": 31
   }
 ]

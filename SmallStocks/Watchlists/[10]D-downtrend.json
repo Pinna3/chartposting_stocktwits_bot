@@ -83,7 +83,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 7.79,
+    "ror": 8.16,
     "entry_frequency": 9,
     "200sma_double_agent": 3
   },
@@ -132,17 +132,6 @@
     "200sma_double_agent": 5
   },
   {
-    "ticker": "CMCL",
-    "sector": "Basic Industries",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$CEY.L $CMCL $RYR.V $SPY",
-    "ror": 6.09,
-    "entry_frequency": 7,
-    "200sma_double_agent": 7
-  },
-  {
     "ticker": "CHMA",
     "sector": "Health Care",
     "mktcap": "Small",
@@ -161,6 +150,17 @@
     "bb_std": null,
     "peers": "$SNOW $TWLO $OKTA $SPY",
     "ror": 5.91,
+    "entry_frequency": 7,
+    "200sma_double_agent": 7
+  },
+  {
+    "ticker": "CMCL",
+    "sector": "Basic Industries",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CEY.L $CMCL $RYR.V $SPY",
+    "ror": 5.9,
     "entry_frequency": 7,
     "200sma_double_agent": 7
   },
@@ -198,6 +198,17 @@
     "200sma_double_agent": 6
   },
   {
+    "ticker": "AVCO",
+    "sector": "Consumer Services",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CVS $CI $LH $SPY",
+    "ror": 4.59,
+    "entry_frequency": 6,
+    "200sma_double_agent": 3
+  },
+  {
     "ticker": "AGRX",
     "sector": "Health Care",
     "mktcap": "Small",
@@ -209,17 +220,6 @@
     "200sma_double_agent": 10
   },
   {
-    "ticker": "AVCO",
-    "sector": "Consumer Services",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$CVS $CI $LH $SPY",
-    "ror": 3.7,
-    "entry_frequency": 5,
-    "200sma_double_agent": 3
-  },
-  {
     "ticker": "GNE",
     "sector": "Public Utilities",
     "mktcap": "Small",
@@ -228,7 +228,7 @@
     "peers": "$NEE $DUK $SO $SPY",
     "ror": 3.49,
     "entry_frequency": 4,
-    "200sma_double_agent": 13
+    "200sma_double_agent": 12
   },
   {
     "ticker": "GLOP",
@@ -305,7 +305,7 @@
     "peers": "$DRT.TO $PFB.TO $APT $SPY",
     "ror": 2.42,
     "entry_frequency": 3,
-    "200sma_double_agent": 13
+    "200sma_double_agent": 14
   },
   {
     "ticker": "CXDC",
@@ -341,6 +341,17 @@
     "200sma_double_agent": 10
   },
   {
+    "ticker": "OPTN",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 1.7,
+    "entry_frequency": 3,
+    "200sma_double_agent": 18
+  },
+  {
     "ticker": "HEPA",
     "sector": "Health Care",
     "mktcap": "Small",
@@ -352,37 +363,15 @@
     "200sma_double_agent": 12
   },
   {
-    "ticker": "OPTN",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 1.56,
-    "entry_frequency": 3,
-    "200sma_double_agent": 18
-  },
-  {
     "ticker": "TRX",
     "sector": "Basic Industries",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
     "peers": "$ABX.TO $FNV.TO $WPM.TO $SPY",
-    "ror": 0.79,
+    "ror": 0.77,
     "entry_frequency": 2,
     "200sma_double_agent": 12
-  },
-  {
-    "ticker": "BFRA",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$BNTX $CVAC $MOR.DE $SPY",
-    "ror": 0.55,
-    "entry_frequency": 2,
-    "200sma_double_agent": 32
   },
   {
     "ticker": "NSH",
@@ -391,18 +380,18 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 0.5,
-    "entry_frequency": 2,
+    "ror": 0.4,
+    "entry_frequency": 1,
     "200sma_double_agent": 13
   },
   {
-    "ticker": "PAYS",
-    "sector": "Miscellaneous",
+    "ticker": "BFRA",
+    "sector": "Health Care",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$V $MA $PYPL $SPY",
-    "ror": 0.24,
+    "peers": "$BNTX $CVAC $MOR.DE $SPY",
+    "ror": 0.18,
     "entry_frequency": 1,
     "200sma_double_agent": 33
   },
@@ -446,7 +435,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": -1.19,
+    "ror": -0.99,
     "entry_frequency": 1,
     "200sma_double_agent": 32
   },
@@ -457,7 +446,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
-    "ror": -2.0,
+    "ror": -1.78,
     "entry_frequency": 1,
     "200sma_double_agent": 16
   },
@@ -479,7 +468,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$ABT $DHR $SYK $SPY",
-    "ror": -2.58,
+    "ror": -2.77,
     "entry_frequency": 1,
     "200sma_double_agent": 144
   },

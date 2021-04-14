@@ -325,7 +325,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950140.KQ $CSGP $VRSK $SPY",
-    "ror": 9.9,
+    "ror": 9.94,
     "entry_frequency": 11,
     "200sma_double_agent": 4
   },
@@ -968,17 +968,6 @@
     "200sma_double_agent": 11
   },
   {
-    "ticker": "LNC",
-    "sector": "Finance",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$MET $PRU $AFL $SPY",
-    "ror": 6.15,
-    "entry_frequency": 7,
-    "200sma_double_agent": 21
-  },
-  {
     "ticker": "MET",
     "sector": "Finance",
     "mktcap": "VeryLarge",
@@ -988,6 +977,17 @@
     "ror": 6.14,
     "entry_frequency": 7,
     "200sma_double_agent": 11
+  },
+  {
+    "ticker": "LNC",
+    "sector": "Finance",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$MET $PRU $AFL $SPY",
+    "ror": 6.06,
+    "entry_frequency": 7,
+    "200sma_double_agent": 21
   },
   {
     "ticker": "KSU",
@@ -1054,17 +1054,6 @@
     "ror": 5.9,
     "entry_frequency": 7,
     "200sma_double_agent": 22
-  },
-  {
-    "ticker": "IR",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ITW $PH $SWK $SPY",
-    "ror": 5.79,
-    "entry_frequency": 7,
-    "200sma_double_agent": 12
   },
   {
     "ticker": "L",
@@ -1141,7 +1130,7 @@
     "peers": "$RY.TO $TD.TO $BNS.TO $SPY",
     "ror": 5.37,
     "entry_frequency": 6,
-    "200sma_double_agent": 8
+    "200sma_double_agent": 9
   },
   {
     "ticker": "SWK",
@@ -1383,7 +1372,7 @@
     "peers": "$TMO $ILMN $A $SPY",
     "ror": 4.56,
     "entry_frequency": 6,
-    "200sma_double_agent": 15
+    "200sma_double_agent": 14
   },
   {
     "ticker": "DOV",
@@ -1416,7 +1405,7 @@
     "peers": "$HON $GE $MMM $SPY",
     "ror": 4.11,
     "entry_frequency": 5,
-    "200sma_double_agent": 10
+    "200sma_double_agent": 9
   },
   {
     "ticker": "WPP",

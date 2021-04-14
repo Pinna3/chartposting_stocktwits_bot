@@ -371,7 +371,7 @@
     "peers": "$PGR $TRV $ALL $SPY",
     "ror": 3.36,
     "entry_frequency": 4,
-    "200sma_double_agent": 5
+    "200sma_double_agent": 6
   },
   {
     "ticker": "CFRX",
@@ -407,17 +407,6 @@
     "200sma_double_agent": 3
   },
   {
-    "ticker": "PAYS",
-    "sector": "Miscellaneous",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$V $MA $PYPL $SPY",
-    "ror": 2.83,
-    "entry_frequency": 4,
-    "200sma_double_agent": 4
-  },
-  {
     "ticker": "HYMC",
     "sector": "Basic Industries",
     "mktcap": "Small",
@@ -426,7 +415,7 @@
     "peers": "$NEM $RGLD $CDE $SPY",
     "ror": 2.74,
     "entry_frequency": 4,
-    "200sma_double_agent": 4
+    "200sma_double_agent": 5
   },
   {
     "ticker": "AGRX",
@@ -580,7 +569,7 @@
     "peers": "$950130.KQ $ALGN $WST $SPY",
     "ror": 0.87,
     "entry_frequency": 2,
-    "200sma_double_agent": 8
+    "200sma_double_agent": 6
   },
   {
     "ticker": "SUPV",
@@ -668,7 +657,7 @@
     "peers": "$CEY.L $CMCL $RYR.V $SPY",
     "ror": -0.73,
     "entry_frequency": 1,
-    "200sma_double_agent": 16
+    "200sma_double_agent": 18
   },
   {
     "ticker": "WTER",
@@ -690,7 +679,7 @@
     "peers": "$H02.SI $WVE $42C.SI $SPY",
     "ror": -1.92,
     "entry_frequency": 1,
-    "200sma_double_agent": 13
+    "200sma_double_agent": 14
   },
   {
     "ticker": "LQDA",
@@ -715,6 +704,17 @@
     "200sma_double_agent": 33
   },
   {
+    "ticker": "VIST",
+    "sector": "Energy",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$VISTAA.MX $SPY",
+    "ror": -4.09,
+    "entry_frequency": 1,
+    "200sma_double_agent": null
+  },
+  {
     "ticker": "CABA",
     "sector": "Health Care",
     "mktcap": "Small",
@@ -723,7 +723,7 @@
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": -5.01,
     "entry_frequency": 1,
-    "200sma_double_agent": 20
+    "200sma_double_agent": 19
   },
   {
     "ticker": "BSGM",

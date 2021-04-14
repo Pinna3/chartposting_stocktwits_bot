@@ -173,7 +173,7 @@
     "peers": "$EMR $3665.TW $ROK $SPY",
     "ror": 9.64,
     "entry_frequency": 11,
-    "200sma_double_agent": 7
+    "200sma_double_agent": 6
   },
   {
     "ticker": "IEX",
@@ -723,7 +723,7 @@
     "peers": "$HON $GE $MMM $SPY",
     "ror": 4.87,
     "entry_frequency": 6,
-    "200sma_double_agent": 10
+    "200sma_double_agent": 9
   },
   {
     "ticker": "LYG",
@@ -1263,17 +1263,6 @@
     "ror": 1.9,
     "entry_frequency": 3,
     "200sma_double_agent": 24
-  },
-  {
-    "ticker": "IR",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ITW $PH $SWK $SPY",
-    "ror": 1.86,
-    "entry_frequency": 3,
-    "200sma_double_agent": 27
   },
   {
     "ticker": "BCS",

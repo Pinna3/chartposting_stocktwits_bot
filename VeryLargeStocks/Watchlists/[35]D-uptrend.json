@@ -371,7 +371,7 @@
     "peers": "$RY.TO $TD.TO $BNS.TO $SPY",
     "ror": 10.1,
     "entry_frequency": 11,
-    "200sma_double_agent": 8
+    "200sma_double_agent": 9
   },
   {
     "ticker": "KHC",

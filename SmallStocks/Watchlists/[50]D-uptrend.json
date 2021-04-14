@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 120.71,
-    "entry_frequency": 484,
+    "entry_frequency": 122,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$CMRE $NMCI $NMM $SPY",
     "ror": 82.38,
-    "entry_frequency": 331,
+    "entry_frequency": 83,
     "200sma_double_agent": 2
   },
   {
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$UBER $ODFL $LYFT $SPY",
     "ror": 64.28,
-    "entry_frequency": 258,
+    "entry_frequency": 65,
     "200sma_double_agent": 2
   },
   {
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 58.11,
-    "entry_frequency": 233,
+    "entry_frequency": 59,
     "200sma_double_agent": 2
   },
   {
@@ -51,7 +51,7 @@
     "bb_std": null,
     "peers": "$RE $RNR $ESGR $SPY",
     "ror": 55.6,
-    "entry_frequency": 223,
+    "entry_frequency": 57,
     "200sma_double_agent": 2
   },
   {
@@ -62,7 +62,7 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 55.35,
-    "entry_frequency": 222,
+    "entry_frequency": 56,
     "200sma_double_agent": 2
   },
   {
@@ -73,7 +73,7 @@
     "bb_std": null,
     "peers": "$GOOGL $FB $SNAP $SPY",
     "ror": 51.66,
-    "entry_frequency": 208,
+    "entry_frequency": 53,
     "200sma_double_agent": 2
   },
   {
@@ -84,8 +84,8 @@
     "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 34.85,
-    "entry_frequency": 140,
-    "200sma_double_agent": 2
+    "entry_frequency": 36,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "ALOT",
@@ -95,8 +95,8 @@
     "bb_std": null,
     "peers": "$AAPL $DELL $HPQ $SPY",
     "ror": 32.75,
-    "entry_frequency": 132,
-    "200sma_double_agent": 2
+    "entry_frequency": 34,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "SACH",
@@ -106,8 +106,8 @@
     "bb_std": null,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 18.65,
-    "entry_frequency": 76,
-    "200sma_double_agent": 2
+    "entry_frequency": 20,
+    "200sma_double_agent": 8
   },
   {
     "ticker": "BRBS",
@@ -117,8 +117,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 14.65,
-    "entry_frequency": 60,
-    "200sma_double_agent": 2
+    "entry_frequency": 16,
+    "200sma_double_agent": 17
   },
   {
     "ticker": "LOAN",
@@ -128,7 +128,7 @@
     "bb_std": null,
     "peers": "$NLY $AGNC $STWD $SPY",
     "ror": 9.23,
-    "entry_frequency": 38,
-    "200sma_double_agent": 5
+    "entry_frequency": 10,
+    "200sma_double_agent": 40
   }
 ]

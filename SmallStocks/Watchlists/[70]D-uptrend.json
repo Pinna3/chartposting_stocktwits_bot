@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$CMRE $NMCI $NMM $SPY",
     "ror": 142.58,
-    "entry_frequency": 571,
+    "entry_frequency": 144,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
     "ror": 137.82,
-    "entry_frequency": 552,
+    "entry_frequency": 139,
     "200sma_double_agent": 2
   },
   {
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 92.85,
-    "entry_frequency": 372,
+    "entry_frequency": 94,
     "200sma_double_agent": 2
   },
   {
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 78.02,
-    "entry_frequency": 313,
+    "entry_frequency": 79,
     "200sma_double_agent": 2
   },
   {
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 59.79,
-    "entry_frequency": 240,
-    "200sma_double_agent": 2
+    "entry_frequency": 61,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "BRBS",
@@ -62,7 +62,7 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 25.27,
-    "entry_frequency": 102,
-    "200sma_double_agent": 2
+    "entry_frequency": 26,
+    "200sma_double_agent": 16
   }
 ]

@@ -105,7 +105,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
-    "ror": 13.09,
+    "ror": 13.26,
     "entry_frequency": 14,
     "200sma_double_agent": 3
   },
@@ -204,7 +204,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$NEE $DUK $SO $SPY",
-    "ror": 5.22,
+    "ror": 5.36,
     "entry_frequency": 6,
     "200sma_double_agent": 12
   },
@@ -217,7 +217,7 @@
     "peers": "$PGR $TRV $ALL $SPY",
     "ror": 3.56,
     "entry_frequency": 5,
-    "200sma_double_agent": 13
+    "200sma_double_agent": 15
   },
   {
     "ticker": "OPTN",
@@ -240,17 +240,6 @@
     "ror": -0.0,
     "entry_frequency": 1,
     "200sma_double_agent": 23
-  },
-  {
-    "ticker": "PAYS",
-    "sector": "Miscellaneous",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$V $MA $PYPL $SPY",
-    "ror": -0.24,
-    "entry_frequency": 1,
-    "200sma_double_agent": 33
   },
   {
     "ticker": "LQDA",

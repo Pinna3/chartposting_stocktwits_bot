@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 17.74,
-    "entry_frequency": 72,
+    "entry_frequency": 52,
     "200sma_double_agent": 2
   },
   {
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$BPY $H78.SI $ROM.OL $SPY",
     "ror": 1.56,
-    "entry_frequency": 7,
-    "200sma_double_agent": 24
+    "entry_frequency": 6,
+    "200sma_double_agent": 29
   },
   {
     "ticker": "AFINP",
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
     "ror": 0.86,
-    "entry_frequency": 4,
-    "200sma_double_agent": 27
+    "entry_frequency": 3,
+    "200sma_double_agent": 36
   },
   {
     "ticker": "GFLU",
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$WCN.TO $GFL.TO $PYR.TO $SPY",
     "ror": -1.16,
-    "entry_frequency": 4,
+    "entry_frequency": 2,
     "200sma_double_agent": 18
   }
 ]

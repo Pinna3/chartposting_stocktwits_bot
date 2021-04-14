@@ -118,7 +118,7 @@
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 11.51,
     "entry_frequency": 13,
-    "200sma_double_agent": 6
+    "200sma_double_agent": 7
   },
   {
     "ticker": "LQDA",
@@ -130,17 +130,6 @@
     "ror": 11.11,
     "entry_frequency": 12,
     "200sma_double_agent": 6
-  },
-  {
-    "ticker": "PAYS",
-    "sector": "Miscellaneous",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$V $MA $PYPL $SPY",
-    "ror": 9.85,
-    "entry_frequency": 11,
-    "200sma_double_agent": 5
   },
   {
     "ticker": "GNE",

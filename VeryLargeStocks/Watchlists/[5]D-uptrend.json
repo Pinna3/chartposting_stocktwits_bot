@@ -1218,7 +1218,7 @@
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 1.55,
     "entry_frequency": 3,
-    "200sma_double_agent": 9
+    "200sma_double_agent": 5
   },
   {
     "ticker": "NVR",
@@ -1834,7 +1834,7 @@
     "peers": "$ITW $PH $SWK $SPY",
     "ror": 0.79,
     "entry_frequency": 2,
-    "200sma_double_agent": 20
+    "200sma_double_agent": 19
   },
   {
     "ticker": "MET",
@@ -2186,7 +2186,7 @@
     "peers": "$IBM $CTSH $EPAM $SPY",
     "ror": 0.49,
     "entry_frequency": 1,
-    "200sma_double_agent": 10
+    "200sma_double_agent": 9
   },
   {
     "ticker": "BR",
@@ -2296,7 +2296,7 @@
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 0.4,
     "entry_frequency": 1,
-    "200sma_double_agent": 39
+    "200sma_double_agent": 16
   },
   {
     "ticker": "KDP",
@@ -2307,7 +2307,7 @@
     "peers": "$KO $PEP $KDP $SPY",
     "ror": 0.4,
     "entry_frequency": 1,
-    "200sma_double_agent": 8
+    "200sma_double_agent": 7
   },
   {
     "ticker": "CNI",
@@ -2494,7 +2494,7 @@
     "peers": "$CNQ.TO $TOU.TO $IPCO.ST $SPY",
     "ror": 0.2,
     "entry_frequency": 1,
-    "200sma_double_agent": 35
+    "200sma_double_agent": 37
   },
   {
     "ticker": "DLTR",
@@ -2714,7 +2714,7 @@
     "peers": "$105560.KS $055550.KS $086790.KS $SPY",
     "ror": -0.29,
     "entry_frequency": 1,
-    "200sma_double_agent": 18
+    "200sma_double_agent": 17
   },
   {
     "ticker": "FB",
@@ -2992,17 +2992,6 @@
     "200sma_double_agent": 13
   },
   {
-    "ticker": "IR",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ITW $PH $SWK $SPY",
-    "ror": -0.54,
-    "entry_frequency": 1,
-    "200sma_double_agent": 26
-  },
-  {
     "ticker": "OKE",
     "sector": "Public Utilities",
     "mktcap": "VeryLarge",
@@ -3033,7 +3022,7 @@
     "peers": "$HSBA.L $BARC.L $LLOY.L $SPY",
     "ror": -0.58,
     "entry_frequency": 1,
-    "200sma_double_agent": 15
+    "200sma_double_agent": 14
   },
   {
     "ticker": "PEG",
@@ -3176,7 +3165,7 @@
     "peers": "$BA $RTX $LMT $SPY",
     "ror": -0.87,
     "entry_frequency": 1,
-    "200sma_double_agent": 15
+    "200sma_double_agent": 16
   },
   {
     "ticker": "MCD",
@@ -3573,17 +3562,6 @@
     "ror": -2.27,
     "entry_frequency": 1,
     "200sma_double_agent": 13
-  },
-  {
-    "ticker": "INFY",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$TCS.NS $INFY.NS $HCLTECH.NS $SPY",
-    "ror": -2.34,
-    "entry_frequency": 1,
-    "200sma_double_agent": 12
   },
   {
     "ticker": "TPL",

@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 115.98,
-    "entry_frequency": 187,
+    "entry_frequency": 117,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$PWR $ACM $MTZ $SPY",
     "ror": 66.59,
-    "entry_frequency": 108,
+    "entry_frequency": 68,
     "200sma_double_agent": 2
   },
   {
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$DE $TTC $AGCO $SPY",
     "ror": 60.03,
-    "entry_frequency": 97,
-    "200sma_double_agent": 2
+    "entry_frequency": 61,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "SCVL",
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$TJX $ROST $BURL $SPY",
     "ror": 54.32,
-    "entry_frequency": 88,
-    "200sma_double_agent": 2
+    "entry_frequency": 55,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "CUBI",
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 53.97,
-    "entry_frequency": 87,
-    "200sma_double_agent": 2
+    "entry_frequency": 55,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "RBNC",
@@ -62,8 +62,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 41.83,
-    "entry_frequency": 68,
-    "200sma_double_agent": 2
+    "entry_frequency": 43,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "HCI",
@@ -73,8 +73,8 @@
     "bb_std": null,
     "peers": "$PGR $TRV $ALL $SPY",
     "ror": 41.52,
-    "entry_frequency": 67,
-    "200sma_double_agent": 2
+    "entry_frequency": 43,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "OBNK",
@@ -84,8 +84,8 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 40.5,
-    "entry_frequency": 66,
-    "200sma_double_agent": 2
+    "entry_frequency": 42,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "AMEH",
@@ -95,8 +95,8 @@
     "bb_std": null,
     "peers": "$CVS $CI $LH $SPY",
     "ror": 24.37,
-    "entry_frequency": 40,
-    "200sma_double_agent": 7
+    "entry_frequency": 25,
+    "200sma_double_agent": 13
   },
   {
     "ticker": "PLYM",
@@ -106,7 +106,7 @@
     "bb_std": null,
     "peers": "$PLD $DRE $COLD $SPY",
     "ror": 14.99,
-    "entry_frequency": 25,
-    "200sma_double_agent": 21
+    "entry_frequency": 16,
+    "200sma_double_agent": 24
   }
 ]

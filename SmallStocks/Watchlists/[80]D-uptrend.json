@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$CMRE $NMCI $NMM $SPY",
     "ror": 175.89,
-    "entry_frequency": 705,
+    "entry_frequency": 177,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
     "ror": 100.77,
-    "entry_frequency": 404,
+    "entry_frequency": 102,
     "200sma_double_agent": 2
   },
   {
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
     "ror": 94.09,
-    "entry_frequency": 377,
+    "entry_frequency": 95,
     "200sma_double_agent": 2
   },
   {
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
     "ror": 78.36,
-    "entry_frequency": 314,
+    "entry_frequency": 79,
     "200sma_double_agent": 2
   }
 ]

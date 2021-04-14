@@ -7,8 +7,8 @@
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 25.79,
-    "entry_frequency": 104,
-    "200sma_double_agent": 2
+    "entry_frequency": 27,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "SRPT",
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 22.11,
-    "entry_frequency": 89,
-    "200sma_double_agent": 2
+    "entry_frequency": 23,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "QDEL",
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$950130.KQ $ALGN $WST $SPY",
     "ror": 20.35,
-    "entry_frequency": 82,
-    "200sma_double_agent": 2
+    "entry_frequency": 21,
+    "200sma_double_agent": 6
   },
   {
     "ticker": "MOR",
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": 12.22,
-    "entry_frequency": 50,
-    "200sma_double_agent": 2
+    "entry_frequency": 13,
+    "200sma_double_agent": 10
   },
   {
     "ticker": "GLPG",
@@ -51,7 +51,7 @@
     "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 9.41,
-    "entry_frequency": 39,
-    "200sma_double_agent": 2
+    "entry_frequency": 10,
+    "200sma_double_agent": 15
   }
 ]

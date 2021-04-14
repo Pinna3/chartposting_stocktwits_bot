@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 321.15,
-    "entry_frequency": 1286,
+    "entry_frequency": 322,
     "200sma_double_agent": 2
   },
   {
@@ -18,8 +18,8 @@
     "bb_std": null,
     "peers": "$HCA $UHS $EHC $SPY",
     "ror": 66.28,
-    "entry_frequency": 266,
-    "200sma_double_agent": 2
+    "entry_frequency": 67,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "SLM",
@@ -29,8 +29,8 @@
     "bb_std": null,
     "peers": "$AXP $COF $DFS $SPY",
     "ror": 56.84,
-    "entry_frequency": 228,
-    "200sma_double_agent": 2
+    "entry_frequency": 58,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "IHRT",
@@ -40,8 +40,8 @@
     "bb_std": null,
     "peers": "$VIAC $FOXA $DISCA $SPY",
     "ror": 46.3,
-    "entry_frequency": 186,
-    "200sma_double_agent": 2
+    "entry_frequency": 47,
+    "200sma_double_agent": 8
   },
   {
     "ticker": "STN",
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
     "ror": 43.19,
-    "entry_frequency": 174,
-    "200sma_double_agent": 2
+    "entry_frequency": 44,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "OSK",
@@ -62,7 +62,7 @@
     "bb_std": null,
     "peers": "$CAT $CMI $PCAR $SPY",
     "ror": 40.84,
-    "entry_frequency": 164,
-    "200sma_double_agent": 2
+    "entry_frequency": 42,
+    "200sma_double_agent": 8
   }
 ]

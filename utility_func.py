@@ -129,7 +129,7 @@ def graph_degrees_of_trend(mktcap_dir, down_or_up_str, title_time_marker):
     hits = []
     time_markers = generate_list_of_time_markers(title_time_marker)
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/({period},)D-{down_or_up_str}trend.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/[{period}]D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
             # print(period, len(list))
@@ -146,7 +146,7 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_mark
     hits = []
     time_markers = generate_list_of_time_markers(title_time_marker)
     for period in time_markers:
-        with open(f'{mktcap_dir}Stocks/Watchlists/({period},)D-{down_or_up_str}trend.json') as infile:
+        with open(f'{mktcap_dir}Stocks/Watchlists/[{period}]D-{down_or_up_str}trend.json') as infile:
             list = json.load(infile)
             hits.append(len(list))
     dropoffs = []
@@ -185,6 +185,15 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_mark
                 writer = csv.writer(outfile)
                 writer.writerow(csv_row)
     return dropoffs_sorted
+
+def yield_first_nonzero_dropoff_tuple_below_threshold(mktcap_dir, down_or_up_str, title_time_marker, interval=5, threshold=.25):
+    for tuple in calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_marker):
+        if tuple[1] != 0 and tuple[1] <= threshold:
+            return tuple
+
+for direction in ['up', 'down']:
+    for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+        print(direction, mktcap, yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5))
 
 #experiment with prioritizing methods... right now using ranking_time_weighted_sorted
 #mktcap_group = 'VeryLarge', 'Large', 'Medium', 'Small', 'Micro'

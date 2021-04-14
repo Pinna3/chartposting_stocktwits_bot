@@ -1,9 +1,8 @@
 import finnhub
-import csv
+import csv, json
 from time import sleep
 from candlestick import SecurityTradeData, LiteSecurityTradeData
 from utility_func import bb_param_optomizer_WITH_average, bb_param_optomizer_WITHOUT_average, sm200doubleagent_window_optomizer_WITHOUT_average, make_pulled_csv_list_consumable, generate_list_of_time_markers
-import json
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
 import operator
@@ -90,42 +89,9 @@ class Securities:
             trend = 'down'
         with open(f'{mktcap_group}Stocks/Watchlists/{time_markers[-1:]}D-{trend}trend.json', 'w') as outfile:
             json.dump(trending_sorted_by_ror, outfile, indent=2)
+        print(f"ROR Prioritization Factor = {ror_prioritization_factor}")
 
 class LiteSecurities(Securities):
     def __init__(self, list_of_candles):
         self.candles = list_of_candles
         self.backup_candles = []
-
-if __name__ == '__main__':
-    timemarkers = generate_list_of_time_markers(80, increment=5)
-
-    list = Securities('StockLists/Micro<$50M.csv')
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Micro', ror_prioritization_factor=4.0)
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Micro', ror_prioritization_factor=1.0)
-
-    list = Securities('StockLists/Small$50M-$300M.csv')
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Small', ror_prioritization_factor=4.0)
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Small', ror_prioritization_factor=1.0)
-
-    list = Securities('StockLists/Medium$300M-$2B.csv')
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Medium', ror_prioritization_factor=1.6)
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Medium', ror_prioritization_factor=1.5)
-
-    list = Securities('StockLists/Large$2B-$10B.csv')
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='Large', ror_prioritization_factor=4)
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='Large', ror_prioritization_factor=4)
-
-    list = Securities('StockLists/VeryLarge>$10B.csv')
-    # list = Securities('StockLists/verylargesample.csv')
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='>', mktcap_group='VeryLarge', ror_prioritization_factor=1)
-    for timemarker in timemarkers:
-        list.trend_9SMA_20SMA_50SMA_200SMA(timemarker, op_str='<', mktcap_group='VeryLarge', ror_prioritization_factor=1)

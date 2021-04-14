@@ -7,7 +7,7 @@
     "bb_std": null,
     "peers": "$ABT $DHR $SYK $SPY",
     "ror": 44.13,
-    "entry_frequency": 178,
+    "entry_frequency": 45,
     "200sma_double_agent": 2
   },
   {
@@ -18,7 +18,7 @@
     "bb_std": null,
     "peers": "$CAT $CMI $PCAR $SPY",
     "ror": 22.32,
-    "entry_frequency": 90,
+    "entry_frequency": 23,
     "200sma_double_agent": 2
   },
   {
@@ -29,7 +29,7 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 20.7,
-    "entry_frequency": 84,
+    "entry_frequency": 22,
     "200sma_double_agent": 2
   },
   {
@@ -40,7 +40,7 @@
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
     "ror": 14.97,
-    "entry_frequency": 61,
+    "entry_frequency": 16,
     "200sma_double_agent": 2
   },
   {
@@ -51,8 +51,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 11.87,
-    "entry_frequency": 48,
-    "200sma_double_agent": 2
+    "entry_frequency": 13,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "ASND",
@@ -62,8 +62,8 @@
     "bb_std": null,
     "peers": "$GMAB.CO $BAVA.CO $ZEAL.CO $SPY",
     "ror": 9.05,
-    "entry_frequency": 37,
-    "200sma_double_agent": 2
+    "entry_frequency": 10,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "FOLD",
@@ -73,8 +73,8 @@
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
     "ror": 8.78,
-    "entry_frequency": 36,
-    "200sma_double_agent": 2
+    "entry_frequency": 10,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "QDEL",
@@ -84,8 +84,8 @@
     "bb_std": null,
     "peers": "$950130.KQ $ALGN $WST $SPY",
     "ror": 6.28,
-    "entry_frequency": 26,
-    "200sma_double_agent": 2
+    "entry_frequency": 7,
+    "200sma_double_agent": 14
   },
   {
     "ticker": "GLPG",
@@ -95,8 +95,8 @@
     "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
     "ror": 3.23,
-    "entry_frequency": 14,
-    "200sma_double_agent": 2
+    "entry_frequency": 4,
+    "200sma_double_agent": 17
   },
   {
     "ticker": "MOR",
@@ -106,8 +106,8 @@
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
     "ror": 1.24,
-    "entry_frequency": 6,
-    "200sma_double_agent": 14
+    "entry_frequency": 2,
+    "200sma_double_agent": 20
   },
   {
     "ticker": "OCFT",
@@ -117,7 +117,7 @@
     "bb_std": null,
     "peers": "$688111.SS $600588.SS $002230.SZ $SPY",
     "ror": -0.26,
-    "entry_frequency": 4,
-    "200sma_double_agent": 23
+    "entry_frequency": 1,
+    "200sma_double_agent": 28
   }
 ]

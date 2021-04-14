@@ -162,18 +162,49 @@ def open_capacities_dict():
         }
     }
     return capacities_dict
-print(open_capacities_dict())
 
-capacities_dict = open_capacities_dict()
-candle_object_list_dict = construct_dict_of_top_tier_unbroken_trenders(tier_percentage=12)
-# print(candle_object_list_dict['>']['VeryLarge'][1].sma200_double_agent)
-top_tier_trenders = pull_top_tier_unbroken_trenders(tier_percentage=12)
-for filename, timemarker, mktcap, op_str, num, total in [trender for trender in top_tier_trenders if trender != None]:
-    print(filename, num, total)
-    priority_factor_range = [i/10 for i in range(10, 41)]
-    for ror_priority_factor in priority_factor_range:
-        hits, category_total = optimal_ror_prioritization_factor_for_nightly_scan_input(candle_object_list_dict, op_str, mktcap, timemarker, ror_prioritization_factor=ror_priority_factor)
-        if hits >= capacities_dict[op_str][mktcap]:
-            print(hits, ror_priority_factor)
-            break
-    print(hits, ror_priority_factor)
+def optimized_prioritization_factors():
+    capacities_dict = open_capacities_dict()
+    candle_object_list_dict = construct_dict_of_top_tier_unbroken_trenders(tier_percentage=12)
+    top_tier_trenders = pull_top_tier_unbroken_trenders(tier_percentage=12)
+    ror_prioritization_dict = {
+        '>': {
+            'VeryLarge' : 1.0,
+            'Large': 1.0,
+            'Medium': 1.0,
+            'Small': 1.0,
+            'Micro': 1.0
+        },
+        '<': {
+            'VeryLarge' : 1.0,
+            'Large': 1.0,
+            'Medium': 1.0,
+            'Small': 1.0,
+            'Micro': 1.0
+        }
+    }
+    def return_priority_factor_if_capacity_is_met(candle_object_list_dict, op_str, mktcap, timemarker):
+        priority_factor_range = [i/10 for i in range(10, 51)]
+        for ror_priority_factor in priority_factor_range:
+            hits, category_total = optimal_ror_prioritization_factor_for_nightly_scan_input(candle_object_list_dict, op_str, mktcap, timemarker, ror_prioritization_factor=ror_priority_factor)
+            print(hits)
+            if hits >= capacities_dict[op_str][mktcap] or hits == category_total:
+                return ror_priority_factor
+        return ror_priority_factor
+
+    for filename, timemarker, mktcap, op_str, num, total in [trender for trender in top_tier_trenders if trender is not None]:
+        print(filename, num, total)
+        print(capacities_dict)
+        print('')
+        ror_prioritization_dict[op_str][mktcap] = return_priority_factor_if_capacity_is_met(candle_object_list_dict, op_str, mktcap, timemarker)
+
+            #     print(hits)
+            #     continue
+            # else:
+            #     ror_prioritization_dict[op_str][mktcap] = ror_priority_factor
+            #     print(ror_prioritization_dict[op_str][mktcap])
+            #     print(hits)
+            #     break
+    return ror_prioritization_dict
+
+# print(optimized_prioritization_factors())
