@@ -1,5 +1,6 @@
 from utility_func import get_account_value
-import json
+from alpaca import get_all_positions
+import json, csv
 from glob import glob
 from datetime import date
 today_date = date.today().strftime('%m-%d-%y')
@@ -47,12 +48,12 @@ def preset_daily_counter_capacities():
         'max_daily_trades': 15,
         'max_long_verylarge': .25,
         'max_long_large': .25,
-        'max_long_medium': .25,
-        'max_long_small': .25,
-        'max_long_micro': .25,
-        'max_short_verylarge': .50,
-        'max_short_large': .50,
-        'max_short_medium': .50,
+        'max_long_medium': .20,
+        'max_long_small': .15,
+        'max_long_micro': .15,
+        'max_short_verylarge': .40,
+        'max_short_large': .40,
+        'max_short_medium': .10,
         'max_short_small': 0,
         'max_short_micro': 0
     }
@@ -187,3 +188,140 @@ def check_daily_tradelist(symbol):
             return False
         else:
             return symbol in trades['trades']
+
+def categorize_open_positions():
+    all_positions = get_all_positions()
+    long_positions = []
+    long_verylarge, long_large, long_medium, long_small, long_micro = 0, 0, 0, 0, 0
+    short_positions = []
+    short_verylarge, short_large, short_medium, short_small, short_micro = 0, 0, 0, 0, 0
+    [long_positions.append(position['symbol']) for position in all_positions if position['side'] == 'long']
+    [short_positions.append(position['symbol']) for position in all_positions if position['side'] == 'short']
+    with open('StockLists/VeryLarge>$10B.csv') as infile:
+        reader = csv.reader(infile)
+        next(reader)
+        very_large = [row[0] for row in reader]
+        for ticker in long_positions:
+            if ticker in very_large:
+                long_verylarge += 1
+        for ticker in short_positions:
+            if ticker in very_large:
+                short_verylarge += 1
+    with open('StockLists/Large$2B-$10B.csv') as infile:
+        reader = csv.reader(infile)
+        next(reader)
+        large = [row[0] for row in reader]
+        for ticker in long_positions:
+            if ticker in large:
+                long_large += 1
+        for ticker in short_positions:
+            if ticker in large:
+                short_large += 1
+    with open('StockLists/Medium$300M-$2B.csv') as infile:
+        reader = csv.reader(infile)
+        next(reader)
+        medium = [row[0] for row in reader]
+        for ticker in long_positions:
+            if ticker in medium:
+                long_medium += 1
+        for ticker in short_positions:
+            if ticker in medium:
+                short_medium += 1
+    with open('StockLists/Small$50M-$300M.csv') as infile:
+        reader = csv.reader(infile)
+        next(reader)
+        small = [row[0] for row in reader]
+        for ticker in long_positions:
+            if ticker in small:
+                long_small += 1
+        for ticker in short_positions:
+            if ticker in small:
+                short_small += 1
+    with open('StockLists/Micro<$50M.csv') as infile:
+        reader = csv.reader(infile)
+        next(reader)
+        micro = [row[0] for row in reader]
+        for ticker in long_positions:
+            if ticker in micro:
+                long_micro += 1
+        for ticker in short_positions:
+            if ticker in micro:
+                short_micro += 1
+    return long_verylarge, long_large, long_medium, long_small, long_micro, short_verylarge, short_large, short_medium, short_small, short_micro
+
+#open capacities factoring in account holdings
+def open_mktcap_capacities_dict():
+    long_max_exposure, short_max_exposure, long_total, short_total = set_long_short_capacities()
+    capacities = preset_daily_counter_capacities()
+    long_verylarge_acct, long_large_acct, long_medium_acct, long_small_acct, long_micro_acct, short_verylarge_acct, short_large_acct, short_medium_acct, short_small_acct, short_micro_acct = categorize_open_positions()
+    long_verylarge = round(capacities['max_long_verylarge'] * long_max_exposure - long_verylarge_acct)
+    long_large = round(capacities['max_long_large'] * long_max_exposure - long_large_acct)
+    long_medium = round(capacities['max_long_medium'] * long_max_exposure - long_medium_acct)
+    long_small = round(capacities['max_long_small'] * long_max_exposure - long_small_acct)
+    long_micro = round(capacities['max_long_micro'] * long_max_exposure - long_micro_acct)
+    short_verylarge = round(capacities['max_short_verylarge'] * short_max_exposure - short_verylarge_acct)
+    short_large = round(capacities['max_short_large'] * short_max_exposure - short_large_acct)
+    short_medium = round(capacities['max_short_medium'] * short_max_exposure - short_medium_acct)
+    short_small = round(capacities['max_short_small'] * short_max_exposure - short_small_acct)
+    short_micro = round(capacities['max_short_micro'] * short_max_exposure - short_micro_acct)
+    capacities_dict = {
+        '>': {
+            'VeryLarge': long_verylarge,
+            'Large': long_large,
+            'Medium': long_medium,
+            'Small': long_small,
+            'Micro': long_micro
+        },
+        '<': {
+            'VeryLarge' : short_verylarge,
+            'Large': short_large,
+            'Medium': short_medium,
+            'Small': short_small,
+            'Micro': short_micro
+        }
+    }
+    return capacities_dict
+print(open_mktcap_capacities_dict())
+print('')
+
+def open_sector_capacities_dict():
+    with open('SectorAllocationDict.json') as infile:
+        dict = json.load(infile)
+
+    sector_percentage_capacities_dict = {
+        '>': {
+            'Consumer Services': 10,
+            'Consumer Non-Durables': 10,
+            'Basic Industries': 10,
+            'Consumer Durables': 10,
+            'Energy': 10,
+            'Transportation': 10,
+            'Technology': 10,
+            'Health Care': 10,
+            'Public Utilities': 10,
+            'Finance': 10,
+            'Capital Goods': 10,
+            'Miscellaneous': 10
+        },
+        '<': {
+            'Consumer Services': 10,
+            'Consumer Non-Durables': 10,
+            'Basic Industries': 10,
+            'Consumer Durables': 10,
+            'Energy': 10,
+            'Transportation': 10,
+            'Technology': 10,
+            'Health Care': 10,
+            'Public Utilities': 10,
+            'Finance': 10,
+            'Capital Goods': 10,
+            'Miscellaneous': 10
+        }
+    }
+    for sector in dict['long']['sector'].keys():
+        sector_percentage_capacities_dict['>'][sector] -= round(dict['long']['sector'][sector]['acct_percentage'])
+    for sector in dict['short']['sector'].keys():
+        sector_percentage_capacities_dict['<'][sector] -= round(dict['short']['sector'][sector]['acct_percentage'])
+
+    return sector_percentage_capacities_dict
+print(open_sector_capacities_dict())

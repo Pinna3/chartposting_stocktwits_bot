@@ -186,15 +186,6 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_mark
                 writer.writerow(csv_row)
     return dropoffs_sorted
 
-def yield_first_nonzero_dropoff_tuple_below_threshold(mktcap_dir, down_or_up_str, title_time_marker, interval=5, threshold=.25):
-    for tuple in calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_marker):
-        if tuple[1] != 0 and tuple[1] <= threshold:
-            return tuple
-
-for direction in ['up', 'down']:
-    for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
-        print(direction, mktcap, yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5))
-
 #experiment with prioritizing methods... right now using ranking_time_weighted_sorted
 #mktcap_group = 'VeryLarge', 'Large', 'Medium', 'Small', 'Micro'
 #trend = 'up', 'down'
@@ -496,3 +487,14 @@ def get_bb_params_distribution():
     bb_window_dist = sorted(set([x for x in bb_windows if x != None]), reverse=True)
     bb_stds_dist = sorted(set(x for x in bb_stds if x != None), reverse=True)
     return bb_window_dist, bb_stds_dist
+
+def yield_first_nonzero_dropoff_tuple_below_threshold(mktcap_dir, down_or_up_str, title_time_marker, interval=5, threshold=.25):
+    for tuple in calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_marker):
+        if tuple[1] != 0 and tuple[1] <= threshold:
+            return tuple
+
+def get_initializer_stocks_dictionary():
+    pass
+# for direction in ['up', 'down']:
+#     for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+#         print(direction, mktcap, yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5))
