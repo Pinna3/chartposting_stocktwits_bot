@@ -35,3 +35,9 @@ Maintenance: rinse and repeat every week or so.
 ***This make more sense to me and seems to prioritize the top trenders better.
 
 Now work on exit strategy... or do we really need one with trailing stops? Prob should implement something else, think about it.
+
+
+
+Current Risk Parameters:
+Each trade 1% of account total
+Max Sector Allocation = 12% (considering 15 though)

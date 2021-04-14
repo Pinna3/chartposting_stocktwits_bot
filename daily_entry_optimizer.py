@@ -1,10 +1,10 @@
 import json, csv
 import pandas as pd
 from risk_parameter import preset_daily_counter_capacities, set_long_short_capacities, open_mktcap_capacities_dict
-from utility_func import pull_top_tier_unbroken_trenders, get_all_portfolio_tickers
+from utility_func import pull_top_tier_unbroken_trenders
 from candlestick import LiteSecurityTradeData, SecurityTradeData
 from momoscreener import LiteSecurities
-from alpaca import get_all_positions
+from alpaca import get_all_positions, get_all_portfolio_tickers
 from glob import glob
 
 def construct_dict_of_top_tier_unbroken_trenders(tier_percentage=12):

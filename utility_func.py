@@ -4,7 +4,8 @@ import json
 import csv
 import finnhub
 from time import sleep
-from alpaca import get_all_positions, get_account_value, return_candles_json
+from alpaca import get_all_positions, get_account_value, return_candles_json, get_all_portfolio_tickers
+from risk_parameter import open_mktcap_capacities_dict, open_sector_capacities_dict
 import pandas as pd
 from glob import glob
 from datetime import datetime, date
@@ -222,9 +223,6 @@ def fetch_sector(symbol):
             for row in reader:
                 if row[0] == symbol:
                     return row[8]
-
-def get_all_portfolio_tickers():
-    return [position['symbol']  for position in get_all_positions()]
 
 def initialize_sector_allocation_dict():
     positions = get_all_positions()
@@ -494,7 +492,43 @@ def yield_first_nonzero_dropoff_tuple_below_threshold(mktcap_dir, down_or_up_str
             return tuple
 
 def get_initializer_stocks_dictionary():
-    pass
-# for direction in ['up', 'down']:
-#     for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
-#         print(direction, mktcap, yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5))
+    open_mktcap_capacities = open_mktcap_capacities_dict()
+    open_sector_capacities = open_sector_capacities_dict()
+    current_portfolio = get_all_portfolio_tickers()
+    initializer_list_dict = {
+        '>': {
+            'VeryLarge': [],
+            'Large': [],
+            'Medium': [],
+            'Small': [],
+            'Micro': []
+        },
+        '<': {
+            'VeryLarge' : [],
+            'Large': [],
+            'Medium': [],
+            'Small': [],
+            'Micro': []
+        }
+    }
+    #buying the dropoffs at the tail end under the logic that the low dropoff rate will continue for the next period, i.e. strong stock basket
+    for direction in ['up', 'down']:
+        for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+            with open(f"{mktcap}Stocks/Watchlists/[{yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5)[0]}]D-{direction}trend.json") as infile:
+                watchlist = json.load(infile)
+                if direction == 'up':
+                    op_str = '>'
+                elif direction == 'down':
+                    op_str = '<'
+                for stock in watchlist:
+                    if stock['ticker'] not in current_portfolio and open_sector_capacities[op_str][stock['sector']] > 0 and open_mktcap_capacities[op_str][mktcap] > 0:
+                        initializer_list_dict[op_str][mktcap].append(stock['ticker'])
+                        open_mktcap_capacities[op_str][mktcap] -= 1
+                        open_sector_capacities[op_str][stock['sector']] -= 1
+
+    return initializer_list_dict
+
+
+
+
+# print(get_initializer_stocks_dictionary())

@@ -22,6 +22,9 @@ def get_position_by_symbol(symbol):
     r = requests.get(POSITIONS_URL + f'/{symbol}', headers=HEADERS_PAPER)
     return json.loads(r.content)
 
+def get_all_portfolio_tickers():
+    return [position['symbol']  for position in get_all_positions()]
+
 def get_quote(symbol):
     r = requests.get(f'{QUOTE_URL}/{symbol}', headers=HEADERS_PAPER)
     return json.loads(r.content)

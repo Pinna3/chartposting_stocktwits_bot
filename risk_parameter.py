@@ -1,5 +1,4 @@
-from utility_func import get_account_value
-from alpaca import get_all_positions
+from alpaca import get_all_positions, get_account_value
 import json, csv
 from glob import glob
 from datetime import date
@@ -37,7 +36,7 @@ def check_short_capacity(portfolio_current):
     return portfolio_current >= short_max_exposure
 
 #10% max allocation per sector, key error means no sector exposure yet
-def sector_capacity(portfolio_current, max_exposure=9):
+def sector_capacity(portfolio_current, max_exposure=11):
     return abs(portfolio_current) >= max_exposure
 
 ###These can change with market conditions as well... play with it...
@@ -281,8 +280,8 @@ def open_mktcap_capacities_dict():
         }
     }
     return capacities_dict
-print(open_mktcap_capacities_dict())
-print('')
+# print(open_mktcap_capacities_dict())
+# print('')
 
 def open_sector_capacities_dict():
     with open('SectorAllocationDict.json') as infile:
@@ -290,32 +289,32 @@ def open_sector_capacities_dict():
 
     sector_percentage_capacities_dict = {
         '>': {
-            'Consumer Services': 10,
-            'Consumer Non-Durables': 10,
-            'Basic Industries': 10,
-            'Consumer Durables': 10,
-            'Energy': 10,
-            'Transportation': 10,
-            'Technology': 10,
-            'Health Care': 10,
-            'Public Utilities': 10,
-            'Finance': 10,
-            'Capital Goods': 10,
-            'Miscellaneous': 10
+            'Consumer Services': 12,
+            'Consumer Non-Durables': 12,
+            'Basic Industries': 12,
+            'Consumer Durables': 12,
+            'Energy': 12,
+            'Transportation': 12,
+            'Technology': 12,
+            'Health Care': 12,
+            'Public Utilities': 12,
+            'Finance': 12,
+            'Capital Goods': 12,
+            'Miscellaneous': 12
         },
         '<': {
-            'Consumer Services': 10,
-            'Consumer Non-Durables': 10,
-            'Basic Industries': 10,
-            'Consumer Durables': 10,
-            'Energy': 10,
-            'Transportation': 10,
-            'Technology': 10,
-            'Health Care': 10,
-            'Public Utilities': 10,
-            'Finance': 10,
-            'Capital Goods': 10,
-            'Miscellaneous': 10
+            'Consumer Services': 12,
+            'Consumer Non-Durables': 12,
+            'Basic Industries': 12,
+            'Consumer Durables': 12,
+            'Energy': 12,
+            'Transportation': 12,
+            'Technology': 12,
+            'Health Care': 12,
+            'Public Utilities': 12,
+            'Finance': 12,
+            'Capital Goods': 12,
+            'Miscellaneous': 12
         }
     }
     for sector in dict['long']['sector'].keys():
@@ -324,4 +323,4 @@ def open_sector_capacities_dict():
         sector_percentage_capacities_dict['<'][sector] -= round(dict['short']['sector'][sector]['acct_percentage'])
 
     return sector_percentage_capacities_dict
-print(open_sector_capacities_dict())
+# print(open_sector_capacities_dict())

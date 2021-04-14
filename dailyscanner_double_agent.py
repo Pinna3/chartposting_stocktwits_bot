@@ -4,8 +4,8 @@ import finnhub
 from tweet import twitter_api
 import json
 import operator
-from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short, get_last_trade, get_order_by_id, get_current_open_market_price
-from utility_func import initialize_sector_allocation_dict, drop_off_based_watchlist_filter, get_all_portfolio_tickers
+from alpaca import get_quote, buy_market, get_account, trailing_stop_long, sell_market, trailing_stop_short, get_last_trade, get_order_by_id, get_current_open_market_price, get_all_portfolio_tickers
+from utility_func import initialize_sector_allocation_dict, drop_off_based_watchlist_filter
 from risk_parameter import*
 from datetime import datetime, date
 today_date = date.today().strftime('%m-%d-%y')
