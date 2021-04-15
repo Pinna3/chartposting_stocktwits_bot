@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 23.79,
-    "entry_frequency": 25,
+    "ror": 21.47,
+    "entry_frequency": 27,
     "200sma_double_agent": 5
   },
   {
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
-    "ror": 10.69,
-    "entry_frequency": 12,
-    "200sma_double_agent": 14
+    "ror": 2.91,
+    "entry_frequency": 4,
+    "200sma_double_agent": 20
   }
 ]

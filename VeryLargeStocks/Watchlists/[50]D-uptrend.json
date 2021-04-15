@@ -6,31 +6,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$COP $EOG $PXD $SPY",
-    "ror": 87.33,
-    "entry_frequency": 88,
+    "ror": 80.64,
+    "entry_frequency": 82,
     "200sma_double_agent": 2
-  },
-  {
-    "ticker": "HPE",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 27.68,
-    "entry_frequency": 29,
-    "200sma_double_agent": 7
-  },
-  {
-    "ticker": "UHAL",
-    "sector": "Consumer Services",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 27.68,
-    "entry_frequency": 29,
-    "200sma_double_agent": 6
   },
   {
     "ticker": "SNA",
@@ -39,31 +17,42 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$ITW $PH $SWK $SPY",
-    "ror": 27.21,
-    "entry_frequency": 28,
-    "200sma_double_agent": 6
+    "ror": 30.88,
+    "entry_frequency": 32,
+    "200sma_double_agent": 5
   },
   {
-    "ticker": "DELL",
+    "ticker": "HPE",
     "sector": "Technology",
     "mktcap": "VeryLarge",
     "bb_window": null,
     "bb_std": null,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 26.59,
-    "entry_frequency": 28,
-    "200sma_double_agent": 6
+    "ror": 26.43,
+    "entry_frequency": 27,
+    "200sma_double_agent": 8
   },
   {
-    "ticker": "TROW",
-    "sector": "Finance",
+    "ticker": "DE",
+    "sector": "Capital Goods",
     "mktcap": "VeryLarge",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$BLK $BX $KKR $SPY",
-    "ror": 16.18,
-    "entry_frequency": 17,
-    "200sma_double_agent": 20
+    "peers": "$DE $TTC $AGCO $SPY",
+    "ror": 24.89,
+    "entry_frequency": 26,
+    "200sma_double_agent": 5
+  },
+  {
+    "ticker": "EXR",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$AMT $CCI $EQIX $SPY",
+    "ror": 19.88,
+    "entry_frequency": 21,
+    "200sma_double_agent": 10
   },
   {
     "ticker": "WU",
@@ -72,8 +61,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$V $MA $PYPL $SPY",
-    "ror": 11.24,
+    "ror": 11.25,
     "entry_frequency": 12,
-    "200sma_double_agent": 23
+    "200sma_double_agent": 22
+  },
+  {
+    "ticker": "TRI",
+    "sector": "Consumer Services",
+    "mktcap": "VeryLarge",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
+    "ror": 7.8,
+    "entry_frequency": 9,
+    "200sma_double_agent": 25
   }
 ]

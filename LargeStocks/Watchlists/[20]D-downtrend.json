@@ -1,24 +1,13 @@
 [
   {
-    "ticker": "IRTC",
-    "sector": "Health Care",
-    "mktcap": "Large",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ABT $DHR $SYK $SPY",
-    "ror": 41.99,
-    "entry_frequency": 43,
-    "200sma_double_agent": 2
-  },
-  {
     "ticker": "AXSM",
     "sector": "Health Care",
     "mktcap": "Large",
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 21.02,
-    "entry_frequency": 22,
+    "ror": 24.38,
+    "entry_frequency": 30,
     "200sma_double_agent": 2
   },
   {
@@ -28,31 +17,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 17.86,
-    "entry_frequency": 19,
-    "200sma_double_agent": 3
-  },
-  {
-    "ticker": "FOLD",
-    "sector": "Health Care",
-    "mktcap": "Large",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 11.39,
-    "entry_frequency": 12,
-    "200sma_double_agent": 5
-  },
-  {
-    "ticker": "OCFT",
-    "sector": "Technology",
-    "mktcap": "Large",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$688111.SS $600588.SS $002230.SZ $SPY",
-    "ror": 7.69,
-    "entry_frequency": 9,
-    "200sma_double_agent": 13
+    "ror": 17.22,
+    "entry_frequency": 22,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "QDEL",
@@ -61,20 +28,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950130.KQ $ALGN $WST $SPY",
-    "ror": 7.66,
-    "entry_frequency": 9,
-    "200sma_double_agent": 13
+    "ror": 10.1,
+    "entry_frequency": 13,
+    "200sma_double_agent": 8
   },
   {
-    "ticker": "GLPG",
+    "ticker": "FOLD",
     "sector": "Health Care",
     "mktcap": "Large",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
-    "ror": 6.75,
-    "entry_frequency": 8,
-    "200sma_double_agent": 13
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 7.69,
+    "entry_frequency": 10,
+    "200sma_double_agent": 7
   },
   {
     "ticker": "MOR",
@@ -83,8 +50,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
-    "ror": 2.2,
+    "ror": 1.98,
     "entry_frequency": 3,
-    "200sma_double_agent": 18
+    "200sma_double_agent": 20
+  },
+  {
+    "ticker": "GLPG",
+    "sector": "Health Care",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
+    "ror": -1.18,
+    "entry_frequency": 1,
+    "200sma_double_agent": 25
   }
 ]

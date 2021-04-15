@@ -6,7 +6,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 46.2,
+    "ror": 45.71,
     "entry_frequency": 47,
     "200sma_double_agent": 2
   },
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CHGG $BFAM $LOPE $SPY",
-    "ror": 38.24,
-    "entry_frequency": 39,
+    "ror": 35.94,
+    "entry_frequency": 37,
     "200sma_double_agent": 2
   },
   {
@@ -28,31 +28,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 31.27,
-    "entry_frequency": 32,
+    "ror": 30.24,
+    "entry_frequency": 31,
     "200sma_double_agent": 2
-  },
-  {
-    "ticker": "CHMA",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 29.15,
-    "entry_frequency": 30,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "PSTI",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
-    "ror": 25.04,
-    "entry_frequency": 26,
-    "200sma_double_agent": 4
   },
   {
     "ticker": "CALA",
@@ -61,9 +39,31 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 21.87,
+    "ror": 23.05,
+    "entry_frequency": 24,
+    "200sma_double_agent": 4
+  },
+  {
+    "ticker": "CHMA",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 22.13,
     "entry_frequency": 23,
     "200sma_double_agent": 4
+  },
+  {
+    "ticker": "PSTI",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
+    "ror": 20.65,
+    "entry_frequency": 22,
+    "200sma_double_agent": 5
   },
   {
     "ticker": "VYGR",
@@ -72,19 +72,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 17.78,
-    "entry_frequency": 19,
-    "200sma_double_agent": 6
-  },
-  {
-    "ticker": "BFRA",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$BNTX $CVAC $MOR.DE $SPY",
-    "ror": 12.72,
-    "entry_frequency": 14,
-    "200sma_double_agent": 15
+    "ror": 16.43,
+    "entry_frequency": 17,
+    "200sma_double_agent": 7
   }
 ]

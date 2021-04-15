@@ -6,20 +6,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 321.15,
-    "entry_frequency": 322,
+    "ror": 256.1,
+    "entry_frequency": 257,
     "200sma_double_agent": 2
-  },
-  {
-    "ticker": "SGRY",
-    "sector": "Health Care",
-    "mktcap": "Large",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$HCA $UHS $EHC $SPY",
-    "ror": 66.28,
-    "entry_frequency": 67,
-    "200sma_double_agent": 4
   },
   {
     "ticker": "SLM",
@@ -28,19 +17,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AXP $COF $DFS $SPY",
-    "ror": 56.84,
-    "entry_frequency": 58,
+    "ror": 51.61,
+    "entry_frequency": 53,
     "200sma_double_agent": 4
   },
   {
-    "ticker": "IHRT",
-    "sector": "Consumer Services",
+    "ticker": "SGRY",
+    "sector": "Health Care",
     "mktcap": "Large",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$VIAC $FOXA $DISCA $SPY",
-    "ror": 46.3,
-    "entry_frequency": 47,
+    "peers": "$HCA $UHS $EHC $SPY",
+    "ror": 51.61,
+    "entry_frequency": 53,
     "200sma_double_agent": 8
   },
   {
@@ -50,19 +39,30 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TRI.TO $STN.TO $IBG.TO $SPY",
-    "ror": 43.19,
-    "entry_frequency": 44,
-    "200sma_double_agent": 7
+    "ror": 43.53,
+    "entry_frequency": 45,
+    "200sma_double_agent": 6
   },
   {
-    "ticker": "OSK",
-    "sector": "Capital Goods",
+    "ticker": "NVST",
+    "sector": "Health Care",
     "mktcap": "Large",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$CAT $CMI $PCAR $SPY",
-    "ror": 40.84,
-    "entry_frequency": 42,
-    "200sma_double_agent": 8
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": 27.5,
+    "entry_frequency": 28,
+    "200sma_double_agent": 15
+  },
+  {
+    "ticker": "MMS",
+    "sector": "Miscellaneous",
+    "mktcap": "Large",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 26.3,
+    "entry_frequency": 27,
+    "200sma_double_agent": 16
   }
 ]

@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 56.35,
-    "entry_frequency": 57,
+    "ror": 44.3,
+    "entry_frequency": 45,
     "200sma_double_agent": 2
   },
   {
@@ -17,19 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 39.22,
-    "entry_frequency": 40,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "GTIM",
-    "sector": "Consumer Services",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 35.89,
-    "entry_frequency": 37,
+    "ror": 43.63,
+    "entry_frequency": 45,
     "200sma_double_agent": 2
   },
   {
@@ -39,19 +28,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$EPD $KMI $WMB $SPY",
-    "ror": 34.62,
-    "entry_frequency": 36,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "MHLD",
-    "sector": "Finance",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$RE $RNR $ESGR $SPY",
-    "ror": 28.47,
-    "entry_frequency": 29,
+    "ror": 37.84,
+    "entry_frequency": 39,
     "200sma_double_agent": 2
   },
   {
@@ -61,9 +39,31 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 24.45,
-    "entry_frequency": 25,
-    "200sma_double_agent": 3
+    "ror": 32.85,
+    "entry_frequency": 34,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "MHLD",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$RE $RNR $ESGR $SPY",
+    "ror": 31.4,
+    "entry_frequency": 32,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "LXU",
+    "sector": "Basic Industries",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$EMN $HUN $CC $SPY",
+    "ror": 28.61,
+    "entry_frequency": 30,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "ALOT",
@@ -72,29 +72,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 24.18,
-    "entry_frequency": 25,
-    "200sma_double_agent": 4
-  },
-  {
-    "ticker": "TZOO",
-    "sector": "Consumer Services",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$GOOGL $FB $SNAP $SPY",
-    "ror": 22.58,
-    "entry_frequency": 24,
-    "200sma_double_agent": 4
-  },
-  {
-    "ticker": "BOCH",
-    "sector": "Finance",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 22.53,
+    "ror": 23.02,
     "entry_frequency": 24,
     "200sma_double_agent": 4
   },
@@ -105,20 +83,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 22.16,
-    "entry_frequency": 23,
-    "200sma_double_agent": 5
-  },
-  {
-    "ticker": "LXU",
-    "sector": "Basic Industries",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$EMN $HUN $CC $SPY",
-    "ror": 21.67,
-    "entry_frequency": 23,
-    "200sma_double_agent": 4
+    "ror": 19.13,
+    "entry_frequency": 20,
+    "200sma_double_agent": 6
   },
   {
     "ticker": "INTT",
@@ -127,19 +94,30 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
-    "ror": 21.29,
-    "entry_frequency": 22,
+    "ror": 18.91,
+    "entry_frequency": 20,
     "200sma_double_agent": 5
   },
   {
-    "ticker": "WLFC",
-    "sector": "Consumer Durables",
+    "ticker": "BOCH",
+    "sector": "Finance",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$FAST $URI $GWW $SPY",
-    "ror": 20.22,
-    "entry_frequency": 21,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 18.37,
+    "entry_frequency": 19,
+    "200sma_double_agent": 6
+  },
+  {
+    "ticker": "CTG",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$IBM $CTSH $EPAM $SPY",
+    "ror": 18.35,
+    "entry_frequency": 19,
     "200sma_double_agent": 6
   },
   {
@@ -149,42 +127,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 19.85,
-    "entry_frequency": 21,
+    "ror": 16.65,
+    "entry_frequency": 18,
     "200sma_double_agent": 5
   },
   {
-    "ticker": "CTG",
-    "sector": "Technology",
+    "ticker": "FARM",
+    "sector": "Consumer Non-Durables",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$IBM $CTSH $EPAM $SPY",
-    "ror": 17.01,
-    "entry_frequency": 18,
-    "200sma_double_agent": 6
-  },
-  {
-    "ticker": "BKSC",
-    "sector": "Finance",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 13.07,
-    "entry_frequency": 14,
-    "200sma_double_agent": 12
-  },
-  {
-    "ticker": "USAK",
-    "sector": "Transportation",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 12.92,
-    "entry_frequency": 14,
-    "200sma_double_agent": 14
+    "peers": "$MDLZ $KHC $GIS $SPY",
+    "ror": 15.14,
+    "entry_frequency": 16,
+    "200sma_double_agent": 8
   },
   {
     "ticker": "JAX",
@@ -193,20 +149,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 12.92,
+    "ror": 13.15,
     "entry_frequency": 14,
     "200sma_double_agent": 10
   },
   {
-    "ticker": "SACH",
+    "ticker": "TZOO",
     "sector": "Consumer Services",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$NLY $AGNC $STWD $SPY",
-    "ror": 12.84,
+    "peers": "$GOOGL $FB $SNAP $SPY",
+    "ror": 13.04,
     "entry_frequency": 14,
-    "200sma_double_agent": 5
+    "200sma_double_agent": 15
   },
   {
     "ticker": "BRBS",
@@ -215,20 +171,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 11.55,
-    "entry_frequency": 13,
-    "200sma_double_agent": 11
+    "ror": 9.05,
+    "entry_frequency": 10,
+    "200sma_double_agent": 12
   },
   {
-    "ticker": "MNSB",
-    "sector": "Finance",
+    "ticker": "SACH",
+    "sector": "Consumer Services",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 9.75,
-    "entry_frequency": 11,
-    "200sma_double_agent": 23
+    "peers": "$NLY $AGNC $STWD $SPY",
+    "ror": 8.72,
+    "entry_frequency": 10,
+    "200sma_double_agent": 9
   },
   {
     "ticker": "ESXB",
@@ -237,9 +193,31 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 9.48,
-    "entry_frequency": 10,
-    "200sma_double_agent": 15
+    "ror": 6.57,
+    "entry_frequency": 8,
+    "200sma_double_agent": 20
+  },
+  {
+    "ticker": "MNSB",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 4.92,
+    "entry_frequency": 6,
+    "200sma_double_agent": 29
+  },
+  {
+    "ticker": "USAK",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$UBER $ODFL $LYFT $SPY",
+    "ror": 4.48,
+    "entry_frequency": 5,
+    "200sma_double_agent": 25
   },
   {
     "ticker": "TCFC",
@@ -248,19 +226,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 7.63,
-    "entry_frequency": 9,
-    "200sma_double_agent": 19
-  },
-  {
-    "ticker": "LOAN",
-    "sector": "Consumer Services",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$NLY $AGNC $STWD $SPY",
-    "ror": 2.77,
-    "entry_frequency": 4,
-    "200sma_double_agent": 61
+    "ror": 4.35,
+    "entry_frequency": 5,
+    "200sma_double_agent": 25
   }
 ]

@@ -6,19 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CHGG $BFAM $LOPE $SPY",
-    "ror": 34.6,
-    "entry_frequency": 36,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "CNCE",
-    "sector": "Health Care",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 27.2,
-    "entry_frequency": 28,
+    "ror": 36.6,
+    "entry_frequency": 38,
     "200sma_double_agent": 2
   },
   {
@@ -28,20 +17,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 25.69,
-    "entry_frequency": 27,
+    "ror": 28.15,
+    "entry_frequency": 29,
     "200sma_double_agent": 2
   },
   {
-    "ticker": "VYGR",
+    "ticker": "CNCE",
     "sector": "Health Care",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 20.03,
-    "entry_frequency": 21,
-    "200sma_double_agent": 4
+    "ror": 25.44,
+    "entry_frequency": 26,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "CALA",
@@ -50,9 +39,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 19.06,
+    "ror": 22.91,
+    "entry_frequency": 24,
+    "200sma_double_agent": 3
+  },
+  {
+    "ticker": "VYGR",
+    "sector": "Health Care",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 18.77,
     "entry_frequency": 20,
-    "200sma_double_agent": 4
+    "200sma_double_agent": 5
   },
   {
     "ticker": "PSTI",
@@ -61,9 +61,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BONS.TA $KMDA.TA $EVGN.TA $SPY",
-    "ror": 11.07,
-    "entry_frequency": 12,
-    "200sma_double_agent": 14
+    "ror": 17.07,
+    "entry_frequency": 18,
+    "200sma_double_agent": 6
   },
   {
     "ticker": "GLOP",
@@ -72,18 +72,18 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$OET.OL $GLOG $TNP $SPY",
-    "ror": 10.7,
-    "entry_frequency": 12,
+    "ror": 12.83,
+    "entry_frequency": 14,
     "200sma_double_agent": 15
   },
   {
-    "ticker": "BFRA",
-    "sector": "Health Care",
+    "ticker": "PAYS",
+    "sector": "Miscellaneous",
     "mktcap": "Small",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$BNTX $CVAC $MOR.DE $SPY",
-    "ror": 8.91,
+    "peers": "$V $MA $PYPL $SPY",
+    "ror": 8.99,
     "entry_frequency": 10,
     "200sma_double_agent": 19
   },
@@ -94,8 +94,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 8.74,
-    "entry_frequency": 10,
+    "ror": 7.59,
+    "entry_frequency": 9,
     "200sma_double_agent": 13
   },
   {
@@ -105,7 +105,7 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 5.46,
+    "ror": 4.58,
     "entry_frequency": 6,
     "200sma_double_agent": 22
   }

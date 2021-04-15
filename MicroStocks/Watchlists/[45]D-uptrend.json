@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 36.7,
-    "entry_frequency": 107,
+    "ror": 45.95,
+    "entry_frequency": 134,
     "200sma_double_agent": 2
   }
 ]

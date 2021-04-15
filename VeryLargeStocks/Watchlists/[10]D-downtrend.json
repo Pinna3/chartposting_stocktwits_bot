@@ -6,31 +6,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$601318.SS $601628.SS $601336.SS $SPY",
-    "ror": 2.39,
+    "ror": 2.3,
     "entry_frequency": 3,
     "200sma_double_agent": 13
-  },
-  {
-    "ticker": "BKI",
-    "sector": "Technology",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$V $MA $PYPL $SPY",
-    "ror": -1.61,
-    "entry_frequency": 1,
-    "200sma_double_agent": 33
-  },
-  {
-    "ticker": "SGEN",
-    "sector": "Health Care",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -2.56,
-    "entry_frequency": 1,
-    "200sma_double_agent": 34
   },
   {
     "ticker": "BABA",
@@ -39,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
-    "ror": -6.29,
+    "ror": -7.72,
     "entry_frequency": 1,
-    "200sma_double_agent": 55
+    "200sma_double_agent": 58
   }
 ]

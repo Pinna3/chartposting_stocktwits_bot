@@ -1,25 +1,36 @@
 [
   {
+    "ticker": "FIXX",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 27.66,
+    "entry_frequency": 29,
+    "200sma_double_agent": 2
+  },
+  {
     "ticker": "ONE",
     "sector": "Consumer Services",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
     "peers": "$002607.SZ $667.HK $TAL $SPY",
-    "ror": 24.83,
-    "entry_frequency": 26,
-    "200sma_double_agent": 2
+    "ror": 22.41,
+    "entry_frequency": 23,
+    "200sma_double_agent": 3
   },
   {
-    "ticker": "CHRS",
+    "ticker": "ADVM",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 14.64,
-    "entry_frequency": 16,
-    "200sma_double_agent": 7
+    "ror": 17.09,
+    "entry_frequency": 18,
+    "200sma_double_agent": 6
   },
   {
     "ticker": "KPTI",
@@ -28,30 +39,30 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 13.23,
-    "entry_frequency": 14,
+    "ror": 13.86,
+    "entry_frequency": 15,
     "200sma_double_agent": 6
   },
   {
-    "ticker": "EGAN",
-    "sector": "Technology",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ADBE $CRM $INTU $SPY",
-    "ror": 5.95,
-    "entry_frequency": 7,
-    "200sma_double_agent": 18
-  },
-  {
-    "ticker": "QTNT",
+    "ticker": "CHRS",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
-    "ror": 5.62,
-    "entry_frequency": 7,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 13.26,
+    "entry_frequency": 14,
+    "200sma_double_agent": 9
+  },
+  {
+    "ticker": "MRSN",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 8.26,
+    "entry_frequency": 9,
     "200sma_double_agent": 16
   },
   {
@@ -61,19 +72,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$ARE $BXP $VNO $SPY",
-    "ror": 1.18,
-    "entry_frequency": 2,
-    "200sma_double_agent": 28
-  },
-  {
-    "ticker": "ARCE",
-    "sector": "Consumer Services",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
-    "ror": 1.06,
-    "entry_frequency": 2,
-    "200sma_double_agent": 31
+    "ror": 0.23,
+    "entry_frequency": 1,
+    "200sma_double_agent": 33
   }
 ]

@@ -6,20 +6,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 1.48,
-    "entry_frequency": 2,
-    "200sma_double_agent": 11
-  },
-  {
-    "ticker": "ESP",
-    "sector": "Capital Goods",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": -4.17,
-    "entry_frequency": 1,
-    "200sma_double_agent": 27
+    "ror": 9.12,
+    "entry_frequency": 10,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "WINT",
@@ -28,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -10.38,
-    "entry_frequency": 1,
-    "200sma_double_agent": 14
+    "ror": 3.28,
+    "entry_frequency": 4,
+    "200sma_double_agent": 13
   }
 ]

@@ -6,8 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 146.2,
-    "entry_frequency": 147,
+    "ror": 140.9,
+    "entry_frequency": 142,
     "200sma_double_agent": 2
   },
   {
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 129.44,
-    "entry_frequency": 130,
+    "ror": 118.19,
+    "entry_frequency": 119,
     "200sma_double_agent": 2
   },
   {
@@ -28,19 +28,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 100.82,
-    "entry_frequency": 102,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "PMBC",
-    "sector": "Finance",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 64.27,
-    "entry_frequency": 65,
+    "ror": 103.02,
+    "entry_frequency": 104,
     "200sma_double_agent": 2
   },
   {
@@ -50,9 +39,31 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
-    "ror": 62.03,
-    "entry_frequency": 63,
+    "ror": 64.41,
+    "entry_frequency": 65,
     "200sma_double_agent": 2
+  },
+  {
+    "ticker": "PMBC",
+    "sector": "Finance",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$TFC $PNC $FRC $SPY",
+    "ror": 60.96,
+    "entry_frequency": 62,
+    "200sma_double_agent": 3
+  },
+  {
+    "ticker": "ALOT",
+    "sector": "Technology",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$AAPL $DELL $HPQ $SPY",
+    "ror": 35.09,
+    "entry_frequency": 36,
+    "200sma_double_agent": 12
   },
   {
     "ticker": "BRBS",
@@ -61,8 +72,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 21.91,
-    "entry_frequency": 23,
+    "ror": 22.53,
+    "entry_frequency": 24,
     "200sma_double_agent": 16
   }
 ]

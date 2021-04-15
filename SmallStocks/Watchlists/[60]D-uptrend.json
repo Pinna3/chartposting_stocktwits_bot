@@ -6,19 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$MCD $SBUX $CMG $SPY",
-    "ror": 116.34,
-    "entry_frequency": 117,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "NMM",
-    "sector": "Transportation",
-    "mktcap": "Small",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$CMRE $NMCI $NMM $SPY",
-    "ror": 96.1,
-    "entry_frequency": 97,
+    "ror": 104.76,
+    "entry_frequency": 106,
     "200sma_double_agent": 2
   },
   {
@@ -28,8 +17,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$RHI $UPWK $MAN $SPY",
-    "ror": 93.14,
-    "entry_frequency": 94,
+    "ror": 100.8,
+    "entry_frequency": 102,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "NMM",
+    "sector": "Transportation",
+    "mktcap": "Small",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CMRE $NMCI $NMM $SPY",
+    "ror": 91.7,
+    "entry_frequency": 93,
     "200sma_double_agent": 2
   },
   {
@@ -39,8 +39,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$GOOGL $FB $SNAP $SPY",
-    "ror": 68.32,
-    "entry_frequency": 69,
+    "ror": 57.12,
+    "entry_frequency": 58,
     "200sma_double_agent": 2
   },
   {
@@ -50,9 +50,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 58.58,
-    "entry_frequency": 60,
-    "200sma_double_agent": 2
+    "ror": 54.36,
+    "entry_frequency": 55,
+    "200sma_double_agent": 4
   },
   {
     "ticker": "INTT",
@@ -61,8 +61,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AMAT $LRCX $KLAC $SPY",
-    "ror": 50.07,
-    "entry_frequency": 51,
+    "ror": 51.74,
+    "entry_frequency": 53,
     "200sma_double_agent": 4
   },
   {
@@ -72,9 +72,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AAPL $DELL $HPQ $SPY",
-    "ror": 32.5,
-    "entry_frequency": 34,
-    "200sma_double_agent": 11
+    "ror": 37.3,
+    "entry_frequency": 38,
+    "200sma_double_agent": 10
   },
   {
     "ticker": "BRBS",
@@ -83,8 +83,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$TFC $PNC $FRC $SPY",
-    "ror": 19.05,
-    "entry_frequency": 20,
-    "200sma_double_agent": 17
+    "ror": 14.95,
+    "entry_frequency": 16,
+    "200sma_double_agent": 19
   }
 ]

@@ -6,31 +6,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$VIVT3.SA $OIBR4.SA $TELB4.SA $SPY",
-    "ror": 2.99,
+    "ror": 3.22,
     "entry_frequency": 4,
     "200sma_double_agent": 3
-  },
-  {
-    "ticker": "SGEN",
-    "sector": "Health Care",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 2.49,
-    "entry_frequency": 3,
-    "200sma_double_agent": 5
-  },
-  {
-    "ticker": "ITUB",
-    "sector": "Finance",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ITUB4.SA $BBDC4.SA $SANB4.SA $SPY",
-    "ror": 2.3,
-    "entry_frequency": 3,
-    "200sma_double_agent": 6
   },
   {
     "ticker": "LFC",
@@ -39,42 +17,31 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$601318.SS $601628.SS $601336.SS $SPY",
-    "ror": 1.16,
+    "ror": 1.07,
     "entry_frequency": 2,
-    "200sma_double_agent": 3
+    "200sma_double_agent": 4
   },
   {
-    "ticker": "BKI",
-    "sector": "Technology",
+    "ticker": "ITUB",
+    "sector": "Finance",
     "mktcap": "VeryLarge",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$V $MA $PYPL $SPY",
-    "ror": 0.39,
-    "entry_frequency": 1,
-    "200sma_double_agent": 33
+    "peers": "$ITUB4.SA $BBDC4.SA $SANB4.SA $SPY",
+    "ror": 0.84,
+    "entry_frequency": 2,
+    "200sma_double_agent": 9
   },
   {
-    "ticker": "CHKP",
-    "sector": "Technology",
+    "ticker": "TAL",
+    "sector": "Consumer Services",
     "mktcap": "VeryLarge",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$CHKP $CYBR $ALLT $SPY",
-    "ror": -2.06,
+    "peers": "$002607.SZ $667.HK $TAL $SPY",
+    "ror": -2.94,
     "entry_frequency": 1,
-    "200sma_double_agent": 55
-  },
-  {
-    "ticker": "LULU",
-    "sector": "Consumer Non-Durables",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$LULU $GIL.TO $GOOS.TO $SPY",
-    "ror": -5.41,
-    "entry_frequency": 1,
-    "200sma_double_agent": 65
+    "200sma_double_agent": 21
   },
   {
     "ticker": "BABA",
@@ -83,8 +50,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$3690.HK $9618.HK $BABA $SPY",
-    "ror": -8.01,
+    "ror": -7.08,
     "entry_frequency": 1,
-    "200sma_double_agent": 55
+    "200sma_double_agent": 58
   }
 ]

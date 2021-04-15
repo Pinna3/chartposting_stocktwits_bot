@@ -6,19 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 8.59,
-    "entry_frequency": 10,
-    "200sma_double_agent": 3
-  },
-  {
-    "ticker": "ESP",
-    "sector": "Capital Goods",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": 1.78,
-    "entry_frequency": 3,
-    "200sma_double_agent": 25
+    "ror": -2.16,
+    "entry_frequency": 1,
+    "200sma_double_agent": 15
   }
 ]

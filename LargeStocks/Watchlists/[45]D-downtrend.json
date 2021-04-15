@@ -6,9 +6,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
-    "ror": 28.86,
-    "entry_frequency": 30,
-    "200sma_double_agent": 4
+    "ror": 25.56,
+    "entry_frequency": 32,
+    "200sma_double_agent": 3
   },
   {
     "ticker": "SRPT",
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 27.27,
-    "entry_frequency": 28,
-    "200sma_double_agent": 6
+    "ror": 24.5,
+    "entry_frequency": 30,
+    "200sma_double_agent": 5
   }
 ]

@@ -6,9 +6,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 25.79,
-    "entry_frequency": 27,
-    "200sma_double_agent": 3
+    "ror": 26.45,
+    "entry_frequency": 33,
+    "200sma_double_agent": 2
   },
   {
     "ticker": "SRPT",
@@ -17,8 +17,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 22.11,
-    "entry_frequency": 23,
+    "ror": 19.25,
+    "entry_frequency": 24,
     "200sma_double_agent": 4
   },
   {
@@ -28,8 +28,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950130.KQ $ALGN $WST $SPY",
-    "ror": 20.35,
-    "entry_frequency": 21,
+    "ror": 15.31,
+    "entry_frequency": 19,
     "200sma_double_agent": 6
   },
   {
@@ -39,9 +39,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$BNTX $CVAC $MOR.DE $SPY",
-    "ror": 12.22,
-    "entry_frequency": 13,
-    "200sma_double_agent": 10
+    "ror": 7.8,
+    "entry_frequency": 10,
+    "200sma_double_agent": 15
   },
   {
     "ticker": "GLPG",
@@ -50,8 +50,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$GLPG.AS $MDXH.BR $OXUR.BR $SPY",
-    "ror": 9.41,
-    "entry_frequency": 10,
-    "200sma_double_agent": 15
+    "ror": 0.98,
+    "entry_frequency": 2,
+    "200sma_double_agent": 22
   }
 ]

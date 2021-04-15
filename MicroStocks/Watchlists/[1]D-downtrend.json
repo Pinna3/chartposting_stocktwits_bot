@@ -6,30 +6,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 1.48,
-    "entry_frequency": 2,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "ESP",
-    "sector": "Capital Goods",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$EMR $3665.TW $ROK $SPY",
-    "ror": 0.62,
-    "entry_frequency": 2,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "WINT",
-    "sector": "Health Care",
-    "mktcap": "Micro",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -2.63,
-    "entry_frequency": 1,
+    "ror": 3.42,
+    "entry_frequency": 4,
     "200sma_double_agent": 2
   },
   {
@@ -39,7 +17,18 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -3.74,
+    "ror": 2.75,
+    "entry_frequency": 4,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "WINT",
+    "sector": "Health Care",
+    "mktcap": "Micro",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -3.51,
     "entry_frequency": 1,
     "200sma_double_agent": 2
   }

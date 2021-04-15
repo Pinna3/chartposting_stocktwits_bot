@@ -1,12 +1,34 @@
 [
   {
+    "ticker": "BEST",
+    "sector": "Transportation",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$002352.SZ $2057.HK $002120.SZ $SPY",
+    "ror": 27.13,
+    "entry_frequency": 28,
+    "200sma_double_agent": 2
+  },
+  {
     "ticker": "GEO",
     "sector": "Consumer Services",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
     "peers": "$AMT $CCI $EQIX $SPY",
-    "ror": 25.96,
+    "ror": 26.42,
+    "entry_frequency": 27,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "PRVB",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 26.0,
     "entry_frequency": 27,
     "200sma_double_agent": 2
   },
@@ -17,52 +39,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 22.33,
-    "entry_frequency": 23,
+    "ror": 22.58,
+    "entry_frequency": 24,
     "200sma_double_agent": 2
   },
   {
-    "ticker": "BEST",
-    "sector": "Transportation",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$002352.SZ $2057.HK $002120.SZ $SPY",
-    "ror": 22.16,
-    "entry_frequency": 23,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "PRVB",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 20.08,
-    "entry_frequency": 21,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "DUO",
-    "sector": "Finance",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$700.HK $1024.HK $BIDU $SPY",
-    "ror": 12.38,
-    "entry_frequency": 13,
-    "200sma_double_agent": 2
-  },
-  {
-    "ticker": "SYRS",
+    "ticker": "AVRO",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 11.57,
-    "entry_frequency": 13,
+    "ror": 16.06,
+    "entry_frequency": 17,
     "200sma_double_agent": 2
   },
   {
@@ -72,8 +61,30 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 10.27,
-    "entry_frequency": 11,
+    "ror": 15.03,
+    "entry_frequency": 16,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "SYRS",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 13.9,
+    "entry_frequency": 15,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "BDSI",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 11.85,
+    "entry_frequency": 13,
     "200sma_double_agent": 2
   },
   {
@@ -83,7 +94,73 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$AUP.TO $ZYME $TRIL.TO $SPY",
-    "ror": 7.89,
+    "ror": 10.94,
+    "entry_frequency": 12,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "NEW",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$002607.SZ $667.HK $TAL $SPY",
+    "ror": 10.19,
+    "entry_frequency": 11,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "BYSI",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 9.86,
+    "entry_frequency": 11,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "DUO",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$700.HK $1024.HK $BIDU $SPY",
+    "ror": 9.44,
+    "entry_frequency": 10,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "PASG",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 8.98,
+    "entry_frequency": 10,
+    "200sma_double_agent": 2
+  },
+  {
+    "ticker": "SPPI",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 7.65,
+    "entry_frequency": 9,
+    "200sma_double_agent": 3
+  },
+  {
+    "ticker": "ADVM",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 7.51,
     "entry_frequency": 9,
     "200sma_double_agent": 4
   },
@@ -94,52 +171,19 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 7.84,
-    "entry_frequency": 9,
-    "200sma_double_agent": 3
-  },
-  {
-    "ticker": "BDSI",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 7.18,
+    "ror": 6.67,
     "entry_frequency": 8,
-    "200sma_double_agent": 5
+    "200sma_double_agent": 4
   },
   {
-    "ticker": "INO",
+    "ticker": "GOSS",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 6.13,
-    "entry_frequency": 7,
-    "200sma_double_agent": 6
-  },
-  {
-    "ticker": "AVRO",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 6.05,
-    "entry_frequency": 7,
-    "200sma_double_agent": 5
-  },
-  {
-    "ticker": "NEW",
-    "sector": "Consumer Services",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$002607.SZ $667.HK $TAL $SPY",
-    "ror": 5.88,
-    "entry_frequency": 7,
+    "ror": 6.59,
+    "entry_frequency": 8,
     "200sma_double_agent": 4
   },
   {
@@ -149,9 +193,42 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 4.93,
+    "ror": 6.58,
+    "entry_frequency": 8,
+    "200sma_double_agent": 4
+  },
+  {
+    "ticker": "CRDF",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 6.52,
+    "entry_frequency": 8,
+    "200sma_double_agent": 4
+  },
+  {
+    "ticker": "FANH",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$FANH $TIRX $HUIZ $SPY",
+    "ror": 6.46,
+    "entry_frequency": 7,
+    "200sma_double_agent": 4
+  },
+  {
+    "ticker": "INO",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": 5.33,
     "entry_frequency": 6,
-    "200sma_double_agent": 13
+    "200sma_double_agent": 8
   },
   {
     "ticker": "AMPH",
@@ -160,8 +237,52 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 4.83,
+    "ror": 5.25,
     "entry_frequency": 6,
+    "200sma_double_agent": 9
+  },
+  {
+    "ticker": "BMA",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BMA3.BA $GGAL3.BA $BRIO3.BA $SPY",
+    "ror": 5.16,
+    "entry_frequency": 6,
+    "200sma_double_agent": 7
+  },
+  {
+    "ticker": "PRDO",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$CHGG $BFAM $LOPE $SPY",
+    "ror": 5.01,
+    "entry_frequency": 6,
+    "200sma_double_agent": 5
+  },
+  {
+    "ticker": "HFFG",
+    "sector": "Consumer Non-Durables",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SYY $USFD $PFGC $SPY",
+    "ror": 4.55,
+    "entry_frequency": 6,
+    "200sma_double_agent": 7
+  },
+  {
+    "ticker": "BBAR",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$BMA3.BA $GGAL3.BA $BRIO3.BA $SPY",
+    "ror": 4.41,
+    "entry_frequency": 5,
     "200sma_double_agent": 9
   },
   {
@@ -171,108 +292,20 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 4.58,
-    "entry_frequency": 6,
-    "200sma_double_agent": 6
-  },
-  {
-    "ticker": "ADVM",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 4.44,
+    "ror": 4.24,
     "entry_frequency": 5,
-    "200sma_double_agent": 15
-  },
-  {
-    "ticker": "SPPI",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 3.91,
-    "entry_frequency": 5,
-    "200sma_double_agent": 14
-  },
-  {
-    "ticker": "BYSI",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 3.3,
-    "entry_frequency": 4,
     "200sma_double_agent": 9
   },
   {
-    "ticker": "PASG",
+    "ticker": "VAPO",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 3.07,
-    "entry_frequency": 4,
-    "200sma_double_agent": 14
-  },
-  {
-    "ticker": "GOSS",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 2.67,
-    "entry_frequency": 4,
-    "200sma_double_agent": 15
-  },
-  {
-    "ticker": "BEDU",
-    "sector": "Consumer Services",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$002607.SZ $667.HK $TAL $SPY",
-    "ror": 2.39,
-    "entry_frequency": 3,
-    "200sma_double_agent": 14
-  },
-  {
-    "ticker": "ZGNX",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": 2.24,
-    "entry_frequency": 3,
-    "200sma_double_agent": 24
-  },
-  {
-    "ticker": "CRDF",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 1.72,
-    "entry_frequency": 3,
-    "200sma_double_agent": 16
-  },
-  {
-    "ticker": "HFFG",
-    "sector": "Consumer Non-Durables",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$SYY $USFD $PFGC $SPY",
-    "ror": 0.83,
-    "entry_frequency": 2,
-    "200sma_double_agent": 14
+    "peers": "$ABT $DHR $SYK $SPY",
+    "ror": 3.96,
+    "entry_frequency": 5,
+    "200sma_double_agent": 9
   },
   {
     "ticker": "AUTL",
@@ -281,30 +314,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$GNS.L $ABC.L $MYOV $SPY",
-    "ror": 0.72,
-    "entry_frequency": 2,
-    "200sma_double_agent": 13
-  },
-  {
-    "ticker": "CTAC",
-    "sector": "Finance",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$SPY $DIA $IWM $QQQ",
-    "ror": 0.4,
-    "entry_frequency": 1,
-    "200sma_double_agent": 22
-  },
-  {
-    "ticker": "FLXN",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": 0.17,
-    "entry_frequency": 1,
+    "ror": 3.64,
+    "entry_frequency": 5,
     "200sma_double_agent": 12
   },
   {
@@ -314,31 +325,9 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -0.1,
-    "entry_frequency": 1,
-    "200sma_double_agent": 15
-  },
-  {
-    "ticker": "DEA",
-    "sector": "Consumer Services",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ARE $BXP $VNO $SPY",
-    "ror": -0.19,
-    "entry_frequency": 1,
-    "200sma_double_agent": 31
-  },
-  {
-    "ticker": "AGEN",
-    "sector": "Health Care",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -0.37,
-    "entry_frequency": 1,
-    "200sma_double_agent": 25
+    "ror": 3.23,
+    "entry_frequency": 4,
+    "200sma_double_agent": 13
   },
   {
     "ticker": "HWKN",
@@ -347,19 +336,8 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$DOW $WLK $OLN $SPY",
-    "ror": -0.49,
-    "entry_frequency": 1,
-    "200sma_double_agent": 18
-  },
-  {
-    "ticker": "USAS",
-    "sector": "Basic Industries",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$TECK $IVN.TO $TRQ.TO $SPY",
-    "ror": -1.85,
-    "entry_frequency": 1,
+    "ror": 3.19,
+    "entry_frequency": 4,
     "200sma_double_agent": 16
   },
   {
@@ -369,31 +347,31 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -2.43,
-    "entry_frequency": 1,
-    "200sma_double_agent": 16
+    "ror": 2.89,
+    "entry_frequency": 4,
+    "200sma_double_agent": 15
   },
   {
-    "ticker": "EGAN",
-    "sector": "Technology",
+    "ticker": "USAS",
+    "sector": "Basic Industries",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$ADBE $CRM $INTU $SPY",
-    "ror": -3.88,
-    "entry_frequency": 1,
-    "200sma_double_agent": 21
+    "peers": "$TECK $IVN.TO $TRQ.TO $SPY",
+    "ror": 2.64,
+    "entry_frequency": 4,
+    "200sma_double_agent": 16
   },
   {
-    "ticker": "MRSN",
+    "ticker": "ZGNX",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$950160.KQ $ABBV $AMGN $SPY",
-    "ror": -4.57,
-    "entry_frequency": 1,
-    "200sma_double_agent": 34
+    "peers": "$JNJ $PFE $MRK $SPY",
+    "ror": 2.25,
+    "entry_frequency": 3,
+    "200sma_double_agent": 33
   },
   {
     "ticker": "ONE",
@@ -402,20 +380,75 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$002607.SZ $667.HK $TAL $SPY",
-    "ror": -5.66,
+    "ror": 2.17,
+    "entry_frequency": 3,
+    "200sma_double_agent": 13
+  },
+  {
+    "ticker": "BEDU",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$002607.SZ $667.HK $TAL $SPY",
+    "ror": -0.0,
     "entry_frequency": 1,
     "200sma_double_agent": 15
   },
   {
-    "ticker": "EGO",
-    "sector": "Basic Industries",
+    "ticker": "AGEN",
+    "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$ABX.TO $FNV.TO $WPM.TO $SPY",
-    "ror": -6.9,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -0.55,
     "entry_frequency": 1,
-    "200sma_double_agent": 40
+    "200sma_double_agent": 25
+  },
+  {
+    "ticker": "CTAC",
+    "sector": "Finance",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$SPY $DIA $IWM $QQQ",
+    "ror": -0.71,
+    "entry_frequency": 1,
+    "200sma_double_agent": 22
+  },
+  {
+    "ticker": "MRSN",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -0.8,
+    "entry_frequency": 1,
+    "200sma_double_agent": 34
+  },
+  {
+    "ticker": "EGRX",
+    "sector": "Health Care",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -1.66,
+    "entry_frequency": 1,
+    "200sma_double_agent": 19
+  },
+  {
+    "ticker": "DEA",
+    "sector": "Consumer Services",
+    "mktcap": "Medium",
+    "bb_window": null,
+    "bb_std": null,
+    "peers": "$ARE $BXP $VNO $SPY",
+    "ror": -2.41,
+    "entry_frequency": 1,
+    "200sma_double_agent": 33
   },
   {
     "ticker": "KALA",
@@ -424,41 +457,30 @@
     "bb_window": null,
     "bb_std": null,
     "peers": "$JNJ $PFE $MRK $SPY",
-    "ror": -8.05,
+    "ror": -5.03,
     "entry_frequency": 1,
     "200sma_double_agent": 36
   },
   {
-    "ticker": "SA",
-    "sector": "Basic Industries",
-    "mktcap": "Medium",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ABX.TO $FNV.TO $WPM.TO $SPY",
-    "ror": -11.15,
-    "entry_frequency": 1,
-    "200sma_double_agent": 44
-  },
-  {
-    "ticker": "QTNT",
+    "ticker": "FLXN",
     "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$ALC.SW $YPSN.SW $MED.SW $SPY",
-    "ror": -12.57,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -6.2,
     "entry_frequency": 1,
-    "200sma_double_agent": 34
+    "200sma_double_agent": 23
   },
   {
-    "ticker": "ARCE",
-    "sector": "Consumer Services",
+    "ticker": "OYST",
+    "sector": "Health Care",
     "mktcap": "Medium",
     "bb_window": null,
     "bb_std": null,
-    "peers": "$CSED3.SA $YDUQ3.SA $COGN3.SA $SPY",
-    "ror": -17.89,
+    "peers": "$950160.KQ $ABBV $AMGN $SPY",
+    "ror": -15.19,
     "entry_frequency": 1,
-    "200sma_double_agent": 36
+    "200sma_double_agent": 41
   }
 ]

@@ -186,6 +186,9 @@ def calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_mark
                 writer = csv.writer(outfile)
                 writer.writerow(csv_row)
     return dropoffs_sorted
+# for direction in ['up', 'down']:
+#     for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+#         calculate_and_file_dropoff_rates(mktcap, direction, 80, interval=5)
 
 #experiment with prioritizing methods... right now using ranking_time_weighted_sorted
 #mktcap_group = 'VeryLarge', 'Large', 'Medium', 'Small', 'Micro'
@@ -486,10 +489,13 @@ def get_bb_params_distribution():
     bb_stds_dist = sorted(set(x for x in bb_stds if x != None), reverse=True)
     return bb_window_dist, bb_stds_dist
 
-def yield_first_nonzero_dropoff_tuple_below_threshold(mktcap_dir, down_or_up_str, title_time_marker, interval=5, threshold=.25):
+def yield_first_nonzero_dropoff_tuple_below_threshold(mktcap_dir, down_or_up_str, title_time_marker, interval=5, ror_threshold=.25, percent_of_total_threshold=.25):
     for tuple in calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_marker):
-        if tuple[1] != 0 and tuple[1] <= threshold:
+        if tuple[1] != 0 and tuple[1] <= ror_threshold and tuple[4] >= ror_threshold:
             return tuple
+for direction in ['up', 'down']:
+    for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+        print(yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5, ror_threshold=.25, percent_of_total_threshold=.25))
 
 def get_initializer_stocks_dictionary():
     open_mktcap_capacities = open_mktcap_capacities_dict()
@@ -514,21 +520,23 @@ def get_initializer_stocks_dictionary():
     #buying the dropoffs at the tail end under the logic that the low dropoff rate will continue for the next period, i.e. strong stock basket
     for direction in ['up', 'down']:
         for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
-            with open(f"{mktcap}Stocks/Watchlists/[{yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5)[0]}]D-{direction}trend.json") as infile:
-                watchlist = json.load(infile)
-                if direction == 'up':
-                    op_str = '>'
-                elif direction == 'down':
-                    op_str = '<'
-                for stock in watchlist:
-                    if stock['ticker'] not in current_portfolio and open_sector_capacities[op_str][stock['sector']] > 0 and open_mktcap_capacities[op_str][mktcap] > 0:
-                        initializer_list_dict[op_str][mktcap].append(stock['ticker'])
-                        open_mktcap_capacities[op_str][mktcap] -= 1
-                        open_sector_capacities[op_str][stock['sector']] -= 1
+            dropoff_tuple = yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5)
+            if  dropoff_tuple is  not None:
+                with open(f"{mktcap}Stocks/Watchlists/[{dropoff_tuple[0]}]D-{direction}trend.json") as infile:
+                    watchlist = json.load(infile)
+                    if direction == 'up':
+                        op_str = '>'
+                    elif direction == 'down':
+                        op_str = '<'
+                    for stock in watchlist:
+                        if stock['ticker'] not in current_portfolio and open_sector_capacities[op_str][stock['sector']] > 0 and open_mktcap_capacities[op_str][mktcap] > 0:
+                            initializer_list_dict[op_str][mktcap].append(stock['ticker'])
+                            open_mktcap_capacities[op_str][mktcap] -= 1
+                            open_sector_capacities[op_str][stock['sector']] -= 1
 
     return initializer_list_dict
 
 
 
 
-# print(get_initializer_stocks_dictionary())
+print(get_initializer_stocks_dictionary())
