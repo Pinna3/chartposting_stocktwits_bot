@@ -487,9 +487,9 @@ def yield_first_nonzero_dropoff_tuple_below_threshold(mktcap_dir, down_or_up_str
     for tuple in calculate_and_file_dropoff_rates(mktcap_dir, down_or_up_str, title_time_marker):
         if tuple[1] != 0 and tuple[1] <= ror_threshold and tuple[4] >= ror_threshold:
             return tuple
-for direction in ['up', 'down']:
-    for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
-        print(yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5, ror_threshold=.25, percent_of_total_threshold=.25))
+# for direction in ['up', 'down']:
+#     for mktcap in ['VeryLarge', 'Large', 'Medium', 'Small', 'Micro']:
+#         print(yield_first_nonzero_dropoff_tuple_below_threshold(mktcap, direction, 80, interval=5, ror_threshold=.25, percent_of_total_threshold=.25))
 
 def get_initializer_stocks_dictionary():
     open_mktcap_capacities = open_mktcap_capacities_dict()
@@ -533,4 +533,4 @@ def get_initializer_stocks_dictionary():
 
 
 
-print(get_initializer_stocks_dictionary())
+# print(get_initializer_stocks_dictionary())

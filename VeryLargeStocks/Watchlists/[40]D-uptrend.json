@@ -1,16 +1,5 @@
 [
   {
-    "ticker": "LB",
-    "sector": "Consumer Services",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$TJX $ROST $BURL $SPY",
-    "ror": 35.45,
-    "entry_frequency": 36,
-    "200sma_double_agent": 3
-  },
-  {
     "ticker": "TPL",
     "sector": "Energy",
     "mktcap": "VeryLarge",
@@ -19,17 +8,6 @@
     "peers": "$COP $EOG $PXD $SPY",
     "ror": 34.17,
     "entry_frequency": 35,
-    "200sma_double_agent": 4
-  },
-  {
-    "ticker": "HIG",
-    "sector": "Finance",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$AIG $HIG $AFG $SPY",
-    "ror": 32.73,
-    "entry_frequency": 34,
     "200sma_double_agent": 4
   },
   {
@@ -52,17 +30,6 @@
     "peers": "$DE $TTC $AGCO $SPY",
     "ror": 24.84,
     "entry_frequency": 26,
-    "200sma_double_agent": 5
-  },
-  {
-    "ticker": "SNA",
-    "sector": "Capital Goods",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$ITW $PH $SWK $SPY",
-    "ror": 23.74,
-    "entry_frequency": 25,
     "200sma_double_agent": 5
   },
   {
@@ -97,17 +64,6 @@
     "ror": 21.05,
     "entry_frequency": 22,
     "200sma_double_agent": 5
-  },
-  {
-    "ticker": "MHK",
-    "sector": "Consumer Durables",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$MHK $TPX $LEG $SPY",
-    "ror": 19.85,
-    "entry_frequency": 21,
-    "200sma_double_agent": 8
   },
   {
     "ticker": "ODFL",
@@ -152,17 +108,6 @@
     "ror": 18.82,
     "entry_frequency": 20,
     "200sma_double_agent": 7
-  },
-  {
-    "ticker": "JBHT",
-    "sector": "Transportation",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$UBER $ODFL $LYFT $SPY",
-    "ror": 18.46,
-    "entry_frequency": 19,
-    "200sma_double_agent": 11
   },
   {
     "ticker": "URI",
@@ -242,17 +187,6 @@
     "200sma_double_agent": 11
   },
   {
-    "ticker": "AOS",
-    "sector": "Consumer Durables",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$CARR $MAS $FBHS $SPY",
-    "ror": 13.83,
-    "entry_frequency": 15,
-    "200sma_double_agent": 17
-  },
-  {
     "ticker": "CAT",
     "sector": "Capital Goods",
     "mktcap": "VeryLarge",
@@ -293,17 +227,6 @@
     "bb_std": null,
     "peers": "$MET $PRU $AFL $SPY",
     "ror": 11.76,
-    "entry_frequency": 13,
-    "200sma_double_agent": 11
-  },
-  {
-    "ticker": "VEDL",
-    "sector": "Basic Industries",
-    "mktcap": "VeryLarge",
-    "bb_window": null,
-    "bb_std": null,
-    "peers": "$HINDZINC.NS $VEDL.NS $ASHAPURMIN.NS $SPY",
-    "ror": 11.57,
     "entry_frequency": 13,
     "200sma_double_agent": 11
   },
