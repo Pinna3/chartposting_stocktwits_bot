@@ -1,12 +1,9 @@
-import pandas
-import plotly.graph_objs as go
-import finnhub, time, operator
+import finnhub, time, operator, os
 import pandas as pd
-import os
-from datetime import datetime, date
-today_date = date.today().strftime('%m-%d-%y')
-hours_minutes_now = datetime.now().strftime('%H:%M')
+import plotly.graph_objs as go
 from alpaca import return_candles_json
+from datetime import date
+today_date = date.today().strftime('%m-%d-%y')
 
 #Database Object with candlestick data and moving average data (for now)
 #timeseries data should cover the longest moving average period 200 + the # of days of longest trend test

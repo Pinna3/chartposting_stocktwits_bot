@@ -1,5 +1,5 @@
 import requests, json, time
-from config import APCA_API_KEY_ID_PAPER, APCA_API_SECRET_KEY_PAPER, HEADERS_PAPER, BARS_URL
+from config import APCA_API_KEY_ID_PAPER, APCA_API_SECRET_KEY_PAPER, HEADERS_PAPER
 
 APCA_API_BASE_URL =  'https://paper-api.alpaca.markets'
 ACCOUNT_URL = '{}/v2/account'.format(APCA_API_BASE_URL)
@@ -7,8 +7,14 @@ POSITIONS_URL = '{}/v2/positions'.format(APCA_API_BASE_URL)
 ORDERS_URL = '{}/v2/orders'.format(APCA_API_BASE_URL)
 
 DATA_BASE_URL = 'https://data.alpaca.markets'
+BARS_URL = 'https://data.alpaca.markets/v1/bars/'
 QUOTE_URL = '{}/v1/last_quote/stocks'.format(DATA_BASE_URL)
 LASTTRADE_URL = '{}/v1/last/stocks'.format(DATA_BASE_URL)
+
+APCA_RETRY_MAX = 3
+APCA_RETRY_WAIT = 3
+APCA_RETRY_CODES = 429, 504
+# DATA_PROXY_WS
 
 def get_account():
     r = requests.get(ACCOUNT_URL, headers=HEADERS_PAPER)

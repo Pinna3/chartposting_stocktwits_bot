@@ -1,15 +1,9 @@
-from candlestick import SecurityTradeData, pandas_atr_calculation
-import plotly.graph_objs as go
-import json
-import csv
-import finnhub
+from candlestick import*
+import json, csv
 from time import sleep
-from alpaca import get_all_positions, get_account_value, return_candles_json, get_all_portfolio_tickers
+from alpaca import get_all_positions, get_account_value, get_all_portfolio_tickers
 from risk_parameter import open_mktcap_capacities_dict, open_sector_capacities_dict
-import pandas as pd
 from glob import glob
-from datetime import datetime, date
-today_date = date.today().strftime('%m-%d-%y')
 
 ###Check for proper ranges using get_bb_params_distribution(), last window=2-20 = (range(2, 21)), last std=.1-1 (4/6/21), expand for testing once in a while
 def bb_param_optomizer_WITH_average(SecurityTradeDataObject, op_str, entry_frequency, timebar,
