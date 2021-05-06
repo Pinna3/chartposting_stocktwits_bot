@@ -58,7 +58,7 @@ def daily_trader(publish=False):
                             if not check_daily_tradelist(ticker):
                                 price = current_price
                                 if price == 0:
-                                    return False
+                                    return False, None, None, None, None
                                 else:
                                     acct_value = get_account_value()
                                     sleep(.7)
@@ -72,7 +72,7 @@ def daily_trader(publish=False):
                                             f"MISSED ORDER......... TICKER: {ticker}")
                                         print(buy_market(ticker, qty))
                                         sleep(.7)
-                                        return False
+                                        return False, None, None, None, None
 
                                     order = get_order_by_id(market_order_id)
                                     sleep(.7)
@@ -109,30 +109,34 @@ def daily_trader(publish=False):
                                     sector_allocation_dict = initialize_sector_allocation_dict()
                                     print(
                                         f"TRADE PLACED..... {ticker}: Current Price: {current_price}, Trade Price: {market_order_fill_price} \nStop Price: {tstop_stop_price} MktGroup: {mktcap}\n")
-                                    return True
+                                    return True, market_order_fill_price, trailing_percentage, mktcap, filled
                             else:
                                 print(
                                     f'{ticker} TRADE NOT PLACED... No Duplicate Trades')
-                                return False
+                                return False, None, None, None, None
                         else:
                             print(
                                 f'{ticker} TRADE NOT PLACED... Sector At Capacity')
-                            return False
+                            return False, None, None, None, None
                     else:
                         print(
                             f'{ticker} TRADE NOT PLACED... Long/Daily Capacity Hit')
-                        return False
+                        return False, None, None, None, None
 
                 if publish:
                     execution = main(
                         ticker, sector, sector_allocation_dict, mktcap)
-                    if execution:
+                    if execution[0]:
                         chart = candle_object.chart(
                             120, '>', destination='twitter')
                         media = twitter_api.media_upload(
                             filename='image/png', file=chart)
                         peers = fetch_peers(ticker)
-                        tweet = f'''${ticker} Trade Alert\n\nType: Long, Momentum\nSector: {sector}\nPeers: {peers}'''
+                        mktcap = execution[3]
+                        market_order_fill_price = execution[1]
+                        qty = execution[4]
+                        trailing_percentage = execution[2]
+                        tweet = f'''${ticker} Trade Alert\n{qty} @ ${market_order_fill_price}, {round(trailing_percentage, 1)}% Trailing Stop\n\nType: Long, Momentum\nSector: {sector}\nMarket Cap: {mktcap}\nPeers: {peers}'''
                         twitter_api.update_status(
                             tweet, media_ids=[media.media_id])
                 else:
@@ -164,7 +168,7 @@ def daily_trader(publish=False):
                             if not check_daily_tradelist(ticker):
                                 price = current_price
                                 if price == 0:
-                                    return False
+                                    return False, None, None, None, None
                                 else:
                                     acct_value = get_account_value()
                                     sleep(.7)
@@ -178,7 +182,7 @@ def daily_trader(publish=False):
                                             f"MISSED ORDER......... TICKER: {ticker}")
                                         print(sell_market(ticker, qty))
                                         sleep(.7)
-                                        return False
+                                        return False, None, None, None, None
 
                                     order = get_order_by_id(market_order_id)
                                     sleep(.7)
@@ -215,31 +219,37 @@ def daily_trader(publish=False):
                                     sector_allocation_dict = initialize_sector_allocation_dict()
                                     print(
                                         f"TRADE PLACED..... {ticker}: Current Price: {current_price}, Trade Price: {market_order_fill_price} \nStop Price: {tstop_stop_price} MktGroup: {mktcap}\n")
-                                    return True
+                                    return True, market_order_fill_price, trailing_percentage, mktcap, filled
                             else:
                                 print(
                                     f'{ticker} TRADE NOT PLACED... No Duplicate Trades')
-                                return False
+                                return False, None, None, None, None
                         else:
                             print(
                                 f'{ticker} TRADE NOT PLACED... Sector At Capacity')
-                            return False
+                            return False, None, None, None, None
                     else:
                         print(
                             f'{ticker} TRADE NOT PLACED... Short/Daily Capacity Hit')
-                        return False
+                        return False, None, None, None, None
 
-                if publish:
-                    execution = main(
-                        ticker, sector, sector_allocation_dict, mktcap)
-                    if execution:
-                        chart = candle_object.chart(
-                            120, '<', destination='twitter')
-                        media = twitter_api.media_upload(
-                            filename='image/png', file=chart)
-                        peers = fetch_peers(ticker)
-                        tweet = f'''${ticker} Trade Alert\n\nType: Short, Momentum\nSector: {sector}\nPeers: {peers}'''
-                        twitter_api.update_status(
-                            tweet, media_ids=[media.media_id])
+                if execution[0]:
+                    chart = candle_object.chart(
+                        120, '<', destination='twitter')
+                    media = twitter_api.media_upload(
+                        filename='image/png', file=chart)
+                    peers = fetch_peers(ticker)
+                    mktcap = execution[3]
+                    market_order_fill_price = execution[1]
+                    qty = execution[4]
+                    trailing_percentage = execution[2]
+                    tweet = f'''${ticker} Trade Alert\n{qty} @ ${market_order_fill_price}, {round(trailing_percentage, 1)}% Trailing Stop\n\nType: Short, Momentum\nSector: {sector}\nMarket Cap: {mktcap}\nPeers: {peers}'''
+                    twitter_api.update_status(
+                        tweet, media_ids=[media.media_id])
                 else:
                     main(ticker, sector, sector_allocation_dict, mktcap)
+
+
+if __name__ == '__main__':
+    while True:
+        daily_trader(publish=False)
